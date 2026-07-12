@@ -1159,6 +1159,192 @@ opacity:.3;
 }
 
 }
+  /* ===========================
+   HERO VEHICLE VISUAL
+   ARS Heritage Group
+=========================== */
+
+.hero-car{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:100%;
+
+height:100%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+pointer-events:none;
+
+z-index:1;
+
+overflow:hidden;
+
+}
+
+
+
+.car-placeholder{
+
+width:900px;
+
+height:420px;
+
+border:2px dashed rgba(197,154,74,.35);
+
+border-radius:30px;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:42px;
+
+font-weight:700;
+
+letter-spacing:8px;
+
+color:rgba(197,154,74,.45);
+
+background:
+
+linear-gradient(
+
+135deg,
+
+rgba(197,154,74,.05),
+
+rgba(0,168,255,.05)
+
+);
+
+backdrop-filter:blur(8px);
+
+box-shadow:
+
+0 0 60px rgba(197,154,74,.15),
+
+0 0 120px rgba(0,168,255,.08);
+
+animation:HeroFloat 7s ease-in-out infinite;
+
+}
+
+
+
+@keyframes HeroFloat{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+50%{
+
+transform:translateY(-12px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+
+
+/* Hero Text Above Vehicle */
+
+.hero-content{
+
+position:relative;
+
+z-index:10;
+
+}
+
+
+
+/* Premium Glow */
+
+.hero h1{
+
+text-shadow:
+
+0 0 15px rgba(197,154,74,.45),
+
+0 0 35px rgba(197,154,74,.25);
+
+}
+
+
+
+.hero h2{
+
+text-shadow:
+
+0 0 10px rgba(255,255,255,.12);
+
+}
+
+
+
+/* Hero Button */
+
+.hero-btn{
+
+transition:.35s;
+
+}
+
+
+
+.hero-btn:hover{
+
+transform:translateY(-5px);
+
+box-shadow:
+
+0 0 35px rgba(197,154,74,.45),
+
+0 0 60px rgba(0,168,255,.15);
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:900px){
+
+.car-placeholder{
+
+width:90%;
+
+height:250px;
+
+font-size:24px;
+
+letter-spacing:3px;
+
+}
+
+}
 </style>
 </head>
 
@@ -1208,7 +1394,24 @@ ARS Heritage Group
 </div>
 
 </div>
+<div class="hero-car">
 
+<div class="car-placeholder">
+
+ARS
+
+</div>
+
+</div>
+  <div class="hero-car">
+
+    <div class="car-placeholder">
+
+        Future Hero Vehicle
+
+    </div>
+
+</div>
 <div class="hero-content">
 
 

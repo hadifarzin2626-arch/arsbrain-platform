@@ -307,7 +307,6 @@ line-height:1;
 }
 
 
-
 .concept-logo p{
 
 font-size:12px;
@@ -898,8 +897,269 @@ text-shadow:
 0 0 15px rgba(197,154,74,.7);
 
 }
-}</style>
+}
+  /* =========================
+ARS HERITAGE GROUP
+V1.4 HERO VISUAL
+========================= */
 
+
+.hero{
+
+position:relative;
+
+}
+
+
+
+.hero-visual{
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:500px;
+
+height:500px;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+opacity:.35;
+
+}
+
+
+
+.concept-emblem{
+
+width:280px;
+
+height:280px;
+
+border:3px solid #C59A4A;
+
+border-radius:50%;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+box-shadow:
+
+0 0 60px rgba(197,154,74,.35);
+
+animation:rotateGlow 15s linear infinite;
+
+}
+
+
+
+.concept-emblem span{
+
+font-size:180px;
+
+font-weight:700;
+
+color:#C59A4A;
+
+}
+
+
+
+@keyframes rotateGlow{
+
+
+0%{
+
+transform:rotate(0deg);
+
+}
+
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+
+}
+
+
+
+.hero-content{
+
+z-index:5;
+
+}
+  /* =========================
+ARS HERITAGE GROUP
+V1.4 HERO VISUAL FOUNDATION
+========================= */
+
+
+.hero{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:520px;
+
+height:520px;
+
+left:50%;
+
+top:50%;
+
+transform:translate(-50%,-50%);
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+
+circle,
+
+rgba(197,154,74,0.18),
+
+transparent 70%
+
+);
+
+animation:heritagePulse 8s infinite;
+
+}
+
+
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:350px;
+
+height:350px;
+
+right:15%;
+
+top:35%;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+
+circle,
+
+rgba(0,168,255,0.15),
+
+transparent 70%
+
+);
+
+animation:techPulse 7s infinite;
+
+}
+
+
+
+.hero-content{
+
+position:relative;
+
+z-index:5;
+
+}
+
+
+
+@keyframes heritagePulse{
+
+0%{
+
+transform:translate(-50%,-50%) scale(.8);
+
+opacity:.4;
+
+}
+
+
+50%{
+
+transform:translate(-50%,-50%) scale(1.15);
+
+opacity:.8;
+
+}
+
+
+100%{
+
+transform:translate(-50%,-50%) scale(.8);
+
+opacity:.4;
+
+}
+
+}
+
+
+
+@keyframes techPulse{
+
+0%{
+
+transform:scale(.8);
+
+opacity:.3;
+
+}
+
+
+50%{
+
+transform:scale(1.2);
+
+opacity:.7;
+
+}
+
+
+100%{
+
+transform:scale(.8);
+
+opacity:.3;
+
+}
+
+}
+</style>
 </head>
 
 
@@ -939,7 +1199,15 @@ ARS Heritage Group
 
 
 <section class="hero">
+<div class="hero-visual">
 
+<div class="concept-emblem">
+
+<span>A</span>
+
+</div>
+
+</div>
 
 <div class="hero-content">
 

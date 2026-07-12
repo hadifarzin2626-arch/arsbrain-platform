@@ -697,6 +697,207 @@ padding:70px 25px;
 }
 
   }
+  /* =========================
+ARS HERITAGE GROUP
+V1.3 CINEMATIC EXPERIENCE
+========================= */
+
+
+.hero{
+
+position:relative;
+
+overflow:hidden;
+
+background:
+
+radial-gradient(
+circle at 20% 50%,
+rgba(197,154,74,0.18),
+transparent 35%
+),
+
+radial-gradient(
+circle at 80% 50%,
+rgba(0,168,255,0.15),
+transparent 35%
+),
+
+linear-gradient(
+180deg,
+#080808,
+#151515
+);
+
+}
+
+
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+width:500px;
+
+height:500px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+circle,
+rgba(197,154,74,0.18),
+transparent 70%
+);
+
+animation:pulseGold 6s infinite;
+
+}
+
+
+
+.hero::after{
+
+content:"";
+
+position:absolute;
+
+width:400px;
+
+height:400px;
+
+right:10%;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+circle,
+rgba(0,168,255,0.15),
+transparent 70%
+);
+
+animation:pulseBlue 7s infinite;
+
+}
+
+
+
+.hero-content{
+
+position:relative;
+
+z-index:2;
+
+}
+
+
+
+@keyframes pulseGold{
+
+0%{
+
+transform:scale(0.8);
+
+opacity:.4;
+
+}
+
+50%{
+
+transform:scale(1.1);
+
+opacity:.8;
+
+}
+
+100%{
+
+transform:scale(.8);
+
+opacity:.4;
+
+}
+
+}
+
+
+
+@keyframes pulseBlue{
+
+0%{
+
+transform:scale(.9);
+
+opacity:.3;
+
+}
+
+50%{
+
+transform:scale(1.2);
+
+opacity:.7;
+
+}
+
+100%{
+
+transform:scale(.9);
+
+opacity:.3;
+
+}
+
+}
+
+
+
+/* PREMIUM BUTTON */
+
+
+.hero-btn{
+
+box-shadow:
+
+0 0 25px rgba(197,154,74,0.35);
+
+}
+
+
+
+.hero-btn:hover{
+
+box-shadow:
+
+0 0 40px rgba(224,183,102,0.6);
+
+}
+
+
+
+/* CARD DEPTH */
+
+
+.card{
+
+backdrop-filter:blur(10px);
+
+}
+
+
+
+.card:hover h3{
+
+text-shadow:
+
+0 0 15px rgba(197,154,74,.7);
+
+}
 }</style>
 
 </head>

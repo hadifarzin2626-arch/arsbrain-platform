@@ -1,1 +1,1004 @@
 
+/* ===================================================== */
+/* ARS HERITAGE GROUP - STYLE V2 */
+/* DESIGN SYSTEM & GLOBAL SETTINGS */
+/* ===================================================== */
+
+
+:root {
+
+    --ars-black: #050505;
+
+    --ars-dark: #0b0b0b;
+
+    --ars-gray: #151515;
+
+    --ars-gold: #c9a45c;
+
+    --ars-gold-light: #e5c77a;
+
+    --ars-blue: #1d7cff;
+
+    --ars-white: #ffffff;
+
+    --ars-text: #d8d8d8;
+
+    --container-width: 1280px;
+
+    --transition: .4s ease;
+
+}
+
+
+
+
+
+/* ========================= */
+/* RESET */
+/* ========================= */
+
+
+* {
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+
+html {
+
+    scroll-behavior:smooth;
+
+}
+
+
+
+body {
+
+    background:var(--ars-black);
+
+    color:var(--ars-text);
+
+    font-family:
+
+    Arial,
+    sans-serif;
+
+    overflow-x:hidden;
+
+}
+
+
+
+a {
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+
+ul {
+
+    list-style:none;
+
+}
+
+
+
+
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+
+.container {
+
+    width:90%;
+
+    max-width:var(--container-width);
+
+    margin:auto;
+
+}
+
+
+
+
+
+/* ========================= */
+/* SECTIONS */
+/* ========================= */
+
+
+section {
+
+    position:relative;
+
+    padding:120px 0;
+
+}
+
+
+
+
+
+/* ========================= */
+/* SECTION HEADER */
+/* ========================= */
+
+
+.section-header {
+
+    max-width:850px;
+
+    margin:0 auto 70px;
+
+    text-align:center;
+
+}
+
+
+
+.section-label {
+
+    color:var(--ars-gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:4px;
+
+    font-size:13px;
+
+}
+
+
+
+.section-header h2 {
+
+    margin-top:20px;
+
+    color:var(--ars-white);
+
+    font-size:
+
+    clamp(32px,5vw,60px);
+
+    line-height:1.15;
+
+}
+
+
+
+.section-header p {
+
+    margin-top:25px;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.7);
+
+}
+
+/* ===================================================== */
+/* HEADER */
+/* ===================================================== */
+
+
+.main-header {
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    z-index:1000;
+
+    padding:25px 0;
+
+    background:
+
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,.85),
+        transparent
+    );
+
+}
+
+
+
+.main-header .container {
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+.logo {
+
+    color:var(--ars-white);
+
+    font-size:24px;
+
+    font-weight:bold;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.logo::first-letter {
+
+    color:var(--ars-gold);
+
+}
+
+
+
+.main-header nav {
+
+    display:flex;
+
+    gap:35px;
+
+}
+
+
+
+.main-header nav a {
+
+    color:rgba(255,255,255,.75);
+
+    font-size:15px;
+
+    transition:var(--transition);
+
+}
+
+
+
+.main-header nav a:hover {
+
+    color:var(--ars-gold);
+
+}
+
+
+
+
+
+
+
+/* ===================================================== */
+/* HERO SECTION */
+/* ===================================================== */
+
+
+.hero {
+
+    min-height:100vh;
+
+    display:flex;
+
+    align-items:center;
+
+    background:
+
+    radial-gradient(
+        circle at center,
+        rgba(201,164,92,.15),
+        transparent 35%
+    ),
+
+    linear-gradient(
+        180deg,
+        #050505,
+        #000
+    );
+
+}
+
+
+
+.hero-content {
+
+    max-width:900px;
+
+}
+
+
+
+.hero-label {
+
+    color:var(--ars-gold);
+
+    letter-spacing:5px;
+
+    text-transform:uppercase;
+
+    font-size:14px;
+
+}
+
+
+
+.hero h1 {
+
+    margin-top:30px;
+
+    color:var(--ars-white);
+
+    font-size:
+
+    clamp(45px,7vw,90px);
+
+    line-height:1;
+
+}
+
+
+
+.hero p {
+
+    margin-top:35px;
+
+    max-width:650px;
+
+    font-size:20px;
+
+    line-height:1.8;
+
+    color:rgba(255,255,255,.75);
+
+}
+
+
+
+.hero-slogan {
+
+    margin-top:35px;
+
+    color:var(--ars-gold-light);
+
+    font-size:22px;
+
+    line-height:1.7;
+
+}
+
+
+
+.hero-slogan-persian {
+
+    margin-top:15px;
+
+    color:rgba(255,255,255,.8);
+
+    font-size:20px;
+
+}
+
+/* ===================================================== */
+/* HERITAGE SECTION */
+/* ===================================================== */
+
+
+.heritage {
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #050505,
+        #0b0b0b
+    );
+
+}
+
+
+
+.heritage-content {
+
+    display:grid;
+
+    grid-template-columns:
+
+    1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+
+.heritage-text p {
+
+    font-size:18px;
+
+    line-height:1.9;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.heritage-cards {
+
+    display:grid;
+
+    gap:25px;
+
+}
+
+
+
+.heritage-card {
+
+    padding:35px;
+
+    background:
+
+    rgba(255,255,255,.04);
+
+    border:
+
+    1px solid
+    rgba(201,164,92,.15);
+
+    border-radius:20px;
+
+    transition:var(--transition);
+
+}
+
+
+
+.heritage-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:var(--ars-gold);
+
+}
+
+
+
+.heritage-card h3 {
+
+    color:var(--ars-gold);
+
+    margin-bottom:15px;
+
+}
+
+
+
+
+
+
+
+/* ===================================================== */
+/* PHILOSOPHY SECTION */
+/* ===================================================== */
+
+
+.philosophy {
+
+    background:#050505;
+
+}
+
+
+
+.philosophy-content {
+
+    display:grid;
+
+    grid-template-columns:
+
+    .8fr 1.2fr;
+
+    gap:80px;
+
+    align-items:center;
+
+}
+
+
+
+.concept-logo {
+
+    width:260px;
+
+    height:260px;
+
+    margin:auto;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:70px;
+
+    font-weight:bold;
+
+    color:var(--ars-gold);
+
+    border:
+
+    2px solid
+    var(--ars-gold);
+
+    box-shadow:
+
+    0 0 70px
+    rgba(201,164,92,.25);
+
+}
+
+
+
+.philosophy-text h3 {
+
+    color:var(--ars-white);
+
+    font-size:36px;
+
+    margin-bottom:25px;
+
+}
+
+
+
+.philosophy-text p {
+
+    line-height:1.9;
+
+    font-size:18px;
+
+}
+
+
+
+
+
+
+
+/* ===================================================== */
+/* ECOSYSTEM */
+/* ===================================================== */
+
+
+.ecosystem {
+
+    background:
+
+    linear-gradient(
+        180deg,
+        #0b0b0b,
+        #050505
+    );
+
+}
+
+
+
+.ecosystem-grid {
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.ecosystem-card {
+
+    padding:45px 35px;
+
+    background:
+
+    rgba(255,255,255,.04);
+
+    border:
+
+    1px solid
+    rgba(255,255,255,.1);
+
+    border-radius:25px;
+
+    transition:var(--transition);
+
+}
+
+
+
+.ecosystem-card:hover {
+
+    transform:translateY(-10px);
+
+    border-color:var(--ars-gold);
+
+}
+
+
+
+.card-number {
+
+    font-size:60px;
+
+    color:
+
+    rgba(201,164,92,.2);
+
+    font-weight:bold;
+
+}
+
+
+
+.ecosystem-card h3 {
+
+    color:var(--ars-white);
+
+    font-size:32px;
+
+    margin:20px 0 10px;
+
+}
+
+
+
+.ecosystem-card span {
+
+    color:var(--ars-gold);
+
+    font-size:14px;
+
+    letter-spacing:2px;
+
+}
+
+
+
+.ecosystem-card p {
+
+    margin-top:25px;
+
+    line-height:1.8;
+
+}
+
+
+
+.ecosystem-card li {
+
+    padding:12px 0;
+
+    border-bottom:
+
+    1px solid
+    rgba(255,255,255,.08);
+
+}
+
+/* ===================================================== */
+/* FUTURE VISION */
+/* ===================================================== */
+
+
+.future-vision {
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #050505,
+        #101722
+    );
+
+}
+
+
+
+.future-grid {
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.future-item {
+
+    padding:35px;
+
+    background:
+
+    rgba(255,255,255,.04);
+
+    border:
+
+    1px solid
+    rgba(255,255,255,.1);
+
+    border-radius:20px;
+
+}
+
+
+
+.future-item h3 {
+
+    color:var(--ars-gold);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.future-item p {
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* ===================================================== */
+/* PARTNERSHIP */
+/* ===================================================== */
+
+
+.partnership {
+
+    background:#050505;
+
+}
+
+
+
+.partnership-grid {
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:30px;
+
+}
+
+
+
+.partner-card {
+
+    padding:40px;
+
+    background:
+
+    rgba(255,255,255,.04);
+
+    border:
+
+    1px solid
+    rgba(201,164,92,.15);
+
+    border-radius:25px;
+
+    transition:var(--transition);
+
+}
+
+
+
+.partner-card:hover {
+
+    transform:translateY(-8px);
+
+    border-color:var(--ars-gold);
+
+}
+
+
+
+.partner-card h3 {
+
+    color:var(--ars-white);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.partner-card p {
+
+    line-height:1.8;
+
+}
+
+
+
+
+
+
+
+/* ===================================================== */
+/* FOOTER */
+/* ===================================================== */
+
+
+.main-footer {
+
+    background:#030303;
+
+    padding:70px 0 30px;
+
+    text-align:center;
+
+    border-top:
+
+    1px solid
+    rgba(255,255,255,.08);
+
+}
+
+
+
+.main-footer h2 {
+
+    color:var(--ars-white);
+
+    margin-bottom:20px;
+
+}
+
+
+
+.main-footer p {
+
+    color:var(--ars-gold);
+
+    line-height:1.8;
+
+}
+
+
+
+.footer-bottom {
+
+    margin-top:40px;
+
+    color:
+
+    rgba(255,255,255,.5);
+
+}
+
+
+
+
+
+
+
+/* ===================================================== */
+/* RESPONSIVE */
+/* ===================================================== */
+
+
+@media(max-width:1024px){
+
+
+    .heritage-content,
+    .philosophy-content {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .ecosystem-grid,
+    .future-grid,
+    .partnership-grid {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+
+    .main-header nav {
+
+        display:none;
+
+    }
+
+}
+
+
+
+
+
+
+@media(max-width:600px){
+
+
+    section {
+
+        padding:80px 0;
+
+    }
+
+
+
+    .hero h1 {
+
+        font-size:42px;
+
+    }
+
+
+
+    .section-header h2 {
+
+        font-size:34px;
+
+    }
+
+
+
+    .concept-logo {
+
+        width:200px;
+
+        height:200px;
+
+        font-size:55px;
+
+    }
+
+}

@@ -300,18 +300,30 @@ section {
 
     align-items:center;
 
+    justify-content:space-between;
+
+    overflow:hidden;
+
+    position:relative;
+
     background:
 
     radial-gradient(
-        circle at center,
-        rgba(201,164,92,.15),
+        circle at 75% 50%,
+        rgba(201,164,92,.18),
         transparent 35%
+    ),
+
+    radial-gradient(
+        circle at 25% 20%,
+        rgba(255,255,255,.05),
+        transparent 40%
     ),
 
     linear-gradient(
         180deg,
         #050505,
-        #000
+        #000000
     );
 
 }
@@ -319,6 +331,33 @@ section {
 
 
 .hero-content {
+    .hero-image{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.hero-image img{
+
+    width:100%;
+
+    max-width:700px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    filter:
+
+    drop-shadow(0 0 40px rgba(201,164,92,.35));
+
+}
 
     max-width:900px;
 

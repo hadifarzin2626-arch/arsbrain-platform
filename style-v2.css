@@ -2349,4 +2349,92 @@ transform:translateX(-50%) scale(1.1);
 
 }
 
+/* ===================================================== */
+/* FUTURE VISION PREMIUM */
+/* ===================================================== */
+
+.future-vision{
+    position:relative;
+    overflow:hidden;
+}
+
+.future-vision::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+    radial-gradient(circle at center,
+    rgba(184,137,63,.10),
+    transparent 65%);
+    pointer-events:none;
+}
+
+.future-grid{
+    margin-top:55px;
+    gap:35px;
+}
+
+.future-item{
+    position:relative;
+    overflow:hidden;
+
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(184,137,63,.18);
+
+    border-radius:28px;
+
+    backdrop-filter:blur(14px);
+
+    transition:.45s ease;
+}
+
+.future-item::before{
+    content:"";
+    position:absolute;
+    left:0;
+    right:0;
+    top:0;
+    height:3px;
+
+    background:
+    linear-gradient(
+    90deg,
+    transparent,
+    var(--ars-gold),
+    transparent
+    );
+
+    opacity:0;
+    transition:.45s ease;
+}
+
+.future-item:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(184,137,63,.55);
+
+    box-shadow:
+    0 22px 60px rgba(184,137,63,.18);
+}
+
+.future-item:hover::before{
+    opacity:1;
+}
+
+.future-item h3{
+
+    color:var(--ars-gold-light);
+
+    margin-bottom:18px;
+
+    font-size:28px;
+}
+
+.future-item p{
+
+    line-height:1.9;
+
+    color:rgba(255,255,255,.80);
+}
 

@@ -58,9 +58,9 @@ html {
 
 
 
-body {
-
-    background:var(--ars-black);
+body{
+    background:red !important;
+}
 
     color:var(--ars-text);
 

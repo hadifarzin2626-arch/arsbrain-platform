@@ -341,8 +341,8 @@ animation:arsGlow 6s ease-in-out infinite;
 
 pointer-events:none;
 
-z-index:-1;
-
+z-index:10;
+border-radius:50%;
 }
 
 @keyframes arsGlow{

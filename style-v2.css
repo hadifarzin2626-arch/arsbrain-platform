@@ -394,9 +394,11 @@ color:var(--ars-gold);
 
 .language-switch .active{
 
-opacity:1;
+    opacity:1;
 
-color:var(--ars-gold);
+    color:var(--ars-gold);
+
+}
 
 /* ===================================================== */
 /* ARS HERITAGE PREMIUM HERO */

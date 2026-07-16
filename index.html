@@ -23,38 +23,49 @@
 <header class="main-header">
 
 <div class="header-brand">
+.main-header{
 
-<img
-src="images/logos/ars-heritage-group-logo.png"
-class="mother-logo"
-alt="ARS Heritage Group Logo">
+position:fixed;
 
-<h1 class="brand-title">
+top:18px;
 
-<span class="ars">ARS</span>
+left:50%;
 
-<span class="heritage">Heritage Group</span>
+transform:translateX(-50%);
 
-</h1>
+width:94%;
 
-<div class="brand-glow"></div>
+max-width:1450px;
 
-</div>
+height:82px;
 
+display:flex;
 
-<div class="language-switch">
+align-items:center;
 
-<a class="active">EN</a>
+justify-content:center;
 
-<a>فارسی</a>
+z-index:9999;
 
-<a>العربية</a>
+/* Glass */
 
-</div>
+background:rgba(255,255,255,.06);
 
-</header>
+backdrop-filter:blur(26px);
 
+-webkit-backdrop-filter:blur(26px);
 
+border:1px solid rgba(255,255,255,.10);
+
+border-radius:28px;
+
+box-shadow:
+
+0 10px 45px rgba(0,0,0,.35),
+
+inset 0 1px 0 rgba(255,255,255,.20);
+
+}
 <section class="hero">
 
 <div class="hero-glow-layer"></div>

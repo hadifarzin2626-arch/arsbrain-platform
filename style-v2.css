@@ -1352,6 +1352,66 @@ box-shadow:
 0 35px 100px
 rgba(201,164,92,.22);
 
+}
+ /* ===================================================== */
+/* ARS SCROLL AMBIENT GOLD FLOW */
+/* ===================================================== */
+
+
+body::before{
+
+content:"";
+
+position:fixed;
+
+inset:0;
+
+pointer-events:none;
+
+background:
+
+radial-gradient(
+circle at 50% 50%,
+rgba(201,164,92,.06),
+transparent 45%
+);
+
+opacity:.35;
+
+z-index:999;
+
+transition:opacity 1s ease;
+
+}
+
+
+
+body.scrolling::before{
+
+opacity:.7;
+
+animation:
+
+scrollAmbient 3s ease-in-out infinite;
+
+}
+
+
+
+@keyframes scrollAmbient{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
 }   
 /* ===================================================== */
 /* HERITAGE SECTION */

@@ -1959,12 +1959,78 @@ transform:scale(1.08);
 
 }
 
+/* ===================================================== */
+/* ARS ECOSYSTEM FINAL STYLE FIX */
+/* ===================================================== */
+
+
+.ecosystem-grid{
+
+position:relative;
+
+z-index:2;
+
+}
 
 
 
+.ecosystem-card{
+
+position:relative;
+
+opacity:.92;
+
+transform:
+
+translateY(0)
+scale(1);
+
+transition:
+
+transform .6s ease,
+box-shadow .6s ease,
+border-color .6s ease,
+opacity .6s ease;
+
+}
 
 
 
+.ecosystem-card.ars-active{
+
+opacity:1;
+
+transform:
+
+translateY(-18px)
+scale(1.04);
+
+box-shadow:
+
+0 35px 90px
+rgba(201,164,92,.22);
+
+border-color:
+
+rgba(201,164,92,.65);
+
+}
+
+
+
+.ecosystem-card.ars-active::before{
+
+opacity:1;
+
+}
+
+
+
+body.scrolling::before{
+
+opacity:.55;
+
+}
 /* ===================================================== */
 /* RESPONSIVE */
 /* ===================================================== */

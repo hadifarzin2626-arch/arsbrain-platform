@@ -2242,5 +2242,111 @@ transform:translateX(-50%) scale(1.1);
 
 }
 
+/* ===================================================== */
+/* FUTURE VISION PREMIUM V2 */
+/* ===================================================== */
+
+.future-vision{
+    background:linear-gradient(
+        180deg,
+        #080808,
+        #040404
+    );
+}
+
+.future-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:36px;
+    margin-top:60px;
+}
+
+.future-item{
+
+    position:relative;
+
+    padding:42px;
+
+    border-radius:28px;
+
+    background:
+    linear-gradient(
+        180deg,
+        rgba(255,255,255,.04),
+        rgba(255,255,255,.02)
+    );
+
+    border:1px solid rgba(184,137,63,.18);
+
+    overflow:hidden;
+
+    transition:
+        transform .45s ease,
+        border-color .45s ease,
+        box-shadow .45s ease;
+
+}
+
+.future-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+    right:0;
+
+    height:2px;
+
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(241,208,138,.7),
+        transparent
+    );
+
+    opacity:.35;
+
+}
+
+.future-item:hover{
+
+    transform:translateY(-12px);
+
+    border-color:rgba(184,137,63,.55);
+
+    box-shadow:
+        0 25px 70px rgba(184,137,63,.16);
+
+}
+
+.future-item h3{
+
+    font-size:30px;
+
+    color:var(--ars-gold-light);
+
+    margin-bottom:18px;
+
+}
+
+.future-item p{
+
+    color:rgba(255,255,255,.78);
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+@media(max-width:1100px){
+
+    .future-grid{
+        grid-template-columns:1fr;
+    }
+
+}
 
 

@@ -911,6 +911,448 @@ transform:rotate(360deg);
 }
 
 }
+    /* ===================================================== */
+/* ARS ORBIT REFINEMENT */
+/* ===================================================== */
+
+
+.orbit-ring a{
+
+animation:counterRotate 35s linear infinite;
+
+}
+
+
+.orbit-ring:hover{
+
+animation-play-state:paused;
+
+}
+
+
+
+.orbit-ring a:hover{
+
+transform:
+scale(1.12);
+
+background:
+
+rgba(201,164,92,.12);
+
+}
+
+
+
+@keyframes counterRotate{
+
+from{
+
+rotate:0deg;
+
+}
+
+to{
+
+rotate:-360deg;
+
+}
+
+}
+
+
+
+.ars-orbit{
+
+width:560px;
+
+height:560px;
+
+opacity:.95;
+
+}
+
+
+
+.brand-core{
+
+z-index:5;
+
+}
+
+
+
+.mother-logo-hero{
+
+position:relative;
+
+z-index:6;
+
+}
+
+
+
+.hero-brand-title{
+
+position:relative;
+
+z-index:6;
+
+}
+
+
+
+.brand-energy{
+
+z-index:1;
+
+}
+
+
+
+@media(max-width:768px){
+
+
+.ars-orbit{
+
+width:340px;
+
+height:340px;
+
+}
+
+
+.orbit-ring a{
+
+font-size:11px;
+
+padding:8px 12px;
+
+}
+
+
+.orbit-ring a:nth-child(1){
+
+transform:
+translate(-50%,-50%)
+translateY(-170px);
+
+}
+
+
+.orbit-ring a:nth-child(2){
+
+transform:
+translate(-50%,-50%)
+translateX(170px);
+
+}
+
+
+.orbit-ring a:nth-child(3){
+
+transform:
+translate(-50%,-50%)
+translateY(170px);
+
+}
+
+
+.orbit-ring a:nth-child(4){
+
+transform:
+translate(-50%,-50%)
+translateX(-170px);
+
+}
+
+}
+ /* ===================================================== */
+/* ARS PREMIUM SCROLL GLOW SYSTEM */
+/* ===================================================== */
+
+
+section{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+
+
+section::before{
+
+content:"";
+
+position:absolute;
+
+top:50%;
+
+left:50%;
+
+width:500px;
+
+height:500px;
+
+transform:
+
+translate(-50%,-50%);
+
+background:
+
+radial-gradient(
+circle,
+rgba(201,164,92,.10),
+transparent 65%
+);
+
+filter:blur(60px);
+
+opacity:.35;
+
+pointer-events:none;
+
+transition:1.2s ease;
+
+}
+
+
+
+section:hover::before{
+
+opacity:.75;
+
+transform:
+
+translate(-50%,-50%) scale(1.15);
+
+}
+
+
+
+.section-header h2{
+
+position:relative;
+
+}
+
+
+
+.section-header h2::after{
+
+content:"";
+
+display:block;
+
+width:80px;
+
+height:2px;
+
+margin:25px auto 0;
+
+background:
+
+linear-gradient(
+90deg,
+transparent,
+var(--ars-gold),
+transparent
+);
+
+box-shadow:
+
+0 0 20px rgba(201,164,92,.5);
+
+}
+
+
+
+/* Premium Card Depth */
+
+
+.ecosystem-card,
+.future-item,
+.principle-card{
+
+transform-style:preserve-3d;
+
+}
+
+
+
+.ecosystem-card:hover,
+.future-item:hover,
+.principle-card:hover{
+
+box-shadow:
+
+0 25px 70px rgba(201,164,92,.12);
+
+} 
+ /* ===================================================== */
+/* ARS ECOSYSTEM 3D ACTIVATION */
+/* ===================================================== */
+
+
+.ecosystem-card{
+
+position:relative;
+
+overflow:hidden;
+
+transform:
+
+translateZ(0);
+
+transition:
+
+transform .6s ease,
+box-shadow .6s ease,
+border-color .6s ease;
+
+}
+
+
+
+.ecosystem-card::before{
+
+content:"";
+
+position:absolute;
+
+inset:-40%;
+
+background:
+
+radial-gradient(
+circle,
+rgba(201,164,92,.18),
+transparent 55%
+);
+
+opacity:0;
+
+transition:
+
+opacity .8s ease;
+
+pointer-events:none;
+
+}
+
+
+
+.ecosystem-card:hover::before{
+
+opacity:1;
+
+}
+
+
+
+.ecosystem-card:hover{
+
+transform:
+
+translateY(-15px)
+perspective(800px)
+rotateX(3deg);
+
+border-color:
+
+rgba(201,164,92,.8);
+
+box-shadow:
+
+0 30px 90px
+rgba(201,164,92,.18);
+
+}
+
+
+
+.ecosystem-card img:first-child{
+
+transition:
+
+transform .6s ease,
+filter .6s ease;
+
+}
+
+
+
+.ecosystem-card:hover img:first-child{
+
+transform:
+
+translateZ(30px)
+scale(1.08);
+
+filter:
+
+drop-shadow(
+0 0 25px
+rgba(201,164,92,.55)
+);
+
+}
+
+
+
+.ecosystem-card h3{
+
+transition:
+
+transform .5s ease,
+color .5s ease;
+
+}
+
+
+
+.ecosystem-card:hover h3{
+
+transform:
+
+translateZ(20px);
+
+color:
+
+var(--ars-gold-light);
+
+}
+
+
+
+/* Scroll entrance preparation */
+
+
+.ecosystem-card{
+
+opacity:.85;
+
+}
+
+
+
+.ecosystem-card.active{
+
+opacity:1;
+
+transform:
+
+translateY(-12px)
+scale(1.03);
+
+box-shadow:
+
+0 35px 100px
+rgba(201,164,92,.22);
+
+}   
 /* ===================================================== */
 /* HERITAGE SECTION */
 /* ===================================================== */

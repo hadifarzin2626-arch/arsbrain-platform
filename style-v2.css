@@ -58,18 +58,15 @@ html {
 
 
 
-body{
-    background:red !important;
-}
+body {
 
-    color:var(--ars-text);
+    background: var(--ars-black);
 
-    font-family:
+    color: var(--ars-text);
 
-    Arial,
-    sans-serif;
+    font-family: Arial, sans-serif;
 
-    overflow-x:hidden;
+    overflow-x: hidden;
 
 }
 

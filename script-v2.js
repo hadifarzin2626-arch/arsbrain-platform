@@ -149,3 +149,89 @@ document.addEventListener(
 
 
 });
+/* ===================================================== */
+/* ARS SCROLL ACTIVATION ENGINE */
+/* ===================================================== */
+
+
+let scrollTimer;
+
+
+window.addEventListener("scroll", () => {
+
+
+    document.body.classList.add("scrolling");
+
+
+    clearTimeout(scrollTimer);
+
+
+    scrollTimer = setTimeout(() => {
+
+        document.body.classList.remove("scrolling");
+
+    }, 700);
+
+
+});
+
+
+
+
+
+/* ===================================================== */
+/* ECOSYSTEM ACTIVE OBSERVER */
+/* ===================================================== */
+
+
+const arsCards = document.querySelectorAll(
+    ".ecosystem-card"
+);
+
+
+
+const arsObserver = new IntersectionObserver(
+
+(entries)=>{
+
+
+entries.forEach(entry=>{
+
+
+if(entry.isIntersecting){
+
+
+entry.target.classList.add("active");
+
+
+}
+
+else{
+
+
+entry.target.classList.remove("active");
+
+
+}
+
+
+});
+
+
+},
+
+{
+
+threshold:.35
+
+}
+
+);
+
+
+
+arsCards.forEach(card=>{
+
+arsObserver.observe(card);
+
+});

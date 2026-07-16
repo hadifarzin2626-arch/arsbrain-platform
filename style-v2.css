@@ -230,18 +230,21 @@ position:relative;
 
 display:flex;
 
-flex-direction:column;
-
 align-items:center;
 
 justify-content:center;
 
-padding-top:8px;
+gap:14px;
 
-padding-bottom:10px;
-overflow:visible;
+padding:0;
+
+background:transparent;
+
+border:none;
+
+box-shadow:none;
+
 }
-
 .mother-logo{
 
 width:88px;
@@ -276,6 +279,9 @@ font-weight:600;
 
 letter-spacing:1.2px;
 background:transparent !important;
+    box-shadow:none;
+
+border:none;
 }
 
 .brand-title .ars{

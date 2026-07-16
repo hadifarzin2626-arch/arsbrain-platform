@@ -314,26 +314,28 @@ text-shadow:none;
 
 position:absolute;
 
-bottom:-8px;
+bottom:-18px;
 
 left:50%;
 
 transform:translateX(-50%);
 
-width:260px;
+width:320px;
 
-height:70px;
+height:90px;
 
-background:radial-gradient(
+background:
+
+radial-gradient(
 ellipse,
-rgba(201,164,92,.28),
-rgba(168,104,42,.12),
-transparent 75%
+rgba(241,208,138,.45),
+rgba(184,137,63,.25),
+transparent 72%
 );
 
-filter:blur(22px);
+filter:blur(28px);
 
-animation:arsGlow 7s ease-in-out infinite;
+animation:arsGlow 6s ease-in-out infinite;
 
 pointer-events:none;
 

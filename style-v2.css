@@ -1986,3 +1986,92 @@ opacity:.55;
         grid-template-columns:1fr;
     }
 }
+
+/* ===================================================== */
+/* ARS PHILOSOPHY PREMIUM */
+/* ===================================================== */
+
+.ars-philosophy-home{
+    background:linear-gradient(180deg,#050505,#090909);
+}
+
+.philosophy-content{
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:70px;
+    align-items:center;
+    margin-top:50px;
+}
+
+.concept-logo{
+    width:300px;
+    height:300px;
+    margin:auto;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(184,137,63,.22);
+    box-shadow:
+        0 0 80px rgba(184,137,63,.10),
+        inset 0 0 40px rgba(184,137,63,.08);
+    overflow:hidden;
+}
+
+.concept-logo img{
+    width:78%;
+    height:auto;
+    object-fit:contain;
+}
+
+.philosophy-text{
+    background:rgba(255,255,255,.03);
+    border:1px solid rgba(184,137,63,.18);
+    border-radius:24px;
+    padding:45px;
+    transition:.4s ease;
+}
+
+.philosophy-text:hover{
+    transform:translateY(-8px);
+    border-color:var(--ars-gold);
+    box-shadow:0 25px 70px rgba(184,137,63,.15);
+}
+
+.philosophy-text h3{
+    color:var(--ars-gold-light);
+    font-size:34px;
+    margin-bottom:22px;
+}
+
+.philosophy-text p{
+    font-size:18px;
+    line-height:2;
+    color:rgba(255,255,255,.80);
+}
+
+.philosophy-text blockquote{
+    margin-top:30px;
+    padding-left:22px;
+    border-left:3px solid var(--ars-gold);
+    color:var(--ars-gold-light);
+    font-size:24px;
+    font-style:italic;
+    line-height:1.8;
+}
+
+@media(max-width:1024px){
+
+    .philosophy-content{
+        grid-template-columns:1fr;
+    }
+
+    .concept-logo{
+        width:240px;
+        height:240px;
+    }
+
+}
+
+

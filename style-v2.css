@@ -760,7 +760,50 @@ color:rgba(255,255,255,.75);
     border-color:var(--ars-gold);
     transform:translateY(-4px);
 }
+/* ===================================================== */
+/* ABOUT ARS */
+/* ===================================================== */
 
+.about-ars{
+    background:linear-gradient(180deg,#050505,#0b0b0b);
+}
+
+.about-content{
+    max-width:980px;
+    margin:0 auto;
+}
+
+.about-text{
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(184,137,63,.18);
+    border-radius:26px;
+    padding:55px;
+    backdrop-filter:blur(14px);
+    transition:.4s ease;
+}
+
+.about-text:hover{
+    border-color:rgba(184,137,63,.45);
+    box-shadow:0 20px 60px rgba(184,137,63,.12);
+    transform:translateY(-6px);
+}
+
+.about-text p{
+    font-size:18px;
+    line-height:2;
+    color:rgba(255,255,255,.82);
+    margin-bottom:22px;
+}
+
+.about-text blockquote{
+    margin-top:35px;
+    padding-left:24px;
+    border-left:3px solid var(--ars-gold);
+    color:var(--ars-gold-light);
+    font-size:24px;
+    font-style:italic;
+    line-height:1.8;
+}
 @keyframes logoEntrance{
 
 from{

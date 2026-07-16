@@ -197,23 +197,33 @@ section {
 position:fixed;
 
 top:0;
-
 left:0;
 
 width:100%;
 
 z-index:9999;
 
+background:rgba(8,8,8,.08);
+
 backdrop-filter:blur(18px);
+-webkit-backdrop-filter:blur(18px);
 
-background:rgba(4,4,4,.42);
+border-bottom:
 
-border-bottom:1px solid rgba(201,164,92,.12);
+1px solid rgba(201,164,92,.10);
 
-transition:.45s ease;
+box-shadow:
+
+0 10px 35px rgba(0,0,0,.15);
+
+transition:
+
+background .45s ease,
+backdrop-filter .45s ease,
+border-color .45s ease,
+box-shadow .45s ease;
 
 }
-
 .header-brand{
 
 position:relative;

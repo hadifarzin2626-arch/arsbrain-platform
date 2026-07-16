@@ -280,7 +280,7 @@ background:transparent !important;
 
 .brand-title .ars{
 
-font-size:34px;
+font-size:38px;
 
 font-weight:700;
 
@@ -306,7 +306,8 @@ color:#f4f4f4;
 font-weight:300;
 
 margin-left:8px;
-
+background:transparent !important;
+text-shadow:none;
 }
 
 .brand-glow{

@@ -398,166 +398,320 @@ opacity:1;
 
 color:var(--ars-gold);
 
-}
-
-
-
-
-
-
-
 /* ===================================================== */
-/* HERO SECTION */
+/* ARS HERITAGE PREMIUM HERO */
 /* ===================================================== */
 
+.hero{
 
-.hero {
+min-height:100vh;
 
-    min-height:100vh;
+display:flex;
 
-    display:flex;
+align-items:center;
 
-    align-items:center;
+justify-content:center;
 
-    justify-content:space-between;
+position:relative;
 
-    overflow:hidden;
+overflow:hidden;
 
-    position:relative;
+background:
 
-    background:
+radial-gradient(
+circle at center,
+rgba(201,164,92,.18),
+transparent 35%
+),
 
-    radial-gradient(
-        circle at 75% 50%,
-        rgba(201,164,92,.18),
-        transparent 35%
-    ),
+linear-gradient(
+180deg,
+#050505,
+#000
+);
 
-    radial-gradient(
-        circle at 25% 20%,
-        rgba(255,255,255,.05),
-        transparent 40%
-    ),
+}
 
-    linear-gradient(
-        180deg,
-        #050505,
-        #000000
-    );
+
+.hero-glow-layer{
+
+position:absolute;
+
+inset:0;
+
+background:
+
+radial-gradient(
+circle at center,
+rgba(201,164,92,.20),
+transparent 30%
+);
+
+filter:blur(60px);
+
+opacity:.7;
+
+animation:heroPulse 8s ease-in-out infinite;
+
+}
+
+
+@keyframes heroPulse{
+
+0%,100%{
+
+opacity:.45;
+
+transform:scale(.95);
+
+}
+
+50%{
+
+opacity:.85;
+
+transform:scale(1.05);
+
+}
 
 }
 
 
 
-.hero-content {
-    .hero-image{
+.heritage-entrance{
 
-    flex:1;
+position:relative;
 
-    display:flex;
+z-index:2;
 
-    justify-content:center;
+width:100%;
 
-    align-items:center;
+display:flex;
 
-}
+flex-direction:column;
 
-.hero-image img{
+align-items:center;
 
-    width:100%;
+justify-content:center;
 
-    max-width:700px;
-
-    height:auto;
-
-    object-fit:contain;
-
-    filter:
-
-    drop-shadow(0 0 40px rgba(201,164,92,.35));
-
-}
-
-    max-width:900px;
+text-align:center;
 
 }
 
 
 
-.hero-label {
+.brand-core{
 
-    color:var(--ars-gold);
+position:relative;
 
-    letter-spacing:5px;
+display:flex;
 
-    text-transform:uppercase;
+flex-direction:column;
 
-    font-size:14px;
-
-}
-
-
-
-.hero h1 {
-
-    margin-top:30px;
-
-    color:var(--ars-white);
-
-    font-size:
-
-    clamp(45px,7vw,90px);
-
-    line-height:1;
+align-items:center;
 
 }
 
 
 
-.hero p {
+.mother-logo-hero{
 
-    margin-top:35px;
+width:110px;
 
-    max-width:650px;
+height:auto;
 
-    font-size:20px;
+margin-bottom:6px;
 
-    line-height:1.8;
+filter:
 
-    color:rgba(255,255,255,.75);
+drop-shadow(
+0 0 15px rgba(201,164,92,.45)
+);
 
-}
-
-
-
-.hero-slogan {
-
-    margin-top:35px;
-
-    color:var(--ars-gold-light);
-
-    font-size:22px;
-
-    line-height:1.7;
+animation:logoEntrance 1.5s ease forwards;
 
 }
 
 
 
-.hero-slogan-persian {
+.hero-brand-title{
 
-    margin-top:15px;
+margin:0;
 
-    color:rgba(255,255,255,.8);
+line-height:1;
 
-    font-size:20px;
+letter-spacing:2px;
 
 }
 
+
+
+.hero-ars{
+
+font-size:70px;
+
+font-weight:800;
+
+background:
+
+linear-gradient(
+180deg,
+#ffe8a0,
+#c9a45c,
+#805522
+);
+
+-webkit-background-clip:text;
+
+-webkit-text-fill-color:transparent;
+
+}
+
+
+
+.hero-heritage{
+
+font-size:52px;
+
+font-weight:300;
+
+color:#f5f5f5;
+
+margin-left:12px;
+
+}
+
+
+
+.brand-energy{
+
+position:absolute;
+
+bottom:-35px;
+
+width:320px;
+
+height:90px;
+
+background:
+
+radial-gradient(
+ellipse,
+rgba(201,164,92,.35),
+rgba(150,90,35,.15),
+transparent 70%
+);
+
+filter:blur(30px);
+
+animation:energyBreath 7s infinite;
+
+}
+
+
+
+@keyframes energyBreath{
+
+0%,100%{
+
+opacity:.35;
+
+transform:scale(.9);
+
+}
+
+50%{
+
+opacity:.85;
+
+transform:scale(1.1);
+
+}
+
+}
+
+
+
+.hero-content{
+
+margin-top:70px;
+
+max-width:850px;
+
+text-align:center;
+
+}
+
+
+
+.hero-label{
+
+color:var(--ars-gold);
+
+letter-spacing:5px;
+
+font-size:14px;
+
+text-transform:uppercase;
+
+}
+
+
+
+.hero-content h2{
+
+margin-top:25px;
+
+font-size:
+
+clamp(38px,5vw,70px);
+
+line-height:1.15;
+
+color:white;
+
+}
+
+
+
+.hero-content p{
+
+margin:30px auto;
+
+max-width:700px;
+
+font-size:19px;
+
+line-height:1.8;
+
+color:rgba(255,255,255,.75);
+
+}
+
+
+
+@keyframes logoEntrance{
+
+from{
+
+opacity:0;
+
+transform:translateY(-30px);
+
+}
+
+to{
+
+opacity:1;
+
+transform:translateY(0);
+
+}
+
+}
 /* ===================================================== */
 /* HERITAGE SECTION */
 /* ===================================================== */
-
 
 .heritage {
 

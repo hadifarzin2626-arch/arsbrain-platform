@@ -299,7 +299,7 @@ background:linear-gradient(
 
 .brand-title .heritage{
 
-font-size:30px;
+font-size:34px;
 
 color:#f4f4f4;
 
@@ -324,15 +324,9 @@ width:320px;
 
 height:90px;
 
-background:
-
-radial-gradient(
-ellipse,
-rgba(241,208,138,.45),
-rgba(184,137,63,.25),
-transparent 72%
-);
-
+background:red !important;
+filter:none !important;
+}
 filter:blur(28px);
 
 animation:arsGlow 6s ease-in-out infinite;

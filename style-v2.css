@@ -190,6 +190,7 @@ section {
 /* ===================================================== */
 
 .main-header{
+.main-header{
 
 position:fixed;
 
@@ -200,48 +201,28 @@ width:100%;
 
 z-index:9999;
 
-background:rgba(255,255,255,.015);
+background:transparent;
 
-background: rgba(5,5,5,.03);
+backdrop-filter:none;
+-webkit-backdrop-filter:none;
 
-backdrop-filter: blur(32px);
--webkit-backdrop-filter: blur(32px);
+border:none;
 
-box-shadow: 0 4px 18px rgba(0,0,0,.12);
+box-shadow:none;
 
-transition:.45s ease;
+transition:.35s ease;
 
 }
 .main-header.scrolled{
 
-background: rgba(5,5,5,.10);
+background:transparent;
 
-backdrop-filter: blur(40px);
--webkit-backdrop-filter: blur(40px);
+backdrop-filter:none;
+-webkit-backdrop-filter:none;
 
-box-shadow: 0 10px 30px rgba(0,0,0,.18);
+border:none;
 
-}
-.main-header::before{
-
-content:"";
-
-position:absolute;
-
-left:0;
-right:0;
-top:0;
-bottom:0;
-
-background:
-
-linear-gradient(
-180deg,
-rgba(255,255,255,.03),
-rgba(255,255,255,.005)
-);
-
-pointer-events:none;
+box-shadow:none;
 
 }
 .header-brand{

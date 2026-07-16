@@ -2073,5 +2073,73 @@ opacity:.55;
     }
 
 }
+/* ===================================================== */
+/* CONCEPT LOGO GLOW */
+/* ===================================================== */
 
+.concept-logo{
+    position:relative;
+    overflow:visible;
+}
+
+.concept-glow{
+
+    position:absolute;
+
+    left:50%;
+    bottom:-28px;
+
+    transform:translateX(-50%);
+
+    width:220px;
+    height:80px;
+
+    background:radial-gradient(
+        ellipse,
+        rgba(241,208,138,.45),
+        rgba(184,137,63,.22),
+        transparent 70%
+    );
+
+    filter:blur(30px);
+
+    animation:conceptGlow 6s ease-in-out infinite;
+
+    pointer-events:none;
+
+    z-index:0;
+
+}
+
+.concept-logo img{
+
+    position:relative;
+
+    z-index:2;
+
+    filter:
+    drop-shadow(0 0 12px rgba(241,208,138,.35))
+    drop-shadow(0 0 28px rgba(184,137,63,.18));
+
+}
+
+@keyframes conceptGlow{
+
+0%,100%{
+
+opacity:.35;
+
+transform:translateX(-50%) scale(.9);
+
+}
+
+50%{
+
+opacity:.9;
+
+transform:translateX(-50%) scale(1.1);
+
+}
+
+}
 

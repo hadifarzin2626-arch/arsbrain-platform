@@ -1938,3 +1938,51 @@ opacity:.55;
     }
 
 }
+
+
+/* ===================================================== */
+/* MISSION & VISION */
+/* ===================================================== */
+
+.mission-vision{
+    background:linear-gradient(180deg,#0b0b0b,#050505);
+}
+
+.principles-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:30px;
+    margin-top:40px;
+}
+
+.principle-card{
+    background:rgba(255,255,255,.035);
+    border:1px solid rgba(184,137,63,.18);
+    border-radius:24px;
+    padding:40px;
+    transition:.4s ease;
+}
+
+.principle-card:hover{
+    transform:translateY(-8px);
+    border-color:var(--ars-gold);
+    box-shadow:0 20px 60px rgba(184,137,63,.15);
+}
+
+.principle-card h3{
+    color:var(--ars-gold-light);
+    font-size:28px;
+    margin-bottom:18px;
+}
+
+.principle-card p{
+    color:rgba(255,255,255,.78);
+    line-height:1.9;
+    font-size:17px;
+}
+
+@media(max-width:1024px){
+    .principles-grid{
+        grid-template-columns:1fr;
+    }
+}

@@ -179,8 +179,10 @@ window.addEventListener("scroll", () => {
 
 
 
+/*
+
 /* ===================================================== */
-/* ECOSYSTEM ACTIVE OBSERVER */
+/* ARS ECOSYSTEM ACTIVE OBSERVER */
 /* ===================================================== */
 
 
@@ -201,15 +203,13 @@ entries.forEach(entry=>{
 if(entry.isIntersecting){
 
 
-entry.target.classList.add("active");
+entry.target.classList.add("ars-active");
 
 
-}
-
-else{
+}else{
 
 
-entry.target.classList.remove("active");
+entry.target.classList.remove("ars-active");
 
 
 }
@@ -222,7 +222,7 @@ entry.target.classList.remove("active");
 
 {
 
-threshold:.35
+threshold:.45
 
 }
 

@@ -533,7 +533,7 @@ animation:heroPulse 8s ease-in-out infinite;
         580px 580px,
         700px 700px;
 
-    opacity:.35;
+    opacity:.1;
     z-index:1;
     mix-blend-mode:screen;
 }

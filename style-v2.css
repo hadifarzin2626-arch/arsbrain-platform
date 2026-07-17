@@ -2751,3 +2751,36 @@ box-shadow:
 0 0 20px rgba(255,255,255,.25);
 
 }
+/* =====================================================
+   ARS V3 SYSTEM CONTAINER FIX
+===================================================== */
+
+.brand-core{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:650px;
+
+}
+
+
+.ars-v3-sun,
+.ars-v3-orbits{
+
+    pointer-events:none;
+
+}
+
+
+.ars-system,
+.ars-solar-system{
+
+    position:relative;
+
+    width:100%;
+
+    height:650px;
+
+}

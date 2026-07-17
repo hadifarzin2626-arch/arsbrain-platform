@@ -2456,43 +2456,7 @@ transform:translateX(-50%) scale(1.1);
 
 }
 
-/* =====================================================
-   ARS SOLAR SYSTEM V3
-   SUN CORE
-===================================================== */
-
-.ars-v3-sun{
-
-    position:absolute;
-
-    top:50%;
-    left:50%;
-
-    transform:
-    translate(-50%,-50%);
-
-    width:305px;
-    height:305px;
-
-    z-index:20;
-
-}
-
-
-.ars-v3-surface{
-
-    position:absolute;
-
-    width:225px;
-    height:225px;
-
-    top:50%;
-    left:50%;
-
-    transform:
-    translate(-50%,-50%);
-
-    border-radius:50%;
+ŧ-radius:50%;
 
     display:flex;
 
@@ -2609,6 +2573,8 @@ transform:translateX(-50%) scale(1.1);
     sunEnergy 8s infinite ease-in-out;
 
 }
+
+
 
 
 

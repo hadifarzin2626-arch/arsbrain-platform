@@ -2695,13 +2695,13 @@ border:1px solid rgba(241,208,138,.18);
 
 
 .orbit-1{
-width:55px;
-height:55px;
+width:260px;
+height:260px;
 }
 
 .orbit-2{
-width:75px;
-height:75px;
+width:360px;
+height:360px;
 }
 
 .orbit-3{
@@ -2735,8 +2735,9 @@ height:1000px;
 
 position:absolute;
 
+
 top:50%;
-left:50%;
+left:0;
 
 width:45px;
 height:45px;

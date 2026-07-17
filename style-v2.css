@@ -552,23 +552,6 @@ align-items:center;
 
 
 
-.mother-logo-hero{
-
-width:110px;
-
-height:auto;
-
-margin-bottom:6px;
-
-filter:
-
-drop-shadow(
-0 0 15px rgba(201,164,92,.45)
-);
-
-animation:logoEntrance 1.5s ease forwards;
-
-}
 
 
 

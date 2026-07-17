@@ -2693,36 +2693,43 @@ border:1px solid rgba(241,208,138,.18);
 .orbit-1{
 width:260px;
 height:260px;
+animation:orbitRotate 16s linear infinite;
 }
 
 .orbit-2{
 width:360px;
 height:360px;
+animation:orbitRotate 22s linear infinite;
 }
 
 .orbit-3{
 width:470px;
 height:470px;
+animation:orbitRotate 28s linear infinite;
 }
 
 .orbit-4{
 width:600px;
 height:600px;
+animation:orbitRotate 36s linear infinite;
 }
 
 .orbit-5{
 width:730px;
 height:730px;
+animation:orbitRotate 46s linear infinite;
 }
 
 .orbit-6{
 width:850px;
 height:850px;
+animation:orbitRotate 58s linear infinite;
 }
 
 .orbit-7{
 width:1000px;
 height:1000px;
+animation:orbitRotate 72s linear infinite;
 }
 
 
@@ -2957,4 +2964,12 @@ box-shadow:
 
     }
 
+}
+@keyframes orbitRotate{
+    from{
+        transform:translate(-50%,-50%) rotate(0deg);
+    }
+    to{
+        transform:translate(-50%,-50%) rotate(360deg);
+    }
 }

@@ -1539,9 +1539,14 @@ transform:scale(1.08);
     transition:.4s ease;
 }
 
-.ecosystem-card:hover {
+    .ecosystem-card:hover{
 
-    transform:translateY(-10px);
+    transform:
+    translateY(-20px)
+    rotateX(8deg)
+    rotateY(-8deg);
+
+    }
 
     border-color:var(--ars-gold);
 

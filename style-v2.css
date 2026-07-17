@@ -2790,26 +2790,6 @@ transition:.35s ease;
 @keyframes sunEnergy{
 
 
-0%{
-filter:
-brightness(1)
-saturate(1);
-}
-
-50%{
-filter:
-brightness(1.15)
-saturate(1.25);
-}
-
-100%{
-filter:
-brightness(1)
-saturate(1);
-}
-
-}
-
     50%{
 
         opacity:.9;
@@ -2823,25 +2803,6 @@ saturate(1);
 @keyframes sunCorona{
 
 
-0%{
-filter:
-brightness(1)
-saturate(1);
-}
-
-50%{
-filter:
-brightness(1.15)
-saturate(1.25);
-}
-
-100%{
-filter:
-brightness(1)
-saturate(1);
-}
-
-}
     0%,100%{
 
         opacity:.4;
@@ -2861,26 +2822,6 @@ saturate(1);
 }
 @keyframes orbitRotate{
 
-
-0%{
-filter:
-brightness(1)
-saturate(1);
-}
-
-50%{
-filter:
-brightness(1.15)
-saturate(1.25);
-}
-
-100%{
-filter:
-brightness(1)
-saturate(1);
-}
-
-}
     from{
         transform:translate(-50%,-50%) rotate(0deg);
     }

@@ -261,7 +261,14 @@ border:none;
 box-shadow:none;
 
 }
-.mother-logo{
+.mother-logo,
+.mother-logo-hero{
+
+background:transparent !important;
+
+mix-blend-mode:normal;
+
+}
 
 width:88px;
 

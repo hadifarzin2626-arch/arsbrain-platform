@@ -263,7 +263,6 @@ box-shadow:none;
 }
 .mother-logo,
 .mother-logo-hero{
-    background:transparent !important;
     mix-blend-mode:normal;
 
     width:88px;
@@ -547,7 +546,7 @@ background-size:
 160px 160px,
 200px 200px;
 
-opacity:.1;
+opacity:.45;
 
 z-index:0;
 

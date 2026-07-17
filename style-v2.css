@@ -367,7 +367,7 @@ border-radius:50%;
 
 0%{
 
-opacity:.35;
+opacity:.50;
 
 transform:translateX(-50%) scale(.95);
 
@@ -383,7 +383,7 @@ transform:translateX(-50%) scale(1.08);
 
 100%{
 
-opacity:.35;
+opacity:.48;
 
 transform:translateX(-50%) scale(.95);
 
@@ -511,14 +511,14 @@ animation:heroPulse 8s ease-in-out infinite;
     radial-gradient(circle, rgba(255,220,150,.5) 1px, transparent 1px);
 
     background-size:
-    180px 180px,
-    260px 260px;
+90px 90px,
+140px 140px;
 
     background-position:
     20px 40px,
     90px 120px;
 
-    opacity:.55;
+    opacity:.85;
 
     z-index:1;
 
@@ -546,9 +546,9 @@ background-size:
 160px 160px,
 200px 200px;
 
-opacity:.85;
+opacity:.1;
 
-z-index:0;
+z-index:3;
 
 }
 @keyframes heroPulse{

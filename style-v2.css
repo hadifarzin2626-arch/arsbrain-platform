@@ -2768,11 +2768,19 @@ overflow:hidden;
 
 .brand-core{
 
-    position:relative;
+position:relative;
 
-    width:100%;
+width:100%;
 
-    min-height:650px;
+min-height:650px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+z-index:5;
 
 }
 

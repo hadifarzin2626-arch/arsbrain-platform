@@ -2469,8 +2469,8 @@ background:linear-gradient(
     transform:
     translate(-50%,-50%);
 
-    width:260px;
-    height:260px;
+    width:210px;
+    height:210px;
 
     z-index:20;
 
@@ -2481,8 +2481,8 @@ background:linear-gradient(
 
     position:absolute;
 
-    width:180px;
-    height:180px;
+    width:145px;
+    height:145px;
 
     top:50%;
     left:50%;

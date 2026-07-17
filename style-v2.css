@@ -2731,24 +2731,62 @@ position:absolute;
 top:50%;
 left:0;
 
-width:45px;
-height:45px;
+border-radius:50%;
+
+background:
+
+radial-gradient(circle at 28% 24%,
+rgba(255,255,255,.98) 0%,
+#f5f5f5 8%,
+#d9d9d9 22%,
+#a7a7a7 42%,
+#727272 62%,
+#3b3b3b 82%,
+#151515 100%);
+
+box-shadow:
+0 0 10px rgba(255,255,255,.35),
+0 0 24px rgba(210,210,210,.20),
+inset -10px -14px 16px rgba(0,0,0,.55),
+inset 8px 8px 10px rgba(255,255,255,.20);
+
+overflow:hidden;
+
+transition:
+transform .45s ease,
+box-shadow .45s ease;
+
+}
+.v3-planet::before{
+
+content:"";
+
+position:absolute;
+
+inset:0;
 
 border-radius:50%;
 
 background:
 
-radial-gradient(
-circle at 30% 30%,
-#ffffff,
-#8c8c8c 45%,
-#222 100%
-);
+radial-gradient(circle at 24% 22%,
+rgba(255,255,255,.55),
+transparent 26%),
 
+radial-gradient(circle at 70% 64%,
+rgba(0,0,0,.22),
+transparent 42%),
 
-box-shadow:
+repeating-radial-gradient(
+circle at 50% 50%,
+rgba(255,255,255,.03) 0px,
+rgba(255,255,255,.03) 2px,
+transparent 3px,
+transparent 8px);
 
-0 0 20px rgba(255,255,255,.25);
+opacity:.95;
+
+mix-blend-mode:soft-light;
 
 }
 /* =====================================================

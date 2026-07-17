@@ -2558,6 +2558,113 @@ opacity:.8;
 }
 
 /* =====================================================
+   ARS SOLAR SYSTEM V3
+   ORBIT STRUCTURE
+===================================================== */
+
+
+.ars-v3-orbits{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:translate(-50%,-50%);
+
+width:900px;
+height:900px;
+
+z-index:5;
+
+}
+
+
+
+.v3-orbit{
+
+position:absolute;
+
+top:50%;
+left:50%;
+
+transform:
+translate(-50%,-50%);
+
+border-radius:50%;
+
+border:1px solid rgba(241,208,138,.18);
+
+}
+
+
+
+.orbit-1{
+width:260px;
+height:260px;
+}
+
+.orbit-2{
+width:360px;
+height:360px;
+}
+
+.orbit-3{
+width:470px;
+height:470px;
+}
+
+.orbit-4{
+width:600px;
+height:600px;
+}
+
+.orbit-5{
+width:730px;
+height:730px;
+}
+
+.orbit-6{
+width:850px;
+height:850px;
+}
+
+.orbit-7{
+width:1000px;
+height:1000px;
+}
+
+
+
+.v3-planet{
+
+position:absolute;
+
+top:50%;
+left:0;
+
+width:45px;
+height:45px;
+
+border-radius:50%;
+
+background:
+
+radial-gradient(
+circle at 30% 30%,
+#ffffff,
+#8c8c8c 45%,
+#222 100%
+);
+
+
+box-shadow:
+
+0 0 20px rgba(255,255,255,.25);
+
+}
+
+/* =====================================================
    ARS SOLAR SYSTEM V4
    CINEMATIC SUN CORE
 ===================================================== */

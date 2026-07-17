@@ -2766,7 +2766,8 @@ position:absolute;
 inset:0;
 
 border-radius:50%;
-
+width:45px;
+height:45px;
 background:
 
 radial-gradient(circle at 24% 22%,

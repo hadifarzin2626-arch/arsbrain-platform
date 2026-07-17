@@ -2774,54 +2774,6 @@ inset -12px -14px 18px rgba(0,0,0,.55),
 inset 8px 8px 12px rgba(255,255,255,.18);
 
 }
-.v3-planet::before{
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-border-radius:50%;
-
-background:
-radial-gradient(circle at 30% 25%,
-rgba(255,255,255,.55),
-transparent 45%);
-
-mix-blend-mode:screen;
-
-}
-
-.v3-planet::after{
-
-content:"";
-
-position:absolute;
-
-inset:0;
-
-border-radius:50%;
-
-background:
-radial-gradient(circle at 70% 75%,
-transparent,
-rgba(0,0,0,.45));
-
-}
-.v3-planet:hover{
-
-transform:
-translate(-50%,-50%)
-scale(1.18);
-
-box-shadow:
-
-0 0 18px rgba(255,255,255,.35),
-0 0 45px rgba(241,208,138,.25),
-inset -12px -14px 18px rgba(0,0,0,.55);
-
-}
 
 
 

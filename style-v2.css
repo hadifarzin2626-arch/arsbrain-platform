@@ -2786,6 +2786,17 @@ transition:.35s ease;
     }
 
 }
+@keyframes sunSurface{
+
+0%,100%{
+filter:brightness(1) saturate(1);
+}
+
+50%{
+filter:brightness(1.15) saturate(1.25);
+}
+
+}
 @keyframes orbitRotate{
 
     from{
@@ -2899,15 +2910,16 @@ transition:.35s ease;
     border-radius:50%;
 
 
-    background-size:220% 220%;
+ background:
+radial-gradient(
+    circle at 35% 30%,
+    #fff4c7 0%,
+    #e1b45e 35%,
+    #a8752c 65%,
+    #4a290c 100%
+);
 
-    radial-gradient(
-        circle at 35% 30%,
-        #fff4c7,
-        #e1b45e 35%,
-        #a8752c 65%,
-        #4a290c 100%
-    );
+background-size:220% 220%;
 
 
     box-shadow:
@@ -2924,6 +2936,7 @@ transition:.35s ease;
     justify-content:center;
 
     align-items:center;
+    animation: sunSurface 12s ease-in-out infinite;
 
 }
 

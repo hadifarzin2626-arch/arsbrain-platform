@@ -442,31 +442,38 @@ color:var(--ars-gold);
 
 .hero{
 
-min-height:100vh;
+    min-height:100vh;
 
-display:flex;
+    display:flex;
 
-align-items:center;
+    align-items:center;
 
-justify-content:center;
+    justify-content:center;
 
-position:relative;
+    position:relative;
 
-overflow:hidden;
+    overflow:hidden;
 
-background:
+    background:
 
-radial-gradient(
-circle at center,
-rgba(201,164,92,.18),
-transparent 35%
-),
+    radial-gradient(circle at 62% 42%,
+    rgba(184,137,63,.18),
+    transparent 18%),
 
-linear-gradient(
-180deg,
-#050505,
-#000
-);
+    radial-gradient(circle at 18% 18%,
+    rgba(255,214,140,.08),
+    transparent 12%),
+
+    radial-gradient(circle at 88% 82%,
+    rgba(255,210,120,.06),
+    transparent 15%),
+
+    linear-gradient(
+    180deg,
+    #020202 0%,
+    #050505 45%,
+    #030303 100%
+    );
 
 }
 

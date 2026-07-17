@@ -518,7 +518,7 @@ animation:heroPulse 8s ease-in-out infinite;
     20px 40px,
     90px 120px;
 
-    opacity:.35;
+    opacity:.55;
 
     z-index:1;
 
@@ -546,7 +546,7 @@ background-size:
 160px 160px,
 200px 200px;
 
-opacity:.45;
+opacity:.85;
 
 z-index:0;
 

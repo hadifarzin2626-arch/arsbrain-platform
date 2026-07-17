@@ -2779,7 +2779,7 @@ display:flex;
 flex-direction:column;
 
 align-items:center;
-
+⁷
 z-index:5;
 
 }
@@ -2801,5 +2801,11 @@ z-index:5;
     width:100%;
 
     height:650px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
 
 }

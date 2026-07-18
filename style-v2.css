@@ -3333,3 +3333,25 @@ drop-shadow(0 0 4px rgba(255,255,255,.8));
     cursor:pointer;
     text-decoration:none;
 }
+.ars-sun-link{
+    display:block;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index:100;
+    cursor:pointer;
+}
+
+
+.ars-sun-link .ars-v3-sun{
+    position:relative;
+    top:auto;
+    left:auto;
+    transform:none;
+}
+
+
+.ars-sun-link:hover .ars-v3-sun{
+    transform:scale(1.08);
+}

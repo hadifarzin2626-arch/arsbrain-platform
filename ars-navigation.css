@@ -1,7 +1,7 @@
-/* =====================================================
-   ARS DYNAMIC NAVIGATION V1
-   PART 01
-===================================================== */
+/*======================================================
+ ARS NAVIGATION V1
+ PART 01
+======================================================*/
 
 .ars-navigation{
 
@@ -9,26 +9,24 @@
 
     width:100%;
 
-    height:650px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    overflow:visible;
+    height:700px;
 
 }
 
 
-/* ===========================
-   CENTER CORE
-=========================== */
+/*==============================
+  CENTER
+==============================*/
 
 .ars-core{
 
     position:absolute;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
 
     left:50%;
 
@@ -36,48 +34,32 @@
 
     transform:translate(-50%,-50%);
 
-    width:240px;
+    background:#222;
 
-    height:240px;
+    border:4px solid rgba(255,255,255,.08);
 
-    border-radius:50%;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    z-index:100;
-
-    pointer-events:none;
-
-}
-
-.ars-core img{
-
-    width:88%;
-
-    height:auto;
-
-    object-fit:contain;
-
-    user-select:none;
+    z-index:50;
 
 }
 
 
-/* ===========================
-   COMMON NODE
-=========================== */
+/*==============================
+  COMMON NODE
+==============================*/
 
 .nav-node{
 
     position:absolute;
 
-    width:78px;
+    width:85px;
 
-    height:78px;
+    height:85px;
+
+    border-radius:50%;
+
+    background:#555;
+
+    border:2px solid rgba(255,255,255,.12);
 
     display:flex;
 
@@ -87,147 +69,29 @@
 
     text-decoration:none;
 
-    border-radius:50%;
+    color:white;
 
-    transition:
+    font-size:12px;
 
-    transform .35s ease,
+    font-weight:600;
 
-    filter .35s ease,
-
-    opacity .35s ease;
-
-    z-index:20;
+    overflow:hidden;
 
 }
+
+
+/*==============================
+  TEMP HIDE
+==============================*/
 
 .nav-node img{
 
-    width:100%;
-
-    height:100%;
-
-    object-fit:contain;
-
-    border-radius:50%;
-
-    user-select:none;
-
-    pointer-events:none;
+    display:none;
 
 }
-
-
-/* ===========================
-   TITLE
-=========================== */
 
 .nav-node span{
 
-    position:absolute;
-
-    bottom:-34px;
-
-    left:50%;
-
-    transform:translateX(-50%);
-
-    white-space:nowrap;
-
-    color:white;
-
-    font-size:14px;
-
-    opacity:0;
-
-    transition:.3s;
-
     pointer-events:none;
 
-}
-
-
-/* ===========================
-   HOVER
-=========================== */
-
-.nav-node:hover{
-
-    transform:scale(1.18);
-
-    filter:
-
-    drop-shadow(0 0 18px rgba(241,208,138,.85));
-
-}
-
-.nav-node:hover span{
-
-    opacity:1;
-
-}
-
-
-/* ===========================
-   CLICK
-=========================== */
-
-.nav-node:active{
-
-    transform:scale(1.28);
-
-}
-/* =====================================================
-   PART 02
-   NODE POSITIONS
-===================================================== */
-
-/* بالا */
-
-.node1{
-    top:6%;
-    left:48%;
-}
-
-/* بالا راست */
-
-.node2{
-    top:20%;
-    right:14%;
-}
-
-/* راست */
-
-.node3{
-    top:50%;
-    right:4%;
-    transform:translateY(-50%);
-}
-
-/* پایین راست */
-
-.node4{
-    bottom:14%;
-    right:16%;
-}
-
-/* پایین */
-
-.node5{
-    bottom:4%;
-    left:48%;
-}
-
-/* پایین چپ */
-
-.node6{
-    bottom:20%;
-    left:12%;
-}
-
-/* بالا چپ */
-
-.node7{
-    top:18%;
-    left:10%;
 }

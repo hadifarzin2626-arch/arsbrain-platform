@@ -3318,3 +3318,14 @@ drop-shadow(0 0 4px rgba(255,255,255,.8));
     opacity:1;
 
 }
+/* RESTORE ARS SUN CENTER POSITION */
+
+.ars-v3-sun{
+
+    top:50% !important;
+    left:50% !important;
+
+    transform:
+    translate(-50%,-50%) !important;
+
+}

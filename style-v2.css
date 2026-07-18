@@ -3030,19 +3030,11 @@ background-size:220% 220%;
 @keyframes starsTwinkle{
 
 0%,100%{
-opacity:.75;
-}
-
-25%{
-opacity:.75;
+opacity:.45;
 }
 
 50%{
-opacity:.85;
+opacity:1;
 }
 
-75%{
-opacity:.75;
 }
-}
-

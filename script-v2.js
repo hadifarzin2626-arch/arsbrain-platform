@@ -273,6 +273,19 @@ if(arsCore){
     });
 
 }
+    // ARS SUN CLICK TEST
+
+const arsSun = document.querySelector(".ars-v3-sun");
+
+if(arsSun){
+
+    arsSun.onclick = function(){
+
+        window.location.href = "ars-brain.html";
+
+    };
+
+}
 
 );
 

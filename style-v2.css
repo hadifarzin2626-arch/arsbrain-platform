@@ -3255,3 +3255,66 @@ drop-shadow(0 0 4px rgba(255,255,255,.8));
     transform:scale(1.18)!important;
 
 }
+/* ===================================================== */
+/* ARS CORE - STEP 1 */
+/* ===================================================== */
+
+.ars-v3-sun{
+
+    position:relative;
+
+    width:170px;
+    height:170px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    cursor:pointer;
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease,
+        filter .30s ease;
+
+}
+
+.ars-v3-sun:hover{
+
+    transform:scale(1.08);
+
+    filter:brightness(1.08);
+
+}
+
+.ars-v3-sun:active{
+
+    transform:scale(1.14);
+
+}
+
+.ars-v3-sun::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-12px;
+
+    border-radius:50%;
+
+    border:2px solid rgba(241,208,138,.35);
+
+    opacity:0;
+
+    transition:.30s;
+
+}
+
+.ars-v3-sun:hover::after{
+
+    opacity:1;
+
+}

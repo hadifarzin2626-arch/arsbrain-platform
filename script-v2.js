@@ -180,51 +180,79 @@ window.addEventListener("scroll", () => {
 
 
 /*
-
 /* ===================================================== */
 /* ARS ECOSYSTEM ACTIVE OBSERVER */
 /* ===================================================== */
-
 
 const arsCards = document.querySelectorAll(
     ".ecosystem-card"
 );
 
 
-
 const arsObserver = new IntersectionObserver(
 
 (entries)=>{
 
+    entries.forEach(entry=>{
 
-entries.forEach(entry=>{
+        if(entry.isIntersecting){
 
+            entry.target.classList.add("ars-active");
 
-if(entry.isIntersecting){
+        }else{
 
+            entry.target.classList.remove("ars-active");
 
-entry.target.classList.add("ars-active");
+        }
 
-
-}else{
-
-
-entry.target.classList.remove("ars-active");
-
-
-}
-
-
-});
-
+    });
 
 },
 
 {
-
-threshold:.45
-
+    threshold:.45
 }
+
+);
+
+
+arsCards.forEach(card=>{
+
+    arsObserver.observe(card);
+
+});
+
+
+
+
+
+/* ===================================================== */
+/* ARS CORE SUN CLICK INTERACTION */
+/* ===================================================== */
+
+
+document.addEventListener("DOMContentLoaded",()=>{
+
+
+    const arsCore = document.querySelector(".ars-v3-sun");
+
+
+    if(arsCore){
+
+
+        arsCore.addEventListener("click",()=>{
+
+
+            arsCore.classList.toggle("core-click");
+
+
+        });
+
+
+    }
+
+
+});
     /* ========================================= */
 /* ARS CORE - STEP 1 */
 /* ========================================= */

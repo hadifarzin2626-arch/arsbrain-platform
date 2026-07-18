@@ -3352,3 +3352,9 @@ drop-shadow(0 0 4px rgba(255,255,255,.8));
 .ars-sun-link:hover .ars-v3-sun{
     transform:scale(1.08);
 }
+.hero-glow-layer,
+.hero-stars,
+.hero-stars-2,
+.brand-energy{
+    pointer-events:none;
+}

@@ -3218,7 +3218,7 @@ drop-shadow(0 0 4px rgba(255,255,255,.8));
 .ars-sun-link:hover .ars-v3-sun,
 .ars-sun-link:active .ars-v3-sun{
 
-    transform:scale(1.12);
+    scale:1.12;
 
     filter:drop-shadow(0 0 35px rgba(255,210,120,.85));
 

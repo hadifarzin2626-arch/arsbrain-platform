@@ -254,27 +254,27 @@ gap:14px;
 
 padding:0;
 
-background:transparent;
+background:transparent !important;
+
+backdrop-filter:none;
+
+-webkit-backdrop-filter:none;
 
 border:none;
 
 box-shadow:none;
 
-}
-.mother-logo,
-.mother-logo-hero{
-    mix-blend-mode:normal;
+overflow:visible;
 
-    width:88px;
-    height:auto;
-    display:block;
-    margin-bottom:4px;
+}.mother-logo,
+.mother-logo{
 
-    filter:
-    drop-shadow(0 0 8px rgba(201,164,92,.30))
-    drop-shadow(0 0 20px rgba(201,164,92,.18));
+background:transparent !important;
 
-    transition:.45s ease;
+mix-blend-mode:normal;
+
+display:block;
+
 }
 
 .brand-title{

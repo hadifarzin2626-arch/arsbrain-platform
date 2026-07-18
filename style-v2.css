@@ -3173,3 +3173,32 @@ filter:
 drop-shadow(0 0 4px rgba(255,255,255,.8));
 
     }
+/* =====================================================
+   ARS SOLAR IMAGE
+===================================================== */
+
+.ars-solar-system-image{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    width:820px;
+
+    max-width:92%;
+
+    height:auto;
+
+    z-index:25;
+
+    pointer-events:none;
+
+    user-select:none;
+
+    filter:
+    drop-shadow(0 0 35px rgba(255,190,70,.45));
+
+}

@@ -2917,6 +2917,7 @@ filter:brightness(1.15) saturate(1.25);
     border-radius:50%;
 
     z-index:30;
+    pointer-events:none;
 
     isolation:isolate;
 

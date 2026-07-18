@@ -218,6 +218,7 @@ transform:translateY(0px);
 
 }
 
+
 }
 
 .node1{animation-delay:.2s;}
@@ -227,3 +228,130 @@ transform:translateY(0px);
 .node5{animation-delay:1.4s;}
 .node6{animation-delay:2.8s;}
 .node7{animation-delay:4s;}
+/*==============================
+ARS PREMIUM EFFECTS
+==============================*/
+
+.nav-node{
+
+    animation:
+        arsFloat 5s ease-in-out infinite,
+        arsPulse 3s ease-in-out infinite;
+
+}
+
+.nav-node:hover{
+
+    transform:scale(1.22);
+
+    filter:brightness(1.35);
+
+    box-shadow:
+        0 0 20px rgba(255,220,120,.4),
+        0 0 60px rgba(255,180,80,.6);
+
+}
+
+.nav-node:active{
+
+    transform:scale(.92);
+
+}
+
+/* نور تنفسی */
+
+@keyframes arsPulse{
+
+0%,100%{
+
+    filter:brightness(.9);
+
+}
+
+50%{
+
+    filter:brightness(1.3);
+
+}
+
+}
+
+/* شناور بودن */
+
+@keyframes arsFloat{
+
+0%{
+
+transform:translateY(0px);
+
+}
+
+25%{
+
+transform:translateY(-8px);
+
+}
+
+50%{
+
+transform:translateY(6px);
+
+}
+
+75%{
+
+transform:translateY(-5px);
+
+}
+
+100%{
+
+transform:translateY(0px);
+
+}
+
+}
+
+/* هر گوی حرکت متفاوت */
+
+.node1{
+
+animation-duration:4.6s,2.8s;
+
+}
+
+.node2{
+
+animation-duration:5.4s,3.1s;
+
+}
+
+.node3{
+
+animation-duration:6.2s,2.6s;
+
+}
+
+.node4{
+
+animation-duration:4.8s,3.5s;
+
+}
+
+.node5{
+
+animation-duration:5.8s,2.9s;
+
+}
+
+.node6{
+
+animation-duration:6.4s,3.3s;
+
+}
+
+.node7{
+
+animation-duration:5.1s,2.7s;
+
+}

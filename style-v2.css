@@ -267,9 +267,8 @@ box-shadow:none;
 overflow:visible;
 }
 .mother-logo{
-    background: transparent !important;
-    mix-blend-mode: normal;
-    display: block;
+    width:88px;
+    height:auto;
 }
 
 .brand-title{

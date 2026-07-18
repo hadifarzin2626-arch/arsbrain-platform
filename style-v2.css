@@ -2894,6 +2894,11 @@ filter:brightness(1.15) saturate(1.25);
 }
 
 
+/* =====================================================
+   SECTION 01
+   ARS CINEMATIC SUN CONTAINER
+===================================================== */
+
 .ars-v3-sun{
 
     position:absolute;
@@ -2903,10 +2908,22 @@ filter:brightness(1.15) saturate(1.25);
 
     transform:translate(-50%,-50%);
 
-    width:260px;
-    height:260px;
+    width:300px;
+    height:300px;
 
-    z-index:20;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    z-index:30;
+
+    isolation:isolate;
+
+    pointer-events:none;
+
+    will-change:transform,filter;
 
 }
 

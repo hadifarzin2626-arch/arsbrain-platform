@@ -266,15 +266,10 @@ box-shadow:none;
 
 overflow:visible;
 
-}.mother-logo,
 .mother-logo{
-
-background:transparent !important;
-
-mix-blend-mode:normal;
-
-display:block;
-
+    background: transparent !important;
+    mix-blend-mode: normal;
+    display: block;
 }
 
 .brand-title{

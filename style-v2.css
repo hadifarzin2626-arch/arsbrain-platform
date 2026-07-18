@@ -2861,14 +2861,10 @@ pointer-events:auto;
 
 0%,100%{
 filter:brightness(1) saturate(1);
-}
 
-50%{
-filter:brightness(1.15) saturate(1.25);
 }
 
 }
-@keyframes orbitRotate{
 
     from{
         transform:translate(-50%,-50%) rotate(0deg);

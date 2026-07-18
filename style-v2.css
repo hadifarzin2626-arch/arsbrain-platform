@@ -2950,7 +2950,7 @@ filter:brightness(1.15) saturate(1.25);
     filter:blur(35px);
 
     animation:sunEnergy 7s ease-in-out infinite;
-
+pointer-events:none;
 }
 
 
@@ -2977,7 +2977,7 @@ filter:brightness(1.15) saturate(1.25);
     filter:blur(18px);
 
     animation:sunCorona 6s ease-in-out infinite;
-
+pointer-events:none;
 }
 
 

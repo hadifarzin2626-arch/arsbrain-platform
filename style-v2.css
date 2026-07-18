@@ -3046,9 +3046,9 @@ body::before{
 
 content:"";
 
-position:absolute;
+position:fixed;
 
-top:100vh;
+top:0;
 left:0;
 
 width:100%;
@@ -3073,7 +3073,7 @@ background-position:
 
 opacity:.55;
 
-z-index:0;
+z-index:-1;
 
 filter:
 drop-shadow(0 0 4px rgba(255,255,255,.8));

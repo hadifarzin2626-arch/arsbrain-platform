@@ -296,3 +296,22 @@ arsCards.forEach(card=>{
 arsObserver.observe(card);
 
 });
+document.addEventListener("DOMContentLoaded", function(){
+
+    const sun = document.querySelector(".ars-v3-sun");
+
+    console.log("SUN TEST:", sun);
+
+    if(sun){
+
+        sun.style.cursor = "pointer";
+
+        sun.addEventListener("click", function(){
+
+            alert("ARS SUN CLICKED");
+
+        });
+
+    }
+
+});

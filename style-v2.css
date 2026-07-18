@@ -3225,3 +3225,33 @@ drop-shadow(0 0 4px rgba(255,255,255,.8));
     cursor:pointer;
 
 }
+/* ========================================= */
+/* ARS CORE - STEP 1 */
+/* ========================================= */
+
+.ars-v3-sun{
+
+    cursor:pointer;
+
+    transition:
+        transform .28s ease,
+        filter .28s ease;
+
+}
+
+.ars-v3-sun:hover{
+
+    transform:scale(1.08);
+
+}
+
+.ars-v3-sun:active{
+
+    transform:scale(1.14);
+
+}
+.core-click{
+
+    transform:scale(1.18)!important;
+
+}

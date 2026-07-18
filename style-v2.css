@@ -2971,8 +2971,8 @@ filter:brightness(1.15) saturate(1.25);
 
     position:absolute;
 
-    width:190px;
-    height:190px;
+width:50px !important;
+height:50px !important;
 
     top:50%;
     left:50%;
@@ -3013,7 +3013,7 @@ justify-content:center;
 align-items:center;
 
 animation: sunSurface 12s ease-in-out infinite;
-background:red !important;
+
 }
 
 

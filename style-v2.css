@@ -532,7 +532,7 @@ animation:heroPulse 8s ease-in-out infinite;
 
     opacity:.22;
 
-    transform:scale(1.25);
+    transform:scale(2);
 
     filter:blur(.3px);
 
@@ -551,10 +551,10 @@ pointer-events:none;
 
 background:
 
-radial-gradient(circle at 20% 25%, rgba(255,255,255,.10) 0 1px, transparent 2px),
-radial-gradient(circle at 70% 18%, rgba(255,255,255,.08) 0 1px, transparent 2px),
-radial-gradient(circle at 82% 70%, rgba(255,255,255,.10) 0 1px, transparent 2px),
-radial-gradient(circle at 12% 78%, rgba(255,255,255,.07) 0 1px, transparent 2px);
+radial-gradient(circle at 20% 25%, rgba(255,255,255,.35) 0 1px, transparent 3px),
+radial-gradient(circle at 70% 18%, rgba(255,255,255,.30) 0 1px, transparent 3px),
+radial-gradient(circle at 82% 70%, rgba(255,255,255,.35) 0 1px, transparent 3px),
+radial-gradient(circle at 12% 78%, rgba(255,255,255,.25) 0 1px, transparent 3px);
 
 background-size:
 80px 80px,
@@ -579,9 +579,9 @@ transform:scale(.95);
 
 50%{
 
-opacity:.85;
+opacity:.1;
 
-transform:scale(1.05);
+transform:scale(1.8);
 
 }
 

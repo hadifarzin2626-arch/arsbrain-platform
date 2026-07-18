@@ -3199,3 +3199,29 @@ filter:
 drop-shadow(0 0 4px rgba(255,255,255,.8));
 
 }
+.ars-sun-link{
+
+    display:inline-block;
+
+    text-decoration:none;
+
+}
+
+.ars-v3-sun{
+
+    transition:
+        transform .35s ease,
+        filter .35s ease;
+
+}
+
+.ars-sun-link:hover .ars-v3-sun,
+.ars-sun-link:active .ars-v3-sun{
+
+    transform:scale(1.12);
+
+    filter:drop-shadow(0 0 35px rgba(255,210,120,.85));
+
+    cursor:pointer;
+
+}

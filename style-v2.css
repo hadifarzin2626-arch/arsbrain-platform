@@ -2971,8 +2971,8 @@ filter:brightness(1.15) saturate(1.25);
 
     position:absolute;
 
-width:50px !important;
-height:50px !important;
+width:210px;
+height:210px;
 
     top:50%;
     left:50%;

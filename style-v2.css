@@ -3052,3 +3052,43 @@ opacity:.42;
 }
 
 }
+.site-stars,
+.site-stars-2{
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    width:100%;
+    height:100%;
+
+    background-image:
+
+    radial-gradient(circle, rgba(255,255,255,.40) .6px, transparent 1.5px),
+    radial-gradient(circle, rgba(255,255,255,.25) .8px, transparent 1.8px),
+    radial-gradient(circle, rgba(255,245,220,.20) 1px, transparent 2px);
+
+    background-size:
+    70px 70px,
+    120px 120px,
+    180px 180px;
+
+    animation:starsTwinkle 14s ease-in-out infinite;
+
+}
+
+.site-stars-2{
+
+    opacity:.25;
+
+    transform:scale(1.3);
+
+    filter:blur(.4px);
+
+    animation-duration:22s;
+
+}

@@ -2704,7 +2704,7 @@ width:900px;
 height:900px;
 
 z-index:5;
-
+pointer-events:none;
 }
 
 
@@ -2803,7 +2803,7 @@ box-shadow:
 inset -8px -8px 12px rgba(0,0,0,.45);
 
 transition:.35s ease;
-
+pointer-events:auto;
 }
 
 

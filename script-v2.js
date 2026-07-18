@@ -225,6 +225,26 @@ entry.target.classList.remove("ars-active");
 threshold:.45
 
 }
+    /* ========================================= */
+/* ARS CORE - STEP 1 */
+/* ========================================= */
+
+const arsCore=document.querySelector(".ars-v3-sun");
+
+if(arsCore){
+
+    arsCore.addEventListener("click",function(){
+
+        arsCore.classList.add("core-click");
+
+        setTimeout(function(){
+
+         window.location.href="#about";
+        },280);
+
+    });
+
+}
 
 );
 

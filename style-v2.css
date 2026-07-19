@@ -2107,9 +2107,8 @@ perspective:1200px;
 .orbit-core{
 
     position:absolute;
-
-    width:300px;
-    height:300px;
+width:170px;
+height:170px;
 
     top:50%;
     left:50%;
@@ -2266,8 +2265,8 @@ perspective:1200px;
 
     transform:translate(-50%,-45%);
 
-    width:700px;
-    height:700px;
+    width:720px;
+    height:720px;
 
     pointer-events:none;
 

@@ -1580,6 +1580,60 @@
     }
 
 }
+/* ===============================
+   ARS NAVIGATION STABILITY FIX
+=============================== */
+
+
+.ars-node{
+
+    opacity:1 !important;
+
+    animation:none !important;
+
+    display:flex !important;
+
+}
+
+
+
+.ars-node .planet{
+
+    animation:none !important;
+
+    opacity:1 !important;
+
+    filter:none;
+
+}
+
+
+
+.planet-glow,
+.planet::after,
+.planet-core::after{
+
+    animation:none !important;
+
+}
+
+
+
+.ars-node:hover{
+
+    transform:scale(1.2) !important;
+
+    filter:brightness(1.2);
+
+}
+
+
+
+.ars-core{
+
+    opacity:1 !important;
+
+}
 
 /* =====================================================
    END ARS NAVIGATION V3 CSS

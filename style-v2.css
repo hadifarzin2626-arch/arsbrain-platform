@@ -2450,10 +2450,6 @@ color:white;
 line-height:1.2;
 
 }
-body{
-    border:10px solid red !important;
-}
-
 /* ===================================================== */
 /* WHO WE ARE */
 /* ===================================================== */
@@ -2527,6 +2523,67 @@ body{
 @media(max-width:980px){
 
 .who-grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+
+/* ===================================================== */
+/* MISSION */
+/* ===================================================== */
+
+.mission{
+
+    padding:180px 0;
+
+}
+
+.mission-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(3,1fr);
+
+    gap:35px;
+
+    margin-top:80px;
+
+}
+
+.mission-card{
+
+    padding:45px;
+
+    text-align:center;
+
+}
+
+.mission-card h3{
+
+    color:var(--ars-gold);
+
+    font-size:28px;
+
+    margin-bottom:22px;
+
+}
+
+.mission-card p{
+
+    color:#d4d4d4;
+
+    line-height:1.9;
+
+    font-size:17px;
+
+}
+
+@media(max-width:980px){
+
+.mission-grid{
 
 grid-template-columns:1fr;
 

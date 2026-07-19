@@ -431,10 +431,13 @@ color:var(--ars-gold);
 /* ===================================================== */
 /* ARS HERITAGE PREMIUM HERO */
 /* ===================================================== */
-
 .hero{
 
     min-height:100vh;
+
+    padding-top:220px;
+
+    padding-bottom:120px;
 
     display:flex;
 
@@ -727,7 +730,7 @@ transform:scale(1.1);
 
 .hero-content{
 
-margin-top:420px;
+margin-top:220px;
 
 max-width:850px;
 
@@ -2260,7 +2263,7 @@ height:170px;
 
     position:absolute;
 
-    top:38%;
+    top:32%;
 
     left:50%;
 

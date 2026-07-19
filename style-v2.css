@@ -2455,4 +2455,172 @@ color:#ffd66e;
 
 }
 
-  
+ /* ===================================================== */
+/* ARS GLASS ORBIT SYSTEM */
+/* ===================================================== */
+
+.ars-orbit{
+
+    width:700px;
+    height:700px;
+
+    position:relative;
+
+    margin:0 auto;
+
+}
+
+
+/* CENTER */
+
+.orbit-core{
+
+    position:absolute;
+
+    width:300px;
+    height:300px;
+
+    top:50%;
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:
+    rgba(255,255,255,.08);
+
+    backdrop-filter:blur(20px);
+
+    border:
+    1px solid rgba(255,255,255,.25);
+
+    box-shadow:
+    0 0 50px rgba(184,137,63,.45);
+
+}
+
+
+.orbit-core img{
+
+    width:85%;
+    height:85%;
+
+    object-fit:contain;
+
+}
+
+
+
+/* GLASS ITEMS */
+
+.orbit-item{
+
+    position:absolute;
+
+    width:130px;
+    height:130px;
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+
+    background:
+    rgba(255,255,255,.10);
+
+
+    backdrop-filter:blur(18px);
+
+
+    border:
+    1px solid rgba(255,255,255,.25);
+
+
+    box-shadow:
+    0 0 30px rgba(184,137,63,.25);
+
+}
+
+
+
+.orbit-item img{
+
+    width:75%;
+    height:75%;
+
+    object-fit:contain;
+
+}
+
+
+
+/* POSITIONS */
+
+
+.orbit-1{
+
+    top:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+.orbit-2{
+
+    top:130px;
+    right:40px;
+
+}
+
+
+.orbit-3{
+
+    bottom:130px;
+    right:40px;
+
+}
+
+
+.orbit-4{
+
+    bottom:20px;
+    left:50%;
+
+    transform:translateX(-50%);
+
+}
+
+
+.orbit-5{
+
+    bottom:130px;
+    left:40px;
+
+}
+
+
+.orbit-6{
+
+    top:130px;
+    left:40px;
+
+}
+
+
+.orbit-7{
+
+    top:50%;
+    right:0;
+
+    transform:translateY(-50%);
+
+} 

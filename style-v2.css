@@ -2095,18 +2095,6 @@ perspective:1200px;
 /* ARS GLASS ORBIT SYSTEM */
 /* ===================================================== */
 
-.ars-orbit{
-
-    width:220px;
-    height:220px;
-
-    position:relative;
-
-    margin:0 auto;
-
-}
-
-
 /* CENTER */
 
 .orbit-core{

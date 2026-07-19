@@ -2304,3 +2304,66 @@ height:170px;
     object-fit:contain !important;
 
 }
+.ars-glass{
+
+    background:
+    rgba(255,255,255,.07);
+
+    backdrop-filter:blur(22px);
+    -webkit-backdrop-filter:blur(22px);
+
+    border:
+    1px solid rgba(255,255,255,.16);
+
+    border-radius:28px;
+
+    box-shadow:
+
+    0 20px 60px rgba(0,0,0,.35),
+
+    inset 0 1px 0 rgba(255,255,255,.15);
+
+    transition:.45s ease;
+
+}
+
+
+.ars-glass:hover{
+
+    transform:translateY(-8px);
+
+    border-color:
+    rgba(201,164,92,.55);
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,.55),
+
+    0 0 35px rgba(201,164,92,.25);
+
+}
+.section-label{
+
+    color:var(--ars-gold);
+
+    letter-spacing:5px;
+
+    font-size:13px;
+
+    text-transform:uppercase;
+
+}
+
+
+.section-header h2{
+
+    font-size:
+    clamp(38px,5vw,64px);
+
+    font-weight:500;
+
+    color:white;
+
+    line-height:1.2;
+
+}

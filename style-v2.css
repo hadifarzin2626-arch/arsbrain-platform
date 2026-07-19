@@ -2287,3 +2287,16 @@ height:170px;
     justify-content:center;
 
 }
+/* TEMP FIX - HEADER LOGO ISOLATION */
+
+.main-header img.mother-logo{
+
+    width:88px !important;
+
+    height:auto !important;
+
+    max-width:88px !important;
+
+    object-fit:contain !important;
+
+}

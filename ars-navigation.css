@@ -1520,7 +1520,66 @@
 
 }
 
+/* ===============================
+   ARS NODE FIX ENGINE
+=============================== */
 
+
+.ars-node{
+
+    animation:none;
+
+    transition:
+    transform .45s ease,
+    filter .45s ease,
+    box-shadow .45s ease;
+
+}
+
+
+.ars-node .planet{
+
+    animation:
+    orbMove 7s ease-in-out infinite alternate;
+
+}
+
+
+.ars-node:hover{
+
+    transform:
+    scale(1.25)
+    translateY(-10px);
+
+    filter:
+    brightness(1.25);
+
+}
+
+
+.ars-node:hover span{
+
+    font-weight:900;
+
+}
+
+
+@keyframes orbMove{
+
+    from{
+
+        translate:0 0;
+
+    }
+
+
+    to{
+
+        translate:0 -15px;
+
+    }
+
+}
 
 /* =====================================================
    END ARS NAVIGATION V3 CSS

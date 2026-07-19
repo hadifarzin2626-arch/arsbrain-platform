@@ -98,9 +98,11 @@ ul {
 
 .container {
 
-    width:90%;
+    .container{
 
-    max-width:var(--container-width);
+    width:96%;
+
+    max-width:1770px;
 
     margin:auto;
 
@@ -197,8 +199,8 @@ left:50%;
 
 transform:translateX(-50%);
 
-width:94%;
-max-width:1450px;
+width:99%;
+max-width:1900px;
 
 height:90px;
 
@@ -266,7 +268,7 @@ box-shadow:none;
 overflow:visible;
 }
 .mother-logo{
-    width:88px;
+    width:68px;
     height:auto;
 }
 
@@ -730,7 +732,7 @@ transform:scale(1.1);
 
 .hero-content{
 
-margin-top:500px;
+margin-top:800px;
 
 max-width:850px;
 
@@ -2263,7 +2265,7 @@ height:170px;
 
     position:absolute;
 
-    top:32%;
+    top:20%;
 
     left:50%;
 

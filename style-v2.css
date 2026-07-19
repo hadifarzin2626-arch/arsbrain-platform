@@ -648,7 +648,8 @@ letter-spacing:2px;
 
 .hero-ars{
 
-font-size:70px;
+font-size:(45px,6vw,70px);
+
 
 font-weight:800;
 
@@ -671,7 +672,8 @@ linear-gradient(
 
 .hero-heritage{
 
-font-size:52px;
+font-size(32px,4vw,52px);
+
 
 font-weight:300;
 

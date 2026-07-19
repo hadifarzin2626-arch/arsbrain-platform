@@ -727,7 +727,7 @@ transform:scale(1.1);
 
 .hero-content{
 
-margin-top:70px;
+margin-top:420px;
 
 max-width:850px;
 
@@ -753,7 +753,7 @@ text-transform:uppercase;
 
 .hero-content h2{
 
-margin-top:25px;
+margin-top:30px;
 
 font-size:
 
@@ -2271,5 +2271,24 @@ height:170px;
     pointer-events:none;
 
     z-index:5;
+
+}
+/* ===================================================== */
+/* HERO WRAPPER */
+/* ===================================================== */
+
+.hero-wrapper{
+
+    position:relative;
+
+    min-height:100vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
 
 }

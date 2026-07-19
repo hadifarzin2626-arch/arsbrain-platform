@@ -2433,3 +2433,51 @@ padding:8px 14px;
 }
 
 }
+
+ .ars-menu{
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:20px;
+
+padding:20px;
+
+background:#111;
+
+position:relative;
+
+z-index:999;
+
+}
+
+.ars-menu a{
+
+color:white;
+
+text-decoration:none;
+
+padding:12px 20px;
+
+border-radius:30px;
+
+background:#222;
+
+transition:.3s;
+
+font-weight:700;
+
+}
+
+.ars-menu a:hover{
+
+background:#b8893f;
+
+color:black;
+
+transform:translateY(-3px);
+
+}   

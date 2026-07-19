@@ -2092,8 +2092,8 @@ perspective:1200px;
 
 .ars-orbit{
 
-    width:700px;
-    height:700px;
+    width:220px;
+    height:220px;
 
     position:relative;
 
@@ -2260,19 +2260,19 @@ height:170px;
 
     position:absolute;
 
-    top:50%;
+    top:38%;
 
     left:50%;
 
-    transform:translate(-50%,-45%);
+    transform:translate(-50%,-50%);
 
-    width:700px;
+    width:520px;
 
-    height:700px;
+    height:520px;
 
     pointer-events:none;
 
-    z-index:5;
+    z-index:2;
 
 }
 /* ===================================================== */

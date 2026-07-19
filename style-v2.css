@@ -104,6 +104,8 @@ ul {
 
     max-width:1450px;
 
+    max-width:var(--container-width);
+
     margin:auto;
 
 }

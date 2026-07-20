@@ -2267,7 +2267,7 @@ height:170px;
 
     height:520px;
 
-    pointer-events:none;
+   pointer-events:auto;
 
     z-index:2;
 

@@ -2619,3 +2619,58 @@ height:100%;
 object-fit:cover;
 
 }
+/* ===================================================== */
+/* ARS MEDIA CENTER */
+/* ===================================================== */
+
+.media-hero,
+.media-services,
+.media-production,
+.media-gallery,
+.media-community,
+.media-newsroom,
+.media-contact{
+
+position:relative;
+
+padding:120px 8%;
+
+overflow:hidden;
+
+}
+
+.media-hero{
+
+min-height:100vh;
+
+display:flex;
+
+flex-direction:column;
+
+justify-content:center;
+
+align-items:center;
+
+text-align:center;
+
+}
+
+.media-hero h1{
+
+font-size:clamp(42px,6vw,82px);
+
+margin-bottom:20px;
+
+}
+
+.media-hero p{
+
+max-width:900px;
+
+line-height:1.9;
+
+opacity:.9;
+
+margin:auto;
+
+}

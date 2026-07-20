@@ -2674,3 +2674,92 @@ opacity:.9;
 margin:auto;
 
 }
+/* ===================================================== */
+/* ARS ENGINEERING PREVIEW */
+/* ===================================================== */
+
+.engineering-card{
+position:relative;
+overflow:hidden;
+}
+
+.engineering-card img{
+width:100%;
+height:auto;
+display:block;
+}
+
+.ars-card-content{
+padding:25px;
+}
+
+.ars-card-content h3{
+font-size:28px;
+margin-bottom:15px;
+}
+
+.ars-card-content p{
+opacity:.8;
+line-height:1.8;
+}
+
+.ars-card-content a{
+display:inline-block;
+margin-top:20px;
+}
+
+
+
+/* ===================================================== */
+/* ENGINEERING PREVIEW GLASS */
+/* ===================================================== */
+
+.engineering-preview{
+padding:100px 0;
+}
+
+.preview-glass{
+
+background:
+rgba(255,255,255,.08);
+
+backdrop-filter:
+blur(20px);
+
+border:
+1px solid rgba(255,255,255,.15);
+
+border-radius:30px;
+
+padding:60px;
+
+text-align:center;
+
+}
+
+.preview-glass h2{
+
+font-size:42px;
+
+margin-bottom:20px;
+
+}
+
+
+.preview-glass p{
+
+max-width:850px;
+
+margin:auto;
+
+line-height:2;
+
+opacity:.85;
+
+}
+
+.preview-glass .btn-primary{
+
+margin-top:35px;
+
+}

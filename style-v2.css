@@ -2758,8 +2758,43 @@ opacity:.85;
 
 }
 
+
 .preview-glass .btn-primary{
 
 margin-top:35px;
 
 }
+
+
+/* ===================================================== */
+/* ARS ORBIT LINKS */
+/* ===================================================== */
+
+.orbit-link{
+
+display:flex;
+
+width:100%;
+
+height:100%;
+
+align-items:center;
+
+justify-content:center;
+
+position:relative;
+
+z-index:10;
+
+cursor:pointer;
+
+}
+
+.orbit-link img{
+
+pointer-events:none;
+
+}
+
+
+

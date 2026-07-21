@@ -1,7 +1,19 @@
 /* =========================================================
-   ARS BRAIN — PREMIUM TEST DESIGN SYSTEM
-   GOLD / BRONZE / DARK BLUE
-   Dedicated to .brain-test-page only
+   ARS BRAIN — LUXURY DESIGN TEST
+   =========================================================
+
+   DESIGN REFERENCE:
+   "13 A's" VISUAL LANGUAGE
+
+   CORE DNA:
+   Deep Black
+   Warm Metallic Gold
+   Bronze
+   Premium Dark Glass
+   Soft Gold Light
+   Cinematic Depth
+   Elegant Typography
+   Subtle Motion
    ========================================================= */
 
 
@@ -9,165 +21,255 @@
    01 — DESIGN TOKENS
    ========================================================= */
 
-.brain-test-page{
+:root{
 
-    --ars-gold:#d4af62;
-    --ars-gold-light:#f2d58d;
-    --ars-gold-soft:#b99450;
-    --ars-bronze:#9b7040;
-    --ars-blue:#253b52;
+    /* ---------- BACKGROUND ---------- */
 
-    --ars-black:#07090c;
-    --ars-black-2:#0b0f14;
-    --ars-black-3:#10151b;
+    --ars-black:
+        #050505;
 
-    --ars-white:#f2f1ed;
-    --ars-muted:#aaa9a4;
+    --ars-black-soft:
+        #090806;
+
+    --ars-black-warm:
+        #0D0B08;
+
+
+    /* ---------- GOLD ---------- */
+
+    --ars-gold:
+        #C6A15B;
+
+    --ars-gold-light:
+        #E2C27A;
+
+    --ars-gold-soft:
+        #D5B46D;
+
+    --ars-gold-dark:
+        #8B6835;
+
+
+    /* ---------- BRONZE ---------- */
+
+    --ars-bronze:
+        #76552F;
+
+    --ars-bronze-soft:
+        #A27A43;
+
+
+    /* ---------- TEXT ---------- */
+
+    --ars-white:
+        #F2EEE6;
+
+    --ars-white-soft:
+        #D8D2C8;
+
+    --ars-text-muted:
+        #A8A196;
+
+
+    /* ---------- GLASS ---------- */
 
     --ars-glass:
-        rgba(255,255,255,.055);
+        rgba(20,17,13,.62);
 
-    --ars-border:
-        rgba(212,175,98,.28);
+    --ars-glass-light:
+        rgba(255,255,255,.035);
 
-    --ars-glow:
-        rgba(212,175,98,.18);
+    --ars-glass-border:
+        rgba(198,161,91,.22);
 
-    color:
-        var(--ars-white);
+    --ars-glass-border-hover:
+        rgba(226,194,122,.62);
+
+
+    /* ---------- LIGHT ---------- */
+
+    --ars-gold-glow:
+        rgba(198,161,91,.18);
+
+    --ars-gold-glow-strong:
+        rgba(198,161,91,.32);
+
+
+    /* ---------- SHAPE ---------- */
+
+    --ars-radius:
+        22px;
+
+    --ars-radius-small:
+        14px;
+
+
+    /* ---------- TRANSITION ---------- */
+
+    --ars-transition:
+        .45s cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+/* =========================================================
+   02 — GLOBAL RESET
+   ========================================================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
 
     background:
 
         radial-gradient(
-            circle at 50% -10%,
-            rgba(212,175,98,.12),
+            circle at 50% 0%,
+            rgba(198,161,91,.055),
             transparent 32%
-        ),
-
-        radial-gradient(
-            circle at 90% 50%,
-            rgba(37,59,82,.15),
-            transparent 30%
         ),
 
         linear-gradient(
             180deg,
-            #07090c 0%,
-            #090c10 50%,
-            #07090c 100%
+            #050505 0%,
+            #080706 45%,
+            #050505 100%
         );
 
-    overflow-x:hidden;
+    color:
+        var(--ars-white);
 
+    font-family:
+        "Inter",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.8;
+
+    overflow-x:
+        hidden;
+
+    -webkit-font-smoothing:
+        antialiased;
 }
 
 
 /* =========================================================
-   02 — GLOBAL
+   03 — GLOBAL CONTAINER
    ========================================================= */
 
-.brain-test-page *,
-.brain-test-page *::before,
-.brain-test-page *::after{
-
-    box-sizing:border-box;
-
-}
-
-
-.brain-test-page img{
-
-    max-width:100%;
-
-    height:auto;
-
-}
-
-
-.brain-test-page section{
-
-    position:relative;
-
-    overflow:hidden;
-
-}
-
-
-.brain-test-page .container{
+.container{
 
     width:
-        min(1180px,calc(100% - 40px));
+        min(1180px, calc(100% - 64px));
 
     margin:
         0 auto;
 
+    position:
+        relative;
+
+    z-index:
+        2;
 }
 
 
 /* =========================================================
-   03 — PREMIUM SECTION TITLES
+   04 — SECTION SPACING
    ========================================================= */
 
-.brain-test-page
+section{
+
+    position:
+        relative;
+
+    padding:
+        110px 0;
+
+    overflow:
+        hidden;
+}
+
+
+/* =========================================================
+   05 — PREMIUM SECTION HEADINGS
+   ========================================================= */
+
 .section-heading{
 
-    position:relative;
-
-    text-align:center;
-
-    max-width:850px;
+    max-width:
+        850px;
 
     margin:
-        0 auto 65px;
+        0 auto 70px;
+
+    text-align:
+        center;
 
 }
 
 
-.brain-test-page
 .section-label{
 
-    display:inline-block;
+    display:
+        inline-block;
 
-    position:relative;
-
-    margin-bottom:18px;
+    margin-bottom:
+        18px;
 
     color:
         var(--ars-gold-light);
 
     font-size:
-        .78rem;
+        11px;
 
-    font-weight:700;
+    font-weight:
+        600;
 
     letter-spacing:
-        .32em;
+        .28em;
 
-    text-transform:uppercase;
+    text-transform:
+        uppercase;
 
-    text-shadow:
-        0 0 18px
-        rgba(212,175,98,.28);
+    position:
+        relative;
 
 }
 
 
-.brain-test-page
+/* Gold line under section label */
+
 .section-label::after{
 
-    content:"";
+    content:
+        "";
 
-    display:block;
+    display:
+        block;
 
-    width:55px;
+    width:
+        34px;
 
-    height:1px;
+    height:
+        1px;
 
     margin:
-        13px auto 0;
+        10px auto 0;
 
     background:
-
         linear-gradient(
             90deg,
             transparent,
@@ -175,364 +277,49 @@
             transparent
         );
 
+    box-shadow:
+        0 0 10px
+        rgba(198,161,91,.35);
+
 }
 
 
-.brain-test-page
 .section-heading h2{
 
-    margin:0;
-
     color:
-        var(--ars-gold-light);
+        var(--ars-white);
 
     font-size:
-        clamp(2rem,3.5vw,3.25rem);
+        clamp(30px, 4vw, 48px);
 
-    line-height:1.15;
-
-    font-weight:600;
-
-    letter-spacing:-.025em;
-
-    text-shadow:
-
-        0 0 28px
-        rgba(212,175,98,.13);
-
-}
-
-
-.brain-test-page
-.section-heading p{
-
-    max-width:700px;
-
-    margin:
-        22px auto 0;
-
-    color:
-        var(--ars-muted);
-
-    font-size:
-        1rem;
-
-    line-height:1.9;
-
-}
-
-
-/* =========================================================
-   04 — PREMIUM GLASS CARDS
-   ========================================================= */
-
-.brain-test-page
-.ars-glass{
-
-    position:relative;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,.075),
-            rgba(255,255,255,.025)
-        );
-
-    border:
-        1px solid
-        var(--ars-border);
-
-    border-radius:
-        20px;
-
-    box-shadow:
-
-        0 20px 60px
-        rgba(0,0,0,.45),
-
-        inset 0 1px 0
-        rgba(255,255,255,.05);
-
-    backdrop-filter:
-        blur(20px);
-
-    -webkit-backdrop-filter:
-        blur(20px);
-
-    transition:
-        transform .5s
-        cubic-bezier(.22,.61,.36,1),
-
-        border-color .5s ease,
-
-        box-shadow .5s ease;
-
-    overflow:hidden;
-
-}
-
-
-.brain-test-page
-.ars-glass::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    background:
-
-        linear-gradient(
-            120deg,
-            transparent 20%,
-            rgba(242,213,141,.09) 45%,
-            transparent 70%
-        );
-
-    transform:
-        translateX(-120%);
-
-    transition:
-        transform 1s ease;
-
-    pointer-events:none;
-
-}
-
-
-.brain-test-page
-.ars-glass:hover::before{
-
-    transform:
-        translateX(120%);
-
-}
-
-
-.brain-test-page
-.ars-glass:hover{
-
-    transform:
-        translateY(-9px);
-
-    border-color:
-
-        rgba(242,213,141,.62);
-
-    box-shadow:
-
-        0 30px 80px
-        rgba(0,0,0,.6),
-
-        0 0 35px
-        rgba(212,175,98,.15);
-
-}
-
-
-/* =========================================================
-   05 — CARD CONTENT
-   ========================================================= */
-
-.brain-test-page
-.ars-glass h3{
-
-    color:
-        var(--ars-gold-light);
-
-    font-size:
-        1.18rem;
+    line-height:
+        1.18;
 
     font-weight:
-        600;
-
-    line-height:
-        1.4;
-
-}
-
-
-.brain-test-page
-.ars-glass p{
-
-    color:
-        var(--ars-muted);
-
-    font-size:
-        .94rem;
-
-    line-height:
-        1.85;
-
-}
-
-
-/* =========================================================
-   06 — COMMON CARD GRIDS
-   ========================================================= */
-
-.brain-test-page
-.pillars-grid,
-.brain-test-page
-.family-grid,
-.brain-test-page
-.haven-grid,
-.brain-test-page
-.rose-capabilities,
-.brain-test-page
-.zhr-grid,
-.brain-test-page
-.os-grid,
-.brain-test-page
-.future-grid,
-.brain-test-page
-.vision-layout{
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,minmax(0,1fr));
-
-    gap:24px;
-
-}
-
-
-.brain-test-page
-.pillar-card,
-.brain-test-page
-.family-card,
-.brain-test-page
-.haven-card,
-.brain-test-page
-.rose-card,
-.brain-test-page
-.zhr-card,
-.brain-test-page
-.os-card,
-.brain-test-page
-.future-card,
-.brain-test-page
-.vision-card{
-
-    padding:30px;
-
-    min-height:230px;
-
-}
-
-
-/* =========================================================
-   07 — HERO SYSTEM
-   ========================================================= */
-
-.brain-test-page
-.arsbrain-hero{
-
-    position:relative;
-
-    min-height:
-        92vh;
-
-    display:flex;
-
-    align-items:center;
-
-    isolation:isolate;
-
-}
-
-
-.brain-test-page
-.arsbrain-hero::before{
-
-    content:"";
-
-    position:absolute;
-
-    inset:0;
-
-    z-index:-1;
-
-    background:
-
-        radial-gradient(
-            circle at 70% 45%,
-            rgba(212,175,98,.16),
-            transparent 27%
-        ),
-
-        radial-gradient(
-            circle at 20% 80%,
-            rgba(37,59,82,.22),
-            transparent 32%
-        );
-
-}
-
-
-.brain-test-page
-.arsbrain-wrapper{
-
-    display:grid;
-
-    grid-template-columns:
-        1.05fr .95fr;
-
-    align-items:center;
-
-    gap:70px;
-
-}
-
-
-.brain-test-page
-.arsbrain-content{
-
-    max-width:650px;
-
-}
-
-
-.brain-test-page
-.arsbrain-content h1{
-
-    margin:
-        15px 0 24px;
-
-    color:
-        var(--ars-gold-light);
-
-    font-size:
-        clamp(2.7rem,5vw,5.2rem);
-
-    line-height:
-        1.04;
-
-    font-weight:
-        600;
+        500;
 
     letter-spacing:
-        -.04em;
+        -.025em;
 
-    text-shadow:
-
-        0 0 35px
-        rgba(212,175,98,.18);
+    margin-bottom:
+        22px;
 
 }
 
 
-.brain-test-page
-.arsbrain-content p{
+.section-heading p{
+
+    max-width:
+        720px;
+
+    margin:
+        0 auto;
 
     color:
-        var(--ars-muted);
+        var(--ars-text-muted);
 
     font-size:
-        1.05rem;
+        15px;
 
     line-height:
         1.9;
@@ -541,135 +328,394 @@
 
 
 /* =========================================================
-   08 — HERO VISUAL
+   06 — PREMIUM GLASS SYSTEM
    ========================================================= */
 
-.brain-test-page
-.hero-visual{
+.ars-glass{
 
-    position:relative;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-}
-
-
-.brain-test-page
-.hero-visual::before{
-
-    content:"";
-
-    position:absolute;
-
-    width:75%;
-
-    aspect-ratio:1;
-
-    border-radius:50%;
+    position:
+        relative;
 
     background:
 
-        radial-gradient(
-            circle,
-            rgba(212,175,98,.17),
-            transparent 65%
-        );
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.012)
+        ),
 
-    filter:
-        blur(18px);
+        var(--ars-glass);
 
-    z-index:-1;
+    border:
+        1px solid
+        var(--ars-glass-border);
 
-}
+    border-radius:
+        var(--ars-radius);
 
+    backdrop-filter:
+        blur(20px);
 
-.brain-test-page
-.hero-visual img{
+    -webkit-backdrop-filter:
+        blur(20px);
 
-    width:100%;
+    box-shadow:
 
-    max-height:560px;
+        0 25px 70px
+        rgba(0,0,0,.45),
 
-    object-fit:contain;
+        inset 0 1px 0
+        rgba(255,255,255,.045),
 
-    filter:
-
-        drop-shadow(
-            0 25px 45px
-            rgba(0,0,0,.65)
-        )
-
-        drop-shadow(
-            0 0 28px
-            rgba(212,175,98,.14)
-        );
+        inset 0 0 40px
+        rgba(198,161,91,.018);
 
     transition:
-        transform .8s
-        cubic-bezier(.22,.61,.36,1);
+        transform var(--ars-transition),
+        border-color var(--ars-transition),
+        box-shadow var(--ars-transition);
 
 }
 
 
-.brain-test-page
-.hero-visual:hover img{
+/* Premium light reflection */
 
-    transform:
-        scale(1.025)
-        translateY(-8px);
+.ars-glass::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        8%;
+
+    right:
+        8%;
+
+    height:
+        1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(226,194,122,.45),
+            transparent
+        );
+
+    opacity:
+        .45;
 
 }
 
 
 /* =========================================================
-   09 — PREMIUM BUTTONS
+   07 — LUXURY GLASS HOVER
    ========================================================= */
 
-.brain-test-page
-.btn-primary,
-.brain-test-page
-.btn-secondary{
+.ars-glass:hover{
 
-    display:inline-flex;
+    transform:
+        translateY(-8px);
 
-    align-items:center;
+    border-color:
+        var(--ars-glass-border-hover);
 
-    justify-content:center;
+    box-shadow:
 
-    min-height:50px;
+        0 35px 90px
+        rgba(0,0,0,.55),
 
-    padding:
-        0 28px;
+        0 0 35px
+        var(--ars-gold-glow),
 
-    border-radius:
-        999px;
-
-    font-size:
-        .88rem;
-
-    font-weight:
-        600;
-
-    letter-spacing:
-        .04em;
-
-    transition:
-        all .4s ease;
+        inset 0 1px 0
+        rgba(226,194,122,.12);
 
 }
 
 
-.brain-test-page
-.btn-primary{
+/* =========================================================
+   08 — PREMIUM CARDS
+   ========================================================= */
 
-    color:#08090b;
+.pillar-card,
+.architecture-card,
+.family-card,
+.feature-card,
+.platform-card,
+.haven-card,
+.rose-card,
+.zhr-card,
+.os-card,
+.future-card,
+.roadmap-item,
+.vision-card{
+
+    padding:
+        34px;
+
+    min-height:
+        240px;
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    justify-content:
+        flex-start;
+
+}
+
+
+.pillar-card h3,
+.architecture-card h3,
+.family-card h3,
+.feature-card h3,
+.platform-card h3,
+.haven-card h3,
+.rose-card h3,
+.zhr-card h3,
+.os-card h3,
+.future-card h3,
+.roadmap-item h3,
+.vision-card h3{
+
+    color:
+        var(--ars-gold-light);
+
+    font-size:
+        19px;
+
+    font-weight:
+        500;
+
+    letter-spacing:
+        -.01em;
+
+    margin:
+        14px 0 12px;
+
+}
+
+
+.pillar-card p,
+.architecture-card p,
+.family-card p,
+.feature-card p,
+.platform-card p,
+.haven-card p,
+.rose-card p,
+.zhr-card p,
+.os-card p,
+.future-card p,
+.roadmap-item p,
+.vision-card p{
+
+    color:
+        var(--ars-text-muted);
+
+    font-size:
+        14px;
+
+    line-height:
+        1.85;
+
+}
+
+
+/* =========================================================
+   09 — GOLD NUMBERS
+   ========================================================= */
+
+.pillar-number,
+.roadmap-year{
+
+    color:
+        var(--ars-gold);
+
+    font-size:
+        11px;
+
+    letter-spacing:
+        .25em;
+
+    font-weight:
+        600;
+
+}
+
+
+/* =========================================================
+   10 — ICONS
+   ========================================================= */
+
+.pillar-card::after,
+.family-card::after,
+.feature-card::after,
+.haven-card::after,
+.rose-card::after,
+.zhr-card::after,
+.os-card::after,
+.future-card::after{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        90px;
+
+    height:
+        90px;
+
+    right:
+        -30px;
+
+    bottom:
+        -30px;
+
+    border-radius:
+        50%;
 
     background:
+        radial-gradient(
+            circle,
+            rgba(198,161,91,.12),
+            transparent 70%
+        );
 
+    pointer-events:
+        none;
+
+}
+
+
+/* =========================================================
+   11 — GOLD ICON
+   ========================================================= */
+
+.family-icon,
+.haven-icon,
+.rose-icon,
+.zhr-icon,
+.os-icon,
+.future-icon{
+
+    font-size:
+        28px;
+
+    filter:
+        grayscale(.15);
+
+    opacity:
+        .9;
+
+    transition:
+        transform var(--ars-transition),
+        filter var(--ars-transition);
+
+}
+
+
+.ars-glass:hover
+.family-icon,
+.ars-glass:hover
+.haven-icon,
+.ars-glass:hover
+.rose-icon,
+.ars-glass:hover
+.zhr-icon,
+.ars-glass:hover
+.os-icon,
+.ars-glass:hover
+.future-icon{
+
+    transform:
+        translateY(-3px)
+        scale(1.08);
+
+    filter:
+        drop-shadow(
+            0 0 10px
+            rgba(198,161,91,.45)
+        );
+
+}
+
+
+/* =========================================================
+   12 — PREMIUM BUTTONS
+   ========================================================= */
+
+.hero-buttons{
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        14px;
+
+    margin-top:
+        30px;
+
+}
+
+
+.btn-primary,
+.btn-secondary{
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        48px;
+
+    padding:
+        0 26px;
+
+    border-radius:
+        999px;
+
+    text-decoration:
+        none;
+
+    font-size:
+        12px;
+
+    letter-spacing:
+        .08em;
+
+    transition:
+        var(--ars-transition);
+
+}
+
+
+.btn-primary{
+
+    color:
+        #0A0805;
+
+    background:
         linear-gradient(
             135deg,
             var(--ars-gold-light),
@@ -677,85 +723,154 @@
         );
 
     box-shadow:
-
-        0 12px 35px
-        rgba(212,175,98,.18);
+        0 10px 30px
+        rgba(198,161,91,.18);
 
 }
 
 
-.brain-test-page
 .btn-secondary{
 
     color:
         var(--ars-gold-light);
 
-    background:
-        rgba(255,255,255,.025);
-
     border:
         1px solid
-        rgba(212,175,98,.4);
+        rgba(198,161,91,.35);
+
+    background:
+        rgba(198,161,91,.035);
 
 }
 
 
-.brain-test-page
-.btn-primary:hover,
-.brain-test-page
+.btn-primary:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+        0 15px 40px
+        rgba(198,161,91,.35);
+
+}
+
+
 .btn-secondary:hover{
 
     transform:
-        translateY(-4px);
+        translateY(-3px);
+
+    border-color:
+        var(--ars-gold-light);
+
+    background:
+        rgba(198,161,91,.08);
 
     box-shadow:
-
-        0 18px 45px
-        rgba(212,175,98,.22);
+        0 0 25px
+        rgba(198,161,91,.15);
 
 }
 
 
 /* =========================================================
-   10 — HIGHLIGHT BOXES
+   13 — IMAGE GLASS
    ========================================================= */
 
-.brain-test-page
-.platform-highlight,
-.brain-test-page
+.arsbrain-image,
+.intro-image,
+.architecture-image,
+.platform-visual,
+.haven-image,
+.rose-image,
+.zhr-image,
+.os-image,
+.future-right{
+
+    border:
+        1px solid
+        var(--ars-glass-border);
+
+    border-radius:
+        var(--ars-radius);
+
+    overflow:
+        hidden;
+
+    background:
+        rgba(10,9,7,.65);
+
+    box-shadow:
+        0 30px 80px
+        rgba(0,0,0,.5);
+
+}
+
+
+.arsbrain-image img,
+.intro-image img,
+.architecture-image img,
+.platform-visual img,
+.haven-image img,
+.rose-image img,
+.zhr-image img,
+.os-image img,
+.future-right img{
+
+    width:
+        100%;
+
+    height:
+        auto;
+
+    display:
+        block;
+
+    transition:
+        transform 1s cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+.arsbrain-image:hover img,
+.intro-image:hover img,
+.architecture-image:hover img,
+.platform-visual:hover img,
+.haven-image:hover img,
+.rose-image:hover img,
+.zhr-image:hover img,
+.os-image:hover img,
+.future-right:hover img{
+
+    transform:
+        scale(1.025);
+
+}
+
+
+/* =========================================================
+   14 — HIGHLIGHT PANELS
+   ========================================================= */
+
 .pillars-message,
-.brain-test-page
-.haven-philosophy,
-.brain-test-page
-.haven-roadmap,
-.brain-test-page
-.haven-status,
-.brain-test-page
+.platform-highlight,
 .rose-message,
-.brain-test-page
 .zhr-philosophy,
-.brain-test-page
 .zhr-status,
-.brain-test-page
 .os-highlight,
-.brain-test-page
 .os-status,
-.brain-test-page
 .future-roadmap,
-.brain-test-page
 .future-vision,
-.brain-test-page
 .roadmap-message,
-.brain-test-page
 .vision-quote,
-.brain-test-page
-.cta-box{
+.ecosystem-note{
 
     padding:
-        clamp(30px,5vw,60px);
+        50px;
 
     margin-top:
-        45px;
+        70px;
 
     text-align:
         center;
@@ -763,113 +878,275 @@
 }
 
 
-/* =========================================================
-   11 — SCROLL REVEAL
-   ========================================================= */
+.pillars-message h2,
+.platform-highlight h2,
+.rose-message h2,
+.zhr-philosophy h2,
+.zhr-status h2,
+.os-highlight h2,
+.os-status h2,
+.future-roadmap h2,
+.future-vision h2,
+.roadmap-message h2,
+.vision-quote h2,
+.ecosystem-note h2{
 
-.brain-test-page
-.ars-reveal{
+    color:
+        var(--ars-gold-light);
 
-    opacity:0;
+    font-size:
+        clamp(25px, 3vw, 36px);
 
-    transform:
-        translateY(35px);
+    font-weight:
+        500;
 
-    transition:
-
-        opacity .8s ease,
-
-        transform .8s
-        cubic-bezier(.22,.61,.36,1);
-
-}
-
-
-.brain-test-page
-.ars-visible{
-
-    opacity:1;
-
-    transform:
-        translateY(0);
+    margin-bottom:
+        16px;
 
 }
 
 
+.pillars-message p,
+.platform-highlight p,
+.rose-message p,
+.zhr-philosophy p,
+.zhr-status p,
+.os-highlight p,
+.os-status p,
+.future-roadmap p,
+.future-vision p,
+.roadmap-message p,
+.vision-quote p,
+.ecosystem-note p{
+
+    max-width:
+        760px;
+
+    margin:
+        0 auto;
+
+    color:
+        var(--ars-text-muted);
+
+    font-size:
+        14px;
+
+    line-height:
+        1.9;
+
+}
+
+
 /* =========================================================
-   12 — CURSOR GOLD GLOW
+   15 — SUBTLE GOLD ATMOSPHERE
    ========================================================= */
 
-.brain-test-page
-.ars-cursor-glow{
+section::before{
 
-    position:fixed;
+    content:
+        "";
 
-    width:220px;
+    position:
+        absolute;
 
-    height:220px;
+    width:
+        500px;
+
+    height:
+        500px;
+
+    top:
+        20%;
+
+    left:
+        50%;
 
     transform:
-        translate(-50%,-50%);
-
-    border-radius:50%;
-
-    pointer-events:none;
-
-    z-index:9999;
+        translateX(-50%);
 
     background:
-
         radial-gradient(
             circle,
-            rgba(212,175,98,.08),
-            transparent 65%
+            rgba(198,161,91,.035),
+            transparent 70%
         );
 
-    filter:
-        blur(8px);
-
-    opacity:.7;
+    pointer-events:
+        none;
 
 }
 
 
 /* =========================================================
-   13 — RESPONSIVE
+   16 — SCROLL REVEAL
+   ========================================================= */
+
+@keyframes arsReveal{
+
+    from{
+
+        opacity:
+            0;
+
+        transform:
+            translateY(35px);
+
+    }
+
+    to{
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+.ars-glass{
+
+    animation:
+        arsReveal .9s ease both;
+
+}
+
+
+/* =========================================================
+   17 — GOLD LIGHT SWEEP
+   ========================================================= */
+
+@keyframes arsGoldSweep{
+
+    0%{
+        transform:
+            translateX(-120%);
+    }
+
+    100%{
+        transform:
+            translateX(120%);
+    }
+
+}
+
+
+.ars-glass::after{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        -100%;
+
+    width:
+        45%;
+
+    height:
+        100%;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(226,194,122,.045),
+            transparent
+        );
+
+    transform:
+        skewX(-20deg);
+
+    pointer-events:
+        none;
+
+    opacity:
+        0;
+
+}
+
+
+.ars-glass:hover::after{
+
+    opacity:
+        1;
+
+    animation:
+        arsGoldSweep 1.2s ease;
+
+}
+
+
+/* =========================================================
+   18 — RESPONSIVE
    ========================================================= */
 
 @media(max-width:900px){
 
-    .brain-test-page
-    .arsbrain-wrapper{
+    .container{
 
-        grid-template-columns:
-            1fr;
-
-        gap:45px;
+        width:
+            min(100% - 36px, 700px);
 
     }
 
+    section{
 
-    .brain-test-page
-    .pillars-grid,
-    .brain-test-page
-    .family-grid,
-    .brain-test-page
-    .haven-grid,
-    .brain-test-page
-    .rose-capabilities,
-    .brain-test-page
-    .zhr-grid,
-    .brain-test-page
-    .os-grid,
-    .brain-test-page
-    .future-grid,
-    .brain-test-page
-    .vision-layout{
+        padding:
+            80px 0;
 
-        grid-template-columns:
-            repeat(2,minmax(0,1fr));
+    }
+
+    .section-heading{
+
+        margin-bottom:
+            45px;
+
+    }
+
+    .pillar-card,
+    .architecture-card,
+    .family-card,
+    .feature-card,
+    .platform-card,
+    .haven-card,
+    .rose-card,
+    .zhr-card,
+    .os-card,
+    .future-card,
+    .roadmap-item,
+    .vision-card{
+
+        padding:
+            26px;
+
+        min-height:
+            auto;
+
+    }
+
+    .pillars-message,
+    .platform-highlight,
+    .rose-message,
+    .zhr-philosophy,
+    .zhr-status,
+    .os-highlight,
+    .os-status,
+    .future-roadmap,
+    .future-vision,
+    .roadmap-message,
+    .vision-quote,
+    .ecosystem-note{
+
+        padding:
+            34px 25px;
 
     }
 
@@ -878,7 +1155,13 @@
 
 @media(max-width:600px){
 
-    .brain-test-page
+    body{
+
+        font-size:
+            14px;
+
+    }
+
     .container{
 
         width:
@@ -886,85 +1169,46 @@
 
     }
 
+    section{
 
-    .brain-test-page
-    .section-heading{
-
-        margin-bottom:
-            45px;
+        padding:
+            65px 0;
 
     }
 
-
-    .brain-test-page
     .section-heading h2{
 
         font-size:
-            1.9rem;
+            28px;
 
     }
 
-
-    .brain-test-page
-    .arsbrain-content h1{
+    .section-heading p{
 
         font-size:
-            2.6rem;
+            14px;
 
     }
 
+    .hero-buttons{
 
-    .brain-test-page
-    .pillars-grid,
-    .brain-test-page
-    .family-grid,
-    .brain-test-page
-    .haven-grid,
-    .brain-test-page
-    .rose-capabilities,
-    .brain-test-page
-    .zhr-grid,
-    .brain-test-page
-    .os-grid,
-    .brain-test-page
-    .future-grid,
-    .brain-test-page
-    .vision-layout{
-
-        grid-template-columns:
-            1fr;
+        flex-direction:
+            column;
 
     }
 
+    .btn-primary,
+    .btn-secondary{
 
-    .brain-test-page
-    .ars-glass{
-
-        border-radius:
-            17px;
+        width:
+            100%;
 
     }
 
+    .ars-glass:hover{
 
-    .brain-test-page
-    .pillar-card,
-    .brain-test-page
-    .family-card,
-    .brain-test-page
-    .haven-card,
-    .brain-test-page
-    .rose-card,
-    .brain-test-page
-    .zhr-card,
-    .brain-test-page
-    .os-card,
-    .brain-test-page
-    .future-card,
-    .brain-test-page
-    .vision-card{
-
-        padding:
-            24px;
+        transform:
+            translateY(-4px);
 
     }
 

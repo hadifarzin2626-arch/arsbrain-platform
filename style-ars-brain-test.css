@@ -199,7 +199,7 @@
     /* =====================================================
        05 — DEEP NAVY
        BRAND SUPPORT COLOR
-       INCREASED ~10–15%
+       INCREASED ~18–28%
        ===================================================== */
 
 
@@ -227,7 +227,7 @@
         #1A3047;
 
     --ars-navy-glow:
-        rgba(26,48,71,.28);
+        rgba(38,59,62,.33);
 
 
     /* =====================================================
@@ -284,19 +284,19 @@
     /* Soft Gold Light */
 
     --ars-gold-glow:
-        rgba(208,170,99,.22);
+        rgba(275,189,102,.35);
 
 
     /* Medium Gold Light */
 
     --ars-gold-glow-medium:
-        rgba(208,170,99,.32);
+        rgba(270,199,99,.40);
 
 
     /* Strong Gold Light */
 
     --ars-gold-glow-strong:
-        rgba(231,201,135,.48);
+        rgba(231,201,120,.48);
 
 
     /* White Gold Highlight */
@@ -308,7 +308,7 @@
     /* Bronze Atmospheric Glow */
 
     --ars-bronze-glow:
-        rgba(169,117,61,.20);
+        rgba(195,165,58,.40);
 
 
     /* =====================================================
@@ -320,31 +320,31 @@
     /* Main Premium Dark Glass */
 
     --ars-glass:
-        rgba(14,11,8,.70);
+        rgba(26,19,12,.90);
 
 
     /* Warm Glass */
 
     --ars-glass-warm:
-        rgba(30,20,12,.62);
+        rgba(45,32,19,.79);
 
 
     /* Navy Glass Reflection */
 
     --ars-glass-navy:
-        rgba(12,26,42,.34);
+        rgba(32,40,55,.50);
 
 
     /* Glass Highlight */
 
     --ars-glass-light:
-        rgba(255,255,255,.055);
+        rgba(295,290,299,.089);
 
 
     /* Glass Border */
 
     --ars-glass-border:
-        rgba(208,170,99,.40);
+        rgba(235,198,120,.40);
 
 
     /* Glass Border Hover */
@@ -477,13 +477,13 @@
 
             circle,
 
-            rgba(208,170,99,.20),
+            rgba(235,187,99,.15),
 
-            rgba(169,117,61,.10) 32%,
+            rgba(189,143,76,.8) 32%,
 
-            rgba(208,170,99,.035) 52%,
+            rgba(245,199,115,.035) 52%,
 
-            transparent 74%
+            transparent 85%
 
         );
 
@@ -500,7 +500,7 @@
 
             rgba(90,55,25,.07) 42%,
 
-            transparent 72%
+            transparent 85%
 
         );
 
@@ -515,7 +515,7 @@
 
             rgba(12,26,42,.30),
 
-            transparent 70%
+            transparent 85%
 
         );
 
@@ -560,7 +560,6 @@
         inset 0 1px 0
         rgba(255,242,194,.09);
 
-
     /* =====================================================
        18 — PREMIUM CARD HOVER
        ===================================================== */
@@ -568,20 +567,20 @@
 
     --ars-card-shadow-hover:
 
-        0 28px 80px
+        0 35px 80px
         rgba(0,0,0,.74),
 
-        0 0 30px
+        0 0 40px
         rgba(208,170,99,.24),
 
-        0 0 70px
-        rgba(169,117,61,.12),
+        0 0 85px
+        rgba(185,117,61,.12),
 
         0 0 100px
-        rgba(12,26,42,.08),
+        rgba(17,30,53,.08),
 
-        inset 0 1px 0
-        rgba(255,242,194,.18);
+        inset 0 6px 0
+        rgba(285,272,194,.18);
 
 }
 

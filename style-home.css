@@ -948,3 +948,981 @@ img{
     }
 
           }
+
+/* =========================================================
+   ARS HERITAGE GROUP — HOME
+   PHASE 02
+   PREMIUM ORBITAL SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   20 — ORBITAL SYSTEM FOUNDATION
+   ========================================================= */
+
+.ars-orbit{
+
+    position:
+        relative;
+
+    width:
+        min(1900px, 100vw);
+
+    height:
+        clamp(500px, 52vh, 760px);
+
+    margin:
+        0 auto;
+
+    flex-shrink:
+        0;
+
+    perspective:
+        1800px;
+
+    transform-style:
+        preserve-3d;
+
+    isolation:
+        isolate;
+
+}
+
+
+/* =========================================================
+   21 — ORBITAL ATMOSPHERE
+   ========================================================= */
+
+.ars-orbit::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    width:
+        min(82vw, 1500px);
+
+    height:
+        min(82vw, 1500px);
+
+    transform:
+        translate(-50%, -50%);
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(216,179,106,.12) 0%,
+            rgba(216,179,106,.055) 28%,
+            transparent 68%
+        );
+
+    filter:
+        blur(30px);
+
+    pointer-events:
+        none;
+
+    z-index:
+        -5;
+
+}
+
+
+/* =========================================================
+   22 — ORBITAL GOLDEN ENERGY
+   ========================================================= */
+
+.ars-orbit::after{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    width:
+        min(72vw, 1350px);
+
+    height:
+        min(72vw, 1350px);
+
+    transform:
+        translate(-50%, -50%);
+
+    border-radius:
+        50%;
+
+    border:
+        1px solid
+        rgba(216,179,106,.08);
+
+    box-shadow:
+
+        0 0 50px
+        rgba(216,179,106,.06),
+
+        inset 0 0 50px
+        rgba(216,179,106,.04);
+
+    pointer-events:
+        none;
+
+    z-index:
+        -4;
+
+}
+
+
+/* =========================================================
+   23 — INNER ORBIT
+   ========================================================= */
+
+.orbit-inner{
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    width:
+        min(42vw, 720px);
+
+    height:
+        min(42vw, 720px);
+
+    transform:
+        translate(-50%, -50%);
+
+    border-radius:
+        50%;
+
+    border:
+        1px solid
+        rgba(216,179,106,.20);
+
+    box-shadow:
+
+        0 0 25px
+        rgba(216,179,106,.06),
+
+        inset 0 0 35px
+        rgba(216,179,106,.04);
+
+    transform-style:
+        preserve-3d;
+
+}
+
+
+/* =========================================================
+   24 — OUTER ORBIT
+   ========================================================= */
+
+.orbit-outer{
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    width:
+        min(66vw, 1180px);
+
+    height:
+        min(66vw, 1180px);
+
+    transform:
+        translate(-50%, -50%);
+
+    border-radius:
+        50%;
+
+    border:
+        1px solid
+        rgba(216,179,106,.13);
+
+    box-shadow:
+
+        0 0 35px
+        rgba(216,179,106,.045),
+
+        inset 0 0 45px
+        rgba(216,179,106,.035);
+
+    transform-style:
+        preserve-3d;
+
+}
+
+
+/* =========================================================
+   25 — ORBITAL ITEMS
+   ========================================================= */
+
+.orbit-item{
+
+    position:
+        absolute;
+
+    width:
+        clamp(76px, 7vw, 118px);
+
+    height:
+        clamp(76px, 7vw, 118px);
+
+    transform-style:
+        preserve-3d;
+
+    z-index:
+        10;
+
+}
+
+
+/* =========================================================
+   26 — ORBITAL GLASS LINK
+   ========================================================= */
+
+.orbit-item > a{
+
+    position:
+        relative;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    padding:
+        13px;
+
+    border-radius:
+        50%;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.075),
+            rgba(18,14,10,.54) 42%,
+            rgba(5,7,10,.78)
+        );
+
+    border:
+        1px solid
+        rgba(216,179,106,.38);
+
+    box-shadow:
+
+        0 18px 45px
+        rgba(0,0,0,.58),
+
+        0 0 24px
+        rgba(216,179,106,.09),
+
+        inset 0 1px 0
+        rgba(255,243,199,.18),
+
+        inset 0 -12px 25px
+        rgba(0,0,0,.30);
+
+    backdrop-filter:
+        blur(16px);
+
+    -webkit-backdrop-filter:
+        blur(16px);
+
+    transform:
+        translateZ(30px);
+
+    transition:
+        var(--ars-transition);
+
+}
+
+
+/* =========================================================
+   27 — ORBITAL GLASS REFLECTION
+   ========================================================= */
+
+.orbit-item > a::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        2px;
+
+    border-radius:
+        inherit;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.16),
+            transparent 32%,
+            transparent 70%,
+            rgba(216,179,106,.07)
+        );
+
+    opacity:
+        .65;
+
+    pointer-events:
+        none;
+
+}
+
+
+/* =========================================================
+   28 — ORBITAL IMAGE
+   ========================================================= */
+
+.orbit-item img{
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        contain;
+
+    border-radius:
+        inherit;
+
+    filter:
+
+        drop-shadow(
+            0 5px 12px
+            rgba(0,0,0,.65)
+        );
+
+    transition:
+        var(--ars-transition);
+
+}
+
+
+/* =========================================================
+   29 — ORBITAL HOVER
+   ========================================================= */
+
+.orbit-item > a:hover{
+
+    transform:
+        translateZ(70px)
+        scale(1.16);
+
+    border-color:
+        rgba(240,209,141,.92);
+
+    box-shadow:
+
+        0 25px 60px
+        rgba(0,0,0,.72),
+
+        0 0 35px
+        rgba(216,179,106,.34),
+
+        0 0 80px
+        rgba(216,179,106,.12),
+
+        inset 0 1px 0
+        rgba(255,243,199,.34);
+
+}
+
+
+.orbit-item > a:hover img{
+
+    transform:
+        scale(1.08);
+
+    filter:
+
+        drop-shadow(
+            0 0 15px
+            rgba(240,209,141,.38)
+        );
+
+}
+
+
+/* =========================================================
+   30 — CENTRAL CORE
+   ========================================================= */
+
+.orbit-core{
+
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
+    width:
+        clamp(180px, 18vw, 310px);
+
+    height:
+        clamp(180px, 18vw, 310px);
+
+    transform:
+        translate(-50%, -50%)
+        translateZ(80px);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        28px;
+
+    border-radius:
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle at 35% 25%,
+            rgba(255,255,255,.10),
+            transparent 28%
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(40,29,17,.78),
+            rgba(8,8,8,.72) 48%,
+            rgba(5,9,14,.82)
+        );
+
+    border:
+        1px solid
+        rgba(240,209,141,.58);
+
+    box-shadow:
+
+        0 30px 90px
+        rgba(0,0,0,.78),
+
+        0 0 45px
+        rgba(216,179,106,.24),
+
+        0 0 120px
+        rgba(216,179,106,.09),
+
+        inset 0 2px 0
+        rgba(255,243,199,.22),
+
+        inset 0 -20px 40px
+        rgba(0,0,0,.38);
+
+    backdrop-filter:
+        blur(22px);
+
+    -webkit-backdrop-filter:
+        blur(22px);
+
+    z-index:
+        100;
+
+    transition:
+        var(--ars-transition);
+
+}
+
+
+/* =========================================================
+   31 — CENTRAL CORE GLOW
+   ========================================================= */
+
+.orbit-core::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        -12px;
+
+    border-radius:
+        50%;
+
+    border:
+        1px solid
+        rgba(216,179,106,.18);
+
+    box-shadow:
+
+        0 0 30px
+        rgba(216,179,106,.16),
+
+        0 0 80px
+        rgba(216,179,106,.08);
+
+    pointer-events:
+        none;
+
+}
+
+
+/* =========================================================
+   32 — CENTRAL LOGO
+   ========================================================= */
+
+.orbit-core img{
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        contain;
+
+    border-radius:
+        50%;
+
+    filter:
+
+        drop-shadow(
+            0 0 20px
+            rgba(216,179,106,.20)
+        );
+
+}
+
+
+/* =========================================================
+   33 — CORE HOVER
+   ========================================================= */
+
+.orbit-core:hover{
+
+    transform:
+        translate(-50%, -50%)
+        translateZ(120px)
+        scale(1.06);
+
+    border-color:
+        rgba(255,243,199,.90);
+
+    box-shadow:
+
+        0 35px 100px
+        rgba(0,0,0,.82),
+
+        0 0 60px
+        rgba(216,179,106,.42),
+
+        0 0 140px
+        rgba(216,179,106,.14);
+
+}
+
+
+/* =========================================================
+   34 — INNER ORBIT POSITIONS
+   ========================================================= */
+
+.orbit-inner .orbit-1{
+
+    left:
+        50%;
+
+    top:
+        0;
+
+    transform:
+        translate(-50%, -50%);
+
+}
+
+.orbit-inner .orbit-2{
+
+    right:
+        0;
+
+    top:
+        25%;
+
+    transform:
+        translate(50%, -50%);
+
+}
+
+.orbit-inner .orbit-3{
+
+    right:
+        0;
+
+    bottom:
+        25%;
+
+    transform:
+        translate(50%, 50%);
+
+}
+
+.orbit-inner .orbit-4{
+
+    left:
+        50%;
+
+    bottom:
+        0;
+
+    transform:
+        translate(-50%, 50%);
+
+}
+
+.orbit-inner .orbit-5{
+
+    left:
+        0;
+
+    bottom:
+        25%;
+
+    transform:
+        translate(-50%, 50%);
+
+}
+
+.orbit-inner .orbit-6{
+
+    left:
+        0;
+
+    top:
+        25%;
+
+    transform:
+        translate(-50%, -50%);
+
+}
+
+
+/* =========================================================
+   35 — OUTER ORBIT POSITIONS
+   ========================================================= */
+
+.orbit-outer .orbit-7{
+
+    left:
+        50%;
+
+    top:
+        0;
+
+    transform:
+        translate(-50%, -50%);
+
+}
+
+.orbit-outer .orbit-8{
+
+    right:
+        18%;
+
+    top:
+        8%;
+
+    transform:
+        translate(50%, -50%);
+
+}
+
+.orbit-outer .orbit-9{
+
+    right:
+        0;
+
+    top:
+        50%;
+
+    transform:
+        translate(50%, -50%);
+
+}
+
+.orbit-outer .orbit-10{
+
+    right:
+        18%;
+
+    bottom:
+        8%;
+
+    transform:
+        translate(50%, 50%);
+
+}
+
+.orbit-outer .orbit-11{
+
+    left:
+        50%;
+
+    bottom:
+        0;
+
+    transform:
+        translate(-50%, 50%);
+
+}
+
+.orbit-outer .orbit-12{
+
+    left:
+        18%;
+
+    bottom:
+        8%;
+
+    transform:
+        translate(-50%, 50%);
+
+}
+
+.orbit-outer .orbit-13{
+
+    left:
+        0;
+
+    top:
+        50%;
+
+    transform:
+        translate(-50%, -50%);
+
+}
+
+
+/* =========================================================
+   36 — HERO ORBIT POSITION
+   ORBIT SITS CLOSE TO HEADER
+   ========================================================= */
+
+.hero-wrapper > .ars-orbit{
+
+    margin-top:
+        8px;
+
+    margin-bottom:
+        -20px;
+
+}
+
+
+/* =========================================================
+   37 — HERO CONTENT AFTER ORBIT
+   ========================================================= */
+
+.hero-wrapper > .hero-content{
+
+    margin-top:
+        0;
+
+}
+
+
+/* =========================================================
+   38 — LARGE SCREEN ORBIT
+   ========================================================= */
+
+@media (min-width: 1400px){
+
+    .ars-orbit{
+
+        height:
+            min(56vh, 820px);
+
+    }
+
+    .orbit-inner{
+
+        width:
+            min(44vw, 760px);
+
+        height:
+            min(44vw, 760px);
+
+    }
+
+    .orbit-outer{
+
+        width:
+            min(68vw, 1250px);
+
+        height:
+            min(68vw, 1250px);
+
+    }
+
+}
+
+
+/* =========================================================
+   39 — TABLET
+   ========================================================= */
+
+@media (max-width: 900px){
+
+    .ars-orbit{
+
+        height:
+            480px;
+
+    }
+
+    .orbit-inner{
+
+        width:
+            430px;
+
+        height:
+            430px;
+
+    }
+
+    .orbit-outer{
+
+        width:
+            680px;
+
+        height:
+            680px;
+
+    }
+
+}
+
+
+/* =========================================================
+   40 — MOBILE
+   ========================================================= */
+
+@media (max-width: 600px){
+
+    .ars-orbit{
+
+        width:
+            100vw;
+
+        height:
+            390px;
+
+        transform:
+            scale(.78);
+
+        transform-origin:
+            top center;
+
+        margin-bottom:
+            -70px;
+
+    }
+
+    .orbit-inner{
+
+        width:
+            350px;
+
+        height:
+            350px;
+
+    }
+
+    .orbit-outer{
+
+        width:
+            560px;
+
+        height:
+            560px;
+
+    }
+
+    .orbit-item{
+
+        width:
+            68px;
+
+        height:
+            68px;
+
+    }
+
+    .orbit-core{
+
+        width:
+            150px;
+
+        height:
+            150px;
+
+        padding:
+            20px;
+
+    }
+
+}
+
+

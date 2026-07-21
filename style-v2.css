@@ -4811,5 +4811,698 @@ pointer-events:none;
     }
 
         }
+/* ===================================================== */
+/* ARS GLOBAL PREMIUM DESIGN SYSTEM — V1 */
+/* 14 INTERNAL PAGES */
+/* ===================================================== */
 
+/* ===================================================== */
+/* 01 — ARS GLOBAL COLOR SYSTEM */
+/* ===================================================== */
+
+:root{
+
+    --ars-black:
+    #030303;
+
+    --ars-black-soft:
+    #080808;
+
+    --ars-glass:
+    rgba(255,255,255,.045);
+
+    --ars-gold:
+    #c89b52;
+
+    --ars-gold-light:
+    #e6c47a;
+
+    --ars-bronze:
+    #8f6738;
+
+    --ars-blue:
+    #26384d;
+
+    --ars-white:
+    #f5f1e9;
+
+    --ars-text:
+    rgba(245,241,233,.82);
+
+    --ars-muted:
+    rgba(245,241,233,.58);
+
+    --ars-gold-glow:
+    rgba(200,155,82,.38);
+
+    --ars-gold-soft:
+    rgba(200,155,82,.16);
+
+}
+
+
+/* ===================================================== */
+/* 02 — GLOBAL BODY */
+/* ===================================================== */
+
+body{
+
+    background:
+    radial-gradient(
+        circle at 50% 0%,
+        rgba(200,155,82,.055),
+        transparent 32%
+    ),
+    linear-gradient(
+        180deg,
+        #030303 0%,
+        #050505 50%,
+        #020202 100%
+    );
+
+    color:
+    var(--ars-text);
+
+}
+
+
+/* ===================================================== */
+/* 03 — PREMIUM GOLD SCROLL ATMOSPHERE */
+/* ===================================================== */
+
+body::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:0;
+
+    background:
+
+    radial-gradient(
+        circle at 12% 20%,
+        rgba(200,155,82,.055),
+        transparent 24%
+    ),
+
+    radial-gradient(
+        circle at 88% 65%,
+        rgba(38,56,77,.045),
+        transparent 25%
+    );
+
+    animation:
+    arsAmbientLight
+    14s
+    ease-in-out
+    infinite
+    alternate;
+
+}
+
+
+@keyframes arsAmbientLight{
+
+    0%{
+
+        opacity:.55;
+
+        transform:
+        scale(1);
+
+    }
+
+    50%{
+
+        opacity:.85;
+
+        transform:
+        scale(1.025);
+
+    }
+
+    100%{
+
+        opacity:.65;
+
+        transform:
+        scale(1);
+
+    }
+
+}
+
+
+/* ===================================================== */
+/* 04 — GLOBAL SECTION LABELS */
+/* ===================================================== */
+
+.section-label,
+.section-heading span,
+.section-heading .section-label{
+
+    color:
+    var(--ars-gold-light) !important;
+
+    letter-spacing:
+    .28em;
+
+    text-transform:
+    uppercase;
+
+    font-size:
+    11px;
+
+    font-weight:
+    500;
+
+}
+
+
+/* ===================================================== */
+/* 05 — GLOBAL MAIN HEADINGS */
+/* ===================================================== */
+
+.section-heading h1,
+.section-heading h2{
+
+    color:
+    var(--ars-gold-light);
+
+    font-family:
+    Georgia,
+    "Times New Roman",
+    serif;
+
+    font-weight:
+    400;
+
+    letter-spacing:
+    -.015em;
+
+    line-height:
+    1.2;
+
+}
+
+
+/* ===================================================== */
+/* 06 — GLOBAL HEADING SIZE */
+/* ===================================================== */
+
+.section-heading h1{
+
+    font-size:
+    clamp(
+        32px,
+        4vw,
+        52px
+    );
+
+}
+
+
+.section-heading h2{
+
+    font-size:
+    clamp(
+        28px,
+        3.5vw,
+        46px
+    );
+
+}
+
+
+/* ===================================================== */
+/* 07 — GLOBAL SECTION TEXT */
+/* ===================================================== */
+
+.section-heading p{
+
+    color:
+    var(--ars-muted);
+
+    font-size:
+    15px;
+
+    line-height:
+    1.85;
+
+    max-width:
+    760px;
+
+}
+
+
+/* ===================================================== */
+/* 08 — PREMIUM GLASS CARDS */
+/* ===================================================== */
+
+.ars-glass{
+
+    position:
+    relative;
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.055),
+        rgba(200,155,82,.025)
+    );
+
+    border:
+    1px solid
+    rgba(200,155,82,.22);
+
+    box-shadow:
+
+    0
+    18px
+    45px
+    rgba(0,0,0,.38),
+
+    inset
+    0
+    1px
+    0
+    rgba(255,255,255,.045);
+
+    backdrop-filter:
+    blur(16px);
+
+    -webkit-backdrop-filter:
+    blur(16px);
+
+    transition:
+
+    transform
+    .45s
+    cubic-bezier(.2,.8,.2,1),
+
+    border-color
+    .45s
+    ease,
+
+    box-shadow
+    .45s
+    ease,
+
+    background
+    .45s
+    ease;
+
+}
+
+
+/* ===================================================== */
+/* 09 — PREMIUM CARD TOP LIGHT */
+/* ===================================================== */
+
+.ars-glass::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:12%;
+
+    width:76%;
+
+    height:1px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(230,196,122,.42),
+        transparent
+    );
+
+    opacity:.55;
+
+    transition:
+    opacity
+    .45s
+    ease;
+
+}
+
+
+/* ===================================================== */
+/* 10 — CARD HOVER / SELECTION */
+/* ===================================================== */
+
+.ars-glass:hover{
+
+    transform:
+    translateY(-7px);
+
+    border-color:
+    rgba(230,196,122,.68);
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.065),
+        rgba(200,155,82,.055)
+    );
+
+    box-shadow:
+
+    0
+    22px
+    55px
+    rgba(0,0,0,.48),
+
+    0
+    0
+    24px
+    rgba(200,155,82,.18),
+
+    inset
+    0
+    1px
+    0
+    rgba(230,196,122,.12);
+
+}
+
+
+.ars-glass:hover::before{
+
+    opacity:
+    1;
+
+}
+
+
+/* ===================================================== */
+/* 11 — CARD HEADINGS */
+/* ===================================================== */
+
+.ars-glass h3{
+
+    color:
+    var(--ars-white);
+
+    font-size:
+    19px;
+
+    line-height:
+    1.35;
+
+    font-weight:
+    600;
+
+}
+
+
+.ars-glass h4{
+
+    color:
+    var(--ars-gold-light);
+
+    font-size:
+    16px;
+
+    font-weight:
+    600;
+
+}
+
+
+/* ===================================================== */
+/* 12 — CARD BODY TEXT */
+/* ===================================================== */
+
+.ars-glass p{
+
+    color:
+    var(--ars-text);
+
+    font-size:
+    14px;
+
+    line-height:
+    1.8;
+
+}
+
+
+/* ===================================================== */
+/* 13 — GOLD NUMBERS */
+/* ===================================================== */
+
+.pillar-number,
+.pillar-card .pillar-number,
+.feature-number,
+.card-number{
+
+    color:
+    var(--ars-gold-light);
+
+    font-family:
+    Georgia,
+    serif;
+
+    text-shadow:
+    0
+    0
+    14px
+    rgba(200,155,82,.28);
+
+}
+
+
+/* ===================================================== */
+/* 14 — PREMIUM BUTTONS */
+/* ===================================================== */
+
+.btn-primary,
+.btn-secondary,
+.hero-buttons a{
+
+    transition:
+
+    transform
+    .35s
+    ease,
+
+    box-shadow
+    .35s
+    ease,
+
+    border-color
+    .35s
+    ease,
+
+    background
+    .35s
+    ease;
+
+}
+
+
+.btn-primary:hover,
+.btn-secondary:hover,
+.hero-buttons a:hover{
+
+    transform:
+    translateY(-3px);
+
+    box-shadow:
+    0
+    0
+    24px
+    rgba(200,155,82,.22);
+
+}
+
+
+/* ===================================================== */
+/* 15 — GOLD LINKS */
+/* ===================================================== */
+
+a{
+
+    transition:
+    color
+    .3s
+    ease;
+
+}
+
+
+a:hover{
+
+    color:
+    var(--ars-gold-light);
+
+}
+
+
+/* ===================================================== */
+/* 16 — GOLD DIVIDERS */
+/* ===================================================== */
+
+.section-heading::after{
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        var(--ars-gold),
+        transparent
+    );
+
+    opacity:
+    .45;
+
+}
+
+
+/* ===================================================== */
+/* 17 — PREMIUM SCROLLBAR */
+/* ===================================================== */
+
+::-webkit-scrollbar{
+
+    width:
+    7px;
+
+}
+
+
+::-webkit-scrollbar-track{
+
+    background:
+    #020202;
+
+}
+
+
+::-webkit-scrollbar-thumb{
+
+    background:
+
+    linear-gradient(
+        180deg,
+        var(--ars-bronze),
+        var(--ars-gold)
+    );
+
+    border-radius:
+    20px;
+
+}
+
+
+::-webkit-scrollbar-thumb:hover{
+
+    background:
+    var(--ars-gold-light);
+
+}
+
+
+/* ===================================================== */
+/* 18 — MOBILE TYPOGRAPHY */
+/* ===================================================== */
+
+@media(
+    max-width:700px
+){
+
+    .section-heading h1{
+
+        font-size:
+        30px;
+
+    }
+
+
+    .section-heading h2{
+
+        font-size:
+        27px;
+
+    }
+
+
+    .section-heading p{
+
+        font-size:
+        14px;
+
+        line-height:
+        1.8;
+
+    }
+
+
+    .ars-glass h3{
+
+        font-size:
+        18px;
+
+    }
+
+
+    .ars-glass p{
+
+        font-size:
+        14px;
+
+        line-height:
+        1.75;
+
+    }
+
+
+    .ars-glass:hover{
+
+        transform:
+        translateY(-3px);
+
+    }
+
+}
+
+
+/* ===================================================== */
+/* 19 — ACCESSIBILITY */
+/* ===================================================== */
+
+@media(
+    prefers-reduced-motion:reduce
+){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:
+        .01ms !important;
+
+        animation-iteration-count:
+        1 !important;
+
+        transition-duration:
+        .01ms !important;
+
+    }
+
+}
 

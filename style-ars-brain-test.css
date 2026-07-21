@@ -18,10 +18,6 @@
 
 
 /* =========================================================
-   01 — DESIGN TOKENS
-   ========================================================= */
-
-/* =========================================================
    ARS BRAIN — PREMIUM DESIGN TOKENS
    REFERENCE:
    THE 13 A'S — ARS VISUAL LANGUAGE
@@ -33,15 +29,23 @@
    Deep Navy
 
    SUPPORTING LIGHT / SHADOW COLORS:
-   Bronze
+   Rich Bronze
    Warm Brown
    Deep Red
    Warm Yellow
 
-   IMPORTANT:
-   Supporting colors are NOT brand colors.
-   They exist only to create metallic depth,
-   reflections, cinematic shadows and light.
+   DESIGN DIRECTION:
+   BLACK dominates the visual field.
+   GOLD and BRONZE create the premium identity.
+   WHITE creates clarity and contrast.
+   NAVY adds controlled cinematic depth.
+
+   Supporting colors are used to build:
+   metallic reflections,
+   cinematic shadows,
+   glass depth,
+   warm highlights,
+   premium dimensionality.
    ========================================================= */
 
 
@@ -74,57 +78,71 @@
 
     /* =====================================================
        02 — PRIMARY BRAND GOLD
+       GOLD PRESENCE — SIGNIFICANTLY INCREASED
        ===================================================== */
 
 
     /* Main ARS Gold */
 
     --ars-gold:
-        #C8A45D;
+        #D0AA63;
 
 
     /* Champagne Gold */
 
     --ars-gold-light:
-        #E3C27A;
+        #E7C987;
 
 
     /* Soft Warm Gold */
 
     --ars-gold-soft:
-        #D6B46A;
+        #DDBA73;
 
 
     /* Deep Gold */
 
     --ars-gold-dark:
-        #8A632F;
+        #956A35;
 
 
     /* Golden Highlight */
 
     --ars-gold-highlight:
-        #FFF0BD;
+        #FFF2C2;
 
 
     /* Almost White Gold */
 
     --ars-gold-white:
-        #FFF7D9;
+        #FFF8DF;
+
+
+    /* Warm Golden Yellow
+       Used only for metallic light */
+
+    --ars-gold-yellow:
+        #E7C35F;
 
 
     /* =====================================================
        03 — METALLIC GOLD DEPTH SYSTEM
+       BRONZE + GOLD ARE STRONGER
        ===================================================== */
 
-    /*
-       These colors create the perception of metal.
 
-       Shadow
+    /*
+       Metallic structure:
+
+       Deep Shadow
        ↓
-       Bronze
+       Warm Brown
        ↓
-       Gold
+       Rich Bronze
+       ↓
+       Deep Gold
+       ↓
+       Main Gold
        ↓
        Champagne
        ↓
@@ -133,65 +151,83 @@
 
 
     --ars-metal-shadow:
-        #5B3B1D;
+        #583719;
 
 
     --ars-metal-brown:
-        #76502A;
+        #7A4F27;
 
 
     --ars-metal-bronze:
-        #9A6C38;
+        #A8753D;
 
 
     --ars-metal-gold:
-        #C8A45D;
+        #D0AA63;
 
 
     --ars-metal-champagne:
-        #E3C27A;
+        #E7C987;
 
 
     --ars-metal-highlight:
-        #FFF0BD;
+        #FFF2C2;
 
 
     /* =====================================================
        04 — BRONZE
+       SIGNIFICANTLY INCREASED
        ===================================================== */
 
+
     --ars-bronze:
-        #79542F;
+        #895E32;
 
     --ars-bronze-soft:
-        #A77A43;
+        #B98247;
 
     --ars-bronze-light:
-        #C0955A;
+        #D0A060;
+
+
+    /* Extra Rich Bronze */
+
+    --ars-bronze-rich:
+        #9F6D38;
 
 
     /* =====================================================
        05 — DEEP NAVY
        BRAND SUPPORT COLOR
+       INCREASED ~10–15%
        ===================================================== */
 
+
     /*
-       Navy is part of the ARS visual language,
-       but must remain secondary to Black + Gold.
+       Navy remains secondary.
+
+       It should be visible in:
+       glass depth,
+       cool shadows,
+       background gradients,
+       cinematic contrast.
+
+       It must NEVER overpower
+       Black + Gold.
     */
 
 
     --ars-navy:
-        #0C1724;
+        #0B1A2A;
 
     --ars-navy-soft:
-        #111F2E;
+        #122336;
 
     --ars-navy-light:
-        #182A3D;
+        #1A3047;
 
     --ars-navy-glow:
-        rgba(24,42,61,.24);
+        rgba(26,48,71,.28);
 
 
     /* =====================================================
@@ -200,113 +236,121 @@
 
 
     --ars-white:
-        #F4F0E7;
+        #F5F1E8;
 
     --ars-white-soft:
-        #D8D1C5;
+        #D9D2C6;
 
     --ars-white-muted:
-        #ADA69B;
+        #ADA59A;
 
 
     /* =====================================================
        07 — SUPPORTING SHADOW COLORS
-       NOT BRAND COLORS
        ===================================================== */
 
 
     /* Warm Brown Shadow */
 
     --ars-shadow-brown:
-        #321F13;
+        #3B2111;
 
 
-    /* Deep Red Shadow */
+    /* Deep Red Shadow
+       Very subtle cinematic warmth */
 
     --ars-shadow-red:
-        #241011;
+        #291011;
 
 
     /* Warm Yellow Shadow */
 
     --ars-shadow-yellow:
-        #5A431A;
+        #624817;
 
 
     /* Deep Navy Shadow */
 
     --ars-shadow-navy:
-        #08111B;
+        #07111C;
 
 
     /* =====================================================
        08 — GOLDEN LIGHT SYSTEM
+       GOLD LIGHT SIGNIFICANTLY INCREASED
        ===================================================== */
 
 
     /* Soft Gold Light */
 
     --ars-gold-glow:
-        rgba(200,164,93,.16);
+        rgba(208,170,99,.22);
 
 
     /* Medium Gold Light */
 
     --ars-gold-glow-medium:
-        rgba(200,164,93,.24);
+        rgba(208,170,99,.32);
 
 
     /* Strong Gold Light */
 
     --ars-gold-glow-strong:
-        rgba(227,194,122,.38);
+        rgba(231,201,135,.48);
 
 
     /* White Gold Highlight */
 
     --ars-white-gold-glow:
-        rgba(255,240,189,.20);
+        rgba(255,242,194,.26);
+
+
+    /* Bronze Atmospheric Glow */
+
+    --ars-bronze-glow:
+        rgba(169,117,61,.20);
 
 
     /* =====================================================
        09 — GLASS SYSTEM
+       WARMER + MORE PREMIUM
        ===================================================== */
 
 
     /* Main Premium Dark Glass */
 
     --ars-glass:
-        rgba(12,10,8,.72);
+        rgba(14,11,8,.70);
 
 
     /* Warm Glass */
 
     --ars-glass-warm:
-        rgba(25,18,12,.58);
+        rgba(30,20,12,.62);
 
 
     /* Navy Glass Reflection */
 
     --ars-glass-navy:
-        rgba(12,23,36,.28);
+        rgba(12,26,42,.34);
 
 
     /* Glass Highlight */
 
     --ars-glass-light:
-        rgba(255,255,255,.045);
+        rgba(255,255,255,.055);
 
 
     /* Glass Border */
 
     --ars-glass-border:
-        rgba(200,164,93,.30);
+        rgba(208,170,99,.40);
 
 
     /* Glass Border Hover */
 
     --ars-glass-border-hover:
-        rgba(227,194,122,.78);
+        rgba(231,201,135,.88);
 
 
     /* =====================================================
@@ -315,11 +359,11 @@
 
 
     --ars-glass-shadow:
-        rgba(0,0,0,.58);
+        rgba(0,0,0,.60);
 
 
     --ars-glass-shadow-deep:
-        rgba(0,0,0,.78);
+        rgba(0,0,0,.80);
 
 
     /* =====================================================
@@ -330,10 +374,8 @@
     --ars-radius:
         22px;
 
-
     --ars-radius-small:
         14px;
-
 
     --ars-radius-large:
         30px;
@@ -349,21 +391,9 @@
 
 
     /* =====================================================
-       13 — METALLIC GOLD GRADIENTS
+       13 — METALLIC GOLD GRADIENT
+       STRONGER GOLD + BRONZE PRESENCE
        ===================================================== */
-
-
-    /*
-       Main ARS Metallic Gold
-
-       Dark Shadow
-       → Bronze
-       → Gold
-       → Champagne
-       → White Gold
-       → Gold
-       → Shadow
-    */
 
 
     --ars-metallic-gold:
@@ -372,25 +402,29 @@
 
             105deg,
 
-            #5B3B1D 0%,
+            #583719 0%,
 
-            #76502A 14%,
+            #7A4F27 12%,
 
-            #9A6C38 25%,
+            #9F6D38 22%,
 
-            #C8A45D 38%,
+            #A8753D 30%,
 
-            #E3C27A 50%,
+            #D0AA63 42%,
 
-            #FFF0BD 57%,
+            #E7C987 52%,
 
-            #E3C27A 66%,
+            #FFF2C2 58%,
 
-            #C8A45D 78%,
+            #E7C987 65%,
 
-            #76502A 91%,
+            #D0AA63 76%,
 
-            #5B3B1D 100%
+            #A8753D 86%,
+
+            #7A4F27 94%,
+
+            #583719 100%
 
         );
 
@@ -408,19 +442,23 @@
 
             transparent 0%,
 
-            #5B3B1D 12%,
+            #7A4F27 10%,
 
-            #9A6C38 28%,
+            #A8753D 22%,
 
-            #C8A45D 40%,
+            #D0AA63 35%,
 
-            #FFF0BD 50%,
+            #E7C987 45%,
 
-            #C8A45D 60%,
+            #FFF2C2 50%,
 
-            #9A6C38 72%,
+            #E7C987 55%,
 
-            #5B3B1D 88%,
+            #D0AA63 65%,
+
+            #A8753D 78%,
+
+            #7A4F27 90%,
 
             transparent 100%
 
@@ -429,6 +467,7 @@
 
     /* =====================================================
        15 — CINEMATIC BACKGROUND LIGHT
+       STRONGER GOLD + BRONZE
        ===================================================== */
 
 
@@ -438,14 +477,35 @@
 
             circle,
 
-            rgba(200,164,93,.14),
+            rgba(208,170,99,.20),
 
-            rgba(200,164,93,.05) 35%,
+            rgba(169,117,61,.10) 32%,
 
-            transparent 70%
+            rgba(208,170,99,.035) 52%,
+
+            transparent 74%
 
         );
 
+
+    /* Cinematic Bronze Atmosphere */
+
+    --ars-cinematic-bronze:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(169,117,61,.16),
+
+            rgba(90,55,25,.07) 42%,
+
+            transparent 72%
+
+        );
+
+
+    /* Cinematic Navy */
 
     --ars-cinematic-navy:
 
@@ -453,7 +513,7 @@
 
             circle,
 
-            rgba(12,23,36,.24),
+            rgba(12,26,42,.30),
 
             transparent 70%
 
@@ -471,30 +531,34 @@
 
             145deg,
 
-            rgba(25,18,12,.68),
+            rgba(31,21,13,.70),
 
-            rgba(8,8,8,.88) 48%,
+            rgba(10,9,8,.86) 42%,
 
-            rgba(5,8,12,.94)
+            rgba(5,8,13,.95) 100%
 
         );
 
 
     /* =====================================================
        17 — PREMIUM CARD SHADOW
+       STRONGER GOLDEN PRESENCE
        ===================================================== */
 
 
     --ars-card-shadow:
 
         0 20px 60px
-        rgba(0,0,0,.60),
+        rgba(0,0,0,.62),
 
         0 0 25px
-        rgba(200,164,93,.08),
+        rgba(208,170,99,.12),
+
+        0 0 55px
+        rgba(169,117,61,.06),
 
         inset 0 1px 0
-        rgba(255,240,189,.07);
+        rgba(255,242,194,.09);
 
 
     /* =====================================================
@@ -505,16 +569,19 @@
     --ars-card-shadow-hover:
 
         0 28px 80px
-        rgba(0,0,0,.72),
+        rgba(0,0,0,.74),
 
         0 0 30px
-        rgba(200,164,93,.18),
+        rgba(208,170,99,.24),
 
         0 0 70px
-        rgba(200,164,93,.08),
+        rgba(169,117,61,.12),
+
+        0 0 100px
+        rgba(12,26,42,.08),
 
         inset 0 1px 0
-        rgba(255,240,189,.16);
+        rgba(255,242,194,.18);
 
 }
 

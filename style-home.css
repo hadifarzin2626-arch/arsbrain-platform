@@ -1,0 +1,950 @@
+/* =========================================================
+   ARS HERITAGE GROUP — HOME
+   style-home.css
+   =========================================================
+   PHASE 01
+   DESIGN SYSTEM
+   GLOBAL RESET
+   HEADER
+   HERO FOUNDATION
+   ========================================================= */
+
+
+/* =========================================================
+   01 — DESIGN TOKENS
+   ========================================================= */
+
+:root{
+
+    /* =====================================================
+       BRAND FOUNDATION
+       ===================================================== */
+
+    --ars-black:
+        #020202;
+
+    --ars-black-soft:
+        #070707;
+
+    --ars-black-warm:
+        #0D0A07;
+
+    --ars-black-brown:
+        #160E08;
+
+
+    /* =====================================================
+       PRIMARY GOLD
+       HOME VERSION
+       STRONGER THAN ARS BRAIN TEST
+       ===================================================== */
+
+    --ars-gold:
+        #D8B36A;
+
+    --ars-gold-light:
+        #F0D18D;
+
+    --ars-gold-soft:
+        #E1C078;
+
+    --ars-gold-dark:
+        #9B6D32;
+
+    --ars-gold-highlight:
+        #FFF3C7;
+
+    --ars-gold-white:
+        #FFF9E5;
+
+
+    /* =====================================================
+       METALLIC DEPTH
+       ===================================================== */
+
+    --ars-metal-shadow:
+        #4B2D16;
+
+    --ars-metal-brown:
+        #70451F;
+
+    --ars-metal-bronze:
+        #9C6930;
+
+    --ars-metal-gold:
+        #D8B36A;
+
+    --ars-metal-champagne:
+        #F0D18D;
+
+    --ars-metal-highlight:
+        #FFF3C7;
+
+
+    /* =====================================================
+       BRONZE
+       STRONGER FOR METALLIC DEPTH
+       ===================================================== */
+
+    --ars-bronze:
+        #8F5F2D;
+
+    --ars-bronze-soft:
+        #B77A3A;
+
+    --ars-bronze-light:
+        #D09A58;
+
+
+    /* =====================================================
+       DEEP NAVY
+       SECONDARY BRAND SUPPORT
+       ===================================================== */
+
+    --ars-navy:
+        #0A1726;
+
+    --ars-navy-soft:
+        #102235;
+
+    --ars-navy-light:
+        #19324A;
+
+
+    /* =====================================================
+       WARM WHITE
+       ===================================================== */
+
+    --ars-white:
+        #F7F2E8;
+
+    --ars-white-soft:
+        #DDD6CA;
+
+    --ars-white-muted:
+        #AAA296;
+
+
+    /* =====================================================
+       CINEMATIC SUPPORT COLORS
+       NOT PRIMARY BRAND COLORS
+       ===================================================== */
+
+    --ars-shadow-brown:
+        #351D10;
+
+    --ars-shadow-red:
+        #241010;
+
+    --ars-shadow-yellow:
+        #604617;
+
+
+    /* =====================================================
+       GOLDEN LIGHT
+       ===================================================== */
+
+    --ars-gold-glow:
+        rgba(216,179,106,.22);
+
+    --ars-gold-glow-medium:
+        rgba(216,179,106,.32);
+
+    --ars-gold-glow-strong:
+        rgba(240,209,141,.48);
+
+
+    /* =====================================================
+       GLASS
+       ===================================================== */
+
+    --ars-glass:
+        rgba(10,9,8,.58);
+
+    --ars-glass-warm:
+        rgba(28,19,11,.46);
+
+    --ars-glass-navy:
+        rgba(10,23,38,.24);
+
+    --ars-glass-light:
+        rgba(255,255,255,.065);
+
+    --ars-glass-border:
+        rgba(216,179,106,.36);
+
+    --ars-glass-border-hover:
+        rgba(240,209,141,.86);
+
+
+    /* =====================================================
+       GLASS DEPTH
+       ===================================================== */
+
+    --ars-glass-shadow:
+        rgba(0,0,0,.58);
+
+    --ars-glass-shadow-deep:
+        rgba(0,0,0,.82);
+
+
+    /* =====================================================
+       RADIUS
+       ===================================================== */
+
+    --ars-radius:
+        24px;
+
+    --ars-radius-small:
+        14px;
+
+    --ars-radius-large:
+        32px;
+
+
+    /* =====================================================
+       MOTION
+       ===================================================== */
+
+    --ars-transition:
+        .55s cubic-bezier(.2,.8,.2,1);
+
+
+    /* =====================================================
+       PAGE WIDTH
+       HOME IS WIDER THAN INNER PAGES
+       ===================================================== */
+
+    --ars-home-width:
+        min(1900px, 96vw);
+
+}
+
+
+/* =========================================================
+   02 — GLOBAL RESET
+   ========================================================= */
+
+*{
+
+    margin:
+        0;
+
+    padding:
+        0;
+
+    box-sizing:
+        border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:
+        smooth;
+
+    background:
+        var(--ars-black);
+
+}
+
+
+body{
+
+    min-height:
+        100vh;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(216,179,106,.09),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 35%,
+            rgba(10,23,38,.18),
+            transparent 38%
+        ),
+
+        linear-gradient(
+            180deg,
+            #020202 0%,
+            #070605 42%,
+            #030303 100%
+        );
+
+    color:
+        var(--ars-white);
+
+    font-family:
+        "Inter",
+        "Segoe UI",
+        Arial,
+        sans-serif;
+
+    font-size:
+        15px;
+
+    line-height:
+        1.8;
+
+    overflow-x:
+        hidden;
+
+    -webkit-font-smoothing:
+        antialiased;
+
+}
+
+
+/* =========================================================
+   03 — GLOBAL LINKS
+   ========================================================= */
+
+a{
+
+    color:
+        inherit;
+
+    text-decoration:
+        none;
+
+}
+
+
+/* =========================================================
+   04 — GLOBAL IMAGES
+   ========================================================= */
+
+img{
+
+    display:
+        block;
+
+    max-width:
+        100%;
+
+}
+
+
+/* =========================================================
+   05 — MAIN CONTAINER
+   ========================================================= */
+
+.container{
+
+    width:
+        var(--ars-home-width);
+
+    margin:
+        0 auto;
+
+}
+
+
+/* =========================================================
+   06 — PREMIUM FIXED HEADER
+   ========================================================= */
+
+.main-header{
+
+    position:
+        fixed;
+
+    top:
+        0;
+
+    left:
+        0;
+
+    width:
+        100%;
+
+    height:
+        82px;
+
+    z-index:
+        1000;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    background:
+
+        linear-gradient(
+            180deg,
+            rgba(2,2,2,.78),
+            rgba(2,2,2,.34)
+        );
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    border-bottom:
+        1px solid
+        rgba(216,179,106,.18);
+
+    box-shadow:
+        0 10px 40px
+        rgba(0,0,0,.42);
+
+}
+
+
+/* =========================================================
+   07 — HEADER BRAND
+   ========================================================= */
+
+.header-brand{
+
+    position:
+        relative;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    height:
+        100%;
+
+}
+
+
+/* =========================================================
+   08 — MOTHER LOGO
+   ========================================================= */
+
+.mother-logo{
+
+    width:
+        auto;
+
+    height:
+        58px;
+
+    object-fit:
+        contain;
+
+    opacity:
+        .96;
+
+    filter:
+
+        drop-shadow(
+            0 0 12px
+            rgba(216,179,106,.18)
+        );
+
+    transition:
+        var(--ars-transition);
+
+}
+
+
+.mother-logo:hover{
+
+    transform:
+        scale(1.035);
+
+    filter:
+
+        drop-shadow(
+            0 0 20px
+            rgba(240,209,141,.42)
+        );
+
+}
+
+
+/* =========================================================
+   09 — HERO FOUNDATION
+   ========================================================= */
+
+.hero{
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    min-height:
+        100vh;
+
+    padding-top:
+        82px;
+
+    overflow:
+        hidden;
+
+    isolation:
+        isolate;
+
+}
+
+
+/* =========================================================
+   10 — HERO BACKGROUND
+   ========================================================= */
+
+.hero-background{
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    z-index:
+        -5;
+
+    background:
+
+        radial-gradient(
+            ellipse at 50% 18%,
+            rgba(216,179,106,.16),
+            transparent 34%
+        ),
+
+        radial-gradient(
+            ellipse at 50% 42%,
+            rgba(143,95,45,.10),
+            transparent 42%
+        ),
+
+        radial-gradient(
+            ellipse at 15% 40%,
+            rgba(10,23,38,.22),
+            transparent 38%
+        ),
+
+        linear-gradient(
+            180deg,
+            #030303 0%,
+            #080705 48%,
+            #030303 100%
+        );
+
+}
+
+
+/* =========================================================
+   11 — HERO ATMOSPHERIC GLOW
+   ========================================================= */
+
+.hero-background::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 28%,
+            rgba(255,243,199,.07),
+            transparent 18%
+        ),
+
+        radial-gradient(
+            circle at 50% 55%,
+            rgba(216,179,106,.06),
+            transparent 34%
+        );
+
+    pointer-events:
+        none;
+
+}
+
+
+/* =========================================================
+   12 — HERO WRAPPER
+   ========================================================= */
+
+.hero-wrapper{
+
+    position:
+        relative;
+
+    min-height:
+        calc(100vh - 82px);
+
+    display:
+        flex;
+
+    flex-direction:
+        column;
+
+    align-items:
+        center;
+
+    justify-content:
+        flex-start;
+
+}
+
+
+/* =========================================================
+   13 — HERO CONTENT
+   TEMPORARY POSITION
+   ORBIT WILL BE PLACED ABOVE THIS
+   ========================================================= */
+
+.hero-content{
+
+    position:
+        relative;
+
+    z-index:
+        20;
+
+    width:
+        min(900px, 90vw);
+
+    margin-top:
+        20px;
+
+    padding:
+        40px 20px 80px;
+
+    text-align:
+        center;
+
+}
+
+
+/* =========================================================
+   14 — HERO LABEL
+   ========================================================= */
+
+.hero-label{
+
+    display:
+        inline-block;
+
+    margin-bottom:
+        16px;
+
+    color:
+        var(--ars-gold-light);
+
+    font-size:
+        .78rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        .28em;
+
+    text-transform:
+        uppercase;
+
+    text-shadow:
+        0 0 18px
+        rgba(216,179,106,.24);
+
+}
+
+
+/* =========================================================
+   15 — HERO TITLE
+   ========================================================= */
+
+.hero-content h1{
+
+    color:
+        var(--ars-white);
+
+    font-size:
+        clamp(2.4rem, 5vw, 5.4rem);
+
+    font-weight:
+        500;
+
+    line-height:
+        1.08;
+
+    letter-spacing:
+        -.035em;
+
+    text-shadow:
+
+        0 2px 25px
+        rgba(0,0,0,.75),
+
+        0 0 40px
+        rgba(216,179,106,.08);
+
+}
+
+
+/* =========================================================
+   16 — HERO DESCRIPTION
+   ========================================================= */
+
+.hero-content p{
+
+    max-width:
+        760px;
+
+    margin:
+        24px auto 0;
+
+    color:
+        var(--ars-white-soft);
+
+    font-size:
+        1rem;
+
+    line-height:
+        1.9;
+
+}
+
+
+/* =========================================================
+   17 — HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons{
+
+    display:
+        flex;
+
+    justify-content:
+        center;
+
+    align-items:
+        center;
+
+    gap:
+        14px;
+
+    flex-wrap:
+        wrap;
+
+    margin-top:
+        30px;
+
+}
+
+
+/* =========================================================
+   18 — PRIMARY BUTTON
+   ========================================================= */
+
+.btn-primary,
+.btn-secondary{
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        48px;
+
+    padding:
+        0 26px;
+
+    border-radius:
+        999px;
+
+    font-size:
+        .82rem;
+
+    letter-spacing:
+        .08em;
+
+    transition:
+        var(--ars-transition);
+
+}
+
+
+.btn-primary{
+
+    color:
+        #080604;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--ars-gold-dark),
+            var(--ars-gold),
+            var(--ars-gold-light)
+        );
+
+    box-shadow:
+
+        0 10px 30px
+        rgba(216,179,106,.18),
+
+        inset 0 1px 0
+        rgba(255,255,255,.42);
+
+}
+
+
+.btn-primary:hover{
+
+    transform:
+        translateY(-3px);
+
+    box-shadow:
+
+        0 16px 42px
+        rgba(216,179,106,.34),
+
+        0 0 30px
+        rgba(240,209,141,.16);
+
+}
+
+
+.btn-secondary{
+
+    color:
+        var(--ars-gold-light);
+
+    background:
+        rgba(10,9,8,.42);
+
+    border:
+        1px solid
+        var(--ars-glass-border);
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+.btn-secondary:hover{
+
+    color:
+        var(--ars-white);
+
+    border-color:
+        var(--ars-glass-border-hover);
+
+    background:
+        rgba(216,179,106,.08);
+
+    transform:
+        translateY(-3px);
+
+}
+
+
+/* =========================================================
+   19 — RESPONSIVE FOUNDATION
+   ========================================================= */
+
+@media (max-width: 900px){
+
+    .main-header{
+
+        height:
+            72px;
+
+    }
+
+    .mother-logo{
+
+        height:
+            50px;
+
+    }
+
+    .hero{
+
+        padding-top:
+            72px;
+
+    }
+
+    .hero-wrapper{
+
+        min-height:
+            calc(100vh - 72px);
+
+    }
+
+    .hero-content{
+
+        padding-top:
+            30px;
+
+    }
+
+}
+
+
+@media (max-width: 600px){
+
+    .container{
+
+        width:
+            92vw;
+
+    }
+
+    .hero-content h1{
+
+        font-size:
+            clamp(2rem, 10vw, 3.2rem);
+
+    }
+
+    .hero-content p{
+
+        font-size:
+            .92rem;
+
+    }
+
+    .hero-buttons{
+
+        flex-direction:
+            column;
+
+    }
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:
+            min(280px, 90vw);
+
+    }
+
+          }

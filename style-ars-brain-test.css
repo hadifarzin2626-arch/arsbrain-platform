@@ -1240,3 +1240,194 @@ section::before{
     transform: translateY(-8px);
 }
 
+
+
+/* =========================================================
+   ARS BRAIN TEST — STEP 02
+   PREMIUM GOLD / BLUE GLASS CARDS
+   ========================================================= */
+
+.ars-glass,
+.pillar-card,
+.feature-card,
+.family-card,
+.haven-card,
+.rose-card,
+.zhr-card,
+.os-card,
+.future-card,
+.architecture-card,
+.vision-card {
+
+    position: relative;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(214, 173, 92, 0.14),
+            rgba(28, 43, 58, 0.42) 48%,
+            rgba(7, 9, 12, 0.72)
+        );
+
+    border:
+
+        1px solid
+        rgba(214, 173, 92, 0.38);
+
+    box-shadow:
+
+        0 18px 45px
+        rgba(0, 0, 0, 0.45),
+
+        0 0 22px
+        rgba(214, 173, 92, 0.08),
+
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.08);
+
+    backdrop-filter:
+        blur(18px);
+
+    -webkit-backdrop-filter:
+        blur(18px);
+
+    transition:
+
+        transform 0.45s ease,
+
+        border-color 0.45s ease,
+
+        box-shadow 0.45s ease,
+
+        background 0.45s ease;
+
+}
+
+
+/* =========================================================
+   GOLDEN LIGHT LINE
+   ========================================================= */
+
+.ars-glass::before,
+.pillar-card::before,
+.feature-card::before,
+.family-card::before,
+.haven-card::before,
+.rose-card::before,
+.zhr-card::before,
+.os-card::before,
+.future-card::before,
+.architecture-card::before,
+.vision-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 8%;
+
+    width: 84%;
+
+    height: 1px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(242, 213, 141, 0.9),
+            transparent
+        );
+
+    opacity: 0.7;
+
+}
+
+
+/* =========================================================
+   GOLDEN GLOW HOVER
+   ========================================================= */
+
+.ars-glass:hover,
+.pillar-card:hover,
+.feature-card:hover,
+.family-card:hover,
+.haven-card:hover,
+.rose-card:hover,
+.zhr-card:hover,
+.os-card:hover,
+.future-card:hover,
+.architecture-card:hover,
+.vision-card:hover {
+
+    transform:
+
+        translateY(-8px);
+
+    border-color:
+
+        rgba(242, 213, 141, 0.75);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(214, 173, 92, 0.22),
+            rgba(38, 61, 86, 0.48),
+            rgba(7, 9, 12, 0.72)
+        );
+
+    box-shadow:
+
+        0 25px 65px
+        rgba(0, 0, 0, 0.58),
+
+        0 0 35px
+        rgba(214, 173, 92, 0.18),
+
+        inset 0 1px 0
+        rgba(255, 255, 255, 0.12);
+
+}
+
+
+/* =========================================================
+   GOLD HEADINGS INSIDE CARDS
+   ========================================================= */
+
+.ars-glass h2,
+.ars-glass h3,
+.pillar-card h2,
+.pillar-card h3,
+.feature-card h2,
+.feature-card h3,
+.family-card h2,
+.family-card h3,
+.haven-card h2,
+.haven-card h3,
+.rose-card h2,
+.rose-card h3,
+.zhr-card h2,
+.zhr-card h3,
+.os-card h2,
+.os-card h3,
+.future-card h2,
+.future-card h3,
+.architecture-card h2,
+.architecture-card h3,
+.vision-card h2,
+.vision-card h3 {
+
+    color:
+
+        #e7c979;
+
+    text-shadow:
+
+        0 0 18px
+        rgba(214, 173, 92, 0.16);
+
+}

@@ -21,96 +21,502 @@
    01 — DESIGN TOKENS
    ========================================================= */
 
+/* =========================================================
+   ARS BRAIN — PREMIUM DESIGN TOKENS
+   REFERENCE:
+   THE 13 A'S — ARS VISUAL LANGUAGE
+
+   CORE BRAND:
+   Deep Black
+   Warm Metallic Gold
+   Warm White
+   Deep Navy
+
+   SUPPORTING LIGHT / SHADOW COLORS:
+   Bronze
+   Warm Brown
+   Deep Red
+   Warm Yellow
+
+   IMPORTANT:
+   Supporting colors are NOT brand colors.
+   They exist only to create metallic depth,
+   reflections, cinematic shadows and light.
+   ========================================================= */
+
+
+/* =========================================================
+   01 — DESIGN TOKENS
+   ========================================================= */
+
 :root{
 
-    /* ---------- BACKGROUND ---------- */
+
+    /* =====================================================
+       01 — BRAND FOUNDATION
+       ===================================================== */
+
+
+    /* ---------- DEEP BLACK ---------- */
 
     --ars-black:
-        #050505;
+        #030303;
 
     --ars-black-soft:
-        #090806;
+        #070707;
 
     --ars-black-warm:
-        #0D0B08;
+        #0C0906;
+
+    --ars-black-brown:
+        #120D08;
 
 
-    /* ---------- GOLD ---------- */
+    /* =====================================================
+       02 — PRIMARY BRAND GOLD
+       ===================================================== */
+
+
+    /* Main ARS Gold */
 
     --ars-gold:
-        #C6A15B;
+        #C8A45D;
+
+
+    /* Champagne Gold */
 
     --ars-gold-light:
-        #E2C27A;
+        #E3C27A;
+
+
+    /* Soft Warm Gold */
 
     --ars-gold-soft:
-        #D5B46D;
+        #D6B46A;
+
+
+    /* Deep Gold */
 
     --ars-gold-dark:
-        #8B6835;
+        #8A632F;
 
 
-    /* ---------- BRONZE ---------- */
+    /* Golden Highlight */
+
+    --ars-gold-highlight:
+        #FFF0BD;
+
+
+    /* Almost White Gold */
+
+    --ars-gold-white:
+        #FFF7D9;
+
+
+    /* =====================================================
+       03 — METALLIC GOLD DEPTH SYSTEM
+       ===================================================== */
+
+    /*
+       These colors create the perception of metal.
+
+       Shadow
+       ↓
+       Bronze
+       ↓
+       Gold
+       ↓
+       Champagne
+       ↓
+       White Gold Highlight
+    */
+
+
+    --ars-metal-shadow:
+        #5B3B1D;
+
+
+    --ars-metal-brown:
+        #76502A;
+
+
+    --ars-metal-bronze:
+        #9A6C38;
+
+
+    --ars-metal-gold:
+        #C8A45D;
+
+
+    --ars-metal-champagne:
+        #E3C27A;
+
+
+    --ars-metal-highlight:
+        #FFF0BD;
+
+
+    /* =====================================================
+       04 — BRONZE
+       ===================================================== */
 
     --ars-bronze:
-        #76552F;
+        #79542F;
 
     --ars-bronze-soft:
-        #A27A43;
+        #A77A43;
+
+    --ars-bronze-light:
+        #C0955A;
 
 
-    /* ---------- TEXT ---------- */
+    /* =====================================================
+       05 — DEEP NAVY
+       BRAND SUPPORT COLOR
+       ===================================================== */
+
+    /*
+       Navy is part of the ARS visual language,
+       but must remain secondary to Black + Gold.
+    */
+
+
+    --ars-navy:
+        #0C1724;
+
+    --ars-navy-soft:
+        #111F2E;
+
+    --ars-navy-light:
+        #182A3D;
+
+    --ars-navy-glow:
+        rgba(24,42,61,.24);
+
+
+    /* =====================================================
+       06 — WARM WHITE
+       ===================================================== */
+
 
     --ars-white:
-        #F2EEE6;
+        #F4F0E7;
 
     --ars-white-soft:
-        #D8D2C8;
+        #D8D1C5;
 
-    --ars-text-muted:
-        #A8A196;
-
-
-    /* ---------- GLASS ---------- */
-
-    --ars-glass:
-        rgba(20,17,13,.62);
-
-    --ars-glass-light:
-        rgba(255,255,255,.035);
-
-    --ars-glass-border:
-        rgba(198,161,91,.22);
-
-    --ars-glass-border-hover:
-        rgba(226,194,122,.62);
+    --ars-white-muted:
+        #ADA69B;
 
 
-    /* ---------- LIGHT ---------- */
+    /* =====================================================
+       07 — SUPPORTING SHADOW COLORS
+       NOT BRAND COLORS
+       ===================================================== */
+
+
+    /* Warm Brown Shadow */
+
+    --ars-shadow-brown:
+        #321F13;
+
+
+    /* Deep Red Shadow */
+
+    --ars-shadow-red:
+        #241011;
+
+
+    /* Warm Yellow Shadow */
+
+    --ars-shadow-yellow:
+        #5A431A;
+
+
+    /* Deep Navy Shadow */
+
+    --ars-shadow-navy:
+        #08111B;
+
+
+    /* =====================================================
+       08 — GOLDEN LIGHT SYSTEM
+       ===================================================== */
+
+
+    /* Soft Gold Light */
 
     --ars-gold-glow:
-        rgba(198,161,91,.18);
+        rgba(200,164,93,.16);
+
+
+    /* Medium Gold Light */
+
+    --ars-gold-glow-medium:
+        rgba(200,164,93,.24);
+
+
+    /* Strong Gold Light */
 
     --ars-gold-glow-strong:
-        rgba(198,161,91,.32);
+        rgba(227,194,122,.38);
 
 
-    /* ---------- SHAPE ---------- */
+    /* White Gold Highlight */
+
+    --ars-white-gold-glow:
+        rgba(255,240,189,.20);
+
+
+    /* =====================================================
+       09 — GLASS SYSTEM
+       ===================================================== */
+
+
+    /* Main Premium Dark Glass */
+
+    --ars-glass:
+        rgba(12,10,8,.72);
+
+
+    /* Warm Glass */
+
+    --ars-glass-warm:
+        rgba(25,18,12,.58);
+
+
+    /* Navy Glass Reflection */
+
+    --ars-glass-navy:
+        rgba(12,23,36,.28);
+
+
+    /* Glass Highlight */
+
+    --ars-glass-light:
+        rgba(255,255,255,.045);
+
+
+    /* Glass Border */
+
+    --ars-glass-border:
+        rgba(200,164,93,.30);
+
+
+    /* Glass Border Hover */
+
+    --ars-glass-border-hover:
+        rgba(227,194,122,.78);
+
+
+    /* =====================================================
+       10 — GLASS SHADOW
+       ===================================================== */
+
+
+    --ars-glass-shadow:
+        rgba(0,0,0,.58);
+
+
+    --ars-glass-shadow-deep:
+        rgba(0,0,0,.78);
+
+
+    /* =====================================================
+       11 — BRAND RADIUS
+       ===================================================== */
+
 
     --ars-radius:
         22px;
+
 
     --ars-radius-small:
         14px;
 
 
-    /* ---------- TRANSITION ---------- */
+    --ars-radius-large:
+        30px;
+
+
+    /* =====================================================
+       12 — TRANSITION
+       ===================================================== */
+
 
     --ars-transition:
         .45s cubic-bezier(.2,.8,.2,1);
 
-}
 
+    /* =====================================================
+       13 — METALLIC GOLD GRADIENTS
+       ===================================================== */
+
+
+    /*
+       Main ARS Metallic Gold
+
+       Dark Shadow
+       → Bronze
+       → Gold
+       → Champagne
+       → White Gold
+       → Gold
+       → Shadow
+    */
+
+
+    --ars-metallic-gold:
+
+        linear-gradient(
+
+            105deg,
+
+            #5B3B1D 0%,
+
+            #76502A 14%,
+
+            #9A6C38 25%,
+
+            #C8A45D 38%,
+
+            #E3C27A 50%,
+
+            #FFF0BD 57%,
+
+            #E3C27A 66%,
+
+            #C8A45D 78%,
+
+            #76502A 91%,
+
+            #5B3B1D 100%
+
+        );
+
+
+    /* =====================================================
+       14 — PREMIUM GOLD LINE
+       ===================================================== */
+
+
+    --ars-gold-line:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent 0%,
+
+            #5B3B1D 12%,
+
+            #9A6C38 28%,
+
+            #C8A45D 40%,
+
+            #FFF0BD 50%,
+
+            #C8A45D 60%,
+
+            #9A6C38 72%,
+
+            #5B3B1D 88%,
+
+            transparent 100%
+
+        );
+
+
+    /* =====================================================
+       15 — CINEMATIC BACKGROUND LIGHT
+       ===================================================== */
+
+
+    --ars-cinematic-gold:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(200,164,93,.14),
+
+            rgba(200,164,93,.05) 35%,
+
+            transparent 70%
+
+        );
+
+
+    --ars-cinematic-navy:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(12,23,36,.24),
+
+            transparent 70%
+
+        );
+
+
+    /* =====================================================
+       16 — PREMIUM CARD BACKGROUND
+       ===================================================== */
+
+
+    --ars-card-background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(25,18,12,.68),
+
+            rgba(8,8,8,.88) 48%,
+
+            rgba(5,8,12,.94)
+
+        );
+
+
+    /* =====================================================
+       17 — PREMIUM CARD SHADOW
+       ===================================================== */
+
+
+    --ars-card-shadow:
+
+        0 20px 60px
+        rgba(0,0,0,.60),
+
+        0 0 25px
+        rgba(200,164,93,.08),
+
+        inset 0 1px 0
+        rgba(255,240,189,.07);
+
+
+    /* =====================================================
+       18 — PREMIUM CARD HOVER
+       ===================================================== */
+
+
+    --ars-card-shadow-hover:
+
+        0 28px 80px
+        rgba(0,0,0,.72),
+
+        0 0 30px
+        rgba(200,164,93,.18),
+
+        0 0 70px
+        rgba(200,164,93,.08),
+
+        inset 0 1px 0
+        rgba(255,240,189,.16);
+
+}
 
 /* =========================================================
    02 — GLOBAL RESET

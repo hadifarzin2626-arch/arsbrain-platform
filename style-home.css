@@ -1925,4 +1925,193 @@ img{
 
 }
 
+/* ========================================================= */
+/* HOME — LARGE ORBITAL SYSTEM */
+/* ========================================================= */
 
+.ars-orbit{
+
+    position:relative;
+
+    width:
+        min(96vw, 1500px);
+
+    height:
+        min(96vw, 1500px);
+
+    margin:
+        0 auto;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    perspective:
+        1800px;
+
+    transform-style:
+        preserve-3d;
+
+    z-index:
+        20;
+
+}
+
+
+/* ========================================================= */
+/* INNER ORBIT — SCALE UP */
+/* ========================================================= */
+
+@keyframes orbit-six{
+
+    0%{
+
+        transform:
+
+            rotateZ(var(--angle))
+
+            translateY(-390px)
+
+            rotateZ(calc(var(--angle) * -1))
+
+            rotateX(0deg);
+
+    }
+
+    25%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) + 90deg))
+
+            translateY(-390px)
+
+            rotateZ(calc((var(--angle) + 90deg) * -1))
+
+            rotateX(8deg);
+
+    }
+
+    50%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) + 180deg))
+
+            translateY(-390px)
+
+            rotateZ(calc((var(--angle) + 180deg) * -1))
+
+            rotateX(0deg);
+
+    }
+
+    75%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) + 270deg))
+
+            translateY(-390px)
+
+            rotateZ(calc((var(--angle) + 270deg) * -1))
+
+            rotateX(-8deg);
+
+    }
+
+    100%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) + 360deg))
+
+            translateY(-390px)
+
+            rotateZ(calc((var(--angle) + 360deg) * -1))
+
+            rotateX(0deg);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* OUTER ORBIT — SCALE UP */
+/* ========================================================= */
+
+@keyframes orbit-seven{
+
+    0%{
+
+        transform:
+
+            rotateZ(var(--angle))
+
+            translateY(-540px)
+
+            rotateZ(calc(var(--angle) * -1))
+
+            rotateX(0deg);
+
+    }
+
+    25%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) - 90deg))
+
+            translateY(-540px)
+
+            rotateZ(calc((var(--angle) - 90deg) * -1))
+
+            rotateX(-8deg);
+
+    }
+
+    50%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) - 180deg))
+
+            translateY(-540px)
+
+            rotateZ(calc((var(--angle) - 180deg) * -1))
+
+            rotateX(0deg);
+
+    }
+
+    75%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) - 270deg))
+
+            translateY(-540px)
+
+            rotateZ(calc((var(--angle) - 270deg) * -1))
+
+            rotateX(8deg);
+
+    }
+
+    100%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) - 360deg))
+
+            translateY(-540px)
+
+            rotateZ(calc((var(--angle) - 360deg) * -1))
+
+            rotateX(0deg);
+
+    }
+
+}

@@ -5605,3 +5605,1000 @@ img{
 }
 
 
+/* ========================================================= */
+/* ========================================================= */
+/*                                                             */
+/*  STEP 02-B                                                 */
+/*  ARS HOME EXTREME 3D GLASS CARD SYSTEM                     */
+/*  DEEP 3D / GOLD LIGHT / DEEP SHADOW / PREMIUM DEPTH        */
+/*                                                             */
+/* ========================================================= */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — EXTREME CARD DEPTH                                    */
+/* ========================================================= */
+
+.ars-glass-card{
+
+    transform-style:
+        preserve-3d;
+
+    perspective:
+        1400px;
+
+    will-change:
+        transform,
+        box-shadow;
+
+}
+
+
+/* ========================================================= */
+/* 02 — DEEP CARD SHADOW                                      */
+/* ========================================================= */
+
+.ars-glass-card{
+
+    box-shadow:
+
+        0
+        18px
+        35px
+        rgba(0,0,0,.42),
+
+        0
+        35px
+        75px
+        rgba(0,0,0,.34),
+
+        0
+        60px
+        120px
+        rgba(0,0,0,.22),
+
+        0
+        0
+        40px
+        rgba(184,137,63,.10),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.22),
+
+        inset
+        0
+        -25px
+        45px
+        rgba(4,16,30,.20);
+
+}
+
+
+/* ========================================================= */
+/* 03 — GOLDEN EDGE LIGHT                                     */
+/* ========================================================= */
+
+.ars-glass-card::before{
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            rgba(255,255,255,.18)
+            0%,
+
+            rgba(255,255,255,.05)
+            18%,
+
+            transparent
+            38%,
+
+            transparent
+            60%,
+
+            rgba(215,170,90,.08)
+            82%,
+
+            rgba(255,215,140,.14)
+            100%
+        );
+
+}
+
+
+/* ========================================================= */
+/* 04 — CARD TOP GLASS REFLECTION                             */
+/* ========================================================= */
+
+.ars-glass-card::after{
+
+    background:
+
+        linear-gradient(
+            115deg,
+
+            transparent
+            20%,
+
+            rgba(255,255,255,.025)
+            38%,
+
+            rgba(255,255,255,.13)
+            48%,
+
+            rgba(255,218,150,.12)
+            51%,
+
+            rgba(255,255,255,.025)
+            56%,
+
+            transparent
+            72%
+        );
+
+    opacity:
+
+        .8;
+
+    transition:
+
+        transform
+        1s
+        cubic-bezier(.2,.8,.2,1),
+
+        opacity
+        .7s
+        ease;
+
+}
+
+
+/* ========================================================= */
+/* 05 — EXTREME HOVER LIFT                                   */
+/* ========================================================= */
+
+.ars-glass-card:hover{
+
+    transform:
+
+        translateY(-18px)
+        translateZ(35px)
+        rotateX(1deg);
+
+    border-color:
+
+        rgba(245,211,145,.62);
+
+    box-shadow:
+
+        0
+        25px
+        50px
+        rgba(0,0,0,.50),
+
+        0
+        50px
+        110px
+        rgba(0,0,0,.38),
+
+        0
+        0
+        65px
+        rgba(184,137,63,.24),
+
+        0
+        0
+        110px
+        rgba(184,137,63,.08),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.30),
+
+        inset
+        0
+        0
+        40px
+        rgba(255,210,130,.035);
+
+}
+
+
+/* ========================================================= */
+/* 06 — GLASS REFLECTION MOVEMENT                             */
+/* ========================================================= */
+
+.ars-glass-card:hover::after{
+
+    transform:
+
+        translateX(18%)
+        rotate(-8deg);
+
+    opacity:
+
+        1;
+
+}
+
+
+/* ========================================================= */
+/* 07 — IMAGE 3D DEPTH                                       */
+/* ========================================================= */
+
+.ars-card-image{
+
+    transform:
+
+        translateZ(22px);
+
+    transform-style:
+
+        preserve-3d;
+
+}
+
+
+.ars-card-image img{
+
+    transform:
+
+        translateZ(5px)
+        scale(1.01);
+
+}
+
+
+/* ========================================================= */
+/* 08 — IMAGE HOVER DEPTH                                     */
+/* ========================================================= */
+
+.ars-glass-card:hover
+.ars-card-image img{
+
+    transform:
+
+        translateZ(18px)
+        scale(1.10);
+
+    filter:
+
+        saturate(115%)
+        contrast(110%)
+        brightness(1.04);
+
+}
+
+
+/* ========================================================= */
+/* 09 — LOGO EXTREME 3D                                      */
+/* ========================================================= */
+
+.ars-card-logo{
+
+    transform:
+
+        translateZ(65px);
+
+    box-shadow:
+
+        0
+        15px
+        35px
+        rgba(0,0,0,.48),
+
+        0
+        0
+        30px
+        rgba(184,137,63,.16),
+
+        0
+        0
+        55px
+        rgba(184,137,63,.07),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.28),
+
+        inset
+        0
+        0
+        22px
+        rgba(255,255,255,.035);
+
+}
+
+
+/* ========================================================= */
+/* 10 — LOGO HOVER LIFT                                      */
+/* ========================================================= */
+
+.ars-glass-card:hover
+.ars-card-logo{
+
+    transform:
+
+        translateZ(90px)
+        scale(1.07);
+
+    border-color:
+
+        rgba(245,211,145,.58);
+
+    box-shadow:
+
+        0
+        20px
+        45px
+        rgba(0,0,0,.55),
+
+        0
+        0
+        40px
+        rgba(210,164,82,.30),
+
+        0
+        0
+        80px
+        rgba(210,164,82,.12),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.34);
+
+}
+
+
+/* ========================================================= */
+/* 11 — LOGO GOLD LIGHT                                      */
+/* ========================================================= */
+
+.ars-card-logo img{
+
+    filter:
+
+        drop-shadow(
+            0
+            0
+            12px
+            rgba(255,205,120,.30)
+        )
+
+        drop-shadow(
+            0
+            0
+            25px
+            rgba(184,137,63,.12)
+        );
+
+}
+
+
+.ars-glass-card:hover
+.ars-card-logo img{
+
+    filter:
+
+        drop-shadow(
+            0
+            0
+            16px
+            rgba(255,220,150,.70)
+        )
+
+        drop-shadow(
+            0
+            0
+            35px
+            rgba(184,137,63,.30)
+        );
+
+}
+
+
+/* ========================================================= */
+/* 12 — CONTENT 3D LAYER                                     */
+/* ========================================================= */
+
+.ars-card-content{
+
+    transform:
+
+        translateZ(42px);
+
+    transform-style:
+
+        preserve-3d;
+
+}
+
+
+/* ========================================================= */
+/* 13 — TITLE DEPTH                                          */
+/* ========================================================= */
+
+.ars-card-content h3{
+
+    text-shadow:
+
+        0
+        3px
+        8px
+        rgba(0,0,0,.55),
+
+        0
+        0
+        25px
+        rgba(218,174,94,.08);
+
+    transform:
+
+        translateZ(12px);
+
+}
+
+
+/* ========================================================= */
+/* 14 — GOLD CATEGORY                                        */
+/* ========================================================= */
+
+.ars-card-category{
+
+    color:
+
+        rgba(232,191,112,.96);
+
+    text-shadow:
+
+        0
+        0
+        18px
+        rgba(210,164,82,.18);
+
+}
+
+
+/* ========================================================= */
+/* 15 — ACTION GOLD                                         */
+/* ========================================================= */
+
+.ars-card-action{
+
+    color:
+
+        #e7c27c;
+
+    text-shadow:
+
+        0
+        0
+        18px
+        rgba(210,164,82,.16);
+
+}
+
+
+.ars-glass-card:hover
+.ars-card-action{
+
+    color:
+
+        #ffe0a0;
+
+    text-shadow:
+
+        0
+        0
+        25px
+        rgba(255,205,120,.40);
+
+}
+
+
+/* ========================================================= */
+/* 16 — CORE CARDS — EXTRA PREMIUM DEPTH                      */
+/* ========================================================= */
+
+.ars-core-card{
+
+    box-shadow:
+
+        0
+        20px
+        45px
+        rgba(0,0,0,.48),
+
+        0
+        45px
+        100px
+        rgba(0,0,0,.35),
+
+        0
+        0
+        50px
+        rgba(184,137,63,.14),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.25),
+
+        inset
+        0
+        0
+        50px
+        rgba(184,137,63,.035);
+
+}
+
+
+/* ========================================================= */
+/* 17 — CORE CARD HOVER                                      */
+/* ========================================================= */
+
+.ars-core-card:hover{
+
+    transform:
+
+        translateY(-24px)
+        translateZ(45px)
+        rotateX(1.5deg);
+
+    box-shadow:
+
+        0
+        30px
+        60px
+        rgba(0,0,0,.55),
+
+        0
+        60px
+        130px
+        rgba(0,0,0,.42),
+
+        0
+        0
+        75px
+        rgba(184,137,63,.28),
+
+        0
+        0
+        130px
+        rgba(184,137,63,.10),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.34);
+
+}
+
+
+/* ========================================================= */
+/* 18 — SPECIALIZED CARDS — GLASSIER                         */
+/* ========================================================= */
+
+.ars-specialized-card{
+
+    background:
+
+        linear-gradient(
+            145deg,
+
+            rgba(255,255,255,.17),
+
+            rgba(255,255,255,.065)
+            35%,
+
+            rgba(10,29,48,.30)
+            65%,
+
+            rgba(184,137,63,.055)
+        );
+
+    backdrop-filter:
+
+        blur(28px)
+        saturate(145%);
+
+    -webkit-backdrop-filter:
+
+        blur(28px)
+        saturate(145%);
+
+}
+
+
+/* ========================================================= */
+/* 19 — SPECIALIZED HOVER                                    */
+/* ========================================================= */
+
+.ars-specialized-card:hover{
+
+    box-shadow:
+
+        0
+        25px
+        55px
+        rgba(0,0,0,.50),
+
+        0
+        55px
+        115px
+        rgba(0,0,0,.36),
+
+        0
+        0
+        60px
+        rgba(184,137,63,.20),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.30);
+
+}
+
+
+/* ========================================================= */
+/* 20 — PREMIUM GOLD EDGE                                    */
+/* ========================================================= */
+
+.ars-core-card,
+.ars-specialized-card{
+
+    position:relative;
+
+}
+
+
+.ars-core-card::before,
+.ars-specialized-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:
+
+        0;
+
+    z-index:
+
+        2;
+
+    pointer-events:
+
+        none;
+
+    border-radius:
+
+        inherit;
+
+    border:
+
+        1px
+        solid
+        transparent;
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            rgba(255,255,255,.20),
+
+            transparent 25%,
+
+            transparent 70%,
+
+            rgba(220,177,95,.18)
+        )
+        border-box;
+
+    mask:
+
+        linear-gradient(#000 0 0)
+        padding-box,
+
+        linear-gradient(#000 0 0);
+
+    mask-composite:
+
+        exclude;
+
+    -webkit-mask:
+
+        linear-gradient(#000 0 0)
+        padding-box,
+
+        linear-gradient(#000 0 0);
+
+    -webkit-mask-composite:
+
+        xor;
+
+}
+
+
+/* ========================================================= */
+/* 21 — GOLDEN AMBIENT GLOW                                  */
+/* ========================================================= */
+
+.ars-core-grid,
+.ars-specialized-grid{
+
+    position:relative;
+
+}
+
+
+.ars-core-grid::before,
+.ars-specialized-grid::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:
+
+        35%;
+
+    left:
+
+        50%;
+
+    width:
+
+        70%;
+
+    height:
+
+        60%;
+
+    transform:
+
+        translate(
+            -50%,
+            -50%
+        );
+
+    pointer-events:
+
+        none;
+
+    background:
+
+        radial-gradient(
+            ellipse,
+
+            rgba(184,137,63,.10),
+
+            transparent
+            65%
+        );
+
+    filter:
+
+        blur(45px);
+
+    z-index:
+
+        -1;
+
+}
+
+
+/* ========================================================= */
+/* 22 — PREMIUM CARD SELECTED STATE                          */
+/* ========================================================= */
+
+.ars-glass-card.is-selected{
+
+    transform:
+
+        translateY(-22px)
+        translateZ(55px)
+        scale(1.025);
+
+    border-color:
+
+        rgba(255,215,140,.72);
+
+    box-shadow:
+
+        0
+        30px
+        65px
+        rgba(0,0,0,.58),
+
+        0
+        65px
+        140px
+        rgba(0,0,0,.40),
+
+        0
+        0
+        80px
+        rgba(218,174,94,.32),
+
+        0
+        0
+        150px
+        rgba(218,174,94,.12),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.38),
+
+        inset
+        0
+        0
+        50px
+        rgba(255,210,130,.055);
+
+}
+
+
+/* ========================================================= */
+/* 23 — SELECTED CARD IMAGE                                  */
+/* ========================================================= */
+
+.ars-glass-card.is-selected
+.ars-card-image img{
+
+    transform:
+
+        scale(1.10);
+
+    filter:
+
+        saturate(120%)
+        contrast(112%)
+        brightness(1.06);
+
+}
+
+
+/* ========================================================= */
+/* 24 — SELECTED CARD LOGO                                   */
+/* ========================================================= */
+
+.ars-glass-card.is-selected
+.ars-card-logo{
+
+    transform:
+
+        translateZ(100px)
+        scale(1.08);
+
+    border-color:
+
+        rgba(255,220,150,.80);
+
+    box-shadow:
+
+        0
+        25px
+        55px
+        rgba(0,0,0,.58),
+
+        0
+        0
+        45px
+        rgba(255,210,120,.38),
+
+        0
+        0
+        100px
+        rgba(184,137,63,.18),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.42);
+
+}
+
+
+/* ========================================================= */
+/* 25 — SELECTED GOLD LIGHT                                  */
+/* ========================================================= */
+
+.ars-glass-card.is-selected
+.ars-card-logo img{
+
+    filter:
+
+        drop-shadow(
+            0
+            0
+            22px
+            rgba(255,225,160,.90)
+        )
+
+        drop-shadow(
+            0
+            0
+            45px
+            rgba(210,164,82,.42)
+        );
+
+}
+
+
+/* ========================================================= */
+/* 26 — MOBILE 3D SAFETY                                     */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    .ars-glass-card:hover{
+
+        transform:
+
+            translateY(-10px)
+            translateZ(15px);
+
+    }
+
+
+    .ars-core-card:hover{
+
+        transform:
+
+            translateY(-14px)
+            translateZ(20px);
+
+    }
+
+
+    .ars-glass-card.is-selected{
+
+        transform:
+
+            translateY(-12px)
+            translateZ(20px)
+            scale(1.015);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 27 — REDUCED MOTION                                       */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    .ars-glass-card,
+    .ars-glass-card::after,
+    .ars-card-image img,
+    .ars-card-logo{
+
+        transition:none;
+
+        transform:none;
+
+    }
+
+}

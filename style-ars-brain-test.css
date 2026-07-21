@@ -1,205 +1,235 @@
 /* =========================================================
-   ARS BRAIN TEST
-   PREMIUM GOLD / BRONZE / BLUE GLASS SYSTEM
-   Dedicated to:
-   <body class="brain-test-page">
+   ARS BRAIN — PREMIUM TEST DESIGN SYSTEM
+   GOLD / BRONZE / DARK BLUE
+   Dedicated to .brain-test-page only
    ========================================================= */
 
 
 /* =========================================================
-   01 — ROOT
+   01 — DESIGN TOKENS
    ========================================================= */
 
 .brain-test-page{
 
-    --ars-gold: #d6ad5c;
-    --ars-gold-light: #f1d58a;
-    --ars-gold-dark: #9b7432;
+    --ars-gold:#d4af62;
+    --ars-gold-light:#f2d58d;
+    --ars-gold-soft:#b99450;
+    --ars-bronze:#9b7040;
+    --ars-blue:#253b52;
 
-    --ars-bronze: #9a6a3a;
-    --ars-blue: #263d56;
+    --ars-black:#07090c;
+    --ars-black-2:#0b0f14;
+    --ars-black-3:#10151b;
 
-    --ars-bg: #08090b;
-    --ars-bg-soft: #0d1014;
+    --ars-white:#f2f1ed;
+    --ars-muted:#aaa9a4;
 
-    --ars-text: #eeeeee;
-    --ars-text-soft: #b7b7b7;
+    --ars-glass:
+        rgba(255,255,255,.055);
 
-    --ars-glass-bg: rgba(255,255,255,.045);
-    --ars-glass-border: rgba(214,173,92,.32);
+    --ars-border:
+        rgba(212,175,98,.28);
 
-    --ars-shadow:
-        0 25px 70px rgba(0,0,0,.55),
-        0 0 35px rgba(214,173,92,.08);
+    --ars-glow:
+        rgba(212,175,98,.18);
 
-    --ars-transition:
-        all .55s cubic-bezier(.22,.61,.36,1);
+    color:
+        var(--ars-white);
 
     background:
+
         radial-gradient(
-            circle at 50% 0%,
-            rgba(214,173,92,.08),
-            transparent 35%
+            circle at 50% -10%,
+            rgba(212,175,98,.12),
+            transparent 32%
         ),
+
+        radial-gradient(
+            circle at 90% 50%,
+            rgba(37,59,82,.15),
+            transparent 30%
+        ),
+
         linear-gradient(
             180deg,
-            #08090b 0%,
-            #0a0c10 45%,
-            #08090b 100%
+            #07090c 0%,
+            #090c10 50%,
+            #07090c 100%
         );
 
-    color: var(--ars-text);
-
-    overflow-x: hidden;
+    overflow-x:hidden;
 
 }
 
 
 /* =========================================================
-   02 — GLOBAL RESET
+   02 — GLOBAL
    ========================================================= */
 
 .brain-test-page *,
 .brain-test-page *::before,
 .brain-test-page *::after{
 
-    box-sizing: border-box;
+    box-sizing:border-box;
 
 }
 
 
 .brain-test-page img{
 
-    max-width: 100%;
+    max-width:100%;
 
-    height: auto;
-
-    display: block;
+    height:auto;
 
 }
 
-
-.brain-test-page a{
-
-    color: inherit;
-
-    text-decoration: none;
-
-}
-
-
-/* =========================================================
-   03 — SECTION SYSTEM
-   ========================================================= */
 
 .brain-test-page section{
 
-    position: relative;
+    position:relative;
 
-    padding:
-        clamp(70px,8vw,130px)
-        0;
-
-    overflow: hidden;
+    overflow:hidden;
 
 }
 
 
 .brain-test-page .container{
 
-    width: min(
-        1180px,
-        calc(100% - 40px)
-    );
-
-    margin-inline: auto;
-
-}
-
-
-/* =========================================================
-   04 — SECTION HEADINGS
-   ========================================================= */
-
-.brain-test-page .section-heading{
-
-    max-width: 850px;
+    width:
+        min(1180px,calc(100% - 40px));
 
     margin:
-        0 auto
-        clamp(45px,6vw,75px);
-
-    text-align: center;
-
-}
-
-
-.brain-test-page .section-label{
-
-    display: inline-block;
-
-    margin-bottom: 18px;
-
-    color: var(--ars-gold-light);
-
-    font-size: .78rem;
-
-    font-weight: 700;
-
-    letter-spacing: .28em;
-
-    text-transform: uppercase;
-
-    text-shadow:
-        0 0 15px rgba(214,173,92,.35);
-
-}
-
-
-.brain-test-page .section-heading h2{
-
-    margin: 0 0 22px;
-
-    color: var(--ars-gold-light);
-
-    font-size:
-        clamp(2rem,4vw,3.5rem);
-
-    line-height: 1.15;
-
-    font-weight: 600;
-
-    letter-spacing: -.025em;
-
-    text-shadow:
-        0 0 25px rgba(214,173,92,.12);
-
-}
-
-
-.brain-test-page .section-heading p{
-
-    max-width: 760px;
-
-    margin: auto;
-
-    color: var(--ars-text-soft);
-
-    font-size:
-        clamp(.95rem,1.2vw,1.08rem);
-
-    line-height: 1.9;
+        0 auto;
 
 }
 
 
 /* =========================================================
-   05 — PREMIUM GLASS CARD
+   03 — PREMIUM SECTION TITLES
    ========================================================= */
 
-.brain-test-page .ars-glass{
+.brain-test-page
+.section-heading{
 
-    position: relative;
+    position:relative;
+
+    text-align:center;
+
+    max-width:850px;
+
+    margin:
+        0 auto 65px;
+
+}
+
+
+.brain-test-page
+.section-label{
+
+    display:inline-block;
+
+    position:relative;
+
+    margin-bottom:18px;
+
+    color:
+        var(--ars-gold-light);
+
+    font-size:
+        .78rem;
+
+    font-weight:700;
+
+    letter-spacing:
+        .32em;
+
+    text-transform:uppercase;
+
+    text-shadow:
+        0 0 18px
+        rgba(212,175,98,.28);
+
+}
+
+
+.brain-test-page
+.section-label::after{
+
+    content:"";
+
+    display:block;
+
+    width:55px;
+
+    height:1px;
+
+    margin:
+        13px auto 0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--ars-gold),
+            transparent
+        );
+
+}
+
+
+.brain-test-page
+.section-heading h2{
+
+    margin:0;
+
+    color:
+        var(--ars-gold-light);
+
+    font-size:
+        clamp(2rem,3.5vw,3.25rem);
+
+    line-height:1.15;
+
+    font-weight:600;
+
+    letter-spacing:-.025em;
+
+    text-shadow:
+
+        0 0 28px
+        rgba(212,175,98,.13);
+
+}
+
+
+.brain-test-page
+.section-heading p{
+
+    max-width:700px;
+
+    margin:
+        22px auto 0;
+
+    color:
+        var(--ars-muted);
+
+    font-size:
+        1rem;
+
+    line-height:1.9;
+
+}
+
+
+/* =========================================================
+   04 — PREMIUM GLASS CARDS
+   ========================================================= */
+
+.brain-test-page
+.ars-glass{
+
+    position:relative;
 
     background:
 
@@ -210,431 +240,137 @@
         );
 
     border:
-
         1px solid
-        var(--ars-glass-border);
+        var(--ars-border);
 
-    border-radius: 22px;
+    border-radius:
+        20px;
 
     box-shadow:
 
-        var(--ars-shadow);
+        0 20px 60px
+        rgba(0,0,0,.45),
+
+        inset 0 1px 0
+        rgba(255,255,255,.05);
 
     backdrop-filter:
-
-        blur(18px);
+        blur(20px);
 
     -webkit-backdrop-filter:
-
-        blur(18px);
+        blur(20px);
 
     transition:
+        transform .5s
+        cubic-bezier(.22,.61,.36,1),
 
-        var(--ars-transition);
+        border-color .5s ease,
 
-    overflow: hidden;
+        box-shadow .5s ease;
+
+    overflow:hidden;
 
 }
 
 
-/* =========================================================
-   MOVING LIGHT INSIDE GLASS
-   ========================================================= */
+.brain-test-page
+.ars-glass::before{
 
-.brain-test-page .ars-glass::before{
+    content:"";
 
-    content: "";
+    position:absolute;
 
-    position: absolute;
-
-    inset: 0;
+    inset:0;
 
     background:
 
         linear-gradient(
-            115deg,
+            120deg,
             transparent 20%,
-            rgba(241,213,138,.09) 45%,
+            rgba(242,213,141,.09) 45%,
             transparent 70%
         );
 
     transform:
-
         translateX(-120%);
 
     transition:
-
         transform 1s ease;
 
-    pointer-events: none;
+    pointer-events:none;
 
 }
 
 
-.brain-test-page .ars-glass:hover::before{
+.brain-test-page
+.ars-glass:hover::before{
 
     transform:
-
         translateX(120%);
 
 }
 
 
-.brain-test-page .ars-glass::after{
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    border-radius: inherit;
-
-    border:
-
-        1px solid
-        rgba(241,213,138,.08);
-
-    pointer-events: none;
-
-}
-
-
-/* =========================================================
-   GLASS HOVER
-   ========================================================= */
-
-.brain-test-page .ars-glass:hover{
+.brain-test-page
+.ars-glass:hover{
 
     transform:
-
-        translateY(-8px);
+        translateY(-9px);
 
     border-color:
 
-        rgba(241,213,138,.65);
+        rgba(242,213,141,.62);
 
     box-shadow:
 
         0 30px 80px
-        rgba(0,0,0,.65),
+        rgba(0,0,0,.6),
 
         0 0 35px
-        rgba(214,173,92,.18);
+        rgba(212,175,98,.15);
 
 }
 
 
 /* =========================================================
-   06 — HERO
+   05 — CARD CONTENT
    ========================================================= */
 
 .brain-test-page
-.arsbrain-hero{
-
-    min-height:
-
-        min(850px,100vh);
-
-    display:
-
-        flex;
-
-    align-items:
-
-        center;
-
-}
-
-
-.brain-test-page
-.arsbrain-hero::before{
-
-    content: "";
-
-    position: absolute;
-
-    inset: 0;
-
-    background:
-
-        radial-gradient(
-            circle at 70% 45%,
-            rgba(214,173,92,.18),
-            transparent 28%
-        ),
-
-        radial-gradient(
-            circle at 20% 70%,
-            rgba(38,61,86,.22),
-            transparent 30%
-        );
-
-    pointer-events: none;
-
-}
-
-
-.brain-test-page
-.arsbrain-wrapper{
-
-    position: relative;
-
-    z-index: 2;
-
-    display: grid;
-
-    grid-template-columns:
-        1fr 1fr;
-
-    gap: 70px;
-
-    align-items: center;
-
-}
-
-
-.brain-test-page
-.arsbrain-content{
-
-    max-width: 650px;
-
-}
-
-
-.brain-test-page
-.arsbrain-content h1{
-
-    margin:
-
-        15px 0 25px;
+.ars-glass h3{
 
     color:
-
         var(--ars-gold-light);
 
     font-size:
-
-        clamp(2.5rem,5vw,5rem);
-
-    line-height:
-
-        1.05;
+        1.18rem;
 
     font-weight:
-
         600;
 
-    text-shadow:
-
-        0 0 35px
-        rgba(214,173,92,.18);
+    line-height:
+        1.4;
 
 }
 
 
 .brain-test-page
-.arsbrain-content p{
+.ars-glass p{
 
     color:
-
-        var(--ars-text-soft);
+        var(--ars-muted);
 
     font-size:
-
-        clamp(1rem,1.3vw,1.15rem);
+        .94rem;
 
     line-height:
-
-        1.9;
-
-}
-
-
-.brain-test-page
-.hero-visual{
-
-    padding: 18px;
-
-    min-height: 400px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-}
-
-
-.brain-test-page
-.hero-visual img{
-
-    width: 100%;
-
-    object-fit: contain;
-
-    filter:
-
-        drop-shadow(
-            0 25px 45px
-            rgba(214,173,92,.18)
-        );
-
-    transition:
-
-        transform .8s
-        cubic-bezier(.22,.61,.36,1);
-
-}
-
-
-.brain-test-page
-.hero-visual:hover img{
-
-    transform:
-
-        scale(1.035)
-        translateY(-8px);
+        1.85;
 
 }
 
 
 /* =========================================================
-   07 — BUTTONS
-   ========================================================= */
-
-.brain-test-page
-.hero-buttons{
-
-    display:
-
-        flex;
-
-    flex-wrap:
-
-        wrap;
-
-    gap:
-
-        15px;
-
-    margin-top:
-
-        35px;
-
-}
-
-
-.brain-test-page
-.btn-primary,
-.brain-test-page
-.btn-secondary{
-
-    display:
-
-        inline-flex;
-
-    align-items:
-
-        center;
-
-    justify-content:
-
-        center;
-
-    min-height:
-
-        52px;
-
-    padding:
-
-        0 28px;
-
-    border-radius:
-
-        999px;
-
-    font-size:
-
-        .9rem;
-
-    font-weight:
-
-        600;
-
-    letter-spacing:
-
-        .04em;
-
-    transition:
-
-        var(--ars-transition);
-
-}
-
-
-.brain-test-page
-.btn-primary{
-
-    color:
-
-        #090909;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            var(--ars-gold-light),
-            var(--ars-gold)
-        );
-
-    box-shadow:
-
-        0 10px 35px
-        rgba(214,173,92,.18);
-
-}
-
-
-.brain-test-page
-.btn-secondary{
-
-    color:
-
-        var(--ars-gold-light);
-
-    border:
-
-        1px solid
-        rgba(214,173,92,.45);
-
-    background:
-
-        rgba(255,255,255,.025);
-
-}
-
-
-.brain-test-page
-.btn-primary:hover,
-.brain-test-page
-.btn-secondary:hover{
-
-    transform:
-
-        translateY(-4px);
-
-    box-shadow:
-
-        0 15px 45px
-        rgba(214,173,92,.25);
-
-}
-
-
-/* =========================================================
-   08 — COMMON GRIDS
+   06 — COMMON CARD GRIDS
    ========================================================= */
 
 .brain-test-page
@@ -654,27 +390,15 @@
 .brain-test-page
 .vision-layout{
 
-    display:
-
-        grid;
+    display:grid;
 
     grid-template-columns:
+        repeat(3,minmax(0,1fr));
 
-        repeat(
-            3,
-            minmax(0,1fr)
-        );
-
-    gap:
-
-        24px;
+    gap:24px;
 
 }
 
-
-/* =========================================================
-   09 — CARD TYPOGRAPHY
-   ========================================================= */
 
 .brain-test-page
 .pillar-card,
@@ -693,149 +417,307 @@
 .brain-test-page
 .vision-card{
 
-    padding:
+    padding:30px;
 
-        30px;
-
-    min-height:
-
-        240px;
-
-}
-
-
-.brain-test-page
-.pillar-card h3,
-.brain-test-page
-.family-card h3,
-.brain-test-page
-.haven-card h3,
-.brain-test-page
-.rose-card h3,
-.brain-test-page
-.zhr-card h3,
-.brain-test-page
-.os-card h3,
-.brain-test-page
-.future-card h3,
-.brain-test-page
-.vision-card h3{
-
-    margin:
-
-        15px 0;
-
-    color:
-
-        var(--ars-gold-light);
-
-    font-size:
-
-        1.2rem;
-
-    line-height:
-
-        1.35;
-
-}
-
-
-.brain-test-page
-.pillar-card p,
-.brain-test-page
-.family-card p,
-.brain-test-page
-.haven-card p,
-.brain-test-page
-.rose-card p,
-.brain-test-page
-.zhr-card p,
-.brain-test-page
-.os-card p,
-.brain-test-page
-.future-card p,
-.brain-test-page
-.vision-card p{
-
-    color:
-
-        var(--ars-text-soft);
-
-    font-size:
-
-        .92rem;
-
-    line-height:
-
-        1.8;
+    min-height:230px;
 
 }
 
 
 /* =========================================================
-   10 — ICONS
+   07 — HERO SYSTEM
    ========================================================= */
 
 .brain-test-page
-.family-icon,
+.arsbrain-hero{
+
+    position:relative;
+
+    min-height:
+        92vh;
+
+    display:flex;
+
+    align-items:center;
+
+    isolation:isolate;
+
+}
+
+
 .brain-test-page
-.haven-icon,
+.arsbrain-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:-1;
+
+    background:
+
+        radial-gradient(
+            circle at 70% 45%,
+            rgba(212,175,98,.16),
+            transparent 27%
+        ),
+
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(37,59,82,.22),
+            transparent 32%
+        );
+
+}
+
+
 .brain-test-page
-.rose-icon,
+.arsbrain-wrapper{
+
+    display:grid;
+
+    grid-template-columns:
+        1.05fr .95fr;
+
+    align-items:center;
+
+    gap:70px;
+
+}
+
+
 .brain-test-page
-.zhr-icon,
+.arsbrain-content{
+
+    max-width:650px;
+
+}
+
+
 .brain-test-page
-.os-icon,
+.arsbrain-content h1{
+
+    margin:
+        15px 0 24px;
+
+    color:
+        var(--ars-gold-light);
+
+    font-size:
+        clamp(2.7rem,5vw,5.2rem);
+
+    line-height:
+        1.04;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        -.04em;
+
+    text-shadow:
+
+        0 0 35px
+        rgba(212,175,98,.18);
+
+}
+
+
 .brain-test-page
-.future-icon{
+.arsbrain-content p{
 
-    width:
+    color:
+        var(--ars-muted);
 
-        54px;
+    font-size:
+        1.05rem;
 
-    height:
+    line-height:
+        1.9;
 
-        54px;
+}
 
-    display:
 
-        grid;
+/* =========================================================
+   08 — HERO VISUAL
+   ========================================================= */
 
-    place-items:
+.brain-test-page
+.hero-visual{
 
-        center;
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.brain-test-page
+.hero-visual::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:75%;
+
+    aspect-ratio:1;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(212,175,98,.17),
+            transparent 65%
+        );
+
+    filter:
+        blur(18px);
+
+    z-index:-1;
+
+}
+
+
+.brain-test-page
+.hero-visual img{
+
+    width:100%;
+
+    max-height:560px;
+
+    object-fit:contain;
+
+    filter:
+
+        drop-shadow(
+            0 25px 45px
+            rgba(0,0,0,.65)
+        )
+
+        drop-shadow(
+            0 0 28px
+            rgba(212,175,98,.14)
+        );
+
+    transition:
+        transform .8s
+        cubic-bezier(.22,.61,.36,1);
+
+}
+
+
+.brain-test-page
+.hero-visual:hover img{
+
+    transform:
+        scale(1.025)
+        translateY(-8px);
+
+}
+
+
+/* =========================================================
+   09 — PREMIUM BUTTONS
+   ========================================================= */
+
+.brain-test-page
+.btn-primary,
+.brain-test-page
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:50px;
+
+    padding:
+        0 28px;
 
     border-radius:
+        999px;
 
-        16px;
+    font-size:
+        .88rem;
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        .04em;
+
+    transition:
+        all .4s ease;
+
+}
+
+
+.brain-test-page
+.btn-primary{
+
+    color:#08090b;
 
     background:
 
         linear-gradient(
             135deg,
-            rgba(214,173,92,.18),
-            rgba(38,61,86,.18)
+            var(--ars-gold-light),
+            var(--ars-gold)
         );
-
-    border:
-
-        1px solid
-        rgba(214,173,92,.28);
 
     box-shadow:
 
-        0 0 25px
-        rgba(214,173,92,.08);
+        0 12px 35px
+        rgba(212,175,98,.18);
 
-    font-size:
+}
 
-        1.35rem;
+
+.brain-test-page
+.btn-secondary{
+
+    color:
+        var(--ars-gold-light);
+
+    background:
+        rgba(255,255,255,.025);
+
+    border:
+        1px solid
+        rgba(212,175,98,.4);
+
+}
+
+
+.brain-test-page
+.btn-primary:hover,
+.brain-test-page
+.btn-secondary:hover{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+
+        0 18px 45px
+        rgba(212,175,98,.22);
 
 }
 
 
 /* =========================================================
-   11 — SPECIAL HIGHLIGHTS
+   10 — HIGHLIGHT BOXES
    ========================================================= */
 
 .brain-test-page
@@ -870,98 +752,90 @@
 .cta-box{
 
     padding:
-
-        clamp(30px,5vw,65px);
+        clamp(30px,5vw,60px);
 
     margin-top:
-
         45px;
 
     text-align:
-
         center;
 
 }
 
 
-.brain-test-page
-.platform-highlight h2,
-.brain-test-page
-.pillars-message h2,
-.brain-test-page
-.haven-philosophy h2,
-.brain-test-page
-.rose-message h2,
-.brain-test-page
-.zhr-philosophy h2,
-.brain-test-page
-.os-highlight h2,
-.brain-test-page
-.future-vision h2,
-.brain-test-page
-.roadmap-message h2,
-.brain-test-page
-.vision-quote h2,
-.brain-test-page
-.cta-box h2{
+/* =========================================================
+   11 — SCROLL REVEAL
+   ========================================================= */
 
-    color:
+.brain-test-page
+.ars-reveal{
 
-        var(--ars-gold-light);
+    opacity:0;
 
-    font-size:
+    transform:
+        translateY(35px);
 
-        clamp(1.6rem,3vw,2.7rem);
+    transition:
 
-    line-height:
+        opacity .8s ease,
 
-        1.2;
+        transform .8s
+        cubic-bezier(.22,.61,.36,1);
 
 }
 
 
 .brain-test-page
-.platform-highlight p,
-.brain-test-page
-.pillars-message p,
-.brain-test-page
-.haven-philosophy p,
-.brain-test-page
-.rose-message p,
-.brain-test-page
-.zhr-philosophy p,
-.brain-test-page
-.os-highlight p,
-.brain-test-page
-.future-vision p,
-.brain-test-page
-.roadmap-message p,
-.brain-test-page
-.vision-quote p,
-.brain-test-page
-.cta-box p{
+.ars-visible{
 
-    max-width:
+    opacity:1;
 
-        760px;
-
-    margin:
-
-        20px auto 0;
-
-    color:
-
-        var(--ars-text-soft);
-
-    line-height:
-
-        1.9;
+    transform:
+        translateY(0);
 
 }
 
 
 /* =========================================================
-   12 — RESPONSIVE
+   12 — CURSOR GOLD GLOW
+   ========================================================= */
+
+.brain-test-page
+.ars-cursor-glow{
+
+    position:fixed;
+
+    width:220px;
+
+    height:220px;
+
+    transform:
+        translate(-50%,-50%);
+
+    border-radius:50%;
+
+    pointer-events:none;
+
+    z-index:9999;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(212,175,98,.08),
+            transparent 65%
+        );
+
+    filter:
+        blur(8px);
+
+    opacity:.7;
+
+}
+
+
+/* =========================================================
+   13 — RESPONSIVE
    ========================================================= */
 
 @media(max-width:900px){
@@ -970,12 +844,9 @@
     .arsbrain-wrapper{
 
         grid-template-columns:
-
             1fr;
 
-        gap:
-
-            40px;
+        gap:45px;
 
     }
 
@@ -998,11 +869,7 @@
     .vision-layout{
 
         grid-template-columns:
-
-            repeat(
-                2,
-                minmax(0,1fr)
-            );
+            repeat(2,minmax(0,1fr));
 
     }
 
@@ -1015,20 +882,34 @@
     .container{
 
         width:
-
-            min(
-                100% - 28px,
-                1180px
-            );
+            calc(100% - 28px);
 
     }
 
 
-    .brain-test-page section{
+    .brain-test-page
+    .section-heading{
 
-        padding:
+        margin-bottom:
+            45px;
 
-            65px 0;
+    }
+
+
+    .brain-test-page
+    .section-heading h2{
+
+        font-size:
+            1.9rem;
+
+    }
+
+
+    .brain-test-page
+    .arsbrain-content h1{
+
+        font-size:
+            2.6rem;
 
     }
 
@@ -1051,30 +932,16 @@
     .vision-layout{
 
         grid-template-columns:
-
             1fr;
 
     }
 
 
     .brain-test-page
-    .hero-buttons{
+    .ars-glass{
 
-        flex-direction:
-
-            column;
-
-    }
-
-
-    .brain-test-page
-    .btn-primary,
-    .brain-test-page
-    .btn-secondary{
-
-        width:
-
-            100%;
+        border-radius:
+            17px;
 
     }
 
@@ -1097,12 +964,7 @@
     .vision-card{
 
         padding:
-
-            25px;
-
-        min-height:
-
-            auto;
+            24px;
 
     }
 

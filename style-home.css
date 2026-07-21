@@ -2161,3 +2161,1346 @@ img{
     }
 
 }
+
+/* ========================================================= */
+/* ========================================================= */
+/*                                                             */
+/*        ARS HERITAGE GROUP — PREMIUM HOME HEADER + HERO      */
+/*        CINEMATIC BLACK • GOLD • BRONZE • NAVY • GLASS        */
+/*                                                             */
+/* ========================================================= */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — GLOBAL HERO FOUNDATION */
+/* ========================================================= */
+
+.hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:200vh;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+
+            circle at 50% 28%,
+
+            rgba(200,164,93,.16),
+
+            transparent 22%
+
+        ),
+
+        radial-gradient(
+
+            circle at 18% 35%,
+
+            rgba(154,108,56,.10),
+
+            transparent 28%
+
+        ),
+
+        radial-gradient(
+
+            circle at 82% 42%,
+
+            rgba(12,23,36,.22),
+
+            transparent 30%
+
+        ),
+
+        linear-gradient(
+
+            180deg,
+
+            #030303 0%,
+
+            #070707 42%,
+
+            #0C0906 72%,
+
+            #030303 100%
+
+        );
+
+    isolation:isolate;
+
+}
+
+
+/* ========================================================= */
+/* 02 — HERO BACKGROUND */
+/* ========================================================= */
+
+.hero-background{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:-5;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+
+            ellipse at 50% 25%,
+
+            rgba(227,194,122,.12),
+
+            transparent 34%
+
+        ),
+
+        radial-gradient(
+
+            ellipse at 50% 60%,
+
+            rgba(200,164,93,.07),
+
+            transparent 42%
+
+        );
+
+    animation:
+
+        hero-light-breathe
+        9s
+        ease-in-out
+        infinite alternate;
+
+}
+
+
+/* ========================================================= */
+/* 03 — CINEMATIC GOLD LIGHT */
+/* ========================================================= */
+
+.hero-background::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:4%;
+
+    left:50%;
+
+    width:850px;
+
+    height:850px;
+
+    transform:
+
+        translateX(-50%);
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(255,240,189,.10),
+
+            rgba(200,164,93,.055) 28%,
+
+            transparent 68%
+
+        );
+
+    filter:
+
+        blur(30px);
+
+    opacity:.75;
+
+}
+
+
+/* ========================================================= */
+/* 04 — BRONZE CINEMATIC DEPTH */
+/* ========================================================= */
+
+.hero-background::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:-15%;
+
+    bottom:12%;
+
+    width:70%;
+
+    height:45%;
+
+    background:
+
+        radial-gradient(
+
+            ellipse,
+
+            rgba(118,80,42,.09),
+
+            transparent 68%
+
+        );
+
+    filter:
+
+        blur(60px);
+
+    transform:
+
+        rotate(-12deg);
+
+}
+
+
+/* ========================================================= */
+/* 05 — HERO STARS / PARTICLES */
+/* ========================================================= */
+
+.hero-stars{
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:-2;
+
+    pointer-events:none;
+
+    opacity:.42;
+
+    background-image:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(255,240,189,.45) 1px,
+
+            transparent 1.5px
+
+        );
+
+    background-size:
+
+        180px 180px;
+
+    animation:
+
+        stars-drift
+        35s
+        linear
+        infinite;
+
+}
+
+
+.hero-stars-2{
+
+    opacity:.20;
+
+    background-size:
+
+        280px 280px;
+
+    animation:
+
+        stars-drift-reverse
+        55s
+        linear
+        infinite;
+
+}
+
+
+/* ========================================================= */
+/* 06 — HERO CONTAINER */
+/* ========================================================= */
+
+.hero > .container{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:200vh;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+
+/* ========================================================= */
+/* 07 — HERO WRAPPER */
+/* ========================================================= */
+
+.hero-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:200vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+}
+
+
+/* ========================================================= */
+/* 08 — HEADER */
+/* ========================================================= */
+
+.main-header{
+
+    position:fixed;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:92px;
+
+    z-index:1000;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            rgba(3,3,3,.78),
+
+            rgba(3,3,3,.38),
+
+            transparent
+
+        );
+
+    border-bottom:
+
+        1px solid
+
+        rgba(200,164,93,.10);
+
+    backdrop-filter:
+
+        blur(12px)
+        saturate(120%);
+
+    -webkit-backdrop-filter:
+
+        blur(12px)
+        saturate(120%);
+
+}
+
+
+/* ========================================================= */
+/* 09 — HEADER GLASS LIGHT */
+/* ========================================================= */
+
+.main-header::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:-1px;
+
+    width:42%;
+
+    height:1px;
+
+    transform:
+
+        translateX(-50%);
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(200,164,93,.55),
+
+            rgba(255,240,189,.85),
+
+            rgba(200,164,93,.55),
+
+            transparent
+
+        );
+
+    opacity:.65;
+
+}
+
+
+/* ========================================================= */
+/* 10 — HEADER BRAND */
+/* ========================================================= */
+
+.header-brand{
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+
+/* ========================================================= */
+/* 11 — MOTHER LOGO */
+/* ========================================================= */
+
+.main-header img.mother-logo{
+
+    width:88px !important;
+
+    height:auto !important;
+
+    max-width:88px !important;
+
+    object-fit:contain !important;
+
+    opacity:.96;
+
+    filter:
+
+        drop-shadow(
+
+            0 0 12px
+            rgba(200,164,93,.18)
+
+        );
+
+    transition:
+
+        transform .5s ease,
+
+        filter .5s ease,
+
+        opacity .5s ease;
+
+}
+
+
+.main-header img.mother-logo:hover{
+
+    transform:
+
+        scale(1.06);
+
+    opacity:1;
+
+    filter:
+
+        drop-shadow(
+
+            0 0 22px
+            rgba(227,194,122,.42)
+
+        );
+
+}
+
+
+/* ========================================================= */
+/* 12 — HERO ORBIT POSITION */
+/* ========================================================= */
+
+.hero-wrapper .ars-orbit{
+
+    position:relative;
+
+    margin-top:
+
+        -45px;
+
+    flex-shrink:0;
+
+}
+
+
+/* ========================================================= */
+/* 13 — HERO CONTENT */
+/* ========================================================= */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:250;
+
+    width:
+
+        min(920px,90vw);
+
+    margin-top:
+
+        -330px;
+
+    text-align:center;
+
+    transform:
+
+        translateZ(100px);
+
+}
+
+
+/* ========================================================= */
+/* 14 — HERO LABEL */
+/* ========================================================= */
+
+.hero-label{
+
+    display:inline-block;
+
+    margin-bottom:24px;
+
+    padding:
+
+        9px 20px;
+
+    border:
+
+        1px solid
+
+        rgba(200,164,93,.28);
+
+    border-radius:
+
+        999px;
+
+    background:
+
+        rgba(12,10,8,.38);
+
+    color:
+
+        #E3C27A;
+
+    font-size:
+
+        .72rem;
+
+    letter-spacing:
+
+        .28em;
+
+    text-transform:
+
+        uppercase;
+
+    backdrop-filter:
+
+        blur(12px);
+
+    -webkit-backdrop-filter:
+
+        blur(12px);
+
+    box-shadow:
+
+        0 0 25px
+
+        rgba(200,164,93,.06);
+
+}
+
+
+/* ========================================================= */
+/* 15 — HERO TITLE */
+/* ========================================================= */
+
+.hero-content h1{
+
+    margin:
+
+        0 auto 28px;
+
+    max-width:
+
+        900px;
+
+    color:
+
+        #F4F0E7;
+
+    font-size:
+
+        clamp(
+
+            2.6rem,
+
+            5vw,
+
+            5.8rem
+
+        );
+
+    line-height:
+
+        1.05;
+
+    font-weight:
+
+        600;
+
+    letter-spacing:
+
+        -.025em;
+
+    text-shadow:
+
+        0 0 35px
+
+        rgba(200,164,93,.12);
+
+}
+
+
+/* ========================================================= */
+/* 16 — GOLD TITLE ACCENT */
+/* ========================================================= */
+
+.hero-content h1::first-line{
+
+    color:
+
+        #E3C27A;
+
+}
+
+
+/* ========================================================= */
+/* 17 — HERO DESCRIPTION */
+/* ========================================================= */
+
+.hero-content p{
+
+    max-width:
+
+        780px;
+
+    margin:
+
+        0 auto 38px;
+
+    color:
+
+        #D8D1C5;
+
+    font-size:
+
+        1.05rem;
+
+    line-height:
+
+        1.9;
+
+    font-weight:
+
+        400;
+
+    opacity:
+
+        .88;
+
+}
+
+
+/* ========================================================= */
+/* 18 — HERO BUTTONS */
+/* ========================================================= */
+
+.hero-buttons{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:
+
+        18px;
+
+    flex-wrap:wrap;
+
+}
+
+
+/* ========================================================= */
+/* 19 — PRIMARY BUTTON */
+/* ========================================================= */
+
+.btn-primary{
+
+    position:relative;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:
+
+        220px;
+
+    padding:
+
+        15px 30px;
+
+    border-radius:
+
+        999px;
+
+    border:
+
+        1px solid
+
+        rgba(255,240,189,.42);
+
+    color:
+
+        #050505;
+
+    background:
+
+        linear-gradient(
+
+            105deg,
+
+            #8A632F,
+
+            #C8A45D 28%,
+
+            #E3C27A 52%,
+
+            #FFF0BD 58%,
+
+            #C8A45D 75%,
+
+            #8A632F
+
+        );
+
+    font-weight:
+
+        600;
+
+    text-decoration:none;
+
+    box-shadow:
+
+        0 12px 35px
+
+        rgba(0,0,0,.42),
+
+        0 0 25px
+
+        rgba(200,164,93,.18);
+
+    overflow:hidden;
+
+    transition:
+
+        transform .45s ease,
+
+        box-shadow .45s ease;
+
+}
+
+
+.btn-primary::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:-120%;
+
+    width:70%;
+
+    height:100%;
+
+    transform:
+
+        skewX(-20deg);
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(255,255,255,.55),
+
+            transparent
+
+        );
+
+    transition:
+
+        left .8s ease;
+
+}
+
+
+.btn-primary:hover{
+
+    transform:
+
+        translateY(-4px)
+        scale(1.03);
+
+    box-shadow:
+
+        0 18px 45px
+
+        rgba(0,0,0,.52),
+
+        0 0 45px
+
+        rgba(227,194,122,.32);
+
+}
+
+
+.btn-primary:hover::before{
+
+    left:140%;
+
+}
+
+
+/* ========================================================= */
+/* 20 — SECONDARY BUTTON */
+/* ========================================================= */
+
+.btn-secondary{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-width:
+
+        220px;
+
+    padding:
+
+        15px 30px;
+
+    border-radius:
+
+        999px;
+
+    border:
+
+        1px solid
+
+        rgba(255,240,189,.24);
+
+    color:
+
+        #E3C27A;
+
+    background:
+
+        rgba(12,10,8,.46);
+
+    text-decoration:none;
+
+    backdrop-filter:
+
+        blur(14px);
+
+    -webkit-backdrop-filter:
+
+        blur(14px);
+
+    box-shadow:
+
+        0 12px 35px
+
+        rgba(0,0,0,.32),
+
+        inset 0 0 20px
+
+        rgba(255,255,255,.035);
+
+    transition:
+
+        transform .45s ease,
+
+        border-color .45s ease,
+
+        box-shadow .45s ease,
+
+        background .45s ease;
+
+}
+
+
+.btn-secondary:hover{
+
+    transform:
+
+        translateY(-4px);
+
+    border-color:
+
+        rgba(227,194,122,.58);
+
+    background:
+
+        rgba(200,164,93,.08);
+
+    box-shadow:
+
+        0 18px 45px
+
+        rgba(0,0,0,.46),
+
+        0 0 30px
+
+        rgba(200,164,93,.14);
+
+}
+
+
+/* ========================================================= */
+/* 21 — HERO BOTTOM FADE */
+/* ========================================================= */
+
+.hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    bottom:0;
+
+    height:280px;
+
+    z-index:5;
+
+    pointer-events:none;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            transparent,
+
+            #030303
+
+        );
+
+}
+
+
+/* ========================================================= */
+/* 22 — HERO LIGHT ANIMATION */
+/* ========================================================= */
+
+@keyframes hero-light-breathe{
+
+    0%{
+
+        transform:
+
+            scale(1);
+
+        opacity:.75;
+
+    }
+
+    100%{
+
+        transform:
+
+            scale(1.08);
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 23 — STARS DRIFT */
+/* ========================================================= */
+
+@keyframes stars-drift{
+
+    0%{
+
+        transform:
+
+            translate3d(0,0,0);
+
+    }
+
+    50%{
+
+        transform:
+
+            translate3d(-20px,15px,0);
+
+    }
+
+    100%{
+
+        transform:
+
+            translate3d(0,0,0);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 24 — STARS REVERSE DRIFT */
+/* ========================================================= */
+
+@keyframes stars-drift-reverse{
+
+    0%{
+
+        transform:
+
+            translate3d(0,0,0);
+
+    }
+
+    50%{
+
+        transform:
+
+            translate3d(18px,-12px,0);
+
+    }
+
+    100%{
+
+        transform:
+
+            translate3d(0,0,0);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 25 — TABLET */
+/* ========================================================= */
+
+@media (max-width:1100px){
+
+    .main-header{
+
+        height:
+
+            82px;
+
+    }
+
+
+    .hero{
+
+        min-height:
+
+            165vh;
+
+    }
+
+
+    .hero > .container{
+
+        min-height:
+
+            165vh;
+
+    }
+
+
+    .hero-wrapper{
+
+        min-height:
+
+            165vh;
+
+    }
+
+
+    .hero-wrapper .ars-orbit{
+
+        margin-top:
+
+            -30px;
+
+    }
+
+
+    .hero-content{
+
+        margin-top:
+
+            -250px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 26 — MOBILE */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    .main-header{
+
+        height:
+
+            74px;
+
+    }
+
+
+    .main-header img.mother-logo{
+
+        width:
+
+            72px !important;
+
+        max-width:
+
+            72px !important;
+
+    }
+
+
+    .hero{
+
+        min-height:
+
+            140vh;
+
+    }
+
+
+    .hero > .container{
+
+        min-height:
+
+            140vh;
+
+    }
+
+
+    .hero-wrapper{
+
+        min-height:
+
+            140vh;
+
+    }
+
+
+    .hero-wrapper .ars-orbit{
+
+        margin-top:
+
+            -20px;
+
+    }
+
+
+    .hero-content{
+
+        margin-top:
+
+            -180px;
+
+    }
+
+
+    .hero-content p{
+
+        font-size:
+
+            .95rem;
+
+        line-height:
+
+            1.75;
+
+    }
+
+
+    .hero-buttons{
+
+        gap:
+
+            12px;
+
+    }
+
+
+    .btn-primary,
+    .btn-secondary{
+
+        width:
+
+            min(300px,88vw);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 27 — SMALL MOBILE */
+/* ========================================================= */
+
+@media (max-width:520px){
+
+    .hero-content{
+
+        margin-top:
+
+            -150px;
+
+    }
+
+
+    .hero-label{
+
+        font-size:
+
+            .62rem;
+
+        letter-spacing:
+
+            .20em;
+
+    }
+
+
+    .hero-content h1{
+
+        font-size:
+
+            2.35rem;
+
+    }
+
+
+    .hero-content p{
+
+        font-size:
+
+            .9rem;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 28 — REDUCED MOTION */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    .hero-background,
+    .hero-stars,
+    .hero-stars-2{
+
+        animation:
+
+            none;
+
+    }
+
+
+    .btn-primary,
+    .btn-secondary,
+    .orbit-core,
+    .orbit-item a{
+
+        transition:
+
+            none;
+
+    }
+
+   }

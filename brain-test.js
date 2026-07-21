@@ -1,380 +1,452 @@
 /* =========================================================
-   ARS BRAIN TEST — JS INTERACTION LAYER
-   Works with brain-test.js
+   ARS BRAIN TEST — PREMIUM INTERACTION ENGINE
+   Dedicated only to:
+   <body class="brain-test-page">
    ========================================================= */
 
+document.addEventListener("DOMContentLoaded", () => {
 
-/* =========================================================
-   01 — SCROLL REVEAL
-   ========================================================= */
+    /* =====================================================
+       SAFETY CHECK
+       Prevent script from affecting other ARS pages
+       ===================================================== */
 
-.brain-test-page .reveal-element{
+    const page = document.querySelector(".brain-test-page");
 
-    opacity:0;
-
-    transform:
-        translateY(45px)
-        scale(.985);
-
-    transition:
-        opacity .8s ease,
-        transform .8s cubic-bezier(.2,.8,.2,1);
-
-    transition-delay:
-        var(--reveal-delay,0ms);
-
-}
+    if (!page) return;
 
 
-.brain-test-page
-.reveal-element.is-visible{
+    /* =====================================================
+       01 — SCROLL REVEAL
+       ===================================================== */
 
-    opacity:1;
+    const revealTargets = page.querySelectorAll(
+        ".section-heading, " +
+        ".ars-glass, " +
+        ".pillar-card, " +
+        ".feature-card, " +
+        ".family-card, " +
+        ".haven-card, " +
+        ".rose-card, " +
+        ".zhr-card, " +
+        ".os-card, " +
+        ".future-card, " +
+        ".architecture-card, " +
+        ".vision-card"
+    );
 
-    transform:
-        translateY(0)
-        scale(1);
 
-}
+    revealTargets.forEach((element, index) => {
 
+        element.classList.add("reveal-element");
 
-/* =========================================================
-   02 — GOLDEN MOUSE LIGHT
-   ========================================================= */
-
-.brain-test-page
-.ars-glass::after{
-
-    content:"";
-
-    position:absolute;
-
-    width:280px;
-
-    height:280px;
-
-    left:
-        var(--mouse-x,50%);
-
-    top:
-        var(--mouse-y,50%);
-
-    transform:
-        translate(-50%,-50%);
-
-    border-radius:50%;
-
-    background:
-        radial-gradient(
-            circle,
-            rgba(231,201,130,.20) 0%,
-            rgba(201,164,92,.10) 25%,
-            transparent 70%
+        element.style.setProperty(
+            "--reveal-delay",
+            `${Math.min(index * 45, 400)}ms`
         );
 
-    opacity:0;
+    });
 
-    pointer-events:none;
 
-    transition:
-        opacity .35s ease;
+    const revealObserver = new IntersectionObserver(
 
-    z-index:0;
+        (entries) => {
 
-}
+            entries.forEach(entry => {
 
+                if (entry.isIntersecting) {
 
-.brain-test-page
-.ars-glass:hover::after{
+                    entry.target.classList.add("is-visible");
 
-    opacity:1;
+                    revealObserver.unobserve(entry.target);
 
-}
+                }
 
+            });
 
-/* Keep card content above the light */
+        },
 
-.brain-test-page
-.ars-glass > *{
+        {
+            threshold: 0.12,
+            rootMargin: "0px 0px -60px 0px"
+        }
 
-    position:relative;
+    );
 
-    z-index:1;
 
-}
+    revealTargets.forEach(element => {
 
+        revealObserver.observe(element);
 
-/* =========================================================
-   03 — PREMIUM CARD TRANSITION
-   ========================================================= */
+    });
 
-.brain-test-page
-.pillar-card,
-.brain-test-page
-.feature-card,
-.brain-test-page
-.family-card,
-.brain-test-page
-.haven-card,
-.brain-test-page
-.rose-card,
-.brain-test-page
-.zhr-card,
-.brain-test-page
-.os-card,
-.brain-test-page
-.future-card,
-.brain-test-page
-.architecture-card,
-.brain-test-page
-.vision-card{
 
-    transform-style:
-        preserve-3d;
+    /* =====================================================
+       02 — GOLDEN MOUSE LIGHT
+       ===================================================== */
 
-    will-change:
-        transform;
+    const glassCards = page.querySelectorAll(".ars-glass");
 
-    transition:
 
-        transform .18s ease-out,
+    glassCards.forEach(card => {
 
-        border-color .35s ease,
+        card.addEventListener("pointermove", (event) => {
 
-        box-shadow .35s ease;
+            const rect = card.getBoundingClientRect();
 
-}
+            const x =
+                ((event.clientX - rect.left) / rect.width) * 100;
 
+            const y =
+                ((event.clientY - rect.top) / rect.height) * 100;
 
-/* =========================================================
-   04 — GOLDEN CARD HOVER
-   ========================================================= */
 
-.brain-test-page
-.pillar-card:hover,
-.brain-test-page
-.feature-card:hover,
-.brain-test-page
-.family-card:hover,
-.brain-test-page
-.haven-card:hover,
-.brain-test-page
-.rose-card:hover,
-.brain-test-page
-.zhr-card:hover,
-.brain-test-page
-.os-card:hover,
-.brain-test-page
-.future-card:hover,
-.brain-test-page
-.architecture-card:hover,
-.brain-test-page
-.vision-card:hover{
+            card.style.setProperty(
+                "--mouse-x",
+                `${x}%`
+            );
 
-    border-color:
-        rgba(231,201,130,.72);
+            card.style.setProperty(
+                "--mouse-y",
+                `${y}%`
+            );
 
-    box-shadow:
+        });
 
-        0 30px 80px
-        rgba(0,0,0,.60),
 
-        0 0 35px
-        rgba(201,164,92,.16),
+        card.addEventListener("pointerleave", () => {
 
-        inset 0 1px 0
-        rgba(255,255,255,.10);
+            card.style.setProperty(
+                "--mouse-x",
+                "50%"
+            );
 
-}
+            card.style.setProperty(
+                "--mouse-y",
+                "50%"
+            );
 
+        });
 
-/* =========================================================
-   05 — CARD STAGGER
-   ========================================================= */
+    });
 
-.brain-test-page
-.pillar-card,
-.brain-test-page
-.feature-card,
-.brain-test-page
-.family-card,
-.brain-test-page
-.haven-card,
-.brain-test-page
-.rose-card,
-.brain-test-page
-.zhr-card,
-.brain-test-page
-.os-card,
-.brain-test-page
-.future-card{
 
-    transition-delay:
-        calc(var(--card-index,0) * 45ms);
+    /* =====================================================
+       03 — PREMIUM 3D CARD TILT
+       ===================================================== */
 
-}
+    const tiltCards = page.querySelectorAll(
 
+        ".pillar-card, " +
+        ".feature-card, " +
+        ".family-card, " +
+        ".haven-card, " +
+        ".rose-card, " +
+        ".zhr-card, " +
+        ".os-card, " +
+        ".future-card, " +
+        ".architecture-card, " +
+        ".vision-card"
 
-/* =========================================================
-   06 — HERO PARALLAX
-   ========================================================= */
+    );
 
-.brain-test-page
-.arsbrain-background{
 
-    will-change:
-        transform;
+    tiltCards.forEach(card => {
 
-}
 
+        card.addEventListener("pointermove", (event) => {
 
-.brain-test-page
-.hero-visual{
 
-    will-change:
-        transform;
+            if (window.innerWidth < 800) return;
 
-}
 
+            const rect =
+                card.getBoundingClientRect();
 
-/* =========================================================
-   07 — GOLDEN SCROLL PROGRESS
-   ========================================================= */
 
-.brain-test-page::before{
+            const x =
+                event.clientX - rect.left;
 
-    content:"";
 
-    position:fixed;
+            const y =
+                event.clientY - rect.top;
 
-    top:0;
 
-    left:0;
+            const centerX =
+                rect.width / 2;
 
-    width:100%;
 
-    height:2px;
+            const centerY =
+                rect.height / 2;
 
-    z-index:99999;
 
-    pointer-events:none;
+            const rotateY =
+                ((x - centerX) / centerX) * 4;
 
-    background:
 
-        linear-gradient(
+            const rotateX =
+                ((centerY - y) / centerY) * 4;
 
-            90deg,
 
-            transparent 0%,
+            card.style.transform =
 
-            var(--brain-gold-light) 45%,
+                `perspective(900px)
+                 rotateX(${rotateX}deg)
+                 rotateY(${rotateY}deg)
+                 translateY(-8px)`;
 
-            #ffffff 50%,
 
-            var(--brain-gold-light) 55%,
+        });
 
-            transparent 100%
+
+        card.addEventListener("pointerleave", () => {
+
+
+            card.style.transform = "";
+
+
+        });
+
+
+    });
+
+
+    /* =====================================================
+       04 — SCROLL PROGRESS / GOLDEN TOP LIGHT
+       ===================================================== */
+
+    const updateScrollProgress = () => {
+
+
+        const scrollTop =
+            window.scrollY;
+
+
+        const documentHeight =
+            document.documentElement.scrollHeight
+            - window.innerHeight;
+
+
+        const progress =
+            documentHeight > 0
+                ? scrollTop / documentHeight
+                : 0;
+
+
+        page.style.setProperty(
+
+            "--scroll-progress",
+
+            progress
 
         );
 
-    box-shadow:
 
-        0 0 8px
-        rgba(231,201,130,.8),
+    };
 
-        0 0 22px
-        rgba(201,164,92,.45);
 
-    transform:
+    window.addEventListener(
 
-        scaleX(
-            var(--scroll-progress,0)
+        "scroll",
+
+        updateScrollProgress,
+
+        { passive: true }
+
+    );
+
+
+    updateScrollProgress();
+
+
+    /* =====================================================
+       05 — HERO PARALLAX
+       ===================================================== */
+
+    const hero =
+        page.querySelector(".arsbrain-hero");
+
+
+    const heroBackground =
+        page.querySelector(".arsbrain-background");
+
+
+    const heroVisual =
+        page.querySelector(".hero-visual");
+
+
+    if (hero && (heroBackground || heroVisual)) {
+
+
+        window.addEventListener(
+
+            "scroll",
+
+            () => {
+
+
+                if (window.innerWidth < 800) return;
+
+
+                const scroll =
+                    window.scrollY;
+
+
+                if (heroBackground) {
+
+                    heroBackground.style.transform =
+
+                        `translateY(${scroll * 0.12}px)`;
+
+                }
+
+
+                if (heroVisual) {
+
+                    heroVisual.style.transform =
+
+                        `translateY(${scroll * 0.04}px)`;
+
+                }
+
+
+            },
+
+            { passive: true }
+
         );
 
-    transform-origin:
-        left center;
-
-}
-
-
-/* =========================================================
-   08 — INTERACTION READY
-   ========================================================= */
-
-.brain-test-page
-.brain-interactions-ready
-.ars-glass{
-
-    cursor:
-        default;
-
-}
-
-
-/* =========================================================
-   09 — REDUCED MOTION
-   ========================================================= */
-
-.brain-test-page
-.reduced-motion
-.reveal-element{
-
-    opacity:1;
-
-    transform:none;
-
-    transition:none;
-
-}
-
-
-@media
-(prefers-reduced-motion:reduce){
-
-    .brain-test-page
-    *,
-    .brain-test-page
-    *::before,
-    .brain-test-page
-    *::after{
-
-        animation-duration:
-            .01ms !important;
-
-        animation-iteration-count:
-            1 !important;
-
-        transition-duration:
-            .01ms !important;
-
-        scroll-behavior:
-            auto !important;
-
-    }
-
-}
-
-
-/* =========================================================
-   10 — MOBILE SAFETY
-   ========================================================= */
-
-@media(max-width:800px){
-
-    .brain-test-page
-    .ars-glass:hover{
-
-        transform:
-            translateY(-4px);
 
     }
 
 
-    .brain-test-page
-    .ars-glass::after{
+    /* =====================================================
+       06 — CARD STAGGER
+       ===================================================== */
 
-        display:none;
+    const grids = page.querySelectorAll(
+
+        ".pillars-grid, " +
+        ".family-grid, " +
+        ".haven-grid, " +
+        ".rose-capabilities, " +
+        ".zhr-grid, " +
+        ".os-grid, " +
+        ".future-grid"
+
+    );
+
+
+    grids.forEach(grid => {
+
+
+        const cards =
+            grid.querySelectorAll(".ars-glass");
+
+
+        cards.forEach((card, index) => {
+
+
+            card.style.setProperty(
+
+                "--card-index",
+
+                index
+
+            );
+
+
+        });
+
+
+    });
+
+
+    /* =====================================================
+       07 — GOLDEN CURSOR GLOW
+       ===================================================== */
+
+    let cursorX = 0;
+
+    let cursorY = 0;
+
+
+    page.addEventListener(
+
+        "pointermove",
+
+        (event) => {
+
+
+            cursorX = event.clientX;
+
+            cursorY = event.clientY;
+
+
+            page.style.setProperty(
+
+                "--cursor-x",
+
+                `${cursorX}px`
+
+            );
+
+
+            page.style.setProperty(
+
+                "--cursor-y",
+
+                `${cursorY}px`
+
+            );
+
+
+        }
+
+    );
+
+
+    /* =====================================================
+       08 — REDUCE MOTION ACCESSIBILITY
+       ===================================================== */
+
+    const prefersReducedMotion =
+
+        window.matchMedia(
+
+            "(prefers-reduced-motion: reduce)"
+
+        );
+
+
+    if (prefersReducedMotion.matches) {
+
+
+        page.classList.add(
+
+            "reduced-motion"
+
+        );
+
 
     }
 
-    }
+
+    /* =====================================================
+       09 — INITIALIZE
+       ===================================================== */
+
+    page.classList.add(
+
+        "brain-interactions-ready"
+
+    );
+
+
+    console.log(
+
+        "ARS Brain Test — Premium Interaction Engine Active"
+
+    );
+
+});

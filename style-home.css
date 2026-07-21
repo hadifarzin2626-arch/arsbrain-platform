@@ -949,1018 +949,564 @@ img{
 
           }
 
-/* =========================================================
-   ARS HERITAGE GROUP — HOME
-   PHASE 02
-   PREMIUM ORBITAL SYSTEM
-   ========================================================= */
+/* ========================================================= */
+/* ========================================================= */
+/*                                                             */
+/*        ARS HERITAGE GROUP — HOME ORBITAL SYSTEM             */
+/*        PREMIUM 3D GLASS • GOLD • CINEMATIC ORBIT             */
+/*                                                             */
+/*        CENTRAL CORE                                          */
+/*        6 INNER ORBITALS                                      */
+/*        7 OUTER ORBITALS                                      */
+/*                                                             */
+/*        INNER  → CLOCKWISE                                    */
+/*        OUTER  → COUNTER-CLOCKWISE                            */
+/*                                                             */
+/* ========================================================= */
+/* ========================================================= */
 
-
-/* =========================================================
-   20 — ORBITAL SYSTEM FOUNDATION
-   ========================================================= */
-
-.ars-orbit{
-
-    position:
-        relative;
-
-    width:
-        min(1900px, 100vw);
-
-    height:
-        clamp(500px, 52vh, 760px);
-
-    margin:
-        0 auto;
-
-    flex-shrink:
-        0;
-
-    perspective:
-        1800px;
-
-    transform-style:
-        preserve-3d;
-
-    isolation:
-        isolate;
-
-}
-
-
-/* =========================================================
-   21 — ORBITAL ATMOSPHERE
-   ========================================================= */
-
-.ars-orbit::before{
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    left:
-        50%;
-
-    top:
-        50%;
-
-    width:
-        min(82vw, 1500px);
-
-    height:
-        min(82vw, 1500px);
-
-    transform:
-        translate(-50%, -50%);
-
-    border-radius:
-        50%;
-
-    background:
-
-        radial-gradient(
-            circle,
-            rgba(216,179,106,.12) 0%,
-            rgba(216,179,106,.055) 28%,
-            transparent 68%
-        );
-
-    filter:
-        blur(30px);
-
-    pointer-events:
-        none;
-
-    z-index:
-        -5;
-
-}
-
-
-/* =========================================================
-   22 — ORBITAL GOLDEN ENERGY
-   ========================================================= */
-
-.ars-orbit::after{
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    left:
-        50%;
-
-    top:
-        50%;
-
-    width:
-        min(72vw, 1350px);
-
-    height:
-        min(72vw, 1350px);
-
-    transform:
-        translate(-50%, -50%);
-
-    border-radius:
-        50%;
-
-    border:
-        1px solid
-        rgba(216,179,106,.08);
-
-    box-shadow:
-
-        0 0 50px
-        rgba(216,179,106,.06),
-
-        inset 0 0 50px
-        rgba(216,179,106,.04);
-
-    pointer-events:
-        none;
-
-    z-index:
-        -4;
-
-}
-
-
-/* =========================================================
-   23 — INNER ORBIT
-   ========================================================= */
-
-.orbit-inner{
-
-    position:
-        absolute;
-
-    left:
-        50%;
-
-    top:
-        50%;
-
-    width:
-        min(42vw, 720px);
-
-    height:
-        min(42vw, 720px);
-
-    transform:
-        translate(-50%, -50%);
-
-    border-radius:
-        50%;
-
-    border:
-        1px solid
-        rgba(216,179,106,.20);
-
-    box-shadow:
-
-        0 0 25px
-        rgba(216,179,106,.06),
-
-        inset 0 0 35px
-        rgba(216,179,106,.04);
-
-    transform-style:
-        preserve-3d;
-
-}
-
-
-/* =========================================================
-   24 — OUTER ORBIT
-   ========================================================= */
-
-.orbit-outer{
-
-    position:
-        absolute;
-
-    left:
-        50%;
-
-    top:
-        50%;
-
-    width:
-        min(66vw, 1180px);
-
-    height:
-        min(66vw, 1180px);
-
-    transform:
-        translate(-50%, -50%);
-
-    border-radius:
-        50%;
-
-    border:
-        1px solid
-        rgba(216,179,106,.13);
-
-    box-shadow:
-
-        0 0 35px
-        rgba(216,179,106,.045),
-
-        inset 0 0 45px
-        rgba(216,179,106,.035);
-
-    transform-style:
-        preserve-3d;
-
-}
-
-
-/* =========================================================
-   25 — ORBITAL ITEMS
-   ========================================================= */
-
-.orbit-item{
-
-    position:
-        absolute;
-
-    width:
-        clamp(76px, 7vw, 118px);
-
-    height:
-        clamp(76px, 7vw, 118px);
-
-    transform-style:
-        preserve-3d;
-
-    z-index:
-        10;
-
-}
-
-
-/* =========================================================
-   26 — ORBITAL GLASS LINK
-   ========================================================= */
-
-.orbit-item > a{
-
-    position:
-        relative;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    padding:
-        13px;
-
-    border-radius:
-        50%;
-
-    background:
-
-        linear-gradient(
-            145deg,
-            rgba(255,255,255,.075),
-            rgba(18,14,10,.54) 42%,
-            rgba(5,7,10,.78)
-        );
-
-    border:
-        1px solid
-        rgba(216,179,106,.38);
-
-    box-shadow:
-
-        0 18px 45px
-        rgba(0,0,0,.58),
-
-        0 0 24px
-        rgba(216,179,106,.09),
-
-        inset 0 1px 0
-        rgba(255,243,199,.18),
-
-        inset 0 -12px 25px
-        rgba(0,0,0,.30);
-
-    backdrop-filter:
-        blur(16px);
-
-    -webkit-backdrop-filter:
-        blur(16px);
-
-    transform:
-        translateZ(30px);
-
-    transition:
-        var(--ars-transition);
-
-}
-
-
-/* =========================================================
-   27 — ORBITAL GLASS REFLECTION
-   ========================================================= */
-
-.orbit-item > a::before{
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    inset:
-        2px;
-
-    border-radius:
-        inherit;
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,.16),
-            transparent 32%,
-            transparent 70%,
-            rgba(216,179,106,.07)
-        );
-
-    opacity:
-        .65;
-
-    pointer-events:
-        none;
-
-}
-
-
-/* =========================================================
-   28 — ORBITAL IMAGE
-   ========================================================= */
-
-.orbit-item img{
-
-    position:
-        relative;
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    object-fit:
-        contain;
-
-    border-radius:
-        inherit;
-
-    filter:
-
-        drop-shadow(
-            0 5px 12px
-            rgba(0,0,0,.65)
-        );
-
-    transition:
-        var(--ars-transition);
-
-}
-
-
-/* =========================================================
-   29 — ORBITAL HOVER
-   ========================================================= */
-
-.orbit-item > a:hover{
-
-    transform:
-        translateZ(70px)
-        scale(1.16);
-
-    border-color:
-        rgba(240,209,141,.92);
-
-    box-shadow:
-
-        0 25px 60px
-        rgba(0,0,0,.72),
-
-        0 0 35px
-        rgba(216,179,106,.34),
-
-        0 0 80px
-        rgba(216,179,106,.12),
-
-        inset 0 1px 0
-        rgba(255,243,199,.34);
-
-}
-
-
-.orbit-item > a:hover img{
-
-    transform:
-        scale(1.08);
-
-    filter:
-
-        drop-shadow(
-            0 0 15px
-            rgba(240,209,141,.38)
-        );
-
-}
-
-
-/* =========================================================
-   30 — CENTRAL CORE
-   ========================================================= */
-
-.orbit-core{
-
-    position:
-        absolute;
-
-    left:
-        50%;
-
-    top:
-        50%;
-
-    width:
-        clamp(180px, 18vw, 310px);
-
-    height:
-        clamp(180px, 18vw, 310px);
-
-    transform:
-        translate(-50%, -50%)
-        translateZ(80px);
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    padding:
-        28px;
-
-    border-radius:
-        50%;
-
-    background:
-
-        radial-gradient(
-            circle at 35% 25%,
-            rgba(255,255,255,.10),
-            transparent 28%
-        ),
-
-        linear-gradient(
-            145deg,
-            rgba(40,29,17,.78),
-            rgba(8,8,8,.72) 48%,
-            rgba(5,9,14,.82)
-        );
-
-    border:
-        1px solid
-        rgba(240,209,141,.58);
-
-    box-shadow:
-
-        0 30px 90px
-        rgba(0,0,0,.78),
-
-        0 0 45px
-        rgba(216,179,106,.24),
-
-        0 0 120px
-        rgba(216,179,106,.09),
-
-        inset 0 2px 0
-        rgba(255,243,199,.22),
-
-        inset 0 -20px 40px
-        rgba(0,0,0,.38);
-
-    backdrop-filter:
-        blur(22px);
-
-    -webkit-backdrop-filter:
-        blur(22px);
-
-    z-index:
-        100;
-
-    transition:
-        var(--ars-transition);
-
-}
-
-
-/* =========================================================
-   31 — CENTRAL CORE GLOW
-   ========================================================= */
-
-.orbit-core::before{
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    inset:
-        -12px;
-
-    border-radius:
-        50%;
-
-    border:
-        1px solid
-        rgba(216,179,106,.18);
-
-    box-shadow:
-
-        0 0 30px
-        rgba(216,179,106,.16),
-
-        0 0 80px
-        rgba(216,179,106,.08);
-
-    pointer-events:
-        none;
-
-}
-
-
-/* =========================================================
-   32 — CENTRAL LOGO
-   ========================================================= */
-
-.orbit-core img{
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    object-fit:
-        contain;
-
-    border-radius:
-        50%;
-
-    filter:
-
-        drop-shadow(
-            0 0 20px
-            rgba(216,179,106,.20)
-        );
-
-}
-
-
-/* =========================================================
-   33 — CORE HOVER
-   ========================================================= */
-
-.orbit-core:hover{
-
-    transform:
-        translate(-50%, -50%)
-        translateZ(120px)
-        scale(1.06);
-
-    border-color:
-        rgba(255,243,199,.90);
-
-    box-shadow:
-
-        0 35px 100px
-        rgba(0,0,0,.82),
-
-        0 0 60px
-        rgba(216,179,106,.42),
-
-        0 0 140px
-        rgba(216,179,106,.14);
-
-}
-
-
-/* =========================================================
-   34 — INNER ORBIT POSITIONS
-   ========================================================= */
-
-.orbit-inner .orbit-1{
-
-    left:
-        50%;
-
-    top:
-        0;
-
-    transform:
-        translate(-50%, -50%);
-
-}
-
-.orbit-inner .orbit-2{
-
-    right:
-        0;
-
-    top:
-        25%;
-
-    transform:
-        translate(50%, -50%);
-
-}
-
-.orbit-inner .orbit-3{
-
-    right:
-        0;
-
-    bottom:
-        25%;
-
-    transform:
-        translate(50%, 50%);
-
-}
-
-.orbit-inner .orbit-4{
-
-    left:
-        50%;
-
-    bottom:
-        0;
-
-    transform:
-        translate(-50%, 50%);
-
-}
-
-.orbit-inner .orbit-5{
-
-    left:
-        0;
-
-    bottom:
-        25%;
-
-    transform:
-        translate(-50%, 50%);
-
-}
-
-.orbit-inner .orbit-6{
-
-    left:
-        0;
-
-    top:
-        25%;
-
-    transform:
-        translate(-50%, -50%);
-
-}
-
-
-/* =========================================================
-   35 — OUTER ORBIT POSITIONS
-   ========================================================= */
-
-.orbit-outer .orbit-7{
-
-    left:
-        50%;
-
-    top:
-        0;
-
-    transform:
-        translate(-50%, -50%);
-
-}
-
-.orbit-outer .orbit-8{
-
-    right:
-        18%;
-
-    top:
-        8%;
-
-    transform:
-        translate(50%, -50%);
-
-}
-
-.orbit-outer .orbit-9{
-
-    right:
-        0;
-
-    top:
-        50%;
-
-    transform:
-        translate(50%, -50%);
-
-}
-
-.orbit-outer .orbit-10{
-
-    right:
-        18%;
-
-    bottom:
-        8%;
-
-    transform:
-        translate(50%, 50%);
-
-}
-
-.orbit-outer .orbit-11{
-
-    left:
-        50%;
-
-    bottom:
-        0;
-
-    transform:
-        translate(-50%, 50%);
-
-}
-
-.orbit-outer .orbit-12{
-
-    left:
-        18%;
-
-    bottom:
-        8%;
-
-    transform:
-        translate(-50%, 50%);
-
-}
-
-.orbit-outer .orbit-13{
-
-    left:
-        0;
-
-    top:
-        50%;
-
-    transform:
-        translate(-50%, -50%);
-
-}
-
-
-/* =========================================================
-   36 — HERO ORBIT POSITION
-   ORBIT SITS CLOSE TO HEADER
-   ========================================================= */
-
-.hero-wrapper > .ars-orbit{
-
-    margin-top:
-        8px;
-
-    margin-bottom:
-        -20px;
-
-}
-
-
-/* =========================================================
-   37 — HERO CONTENT AFTER ORBIT
-   ========================================================= */
-
-.hero-wrapper > .hero-content{
-
-    margin-top:
-        0;
-
-}
-
-
-/* =========================================================
-   38 — LARGE SCREEN ORBIT
-   ========================================================= */
-
-@media (min-width: 1400px){
-
-    .ars-orbit{
-
-        height:
-            min(56vh, 820px);
-
-    }
-
-    .orbit-inner{
-
-        width:
-            min(44vw, 760px);
-
-        height:
-            min(44vw, 760px);
-
-    }
-
-    .orbit-outer{
-
-        width:
-            min(68vw, 1250px);
-
-        height:
-            min(68vw, 1250px);
-
-    }
-
-}
-
-
-/* =========================================================
-   39 — TABLET
-   ========================================================= */
-
-@media (max-width: 900px){
-
-    .ars-orbit{
-
-        height:
-            480px;
-
-    }
-
-    .orbit-inner{
-
-        width:
-            430px;
-
-        height:
-            430px;
-
-    }
-
-    .orbit-outer{
-
-        width:
-            680px;
-
-        height:
-            680px;
-
-    }
-
-}
-
-
-/* =========================================================
-   40 — MOBILE
-   ========================================================= */
-
-@media (max-width: 600px){
-
-    .ars-orbit{
-
-        width:
-            100vw;
-
-        height:
-            390px;
-
-        transform:
-            scale(.78);
-
-        transform-origin:
-            top center;
-
-        margin-bottom:
-            -70px;
-
-    }
-
-    .orbit-inner{
-
-        width:
-            350px;
-
-        height:
-            350px;
-
-    }
-
-    .orbit-outer{
-
-        width:
-            560px;
-
-        height:
-            560px;
-
-    }
-
-    .orbit-item{
-
-        width:
-            68px;
-
-        height:
-            68px;
-
-    }
-
-    .orbit-core{
-
-        width:
-            150px;
-
-        height:
-            150px;
-
-        padding:
-            20px;
-
-    }
-
-}
 
 /* ========================================================= */
-/* HOME — LARGE ORBITAL SYSTEM */
+/* 01 — ORBITAL SYSTEM WRAPPER */
 /* ========================================================= */
 
 .ars-orbit{
 
     position:relative;
 
-    width:
-        min(96vw, 1500px);
+    width:1500px;
+    height:1500px;
 
-    height:
-        min(96vw, 1500px);
-
-    margin:
-        0 auto;
+    margin:0 auto;
 
     display:flex;
 
     align-items:center;
     justify-content:center;
 
-    perspective:
-        1800px;
+    perspective:1800px;
 
-    transform-style:
-        preserve-3d;
+    transform-style:preserve-3d;
 
-    z-index:
-        20;
+    z-index:20;
 
 }
 
 
 /* ========================================================= */
-/* INNER ORBIT — SCALE UP */
+/* 02 — CENTRAL ARS HERITAGE GROUP CORE */
+/* ========================================================= */
+
+.orbit-core{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:230px;
+    height:230px;
+
+    transform:
+
+        translate(-50%,-50%)
+        translateZ(120px);
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    z-index:100;
+
+    text-decoration:none;
+
+    background:
+
+        radial-gradient(
+
+            circle at 50% 42%,
+
+            rgba(255,255,255,.18),
+
+            rgba(255,255,255,.055) 42%,
+
+            rgba(12,10,8,.48) 100%
+
+        );
+
+    border:
+
+        1px solid
+
+        rgba(255,240,189,.34);
+
+    box-shadow:
+
+        0 0 45px
+        rgba(200,164,93,.34),
+
+        0 0 100px
+        rgba(200,164,93,.16),
+
+        inset 0 0 35px
+        rgba(255,255,255,.10),
+
+        inset 0 0 80px
+        rgba(200,164,93,.08);
+
+    backdrop-filter:
+
+        blur(16px)
+        saturate(130%);
+
+    -webkit-backdrop-filter:
+
+        blur(16px)
+        saturate(130%);
+
+    transition:
+
+        transform .7s
+        cubic-bezier(.2,.8,.2,1),
+
+        box-shadow .5s ease;
+
+}
+
+
+.orbit-core img{
+
+    width:78%;
+
+    height:auto;
+
+    object-fit:contain;
+
+    filter:
+
+        drop-shadow(
+
+            0 0 22px
+            rgba(227,194,122,.55)
+
+        );
+
+    transition:
+
+        transform .7s ease,
+
+        filter .5s ease;
+
+}
+
+
+/* ========================================================= */
+/* 03 — CENTRAL CORE HOVER */
+/* ========================================================= */
+
+.orbit-core:hover{
+
+    transform:
+
+        translate(-50%,-50%)
+        translateZ(155px)
+        scale(1.08);
+
+    box-shadow:
+
+        0 0 55px
+        rgba(227,194,122,.48),
+
+        0 0 130px
+        rgba(200,164,93,.22),
+
+        inset 0 0 45px
+        rgba(255,255,255,.14),
+
+        inset 0 0 90px
+        rgba(200,164,93,.12);
+
+}
+
+
+.orbit-core:hover img{
+
+    transform:
+
+        scale(1.05);
+
+    filter:
+
+        drop-shadow(
+
+            0 0 32px
+            rgba(255,240,189,.80)
+
+        );
+
+}
+
+
+/* ========================================================= */
+/* 04 — INNER ORBIT RING */
+/* ========================================================= */
+
+.ars-orbit::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:720px;
+    height:720px;
+
+    transform:
+
+        translate(-50%,-50%)
+        rotateX(68deg);
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+        rgba(255,220,150,.22);
+
+    box-shadow:
+
+        0 0 30px
+        rgba(200,164,93,.10),
+
+        0 0 80px
+        rgba(200,164,93,.04),
+
+        inset 0 0 25px
+        rgba(255,255,255,.04);
+
+    pointer-events:none;
+
+}
+
+
+/* ========================================================= */
+/* 05 — OUTER ORBIT RING */
+/* ========================================================= */
+
+.ars-orbit::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:1080px;
+    height:1080px;
+
+    transform:
+
+        translate(-50%,-50%)
+        rotateX(68deg);
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+        rgba(255,220,150,.15);
+
+    box-shadow:
+
+        0 0 45px
+        rgba(200,164,93,.08),
+
+        0 0 100px
+        rgba(200,164,93,.035),
+
+        inset 0 0 30px
+        rgba(255,255,255,.025);
+
+    pointer-events:none;
+
+}
+
+
+/* ========================================================= */
+/* 06 — ORBIT ITEM BASE */
+/* ========================================================= */
+
+.orbit-item{
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:125px;
+    height:125px;
+
+    margin-left:-62.5px;
+    margin-top:-62.5px;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    z-index:30;
+
+    transform-style:preserve-3d;
+
+}
+
+
+/* ========================================================= */
+/* 07 — ORBIT ITEM GLASS */
+/* ========================================================= */
+
+.orbit-item a{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.16),
+
+            rgba(255,255,255,.045) 45%,
+
+            rgba(12,10,8,.42)
+
+        );
+
+    border:
+
+        1px solid
+        rgba(255,240,189,.28);
+
+    box-shadow:
+
+        0 16px 45px
+        rgba(0,0,0,.42),
+
+        0 0 25px
+        rgba(200,164,93,.12),
+
+        inset 0 0 25px
+        rgba(255,255,255,.06),
+
+        inset 0 0 55px
+        rgba(200,164,93,.035);
+
+    backdrop-filter:
+
+        blur(14px)
+        saturate(135%);
+
+    -webkit-backdrop-filter:
+
+        blur(14px)
+        saturate(135%);
+
+    transition:
+
+        transform .55s
+        cubic-bezier(.2,.8,.2,1),
+
+        box-shadow .5s ease,
+
+        background .5s ease,
+
+        border-color .5s ease;
+
+}
+
+
+/* ========================================================= */
+/* 08 — ORBIT ITEM IMAGE */
+/* ========================================================= */
+
+.orbit-item img{
+
+    width:72%;
+    height:72%;
+
+    object-fit:contain;
+
+    filter:
+
+        drop-shadow(
+
+            0 0 12px
+            rgba(227,194,122,.32)
+
+        );
+
+    transition:
+
+        transform .5s ease,
+
+        filter .5s ease;
+
+}
+
+
+/* ========================================================= */
+/* 09 — ORBIT ITEM HOVER */
+/* ========================================================= */
+
+.orbit-item a:hover{
+
+    transform:
+
+        translateZ(60px)
+        scale(1.22);
+
+    background:
+
+        linear-gradient(
+
+            145deg,
+
+            rgba(255,255,255,.24),
+
+            rgba(255,255,255,.07) 45%,
+
+            rgba(200,164,93,.06)
+
+        );
+
+    border-color:
+
+        rgba(255,240,189,.48);
+
+    box-shadow:
+
+        0 25px 60px
+        rgba(0,0,0,.52),
+
+        0 0 40px
+        rgba(227,194,122,.34),
+
+        0 0 90px
+        rgba(200,164,93,.12),
+
+        inset 0 0 30px
+        rgba(255,255,255,.12),
+
+        inset 0 0 60px
+        rgba(200,164,93,.06);
+
+}
+
+
+.orbit-item a:hover img{
+
+    transform:
+
+        scale(1.08);
+
+    filter:
+
+        drop-shadow(
+
+            0 0 20px
+            rgba(255,240,189,.72)
+
+        );
+
+}
+
+
+/* ========================================================= */
+/* 10 — INNER ORBIT */
+/* ========================================================= */
+
+.orbit-1,
+.orbit-2,
+.orbit-3,
+.orbit-4,
+.orbit-5,
+.orbit-6{
+
+    animation:
+
+        orbit-six
+        34s
+        linear
+        infinite;
+
+}
+
+
+/* ========================================================= */
+/* 11 — INNER ORBIT ANGLES */
+/* ========================================================= */
+
+.orbit-1{
+
+    --angle:0deg;
+
+}
+
+
+.orbit-2{
+
+    --angle:60deg;
+
+}
+
+
+.orbit-3{
+
+    --angle:120deg;
+
+}
+
+
+.orbit-4{
+
+    --angle:180deg;
+
+}
+
+
+.orbit-5{
+
+    --angle:240deg;
+
+}
+
+
+.orbit-6{
+
+    --angle:300deg;
+
+}
+
+
+/* ========================================================= */
+/* 12 — INNER ORBIT ANIMATION */
 /* ========================================================= */
 
 @keyframes orbit-six{
@@ -1971,65 +1517,157 @@ img{
 
             rotateZ(var(--angle))
 
-            translateY(-390px)
+            translateY(-330px)
 
-            rotateZ(calc(var(--angle) * -1))
+            rotateZ(
+
+                calc(
+
+                    var(--angle) * -1
+
+                )
+
+            )
 
             rotateX(0deg);
 
     }
+
 
     25%{
 
         transform:
 
-            rotateZ(calc(var(--angle) + 90deg))
+            rotateZ(
 
-            translateY(-390px)
+                calc(
 
-            rotateZ(calc((var(--angle) + 90deg) * -1))
+                    var(--angle) + 90deg
+
+                )
+
+            )
+
+            translateY(-330px)
+
+            rotateZ(
+
+                calc(
+
+                    (
+
+                        var(--angle) + 90deg
+
+                    ) * -1
+
+                )
+
+            )
 
             rotateX(8deg);
 
     }
 
+
     50%{
 
         transform:
 
-            rotateZ(calc(var(--angle) + 180deg))
+            rotateZ(
 
-            translateY(-390px)
+                calc(
 
-            rotateZ(calc((var(--angle) + 180deg) * -1))
+                    var(--angle) + 180deg
+
+                )
+
+            )
+
+            translateY(-330px)
+
+            rotateZ(
+
+                calc(
+
+                    (
+
+                        var(--angle) + 180deg
+
+                    ) * -1
+
+                )
+
+            )
 
             rotateX(0deg);
 
     }
 
+
     75%{
 
         transform:
 
-            rotateZ(calc(var(--angle) + 270deg))
+            rotateZ(
 
-            translateY(-390px)
+                calc(
 
-            rotateZ(calc((var(--angle) + 270deg) * -1))
+                    var(--angle) + 270deg
+
+                )
+
+            )
+
+            translateY(-330px)
+
+            rotateZ(
+
+                calc(
+
+                    (
+
+                        var(--angle) + 270deg
+
+                    ) * -1
+
+                )
+
+            )
 
             rotateX(-8deg);
 
     }
 
+
     100%{
 
         transform:
 
-            rotateZ(calc(var(--angle) + 360deg))
+            rotateZ(
 
-            translateY(-390px)
+                calc(
 
-            rotateZ(calc((var(--angle) + 360deg) * -1))
+                    var(--angle) + 360deg
+
+                )
+
+            )
+
+            translateY(-330px)
+
+            rotateZ(
+
+                calc(
+
+                    (
+
+                        var(--angle) + 360deg
+
+                    ) * -1
+
+                )
+
+            )
 
             rotateX(0deg);
 
@@ -2039,7 +1677,82 @@ img{
 
 
 /* ========================================================= */
-/* OUTER ORBIT — SCALE UP */
+/* 13 — OUTER ORBIT */
+/* ========================================================= */
+
+.orbit-7,
+.orbit-8,
+.orbit-9,
+.orbit-10,
+.orbit-11,
+.orbit-12,
+.orbit-13{
+
+    animation:
+
+        orbit-seven
+        48s
+        linear
+        infinite;
+
+}
+
+
+/* ========================================================= */
+/* 14 — OUTER ORBIT ANGLES */
+/* ========================================================= */
+
+.orbit-7{
+
+    --angle:0deg;
+
+}
+
+
+.orbit-8{
+
+    --angle:51.428deg;
+
+}
+
+
+.orbit-9{
+
+    --angle:102.856deg;
+
+}
+
+
+.orbit-10{
+
+    --angle:154.284deg;
+
+}
+
+
+.orbit-11{
+
+    --angle:205.712deg;
+
+}
+
+
+.orbit-12{
+
+    --angle:257.140deg;
+
+}
+
+
+.orbit-13{
+
+    --angle:308.568deg;
+
+}
+
+
+/* ========================================================= */
+/* 15 — OUTER ORBIT ANIMATION */
 /* ========================================================= */
 
 @keyframes orbit-seven{
@@ -2050,67 +1763,400 @@ img{
 
             rotateZ(var(--angle))
 
-            translateY(-540px)
+            translateY(-470px)
 
-            rotateZ(calc(var(--angle) * -1))
+            rotateZ(
+
+                calc(
+
+                    var(--angle) * -1
+
+                )
+
+            )
 
             rotateX(0deg);
 
     }
+
 
     25%{
 
         transform:
 
-            rotateZ(calc(var(--angle) - 90deg))
+            rotateZ(
 
-            translateY(-540px)
+                calc(
 
-            rotateZ(calc((var(--angle) - 90deg) * -1))
+                    var(--angle) - 90deg
+
+                )
+
+            )
+
+            translateY(-470px)
+
+            rotateZ(
+
+                calc(
+
+                    (
+
+                        var(--angle) - 90deg
+
+                    ) * -1
+
+                )
+
+            )
 
             rotateX(-8deg);
 
     }
 
+
     50%{
 
         transform:
 
-            rotateZ(calc(var(--angle) - 180deg))
+            rotateZ(
 
-            translateY(-540px)
+                calc(
 
-            rotateZ(calc((var(--angle) - 180deg) * -1))
+                    var(--angle) - 180deg
+
+                )
+
+            )
+
+            translateY(-470px)
+
+            rotateZ(
+
+                calc(
+
+                    (
+
+                        var(--angle) - 180deg
+
+                    ) * -1
+
+                )
+
+            )
 
             rotateX(0deg);
 
     }
+
 
     75%{
 
         transform:
 
-            rotateZ(calc(var(--angle) - 270deg))
+            rotateZ(
 
-            translateY(-540px)
+                calc(
 
-            rotateZ(calc((var(--angle) - 270deg) * -1))
+                    var(--angle) - 270deg
+
+                )
+
+            )
+
+            translateY(-470px)
+
+            rotateZ(
+
+                calc(
+
+                    (
+
+                        var(--angle) - 270deg
+
+                    ) * -1
+
+                )
+
+            )
 
             rotateX(8deg);
 
     }
 
+
     100%{
 
         transform:
 
-            rotateZ(calc(var(--angle) - 360deg))
+            rotateZ(
 
-            translateY(-540px)
+                calc(
 
-            rotateZ(calc((var(--angle) - 360deg) * -1))
+                    var(--angle) - 360deg
+
+                )
+
+            )
+
+            translateY(-470px)
+
+            rotateZ(
+
+                calc(
+
+                    (
+
+                        var(--angle) - 360deg
+
+                    ) * -1
+
+                )
+
+            )
 
             rotateX(0deg);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 16 — ORBIT HOVER PAUSE */
+/* ========================================================= */
+
+.ars-orbit:hover .orbit-item{
+
+    animation-play-state:
+
+        paused;
+
+}
+
+
+/* ========================================================= */
+/* 17 — ORBITAL CINEMATIC DEPTH */
+/* ========================================================= */
+
+.ars-orbit{
+
+    filter:
+
+        drop-shadow(
+
+            0 0 35px
+            rgba(200,164,93,.08)
+
+        );
+
+}
+
+
+/* ========================================================= */
+/* 18 — HOME HERO ORBIT POSITION */
+/* ========================================================= */
+
+.hero-wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:160vh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:flex-start;
+
+    overflow:visible;
+
+}
+
+
+.hero-wrapper .ars-orbit{
+
+    position:relative;
+
+    margin-top:-70px;
+
+    flex-shrink:0;
+
+}
+
+
+/* ========================================================= */
+/* 19 — HERO CONTENT POSITION */
+/* ========================================================= */
+
+.hero-content{
+
+    position:relative;
+
+    z-index:200;
+
+    width:
+
+        min(900px,90vw);
+
+    margin-top:-280px;
+
+    text-align:center;
+
+    transform:
+
+        translateZ(80px);
+
+}
+
+
+/* ========================================================= */
+/* 20 — LARGE DESKTOP */
+/* ========================================================= */
+
+@media (min-width:1400px){
+
+    .ars-orbit{
+
+        width:1500px;
+        height:1500px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 21 — TABLET */
+/* ========================================================= */
+
+@media (max-width:1100px){
+
+    .ars-orbit{
+
+        width:1100px;
+        height:1100px;
+
+        transform:
+
+            scale(.82);
+
+    }
+
+
+    .hero-wrapper{
+
+        min-height:140vh;
+
+    }
+
+
+    .hero-wrapper .ars-orbit{
+
+        margin-top:-50px;
+
+    }
+
+
+    .hero-content{
+
+        margin-top:-220px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 22 — MOBILE */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    .ars-orbit{
+
+        width:900px;
+        height:900px;
+
+        transform:
+
+            scale(.64);
+
+    }
+
+
+    .hero-wrapper{
+
+        min-height:125vh;
+
+    }
+
+
+    .hero-wrapper .ars-orbit{
+
+        margin-top:-30px;
+
+    }
+
+
+    .hero-content{
+
+        margin-top:-170px;
+
+        width:90vw;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 23 — SMALL MOBILE */
+/* ========================================================= */
+
+@media (max-width:520px){
+
+    .ars-orbit{
+
+        width:800px;
+        height:800px;
+
+        transform:
+
+            scale(.54);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 24 — ACCESSIBILITY */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    .orbit-1,
+    .orbit-2,
+    .orbit-3,
+    .orbit-4,
+    .orbit-5,
+    .orbit-6,
+    .orbit-7,
+    .orbit-8,
+    .orbit-9,
+    .orbit-10,
+    .orbit-11,
+    .orbit-12,
+    .orbit-13{
+
+        animation:
+
+            none;
 
     }
 

@@ -1,11 +1,5 @@
-console.log("🔥🔥🔥 ARS BRAIN TEST JS LOADED 🔥🔥🔥");
-
-alert("ARS BRAIN TEST JS IS WORKING");
 
 
-
-
-   
 
 
 /* =========================================================

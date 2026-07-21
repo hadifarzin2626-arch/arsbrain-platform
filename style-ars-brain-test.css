@@ -1837,3 +1837,207 @@ section::before{
         rgba(214, 173, 92, 0.16);
 
 }
+
+
+/* =========================================================
+   ARS BRAIN — PREMIUM DARK GLASS CARDS
+   BLACK + GOLD + DEEP NAVY
+   ========================================================= */
+
+
+/* ---------- CARD BASE ---------- */
+
+body.brain-test-page .ars-glass,
+body.brain-test-page .pillar-card,
+body.brain-test-page .feature-card,
+body.brain-test-page .family-card,
+body.brain-test-page .haven-card,
+body.brain-test-page .rose-card,
+body.brain-test-page .zhr-card,
+body.brain-test-page .os-card,
+body.brain-test-page .future-card,
+body.brain-test-page .architecture-card,
+body.brain-test-page .vision-card {
+
+    position: relative;
+
+    overflow: hidden;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.018) 35%,
+            rgba(8,8,8,.72) 100%
+        ),
+
+        rgba(10,10,10,.58);
+
+    border:
+
+        1px solid
+        rgba(198,161,91,.32);
+
+    border-radius:
+
+        22px;
+
+    backdrop-filter:
+
+        blur(22px)
+        saturate(125%);
+
+    -webkit-backdrop-filter:
+
+        blur(22px)
+        saturate(125%);
+
+    box-shadow:
+
+        0 20px 55px
+        rgba(0,0,0,.58),
+
+        0 0 25px
+        rgba(198,161,91,.06),
+
+        inset 0 1px 0
+        rgba(255,255,255,.07);
+
+    transition:
+
+        transform .55s cubic-bezier(.2,.8,.2,1),
+
+        border-color .45s ease,
+
+        box-shadow .55s ease;
+
+}
+
+
+/* =========================================================
+   GOLDEN GLASS REFLECTION
+   ========================================================= */
+
+body.brain-test-page .ars-glass::before,
+body.brain-test-page .pillar-card::before,
+body.brain-test-page .feature-card::before,
+body.brain-test-page .family-card::before,
+body.brain-test-page .haven-card::before,
+body.brain-test-page .rose-card::before,
+body.brain-test-page .zhr-card::before,
+body.brain-test-page .os-card::before,
+body.brain-test-page .future-card::before,
+body.brain-test-page .architecture-card::before,
+body.brain-test-page .vision-card::before {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    pointer-events: none;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 10%,
+            rgba(226,194,122,.16),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            circle at 90% 90%,
+            rgba(17,29,43,.18),
+            transparent 35%
+        );
+
+    opacity: .85;
+
+}
+
+
+/* =========================================================
+   TOP GLASS HIGHLIGHT
+   ========================================================= */
+
+body.brain-test-page .ars-glass::after,
+body.brain-test-page .pillar-card::after,
+body.brain-test-page .feature-card::after,
+body.brain-test-page .family-card::after,
+body.brain-test-page .haven-card::after,
+body.brain-test-page .rose-card::after,
+body.brain-test-page .zhr-card::after,
+body.brain-test-page .os-card::after,
+body.brain-test-page .future-card::after,
+body.brain-test-page .architecture-card::after,
+body.brain-test-page .vision-card::after {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 8%;
+
+    width: 84%;
+
+    height: 1px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(198,161,91,.25),
+            rgba(255,240,189,.75),
+            rgba(198,161,91,.25),
+            transparent
+        );
+
+    opacity: .8;
+
+}
+
+
+/* =========================================================
+   HOVER — LUXURY GOLDEN LIGHT
+   ========================================================= */
+
+body.brain-test-page .ars-glass:hover,
+body.brain-test-page .pillar-card:hover,
+body.brain-test-page .feature-card:hover,
+body.brain-test-page .family-card:hover,
+body.brain-test-page .haven-card:hover,
+body.brain-test-page .rose-card:hover,
+body.brain-test-page .zhr-card:hover,
+body.brain-test-page .os-card:hover,
+body.brain-test-page .future-card:hover,
+body.brain-test-page .architecture-card:hover,
+body.brain-test-page .vision-card:hover {
+
+    transform:
+
+        translateY(-10px);
+
+    border-color:
+
+        rgba(226,194,122,.75);
+
+    box-shadow:
+
+        0 30px 75px
+        rgba(0,0,0,.72),
+
+        0 0 32px
+        rgba(198,161,91,.18),
+
+        0 0 70px
+        rgba(198,161,91,.07),
+
+        inset 0 1px 0
+        rgba(255,240,189,.14);
+
+}

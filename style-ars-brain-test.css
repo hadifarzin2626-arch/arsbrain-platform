@@ -1213,3 +1213,30 @@ section::before{
     }
 
 }
+
+/* =========================================================
+   ARS BRAIN — JS SCROLL REVEAL
+   ========================================================= */
+
+.ars-reveal {
+    opacity: 0;
+    transform: translateY(35px);
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(.22,.61,.36,1);
+}
+
+.ars-visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+/* =========================================================
+   PREMIUM CARD HOVER
+   ========================================================= */
+
+.ars-card-hover {
+    transform: translateY(-8px);
+}
+

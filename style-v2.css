@@ -2095,181 +2095,801 @@ perspective:1200px;
 
     color:rgba(255,255,255,.80);
 }
- /* ===================================================== */
-/* ARS GLASS ORBIT SYSTEM */
-/* ===================================================== */
+ /* ========================================================= */
+/* ARS HERITAGE GROUP */
+/* 13-ORBITAL 3D ECOSYSTEM NAVIGATION */
+/* ========================================================= */
 
-/* CENTER */
+
+/* ========================================================= */
+/* ORBITAL SYSTEM WRAPPER */
+/* ========================================================= */
+
+.ars-orbit{
+
+    position:relative;
+
+    width:760px;
+    height:760px;
+
+    margin:0 auto;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    perspective:1400px;
+
+    transform-style:preserve-3d;
+
+    z-index:20;
+
+}
+
+
+/* ========================================================= */
+/* CENTRAL ARS HERITAGE GROUP ORBITAL CORE */
+/* ========================================================= */
 
 .orbit-core{
 
     position:absolute;
-width:170px;
-height:170px;
 
     top:50%;
     left:50%;
 
-    transform:translate(-50%,-50%);
+    width:190px;
+    height:190px;
+
+    transform:
+        translate(-50%,-50%)
+        translateZ(100px);
 
     border-radius:50%;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 
-    background:
-    rgba(255,255,255,.08);
+    z-index:100;
 
-    backdrop-filter:blur(20px);
+    text-decoration:none;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(255,255,255,.16),
+            rgba(255,255,255,.03) 45%,
+            rgba(0,0,0,.30) 100%
+        );
 
     border:
-    1px solid rgba(255,255,255,.25);
+
+        1px solid
+        rgba(255,255,255,.22);
 
     box-shadow:
-    0 0 50px rgba(184,137,63,.45);
+
+        0 0 35px
+        rgba(255,190,90,.25),
+
+        0 0 80px
+        rgba(255,160,40,.12),
+
+        inset 0 0 30px
+        rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(12px);
+
+    -webkit-backdrop-filter:
+        blur(12px);
+
+    transition:
+
+        transform .7s cubic-bezier(.2,.8,.2,1),
+
+        box-shadow .5s ease;
 
 }
 
 
 .orbit-core img{
 
-    width:85%;
-    height:85%;
+    width:78%;
+
+    height:auto;
 
     object-fit:contain;
+
+    filter:
+
+        drop-shadow(
+            0 0 20px
+            rgba(255,190,80,.45)
+        );
+
+    transition:
+
+        transform .7s ease,
+
+        filter .5s ease;
 
 }
 
 
+.orbit-core:hover{
 
-/* GLASS ITEMS */
+    transform:
+        translate(-50%,-50%)
+        translateZ(130px)
+        scale(1.08);
+
+    box-shadow:
+
+        0 0 45px
+        rgba(255,190,90,.45),
+
+        0 0 110px
+        rgba(255,160,40,.20),
+
+        inset 0 0 35px
+        rgba(255,255,255,.12);
+
+}
+
+
+.orbit-core:hover img{
+
+    transform:scale(1.05);
+
+    filter:
+
+        drop-shadow(
+            0 0 30px
+            rgba(255,210,120,.75)
+        );
+
+}
+
+
+/* ========================================================= */
+/* ORBITAL RINGS */
+/* ========================================================= */
+
+.ars-orbit::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:470px;
+    height:470px;
+
+    transform:
+        translate(-50%,-50%)
+        rotateX(68deg);
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+        rgba(255,205,130,.20);
+
+    box-shadow:
+
+        0 0 25px
+        rgba(255,180,80,.08),
+
+        inset 0 0 20px
+        rgba(255,255,255,.03);
+
+    pointer-events:none;
+
+}
+
+
+.ars-orbit::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:650px;
+    height:650px;
+
+    transform:
+        translate(-50%,-50%)
+        rotateX(68deg);
+
+    border-radius:50%;
+
+    border:
+
+        1px solid
+        rgba(255,205,130,.13);
+
+    box-shadow:
+
+        0 0 35px
+        rgba(255,180,80,.06),
+
+        inset 0 0 25px
+        rgba(255,255,255,.02);
+
+    pointer-events:none;
+
+}
+
+
+/* ========================================================= */
+/* ORBIT ITEM BASE */
+/* ========================================================= */
 
 .orbit-item{
 
     position:absolute;
 
-    width:130px;
-    height:130px;
+    top:50%;
+    left:50%;
 
-    border-radius:50%;
+    width:110px;
+    height:110px;
+
+    margin-left:-55px;
+    margin-top:-55px;
 
     display:flex;
+
     align-items:center;
     justify-content:center;
 
+    z-index:30;
 
-    background:
-    rgba(255,255,255,.10);
-
-
-    backdrop-filter:blur(18px);
-
-
-    border:
-    1px solid rgba(255,255,255,.25);
-
-
-    box-shadow:
-    0 0 30px rgba(184,137,63,.25);
+    transform-style:preserve-3d;
 
 }
 
+
+/* ========================================================= */
+/* ORBIT ITEM LINK */
+/* ========================================================= */
+
+.orbit-item a{
+
+    width:100%;
+    height:100%;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    text-decoration:none;
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.14),
+            rgba(255,255,255,.035)
+        );
+
+    border:
+
+        1px solid
+        rgba(255,255,255,.20);
+
+    box-shadow:
+
+        0 12px 35px
+        rgba(0,0,0,.35),
+
+        0 0 20px
+        rgba(255,190,100,.08),
+
+        inset 0 0 20px
+        rgba(255,255,255,.05);
+
+    backdrop-filter:
+        blur(10px);
+
+    -webkit-backdrop-filter:
+        blur(10px);
+
+    transition:
+
+        transform .5s cubic-bezier(.2,.8,.2,1),
+
+        box-shadow .5s ease,
+
+        background .5s ease;
+
+}
 
 
 .orbit-item img{
 
-    width:75%;
-    height:75%;
+    width:72%;
+
+    height:72%;
 
     object-fit:contain;
+
+    filter:
+
+        drop-shadow(
+            0 0 10px
+            rgba(255,190,90,.25)
+        );
+
+    transition:
+
+        transform .5s ease,
+
+        filter .5s ease;
 
 }
 
 
+.orbit-item a:hover{
 
-/* POSITIONS */
+    transform:
+        translateZ(50px)
+        scale(1.22);
 
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.22),
+            rgba(255,255,255,.06)
+        );
+
+    box-shadow:
+
+        0 20px 50px
+        rgba(0,0,0,.45),
+
+        0 0 35px
+        rgba(255,190,90,.30),
+
+        inset 0 0 25px
+        rgba(255,255,255,.10);
+
+}
+
+
+.orbit-item a:hover img{
+
+    transform:scale(1.08);
+
+    filter:
+
+        drop-shadow(
+            0 0 18px
+            rgba(255,210,130,.65)
+        );
+
+}
+
+
+/* ========================================================= */
+/* INNER ORBIT — 6 ITEMS */
+/* ========================================================= */
+
+.orbit-1,
+.orbit-2,
+.orbit-3,
+.orbit-4,
+.orbit-5,
+.orbit-6{
+
+    animation:
+
+        orbit-six
+        34s
+        linear
+        infinite;
+
+}
+
+
+/* ========================================================= */
+/* INNER ORBIT POSITIONING */
+/* ========================================================= */
 
 .orbit-1{
 
-    top:20px;
-    left:50%;
-
-    transform:translateX(-50%);
+    --angle:0deg;
 
 }
 
 
 .orbit-2{
 
-    top:130px;
-    right:40px;
+    --angle:60deg;
 
 }
 
 
 .orbit-3{
 
-    bottom:130px;
-    right:40px;
+    --angle:120deg;
 
 }
 
 
 .orbit-4{
 
-    bottom:20px;
-    left:50%;
-
-    transform:translateX(-50%);
+    --angle:180deg;
 
 }
 
 
 .orbit-5{
 
-    bottom:130px;
-    left:40px;
+    --angle:240deg;
 
 }
 
 
 .orbit-6{
 
-    top:130px;
-    left:40px;
+    --angle:300deg;
 
 }
 
+
+/* ========================================================= */
+/* INNER ORBIT ANIMATION */
+/* ========================================================= */
+
+@keyframes orbit-six{
+
+    0%{
+
+        transform:
+
+            rotateZ(var(--angle))
+
+            translateY(-235px)
+
+            rotateZ(calc(var(--angle) * -1))
+
+            rotateX(0deg);
+
+    }
+
+    25%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) + 90deg))
+
+            translateY(-235px)
+
+            rotateZ(calc((var(--angle) + 90deg) * -1))
+
+            rotateX(8deg);
+
+    }
+
+    50%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) + 180deg))
+
+            translateY(-235px)
+
+            rotateZ(calc((var(--angle) + 180deg) * -1))
+
+            rotateX(0deg);
+
+    }
+
+    75%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) + 270deg))
+
+            translateY(-235px)
+
+            rotateZ(calc((var(--angle) + 270deg) * -1))
+
+            rotateX(-8deg);
+
+    }
+
+    100%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) + 360deg))
+
+            translateY(-235px)
+
+            rotateZ(calc((var(--angle) + 360deg) * -1))
+
+            rotateX(0deg);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* OUTER ORBIT — 7 ITEMS */
+/* ========================================================= */
+
+.orbit-7,
+.orbit-8,
+.orbit-9,
+.orbit-10,
+.orbit-11,
+.orbit-12,
+.orbit-13{
+
+    animation:
+
+        orbit-seven
+        48s
+        linear
+        infinite;
+
+}
+
+
+/* ========================================================= */
+/* OUTER ORBIT POSITIONING */
+/* ========================================================= */
 
 .orbit-7{
 
-    top:50%;
-    right:0;
-
-    transform:translateY(-50%);
+    --angle:0deg;
 
 }
 
 
+.orbit-8{
+
+    --angle:51.428deg;
+
+}
+
+
+.orbit-9{
+
+    --angle:102.856deg;
+
+}
+
+
+.orbit-10{
+
+    --angle:154.284deg;
+
+}
+
+
+.orbit-11{
+
+    --angle:205.712deg;
+
+}
+
+
+.orbit-12{
+
+    --angle:257.140deg;
+
+}
+
+
+.orbit-13{
+
+    --angle:308.568deg;
+
+}
+
+
+/* ========================================================= */
+/* OUTER ORBIT ANIMATION */
+/* ========================================================= */
+
+@keyframes orbit-seven{
+
+    0%{
+
+        transform:
+
+            rotateZ(var(--angle))
+
+            translateY(-325px)
+
+            rotateZ(calc(var(--angle) * -1))
+
+            rotateX(0deg);
+
+    }
+
+    25%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) - 90deg))
+
+            translateY(-325px)
+
+            rotateZ(calc((var(--angle) - 90deg) * -1))
+
+            rotateX(-8deg);
+
+    }
+
+    50%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) - 180deg))
+
+            translateY(-325px)
+
+            rotateZ(calc((var(--angle) - 180deg) * -1))
+
+            rotateX(0deg);
+
+    }
+
+    75%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) - 270deg))
+
+            translateY(-325px)
+
+            rotateZ(calc((var(--angle) - 270deg) * -1))
+
+            rotateX(8deg);
+
+    }
+
+    100%{
+
+        transform:
+
+            rotateZ(calc(var(--angle) - 360deg))
+
+            translateY(-325px)
+
+            rotateZ(calc((var(--angle) - 360deg) * -1))
+
+            rotateX(0deg);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* HOVER PAUSE */
+/* ========================================================= */
+
+.ars-orbit:hover .orbit-item{
+
+    animation-play-state:paused;
+
+}
+
+
+/* ========================================================= */
+/* ORBITAL DEPTH GLOW */
+/* ========================================================= */
+
 .ars-orbit{
 
-    position:absolute;
+    filter:
 
-    top:15%;
+        drop-shadow(
+            0 0 35px
+            rgba(255,180,80,.06)
+        );
 
-    left:50%;
+}
 
-    transform:translate(-50%,-50%);
 
-    width:520px;
+/* ========================================================= */
+/* RESPONSIVE — TABLET */
+/* ========================================================= */
 
-    height:520px;
+@media (max-width:1100px){
 
-   pointer-events:auto;
+    .ars-orbit{
 
-    z-index:2;
+        width:650px;
+        height:650px;
+
+        transform:scale(.88);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* RESPONSIVE — MOBILE */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    .ars-orbit{
+
+        width:520px;
+        height:520px;
+
+        transform:scale(.70);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* SMALL MOBILE */
+/* ========================================================= */
+
+@media (max-width:520px){
+
+    .ars-orbit{
+
+        width:440px;
+        height:440px;
+
+        transform:scale(.58);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* ACCESSIBILITY */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    .orbit-1,
+    .orbit-2,
+    .orbit-3,
+    .orbit-4,
+    .orbit-5,
+    .orbit-6,
+    .orbit-7,
+    .orbit-8,
+    .orbit-9,
+    .orbit-10,
+    .orbit-11,
+    .orbit-12,
+    .orbit-13{
+
+        animation:none;
+
+    }
 
 }
 /* ===================================================== */

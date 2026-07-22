@@ -7783,7 +7783,7 @@ img{
 .ars-card-title-veil span{
 
     font-weight:
-        1350;
+        1450;
 
 
 
@@ -7804,7 +7804,7 @@ img{
         relative;
 
     left:
-        -50%;
+        -55%;
 
 }
 
@@ -7821,6 +7821,6 @@ img{
 .ars-glass-card .ars-card-image::after{
 
     height:
-       110%;
+       125%;
 
 }

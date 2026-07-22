@@ -7824,3 +7824,17 @@ img{
        125%;
 
 }
+
+
+/* ========================================================= */
+/* TEMPORARY CARD SIZE & SPACING OVERRIDE                    */
+/* DELETE THIS BLOCK TO RESTORE PREVIOUS LAYOUT              */
+/* ========================================================= */
+
+.home-card {
+    min-height: 80%;
+}
+
+.home-cards-grid {
+    row-gap: 2em;
+}

@@ -7733,16 +7733,16 @@ img{
 }
 
 /* ========================================================= */
-/* 15 — ARS CARD TITLES — SIZE ONLY                         */
+/* 15 — ARS CARD TITLES — DOUBLE CURRENT SIZE                */
 /* ========================================================= */
-/* 13 CARDS: +30% TITLE SIZE                                */
-/* ARS HERITAGE GROUP: +35% TITLE SIZE                      */
-/* NO COLOR / NO CARD / NO LAYOUT / NO OTHER CHANGES       */
+/* 13 CARDS: 2X CURRENT SIZE                                 */
+/* ARS HERITAGE GROUP: 2X CURRENT SIZE                       */
+/* ONLY TITLE SIZE IS CHANGED                                */
 /* ========================================================= */
 
 
 /* ========================================================= */
-/* 01 — ALL 13 NON-HERITAGE CARD TITLES                     */
+/* 01 — ALL 13 CARDS                                         */
 /* ========================================================= */
 
 .ars-glass-card:not(:has(
@@ -7751,13 +7751,13 @@ img{
 .ars-card-content h3{
 
     font-size:
-        130%;
+        200%;
 
 }
 
 
 /* ========================================================= */
-/* 02 — ARS HERITAGE GROUP TITLE                            */
+/* 02 — ARS HERITAGE GROUP                                   */
 /* ========================================================= */
 
 .ars-glass-card:has(
@@ -7766,6 +7766,72 @@ img{
 .ars-card-content h3{
 
     font-size:
-        135%;
+        200%;
+
+}
+
+
+/* ========================================================= */
+/* 20 — ARS HERO — PREMIUM SPACE EXPANSION                  */
+/* ========================================================= */
+/* HERO VISUAL SPACE: +35% WIDER                             */
+/* HERO VERTICAL SPACE: +15% TALLER                          */
+/* ORBIT SYSTEM: NOT TOUCHED                                 */
+/* ORBIT SIZE: NOT TOUCHED                                   */
+/* ORBIT ROTATION: NOT TOUCHED                               */
+/* ORBIT ANIMATION: NOT TOUCHED                              */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — HERO — EXPANDED VISUAL SPACE                         */
+/* ========================================================= */
+
+.hero{
+
+    width:
+        100%;
+
+    min-height:
+        115vh;
+
+}
+
+
+/* ========================================================= */
+/* 02 — HERO WRAPPER — 15% TALLER                            */
+/* ========================================================= */
+
+.hero-wrapper{
+
+    min-height:
+        calc(115vh - 82px);
+
+}
+
+
+/* ========================================================= */
+/* 03 — HERO CONTENT — 35% MORE HORIZONTAL SPACE             */
+/* ========================================================= */
+
+.hero-content{
+
+    width:
+        min(1215px, 121.5vw);
+
+    max-width:
+        none;
+
+}
+
+
+/* ========================================================= */
+/* 04 — KEEP HERO INSIDE VIEWPORT                            */
+/* ========================================================= */
+
+.hero{
+
+    overflow:
+        hidden;
 
 }

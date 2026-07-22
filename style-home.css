@@ -7731,4 +7731,68 @@ img{
     }
 
 }
+...........
+/* ========================================================= */
+/* 13 — ARS GLASS CARDS — PREMIUM SCALE HIERARCHY           */
+/* ========================================================= */
+/* OTHER 13 CARDS: +10%                                      */
+/* ARS HERITAGE GROUP: +30%                                  */
+/* ========================================================= */
 
+
+/* ========================================================= */
+/* 01 — ALL 14 CARDS — 10% LARGER                            */
+/* ========================================================= */
+
+.ars-glass-card{
+
+    transform:
+        scale(1.10);
+
+    transform-origin:
+        center center;
+
+    z-index:
+        2;
+
+}
+
+
+/* ========================================================= */
+/* 02 — ARS HERITAGE GROUP — 30% LARGER                      */
+/*                                                             */
+/* This overrides the 10% scale above                       */
+/* ========================================================= */
+
+.ars-glass-card:has(
+    .ars-card-link[href="ars-heritage-group.html"]
+){
+
+    transform:
+        scale(1.30);
+
+    transform-origin:
+        center center;
+
+    z-index:
+        20;
+
+}
+
+
+/* ========================================================= */
+/* 03 — ARS HERITAGE GROUP — HOVER                           */
+/* ========================================================= */
+
+.ars-glass-card:has(
+    .ars-card-link[href="ars-heritage-group.html"]
+):hover{
+
+    transform:
+        scale(1.30)
+        translateY(-8px);
+
+    z-index:
+        30;
+
+}

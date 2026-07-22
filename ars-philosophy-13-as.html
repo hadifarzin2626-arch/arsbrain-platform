@@ -1,1022 +1,1619 @@
-<!DOCTYPE html>
-<html lang="en">
+/* ========================================================= */
+/* ARS HERITAGE GROUP — THE 13 A'S                           */
+/* FILE: ars-philosophy-13-as.css                            */
+/* VERSION: 02 — PREMIUM GLASS HERO                          */
+/* ========================================================= */
 
-<head>
 
-    <meta charset="UTF-8">
+/* ========================================================= */
+/* 01 — ARS BRAND DNA                                        */
+/* ========================================================= */
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
+:root{
 
-    <title>
-        THE 13 A'S | The 13 Pillars of ARS
-    </title>
+    --ars-black:
+        #030303;
 
-    <link
-        rel="stylesheet"
-        href="ars-philosophy-13-as.css"
-    >
+    --ars-black-deep:
+        #050504;
 
-</head>
+    --ars-navy:
+        #081522;
 
+    --ars-navy-deep:
+        #040b13;
 
-<body>
 
+    --ars-gold-dark:
+        #8f642f;
 
-<!-- ===================================================== -->
-<!-- PHILOSOPHY 13 A'S — HERO -->
-<!-- ===================================================== -->
+    --ars-gold:
+        #b8893f;
 
-<section
-    class="philosophy-13a-hero"
-    id="top"
->
+    --ars-gold-main:
+        #c99b50;
 
+    --ars-gold-light:
+        #e1b866;
 
-    <!-- ================================================= -->
-    <!-- AMBIENT LIGHT SYSTEM -->
-    <!-- ================================================= -->
+    --ars-gold-bright:
+        #f0ca7a;
 
-    <div class="philosophy-13a-light light-left"></div>
 
-    <div class="philosophy-13a-light light-right"></div>
+    --ars-white:
+        #f4f0e7;
 
-    <div class="philosophy-13a-light light-top"></div>
+    --ars-white-soft:
+        rgba(244,240,231,.70);
 
-    <div class="philosophy-13a-light light-bottom"></div>
 
+    --glass-clear:
+        rgba(255,255,255,.075);
 
-    <!-- ================================================= -->
-    <!-- BACKGROUND ATMOSPHERE -->
-    <!-- ================================================= -->
+    --glass-clear-light:
+        rgba(255,255,255,.115);
 
-    <div class="philosophy-13a-stars"></div>
+    --glass-dark:
+        rgba(5,12,20,.28);
 
-    <div class="philosophy-13a-ambient"></div>
+    --glass-border:
+        rgba(255,240,189,.24);
 
+    --glass-border-bright:
+        rgba(255,240,189,.42);
 
-    <div class="container">
 
+    --gold-light:
+        rgba(240,202,122,.30);
 
-        <div class="philosophy-13a-hero-inner">
+    --gold-glow:
+        rgba(184,137,63,.25);
 
+    --gold-deep-glow:
+        rgba(143,95,45,.16);
 
-            <!-- ================================================= -->
-            <!-- MAIN 3D GLASS CARD -->
-            <!-- ================================================= -->
 
-            <div class="philosophy-13a-card">
+    --shadow-black:
+        rgba(0,0,0,.78);
 
 
-                <!-- ================================================= -->
-                <!-- 3D GLASS DEPTH LAYERS -->
-                <!-- ================================================= -->
+    --transition:
+        all .8s cubic-bezier(.16,1,.3,1);
 
-                <div class="glass-depth glass-depth-back"></div>
+}
 
-                <div class="glass-depth glass-depth-mid"></div>
 
+/* ========================================================= */
+/* 02 — GLOBAL RESET                                         */
+/* ========================================================= */
 
-                <!-- ================================================= -->
-                <!-- LARGE A + 3D ROTATING RING -->
-                <!-- ================================================= -->
+*{
 
-                <div class="philosophy-13a-great-a">
+    box-sizing:
+        border-box;
 
+}
 
-                    <div class="philosophy-13a-ring">
 
-                        <div class="philosophy-13a-ring-inner"></div>
+html{
 
-                    </div>
+    margin:
+        0;
 
+    padding:
+        0;
 
-                    <span class="great-a-letter">
-                        A
-                    </span>
+    scroll-behavior:
+        smooth;
 
+}
 
-                </div>
 
+body{
 
-                <!-- ================================================= -->
-                <!-- GLASS REFLECTION -->
-                <!-- ================================================= -->
+    margin:
+        0;
 
-                <div class="glass-reflection"></div>
+    padding:
+        0;
 
+    min-height:
+        100vh;
 
-                <!-- ================================================= -->
-                <!-- 13 A'S ENGRAVED CONTENT -->
-                <!-- ================================================= -->
+    overflow-x:
+        hidden;
 
-                <div class="philosophy-13a-card-content">
+    background:
+        var(--ars-black);
 
+    color:
+        var(--ars-white);
 
-                    <div class="philosophy-13a-eyebrow">
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
-                        THE PHILOSOPHY OF ARS
+}
 
-                    </div>
 
+/* ========================================================= */
+/* 03 — MAIN HERO                                            */
+/* ========================================================= */
 
-                    <div class="philosophy-13a-title">
+.ars-13a-hero{
 
-                        <span>
-                            THE 13
-                        </span>
+    position:
+        relative;
 
-                        <span class="a-symbol">
-                            A'S
-                        </span>
+    min-height:
+        100vh;
 
-                    </div>
+    width:
+        100%;
 
+    display:
+        flex;
 
-                    <h1>
+    flex-direction:
+        column;
 
-                        The 13 Pillars of ARS
+    align-items:
+        center;
 
-                    </h1>
+    justify-content:
+        center;
 
+    padding:
+        80px 30px 120px;
 
-                    <p class="philosophy-13a-vision-line">
+    overflow:
+        hidden;
 
-                        One A. Thirteen Pillars. One Vision.
+    isolation:
+        isolate;
 
-                    </p>
 
+    background:
 
-                    <!-- ================================================= -->
-                    <!-- 13 PILLARS -->
-                    <!-- ================================================= -->
+        radial-gradient(
+            ellipse at 50% 15%,
 
-                    <div class="a-pillars-glass-list">
+            rgba(255,220,145,.16),
 
+            transparent 38%
+        ),
 
-                        <div class="a-glass-item">
+        radial-gradient(
+            ellipse at 15% 50%,
 
-                            <span>01</span>
+            rgba(184,137,63,.11),
 
-                            <strong>
-                                AUTHENTICITY
-                            </strong>
+            transparent 40%
+        ),
 
-                        </div>
+        radial-gradient(
+            ellipse at 85% 50%,
 
+            rgba(184,137,63,.10),
 
-                        <div class="a-glass-item">
+            transparent 40%
+        ),
 
-                            <span>02</span>
+        linear-gradient(
+            180deg,
 
-                            <strong>
-                                AUTOMOTIVE
-                            </strong>
+            #020202 0%,
 
-                        </div>
+            #080706 48%,
 
+            #020202 100%
+        );
 
-                        <div class="a-glass-item">
+}
 
-                            <span>03</span>
 
-                            <strong>
-                                ADVANCED
-                            </strong>
+/* ========================================================= */
+/* 04 — LARGE GOLDEN LIGHT SOURCES                            */
+/* ========================================================= */
 
-                        </div>
+.ars-13a-light{
 
+    position:
+        absolute;
 
-                        <div class="a-glass-item">
+    pointer-events:
+        none;
 
-                            <span>04</span>
+    z-index:
+        -2;
 
-                            <strong>
-                                ARCHITECTURE
-                            </strong>
+    border-radius:
+        50%;
 
-                        </div>
+    filter:
+        blur(80px);
 
+    opacity:
+        .8;
 
-                        <div class="a-glass-item">
+}
 
-                            <span>05</span>
 
-                            <strong>
-                                ARTISTRY
-                            </strong>
+/* LEFT PROJECTOR */
 
-                        </div>
+.ars-13a-light-left{
 
+    width:
+        520px;
 
-                        <div class="a-glass-item">
+    height:
+        520px;
 
-                            <span>06</span>
+    left:
+        -300px;
 
-                            <strong>
-                                APEX
-                            </strong>
+    top:
+        25%;
 
-                        </div>
+    background:
+        radial-gradient(
+            circle,
 
+            rgba(230,188,103,.28)
+            0%,
 
-                        <div class="a-glass-item">
+            rgba(184,137,63,.13)
+            30%,
 
-                            <span>07</span>
+            transparent 70%
+        );
 
-                            <strong>
-                                AUTHORITY
-                            </strong>
+}
 
-                        </div>
 
+/* RIGHT PROJECTOR */
 
-                        <div class="a-glass-item">
+.ars-13a-light-right{
 
-                            <span>08</span>
+    width:
+        520px;
 
-                            <strong>
-                                ADAPTABILITY
-                            </strong>
+    height:
+        520px;
 
-                        </div>
+    right:
+        -300px;
 
+    top:
+        25%;
 
-                        <div class="a-glass-item">
+    background:
+        radial-gradient(
+            circle,
 
-                            <span>09</span>
+            rgba(230,188,103,.28)
+            0%,
 
-                            <strong>
-                                ASSURANCE
-                            </strong>
+            rgba(184,137,63,.13)
+            30%,
 
-                        </div>
+            transparent 70%
+        );
 
+}
 
-                        <div class="a-glass-item">
 
-                            <span>10</span>
+/* CENTER PROJECTOR */
 
-                            <strong>
-                                ADVANCEMENT
-                            </strong>
+.ars-13a-light-center{
 
-                        </div>
+    width:
+        800px;
 
+    height:
+        400px;
 
-                        <div class="a-glass-item">
+    left:
+        50%;
 
-                            <span>11</span>
+    top:
+        -180px;
 
-                            <strong>
-                                ACCESSIBILITY
-                            </strong>
+    transform:
+        translateX(-50%);
 
-                        </div>
+    filter:
+        blur(100px);
 
+    background:
+        radial-gradient(
+            ellipse,
 
-                        <div class="a-glass-item">
+            rgba(255,240,189,.24),
 
-                            <span>12</span>
+            rgba(230,188,103,.10)
+            35%,
 
-                            <strong>
-                                ALLIANCE
-                            </strong>
+            transparent 72%
+        );
 
-                        </div>
+}
 
 
-                        <div class="a-glass-item">
+/* ========================================================= */
+/* 05 — ROTATING SYMBOL SYSTEM                               */
+/* ========================================================= */
 
-                            <span>13</span>
+.ars-13a-symbol{
 
-                            <strong>
-                                ASPIRATION
-                            </strong>
+    position:
+        absolute;
 
-                        </div>
+    left:
+        50%;
 
+    top:
+        50%;
 
-                    </div>
+    width:
+        min(900px, 75vw);
 
+    aspect-ratio:
+        1;
 
-                    <!-- ================================================= -->
-                    <!-- ARS MARK -->
-                    <!-- ================================================= -->
+    transform:
+        translate(-50%,-50%);
 
-                    <div class="philosophy-13a-ars-mark">
+    display:
+        flex;
 
-                        <span class="ars-a">
-                            A
-                        </span>
+    align-items:
+        center;
 
-                        <span>
-                            R
-                        </span>
+    justify-content:
+        center;
 
-                        <span>
-                            S
-                        </span>
+    z-index:
+        1;
 
-                    </div>
+    pointer-events:
+        none;
 
+    perspective:
+        1200px;
 
-                </div>
+}
 
 
-            </div>
+/* ========================================================= */
+/* 06 — BIG A                                               */
+/* ========================================================= */
 
+.ars-13a-big-a{
 
-        </div>
+    position:
+        absolute;
 
+    left:
+        50%;
 
-    </div>
+    top:
+        50%;
 
+    transform:
+        translate(-50%,-50%);
 
-</section>
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
+    font-size:
+        clamp(
+            520px,
+            58vw,
+            900px
+        );
 
+    font-weight:
+        700;
 
-<!-- ===================================================== -->
-<!-- ARS PHILOSOPHY -->
-<!-- ===================================================== -->
+    line-height:
+        .78;
 
-<section class="ars-philosophy-manifesto">
+    color:
+        rgba(184,137,63,.82);
 
-    <div class="container">
+    opacity:
+        .82;
 
+    text-shadow:
 
-        <div class="section-header">
+        0
+        0
+        20px
+        rgba(230,188,103,.16),
 
-            <span class="section-label">
-                THE PHILOSOPHY OF ARS
-            </span>
+        0
+        0
+        70px
+        rgba(184,137,63,.18),
 
+        0
+        25px
+        60px
+        rgba(0,0,0,.80);
 
-            <h2>
+    transform-style:
+        preserve-3d;
 
-                Respect The Heritage.
-                Elevate Prestige & Intelligence.
+    animation:
+        ars-big-a-rotate
+        28s
+        linear
+        infinite;
 
-            </h2>
+}
 
-        </div>
 
+/* ========================================================= */
+/* 07 — THREE DIMENSIONAL ORBITS                            */
+/* ========================================================= */
 
-        <div class="philosophy-manifesto-card ars-glass">
+.ars-13a-orbit{
 
+    position:
+        absolute;
 
-            <p>
+    left:
+        50%;
 
-                ARS was created from a simple belief:
+    top:
+        50%;
 
-                the future does not have to destroy the past.
+    border:
+        1px solid
+        rgba(240,202,122,.42);
 
-            </p>
+    border-radius:
+        50%;
 
+    transform-style:
+        preserve-3d;
 
-            <p>
+    box-shadow:
 
-                We believe that technology should not erase
-                identity, history or emotional connection.
+        0
+        0
+        30px
+        rgba(184,137,63,.20),
 
-                It should respect them.
+        inset
+        0
+        0
+        30px
+        rgba(240,202,122,.08);
 
-                It should understand them.
+}
 
-                And it should elevate them.
 
-            </p>
+/* OUTER ORBIT */
 
+.ars-13a-orbit-outer{
 
-            <p>
+    width:
+        88%;
 
-                Every vehicle carries a story.
+    height:
+        42%;
 
-                Every design carries a memory.
+    transform:
+        translate(-50%,-50%)
+        rotateX(68deg)
+        rotateZ(15deg);
 
-                Every journey carries a human experience.
+    animation:
+        ars-orbit-outer
+        18s
+        linear
+        infinite;
 
-            </p>
+}
 
 
-            <p>
+/* MIDDLE ORBIT */
 
-                ARS exists to preserve that heritage while
-                bringing intelligence, safety, technology and
-                new possibilities into the future.
+.ars-13a-orbit-middle{
 
-            </p>
+    width:
+        72%;
 
+    height:
+        34%;
 
-            <blockquote>
+    border-color:
+        rgba(255,240,189,.34);
 
-                Respect the Heritage.
-                Elevate Prestige & Intelligence.
+    transform:
+        translate(-50%,-50%)
+        rotateY(62deg)
+        rotateZ(-22deg);
 
-            </blockquote>
+    animation:
+        ars-orbit-middle
+        14s
+        linear
+        infinite reverse;
 
+}
 
-        </div>
 
-    </div>
+/* INNER ORBIT */
 
-</section>
+.ars-13a-orbit-inner{
 
+    width:
+        58%;
 
+    height:
+        28%;
 
-<!-- ===================================================== -->
-<!-- HUMAN PHILOSOPHY -->
-<!-- ===================================================== -->
+    border-color:
+        rgba(201,155,80,.38);
 
-<section class="ars-human-philosophy">
+    transform:
+        translate(-50%,-50%)
+        rotateX(52deg)
+        rotateY(35deg);
 
-    <div class="container">
+    animation:
+        ars-orbit-inner
+        11s
+        linear
+        infinite;
 
+}
 
-        <div class="section-header">
 
-            <span class="section-label">
-                THE HUMAN PURPOSE
-            </span>
+/* ========================================================= */
+/* 08 — MAIN GLASS CARD                                     */
+/* ========================================================= */
 
+.ars-13a-glass-card{
 
-            <h2>
+    position:
+        relative;
 
-                Technology Exists For People.
+    z-index:
+        10;
 
-            </h2>
+    width:
+        min(1180px, 92vw);
 
-        </div>
+    min-height:
+        620px;
 
+    padding:
+        70px 70px 60px;
 
-        <div class="human-philosophy-grid">
+    display:
+        flex;
 
+    flex-direction:
+        column;
 
-            <div class="human-philosophy-card ars-glass">
+    align-items:
+        center;
 
-                <h3>
-                    Preserve What Matters.
-                </h3>
+    justify-content:
+        center;
 
+    overflow:
+        hidden;
 
-                <p>
+    border:
+        1px solid
+        var(--glass-border);
 
-                    We believe that progress should not require
-                    us to abandon what we love.
+    border-radius:
+        42px;
 
-                    ARS seeks to preserve automotive heritage,
-                    emotional connections and the values that
-                    make every journey meaningful.
 
-                </p>
+    background:
 
-            </div>
+        linear-gradient(
+            135deg,
 
+            rgba(255,255,255,.13)
+            0%,
 
-            <div class="human-philosophy-card ars-glass">
+            rgba(255,255,255,.055)
+            28%,
 
-                <h3>
-                    Protect Life & Values.
-                </h3>
+            rgba(255,255,255,.025)
+            52%,
 
+            rgba(5,12,20,.20)
+            78%,
 
-                <p>
+            rgba(4,9,15,.30)
+            100%
+        );
 
-                    Technology should serve humanity.
 
-                    It should help reduce danger,
-                    support safety,
-                    protect life,
-                    preserve valuable possessions
-                    and strengthen the security of families.
+    backdrop-filter:
+        blur(14px)
+        saturate(145%);
 
-                </p>
+    -webkit-backdrop-filter:
+        blur(14px)
+        saturate(145%);
 
-            </div>
 
+    box-shadow:
 
-            <div class="human-philosophy-card ars-glass">
+        0
+        40px
+        100px
+        rgba(0,0,0,.72),
 
-                <h3>
-                    Create Joy & Hope.
-                </h3>
+        0
+        0
+        90px
+        rgba(184,137,63,.18),
 
+        0
+        0
+        180px
+        rgba(184,137,63,.08),
 
-                <p>
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.24),
 
-                    We believe technology can create more
-                    than functionality.
+        inset
+        0
+        0
+        80px
+        rgba(255,240,189,.035);
 
-                    It can create satisfaction.
+}
 
-                    It can create joy.
 
-                    It can create confidence.
+/* ========================================================= */
+/* 09 — GLASS INNER DEPTH                                   */
+/* ========================================================= */
 
-                    And it can give people a greater sense
-                    of hope for the future.
+.ars-13a-glass-card::before{
 
-                </p>
+    content:
+        "";
 
-            </div>
+    position:
+        absolute;
 
+    inset:
+        1px;
 
-        </div>
+    border-radius:
+        41px;
 
-    </div>
+    pointer-events:
+        none;
 
-</section>
+    background:
 
+        linear-gradient(
+            120deg,
 
+            rgba(255,255,255,.12),
 
-<!-- ===================================================== -->
-<!-- SPIRITUAL FOUNDATION -->
-<!-- ===================================================== -->
+            transparent 18%,
 
-<section class="ars-spiritual-foundation">
+            transparent 70%,
 
-    <div class="container">
+            rgba(255,240,189,.05)
+        );
 
+    opacity:
+        .8;
 
-        <div class="spiritual-foundation-card ars-glass">
+}
 
 
-            <span class="section-label">
-                THE FOUNDATION
-            </span>
+/* ========================================================= */
+/* 10 — GLASS TOP EDGE                                      */
+/* ========================================================= */
 
+.ars-13a-glass-card::after{
 
-            <h2>
-                God Is The Protector.
-            </h2>
+    content:
+        "";
 
+    position:
+        absolute;
 
-            <p>
+    top:
+        0;
 
-                Before technology reaches us,
-                we are already within the knowledge,
-                care and protection of our Creator.
+    left:
+        5%;
 
-            </p>
+    width:
+        90%;
 
+    height:
+        2px;
 
-            <p>
+    background:
 
-                ARS does not believe that technology
-                can replace the protection of God.
+        linear-gradient(
+            90deg,
 
-                It never can.
+            transparent,
 
-                It never will.
+            rgba(255,240,189,.72),
 
-            </p>
+            rgba(255,255,255,.35),
 
+            rgba(255,240,189,.72),
 
-            <p>
+            transparent
+        );
 
-                Technology is only a means.
+    filter:
+        blur(.3px);
 
-                Knowledge is a gift.
+    opacity:
+        .7;
 
-                Ability is a responsibility.
+}
 
-            </p>
 
+/* ========================================================= */
+/* 11 — CARD REFLECTION                                     */
+/* ========================================================= */
 
-            <p>
+.ars-13a-card-reflection{
 
-                We build the means.
+    position:
+        absolute;
 
-                We do the work.
+    inset:
+        0;
 
-                We take the responsibility.
+    pointer-events:
+        none;
 
-                But the outcome belongs to God.
+    background:
 
-            </p>
+        linear-gradient(
+            115deg,
 
+            transparent 15%,
 
-            <div class="spiritual-foundation-emphasis">
+            rgba(255,255,255,.09) 32%,
 
-                <strong>
-                    God Is The Protector.
-                </strong>
+            rgba(255,255,255,.025) 42%,
 
+            transparent 55%
+        );
 
-                <span>
-                    ARS is only a means to serve humanity.
-                </span>
+    transform:
+        translateX(-30%);
 
-            </div>
+    animation:
+        ars-glass-reflection
+        8s
+        ease-in-out
+        infinite;
 
+    opacity:
+        .7;
 
-        </div>
+}
 
-    </div>
 
-</section>
+/* ========================================================= */
+/* 12 — 13 A'S PILLARS                                     */
+/* ========================================================= */
 
+.ars-13a-pillars{
 
+    position:
+        relative;
 
-<!-- ===================================================== -->
-<!-- ARS BRAIN -->
-<!-- ===================================================== -->
+    z-index:
+        20;
 
-<section class="ars-philosophy-brain">
+    width:
+        100%;
 
-    <div class="container">
+    display:
+        grid;
 
+    grid-template-columns:
+        repeat(3, 1fr);
 
-        <div class="section-header">
+    gap:
+        22px 45px;
 
-            <span class="section-label">
-                THE TECHNOLOGY
-            </span>
+}
 
 
-            <h2>
-                Intelligence With Purpose.
-            </h2>
+/* ========================================================= */
+/* 13 — INDIVIDUAL PILLAR                                   */
+/* ========================================================= */
 
+.ars-13a-pillar{
 
-            <p>
+    position:
+        relative;
 
-                ARS Brain represents our belief that
-                technology should evolve with people,
-                vehicles and life.
+    display:
+        flex;
 
-            </p>
+    align-items:
+        center;
 
-        </div>
+    gap:
+        18px;
 
+    padding:
+        16px 20px;
 
-        <div class="brain-philosophy-card ars-glass">
+    min-height:
+        64px;
 
+    border:
+        1px solid
+        rgba(255,240,189,.12);
 
-            <h3>
+    border-radius:
+        12px;
 
-                Experience The Future.
-                Without Losing What You Love.
+    background:
+        rgba(255,255,255,.025);
 
-            </h3>
+    box-shadow:
 
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.08);
 
-            <p>
+    transition:
+        var(--transition);
 
-                ARS Brain is created to bring intelligent,
-                scalable and future-ready technology
-                into vehicles that people already love.
+}
 
-            </p>
 
+/* ========================================================= */
+/* 14 — PILLAR HOVER                                        */
+/* ========================================================= */
 
-            <p>
+.ars-13a-pillar:hover{
 
-                We do not believe that every vehicle
-                must be replaced to experience the future.
+    transform:
+        translateY(-4px);
 
-                Sometimes the future should come to the vehicle.
+    border-color:
+        rgba(230,188,103,.38);
 
-            </p>
+    background:
+        rgba(184,137,63,.055);
 
+    box-shadow:
 
-            <blockquote>
+        0
+        10px
+        35px
+        rgba(184,137,63,.12),
 
-                Preserve the identity.
-                Elevate the experience.
-                Extend the journey.
+        inset
+        0
+        1px
+        0
+        rgba(255,240,189,.14);
 
-            </blockquote>
+}
 
 
-        </div>
+/* ========================================================= */
+/* 15 — PILLAR NUMBER                                       */
+/* ========================================================= */
 
-    </div>
+.ars-13a-pillar span{
 
-</section>
+    flex:
+        0 0 auto;
 
+    color:
+        rgba(230,188,103,.62);
 
+    font-size:
+        .72rem;
 
-<!-- ===================================================== -->
-<!-- LIFE EXPERIENCE -->
-<!-- ===================================================== -->
+    letter-spacing:
+        .10em;
 
-<section class="ars-life-experience">
+    font-weight:
+        600;
 
-    <div class="container">
+}
 
 
-        <div class="section-header">
+/* ========================================================= */
+/* 16 — ENGRAVED GOLD TEXT                                  */
+/* ========================================================= */
 
-            <span class="section-label">
-                THE EXPERIENCE
-            </span>
+.ars-13a-pillar strong{
 
+    color:
+        rgba(225,184,102,.92);
 
-            <h2>
+    font-size:
+        clamp(
+            .85rem,
+            1.1vw,
+            1.12rem
+        );
 
-                More Than Technology.
+    font-weight:
+        600;
 
-                A Better Experience Of Life.
+    letter-spacing:
+        .18em;
 
-            </h2>
+    text-transform:
+        uppercase;
 
-        </div>
 
+    /* engraved appearance */
 
-        <div class="life-experience-grid">
+    text-shadow:
 
+        0
+        1px
+        1px
+        rgba(0,0,0,.85),
 
-            <div class="life-experience-card">
+        0
+        -1px
+        1px
+        rgba(255,240,189,.16),
 
-                <h3>
-                    Feel
-                </h3>
+        0
+        0
+        14px
+        rgba(184,137,63,.12);
 
+}
 
-                <p>
 
-                    Experience technology in the vehicles
-                    you already love.
+/* ========================================================= */
+/* 17 — ARS MARK                                            */
+/* ========================================================= */
 
-                </p>
+.ars-13a-card-mark{
 
-            </div>
+    position:
+        relative;
 
+    z-index:
+        20;
 
-            <div class="life-experience-card">
+    margin-top:
+        35px;
 
-                <h3>
-                    Enjoy
-                </h3>
+    color:
+        rgba(201,155,80,.82);
 
+    font-size:
+        1rem;
 
-                <p>
+    font-weight:
+        600;
 
-                    Discover a more intelligent,
-                    connected and enjoyable journey.
+    letter-spacing:
+        .48em;
 
-                </p>
+    text-shadow:
+        0
+        0
+        20px
+        rgba(184,137,63,.20);
 
-            </div>
+}
 
 
-            <div class="life-experience-card">
+/* ========================================================= */
+/* 18 — HERO TITLE                                          */
+/* ========================================================= */
 
-                <h3>
-                    Protect
-                </h3>
+.ars-13a-hero-title{
 
+    position:
+        relative;
 
-                <p>
+    z-index:
+        15;
 
-                    Increase awareness,
-                    support safety
-                    and help protect what matters.
+    margin-top:
+        60px;
 
-                </p>
+    text-align:
+        center;
 
-            </div>
+}
 
 
-            <div class="life-experience-card">
+/* ========================================================= */
+/* 19 — EYEBROW                                             */
+/* ========================================================= */
 
-                <h3>
-                    Hope
-                </h3>
+.ars-13a-eyebrow{
 
+    display:
+        block;
 
-                <p>
+    color:
+        var(--ars-gold-light);
 
-                    Build a future where technology
-                    creates greater confidence,
-                    satisfaction and hope.
+    font-size:
+        .78rem;
 
-                </p>
+    letter-spacing:
+        .36em;
 
-            </div>
+    font-weight:
+        600;
 
+}
 
-        </div>
 
-    </div>
+/* ========================================================= */
+/* 20 — MAIN TITLE                                          */
+/* ========================================================= */
 
-</section>
+.ars-13a-hero-title h1{
 
+    margin:
+        18px 0 10px;
 
+    color:
+        var(--ars-gold-light);
 
-<!-- ===================================================== -->
-<!-- ARS FAMILY -->
-<!-- ===================================================== -->
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 
-<section class="ars-family-philosophy">
+    font-size:
+        clamp(
+            3rem,
+            7vw,
+            6.5rem
+        );
 
-    <div class="container">
+    font-weight:
+        500;
 
+    letter-spacing:
+        -.04em;
 
-        <div class="family-philosophy-card ars-glass">
+    text-shadow:
 
+        0
+        0
+        20px
+        rgba(230,188,103,.22);
 
-            <span class="section-label">
-                THE GREATER VISION
-            </span>
+}
 
 
-            <h2>
+/* ========================================================= */
+/* 21 — SUBTITLE                                            */
+/* ========================================================= */
 
-                One Ecosystem.
-                One Family.
-                One Shared Vision.
+.ars-13a-hero-title h2{
 
-            </h2>
+    margin:
+        0;
 
+    color:
+        var(--ars-white);
 
-            <p>
+    font-size:
+        clamp(
+            1.1rem,
+            2vw,
+            1.8rem
+        );
 
-                The ultimate vision of ARS is not simply
-                to create products.
+    font-weight:
+        400;
 
-            </p>
+    letter-spacing:
+        .04em;
 
+}
 
-            <p>
 
-                It is to build an ecosystem.
+/* ========================================================= */
+/* 22 — VISION                                              */
+/* ========================================================= */
 
-                A global family of people,
-                engineers, designers,
-                creators, partners,
-                innovators and dreamers
-                who believe that heritage and technology
-                can evolve together.
+.ars-13a-hero-title p{
 
-            </p>
+    margin:
+        20px 0 0;
 
+    color:
+        var(--ars-white-soft);
 
-            <p>
+    font-size:
+        .92rem;
 
-                A family connected by a shared belief:
+    letter-spacing:
+        .18em;
 
-                that we can respect what came before,
-                improve what exists today,
-                and build something meaningful
-                for the generations that come after us.
+}
 
-            </p>
 
+/* ========================================================= */
+/* 23 — SCROLL INDICATOR                                    */
+/* ========================================================= */
 
-            <div class="family-philosophy-final">
+.ars-13a-scroll{
 
-                <strong>
-                    This is ARS.
-                </strong>
+    position:
+        absolute;
 
+    bottom:
+        30px;
 
-                <span>
+    left:
+        50%;
 
-                    A vision.
-                    A responsibility.
-                    A family.
-                    An ecosystem.
+    transform:
+        translateX(-50%);
 
-                </span>
+    width:
+        24px;
 
-            </div>
+    height:
+        42px;
 
+    border:
+        1px solid
+        rgba(255,240,189,.28);
 
-        </div>
+    border-radius:
+        20px;
 
-    </div>
+}
 
-</section>
 
+/* ========================================================= */
+/* 24 — SCROLL LIGHT                                        */
+/* ========================================================= */
 
+.ars-13a-scroll span{
 
-<!-- ===================================================== -->
-<!-- FINAL VISION -->
-<!-- ===================================================== -->
+    position:
+        absolute;
 
-<section class="ars-philosophy-final">
+    top:
+        8px;
 
-    <div class="container">
+    left:
+        50%;
 
+    width:
+        4px;
 
-        <div class="final-philosophy-content">
+    height:
+        8px;
 
+    transform:
+        translateX(-50%);
 
-            <span class="section-label">
+    border-radius:
+        50%;
 
-                ONE A. THIRTEEN PILLARS. ONE VISION.
+    background:
+        var(--ars-gold-light);
 
-            </span>
+    box-shadow:
+        0
+        0
+        12px
+        rgba(230,188,103,.65);
 
+    animation:
+        ars-scroll
+        2s
+        ease-in-out
+        infinite;
 
-            <h2>
+}
 
-                The Future Is Built
-                With Respect.
 
-            </h2>
+/* ========================================================= */
+/* 25 — BIG A ROTATION                                     */
+/* ========================================================= */
 
+@keyframes ars-big-a-rotate{
 
-            <p>
+    0%{
 
-                We build the means.
+        transform:
+            translate(-50%,-50%)
+            rotateY(0deg);
 
-                We respect the heritage.
+    }
 
-                We elevate prestige.
+    50%{
 
-                We engineer intelligence.
+        transform:
+            translate(-50%,-50%)
+            rotateY(180deg);
 
-                We protect life and values.
+    }
 
-                We create experiences.
+    100%{
 
-                We build relationships.
+        transform:
+            translate(-50%,-50%)
+            rotateY(360deg);
 
-                And we move forward together.
+    }
 
-            </p>
+}
 
 
-            <div class="final-philosophy-motto">
+/* ========================================================= */
+/* 26 — OUTER ORBIT ROTATION                                */
+/* ========================================================= */
 
+@keyframes ars-orbit-outer{
 
-                <span>
-                    Respect the Heritage.
-                </span>
+    from{
 
+        transform:
+            translate(-50%,-50%)
+            rotateX(68deg)
+            rotateZ(0deg);
 
-                <span>
-                    Elevate Prestige & Intelligence.
-                </span>
+    }
 
+    to{
 
-                <span>
-                    God Is The Protector.
-                </span>
+        transform:
+            translate(-50%,-50%)
+            rotateX(68deg)
+            rotateZ(360deg);
 
+    }
 
-            </div>
+}
 
 
-        </div>
+/* ========================================================= */
+/* 27 — MIDDLE ORBIT ROTATION                               */
+/* ========================================================= */
 
-    </div>
+@keyframes ars-orbit-middle{
 
-</section>
+    from{
 
+        transform:
+            translate(-50%,-50%)
+            rotateY(62deg)
+            rotateZ(0deg);
 
+    }
 
-<!-- ===================================================== -->
-<!-- FOOTER -->
-<!-- ===================================================== -->
+    to{
 
-<footer class="main-footer">
+        transform:
+            translate(-50%,-50%)
+            rotateY(62deg)
+            rotateZ(360deg);
 
-    <div class="container">
+    }
 
+}
 
-        <h2>
-            ARS Heritage Group
-        </h2>
 
+/* ========================================================= */
+/* 28 — INNER ORBIT ROTATION                                */
+/* ========================================================= */
 
-        <p>
+@keyframes ars-orbit-inner{
 
-            Respect the Heritage.
+    from{
 
-            Elevate Prestige & Intelligence.
+        transform:
+            translate(-50%,-50%)
+            rotateX(52deg)
+            rotateY(35deg)
+            rotateZ(0deg);
 
-        </p>
+    }
 
+    to{
 
-        <p>
-            God Is The Protector.
-        </p>
+        transform:
+            translate(-50%,-50%)
+            rotateX(52deg)
+            rotateY(35deg)
+            rotateZ(360deg);
 
+    }
 
-        <div class="footer-bottom">
+}
 
-            © 2026 ARS Heritage Group
 
-            All Rights Reserved.
+/* ========================================================= */
+/* 29 — GLASS REFLECTION                                    */
+/* ========================================================= */
 
-        </div>
+@keyframes ars-glass-reflection{
 
+    0%{
 
-    </div>
+        transform:
+            translateX(-70%);
 
-</footer>
+        opacity:
+            0;
 
+    }
 
+    30%{
 
+        opacity:
+            .7;
 
+    }
 
-</body>
+    70%{
 
-</html>
+        opacity:
+            .7;
+
+    }
+
+    100%{
+
+        transform:
+            translateX(70%);
+
+        opacity:
+            0;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 30 — SCROLL ANIMATION                                    */
+/* ========================================================= */
+
+@keyframes ars-scroll{
+
+    0%{
+
+        transform:
+            translate(-50%,0);
+
+        opacity:
+            0;
+
+    }
+
+    40%{
+
+        opacity:
+            1;
+
+    }
+
+    100%{
+
+        transform:
+            translate(-50%,16px);
+
+        opacity:
+            0;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 31 — TABLET                                             */
+/* ========================================================= */
+
+@media (max-width:950px){
+
+    .ars-13a-glass-card{
+
+        min-height:
+            600px;
+
+        padding:
+            55px 40px;
+
+    }
+
+
+    .ars-13a-pillars{
+
+        grid-template-columns:
+            repeat(2,1fr);
+
+        gap:
+            18px;
+
+    }
+
+
+    .ars-13a-symbol{
+
+        width:
+            900px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 32 — MOBILE                                             */
+/* ========================================================= */
+
+@media (max-width:700px){
+
+    .ars-13a-hero{
+
+        min-height:
+            100svh;
+
+        padding:
+            60px 15px 100px;
+
+    }
+
+
+    .ars-13a-glass-card{
+
+        width:
+            94vw;
+
+        min-height:
+            auto;
+
+        padding:
+            40px 20px;
+
+        border-radius:
+            28px;
+
+    }
+
+
+    .ars-13a-pillars{
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            10px;
+
+    }
+
+
+    .ars-13a-pillar{
+
+        min-height:
+            55px;
+
+        padding:
+            12px 14px;
+
+    }
+
+
+    .ars-13a-pillar strong{
+
+        font-size:
+            .78rem;
+
+        letter-spacing:
+            .12em;
+
+    }
+
+
+    .ars-13a-symbol{
+
+        width:
+            700px;
+
+        opacity:
+            .8;
+
+    }
+
+
+    .ars-13a-big-a{
+
+        font-size:
+            500px;
+
+    }
+
+
+    .ars-13a-hero-title{
+
+        margin-top:
+            40px;
+
+    }
+
+
+    .ars-13a-hero-title h1{
+
+        font-size:
+            3.4rem;
+
+    }
+
+
+    .ars-13a-hero-title h2{
+
+        font-size:
+            1rem;
+
+    }
+
+
+    .ars-13a-hero-title p{
+
+        font-size:
+            .72rem;
+
+        letter-spacing:
+            .10em;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 33 — REDUCED MOTION                                     */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    .ars-13a-big-a,
+    .ars-13a-orbit,
+    .ars-13a-card-reflection,
+    .ars-13a-scroll span{
+
+        animation:
+            none;
+
+    }
+
+}

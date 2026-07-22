@@ -1,79 +1,86 @@
 /* ========================================================= */
-/* ARS HERITAGE GROUP — GLOBAL VISUAL DNA                   */
+/* ARS HERITAGE GROUP — PHILOSOPHY 13 A'S                    */
+/* FILE: ars-philosophy-13-as.css                             */
+/* VERSION: 01 — FOUNDATION                                  */
 /* ========================================================= */
-/* SHARED COLOR SYSTEM — ALL 13 INTERNAL PAGES              */
-/* BASED ON ARS HOME PREMIUM VISUAL IDENTITY                 */
+/*                                                           */
+/* PAGE DNA:                                                  */
+/* - Dedicated CSS — NO style-v2.css                         */
+/* - Premium ARS Home Color DNA                              */
+/* - Deep Black / Heritage Navy                              */
+/* - Rich Golden Illumination                                */
+/* - Large Premium Glass Card                                */
+/* - Bronze-Gold Great A                                     */
+/* - Rotating A Ring                                         */
+/* - 13 A's                                                   */
+/*                                                           */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — ARS PHILOSOPHY 13 A'S — COLOR DNA                    */
 /* ========================================================= */
 
 :root{
 
-    /* ===================================================== */
-    /* 01 — PRIMARY BACKGROUND                               */
-    /* ===================================================== */
-
-    --ars-bg-black:
+    --ars-black:
         #030303;
 
-    --ars-bg-deep:
-        #080705;
-
-    --ars-bg-soft:
-        #0b0a08;
-
-
-    /* ===================================================== */
-    /* 02 — HERITAGE NAVY / BLUE-BLACK                       */
-    /* ===================================================== */
+    --ars-black-deep:
+        #060504;
 
     --ars-navy:
-        #0a1726;
+        #081525;
 
     --ars-navy-deep:
-        #050d16;
+        #040b14;
 
     --ars-navy-soft:
-        #0d1e30;
+        #0c1c2d;
 
 
     /* ===================================================== */
-    /* 03 — PRIMARY GOLD                                      */
+    /* 01.01 — PRIMARY GOLD                                  */
     /* ===================================================== */
 
     --ars-gold-dark:
         #8f5f2d;
 
     --ars-gold:
-        #c8a45d;
+        #b8893f;
 
     --ars-gold-main:
-        #d8b36a;
+        #c99b50;
 
     --ars-gold-light:
-        #f0d18d;
+        #e6bc67;
 
     --ars-gold-bright:
+        #ffd787;
+
+
+    /* ===================================================== */
+    /* 01.02 — GOLDEN LIGHT                                  */
+    /* ===================================================== */
+
+    --ars-gold-white:
         #fff0bd;
 
-
-    /* ===================================================== */
-    /* 04 — GOLDEN HIGHLIGHTS                                 */
-    /* ===================================================== */
-
     --ars-gold-highlight:
-        #fff3c7;
+        #fff4d2;
 
     --ars-gold-soft:
-        rgba(216,179,106,.16);
+        rgba(230,188,103,.20);
 
     --ars-gold-glow:
-        rgba(216,179,106,.10);
+        rgba(184,137,63,.22);
 
-    --ars-gold-ultra-glow:
-        rgba(240,209,141,.08);
+    --ars-gold-deep-glow:
+        rgba(143,95,45,.16);
 
 
     /* ===================================================== */
-    /* 05 — WHITE SYSTEM                                      */
+    /* 01.03 — WHITE SYSTEM                                  */
     /* ===================================================== */
 
     --ars-white:
@@ -83,121 +90,95 @@
         rgba(245,241,232,.72);
 
     --ars-white-muted:
-        rgba(245,241,232,.48);
+        rgba(245,241,232,.45);
 
 
     /* ===================================================== */
-    /* 06 — GLASS SYSTEM                                      */
+    /* 01.04 — GLASS SYSTEM                                  */
     /* ===================================================== */
 
     --ars-glass:
-        rgba(255,255,255,.045);
+        rgba(255,255,255,.055);
 
     --ars-glass-light:
-        rgba(255,255,255,.075);
+        rgba(255,255,255,.095);
 
     --ars-glass-dark:
-        rgba(8,7,5,.72);
+        rgba(5,10,18,.58);
 
     --ars-glass-border:
-        rgba(255,240,189,.18);
+        rgba(255,240,189,.20);
 
-    --ars-glass-border-hover:
-        rgba(255,240,189,.34);
+    --ars-glass-border-bright:
+        rgba(255,240,189,.32);
 
 
     /* ===================================================== */
-    /* 07 — SHADOW SYSTEM                                     */
+    /* 01.05 — SHADOW SYSTEM                                 */
     /* ===================================================== */
 
-    --ars-shadow-deep:
-        rgba(0,0,0,.65);
-
-    --ars-shadow-soft:
-        rgba(0,0,0,.42);
+    --ars-shadow-black:
+        rgba(0,0,0,.72);
 
     --ars-shadow-gold:
-        rgba(216,179,106,.12);
+        rgba(184,137,63,.20);
 
     --ars-shadow-gold-strong:
-        rgba(216,179,106,.24);
+        rgba(230,188,103,.32);
 
 
     /* ===================================================== */
-    /* 08 — PREMIUM TRANSITIONS                               */
+    /* 01.06 — TRANSITIONS                                   */
     /* ===================================================== */
 
     --ars-transition:
-        all .55s cubic-bezier(.2,.8,.2,1);
+        all .7s cubic-bezier(.16,1,.3,1);
 
     --ars-transition-slow:
-        all .8s cubic-bezier(.16,1,.3,1);
+        all 1.2s cubic-bezier(.16,1,.3,1);
 
-}/* ========================================================= */
-/* ARS PREMIUM BACKGROUND DNA                                */
+}
+
+
+/* ========================================================= */
+/* 02 — PAGE RESET                                           */
 /* ========================================================= */
 
-.ars-page{
+html{
 
-    position:
-        relative;
+    scroll-behavior:
+        smooth;
+
+}
+
+
+body{
+
+    margin:
+        0;
+
+    padding:
+        0;
 
     min-height:
         100vh;
 
-    overflow:
-        hidden;
-
-    isolation:
-        isolate;
-
     background:
+        var(--ars-black);
 
-        radial-gradient(
-            ellipse at 50% 18%,
-            rgba(216,179,106,.16),
-            transparent 34%
-        ),
+    color:
+        var(--ars-white);
 
-        radial-gradient(
-            ellipse at 50% 42%,
-            rgba(143,95,45,.10),
-            transparent 42%
-        ),
-
-        radial-gradient(
-            ellipse at 15% 40%,
-            rgba(10,23,38,.22),
-            transparent 38%
-        ),
-
-        linear-gradient(
-            180deg,
-            #030303 0%,
-            #080705 48%,
-            #030303 100%
-        );
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
 
 }
 
-/* ========================================================= */
-/* 03 — THE 13 A'S — PREMIUM GOLDEN PHILOSOPHY HERO         */
-/* ========================================================= */
-/*                                                           */
-/* PURPOSE:                                                  */
-/* - Deep ARS golden illumination                            */
-/* - Large premium glass card                               */
-/* - Bronze-gold rotating A behind glass                    */
-/* - Rotating A ring                                         */
-/* - THE 13 A'S gold title                                  */
-/* - Smaller 13 pillar list                                 */
-/* - Premium glass / gold / navy ARS visual DNA             */
-/*                                                           */
-/* ========================================================= */
-
 
 /* ========================================================= */
-/* 03.01 — PHILOSOPHY PAGE HERO FOUNDATION                   */
+/* 03 — MAIN PHILOSOPHY HERO                                */
 /* ========================================================= */
 
 .philosophy-13a-hero{
@@ -208,45 +189,73 @@
     min-height:
         100vh;
 
-    padding:
-        150px 0 140px;
-
     overflow:
         hidden;
 
     isolation:
         isolate;
 
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    padding:
+        120px 0 100px;
+
+
     background:
 
         radial-gradient(
-            ellipse at 50% 18%,
-            rgba(240,209,141,.24),
-            transparent 28%
-        ),
+            ellipse at 50% 10%,
 
-        radial-gradient(
-            ellipse at 50% 35%,
-            rgba(216,179,106,.18),
+            rgba(255,215,135,.18)
+            0%,
+
+            rgba(230,188,103,.12)
+            18%,
+
             transparent 42%
         ),
 
         radial-gradient(
-            ellipse at 22% 48%,
-            rgba(200,164,93,.10),
-            transparent 34%
+            ellipse at 50% 42%,
+
+            rgba(184,137,63,.12)
+            0%,
+
+            transparent 48%
         ),
 
         radial-gradient(
-            ellipse at 78% 48%,
-            rgba(143,95,45,.10),
-            transparent 34%
+            ellipse at 18% 35%,
+
+            rgba(10,23,38,.38)
+            0%,
+
+            transparent 42%
+        ),
+
+        radial-gradient(
+            ellipse at 82% 35%,
+
+            rgba(10,23,38,.32)
+            0%,
+
+            transparent 42%
         ),
 
         linear-gradient(
             180deg,
+
             #030303 0%,
-            #090806 45%,
+
+            #080705 48%,
+
             #030303 100%
         );
 
@@ -254,7 +263,7 @@
 
 
 /* ========================================================= */
-/* 03.02 — GOLDEN ATMOSPHERIC LIGHT                          */
+/* 04 — GOLDEN LIGHT FIELD                                   */
 /* ========================================================= */
 
 .philosophy-13a-hero::before{
@@ -271,37 +280,40 @@
     z-index:
         -3;
 
+    pointer-events:
+        none;
+
     background:
 
         radial-gradient(
-            circle at 50% 22%,
-            rgba(255,243,199,.18),
-            transparent 17%
+            circle at 50% 15%,
+
+            rgba(255,240,189,.22)
+            0%,
+
+            rgba(230,188,103,.12)
+            18%,
+
+            transparent 38%
         ),
 
         radial-gradient(
-            circle at 50% 38%,
-            rgba(216,179,106,.16),
-            transparent 34%
-        ),
+            circle at 50% 55%,
 
-        radial-gradient(
-            circle at 50% 68%,
-            rgba(200,164,93,.08),
-            transparent 40%
+            rgba(184,137,63,.12)
+            0%,
+
+            transparent 42%
         );
 
     filter:
-        blur(10px);
-
-    pointer-events:
-        none;
+        blur(18px);
 
 }
 
 
 /* ========================================================= */
-/* 03.03 — GOLDEN LIGHT BEAM                                 */
+/* 05 — CENTRAL GOLDEN BEAM                                  */
 /* ========================================================= */
 
 .philosophy-13a-hero::after{
@@ -313,16 +325,16 @@
         absolute;
 
     top:
-        -20%;
+        -15%;
 
     left:
         50%;
 
     width:
-        55%;
+        65%;
 
     height:
-        130%;
+        135%;
 
     transform:
         translateX(-50%)
@@ -331,28 +343,33 @@
     z-index:
         -2;
 
+    pointer-events:
+        none;
+
     background:
 
         linear-gradient(
             90deg,
-            transparent,
-            rgba(216,179,106,.035),
-            rgba(255,240,189,.08),
-            rgba(216,179,106,.035),
-            transparent
+
+            transparent 0%,
+
+            rgba(184,137,63,.035) 25%,
+
+            rgba(255,240,189,.075) 50%,
+
+            rgba(184,137,63,.035) 75%,
+
+            transparent 100%
         );
 
     filter:
-        blur(35px);
-
-    pointer-events:
-        none;
+        blur(40px);
 
 }
 
 
 /* ========================================================= */
-/* 03.04 — GOLDEN STAR FIELD                                 */
+/* 06 — GOLDEN ATMOSPHERE                                    */
 /* ========================================================= */
 
 .philosophy-13a-stars{
@@ -372,26 +389,38 @@
     background:
 
         radial-gradient(
-            circle at 20% 22%,
-            rgba(255,240,189,.16) 0 1px,
+            circle at 15% 20%,
+
+            rgba(255,240,189,.15)
+            0 1px,
+
             transparent 2px
         ),
 
         radial-gradient(
-            circle at 80% 18%,
-            rgba(255,240,189,.13) 0 1px,
+            circle at 85% 18%,
+
+            rgba(255,240,189,.12)
+            0 1px,
+
             transparent 2px
         ),
 
         radial-gradient(
-            circle at 14% 68%,
-            rgba(216,179,106,.12) 0 1px,
+            circle at 12% 70%,
+
+            rgba(216,179,106,.10)
+            0 1px,
+
             transparent 2px
         ),
 
         radial-gradient(
-            circle at 86% 65%,
-            rgba(216,179,106,.12) 0 1px,
+            circle at 88% 68%,
+
+            rgba(216,179,106,.10)
+            0 1px,
+
             transparent 2px
         );
 
@@ -399,7 +428,28 @@
 
 
 /* ========================================================= */
-/* 03.05 — HERO INNER                                       */
+/* 07 — HERO CONTAINER                                       */
+/* ========================================================= */
+
+.philosophy-13a-hero .container{
+
+    position:
+        relative;
+
+    z-index:
+        5;
+
+    width:
+        min(1200px, 92vw);
+
+    margin:
+        0 auto;
+
+}
+
+
+/* ========================================================= */
+/* 08 — HERO INNER                                           */
 /* ========================================================= */
 
 .philosophy-13a-hero-inner{
@@ -416,14 +466,11 @@
     justify-content:
         center;
 
-    width:
-        100%;
-
 }
 
 
 /* ========================================================= */
-/* 03.06 — MAIN PREMIUM GLASS CARD                          */
+/* 09 — MAIN PREMIUM GLASS CARD                              */
 /* ========================================================= */
 
 .philosophy-13a-card{
@@ -432,13 +479,16 @@
         relative;
 
     width:
-        min(1050px, 90vw);
+        min(1080px, 92vw);
 
     min-height:
-        620px;
+        650px;
 
     padding:
-        90px 70px 70px;
+        90px 70px 80px;
+
+    box-sizing:
+        border-box;
 
     display:
         flex;
@@ -457,50 +507,71 @@
 
     border:
         1px solid
-        rgba(255,240,189,.24);
+        var(--ars-glass-border);
 
     border-radius:
-        34px;
+        36px;
 
     background:
 
         linear-gradient(
             145deg,
-            rgba(255,255,255,.105),
-            rgba(255,255,255,.035) 42%,
-            rgba(8,7,5,.58) 100%
+
+            rgba(255,255,255,.11)
+            0%,
+
+            rgba(255,255,255,.045)
+            35%,
+
+            rgba(8,21,37,.62)
+            72%,
+
+            rgba(4,11,20,.78)
+            100%
         );
 
     box-shadow:
 
-        0 35px 100px
-        rgba(0,0,0,.65),
+        0
+        35px
+        100px
+        rgba(0,0,0,.72),
 
-        0 0 60px
-        rgba(216,179,106,.18),
+        0
+        0
+        70px
+        rgba(184,137,63,.22),
 
-        0 0 150px
-        rgba(216,179,106,.08),
+        0
+        0
+        160px
+        rgba(184,137,63,.10),
 
-        inset 0 1px 0
+        inset
+        0
+        1px
+        0
         rgba(255,255,255,.16),
 
-        inset 0 0 80px
-        rgba(216,179,106,.055);
+        inset
+        0
+        0
+        100px
+        rgba(230,188,103,.06);
 
     backdrop-filter:
-        blur(22px)
-        saturate(145%);
+        blur(24px)
+        saturate(150%);
 
     -webkit-backdrop-filter:
-        blur(22px)
-        saturate(145%);
+        blur(24px)
+        saturate(150%);
 
 }
 
 
 /* ========================================================= */
-/* 03.07 — CARD GOLDEN AURA                                  */
+/* 10 — GLASS CARD GOLDEN LIGHT                              */
 /* ========================================================= */
 
 .philosophy-13a-card::before{
@@ -517,28 +588,79 @@
     z-index:
         -1;
 
+    pointer-events:
+        none;
+
     background:
 
         radial-gradient(
             ellipse at 50% 0%,
-            rgba(255,240,189,.18),
-            transparent 32%
+
+            rgba(255,240,189,.24)
+            0%,
+
+            rgba(230,188,103,.12)
+            22%,
+
+            transparent 48%
         ),
 
         radial-gradient(
             ellipse at 50% 100%,
-            rgba(216,179,106,.10),
-            transparent 38%
-        );
 
-    pointer-events:
-        none;
+            rgba(184,137,63,.16)
+            0%,
+
+            transparent 48%
+        );
 
 }
 
 
 /* ========================================================= */
-/* 03.08 — LARGE BRONZE GOLDEN A                            */
+/* 11 — GLASS CARD TOP REFLECTION                             */
+/* ========================================================= */
+
+.philosophy-13a-card::after{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        0;
+
+    left:
+        4%;
+
+    width:
+        92%;
+
+    height:
+        1px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+
+            transparent,
+
+            rgba(255,240,189,.65),
+
+            transparent
+        );
+
+    opacity:
+        .65;
+
+}
+
+
+/* ========================================================= */
+/* 12 — GREAT A CONTAINER                                   */
 /* ========================================================= */
 
 .philosophy-13a-great-a{
@@ -547,16 +669,16 @@
         absolute;
 
     top:
-        -135px;
+        -150px;
 
     left:
         50%;
 
     width:
-        460px;
+        480px;
 
     height:
-        460px;
+        480px;
 
     transform:
         translateX(-50%);
@@ -580,7 +702,7 @@
 
 
 /* ========================================================= */
-/* 03.09 — ROTATING A RING                                  */
+/* 13 — GREAT A ROTATING RING                               */
 /* ========================================================= */
 
 .philosophy-13a-ring{
@@ -591,24 +713,30 @@
     inset:
         0;
 
+    border:
+        1px solid
+        rgba(240,209,141,.48);
+
     border-radius:
         50%;
 
-    border:
-
-        1px solid
-        rgba(240,209,141,.42);
-
     box-shadow:
 
-        0 0 30px
-        rgba(216,179,106,.20),
+        0
+        0
+        35px
+        rgba(216,179,106,.24),
 
-        0 0 80px
-        rgba(216,179,106,.12),
+        0
+        0
+        90px
+        rgba(184,137,63,.16),
 
-        inset 0 0 35px
-        rgba(216,179,106,.08);
+        inset
+        0
+        0
+        40px
+        rgba(216,179,106,.10);
 
     animation:
 
@@ -621,7 +749,7 @@
 
 
 /* ========================================================= */
-/* 03.10 — SECONDARY ROTATING RING                           */
+/* 14 — SECONDARY RING                                      */
 /* ========================================================= */
 
 .philosophy-13a-ring::before{
@@ -633,21 +761,20 @@
         absolute;
 
     inset:
-        18px;
+        20px;
+
+    border:
+        1px dashed
+        rgba(255,240,189,.28);
 
     border-radius:
         50%;
-
-    border:
-
-        1px dashed
-        rgba(255,240,189,.28);
 
 }
 
 
 /* ========================================================= */
-/* 03.11 — LARGE BRONZE GOLD A LETTER                       */
+/* 15 — GREAT BRONZE GOLD A                                  */
 /* ========================================================= */
 
 .philosophy-13a-great-a span{
@@ -659,7 +786,7 @@
         3;
 
     color:
-        #b98a45;
+        #b88945;
 
     font-family:
         Georgia,
@@ -667,7 +794,7 @@
         serif;
 
     font-size:
-        420px;
+        440px;
 
     font-weight:
         700;
@@ -680,20 +807,26 @@
 
     text-shadow:
 
-        0 0 15px
-        rgba(200,164,93,.16),
+        0
+        0
+        18px
+        rgba(200,164,93,.18),
 
-        0 0 45px
-        rgba(143,95,45,.14),
+        0
+        0
+        50px
+        rgba(143,95,45,.16),
 
-        0 20px 35px
-        rgba(0,0,0,.65);
+        0
+        25px
+        40px
+        rgba(0,0,0,.72);
 
 }
 
 
 /* ========================================================= */
-/* 03.12 — CARD CONTENT                                      */
+/* 16 — CARD CONTENT                                        */
 /* ========================================================= */
 
 .philosophy-13a-card-content{
@@ -717,7 +850,7 @@
 
 
 /* ========================================================= */
-/* 03.13 — EYEBROW                                           */
+/* 17 — EYEBROW                                             */
 /* ========================================================= */
 
 .philosophy-13a-eyebrow{
@@ -732,27 +865,29 @@
         600;
 
     letter-spacing:
-        .32em;
+        .34em;
 
     text-transform:
         uppercase;
 
     text-shadow:
 
-        0 0 20px
-        rgba(240,209,141,.28);
+        0
+        0
+        20px
+        rgba(240,209,141,.35);
 
 }
 
 
 /* ========================================================= */
-/* 03.14 — THE 13 A'S — MAIN GOLD TITLE                      */
+/* 18 — THE 13 A'S MAIN TITLE                               */
 /* ========================================================= */
 
 .philosophy-13a-title{
 
     margin-top:
-        24px;
+        26px;
 
     display:
         flex;
@@ -764,13 +899,13 @@
         center;
 
     gap:
-        14px;
+        16px;
 
     color:
         var(--ars-gold-light);
 
     font-size:
-        clamp(3.2rem, 7vw, 6.5rem);
+        clamp(3.4rem, 7vw, 6.8rem);
 
     font-weight:
         500;
@@ -783,17 +918,21 @@
 
     text-shadow:
 
-        0 0 10px
-        rgba(240,209,141,.28),
+        0
+        0
+        12px
+        rgba(240,209,141,.30),
 
-        0 0 35px
-        rgba(216,179,106,.18);
+        0
+        0
+        40px
+        rgba(216,179,106,.20);
 
 }
 
 
 /* ========================================================= */
-/* 03.15 — A'S GOLDEN EMPHASIS                              */
+/* 19 — A'S GOLD EMPHASIS                                   */
 /* ========================================================= */
 
 .philosophy-13a-title .a-symbol{
@@ -808,13 +947,13 @@
 
 
 /* ========================================================= */
-/* 03.16 — HERO H1                                           */
+/* 20 — HERO SUBTITLE                                       */
 /* ========================================================= */
 
 .philosophy-13a-card-content h1{
 
-    margin-top:
-        26px;
+    margin:
+        28px 0 0;
 
     color:
         var(--ars-white);
@@ -832,13 +971,13 @@
 
 
 /* ========================================================= */
-/* 03.17 — VISION LINE                                       */
+/* 21 — VISION LINE                                         */
 /* ========================================================= */
 
 .philosophy-13a-vision-line{
 
     margin-top:
-        20px;
+        22px;
 
     color:
         var(--ars-white-soft);
@@ -853,13 +992,13 @@
 
 
 /* ========================================================= */
-/* 03.18 — ARS MARK                                          */
+/* 22 — ARS BRAND MARK                                      */
 /* ========================================================= */
 
 .philosophy-13a-ars-mark{
 
     margin-top:
-        34px;
+        36px;
 
     color:
         var(--ars-gold);
@@ -871,18 +1010,20 @@
         600;
 
     letter-spacing:
-        .28em;
+        .30em;
 
     text-shadow:
 
-        0 0 18px
-        rgba(216,179,106,.25);
+        0
+        0
+        18px
+        rgba(216,179,106,.28);
 
 }
 
 
 /* ========================================================= */
-/* 03.19 — ARS A HIGHLIGHT                                   */
+/* 23 — ARS A HIGHLIGHT                                     */
 /* ========================================================= */
 
 .philosophy-13a-ars-mark .ars-a{
@@ -894,7 +1035,7 @@
 
 
 /* ========================================================= */
-/* 03.20 — ROTATING A ANIMATION                              */
+/* 24 — GREAT A ROTATION                                    */
 /* ========================================================= */
 
 @keyframes ars-philosophy-a-rotation{
@@ -917,15 +1058,18 @@
 
 
 /* ========================================================= */
-/* 03.21 — MOBILE FOUNDATION                                 */
+/* 25 — MOBILE                                              */
 /* ========================================================= */
 
-@media (max-width: 700px){
+@media (max-width:700px){
 
     .philosophy-13a-hero{
 
+        min-height:
+            100svh;
+
         padding:
-            110px 0 90px;
+            100px 0 70px;
 
     }
 
@@ -941,19 +1085,22 @@
         padding:
             70px 25px 50px;
 
+        border-radius:
+            28px;
+
     }
 
 
     .philosophy-13a-great-a{
 
         top:
-            -95px;
+            -100px;
 
         width:
-            330px;
+            340px;
 
         height:
-            330px;
+            340px;
 
     }
 
@@ -961,7 +1108,7 @@
     .philosophy-13a-great-a span{
 
         font-size:
-            300px;
+            310px;
 
     }
 
@@ -979,6 +1126,9 @@
         font-size:
             clamp(2.5rem, 13vw, 4rem);
 
+        gap:
+            8px;
+
     }
 
 
@@ -992,6 +1142,20 @@
 
     }
 
-             }
+}
 
 
+/* ========================================================= */
+/* 26 — REDUCED MOTION                                      */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    .philosophy-13a-ring{
+
+        animation:
+            none;
+
+    }
+
+}

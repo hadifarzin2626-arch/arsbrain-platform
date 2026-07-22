@@ -7732,3 +7732,40 @@ img{
 
 }
 
+/* ========================================================= */
+/* 15 — ARS CARD TITLES — SIZE ONLY                         */
+/* ========================================================= */
+/* 13 CARDS: +30% TITLE SIZE                                */
+/* ARS HERITAGE GROUP: +35% TITLE SIZE                      */
+/* NO COLOR / NO CARD / NO LAYOUT / NO OTHER CHANGES       */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — ALL 13 NON-HERITAGE CARD TITLES                     */
+/* ========================================================= */
+
+.ars-glass-card:not(:has(
+    .ars-card-link[href="ars-heritage-group.html"]
+))
+.ars-card-content h3{
+
+    font-size:
+        130%;
+
+}
+
+
+/* ========================================================= */
+/* 02 — ARS HERITAGE GROUP TITLE                            */
+/* ========================================================= */
+
+.ars-glass-card:has(
+    .ars-card-link[href="ars-heritage-group.html"]
+)
+.ars-card-content h3{
+
+    font-size:
+        135%;
+
+}

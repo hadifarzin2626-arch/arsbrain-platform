@@ -7751,7 +7751,7 @@ img{
 .ars-card-content h3{
 
     font-size:
-        310%;
+        275%;
 
 }
 
@@ -7772,76 +7772,34 @@ img{
 
 
 /* ========================================================= */
-/* 20 — ARS HERO — WIDE ORBIT STAGE                         */
+/* 21 — EXPERIMENTAL — GLOBAL SCALE / ORBIT PROTECTED       */
 /* ========================================================= */
-/* HERO HORIZONTAL SPACE: +70%                               */
-/* HERO VERTICAL SPACE: +15%                                 */
-/* PURPOSE: CREATE ENOUGH ROOM FOR ORBIT REPOSITIONING       */
-/* ORBIT SYSTEM ITSELF: NOT TOUCHED                          */
-/* ORBIT SIZE: NOT TOUCHED                                   */
-/* ORBIT ROTATION: NOT TOUCHED                               */
-/* ORBIT ANIMATION: NOT TOUCHED                              */
+/* NON-ORBIT SITE: +70%                                      */
+/* ORBIT SYSTEM: ORIGINAL SIZE                              */
+/* ORBIT ROTATION: UNCHANGED                                */
+/* ORBIT ANIMATION: UNCHANGED                               */
 /* ========================================================= */
 
 
 /* ========================================================= */
-/* 01 — HERO — WIDE VISUAL STAGE                             */
+/* 01 — GLOBAL SITE SCALE                                   */
 /* ========================================================= */
 
-.hero{
+body{
 
-    position:
-        relative;
-
-    width:
-        170%;
-
-    min-height:
-        115vh;
-
-    margin-left:
-        -35%;
-
-    padding-top:
-        82px;
-
-    overflow:
-        hidden;
-
-    isolation:
-        isolate;
+    zoom:
+        1.70;
 
 }
 
 
 /* ========================================================= */
-/* 02 — HERO WRAPPER — FULL WIDE STAGE                       */
+/* 02 — PROTECT ARS ORBIT FROM GLOBAL SCALE                  */
 /* ========================================================= */
 
-.hero-wrapper{
+.ars-orbit{
 
-    position:
-        relative;
-
-    width:
-        100%;
-
-    min-height:
-        calc(115vh - 82px);
-
-}
-
-
-/* ========================================================= */
-/* 03 — HERO CONTENT — KEEP ORIGINAL SIZE                    */
-/* ========================================================= */
-
-.hero-content{
-
-    width:
-        min(900px, 90vw);
-
-    max-width:
-        900px;
+    zoom:
+        .5882352941;
 
 }

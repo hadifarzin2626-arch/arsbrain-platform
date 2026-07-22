@@ -7770,5 +7770,39 @@ img{
 
 }
 
+/* ========================================================= */
+/* ARS CARD GOLDEN TITLES — +25% FONT WEIGHT                 */
+/* ========================================================= */
+/* SIZE: UNCHANGED                                           */
+/* COLOR: UNCHANGED                                          */
+/* POSITION: UNCHANGED                                       */
+/* ONLY FONT THICKNESS INCREASED                             */
+/* ========================================================= */
+
+.ars-card-title-veil span{
+
+    font-weight:
+        900;
 
 
+
+}
+
+/* ========================================================= */
+/* EXPERIMENTAL — CENTER ORBIT SYSTEM IN HERO                */
+/* ========================================================= */
+/* ONLY POSITION CHANGES                                    */
+/* NO SIZE CHANGE                                            */
+/* NO ORBIT ROTATION CHANGE                                  */
+/* NO ORBIT ANIMATION CHANGE                                 */
+/* ========================================================= */
+
+.ars-orbit{
+
+    position:
+        relative;
+
+    left:
+        -20%;
+
+}

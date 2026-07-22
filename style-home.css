@@ -7923,3 +7923,184 @@ img{
     }
 
 }
+
+
+/* ========================================================= */
+/* 14 — CARD TITLE — GOLDEN VEIL REVEAL                      */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — TITLE POSITION                                       */
+/* ========================================================= */
+
+.ars-card-title-veil{
+
+    position:absolute;
+
+    left:0;
+
+    right:0;
+
+    top:24%;
+
+    height:18%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:12;
+
+    pointer-events:none;
+
+    opacity:0;
+
+    transform:
+        translateY(-12px);
+
+    transition:
+
+        opacity
+        .65s
+        ease,
+
+        transform
+        .8s
+        cubic-bezier(.16,1,.3,1);
+
+}
+
+
+/* ========================================================= */
+/* 02 — TITLE TEXT                                           */
+/* ========================================================= */
+
+.ars-card-title-veil span{
+
+    color:
+        rgba(235,195,115,1);
+
+    font-size:
+        115%;
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        .04em;
+
+    text-align:
+        center;
+
+    white-space:
+        nowrap;
+
+    text-shadow:
+
+        0
+        0
+        4px
+        rgba(235,195,115,.65),
+
+        0
+        0
+        14px
+        rgba(235,195,115,.45),
+
+        0
+        1px
+        2px
+        rgba(0,0,0,.8);
+
+}
+
+
+/* ========================================================= */
+/* 03 — SHOW TITLE ON HOVER                                  */
+/* ========================================================= */
+
+.ars-glass-card:hover
+.ars-card-title-veil{
+
+    opacity:
+
+        1;
+
+    transform:
+
+        translateY(0);
+
+}
+
+
+/* ========================================================= */
+/* 04 — GOLDEN VEIL — MOVE BACK                              */
+/* ========================================================= */
+
+.ars-glass-card:hover
+.ars-card-logo{
+
+    transform:
+
+        translateY(-20px);
+
+    opacity:
+
+        .72;
+
+}
+
+
+/* ========================================================= */
+/* 05 — TOUCH / MOBILE                                      */
+/* ========================================================= */
+
+@media (hover:none){
+
+    .ars-glass-card:active
+    .ars-card-title-veil{
+
+        opacity:
+
+            1;
+
+        transform:
+
+            translateY(0);
+
+    }
+
+
+    .ars-glass-card:active
+    .ars-card-logo{
+
+        transform:
+
+            translateY(-20px);
+
+        opacity:
+
+            .72;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 06 — ARS HERITAGE GROUP — 25% LARGER TITLE                */
+/* ========================================================= */
+
+.ars-glass-card:has(
+    .ars-card-link[href="ars-heritage-group.html"]
+)
+.ars-card-title-veil span{
+
+    font-size:
+
+        125%;
+
+}

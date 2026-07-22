@@ -7806,3 +7806,20 @@ img{
         -50%;
 
 }
+
+
+
+/* ========================================================= */
+/* 16 — CARD GOLDEN HORIZONTAL BAR — DOUBLE HEIGHT          */
+/* ========================================================= */
+/* ONLY THE SHORT GOLDEN BAR                                */
+/* APPLIES TO ALL ARS GLASS CARDS                            */
+/* HEIGHT ONLY — EVERYTHING ELSE REMAINS UNCHANGED           */
+/* ========================================================= */
+
+.ars-glass-card .ars-card-image::after{
+
+    height:
+        84%;
+
+}

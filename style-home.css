@@ -5748,7 +5748,7 @@ img{
     transition:
 
         transform
-        1s
+        2s
         cubic-bezier(.2,.8,.2,1),
 
         opacity
@@ -6751,11 +6751,12 @@ img{
     transition:
 
         transform
-        1.1s
+        1.99s
+   
         cubic-bezier(.16,1,.3,1),
 
         box-shadow
-        1s
+        1.7s
         cubic-bezier(.16,1,.3,1);
 
 }
@@ -6790,18 +6791,18 @@ img{
         0
         0
         100px
-        rgba(220,174,91,.35),
+        rgba(250,187,109,.35),
 
         0
         0
         180px
-        rgba(184,137,63,.18),
+        rgba(198,137,63,.26),
 
         inset
         0
         -60px
         100px
-        rgba(230,188,103,.30);
+        rgba(265,198,120,.45);
 
 }
 
@@ -6972,13 +6973,13 @@ img{
             0%,
 
             rgba(184,137,63,.06)
-            30%,
+            45%,
 
             transparent
-            70%
+            80%
         );
 
-    opacity:.65;
+    opacity:.98;
 
     animation:
 
@@ -7820,6 +7821,6 @@ img{
 .ars-glass-card .ars-card-image::after{
 
     height:
-       99.99%;
+       110%;
 
 }

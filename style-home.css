@@ -7751,7 +7751,7 @@ img{
 .ars-card-content h3{
 
     font-size:
-        280%;
+        310%;
 
 }
 
@@ -7766,17 +7766,18 @@ img{
 .ars-card-content h3{
 
     font-size:
-        280%;
+        350%;
 
 }
 
 
 /* ========================================================= */
-/* 20 — ARS HERO — PREMIUM SPACE EXPANSION                  */
+/* 20 — ARS HERO — WIDE ORBIT STAGE                         */
 /* ========================================================= */
-/* HERO VISUAL SPACE: +35% WIDER                             */
-/* HERO VERTICAL SPACE: +15% TALLER                          */
-/* ORBIT SYSTEM: NOT TOUCHED                                 */
+/* HERO HORIZONTAL SPACE: +70%                               */
+/* HERO VERTICAL SPACE: +15%                                 */
+/* PURPOSE: CREATE ENOUGH ROOM FOR ORBIT REPOSITIONING       */
+/* ORBIT SYSTEM ITSELF: NOT TOUCHED                          */
 /* ORBIT SIZE: NOT TOUCHED                                   */
 /* ORBIT ROTATION: NOT TOUCHED                               */
 /* ORBIT ANIMATION: NOT TOUCHED                              */
@@ -7784,25 +7785,46 @@ img{
 
 
 /* ========================================================= */
-/* 01 — HERO — EXPANDED VISUAL SPACE                         */
+/* 01 — HERO — WIDE VISUAL STAGE                             */
 /* ========================================================= */
 
 .hero{
 
+    position:
+        relative;
+
     width:
-        100%;
+        170%;
 
     min-height:
         115vh;
+
+    margin-left:
+        -35%;
+
+    padding-top:
+        82px;
+
+    overflow:
+        hidden;
+
+    isolation:
+        isolate;
 
 }
 
 
 /* ========================================================= */
-/* 02 — HERO WRAPPER — 15% TALLER                            */
+/* 02 — HERO WRAPPER — FULL WIDE STAGE                       */
 /* ========================================================= */
 
 .hero-wrapper{
+
+    position:
+        relative;
+
+    width:
+        100%;
 
     min-height:
         calc(115vh - 82px);
@@ -7811,27 +7833,15 @@ img{
 
 
 /* ========================================================= */
-/* 03 — HERO CONTENT — 35% MORE HORIZONTAL SPACE             */
+/* 03 — HERO CONTENT — KEEP ORIGINAL SIZE                    */
 /* ========================================================= */
 
 .hero-content{
 
     width:
-        min(1215px, 121.5vw);
+        min(900px, 90vw);
 
     max-width:
-        none;
-
-}
-
-
-/* ========================================================= */
-/* 04 — KEEP HERO INSIDE VIEWPORT                            */
-/* ========================================================= */
-
-.hero{
-
-    overflow:
-        hidden;
+        900px;
 
 }

@@ -7828,17 +7828,14 @@ img{
 
 
 /* ========================================================= */
-/* ARS HOME — 14 CARDS SIZE & GAP FINAL OVERRIDE             */
-/* ========================================================= */
-/* فقط کارت‌های اصلی Home                                     */
-/* اندازه کارت‌ها: 50% کوچک‌تر                               */
-/* فاصله بین کارت‌ها: 4 برابر فاصله فعلی                     */
-/* سایر بخش‌های سایت: بدون تغییر                             */
+/* ARS HOME — FINAL CARD SIZE OVERRIDE                       */
+/* فقط 14 کارت صفحه اصلی                                      */
+/* اندازه واقعی کارت‌ها = 50% اندازه فعلی                     */
 /* ========================================================= */
 
 
 /* ========================================================= */
-/* 01 — HOME CARD SIZE                                       */
+/* 01 — FORCE SMALLER CARD WIDTH                             */
 /* ========================================================= */
 
 .ars-cards-grid .ars-glass-card{
@@ -7849,41 +7846,89 @@ img{
     max-width:
         50% !important;
 
-}
-
-
-/* ========================================================= */
-/* 02 — HOME CARD GRID GAP                                   */
-/* ========================================================= */
-
-.ars-cards-grid{
-
-    column-gap:
-        4em !important;
-
-    row-gap:
-        4em !important;
+    min-width:
+        0 !important;
 
 }
 
 
 /* ========================================================= */
-/* 03 — PREVENT GRID FROM STRETCHING CARDS BACK              */
+/* 02 — FORCE SMALLER CARD HEIGHT                            */
 /* ========================================================= */
 
 .ars-cards-grid .ars-glass-card{
 
-    flex-shrink:
-        0;
+    min-height:
+        0 !important;
+
+    height:
+        auto !important;
 
 }
 
 
 /* ========================================================= */
-/* 04 — MOBILE SAFETY                                        */
+/* 03 — CANCEL OLD FIXED CARD HEIGHTS                        */
 /* ========================================================= */
 
-@media (max-width:700px){
+@media (min-width:1200px){
+
+    .ars-cards-grid .ars-core-card{
+
+        min-height:
+            0 !important;
+
+        height:
+            auto !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 04 — CARD IMAGE SCALE                                     */
+/* ========================================================= */
+
+.ars-cards-grid .ars-card-image{
+
+    height:
+        50% !important;
+
+    min-height:
+        0 !important;
+
+    max-height:
+        none !important;
+
+}
+
+
+/* ========================================================= */
+/* 05 — PREVENT GRID FROM FORCING CARD SIZE                  */
+/* ========================================================= */
+
+.ars-cards-grid{
+
+    align-items:
+        start !important;
+
+}
+
+
+.ars-cards-grid .ars-glass-card{
+
+    align-self:
+        start !important;
+
+}
+
+
+/* ========================================================= */
+/* 06 — MOBILE                                               */
+/* ========================================================= */
+
+@media (max-width:768px){
 
     .ars-cards-grid .ars-glass-card{
 
@@ -7892,17 +7937,6 @@ img{
 
         max-width:
             100% !important;
-
-    }
-
-
-    .ars-cards-grid{
-
-        column-gap:
-            2.5em !important;
-
-        row-gap:
-            2.5em !important;
 
     }
 

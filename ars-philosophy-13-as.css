@@ -2527,184 +2527,152 @@ img{
     }
 
 /* ========================================================= */
-/* ARS 13 — TRUE 2X HERO SCALE FROM CENTER                  */
+/* ARS 13 — TRUE 2X WIDE HERO OVERRIDE                       */
 /* ========================================================= */
 
-/* HERO اصلی — بدون تغییر عرض صفحه */
 .ars-13-hero{
 
-    position:
-        relative;
+    position: relative;
 
-    width:
-        100%;
+    width: 200vw;
 
-    min-height:
-        100vh;
+    max-width: none;
 
-    overflow:
-        hidden;
+    min-height: 100vh;
+
+    left: 50%;
+
+    transform: translateX(-50%);
+
+    padding-left: 0;
+    padding-right: 0;
+
+    overflow: hidden;
 
 }
 
 
 /* ========================================================= */
-/* HERO STAGE — SCALE 2X FROM EXACT CENTER                   */
+/* HERO STAGE — 2X WIDE                                      */
 /* ========================================================= */
 
 .ars-13-stage{
 
-    position:
-        relative;
+    position: relative;
 
-    width:
-        100%;
+    width: 200vw;
 
-    min-height:
-        720px;
+    max-width: none;
 
-    left:
-        50%;
+    min-height: 720px;
 
-    transform:
-        translateX(-50%)
-        scale(2);
+    left: 50%;
 
-    transform-origin:
-        center center;
+    transform: translateX(-50%);
 
 }
 
 
 /* ========================================================= */
-/* 3D ROTATING SYMBOL — 2X VISUAL SIZE                      */
+/* 3D A + ROTATING RINGS — 2X SCALE                         */
 /* ========================================================= */
 
 .ars-13-symbol{
 
-    width:
-        min(2100px, 164vw);
+    position: absolute;
 
-    max-width:
-        none;
+    left: 50%;
+    top: 50%;
+
+    width: 2000px;
+
+    max-width: none;
+
+    aspect-ratio: 1;
+
+    transform:
+        translate(-50%, -50%);
 
 }
 
 
 /* ========================================================= */
-/* MAIN GLASS CARD — 2X VISUAL SIZE                         */
+/* MAIN GLASS CARD — 2X WIDTH / SAME HEIGHT                 */
 /* ========================================================= */
 
 .ars-13-glass-card{
 
-    width:
-        min(2360px, 184vw);
+    position: relative;
 
-    max-width:
-        none;
+    width: 2000px;
 
-    min-height:
-        680px;
+    max-width: none;
+
+    min-height: 680px;
+
+    height: 680px;
+
+    padding:
+        72px 70px 62px;
 
 }
 
 
 /* ========================================================= */
-/* CARD CONTENT — PRESERVE ORIGINAL PROPORTIONS              */
+/* CARD CONTENT — KEEP HEIGHT / USE NEW WIDTH               */
 /* ========================================================= */
 
 .ars-13-card-content{
 
-    width:
-        100%;
+    width: 100%;
 
 }
 
 
 /* ========================================================= */
-/* HERO INTRO — CENTERED                                     */
+/* 13 PILLARS — USE EXTRA WIDTH                             */
+/* ========================================================= */
+
+.ars-13-pillars{
+
+    width: 100%;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap:
+        18px 34px;
+
+}
+
+
+/* ========================================================= */
+/* INTRO — SAME CENTER AS HERO                              */
 /* ========================================================= */
 
 .ars-13-intro{
 
-    position:
-        relative;
+    width: 2000px;
 
-    z-index:
-        50;
+    max-width: none;
 
-    width:
-        100%;
-
-    text-align:
-        center;
+    text-align: center;
 
 }
 
 
 /* ========================================================= */
-/* HERO FOOTER — CENTERED                                    */
+/* FOOTER — SAME CENTER AS HERO                             */
 /* ========================================================= */
 
 .ars-13-hero-footer{
 
-    position:
-        relative;
+    width: 2000px;
 
-    z-index:
-        50;
+    max-width: none;
 
-    width:
-        100%;
+    justify-content: center;
 
-    text-align:
-        center;
-
-}
-
-
-/* ========================================================= */
-/* EXTRA TRANSPARENT GLASS                                   */
-/* ========================================================= */
-
-.ars-13-glass-card{
-
-    background:
-        rgba(255,255,255,.018);
-
-    backdrop-filter:
-        blur(8px)
-        saturate(170%);
-
-    -webkit-backdrop-filter:
-        blur(8px)
-        saturate(170%);
-
-}
-
-
-/* ========================================================= */
-/* MOBILE SAFETY                                             */
-/* ========================================================= */
-
-@media (max-width:700px){
-
-    .ars-13-stage{
-
-        transform:
-            translateX(-50%)
-            scale(1);
-
-        min-height:
-            760px;
-
-    }
-
-    .ars-13-glass-card{
-
-        width:
-            96vw;
-
-    }
+    text-align: center;
 
 }

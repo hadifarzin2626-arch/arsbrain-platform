@@ -1,1321 +1,2087 @@
 /* =========================================================
-   ARS DESIGN SYSTEM V1
-   Automotive Retrofit System
-   Respect the Heritage. Elevate Prestige & Intelligence.
-   ========================================================= */
-
+ARS DESIGN — EXCLUSIVE VISUAL SYSTEM
+Automotive Design & Engineering Studio
+Version: ARS DESIGN EXPERIENCE V1
+========================================================= */
 
 /* =========================================================
-   01 — ARS DESIGN DNA
-   ========================================================= */
+01 — ARS DESIGN DNA
+========================================================= */
 
 :root{
 
-    /* -----------------------------------------------------
-       ARS BRAND COLORS
-    ----------------------------------------------------- */
+/* CORE BRAND COLORS */
 
-    --ars-gold: #D4AF37;
-    --ars-gold-light: #F4D77A;
-    --ars-gold-bright: #FFE7A0;
-    --ars-gold-dark: #8C6A1D;
+--ars-navy:
+#071426;
 
-    --ars-bronze: #A97142;
-    --ars-bronze-light: #C99A6B;
-    --ars-bronze-dark: #5C3A21;
+--ars-navy-deep:
+#030914;
 
-    --ars-navy: #071426;
-    --ars-navy-mid: #0D223D;
-    --ars-navy-light: #173A63;
-    --ars-navy-deep: #030B16;
+--ars-navy-light:
+#102744;
 
-    --ars-black: #030507;
-    --ars-black-soft: #080B10;
+--ars-gold:
+#D6A84F;
 
-    --ars-white: #FFFFFF;
-    --ars-white-soft: #F4F2EC;
-    --ars-silver: #C9CDD3;
+--ars-gold-light:
+#F3D58A;
 
+--ars-gold-dark:
+#9B6A22;
 
-    /* -----------------------------------------------------
-       ARS DNA ACCENT COLORS
-    ----------------------------------------------------- */
+--ars-bronze:
+#A8753D;
 
-    --ars-red: #B3262E;
-    --ars-red-light: #E14B53;
+--ars-bronze-light:
+#D0A06A;
 
-    --ars-blue: #1677C8;
-    --ars-blue-light: #48A9F8;
+--ars-black:
+#020305;
 
-    --ars-yellow: #F2C94C;
-    --ars-yellow-light: #FFE58A;
+--ars-black-soft:
+#080B10;
 
-    --ars-brown: #6B4226;
-    --ars-brown-light: #A8754B;
+--ars-white:
+#F7F5EF;
+
+--ars-white-soft:
+#D9D9D2;
 
 
-    /* -----------------------------------------------------
-       TEXT SYSTEM
-    ----------------------------------------------------- */
+/* DNA ACCENT COLORS */
 
-    --ars-text-primary: #FFFFFF;
-    --ars-text-secondary: #D9D6CC;
-    --ars-text-muted: #9299A5;
+--ars-red:
+#9F2028;
 
-    --ars-text-gold: var(--ars-gold);
-    --ars-text-navy: var(--ars-navy);
+--ars-blue:
+#1D5C91;
 
+--ars-yellow:
+#D5A928;
 
-    /* -----------------------------------------------------
-       GLASS SYSTEM
-    ----------------------------------------------------- */
-
-    --ars-glass-dark:
-        rgba(3, 5, 7, .72);
-
-    --ars-glass-navy:
-        rgba(7, 20, 38, .68);
-
-    --ars-glass-light:
-        rgba(255, 255, 255, .08);
-
-    --ars-glass-gold:
-        rgba(212, 175, 55, .10);
+--ars-brown:
+#5A3925;
 
 
-    /* -----------------------------------------------------
-       BORDERS
-    ----------------------------------------------------- */
+/* GLASS COLORS */
 
-    --ars-border-gold:
-        rgba(212, 175, 55, .55);
+--glass-dark:
+rgba(5,13,25,.72);
 
-    --ars-border-gold-soft:
-        rgba(212, 175, 55, .25);
+--glass-navy:
+rgba(10,29,52,.68);
 
-    --ars-border-white:
-        rgba(255, 255, 255, .15);
+--glass-gold:
+rgba(214,168,79,.12);
 
-    --ars-border-bronze:
-        rgba(169, 113, 66, .45);
+--glass-white:
+rgba(255,255,255,.065);
 
 
-    /* -----------------------------------------------------
-       SHADOW SYSTEM
-    ----------------------------------------------------- */
+/* BORDERS */
 
-    --ars-shadow-deep:
-        0 30px 80px rgba(0, 0, 0, .55);
+--border-gold:
+rgba(214,168,79,.42);
 
-    --ars-shadow-card:
-        0 20px 50px rgba(0, 0, 0, .45);
+--border-gold-soft:
+rgba(214,168,79,.18);
 
-    --ars-shadow-gold:
-        0 15px 45px rgba(212, 175, 55, .20);
-
-    --ars-shadow-gold-strong:
-        0 20px 70px rgba(212, 175, 55, .35);
-
-    --ars-shadow-bronze:
-        0 20px 60px rgba(169, 113, 66, .25);
+--border-white:
+rgba(255,255,255,.12);
 
 
-    /* -----------------------------------------------------
-       BORDER RADIUS
-    ----------------------------------------------------- */
+/* SHADOWS */
 
-    --ars-radius-sm: 10px;
-    --ars-radius-md: 18px;
-    --ars-radius-lg: 28px;
-    --ars-radius-xl: 40px;
-    --ars-radius-round: 999px;
+--shadow-deep:
+0 30px 80px rgba(0,0,0,.55);
+
+--shadow-card:
+0 25px 60px rgba(0,0,0,.42);
+
+--shadow-gold:
+0 18px 50px rgba(214,168,79,.20);
+
+--shadow-gold-strong:
+0 20px 70px rgba(214,168,79,.34);
 
 
-    /* -----------------------------------------------------
-       MOTION
-    ----------------------------------------------------- */
+/* RADIUS */
 
-    --ars-ease:
-        cubic-bezier(.16, 1, .3, 1);
+--radius-small:
+12px;
 
-    --ars-transition-fast:
-        .25s var(--ars-ease);
+--radius-medium:
+22px;
 
-    --ars-transition:
-        .55s var(--ars-ease);
+--radius-large:
+32px;
 
-    --ars-transition-slow:
-        .9s var(--ars-ease);
+--radius-xl:
+44px;
+
+
+/* TRANSITIONS */
+
+--transition-fast:
+.25s cubic-bezier(.2,.8,.2,1);
+
+--transition-main:
+.6s cubic-bezier(.16,1,.3,1);
+
+--transition-slow:
+1s cubic-bezier(.16,1,.3,1);
+
+
+/* CONTAINER */
+
+--container:
+1440px;
 
 }
 
-
 /* =========================================================
-   02 — GLOBAL ARS RESET
-   ========================================================= */
+02 — GLOBAL RESET
+========================================================= */
 
 *,
 *::before,
 *::after{
 
-    box-sizing: border-box;
+box-sizing:
+border-box;
 
-    margin: 0;
+margin:
+0;
 
-    padding: 0;
+padding:
+0;
 
 }
-
 
 html{
 
-    scroll-behavior: smooth;
+scroll-behavior:
+smooth;
+
+background:
+var(--ars-black);
 
 }
-
 
 body{
 
-    margin: 0;
+min-height:
+100vh;
 
-    min-height: 100vh;
+overflow-x:
+hidden;
 
-    background:
-        var(--ars-black);
+color:
+var(--ars-white);
 
-    color:
-        var(--ars-text-primary);
+background:
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+radial-gradient(
+    circle at 15% 10%,
+    rgba(29,92,145,.13),
+    transparent 28%
+),
 
-    overflow-x: hidden;
+radial-gradient(
+    circle at 85% 20%,
+    rgba(214,168,79,.12),
+    transparent 30%
+),
 
-    -webkit-font-smoothing:
-        antialiased;
+radial-gradient(
+    circle at 50% 80%,
+    rgba(159,32,40,.06),
+    transparent 35%
+),
+
+linear-gradient(
+    135deg,
+    var(--ars-black),
+    var(--ars-navy-deep) 48%,
+    #05080D
+);
+
+font-family:
+Inter,
+"Segoe UI",
+Arial,
+sans-serif;
+
+line-height:
+1.7;
 
 }
 
+body::before{
+
+content:
+"";
+
+position:
+fixed;
+
+inset:
+-20%;
+
+pointer-events:
+none;
+
+z-index:
+-2;
+
+background:
+
+radial-gradient(
+    circle at 30% 40%,
+    rgba(214,168,79,.08),
+    transparent 22%
+),
+
+radial-gradient(
+    circle at 70% 65%,
+    rgba(29,92,145,.08),
+    transparent 24%
+);
+
+filter:
+blur(60px);
+
+animation:
+arsAmbient 18s ease-in-out infinite alternate;
+
+}
+
+body::after{
+
+content:
+"";
+
+position:
+fixed;
+
+inset:
+0;
+
+pointer-events:
+none;
+
+z-index:
+999;
+
+opacity:
+.025;
+
+background-image:
+
+linear-gradient(
+    rgba(255,255,255,.5) 1px,
+    transparent 1px
+),
+
+linear-gradient(
+    90deg,
+    rgba(255,255,255,.5) 1px,
+    transparent 1px
+);
+
+background-size:
+80px 80px;
+
+mask-image:
+linear-gradient(
+    to bottom,
+    transparent,
+    black 20%,
+    black 80%,
+    transparent
+);
+
+}
+
+@keyframes arsAmbient{
+
+0%{
+    transform:
+    translate3d(-3%, -2%, 0)
+    scale(1);
+}
+
+50%{
+    transform:
+    translate3d(2%, 3%, 0)
+    scale(1.08);
+}
+
+100%{
+    transform:
+    translate3d(-2%, 1%, 0)
+    scale(1.03);
+}
+
+}
+
+/* =========================================================
+03 — GLOBAL ELEMENTS
+========================================================= */
 
 img{
 
-    max-width: 100%;
+display:
+block;
 
-    display: block;
+max-width:
+100%;
 
 }
 
+a{
+
+color:
+inherit;
+
+text-decoration:
+none;
+
+}
 
 button,
 a{
 
-    -webkit-tap-highlight-color:
-        transparent;
+-webkit-tap-highlight-color:
+transparent;
 
 }
 
+strong{
 
-a{
+color:
+var(--ars-gold-light);
 
-    color: inherit;
-
-    text-decoration: none;
+font-weight:
+700;
 
 }
 
+section{
+
+position:
+relative;
+
+padding:
+140px 0;
+
+isolation:
+isolate;
+
+}
+
+.container{
+
+width:
+min(100% - 48px, var(--container));
+
+margin:
+0 auto;
+
+position:
+relative;
+
+z-index:
+2;
+
+}
 
 /* =========================================================
-   03 — ARS PREMIUM BACKGROUND
-   ========================================================= */
+04 — GLOBAL SECTION ATMOSPHERE
+========================================================= */
 
-.ars-bg{
+section::before{
 
-    position: relative;
+content:
+"";
 
-    background:
+position:
+absolute;
 
-        radial-gradient(
-            circle at 50% 0%,
-            rgba(212,175,55,.10),
-            transparent 35%
-        ),
+width:
+500px;
 
-        radial-gradient(
-            circle at 10% 70%,
-            rgba(23,58,99,.18),
-            transparent 35%
-        ),
+height:
+500px;
 
-        linear-gradient(
-            135deg,
-            var(--ars-black),
-            var(--ars-navy-deep)
-        );
+left:
+-280px;
 
-}
+top:
+20%;
 
+border-radius:
+50%;
 
-/* =========================================================
-   04 — ARS GOLD / NAVY SPLIT SYSTEM
-   ========================================================= */
+background:
+rgba(29,92,145,.09);
 
-.ars-split{
+filter:
+blur(100px);
 
-    background:
+pointer-events:
+none;
 
-        linear-gradient(
-            135deg,
-            var(--ars-navy) 0%,
-            var(--ars-navy) 50%,
-            var(--ars-gold) 50%,
-            var(--ars-gold) 100%
-        );
+z-index:
+-1;
+
+animation:
+arsFloat 16s ease-in-out infinite alternate;
 
 }
 
+section::after{
 
-.ars-split-diagonal{
+content:
+"";
 
-    background:
+position:
+absolute;
 
-        linear-gradient(
-            135deg,
-            var(--ars-navy) 0%,
-            var(--ars-navy) 47%,
-            var(--ars-gold) 47%,
-            var(--ars-gold) 100%
-        );
+width:
+400px;
 
-}
+height:
+400px;
 
+right:
+-220px;
 
-.ars-split-reverse{
+bottom:
+10%;
 
-    background:
+border-radius:
+50%;
 
-        linear-gradient(
-            135deg,
-            var(--ars-gold) 0%,
-            var(--ars-gold) 50%,
-            var(--ars-navy) 50%,
-            var(--ars-navy) 100%
-        );
+background:
+rgba(214,168,79,.08);
 
-}
+filter:
+blur(100px);
 
+pointer-events:
+none;
 
-/* =========================================================
-   05 — ARS GLASS CARD
-   ========================================================= */
+z-index:
+-1;
 
-.ars-card{
-
-    position: relative;
-
-    overflow: hidden;
-
-    padding: 32px;
-
-    border-radius:
-        var(--ars-radius-lg);
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(255,255,255,.10),
-            rgba(255,255,255,.025)
-        ),
-
-        linear-gradient(
-            145deg,
-            rgba(7,20,38,.82),
-            rgba(3,5,7,.92)
-        );
-
-    border:
-        1px solid
-        var(--ars-border-gold-soft);
-
-    backdrop-filter:
-        blur(22px)
-        saturate(150%);
-
-    -webkit-backdrop-filter:
-        blur(22px)
-        saturate(150%);
-
-    box-shadow:
-        var(--ars-shadow-card);
-
-    transform:
-        translateY(0)
-        perspective(1200px);
-
-    transition:
-        transform var(--ars-transition),
-        box-shadow var(--ars-transition),
-        border-color var(--ars-transition);
+animation:
+arsFloatReverse 20s ease-in-out infinite alternate;
 
 }
-
-
-/* =========================================================
-   06 — GLASS REFLECTION
-   ========================================================= */
-
-.ars-card::before{
-
-    content: "";
-
-    position: absolute;
-
-    inset: -100%;
-
-    background:
-
-        linear-gradient(
-            115deg,
-            transparent 35%,
-            rgba(255,255,255,.16) 50%,
-            transparent 65%
-        );
-
-    transform:
-        translateX(-60%)
-        rotate(8deg);
-
-    transition:
-        transform 1.2s var(--ars-ease);
-
-    pointer-events:
-        none;
-
-}
-
-
-/* =========================================================
-   07 — GOLD LIGHT UNDER CARD
-   ========================================================= */
-
-.ars-card::after{
-
-    content: "";
-
-    position: absolute;
-
-    left: 12%;
-
-    right: 12%;
-
-    bottom: -35px;
-
-    height: 55px;
-
-    background:
-
-        radial-gradient(
-            ellipse,
-            rgba(212,175,55,.55),
-            transparent 70%
-        );
-
-    filter:
-        blur(20px);
-
-    opacity: .35;
-
-    transition:
-        opacity var(--ars-transition),
-        transform var(--ars-transition);
-
-    pointer-events:
-        none;
-
-}
-
-
-/* =========================================================
-   08 — CARD HOVER
-   ========================================================= */
-
-.ars-card:hover{
-
-    transform:
-        translateY(-14px)
-        scale(1.015);
-
-    border-color:
-        rgba(212,175,55,.75);
-
-    box-shadow:
-
-        0 35px 90px
-        rgba(0,0,0,.60),
-
-        0 15px 60px
-        rgba(212,175,55,.20);
-
-}
-
-
-.ars-card:hover::before{
-
-    transform:
-        translateX(60%)
-        rotate(8deg);
-
-}
-
-
-.ars-card:hover::after{
-
-    opacity:
-        .95;
-
-    transform:
-        scale(1.15);
-
-}
-
-
-/* =========================================================
-   09 — ARS 3D PREMIUM CARD
-   ========================================================= */
-
-.ars-card-3d{
-
-    position: relative;
-
-    transform-style:
-        preserve-3d;
-
-    transition:
-        transform var(--ars-transition),
-        box-shadow var(--ars-transition);
-
-}
-
-
-.ars-card-3d:hover{
-
-    transform:
-
-        perspective(1200px)
-
-        translateY(-16px)
-
-        rotateX(2deg)
-
-        rotateY(-2deg)
-
-        scale(1.02);
-
-    box-shadow:
-
-        0 40px 100px
-        rgba(0,0,0,.65),
-
-        0 20px 80px
-        rgba(212,175,55,.25);
-
-}
-
-
-/* =========================================================
-   10 — ARS PREMIUM TITLES
-   ========================================================= */
-
-.ars-title{
-
-    font-weight:
-        800;
-
-    letter-spacing:
-        -.03em;
-
-    color:
-        var(--ars-white);
-
-}
-
-
-.ars-title-gold{
-
-    background:
-
-        linear-gradient(
-            110deg,
-            var(--ars-gold-dark),
-            var(--ars-gold-light),
-            var(--ars-gold)
-        );
-
-    -webkit-background-clip:
-        text;
-
-    background-clip:
-        text;
-
-    color:
-        transparent;
-
-}
-
-
-.ars-title-gold-navy{
-
-    background:
-
-        linear-gradient(
-            90deg,
-            var(--ars-gold) 0%,
-            var(--ars-gold-light) 48%,
-            var(--ars-navy) 52%,
-            var(--ars-navy-light) 100%
-        );
-
-    -webkit-background-clip:
-        text;
-
-    background-clip:
-        text;
-
-    color:
-        transparent;
-
-}
-
-
-/* =========================================================
-   11 — ARS PREMIUM BUTTON
-   ========================================================= */
-
-.ars-btn{
-
-    position: relative;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    gap: 10px;
-
-    min-height: 52px;
-
-    padding:
-        0 28px;
-
-    border:
-        1px solid
-        var(--ars-border-gold);
-
-    border-radius:
-        var(--ars-radius-round);
-
-    background:
-
-        linear-gradient(
-            135deg,
-            var(--ars-gold),
-            var(--ars-gold-dark)
-        );
-
-    color:
-        var(--ars-black);
-
-    font-weight:
-        800;
-
-    cursor:
-        pointer;
-
-    overflow:
-        hidden;
-
-    box-shadow:
-        var(--ars-shadow-gold);
-
-    transition:
-        transform var(--ars-transition-fast),
-        box-shadow var(--ars-transition-fast);
-
-}
-
-
-.ars-btn:hover{
-
-    transform:
-        translateY(-5px);
-
-    box-shadow:
-        var(--ars-shadow-gold-strong);
-
-}
-
-
-.ars-btn:active{
-
-    transform:
-        translateY(-1px)
-        scale(.97);
-
-}
-
-
-/* =========================================================
-   12 — ARS NAVY BUTTON
-   ========================================================= */
-
-.ars-btn-navy{
-
-    background:
-
-        linear-gradient(
-            135deg,
-            var(--ars-navy-light),
-            var(--ars-navy)
-        );
-
-    color:
-        var(--ars-white);
-
-    border-color:
-        var(--ars-border-gold);
-
-}
-
-
-/* =========================================================
-   13 — ARS GLASS BUTTON
-   ========================================================= */
-
-.ars-btn-glass{
-
-    background:
-
-        rgba(255,255,255,.06);
-
-    color:
-        var(--ars-white);
-
-    backdrop-filter:
-        blur(15px);
-
-    -webkit-backdrop-filter:
-        blur(15px);
-
-}
-
-
-/* =========================================================
-   14 — ARS IMAGE FRAME
-   ========================================================= */
-
-.ars-image-frame{
-
-    position:
-        relative;
-
-    overflow:
-        hidden;
-
-    min-height:
-        260px;
-
-    border-radius:
-        var(--ars-radius-lg);
-
-    border:
-        1px solid
-        var(--ars-border-gold-soft);
-
-    background:
-
-        linear-gradient(
-            135deg,
-            var(--ars-navy),
-            var(--ars-black)
-        );
-
-    box-shadow:
-        var(--ars-shadow-card);
-
-}
-
-
-.ars-image-frame img{
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    object-fit:
-        cover;
-
-    transition:
-        transform 1s var(--ars-ease);
-
-}
-
-
-.ars-image-frame:hover img{
-
-    transform:
-        scale(1.08);
-
-}
-
-
-/* =========================================================
-   15 — ARS LOGO FRAME
-   ========================================================= */
-
-.ars-logo-frame{
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    min-height:
-        160px;
-
-    padding:
-        30px;
-
-    border-radius:
-        var(--ars-radius-lg);
-
-    background:
-
-        linear-gradient(
-            135deg,
-            rgba(7,20,38,.85),
-            rgba(3,5,7,.95)
-        );
-
-    border:
-        1px solid
-        var(--ars-border-gold-soft);
-
-    box-shadow:
-        var(--ars-shadow-card);
-
-    transition:
-        transform var(--ars-transition),
-        border-color var(--ars-transition);
-
-}
-
-
-.ars-logo-frame:hover{
-
-    transform:
-        translateY(-10px);
-
-    border-color:
-        var(--ars-border-gold);
-
-}
-
-
-/* =========================================================
-   16 — ARS PREMIUM SECTION
-   ========================================================= */
-
-.ars-section{
-
-    position:
-        relative;
-
-    padding:
-        100px 6%;
-
-    overflow:
-        hidden;
-
-}
-
-
-.ars-section::before{
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    width:
-        500px;
-
-    height:
-        500px;
-
-    top:
-        -200px;
-
-    right:
-        -200px;
-
-    background:
-
-        radial-gradient(
-            circle,
-            rgba(212,175,55,.12),
-            transparent 70%
-        );
-
-    filter:
-        blur(30px);
-
-    pointer-events:
-        none;
-
-}
-
-
-/* =========================================================
-   17 — ARS HERO
-   ========================================================= */
-
-.ars-hero{
-
-    position:
-        relative;
-
-    min-height:
-        100vh;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    overflow:
-        hidden;
-
-    background:
-
-        radial-gradient(
-            circle at 65% 40%,
-            rgba(212,175,55,.18),
-            transparent 22%
-        ),
-
-        radial-gradient(
-            circle at 15% 20%,
-            rgba(23,58,99,.25),
-            transparent 30%
-        ),
-
-        linear-gradient(
-            135deg,
-            var(--ars-black),
-            var(--ars-navy-deep)
-        );
-
-}
-
-
-/* =========================================================
-   18 — ARS GOLD LINE
-   ========================================================= */
-
-.ars-gold-line{
-
-    width:
-        100px;
-
-    height:
-        2px;
-
-    margin:
-        20px 0;
-
-    background:
-
-        linear-gradient(
-            90deg,
-            transparent,
-            var(--ars-gold),
-            transparent
-        );
-
-    box-shadow:
-        0 0 20px
-        rgba(212,175,55,.55);
-
-}
-
-
-/* =========================================================
-   19 — ARS GLOW
-   ========================================================= */
-
-.ars-gold-glow{
-
-    box-shadow:
-
-        0 0 20px
-        rgba(212,175,55,.25),
-
-        0 0 60px
-        rgba(212,175,55,.12);
-
-}
-
-
-.ars-bronze-glow{
-
-    box-shadow:
-
-        0 0 20px
-        rgba(169,113,66,.25),
-
-        0 0 60px
-        rgba(169,113,66,.12);
-
-}
-
-
-/* =========================================================
-   20 — ARS COLOR DNA
-   ========================================================= */
-
-.ars-red{
-
-    color:
-        var(--ars-red);
-
-}
-
-
-.ars-blue{
-
-    color:
-        var(--ars-blue);
-
-}
-
-
-.ars-yellow{
-
-    color:
-        var(--ars-yellow);
-
-}
-
-
-.ars-brown{
-
-    color:
-        var(--ars-brown-light);
-
-}
-
-
-/* =========================================================
-   21 — ARS STATUS BADGES
-   ========================================================= */
-
-.ars-badge{
-
-    display:
-        inline-flex;
-
-    align-items:
-        center;
-
-    gap:
-        8px;
-
-    padding:
-        8px 16px;
-
-    border-radius:
-        var(--ars-radius-round);
-
-    font-size:
-        13px;
-
-    font-weight:
-        700;
-
-    border:
-        1px solid
-        var(--ars-border-gold-soft);
-
-    background:
-        rgba(255,255,255,.05);
-
-    backdrop-filter:
-        blur(12px);
-
-}
-
-
-/* =========================================================
-   22 — ARS INTERACTION STATES
-   ========================================================= */
-
-.ars-interactive{
-
-    cursor:
-        pointer;
-
-    transition:
-        transform var(--ars-transition),
-        box-shadow var(--ars-transition),
-        border-color var(--ars-transition);
-
-}
-
-
-.ars-interactive:hover{
-
-    transform:
-        translateY(-8px);
-
-}
-
-
-.ars-interactive:active{
-
-    transform:
-        translateY(-2px)
-        scale(.985);
-
-    box-shadow:
-        0 10px 30px
-        rgba(212,175,55,.25);
-
-}
-
-
-/* =========================================================
-   23 — ARS GOLD PULSE
-   ========================================================= */
-
-@keyframes arsGoldPulse{
-
-    0%{
-
-        box-shadow:
-            0 0 0
-            rgba(212,175,55,0);
-
-    }
-
-    50%{
-
-        box-shadow:
-
-            0 0 30px
-            rgba(212,175,55,.35);
-
-    }
-
-    100%{
-
-        box-shadow:
-            0 0 0
-            rgba(212,175,55,0);
-
-    }
-
-}
-
-
-.ars-pulse{
-
-    animation:
-        arsGoldPulse 3s ease-in-out infinite;
-
-}
-
-
-/* =========================================================
-   24 — ARS FLOAT
-   ========================================================= */
 
 @keyframes arsFloat{
 
-    0%,
-    100%{
+from{
+    transform:
+    translate3d(0,0,0);
+}
 
-        transform:
-            translateY(0);
-
-    }
-
-    50%{
-
-        transform:
-            translateY(-10px);
-
-    }
+to{
+    transform:
+    translate3d(80px,60px,0);
+}
 
 }
 
+@keyframes arsFloatReverse{
 
-.ars-float{
-
-    animation:
-        arsFloat 5s ease-in-out infinite;
-
+from{
+    transform:
+    translate3d(0,0,0);
 }
 
+to{
+    transform:
+    translate3d(-70px,-50px,0);
+}
+
+}
 
 /* =========================================================
-   25 — ARS FADE UP
-   ========================================================= */
+05 — SECTION HEADINGS
+========================================================= */
 
-@keyframes arsFadeUp{
+.section-heading{
 
-    from{
+max-width:
+1000px;
 
-        opacity:
-            0;
+margin:
+0 auto 80px;
 
-        transform:
-            translateY(30px);
-
-    }
-
-    to{
-
-        opacity:
-            1;
-
-        transform:
-            translateY(0);
-
-    }
+text-align:
+center;
 
 }
 
+.section-label{
 
-.ars-fade-up{
+display:
+inline-flex;
 
-    animation:
-        arsFadeUp .8s var(--ars-ease)
-        both;
+align-items:
+center;
+
+gap:
+12px;
+
+margin-bottom:
+18px;
+
+color:
+var(--ars-gold-light);
+
+font-size:
+.75rem;
+
+font-weight:
+800;
+
+letter-spacing:
+.24em;
+
+text-transform:
+uppercase;
 
 }
 
+.section-label::before{
+
+content:
+"";
+
+width:
+34px;
+
+height:
+1px;
+
+background:
+linear-gradient(
+    90deg,
+    transparent,
+    var(--ars-gold)
+);
+
+}
+
+.section-label::after{
+
+content:
+"";
+
+width:
+34px;
+
+height:
+1px;
+
+background:
+linear-gradient(
+    90deg,
+    var(--ars-gold),
+    transparent
+);
+
+}
+
+.section-heading h2{
+
+position:
+relative;
+
+display:
+inline-block;
+
+max-width:
+950px;
+
+margin:
+0 auto 26px;
+
+font-size:
+clamp(2rem, 4vw, 4.5rem);
+
+line-height:
+1.08;
+
+letter-spacing:
+-.035em;
+
+background:
+
+linear-gradient(
+    100deg,
+    var(--ars-white) 0%,
+    var(--ars-white) 42%,
+    var(--ars-gold-light) 62%,
+    var(--ars-gold) 100%
+);
+
+-webkit-background-clip:
+text;
+
+background-clip:
+text;
+
+color:
+transparent;
+
+}
+
+.section-heading h2::after{
+
+content:
+"";
+
+display:
+block;
+
+width:
+100px;
+
+height:
+3px;
+
+margin:
+28px auto 0;
+
+background:
+linear-gradient(
+    90deg,
+    var(--ars-navy),
+    var(--ars-gold),
+    var(--ars-bronze)
+);
+
+box-shadow:
+0 0 25px rgba(214,168,79,.5);
+
+}
+
+.section-heading p{
+
+max-width:
+850px;
+
+margin:
+0 auto;
+
+color:
+var(--ars-white-soft);
+
+font-size:
+1.05rem;
+
+}
 
 /* =========================================================
-   26 — ARS RESPONSIVE
-   ========================================================= */
+06 — PREMIUM GLASS SYSTEM
+========================================================= */
 
-@media (max-width: 900px){
+.ars-glass{
 
-    .ars-section{
+position:
+relative;
 
-        padding:
-            80px 5%;
+overflow:
+hidden;
 
-    }
+background:
 
-    .ars-card{
+linear-gradient(
+    135deg,
+    rgba(255,255,255,.10),
+    rgba(255,255,255,.035) 35%,
+    rgba(7,20,38,.72) 100%
+);
 
-        padding:
-            25px;
+border:
+1px solid var(--border-gold-soft);
 
-    }
+border-radius:
+var(--radius-large);
 
-    .ars-hero{
+box-shadow:
+var(--shadow-card);
 
-        min-height:
-            85vh;
+backdrop-filter:
+blur(22px)
+saturate(140%);
 
-    }
+-webkit-backdrop-filter:
+blur(22px)
+saturate(140%);
 
-}
+transform:
+translateZ(0);
 
-
-@media (max-width: 600px){
-
-    .ars-section{
-
-        padding:
-            65px 20px;
-
-    }
-
-    .ars-card{
-
-        padding:
-            22px;
-
-        border-radius:
-            var(--ars-radius-md);
-
-    }
-
-    .ars-btn{
-
-        width:
-            100%;
-
-    }
-
-    .ars-split,
-    .ars-split-diagonal,
-    .ars-split-reverse{
-
-        background:
-
-            linear-gradient(
-                180deg,
-                var(--ars-navy) 0%,
-                var(--ars-navy) 50%,
-                var(--ars-gold) 50%,
-                var(--ars-gold) 100%
-            );
-
-    }
+transition:
+transform var(--transition-main),
+border-color var(--transition-main),
+box-shadow var(--transition-main);
 
 }
 
+.ars-glass::before{
+
+content:
+"";
+
+position:
+absolute;
+
+inset:
+0;
+
+pointer-events:
+none;
+
+background:
+
+linear-gradient(
+    120deg,
+    rgba(255,255,255,.13),
+    transparent 22%,
+    transparent 70%,
+    rgba(214,168,79,.08)
+);
+
+opacity:
+.8;
+
+}
+
+.ars-glass::after{
+
+content:
+"";
+
+position:
+absolute;
+
+width:
+160px;
+
+height:
+160px;
+
+top:
+-100px;
+
+left:
+-100px;
+
+border-radius:
+50%;
+
+background:
+rgba(214,168,79,.18);
+
+filter:
+blur(45px);
+
+opacity:
+0;
+
+transition:
+opacity var(--transition-main);
+
+}
+
+.ars-glass:hover{
+
+transform:
+translateY(-12px)
+perspective(1000px)
+rotateX(1deg);
+
+border-color:
+var(--border-gold);
+
+box-shadow:
+
+0 35px 80px rgba(0,0,0,.52),
+
+0 18px 55px rgba(214,168,79,.16);
+
+}
+
+.ars-glass:hover::after{
+
+opacity:
+1;
+
+}
 
 /* =========================================================
-   27 — ACCESSIBILITY
-   ========================================================= */
+07 — LUXURY SPLIT PANELS
+========================================================= */
 
-@media (prefers-reduced-motion: reduce){
+.ars-glass:nth-child(even){
 
-    *,
-    *::before,
-    *::after{
+background:
 
-        animation-duration:
-            .01ms !important;
+linear-gradient(
+    135deg,
+    rgba(7,20,38,.86) 0%,
+    rgba(7,20,38,.76) 48%,
+    rgba(214,168,79,.13) 49%,
+    rgba(214,168,79,.05) 100%
+);
 
-        animation-iteration-count:
-            1 !important;
+}
 
-        transition-duration:
-            .01ms !important;
+.ars-glass:nth-child(odd){
 
-        scroll-behavior:
-            auto !important;
+background:
 
-    }
+linear-gradient(
+    135deg,
+    rgba(214,168,79,.10) 0%,
+    rgba(214,168,79,.04) 48%,
+    rgba(7,20,38,.84) 49%,
+    rgba(3,9,20,.92) 100%
+);
 
-  }
+}
+
+/* =========================================================
+08 — BUTTON SYSTEM
+========================================================= */
+
+.ars-button,
+.btn-primary,
+.btn-secondary{
+
+position:
+relative;
+
+display:
+inline-flex;
+
+align-items:
+center;
+
+justify-content:
+center;
+
+min-height:
+58px;
+
+padding:
+0 32px;
+
+border:
+1px solid var(--border-gold);
+
+border-radius:
+999px;
+
+overflow:
+hidden;
+
+font-size:
+.9rem;
+
+font-weight:
+800;
+
+letter-spacing:
+.04em;
+
+transition:
+transform var(--transition-fast),
+box-shadow var(--transition-fast),
+color var(--transition-fast),
+background var(--transition-fast);
+
+}
+
+.ars-button::before,
+.btn-primary::before,
+.btn-secondary::before{
+
+content:
+"";
+
+position:
+absolute;
+
+inset:
+0;
+
+transform:
+translateX(-110%);
+
+background:
+linear-gradient(
+    100deg,
+    transparent,
+    rgba(255,255,255,.28),
+    transparent
+);
+
+transition:
+transform .8s ease;
+
+}
+
+.ars-button:hover::before,
+.btn-primary:hover::before,
+.btn-secondary:hover::before{
+
+transform:
+translateX(110%);
+
+}
+
+.ars-button:hover,
+.btn-primary:hover,
+.btn-secondary:hover{
+
+transform:
+translateY(-5px);
+
+box-shadow:
+var(--shadow-gold-strong);
+
+}
+
+.ars-button-primary,
+.btn-primary{
+
+color:
+var(--ars-black);
+
+background:
+
+linear-gradient(
+    135deg,
+    var(--ars-gold-light),
+    var(--ars-gold),
+    var(--ars-bronze)
+);
+
+box-shadow:
+0 12px 35px rgba(214,168,79,.22);
+
+}
+
+.ars-button-secondary,
+.btn-secondary{
+
+color:
+var(--ars-white);
+
+background:
+
+linear-gradient(
+    135deg,
+    rgba(7,20,38,.95),
+    rgba(16,39,68,.78)
+);
+
+}
+
+.ars-button-secondary:hover,
+.btn-secondary:hover{
+
+color:
+var(--ars-gold-light);
+
+border-color:
+var(--ars-gold);
+
+}
+
+/* =========================================================
+09 — HERO
+========================================================= */
+
+.arsdesign-hero{
+
+min-height:
+100vh;
+
+display:
+flex;
+
+align-items:
+center;
+
+padding:
+120px 0 80px;
+
+overflow:
+hidden;
+
+background:
+
+radial-gradient(
+    circle at 70% 45%,
+    rgba(214,168,79,.20),
+    transparent 18%
+),
+
+radial-gradient(
+    circle at 85% 60%,
+    rgba(29,92,145,.18),
+    transparent 30%
+),
+
+linear-gradient(
+    120deg,
+    var(--ars-black),
+    var(--ars-navy-deep) 48%,
+    #0B1C32
+);
+
+}
+
+.arsdesign-hero::before{
+
+content:
+"";
+
+position:
+absolute;
+
+inset:
+0;
+
+background:
+
+linear-gradient(
+    105deg,
+    rgba(3,9,20,.98) 0%,
+    rgba(3,9,20,.88) 42%,
+    rgba(3,9,20,.25) 72%,
+    transparent 100%
+);
+
+z-index:
+-1;
+
+}
+
+.arsdesign-hero .container{
+
+display:
+grid;
+
+grid-template-columns:
+1fr 1fr;
+
+align-items:
+center;
+
+gap:
+70px;
+
+}
+
+.hero-content{
+
+position:
+relative;
+
+z-index:
+3;
+
+}
+
+.hero-label{
+
+display:
+inline-block;
+
+margin-bottom:
+25px;
+
+color:
+var(--ars-gold-light);
+
+font-size:
+.8rem;
+
+font-weight:
+900;
+
+letter-spacing:
+.3em;
+
+}
+
+.hero-content h1{
+
+max-width:
+800px;
+
+margin-bottom:
+28px;
+
+font-size:
+clamp(3.5rem, 7vw, 7.5rem);
+
+line-height:
+.94;
+
+letter-spacing:
+-.06em;
+
+background:
+
+linear-gradient(
+    120deg,
+    var(--ars-white),
+    var(--ars-gold-light) 58%,
+    var(--ars-gold-dark)
+);
+
+-webkit-background-clip:
+text;
+
+background-clip:
+text;
+
+color:
+transparent;
+
+}
+
+.hero-subtitle{
+
+margin-bottom:
+20px;
+
+color:
+var(--ars-gold-light);
+
+font-size:
+1.25rem;
+
+font-weight:
+700;
+
+}
+
+.hero-description{
+
+max-width:
+720px;
+
+margin-bottom:
+35px;
+
+color:
+var(--ars-white-soft);
+
+font-size:
+1.05rem;
+
+}
+
+.hero-buttons{
+
+display:
+flex;
+
+flex-wrap:
+wrap;
+
+gap:
+16px;
+
+}
+
+.hero-visual{
+
+position:
+relative;
+
+min-height:
+600px;
+
+display:
+flex;
+
+align-items:
+center;
+
+justify-content:
+center;
+
+perspective:
+1200px;
+
+}
+
+.hero-visual::before{
+
+content:
+"";
+
+position:
+absolute;
+
+width:
+520px;
+
+height:
+520px;
+
+border-radius:
+50%;
+
+background:
+
+radial-gradient(
+    circle,
+    rgba(214,168,79,.30),
+    rgba(214,168,79,.08) 35%,
+    transparent 70%
+);
+
+filter:
+blur(12px);
+
+animation:
+heroPulse 5s ease-in-out infinite;
+
+}
+
+.hero-visual img{
+
+position:
+relative;
+
+z-index:
+2;
+
+width:
+min(100%, 720px);
+
+object-fit:
+contain;
+
+filter:
+drop-shadow(
+    0 35px 45px rgba(0,0,0,.65)
+)
+
+drop-shadow(
+    0 0 45px rgba(214,168,79,.16)
+);
+
+animation:
+heroFloat 7s ease-in-out infinite;
+
+}
+
+@keyframes heroFloat{
+
+0%,
+100%{
+    transform:
+    translateY(0)
+    rotateY(-2deg);
+}
+
+50%{
+    transform:
+    translateY(-18px)
+    rotateY(2deg);
+}
+
+}
+
+@keyframes heroPulse{
+
+0%,
+100%{
+    transform:
+    scale(.92);
+
+    opacity:
+    .65;
+}
+
+50%{
+    transform:
+    scale(1.08);
+
+    opacity:
+    1;
+}
+
+}
+
+/* =========================================================
+10 — SCROLL INDICATOR
+========================================================= */
+
+.scroll-indicator{
+
+position:
+absolute;
+
+bottom:
+35px;
+
+left:
+50%;
+
+transform:
+translateX(-50%);
+
+width:
+28px;
+
+height:
+48px;
+
+border:
+1px solid rgba(214,168,79,.5);
+
+border-radius:
+30px;
+
+}
+
+.scroll-indicator span{
+
+position:
+absolute;
+
+top:
+8px;
+
+left:
+50%;
+
+width:
+4px;
+
+height:
+9px;
+
+border-radius:
+999px;
+
+background:
+var(--ars-gold);
+
+transform:
+translateX(-50%);
+
+animation:
+scrollMove 2s ease-in-out infinite;
+
+}
+
+@keyframes scrollMove{
+
+0%{
+    transform:
+    translate(-50%,0);
+
+    opacity:
+    0;
+}
+
+30%{
+    opacity:
+    1;
+}
+
+70%{
+    opacity:
+    1;
+}
+
+100%{
+    transform:
+    translate(-50%,22px);
+
+    opacity:
+    0;
+}
+
+}
+
+/* =========================================================
+11 — HERO BUTTONS
+========================================================= */
+
+.hero-buttons .btn-primary{
+
+background:
+
+linear-gradient(
+    135deg,
+    var(--ars-gold-light),
+    var(--ars-gold)
+);
+
+}
+
+.hero-buttons .btn-secondary{
+
+background:
+
+linear-gradient(
+    135deg,
+    rgba(7,20,38,.95),
+    rgba(16,39,68,.8)
+);
+
+}
+
+/* =========================================================
+12 — UNIVERSAL GRID SYSTEM
+========================================================= */
+
+.philosophy-grid,
+.about-grid,
+.heritage-grid,
+.modernization-grid,
+.exterior-grid,
+.interior-grid,
+.offroad-grid,
+.performance-grid,
+.integration-grid,
+.workshop-grid,
+.experience-grid,
+.future-grid,
+.promise-grid{
+
+display:
+grid;
+
+grid-template-columns:
+repeat(3, 1fr);
+
+gap:
+24px;
+
+}
+
+.philosophy-card,
+.about-card,
+.heritage-card,
+.modernization-card,
+.exterior-card,
+.interior-card,
+.offroad-card,
+.performance-card,
+.integration-card,
+.workshop-card,
+.experience-card,
+.future-card,
+.promise-card{
+
+padding:
+38px;
+
+min-height:
+260px;
+
+display:
+flex;
+
+flex-direction:
+column;
+
+justify-content:
+flex-start;
+
+}
+
+.philosophy-card h3,
+.about-card h3,
+.heritage-card h3,
+.modernization-card h3,
+.exterior-card h3,
+.interior-card h3,
+.offroad-card h3,
+.performance-card h3,
+.integration-card h3,
+.workshop-card h3,
+.experience-card h3,
+.future-card h3,
+.promise-card h3{
+
+margin:
+18px 0 14px;
+
+color:
+var(--ars-gold-light);
+
+font-size:
+1.25rem;
+
+line-height:
+1.25;
+
+}
+
+.philosophy-card p,
+.about-card p,
+.heritage-card p,
+.modernization-card p,
+.exterior-card p,
+.interior-card p,
+.offroad-card p,
+.performance-card p,
+.integration-card p,
+.workshop-card p,
+.experience-card p,
+.future-card p,
+.promise-card p{
+
+color:
+var(--ars-white-soft);
+
+font-size:
+.95rem;
+
+}
+
+.about-icon,
+.heritage-icon,
+.modernization-icon,
+.exterior-icon,
+.interior-icon,
+.offroad-icon,
+.performance-icon,
+.integration-icon,
+.workshop-icon,
+.experience-icon,
+.future-icon,
+.promise-icon{
+
+width:
+62px;
+
+height:
+62px;
+
+display:
+grid;
+
+place-items:
+center;
+
+border-radius:
+18px;
+
+color:
+var(--ars-gold-light);
+
+background:
+
+linear-gradient(
+    135deg,
+    rgba(214,168,79,.18),
+    rgba(7,20,38,.72)
+);
+
+border:
+1px solid rgba(214,168,79,.28);
+
+box-shadow:
+0 10px 30px rgba(214,168,79,.12);
+
+font-size:
+1.7rem;
+
+transition:
+transform var(--transition-main);
+
+}
+
+.ars-glass:hover .about-icon,
+.ars-glass:hover .heritage-icon,
+.ars-glass:hover .modernization-icon,
+.ars-glass:hover .exterior-icon,
+.ars-glass:hover .interior-icon,
+.ars-glass:hover .offroad-icon,
+.ars-glass:hover .performance-icon,
+.ars-glass:hover .integration-icon,
+.ars-glass:hover .workshop-icon,
+.ars-glass:hover .experience-icon,
+.ars-glass:hover .future-icon,
+.ars-glass:hover .promise-icon{
+
+transform:
+translateY(-5px)
+rotate(5deg)
+scale(1.08);
+
+}
+
+/* =========================================================
+13 — LARGE FEATURE PANELS
+========================================================= */
+
+.journey-box,
+.philosophy-message,
+.about-message,
+.heritage-message,
+.modernization-highlight,
+.modernization-message,
+.exterior-highlight,
+.exterior-message,
+.interior-highlight,
+.interior-message,
+.offroad-highlight,
+.offroad-message,
+.performance-highlight,
+.performance-message,
+.integration-highlight,
+.integration-message,
+.workshop-highlight,
+.workshop-message,
+.family-highlight,
+.future-highlight,
+.future-message,
+.project-story,
+.showcase-message,
+.ars-family-statement,
+.start-project{
+
+padding:
+clamp(35px, 5vw, 75px);
+
+margin-top:
+55px;
+
+}
+
+.journey-box h3,
+.philosophy-message h2,
+.about-message h2,
+.heritage-message h2,
+.modernization-highlight h2,
+.modernization-message h2,
+.exterior-highlight h2,
+.exterior-message h2,
+.interior-highlight h2,
+.interior-message h2,
+.offroad-highlight h2,
+.offroad-message h2,
+.performance-highlight h2,
+.performance-message h2,
+.integration-highlight h2,
+.integration-message h2,
+.workshop-highlight h2,
+.workshop-message h2,
+.family-highlight h2,
+.future-highlight h2,
+.future-message h2,
+.project-story h2,
+.showcase-message h2,
+.ars-family-statement h2,
+.start-project h2{
+
+margin-bottom:
+24px;
+
+color:
+var(--ars-gold-light);
+
+font-size:
+clamp(1.8rem, 3vw, 3.4rem);
+
+line-height:
+1.12;
+
+}
+
+.journey-box p,
+.philosophy-message p,
+.about-message p,
+.heritage-message p,
+.modernization-highlight p,
+.modernization-message p,
+.exterior-highlight p,
+.exterior-message p,
+.interior-highlight p,
+.interior-message p,
+.offroad-highlight p,
+.offroad-message p,
+.performance-highlight p,
+.performance-message p,
+.integration-highlight p,
+.integration-message p,
+.workshop-highlight p,
+.workshop-message p,
+.family-highlight p,
+.future-highlight p,
+.future-message p,
+.project-story p,
+.showcase-message p,
+.ars-family-statement p,
+.start-project p{
+
+max-width:
+900px;
+
+color:
+var(--ars-white-soft);
+
+font-size:
+1.05rem;
+
+}
+
+/* =========================================================
+14 — FEATURE LAYOUTS
+========================================================= */
+
+.about-layout,
+.heritage-layout,
+.modernization-hero,
+.exterior-layout,
+.interior-layout,
+.offroad-layout,
+.performance-layout,
+.integration-layout,
+.workshop-layout,
+.experience-layout,
+.future-layout,
+.promise-hero{
+
+display:
+grid;
+
+grid-template-columns:
+1fr 1fr;
+
+align-items:
+center;
+
+gap:
+60px;
+
+margin-bottom:
+70px;
+
+}
+
+.about-image,
+.heritage-image,
+.modernization-image,
+.exterior-image,
+.interior-image,
+.offroad-image,
+.performance-image,
+.integration-image,
+.workshop-image,
+.experience-image,
+.future-image,
+.promise-image{
+
+min-height:
+520px;
+
+border-radius:
+var(--radius-xl);
+
+}
+
+.about-content h3,
+.heritage-content h3,
+.modernization-content h3,
+.exterior-content h3,
+.interior-content h3,
+.offroad-content h3,
+.performance-content h3,
+.integration-content h3,
+.workshop-content h3,
+.experience-content h3,
+.future-content h3,
+.promise-content h2{
+
+margin-bottom:
+25px;
+
+font-size:
+clamp(2rem, 3vw, 3.5rem);
+
+line-height:
+1.08;
+
+color:
+var(--ars-white);
+
+}
+
+.about-content p,
+.heritage-content p,
+.modernization-content p,
+.exterior-content p,
+.interior-content p,
+.offroad-content p,
+.performance-content p,
+.integration-content p,
+.workshop-content p,
+.experience-content p,
+.future-content p,
+.promise-content p{
+
+margin-bottom:
+20px;
+
+color:
+var(--ars-white-soft);
+
+}
+
+/* =========================================================
+15 — RESPONSIVE
+========================================================= */
+
+@media (max-width:1100px){
+
+.arsdesign-hero .container,
+.about-layout,
+.heritage-layout,
+.modernization-hero,
+.exterior-layout,
+.interior-layout,
+.offroad-layout,
+.performance-layout,
+.integration-layout,
+.workshop-layout,
+.experience-layout,
+.future-layout,
+.promise-hero{
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+.hero-visual{
+
+    min-height:
+    450px;
+
+    order:
+    -1;
+
+}
+
+
+.hero-content{
+
+    text-align:
+    center;
+
+}
+
+
+.hero-description{
+
+    margin-left:
+    auto;
+
+    margin-right:
+    auto;
+
+}
+
+
+.hero-buttons{
+
+    justify-content:
+    center;
+
+}
+
+
+.about-grid,
+.heritage-grid,
+.modernization-grid,
+.exterior-grid,
+.interior-grid,
+.offroad-grid,
+.performance-grid,
+.integration-grid,
+.workshop-grid,
+.experience-grid,
+.future-grid,
+.promise-grid{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+}
+
+}
+
+@media (max-width:700px){
+
+section{
+
+    padding:
+    90px 0;
+
+}
+
+
+.container{
+
+    width:
+    min(100% - 28px, var(--container));
+
+}
+
+
+.section-heading{
+
+    margin-bottom:
+    55px;
+
+}
+
+
+.arsdesign-hero{
+
+    padding-top:
+    100px;
+
+}
+
+
+.hero-content h1{
+
+    font-size:
+    clamp(3rem, 15vw, 5rem);
+
+}
+
+
+.hero-visual{
+
+    min-height:
+    330px;
+
+}
+
+
+.hero-buttons{
+
+    flex-direction:
+    column;
+
+}
+
+
+.hero-buttons a{
+
+    width:
+    100%;
+
+}
+
+
+.about-grid,
+.heritage-grid,
+.modernization-grid,
+.exterior-grid,
+.interior-grid,
+.offroad-grid,
+.performance-grid,
+.integration-grid,
+.workshop-grid,
+.experience-grid,
+.future-grid,
+.promise-grid{
+
+    grid-template-columns:
+    1fr;
+
+}
+
+
+.philosophy-card,
+.about-card,
+.heritage-card,
+.modernization-card,
+.exterior-card,
+.interior-card,
+.offroad-card,
+.performance-card,
+.integration-card,
+.workshop-card,
+.experience-card,
+.future-card,
+.promise-card{
+
+    padding:
+    28px;
+
+}
+
+
+.about-image,
+.heritage-image,
+.modernization-image,
+.exterior-image,
+.interior-image,
+.offroad-image,
+.performance-image,
+.integration-image,
+.workshop-image,
+.experience-image,
+.future-image,
+.promise-image{
+
+    min-height:
+    350px;
+
+}
+
+}
+
+/* =========================================================
+16 — REDUCED MOTION
+========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+*,
+*::before,
+*::after{
+
+    animation-duration:
+    .01ms !important;
+
+    animation-iteration-count:
+    1 !important;
+
+    scroll-behavior:
+    auto !important;
+
+    transition-duration:
+    .01ms !important;
+
+}
+
+   }

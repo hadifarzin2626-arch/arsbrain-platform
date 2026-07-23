@@ -474,10 +474,10 @@ img{
         relative;
 
     width:
-        min(1280px, 94vw);
+        min(2600px, 200vw);
 
     min-height:
-        720px;
+        1500px;
 
     display:
         flex;

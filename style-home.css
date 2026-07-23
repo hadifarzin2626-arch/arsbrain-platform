@@ -7733,4 +7733,21 @@ img{
 
 }
 
+/* ========================================================= */
+/* ARS HOME — FINAL CARD SIZE CONTROL                         */
+/* این بخش باید آخرین کد فایل CSS باشد                        */
+/* ========================================================= */
 
+.ars-glass-card,
+.ars-core-card,
+.ars-specialized-card{
+
+    width:50% !important;
+
+    max-width:50% !important;
+
+    min-width:0 !important;
+
+    box-sizing:border-box !important;
+
+}

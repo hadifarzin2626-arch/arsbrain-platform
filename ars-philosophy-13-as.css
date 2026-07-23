@@ -1648,3 +1648,490 @@ body{
     }
 
         }
+/* ========================================================= */
+/* ========================================================= */
+/* ARS 13 A'S — FINAL TRUE HERO SCALE OVERRIDE               */
+/* ========================================================= */
+/*                                                         */
+/* IMPORTANT:                                              */
+/* This block MUST be the LAST CSS in the file.            */
+/* It overrides previous max-width / min() / clamp locks. */
+/*                                                         */
+/* Goal:                                                    */
+/* - Keep page width inside viewport                       */
+/* - Make the HERO visual composition 2.5X larger          */
+/* - Make the glass card truly wide                        */
+/* - Make A + rings scale with the card                    */
+/* - No horizontal page overflow                           */
+/*                                                         */
+/* ========================================================= */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — PAGE CANVAS                                          */
+/* ========================================================= */
+
+html,
+body{
+
+    width:
+        100% !important;
+
+    max-width:
+        100% !important;
+
+    min-width:
+        0 !important;
+
+    overflow-x:
+        hidden !important;
+
+}
+
+
+/* ========================================================= */
+/* 02 — HERO                                                  */
+/* ========================================================= */
+
+.ars-13-hero{
+
+    position:
+        relative !important;
+
+    width:
+        100% !important;
+
+    max-width:
+        none !important;
+
+    min-width:
+        0 !important;
+
+    min-height:
+        100vh !important;
+
+    height:
+        auto !important;
+
+    overflow:
+        hidden !important;
+
+}
+
+
+/* ========================================================= */
+/* 03 — HERO STAGE                                            */
+/* ========================================================= */
+/*                                                        */
+/* THIS IS THE MAIN FIX                                      */
+/* Previous: min(1280px, 94vw)                              */
+/* Now: full usable viewport                                */
+/*                                                        */
+/* ========================================================= */
+
+.ars-13-stage{
+
+    position:
+        relative !important;
+
+    width:
+        100% !important;
+
+    max-width:
+        none !important;
+
+    min-width:
+        0 !important;
+
+    height:
+        78vh !important;
+
+    min-height:
+        650px !important;
+
+    max-height:
+        none !important;
+
+    margin:
+        0 auto !important;
+
+    display:
+        flex !important;
+
+    align-items:
+        center !important;
+
+    justify-content:
+        center !important;
+
+}
+
+
+/* ========================================================= */
+/* 04 — SYMBOL CANVAS                                         */
+/* ========================================================= */
+/*                                                        */
+/* Remove old 1050px maximum                              */
+/*                                                        */
+/* ========================================================= */
+
+.ars-13-symbol{
+
+    position:
+        absolute !important;
+
+    left:
+        50% !important;
+
+    top:
+        50% !important;
+
+    width:
+        92vw !important;
+
+    max-width:
+        none !important;
+
+    min-width:
+        0 !important;
+
+    height:
+        92vw !important;
+
+    max-height:
+        none !important;
+
+    aspect-ratio:
+        1 / 1 !important;
+
+    transform:
+        translate(-50%, -50%) !important;
+
+}
+
+
+/* ========================================================= */
+/* 05 — BIG A                                                 */
+/* ========================================================= */
+/*                                                        */
+/* Remove old 700px–1200px clamp                          */
+/*                                                        */
+/* ========================================================= */
+
+.ars-13-big-a{
+
+    position:
+        absolute !important;
+
+    left:
+        50% !important;
+
+    top:
+        50% !important;
+
+    font-size:
+        62vw !important;
+
+    max-width:
+        none !important;
+
+    transform:
+        translate(-50%, -50%) !important;
+
+}
+
+
+/* ========================================================= */
+/* 06 — MAIN GLASS CARD                                      */
+/* ========================================================= */
+/*                                                        */
+/* THIS is the actual large glass plate                     */
+/* Width = 70% of the full Hero stage                       */
+/*                                                        */
+/* ========================================================= */
+
+.ars-13-glass-card{
+
+    position:
+        relative !important;
+
+    z-index:
+        20 !important;
+
+    width:
+        70vw !important;
+
+    max-width:
+        none !important;
+
+    min-width:
+        0 !important;
+
+    height:
+        70vh !important;
+
+    max-height:
+        none !important;
+
+    min-height:
+        0 !important;
+
+    margin:
+        0 auto !important;
+
+    transform:
+        none !important;
+
+}
+
+
+/* ========================================================= */
+/* 07 — GLASS CONTENT                                        */
+/* ========================================================= */
+
+.ars-13-card-content{
+
+    width:
+        100% !important;
+
+    height:
+        100% !important;
+
+    max-width:
+        none !important;
+
+    display:
+        flex !important;
+
+    flex-direction:
+        column !important;
+
+    align-items:
+        center !important;
+
+    justify-content:
+        center !important;
+
+}
+
+
+/* ========================================================= */
+/* 08 — PILLARS                                               */
+/* ========================================================= */
+
+.ars-13-pillars{
+
+    width:
+        94% !important;
+
+    max-width:
+        none !important;
+
+}
+
+
+/* ========================================================= */
+/* 09 — HERO FOOTER                                           */
+/* ========================================================= */
+
+.ars-13-hero-footer{
+
+    width:
+        100% !important;
+
+    max-width:
+        none !important;
+
+    display:
+        flex !important;
+
+    justify-content:
+        center !important;
+
+}
+
+
+/* ========================================================= */
+/* 10 — TABLET                                                */
+/* ========================================================= */
+
+@media (max-width:1100px){
+
+    .ars-13-stage{
+
+        width:
+            100% !important;
+
+        height:
+            75vh !important;
+
+        min-height:
+            600px !important;
+
+    }
+
+
+    .ars-13-symbol{
+
+        width:
+            110vw !important;
+
+        height:
+            110vw !important;
+
+    }
+
+
+    .ars-13-big-a{
+
+        font-size:
+            72vw !important;
+
+    }
+
+
+    .ars-13-glass-card{
+
+        width:
+            78vw !important;
+
+        height:
+            65vh !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 11 — MOBILE                                                */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    .ars-13-hero{
+
+        height:
+            auto !important;
+
+        min-height:
+            100vh !important;
+
+        padding:
+            30px
+            10px
+            40px !important;
+
+    }
+
+
+    .ars-13-stage{
+
+        width:
+            100% !important;
+
+        height:
+            720px !important;
+
+        min-height:
+            720px !important;
+
+    }
+
+
+    .ars-13-symbol{
+
+        width:
+            140vw !important;
+
+        height:
+            140vw !important;
+
+    }
+
+
+    .ars-13-big-a{
+
+        font-size:
+            100vw !important;
+
+    }
+
+
+    .ars-13-glass-card{
+
+        width:
+            94vw !important;
+
+        height:
+            620px !important;
+
+    }
+
+
+    .ars-13-pillars{
+
+        grid-template-columns:
+            repeat(2, 1fr) !important;
+
+        overflow-y:
+            auto !important;
+
+        max-height:
+            220px !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 12 — SMALL MOBILE                                         */
+/* ========================================================= */
+
+@media (max-width:520px){
+
+    .ars-13-stage{
+
+        height:
+            680px !important;
+
+    }
+
+
+    .ars-13-glass-card{
+
+        width:
+            96vw !important;
+
+        height:
+            600px !important;
+
+    }
+
+
+    .ars-13-symbol{
+
+        width:
+            160vw !important;
+
+        height:
+            160vw !important;
+
+    }
+
+
+    .ars-13-big-a{
+
+        font-size:
+            115vw !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* END — FINAL HERO SCALE OVERRIDE                            */
+/* ========================================================= */

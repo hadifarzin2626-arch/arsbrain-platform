@@ -1,0 +1,1321 @@
+/* =========================================================
+   ARS DESIGN SYSTEM V1
+   Automotive Retrofit System
+   Respect the Heritage. Elevate Prestige & Intelligence.
+   ========================================================= */
+
+
+/* =========================================================
+   01 — ARS DESIGN DNA
+   ========================================================= */
+
+:root{
+
+    /* -----------------------------------------------------
+       ARS BRAND COLORS
+    ----------------------------------------------------- */
+
+    --ars-gold: #D4AF37;
+    --ars-gold-light: #F4D77A;
+    --ars-gold-bright: #FFE7A0;
+    --ars-gold-dark: #8C6A1D;
+
+    --ars-bronze: #A97142;
+    --ars-bronze-light: #C99A6B;
+    --ars-bronze-dark: #5C3A21;
+
+    --ars-navy: #071426;
+    --ars-navy-mid: #0D223D;
+    --ars-navy-light: #173A63;
+    --ars-navy-deep: #030B16;
+
+    --ars-black: #030507;
+    --ars-black-soft: #080B10;
+
+    --ars-white: #FFFFFF;
+    --ars-white-soft: #F4F2EC;
+    --ars-silver: #C9CDD3;
+
+
+    /* -----------------------------------------------------
+       ARS DNA ACCENT COLORS
+    ----------------------------------------------------- */
+
+    --ars-red: #B3262E;
+    --ars-red-light: #E14B53;
+
+    --ars-blue: #1677C8;
+    --ars-blue-light: #48A9F8;
+
+    --ars-yellow: #F2C94C;
+    --ars-yellow-light: #FFE58A;
+
+    --ars-brown: #6B4226;
+    --ars-brown-light: #A8754B;
+
+
+    /* -----------------------------------------------------
+       TEXT SYSTEM
+    ----------------------------------------------------- */
+
+    --ars-text-primary: #FFFFFF;
+    --ars-text-secondary: #D9D6CC;
+    --ars-text-muted: #9299A5;
+
+    --ars-text-gold: var(--ars-gold);
+    --ars-text-navy: var(--ars-navy);
+
+
+    /* -----------------------------------------------------
+       GLASS SYSTEM
+    ----------------------------------------------------- */
+
+    --ars-glass-dark:
+        rgba(3, 5, 7, .72);
+
+    --ars-glass-navy:
+        rgba(7, 20, 38, .68);
+
+    --ars-glass-light:
+        rgba(255, 255, 255, .08);
+
+    --ars-glass-gold:
+        rgba(212, 175, 55, .10);
+
+
+    /* -----------------------------------------------------
+       BORDERS
+    ----------------------------------------------------- */
+
+    --ars-border-gold:
+        rgba(212, 175, 55, .55);
+
+    --ars-border-gold-soft:
+        rgba(212, 175, 55, .25);
+
+    --ars-border-white:
+        rgba(255, 255, 255, .15);
+
+    --ars-border-bronze:
+        rgba(169, 113, 66, .45);
+
+
+    /* -----------------------------------------------------
+       SHADOW SYSTEM
+    ----------------------------------------------------- */
+
+    --ars-shadow-deep:
+        0 30px 80px rgba(0, 0, 0, .55);
+
+    --ars-shadow-card:
+        0 20px 50px rgba(0, 0, 0, .45);
+
+    --ars-shadow-gold:
+        0 15px 45px rgba(212, 175, 55, .20);
+
+    --ars-shadow-gold-strong:
+        0 20px 70px rgba(212, 175, 55, .35);
+
+    --ars-shadow-bronze:
+        0 20px 60px rgba(169, 113, 66, .25);
+
+
+    /* -----------------------------------------------------
+       BORDER RADIUS
+    ----------------------------------------------------- */
+
+    --ars-radius-sm: 10px;
+    --ars-radius-md: 18px;
+    --ars-radius-lg: 28px;
+    --ars-radius-xl: 40px;
+    --ars-radius-round: 999px;
+
+
+    /* -----------------------------------------------------
+       MOTION
+    ----------------------------------------------------- */
+
+    --ars-ease:
+        cubic-bezier(.16, 1, .3, 1);
+
+    --ars-transition-fast:
+        .25s var(--ars-ease);
+
+    --ars-transition:
+        .55s var(--ars-ease);
+
+    --ars-transition-slow:
+        .9s var(--ars-ease);
+
+}
+
+
+/* =========================================================
+   02 — GLOBAL ARS RESET
+   ========================================================= */
+
+*,
+*::before,
+*::after{
+
+    box-sizing: border-box;
+
+    margin: 0;
+
+    padding: 0;
+
+}
+
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+
+body{
+
+    margin: 0;
+
+    min-height: 100vh;
+
+    background:
+        var(--ars-black);
+
+    color:
+        var(--ars-text-primary);
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    overflow-x: hidden;
+
+    -webkit-font-smoothing:
+        antialiased;
+
+}
+
+
+img{
+
+    max-width: 100%;
+
+    display: block;
+
+}
+
+
+button,
+a{
+
+    -webkit-tap-highlight-color:
+        transparent;
+
+}
+
+
+a{
+
+    color: inherit;
+
+    text-decoration: none;
+
+}
+
+
+/* =========================================================
+   03 — ARS PREMIUM BACKGROUND
+   ========================================================= */
+
+.ars-bg{
+
+    position: relative;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(212,175,55,.10),
+            transparent 35%
+        ),
+
+        radial-gradient(
+            circle at 10% 70%,
+            rgba(23,58,99,.18),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--ars-black),
+            var(--ars-navy-deep)
+        );
+
+}
+
+
+/* =========================================================
+   04 — ARS GOLD / NAVY SPLIT SYSTEM
+   ========================================================= */
+
+.ars-split{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--ars-navy) 0%,
+            var(--ars-navy) 50%,
+            var(--ars-gold) 50%,
+            var(--ars-gold) 100%
+        );
+
+}
+
+
+.ars-split-diagonal{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--ars-navy) 0%,
+            var(--ars-navy) 47%,
+            var(--ars-gold) 47%,
+            var(--ars-gold) 100%
+        );
+
+}
+
+
+.ars-split-reverse{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--ars-gold) 0%,
+            var(--ars-gold) 50%,
+            var(--ars-navy) 50%,
+            var(--ars-navy) 100%
+        );
+
+}
+
+
+/* =========================================================
+   05 — ARS GLASS CARD
+   ========================================================= */
+
+.ars-card{
+
+    position: relative;
+
+    overflow: hidden;
+
+    padding: 32px;
+
+    border-radius:
+        var(--ars-radius-lg);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.10),
+            rgba(255,255,255,.025)
+        ),
+
+        linear-gradient(
+            145deg,
+            rgba(7,20,38,.82),
+            rgba(3,5,7,.92)
+        );
+
+    border:
+        1px solid
+        var(--ars-border-gold-soft);
+
+    backdrop-filter:
+        blur(22px)
+        saturate(150%);
+
+    -webkit-backdrop-filter:
+        blur(22px)
+        saturate(150%);
+
+    box-shadow:
+        var(--ars-shadow-card);
+
+    transform:
+        translateY(0)
+        perspective(1200px);
+
+    transition:
+        transform var(--ars-transition),
+        box-shadow var(--ars-transition),
+        border-color var(--ars-transition);
+
+}
+
+
+/* =========================================================
+   06 — GLASS REFLECTION
+   ========================================================= */
+
+.ars-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    inset: -100%;
+
+    background:
+
+        linear-gradient(
+            115deg,
+            transparent 35%,
+            rgba(255,255,255,.16) 50%,
+            transparent 65%
+        );
+
+    transform:
+        translateX(-60%)
+        rotate(8deg);
+
+    transition:
+        transform 1.2s var(--ars-ease);
+
+    pointer-events:
+        none;
+
+}
+
+
+/* =========================================================
+   07 — GOLD LIGHT UNDER CARD
+   ========================================================= */
+
+.ars-card::after{
+
+    content: "";
+
+    position: absolute;
+
+    left: 12%;
+
+    right: 12%;
+
+    bottom: -35px;
+
+    height: 55px;
+
+    background:
+
+        radial-gradient(
+            ellipse,
+            rgba(212,175,55,.55),
+            transparent 70%
+        );
+
+    filter:
+        blur(20px);
+
+    opacity: .35;
+
+    transition:
+        opacity var(--ars-transition),
+        transform var(--ars-transition);
+
+    pointer-events:
+        none;
+
+}
+
+
+/* =========================================================
+   08 — CARD HOVER
+   ========================================================= */
+
+.ars-card:hover{
+
+    transform:
+        translateY(-14px)
+        scale(1.015);
+
+    border-color:
+        rgba(212,175,55,.75);
+
+    box-shadow:
+
+        0 35px 90px
+        rgba(0,0,0,.60),
+
+        0 15px 60px
+        rgba(212,175,55,.20);
+
+}
+
+
+.ars-card:hover::before{
+
+    transform:
+        translateX(60%)
+        rotate(8deg);
+
+}
+
+
+.ars-card:hover::after{
+
+    opacity:
+        .95;
+
+    transform:
+        scale(1.15);
+
+}
+
+
+/* =========================================================
+   09 — ARS 3D PREMIUM CARD
+   ========================================================= */
+
+.ars-card-3d{
+
+    position: relative;
+
+    transform-style:
+        preserve-3d;
+
+    transition:
+        transform var(--ars-transition),
+        box-shadow var(--ars-transition);
+
+}
+
+
+.ars-card-3d:hover{
+
+    transform:
+
+        perspective(1200px)
+
+        translateY(-16px)
+
+        rotateX(2deg)
+
+        rotateY(-2deg)
+
+        scale(1.02);
+
+    box-shadow:
+
+        0 40px 100px
+        rgba(0,0,0,.65),
+
+        0 20px 80px
+        rgba(212,175,55,.25);
+
+}
+
+
+/* =========================================================
+   10 — ARS PREMIUM TITLES
+   ========================================================= */
+
+.ars-title{
+
+    font-weight:
+        800;
+
+    letter-spacing:
+        -.03em;
+
+    color:
+        var(--ars-white);
+
+}
+
+
+.ars-title-gold{
+
+    background:
+
+        linear-gradient(
+            110deg,
+            var(--ars-gold-dark),
+            var(--ars-gold-light),
+            var(--ars-gold)
+        );
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    color:
+        transparent;
+
+}
+
+
+.ars-title-gold-navy{
+
+    background:
+
+        linear-gradient(
+            90deg,
+            var(--ars-gold) 0%,
+            var(--ars-gold-light) 48%,
+            var(--ars-navy) 52%,
+            var(--ars-navy-light) 100%
+        );
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    color:
+        transparent;
+
+}
+
+
+/* =========================================================
+   11 — ARS PREMIUM BUTTON
+   ========================================================= */
+
+.ars-btn{
+
+    position: relative;
+
+    display: inline-flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 52px;
+
+    padding:
+        0 28px;
+
+    border:
+        1px solid
+        var(--ars-border-gold);
+
+    border-radius:
+        var(--ars-radius-round);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--ars-gold),
+            var(--ars-gold-dark)
+        );
+
+    color:
+        var(--ars-black);
+
+    font-weight:
+        800;
+
+    cursor:
+        pointer;
+
+    overflow:
+        hidden;
+
+    box-shadow:
+        var(--ars-shadow-gold);
+
+    transition:
+        transform var(--ars-transition-fast),
+        box-shadow var(--ars-transition-fast);
+
+}
+
+
+.ars-btn:hover{
+
+    transform:
+        translateY(-5px);
+
+    box-shadow:
+        var(--ars-shadow-gold-strong);
+
+}
+
+
+.ars-btn:active{
+
+    transform:
+        translateY(-1px)
+        scale(.97);
+
+}
+
+
+/* =========================================================
+   12 — ARS NAVY BUTTON
+   ========================================================= */
+
+.ars-btn-navy{
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--ars-navy-light),
+            var(--ars-navy)
+        );
+
+    color:
+        var(--ars-white);
+
+    border-color:
+        var(--ars-border-gold);
+
+}
+
+
+/* =========================================================
+   13 — ARS GLASS BUTTON
+   ========================================================= */
+
+.ars-btn-glass{
+
+    background:
+
+        rgba(255,255,255,.06);
+
+    color:
+        var(--ars-white);
+
+    backdrop-filter:
+        blur(15px);
+
+    -webkit-backdrop-filter:
+        blur(15px);
+
+}
+
+
+/* =========================================================
+   14 — ARS IMAGE FRAME
+   ========================================================= */
+
+.ars-image-frame{
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
+
+    min-height:
+        260px;
+
+    border-radius:
+        var(--ars-radius-lg);
+
+    border:
+        1px solid
+        var(--ars-border-gold-soft);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            var(--ars-navy),
+            var(--ars-black)
+        );
+
+    box-shadow:
+        var(--ars-shadow-card);
+
+}
+
+
+.ars-image-frame img{
+
+    width:
+        100%;
+
+    height:
+        100%;
+
+    object-fit:
+        cover;
+
+    transition:
+        transform 1s var(--ars-ease);
+
+}
+
+
+.ars-image-frame:hover img{
+
+    transform:
+        scale(1.08);
+
+}
+
+
+/* =========================================================
+   15 — ARS LOGO FRAME
+   ========================================================= */
+
+.ars-logo-frame{
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        160px;
+
+    padding:
+        30px;
+
+    border-radius:
+        var(--ars-radius-lg);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.85),
+            rgba(3,5,7,.95)
+        );
+
+    border:
+        1px solid
+        var(--ars-border-gold-soft);
+
+    box-shadow:
+        var(--ars-shadow-card);
+
+    transition:
+        transform var(--ars-transition),
+        border-color var(--ars-transition);
+
+}
+
+
+.ars-logo-frame:hover{
+
+    transform:
+        translateY(-10px);
+
+    border-color:
+        var(--ars-border-gold);
+
+}
+
+
+/* =========================================================
+   16 — ARS PREMIUM SECTION
+   ========================================================= */
+
+.ars-section{
+
+    position:
+        relative;
+
+    padding:
+        100px 6%;
+
+    overflow:
+        hidden;
+
+}
+
+
+.ars-section::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        500px;
+
+    height:
+        500px;
+
+    top:
+        -200px;
+
+    right:
+        -200px;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(212,175,55,.12),
+            transparent 70%
+        );
+
+    filter:
+        blur(30px);
+
+    pointer-events:
+        none;
+
+}
+
+
+/* =========================================================
+   17 — ARS HERO
+   ========================================================= */
+
+.ars-hero{
+
+    position:
+        relative;
+
+    min-height:
+        100vh;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    overflow:
+        hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 65% 40%,
+            rgba(212,175,55,.18),
+            transparent 22%
+        ),
+
+        radial-gradient(
+            circle at 15% 20%,
+            rgba(23,58,99,.25),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            135deg,
+            var(--ars-black),
+            var(--ars-navy-deep)
+        );
+
+}
+
+
+/* =========================================================
+   18 — ARS GOLD LINE
+   ========================================================= */
+
+.ars-gold-line{
+
+    width:
+        100px;
+
+    height:
+        2px;
+
+    margin:
+        20px 0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--ars-gold),
+            transparent
+        );
+
+    box-shadow:
+        0 0 20px
+        rgba(212,175,55,.55);
+
+}
+
+
+/* =========================================================
+   19 — ARS GLOW
+   ========================================================= */
+
+.ars-gold-glow{
+
+    box-shadow:
+
+        0 0 20px
+        rgba(212,175,55,.25),
+
+        0 0 60px
+        rgba(212,175,55,.12);
+
+}
+
+
+.ars-bronze-glow{
+
+    box-shadow:
+
+        0 0 20px
+        rgba(169,113,66,.25),
+
+        0 0 60px
+        rgba(169,113,66,.12);
+
+}
+
+
+/* =========================================================
+   20 — ARS COLOR DNA
+   ========================================================= */
+
+.ars-red{
+
+    color:
+        var(--ars-red);
+
+}
+
+
+.ars-blue{
+
+    color:
+        var(--ars-blue);
+
+}
+
+
+.ars-yellow{
+
+    color:
+        var(--ars-yellow);
+
+}
+
+
+.ars-brown{
+
+    color:
+        var(--ars-brown-light);
+
+}
+
+
+/* =========================================================
+   21 — ARS STATUS BADGES
+   ========================================================= */
+
+.ars-badge{
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    gap:
+        8px;
+
+    padding:
+        8px 16px;
+
+    border-radius:
+        var(--ars-radius-round);
+
+    font-size:
+        13px;
+
+    font-weight:
+        700;
+
+    border:
+        1px solid
+        var(--ars-border-gold-soft);
+
+    background:
+        rgba(255,255,255,.05);
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+/* =========================================================
+   22 — ARS INTERACTION STATES
+   ========================================================= */
+
+.ars-interactive{
+
+    cursor:
+        pointer;
+
+    transition:
+        transform var(--ars-transition),
+        box-shadow var(--ars-transition),
+        border-color var(--ars-transition);
+
+}
+
+
+.ars-interactive:hover{
+
+    transform:
+        translateY(-8px);
+
+}
+
+
+.ars-interactive:active{
+
+    transform:
+        translateY(-2px)
+        scale(.985);
+
+    box-shadow:
+        0 10px 30px
+        rgba(212,175,55,.25);
+
+}
+
+
+/* =========================================================
+   23 — ARS GOLD PULSE
+   ========================================================= */
+
+@keyframes arsGoldPulse{
+
+    0%{
+
+        box-shadow:
+            0 0 0
+            rgba(212,175,55,0);
+
+    }
+
+    50%{
+
+        box-shadow:
+
+            0 0 30px
+            rgba(212,175,55,.35);
+
+    }
+
+    100%{
+
+        box-shadow:
+            0 0 0
+            rgba(212,175,55,0);
+
+    }
+
+}
+
+
+.ars-pulse{
+
+    animation:
+        arsGoldPulse 3s ease-in-out infinite;
+
+}
+
+
+/* =========================================================
+   24 — ARS FLOAT
+   ========================================================= */
+
+@keyframes arsFloat{
+
+    0%,
+    100%{
+
+        transform:
+            translateY(0);
+
+    }
+
+    50%{
+
+        transform:
+            translateY(-10px);
+
+    }
+
+}
+
+
+.ars-float{
+
+    animation:
+        arsFloat 5s ease-in-out infinite;
+
+}
+
+
+/* =========================================================
+   25 — ARS FADE UP
+   ========================================================= */
+
+@keyframes arsFadeUp{
+
+    from{
+
+        opacity:
+            0;
+
+        transform:
+            translateY(30px);
+
+    }
+
+    to{
+
+        opacity:
+            1;
+
+        transform:
+            translateY(0);
+
+    }
+
+}
+
+
+.ars-fade-up{
+
+    animation:
+        arsFadeUp .8s var(--ars-ease)
+        both;
+
+}
+
+
+/* =========================================================
+   26 — ARS RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px){
+
+    .ars-section{
+
+        padding:
+            80px 5%;
+
+    }
+
+    .ars-card{
+
+        padding:
+            25px;
+
+    }
+
+    .ars-hero{
+
+        min-height:
+            85vh;
+
+    }
+
+}
+
+
+@media (max-width: 600px){
+
+    .ars-section{
+
+        padding:
+            65px 20px;
+
+    }
+
+    .ars-card{
+
+        padding:
+            22px;
+
+        border-radius:
+            var(--ars-radius-md);
+
+    }
+
+    .ars-btn{
+
+        width:
+            100%;
+
+    }
+
+    .ars-split,
+    .ars-split-diagonal,
+    .ars-split-reverse{
+
+        background:
+
+            linear-gradient(
+                180deg,
+                var(--ars-navy) 0%,
+                var(--ars-navy) 50%,
+                var(--ars-gold) 50%,
+                var(--ars-gold) 100%
+            );
+
+    }
+
+}
+
+
+/* =========================================================
+   27 — ACCESSIBILITY
+   ========================================================= */
+
+@media (prefers-reduced-motion: reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+
+        scroll-behavior:
+            auto !important;
+
+    }
+
+  }

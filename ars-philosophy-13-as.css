@@ -2525,3 +2525,814 @@ img{
     }
 
     }
+
+/* ========================================================= */
+/* ARS 13 A'S — PREMIUM WIDE GLASS OVERRIDE                 */
+/* FINAL VISUAL REFINEMENT                                   */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — 40% RICHER GOLD                                     */
+/* ========================================================= */
+
+:root{
+
+    --ars-gold-dark:
+        #a87532;
+
+    --ars-gold:
+        #d09b45;
+
+    --ars-gold-main:
+        #e0ad58;
+
+    --ars-gold-light:
+        #efc873;
+
+    --ars-gold-bright:
+        #ffe09a;
+
+    --gold-light:
+        rgba(255,218,132,.42);
+
+    --gold-glow:
+        rgba(224,173,88,.36);
+
+    --gold-deep-glow:
+        rgba(174,116,43,.24);
+
+    --glass-clear:
+        rgba(255,255,255,.105);
+
+    --glass-clear-light:
+        rgba(255,255,255,.17);
+
+    --glass-border:
+        rgba(255,224,154,.34);
+
+    --glass-border-bright:
+        rgba(255,224,154,.58);
+
+}
+
+
+/* ========================================================= */
+/* 02 — WIDER HERO                                          */
+/* ========================================================= */
+
+.ars-13a-hero{
+
+    min-height:
+        125vh;
+
+    padding:
+        100px 30px 150px;
+
+}
+
+
+/* ========================================================= */
+/* 03 — BIGGER 3D SYMBOL SYSTEM                             */
+/* ========================================================= */
+
+.ars-13a-symbol{
+
+    width:
+        min(1500px, 110vw);
+
+    height:
+        min(1050px, 82vw);
+
+    z-index:
+        1;
+
+    filter:
+        drop-shadow(
+            0
+            0
+            45px
+            rgba(224,173,88,.18)
+        );
+
+}
+
+
+/* ========================================================= */
+/* 04 — A MUCH BIGGER GOLDEN A                              */
+/* ========================================================= */
+
+.ars-13a-big-a{
+
+    font-size:
+        clamp(
+            780px,
+            92vw,
+            1500px
+        );
+
+    color:
+        rgba(224,173,88,.88);
+
+    opacity:
+        .88;
+
+    text-shadow:
+
+        0
+        0
+        30px
+        rgba(255,218,132,.25),
+
+        0
+        0
+        100px
+        rgba(224,173,88,.30),
+
+        0
+        0
+        180px
+        rgba(174,116,43,.18),
+
+        0
+        35px
+        90px
+        rgba(0,0,0,.88);
+
+}
+
+
+/* ========================================================= */
+/* 05 — BIGGER 3D ORBITS                                   */
+/* ========================================================= */
+
+.ars-13a-orbit{
+
+    border-width:
+        1.5px;
+
+    box-shadow:
+
+        0
+        0
+        45px
+        rgba(224,173,88,.32),
+
+        0
+        0
+        100px
+        rgba(224,173,88,.12),
+
+        inset
+        0
+        0
+        40px
+        rgba(255,218,132,.14);
+
+}
+
+
+.ars-13a-orbit-outer{
+
+    width:
+        108%;
+
+    height:
+        52%;
+
+}
+
+
+.ars-13a-orbit-middle{
+
+    width:
+        90%;
+
+    height:
+        43%;
+
+}
+
+
+.ars-13a-orbit-inner{
+
+    width:
+        72%;
+
+    height:
+        34%;
+
+}
+
+
+/* ========================================================= */
+/* 06 — WIDE PREMIUM GLASS CARD                             */
+/* ========================================================= */
+
+.ars-13a-glass-card{
+
+    width:
+        min(1500px, 94vw);
+
+    min-height:
+        720px;
+
+    padding:
+        75px 85px 70px;
+
+    border-radius:
+        48px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            rgba(255,255,255,.18)
+            0%,
+
+            rgba(255,255,255,.085)
+            20%,
+
+            rgba(255,255,255,.045)
+            42%,
+
+            rgba(255,255,255,.025)
+            60%,
+
+            rgba(5,12,20,.12)
+            80%,
+
+            rgba(4,9,15,.18)
+            100%
+        );
+
+    backdrop-filter:
+        blur(9px)
+        saturate(170%);
+
+    -webkit-backdrop-filter:
+        blur(9px)
+        saturate(170%);
+
+    border:
+        1px solid
+        rgba(255,224,154,.42);
+
+    box-shadow:
+
+        0
+        50px
+        130px
+        rgba(0,0,0,.78),
+
+        0
+        0
+        80px
+        rgba(224,173,88,.28),
+
+        0
+        0
+        180px
+        rgba(224,173,88,.14),
+
+        0
+        0
+        280px
+        rgba(174,116,43,.10),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.38),
+
+        inset
+        0
+        0
+        100px
+        rgba(255,218,132,.07);
+
+}
+
+
+/* ========================================================= */
+/* 07 — STRONGER GLASS INNER LIGHT                          */
+/* ========================================================= */
+
+.ars-13a-glass-card::before{
+
+    background:
+
+        linear-gradient(
+            115deg,
+
+            rgba(255,255,255,.22),
+
+            rgba(255,255,255,.055) 18%,
+
+            transparent 38%,
+
+            transparent 68%,
+
+            rgba(255,224,154,.10)
+        );
+
+    opacity:
+        1;
+
+}
+
+
+/* ========================================================= */
+/* 08 — BRIGHTER GLASS TOP EDGE                             */
+/* ========================================================= */
+
+.ars-13a-glass-card::after{
+
+    height:
+        3px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+
+            transparent,
+
+            rgba(255,224,154,.95),
+
+            rgba(255,255,255,.70),
+
+            rgba(255,224,154,.95),
+
+            transparent
+        );
+
+    box-shadow:
+
+        0
+        0
+        18px
+        rgba(255,218,132,.50),
+
+        0
+        0
+        45px
+        rgba(224,173,88,.22);
+
+    opacity:
+        .9;
+
+}
+
+
+/* ========================================================= */
+/* 09 — BRIGHTER MOVING REFLECTION                          */
+/* ========================================================= */
+
+.ars-13a-card-reflection{
+
+    background:
+
+        linear-gradient(
+            115deg,
+
+            transparent 10%,
+
+            rgba(255,255,255,.04) 22%,
+
+            rgba(255,255,255,.20) 34%,
+
+            rgba(255,224,154,.10) 40%,
+
+            rgba(255,255,255,.04) 48%,
+
+            transparent 62%
+        );
+
+    filter:
+        blur(1px);
+
+    opacity:
+        .95;
+
+}
+
+
+/* ========================================================= */
+/* 10 — 13 PILLARS — MUCH LARGER                           */
+/* ========================================================= */
+
+.ars-13a-pillars{
+
+    width:
+        100%;
+
+    max-width:
+        1250px;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap:
+        24px 32px;
+
+}
+
+
+/* ========================================================= */
+/* 11 — PREMIUM ENGRAVED GLASS PILLAR                       */
+/* ========================================================= */
+
+.ars-13a-pillar{
+
+    min-height:
+        82px;
+
+    padding:
+        18px 24px;
+
+    border:
+        1px solid
+        rgba(255,224,154,.20);
+
+    border-radius:
+        16px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            rgba(255,255,255,.065),
+
+            rgba(255,255,255,.018)
+        );
+
+    box-shadow:
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.16),
+
+        inset
+        0
+        -1px
+        0
+        rgba(0,0,0,.35),
+
+        0
+        8px
+        30px
+        rgba(0,0,0,.18);
+
+}
+
+
+/* ========================================================= */
+/* 12 — ENGRAVED NUMBER                                     */
+/* ========================================================= */
+
+.ars-13a-pillar span{
+
+    color:
+        rgba(255,218,132,.72);
+
+    font-size:
+        .88rem;
+
+    text-shadow:
+
+        0
+        1px
+        2px
+        rgba(0,0,0,.95),
+
+        0
+        -1px
+        1px
+        rgba(255,240,189,.22);
+
+}
+
+
+/* ========================================================= */
+/* 13 — ENGRAVED GOLD TEXT — 2X VISUAL SIZE                */
+/* ========================================================= */
+
+.ars-13a-pillar strong{
+
+    color:
+        rgba(239,200,115,.95);
+
+    font-size:
+        clamp(
+            1.05rem,
+            1.45vw,
+            1.48rem
+        );
+
+    font-weight:
+        600;
+
+    letter-spacing:
+        .16em;
+
+    text-shadow:
+
+        0
+        2px
+        2px
+        rgba(0,0,0,.95),
+
+        0
+        -1px
+        1px
+        rgba(255,240,189,.30),
+
+        0
+        0
+        18px
+        rgba(224,173,88,.20);
+
+}
+
+
+/* ========================================================= */
+/* 14 — STRONGER PILLAR HOVER                              */
+/* ========================================================= */
+
+.ars-13a-pillar:hover{
+
+    transform:
+        translateY(-6px)
+        scale(1.015);
+
+    border-color:
+        rgba(255,224,154,.52);
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            rgba(255,255,255,.105),
+
+            rgba(224,173,88,.055)
+        );
+
+    box-shadow:
+
+        0
+        15px
+        45px
+        rgba(224,173,88,.18),
+
+        0
+        0
+        35px
+        rgba(224,173,88,.10),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,240,189,.24);
+
+}
+
+
+/* ========================================================= */
+/* 15 — MORE LUXURIOUS ARS MARK                            */
+/* ========================================================= */
+
+.ars-13a-card-mark{
+
+    margin-top:
+        45px;
+
+    color:
+        rgba(239,200,115,.90);
+
+    font-size:
+        1.15rem;
+
+    letter-spacing:
+        .55em;
+
+    text-shadow:
+
+        0
+        0
+        20px
+        rgba(224,173,88,.35),
+
+        0
+        0
+        45px
+        rgba(224,173,88,.15);
+
+}
+
+
+/* ========================================================= */
+/* 16 — STRONGER GOLD PROJECTORS                           */
+/* ========================================================= */
+
+.ars-13a-light-left,
+.ars-13a-light-right{
+
+    filter:
+        blur(65px);
+
+    opacity:
+        1;
+
+}
+
+
+.ars-13a-light-left{
+
+    background:
+
+        radial-gradient(
+            circle,
+
+            rgba(255,218,132,.42)
+            0%,
+
+            rgba(224,173,88,.22)
+            28%,
+
+            rgba(174,116,43,.10)
+            48%,
+
+            transparent 72%
+        );
+
+}
+
+
+.ars-13a-light-right{
+
+    background:
+
+        radial-gradient(
+            circle,
+
+            rgba(255,218,132,.42)
+            0%,
+
+            rgba(224,173,88,.22)
+            28%,
+
+            rgba(174,116,43,.10)
+            48%,
+
+            transparent 72%
+        );
+
+}
+
+
+/* ========================================================= */
+/* 17 — STRONGER CENTER PROJECTOR                           */
+/* ========================================================= */
+
+.ars-13a-light-center{
+
+    filter:
+        blur(90px);
+
+    background:
+
+        radial-gradient(
+            ellipse,
+
+            rgba(255,240,189,.38),
+
+            rgba(255,218,132,.20)
+            35%,
+
+            rgba(224,173,88,.08)
+            55%,
+
+            transparent 75%
+        );
+
+}
+
+
+/* ========================================================= */
+/* 18 — HERO TITLE GOLD                                    */
+/* ========================================================= */
+
+.ars-13a-hero-title h1{
+
+    color:
+        var(--ars-gold-light);
+
+    text-shadow:
+
+        0
+        0
+        25px
+        rgba(255,218,132,.30),
+
+        0
+        0
+        60px
+        rgba(224,173,88,.15);
+
+}
+
+
+/* ========================================================= */
+/* 19 — MOBILE                                             */
+/* ========================================================= */
+
+@media (max-width:700px){
+
+    .ars-13a-hero{
+
+        min-height:
+            110svh;
+
+        padding:
+            60px 12px 100px;
+
+    }
+
+
+    .ars-13a-glass-card{
+
+        width:
+            96vw;
+
+        min-height:
+            auto;
+
+        padding:
+            42px 20px 45px;
+
+        border-radius:
+            28px;
+
+    }
+
+
+    .ars-13a-symbol{
+
+        width:
+            130vw;
+
+        height:
+            110vw;
+
+    }
+
+
+    .ars-13a-big-a{
+
+        font-size:
+            620px;
+
+    }
+
+
+    .ars-13a-pillars{
+
+        grid-template-columns:
+            1fr;
+
+        gap:
+            12px;
+
+    }
+
+
+    .ars-13a-pillar{
+
+        min-height:
+            68px;
+
+        padding:
+            15px 18px;
+
+    }
+
+
+    .ars-13a-pillar strong{
+
+        font-size:
+            .98rem;
+
+        letter-spacing:
+            .10em;
+
+    }
+
+}

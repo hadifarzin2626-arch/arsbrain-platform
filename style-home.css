@@ -7744,101 +7744,204 @@ img{
 }
 
 /* ========================================================= */
-/* لایه طلایی بالای کارت                                     */
+/* ARS HOME — GOLD TOP PANEL POSITION FIX                   */
 /* ========================================================= */
 
-.ars-glass-card::after{
+/* خود کارت باید مرجع لایه‌ها باشد */
+.ars-glass-card{
 
-    content:"";
+    position: relative;
 
-    position:absolute;
-
-    top:0;
-    left:0;
-    right:0;
-
-    /* ارتفاع طلایی تا شروع دقیق بخش سورمه‌ای */
-    height:200px;
-
-    z-index:2;
-
-    pointer-events:none;
-
-    background:
-        linear-gradient(
-            180deg,
-            rgba(230,188,103,.48) 0%,
-            rgba(220,174,91,.40) 45%,
-            rgba(205,157,72,.28) 100%
-        );
-
-    /* مرز صاف پایین */
-    clip-path:
-        polygon(
-            0 0,
-            100% 0,
-            100% 100%,
-            0 100%
-        );
-
-    border-bottom:
-        1px solid
-        rgba(255,220,145,.30);
+    overflow: hidden;
 
 }
 
 
 /* ========================================================= */
-/* محتوای کارت بالای لایه طلایی باقی بماند                  */
+/* 01 — GOLD STATIC TOP PANEL                                */
+/* ========================================================= */
+
+/*
+   این بخش طلایی ثابت است.
+   ارتفاع را با مقدار زیر تنظیم کن.
+   اگر می‌خواهی پایین‌تر بیاید، فقط height را بیشتر کن.
+*/
+
+.ars-glass-card::before{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    height: 28%;
+
+    z-index: 20;
+
+    pointer-events: none;
+
+    background:
+
+        linear-gradient(
+            180deg,
+
+            rgba(184,137,63,.18) 0%,
+
+            rgba(205,157,72,.32) 35%,
+
+            rgba(230,188,103,.55) 75%,
+
+            rgba(230,188,103,.62) 100%
+        );
+
+}
+
+
+/* ========================================================= */
+/* 02 — MOVING GOLD LAYER                                    */
+/* ========================================================= */
+
+/*
+   لایه متحرک باید روی طلایی ثابت باشد.
+   نه زیر آن.
+*/
+
+.ars-glass-card::after{
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+
+    left: -40%;
+
+    width: 70%;
+
+    height: 28%;
+
+    z-index: 21;
+
+    pointer-events: none;
+
+    background:
+
+        linear-gradient(
+            110deg,
+
+            transparent 0%,
+
+            rgba(255,255,255,.04) 25%,
+
+            rgba(255,235,175,.28) 45%,
+
+            rgba(255,215,130,.42) 50%,
+
+            rgba(255,255,255,.08) 58%,
+
+            transparent 80%
+        );
+
+    filter:
+
+        blur(3px);
+
+    animation:
+
+        arsGoldReflectionMove
+        6s
+        ease-in-out
+        infinite;
+
+}
+
+
+/* ========================================================= */
+/* 03 — MOVING REFLECTION                                    */
+/* ========================================================= */
+
+@keyframes arsGoldReflectionMove{
+
+    0%{
+
+        transform:
+            translateX(0)
+            skewX(-12deg);
+
+        opacity:
+            .25;
+
+    }
+
+    50%{
+
+        opacity:
+            .85;
+
+    }
+
+    100%{
+
+        transform:
+            translateX(240%)
+            skewX(-12deg);
+
+        opacity:
+            .25;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 04 — KEEP ALL CARD CONTENT ABOVE GOLD LAYERS              */
 /* ========================================================= */
 
 .ars-glass-card > *{
 
-    position:relative;
+    position: relative;
 
-    z-index:5;
-
-}
-
-
-/* ========================================================= */
-/* اگر طلایی فعلی از .ars-card-image می‌آید، کنترلش کن       */
-/* ========================================================= */
-
-.ars-glass-card .ars-card-image::after{
-
-    top:0;
-    bottom:auto;
-
-    height:200px;
-
-    background:
-
-        linear-gradient(
-            180deg,
-            rgba(230,188,103,.48) 0%,
-            rgba(220,174,91,.38) 55%,
-            rgba(205,157,72,.22) 100%
-        );
+    z-index: 30;
 
 }
 
 
 /* ========================================================= */
-/* MOBILE                                                     */
+/* 05 — IMPORTANT: IMAGE MUST NOT COVER GOLD PANEL           */
+/* ========================================================= */
+
+.ars-glass-card .ars-card-image{
+
+    position: relative;
+
+    z-index: 5;
+
+}
+
+
+/* ========================================================= */
+/* 06 — MOBILE                                               */
 /* ========================================================= */
 
 @media (max-width:768px){
 
-    .ars-glass-card::after{
+    .ars-glass-card::before{
 
-        height:200px;
+        height:
+            28%;
 
     }
 
-    .ars-glass-card .ars-card-image::after{
+    .ars-glass-card::after{
 
-        height:200px;
+        height:
+            28%;
 
     }
 

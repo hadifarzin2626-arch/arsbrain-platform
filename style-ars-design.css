@@ -3478,3 +3478,1500 @@ section{
     }
 
     }
+
+/* ========================================================= */
+/* ARS DESIGN — FINAL EXPERIENCE ENGINE */
+/* RESPONSIVE + MOTION + INTERACTION + GOLD LIGHT SYSTEM */
+/* Version: ARS DESIGN EXPERIENCE V1.1 */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — GLOBAL RESPONSIVE STABILITY */
+/* ========================================================= */
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+html{
+    min-width:320px;
+}
+
+body{
+    position:relative;
+    isolation:isolate;
+}
+
+section,
+.container,
+.future-layout,
+.future-roadmap,
+.future-grid,
+.project-showcase-grid,
+.project-gallery,
+.project-gallery-grid,
+.promise-philosophy,
+.promise-grid,
+.promise-hero,
+.journey-cta,
+.final-vision-panel{
+    width:100%;
+    max-width:100%;
+}
+
+img,
+video,
+iframe,
+svg{
+    max-width:100%;
+    height:auto;
+}
+
+*{
+    min-width:0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+a,
+span{
+    overflow-wrap:break-word;
+}
+
+
+/* ========================================================= */
+/* 02 — UNIVERSAL GOLD INTERACTION */
+/* Cards + Buttons + Interactive Elements */
+/* ========================================================= */
+
+.ars-glass,
+.ars-button,
+.btn-primary,
+.btn-secondary,
+.showcase-project,
+.future-stage,
+.project-gallery-item,
+.promise-card,
+.future-card,
+.start-project,
+.journey-cta,
+.final-vision-family{
+
+    -webkit-tap-highlight-color:transparent;
+
+    will-change:
+        transform,
+        box-shadow,
+        border-color;
+
+    transition:
+        transform .45s cubic-bezier(.16,1,.3,1),
+        box-shadow .45s cubic-bezier(.16,1,.3,1),
+        border-color .45s ease,
+        background .45s ease,
+        filter .45s ease;
+}
+
+
+/* Desktop Hover */
+
+@media (hover:hover){
+
+    .ars-glass:hover,
+    .showcase-project:hover,
+    .future-stage:hover,
+    .project-gallery-item:hover,
+    .promise-card:hover,
+    .future-card:hover{
+
+        border-color:
+        rgba(214,168,79,.75);
+
+        box-shadow:
+
+        0 30px 80px
+        rgba(0,0,0,.58),
+
+        0 18px 55px
+        rgba(214,168,79,.22),
+
+        0 2px 0
+        rgba(214,168,79,.65);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 03 — GOLD LIGHT UNDERLINE EFFECT */
+/* ========================================================= */
+
+.ars-glass::after,
+.showcase-project::after,
+.future-stage::after,
+.promise-card::after,
+.future-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:10%;
+    right:10%;
+    bottom:-2px;
+
+    height:2px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        var(--ars-gold-light),
+        var(--ars-gold),
+        var(--ars-gold-light),
+        transparent
+    );
+
+    box-shadow:
+
+    0 0 10px
+    rgba(214,168,79,.55),
+
+    0 0 25px
+    rgba(214,168,79,.28);
+
+    transform:
+    scaleX(0);
+
+    transform-origin:center;
+
+    opacity:0;
+
+    transition:
+
+    transform .55s
+    cubic-bezier(.16,1,.3,1),
+
+    opacity .45s ease;
+
+}
+
+
+/* Activate */
+
+@media (hover:hover){
+
+    .ars-glass:hover::after,
+    .showcase-project:hover::after,
+    .future-stage:hover::after,
+    .promise-card:hover::after,
+    .future-card:hover::after{
+
+        transform:
+        scaleX(1);
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 04 — MOBILE / TOUCH ACTIVE STATE */
+/* ========================================================= */
+
+.ars-glass:active,
+.showcase-project:active,
+.future-stage:active,
+.project-gallery-item:active,
+.promise-card:active,
+.future-card:active{
+
+    transform:
+    scale(.985);
+
+    border-color:
+    var(--ars-gold);
+
+    box-shadow:
+
+    0 15px 45px
+    rgba(0,0,0,.55),
+
+    0 8px 30px
+    rgba(214,168,79,.30);
+
+}
+
+
+/* ========================================================= */
+/* 05 — BUTTON GOLD ENERGY */
+/* ========================================================= */
+
+.ars-button,
+.btn-primary,
+.btn-secondary{
+
+    isolation:isolate;
+
+}
+
+.ars-button::after,
+.btn-primary::after,
+.btn-secondary::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:auto 12% -8px;
+
+    height:12px;
+
+    border-radius:50%;
+
+    background:
+
+    rgba(214,168,79,.45);
+
+    filter:blur(14px);
+
+    opacity:0;
+
+    transform:
+    scaleX(.5);
+
+    transition:
+
+    opacity .4s ease,
+    transform .4s ease;
+
+    z-index:-1;
+
+}
+
+@media (hover:hover){
+
+    .ars-button:hover::after,
+    .btn-primary:hover::after,
+    .btn-secondary:hover::after{
+
+        opacity:1;
+
+        transform:
+        scaleX(1.15);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 06 — CINEMATIC PAGE MOTION */
+/* ========================================================= */
+
+section{
+
+    animation:
+    arsSectionReveal
+    1s
+    both;
+
+    animation-timeline:
+    view();
+
+    animation-range:
+    entry 0% cover 22%;
+
+}
+
+@keyframes arsSectionReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+        translateY(60px);
+
+        filter:
+        blur(5px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+        translateY(0);
+
+        filter:
+        blur(0);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 07 — CINEMATIC GLASS LIGHT SWEEP */
+/* ========================================================= */
+
+.ars-glass{
+
+    isolation:isolate;
+
+}
+
+.ars-glass::before{
+
+    animation:
+    arsGlassLight
+    9s
+    ease-in-out
+    infinite;
+
+}
+
+@keyframes arsGlassLight{
+
+    0%{
+
+        transform:
+        translateX(-12%);
+
+        opacity:.35;
+
+    }
+
+    50%{
+
+        transform:
+        translateX(8%);
+
+        opacity:.75;
+
+    }
+
+    100%{
+
+        transform:
+        translateX(-12%);
+
+        opacity:.35;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 08 — FUTURE ROADMAP */
+/* ========================================================= */
+
+.future-roadmap{
+
+    position:relative;
+
+}
+
+.future-timeline{
+
+    position:relative;
+
+    display:grid;
+
+    gap:28px;
+
+}
+
+.future-timeline::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    bottom:0;
+
+    left:50%;
+
+    width:1px;
+
+    background:
+
+    linear-gradient(
+
+        to bottom,
+
+        transparent,
+
+        var(--ars-gold),
+
+        var(--ars-bronze),
+
+        transparent
+
+    );
+
+    opacity:.45;
+
+    transform:
+    translateX(-50%);
+
+}
+
+.future-stage{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+    100px
+    1fr;
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:35px;
+
+    min-height:190px;
+
+}
+
+.stage-number{
+
+    display:grid;
+
+    place-items:center;
+
+    width:72px;
+
+    height:72px;
+
+    border-radius:50%;
+
+    color:
+    var(--ars-gold-light);
+
+    border:
+    1px solid
+    var(--border-gold);
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(214,168,79,.20),
+
+        rgba(7,20,38,.75)
+
+    );
+
+    box-shadow:
+
+    0 0 25px
+    rgba(214,168,79,.12);
+
+    font-weight:900;
+
+    transition:
+    transform .5s ease,
+    box-shadow .5s ease;
+
+}
+
+.future-stage:hover
+.stage-number{
+
+    transform:
+    scale(1.12)
+    rotate(8deg);
+
+    box-shadow:
+
+    0 0 35px
+    rgba(214,168,79,.38);
+
+}
+
+.stage-label{
+
+    color:
+    var(--ars-gold);
+
+    font-size:.7rem;
+
+    font-weight:900;
+
+    letter-spacing:.22em;
+
+}
+
+.stage-content h3{
+
+    margin:
+    8px 0 12px;
+
+    color:
+    var(--ars-white);
+
+    font-size:
+    clamp(1.4rem,2.5vw,2.3rem);
+
+}
+
+
+/* ========================================================= */
+/* 09 — PROJECT SHOWCASE */
+/* ========================================================= */
+
+.project-showcase-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:28px;
+
+}
+
+.showcase-project{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.project-image{
+
+    position:relative;
+
+    min-height:360px;
+
+    background:
+
+    radial-gradient(
+
+        circle at 50% 45%,
+
+        rgba(214,168,79,.16),
+
+        transparent 45%
+
+    ),
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(16,39,68,.8),
+
+        rgba(3,9,20,.95)
+
+    );
+
+    overflow:hidden;
+
+}
+
+.project-image::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    linear-gradient(
+
+        120deg,
+
+        transparent 30%,
+
+        rgba(214,168,79,.16),
+
+        transparent 70%
+
+    );
+
+    transform:
+    translateX(-100%);
+
+    transition:
+    transform 1s ease;
+
+}
+
+.showcase-project:hover
+.project-image::before{
+
+    transform:
+    translateX(100%);
+
+}
+
+.project-content{
+
+    position:relative;
+
+    padding:35px;
+
+}
+
+.project-category{
+
+    color:
+    var(--ars-gold-light);
+
+    font-size:.7rem;
+
+    font-weight:900;
+
+    letter-spacing:.22em;
+
+}
+
+.project-content h3{
+
+    margin:
+    12px 0 15px;
+
+    color:
+    var(--ars-white);
+
+    font-size:
+    clamp(1.5rem,2.4vw,2.2rem);
+
+}
+
+.project-content p{
+
+    color:
+    var(--ars-white-soft);
+
+}
+
+
+/* ========================================================= */
+/* 10 — PROJECT GALLERY */
+/* ========================================================= */
+
+.project-gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3,1fr);
+
+    gap:22px;
+
+}
+
+.project-gallery-item{
+
+    position:relative;
+
+    min-height:300px;
+
+    background:
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(16,39,68,.75),
+
+        rgba(3,9,20,.95)
+
+    );
+
+}
+
+.project-gallery-item::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+
+        circle at center,
+
+        rgba(214,168,79,.20),
+
+        transparent 55%
+
+    );
+
+    opacity:.5;
+
+    transition:
+    transform .8s ease,
+    opacity .8s ease;
+
+}
+
+.project-gallery-item:hover::before{
+
+    transform:
+    scale(1.35);
+
+    opacity:1;
+
+}
+
+
+/* ========================================================= */
+/* 11 — SIGNATURE SECTION */
+/* ========================================================= */
+
+.ars-signature{
+
+    position:relative;
+
+    padding:
+    160px 30px;
+
+    text-align:center;
+
+    overflow:hidden;
+
+}
+
+.ars-signature::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+
+    height:700px;
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+    translate(-50%,-50%);
+
+    background:
+
+    radial-gradient(
+
+        circle,
+
+        rgba(214,168,79,.18),
+
+        transparent 65%
+
+    );
+
+    filter:
+    blur(20px);
+
+    animation:
+    signaturePulse
+    8s
+    ease-in-out
+    infinite;
+
+}
+
+@keyframes signaturePulse{
+
+    0%,100%{
+
+        transform:
+        translate(-50%,-50%)
+        scale(.85);
+
+        opacity:.55;
+
+    }
+
+    50%{
+
+        transform:
+        translate(-50%,-50%)
+        scale(1.15);
+
+        opacity:1;
+
+    }
+
+}
+
+.signature-content{
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+.signature-content h2{
+
+    margin:
+    20px auto;
+
+    max-width:
+    1000px;
+
+    font-size:
+    clamp(2.5rem,6vw,6rem);
+
+    line-height:
+    1;
+
+    background:
+
+    linear-gradient(
+
+        110deg,
+
+        var(--ars-white),
+
+        var(--ars-gold-light),
+
+        var(--ars-gold)
+
+    );
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    color:transparent;
+
+}
+
+
+/* ========================================================= */
+/* 12 — START JOURNEY */
+/* ========================================================= */
+
+.journey-cta{
+
+    display:grid;
+
+    grid-template-columns:
+    1.1fr
+    .9fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    padding:clamp(35px,6vw,80px);
+
+}
+
+.journey-cta-image{
+
+    min-height:480px;
+
+    border-radius:
+    var(--radius-xl);
+
+    background:
+
+    radial-gradient(
+
+        circle at center,
+
+        rgba(214,168,79,.18),
+
+        transparent 55%
+
+    ),
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(16,39,68,.8),
+
+        rgba(3,9,20,.95)
+
+    );
+
+}
+
+.journey-cta-content h2{
+
+    margin:
+    20px 0;
+
+    font-size:
+    clamp(2.2rem,4vw,4.5rem);
+
+    line-height:
+    1.05;
+
+}
+
+.journey-cta-content p{
+
+    margin-bottom:20px;
+
+    color:
+    var(--ars-white-soft);
+
+}
+
+.journey-cta-actions{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+    margin-top:30px;
+
+}
+
+
+/* ========================================================= */
+/* 13 — FINAL VISION */
+/* ========================================================= */
+
+.final-vision-panel{
+
+    display:grid;
+
+    grid-template-columns:
+    1fr
+    1fr;
+
+    gap:60px;
+
+    align-items:center;
+
+    padding:clamp(30px,5vw,70px);
+
+}
+
+.final-vision-image{
+
+    min-height:520px;
+
+    border-radius:
+    var(--radius-xl);
+
+    background:
+
+    radial-gradient(
+
+        circle at center,
+
+        rgba(214,168,79,.20),
+
+        transparent 55%
+
+    ),
+
+    linear-gradient(
+
+        145deg,
+
+        rgba(16,39,68,.8),
+
+        rgba(3,9,20,.95)
+
+    );
+
+}
+
+.final-vision-content h2{
+
+    margin:
+    20px 0 25px;
+
+    font-size:
+    clamp(2rem,4vw,4rem);
+
+    line-height:
+    1.05;
+
+}
+
+.final-vision-content p{
+
+    margin-bottom:20px;
+
+    color:
+    var(--ars-white-soft);
+
+}
+
+.final-vision-statement{
+
+    padding:
+    120px 20px;
+
+    text-align:center;
+
+}
+
+.final-vision-statement h2{
+
+    font-size:
+    clamp(2.5rem,6vw,6rem);
+
+    line-height:
+    1;
+
+    color:
+    var(--ars-white);
+
+}
+
+.final-vision-statement h2:nth-child(2){
+
+    color:
+    var(--ars-gold-light);
+
+}
+
+.final-vision-divider{
+
+    width:
+    140px;
+
+    height:2px;
+
+    margin:
+    40px auto;
+
+    background:
+
+    linear-gradient(
+
+        90deg,
+
+        transparent,
+
+        var(--ars-gold),
+
+        transparent
+
+    );
+
+    box-shadow:
+    0 0 25px
+    rgba(214,168,79,.55);
+
+}
+
+.final-vision-statement p{
+
+    max-width:
+    850px;
+
+    margin:
+    0 auto;
+
+    color:
+    var(--ars-white-soft);
+
+}
+
+.final-vision-family{
+
+    padding:
+    clamp(40px,6vw,80px);
+
+    text-align:center;
+
+}
+
+.final-vision-family h2{
+
+    margin:
+    20px 0;
+
+    font-size:
+    clamp(2rem,4vw,4rem);
+
+}
+
+.final-vision-family p{
+
+    max-width:
+    750px;
+
+    margin:
+    0 auto 30px;
+
+    color:
+    var(--ars-white-soft);
+
+}
+
+
+/* ========================================================= */
+/* 14 — DESKTOP */
+/* ========================================================= */
+
+@media (min-width:1101px){
+
+    .project-showcase-grid{
+
+        grid-template-columns:
+        repeat(3,1fr);
+
+    }
+
+    .project-gallery-grid{
+
+        grid-template-columns:
+        repeat(3,1fr);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 15 — TABLET */
+/* ========================================================= */
+
+@media (min-width:701px) and (max-width:1100px){
+
+    .future-timeline::before{
+
+        left:36px;
+
+    }
+
+    .future-stage{
+
+        grid-template-columns:
+        72px
+        1fr;
+
+    }
+
+    .project-showcase-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+    .project-gallery-grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+
+    }
+
+    .journey-cta,
+    .final-vision-panel{
+
+        grid-template-columns:
+        1fr;
+
+    }
+
+    .journey-cta-image{
+
+        min-height:400px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 16 — MOBILE */
+/* ========================================================= */
+
+@media (max-width:700px){
+
+    section{
+
+        overflow:hidden;
+
+    }
+
+    .container{
+
+        width:
+        calc(100% - 28px);
+
+        max-width:
+        100%;
+
+    }
+
+    .future-timeline::before{
+
+        left:30px;
+
+    }
+
+    .future-stage{
+
+        grid-template-columns:
+        60px
+        1fr;
+
+        gap:18px;
+
+        padding:26px 20px;
+
+    }
+
+    .stage-number{
+
+        width:60px;
+
+        height:60px;
+
+        font-size:.85rem;
+
+    }
+
+    .project-showcase-grid{
+
+        grid-template-columns:
+        1fr;
+
+    }
+
+    .project-gallery-grid{
+
+        grid-template-columns:
+        1fr;
+
+    }
+
+    .project-image{
+
+        min-height:280px;
+
+    }
+
+    .project-gallery-item{
+
+        min-height:260px;
+
+    }
+
+    .journey-cta,
+    .final-vision-panel{
+
+        grid-template-columns:
+        1fr;
+
+        gap:30px;
+
+    }
+
+    .journey-cta-image,
+    .final-vision-image{
+
+        min-height:320px;
+
+    }
+
+    .journey-cta-actions{
+
+        flex-direction:
+        column;
+
+    }
+
+    .journey-cta-actions
+    .ars-button{
+
+        width:100%;
+
+    }
+
+    .ars-signature{
+
+        padding:
+        110px 20px;
+
+    }
+
+    .final-vision-statement{
+
+        padding:
+        90px 20px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 17 — MOBILE LANDSCAPE */
+/* ========================================================= */
+
+@media (max-width:900px)
+and (orientation:landscape){
+
+    .arsdesign-hero{
+
+        min-height:
+        auto;
+
+        padding:
+        120px 0 80px;
+
+    }
+
+    .hero-visual{
+
+        min-height:
+        300px;
+
+    }
+
+    section{
+
+        padding:
+        80px 0;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 18 — SMALL PHONES */
+/* ========================================================= */
+
+@media (max-width:380px){
+
+    .container{
+
+        width:
+        calc(100% - 20px);
+
+    }
+
+    .future-stage{
+
+        grid-template-columns:
+        1fr;
+
+        text-align:center;
+
+    }
+
+    .stage-number{
+
+        margin:
+        0 auto;
+
+    }
+
+    .future-timeline::before{
+
+        display:none;
+
+    }
+
+    .ars-button{
+
+        width:
+        100%;
+
+        padding:
+        0 20px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 19 — REDUCED MOTION */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation:
+        none !important;
+
+        transition:
+        none !important;
+
+        scroll-behavior:
+        auto !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 20 — FINAL OVERFLOW SAFETY */
+/* ========================================================= */
+
+body,
+section,
+.container{
+
+    overflow-wrap:
+    anywhere;
+
+}
+
+.project-showcase-grid,
+.project-gallery-grid,
+.future-grid,
+.promise-grid{
+
+    max-width:
+    100%;
+
+}
+
+.future-stage,
+.showcase-project,
+.project-gallery-item,
+.promise-card,
+.future-card{
+
+    min-width:
+    0;
+
+    }

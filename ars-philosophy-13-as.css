@@ -2533,10 +2533,10 @@ img{
 .ars-13-hero{
 
     width:
-        100%;
+        150%;
 
     min-height:
-        125vh;
+        160vh;
 
     padding-left:
         0;
@@ -2623,12 +2623,12 @@ img{
         relative;
 
     width:
-        min(1500px, 94vw);
+        min(1850px, 125vw);
 
     max-width:
         none;
 
     min-height:
-        720px;
+        850px;
 
 }

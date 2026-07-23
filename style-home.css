@@ -6751,7 +6751,7 @@ img{
     transition:
 
         transform
-        1.99s
+        2.99s
    
         cubic-bezier(.16,1,.3,1),
 
@@ -6926,7 +6926,7 @@ img{
     transition:
 
         transform
-        1s
+        2.5s
         cubic-bezier(.16,1,.3,1);
 
 }
@@ -6979,7 +6979,7 @@ img{
             80%
         );
 
-    opacity:.98;
+    opacity:1;
 
     animation:
 
@@ -7110,11 +7110,11 @@ img{
     transition:
 
         transform
-        1.1s
+        2s
         cubic-bezier(.16,1,.3,1),
 
         box-shadow
-        1.1s
+        2s
         cubic-bezier(.16,1,.3,1);
 
 }
@@ -7216,15 +7216,15 @@ img{
     transition:
 
         transform
-        1.1s
+        2.5s
         cubic-bezier(.16,1,.3,1),
 
         box-shadow
-        1.1s
+        2.5s
         cubic-bezier(.16,1,.3,1),
 
         filter
-        1.1s
+        2.5s
         ease;
 
 }
@@ -7554,15 +7554,15 @@ img{
     transition:
 
         color
-        1s
+        2s
         cubic-bezier(.16,1,.3,1),
 
         text-shadow
-        1s
+        2s
         cubic-bezier(.16,1,.3,1),
 
         transform
-        1s
+        2s
         cubic-bezier(.16,1,.3,1);
 
 }
@@ -7614,11 +7614,11 @@ img{
     transition:
 
         transform
-        1.1s
+        2.1s
         cubic-bezier(.16,1,.3,1),
 
         opacity
-        1.1s
+        2.1s
         cubic-bezier(.16,1,.3,1);
 
 }
@@ -7821,7 +7821,7 @@ img{
 .ars-glass-card .ars-card-image::after{
 
     height:
-       125%;
+       140%;
 
 }
 
@@ -7832,9 +7832,9 @@ img{
 /* ========================================================= */
 
 .home-card {
-    min-height: 80%;
+    min-height: 75%;
 }
 
 .home-cards-grid {
-    row-gap: 2em;
+    row-gap: 3em;
 }

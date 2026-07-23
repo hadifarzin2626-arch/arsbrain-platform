@@ -4217,7 +4217,827 @@ body{
         2;
 
 }
+/* ========================================================= */
+/* ========================================================= */
+/*                                                           */
+/*        ARS FUTURE LAB — FINAL PAGE STRUCTURE              */
+/*        GLOBAL VISUAL UNIFICATION OVERRIDE                 */
+/*                                                           */
+/*        PURPOSE:                                           */
+/*        ONE PAGE / ONE BACKGROUND / ONE VISUAL WORLD       */
+/*                                                           */
+/* ========================================================= */
+/* ========================================================= */
 
+
+/* ========================================================= */
+/* 01 — GLOBAL RESET                                         */
+/* ========================================================= */
+
+html,
+body{
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    width:100% !important;
+
+    min-width:100% !important;
+
+    max-width:100% !important;
+
+    overflow-x:hidden !important;
+
+    background:#031426 !important;
+
+}
+
+
+/* ========================================================= */
+/* 02 — REMOVE WHITE PAGE EDGES                              */
+/* ========================================================= */
+
+*,
+*::before,
+*::after{
+
+    box-sizing:border-box;
+
+}
+
+
+body{
+
+    background:
+
+        radial-gradient(
+            ellipse at 50% 8%,
+            rgba(18,76,125,.32),
+            transparent 42%
+        ),
+
+        radial-gradient(
+            ellipse at 15% 48%,
+            rgba(8,54,96,.28),
+            transparent 45%
+        ),
+
+        radial-gradient(
+            ellipse at 85% 72%,
+            rgba(12,67,112,.24),
+            transparent 48%
+        ),
+
+        linear-gradient(
+            180deg,
+            #020b18 0%,
+            #041426 25%,
+            #061b32 52%,
+            #031426 76%,
+            #020914 100%
+        ) !important;
+
+    color:#f7f1e3 !important;
+
+}
+
+
+/* ========================================================= */
+/* 03 — FUTURE LAB MAIN WORLD                                */
+/* ========================================================= */
+
+.future-lab{
+
+    position:relative !important;
+
+    display:block !important;
+
+    width:100% !important;
+
+    max-width:none !important;
+
+    min-height:100vh !important;
+
+    margin:0 !important;
+
+    padding:0 !important;
+
+    overflow:hidden !important;
+
+    isolation:isolate !important;
+
+    background:
+
+        radial-gradient(
+            ellipse at 50% 10%,
+            rgba(18,76,125,.42),
+            transparent 45%
+        ),
+
+        radial-gradient(
+            ellipse at 8% 42%,
+            rgba(8,58,104,.32),
+            transparent 44%
+        ),
+
+        radial-gradient(
+            ellipse at 92% 65%,
+            rgba(10,63,110,.28),
+            transparent 48%
+        ),
+
+        linear-gradient(
+            180deg,
+            #020b18 0%,
+            #041426 22%,
+            #061b32 48%,
+            #04182c 72%,
+            #020b18 100%
+        ) !important;
+
+}
+
+
+/* ========================================================= */
+/* 04 — ALL SECTIONS BECOME TRANSPARENT                      */
+/* ========================================================= */
+
+.future-lab > section,
+.future-lab section,
+.future-space-core,
+.future-mobility,
+.ars-os-core,
+.rose-future,
+.zhr-future,
+.zhr-future-ecosystem,
+.design-future,
+.ars-digital-family,
+.ars-smart-transportation,
+.ars-research-lab,
+.ars-2050-vision,
+.future-ai-gateway{
+
+    position:relative !important;
+
+    width:100% !important;
+
+    max-width:none !important;
+
+    margin:0 !important;
+
+    background:transparent !important;
+
+}
+
+
+/* ========================================================= */
+/* 05 — REMOVE SEPARATE BACKGROUND BLOCKS                   */
+/* ========================================================= */
+
+.future-lab > section::before,
+.future-lab > section::after{
+
+    pointer-events:none;
+
+}
+
+
+/* ========================================================= */
+/* 06 — HERO IS PART OF THE SAME WORLD                       */
+/* ========================================================= */
+
+.future-hero{
+
+    position:relative !important;
+
+    width:100% !important;
+
+    min-width:100% !important;
+
+    max-width:none !important;
+
+    min-height:100vh !important;
+
+    margin:0 !important;
+
+    border:0 !important;
+
+    border-radius:0 !important;
+
+    background:
+
+        radial-gradient(
+            ellipse at 50% 30%,
+            rgba(18,88,150,.30),
+            transparent 52%
+        ),
+
+        transparent !important;
+
+}
+
+
+/* ========================================================= */
+/* 07 — HERO GOLD LIGHT — INTEGRATED                         */
+/* ========================================================= */
+
+.future-hero::after{
+
+    content:"" !important;
+
+    position:absolute !important;
+
+    inset:-20% -15% !important;
+
+    z-index:-1 !important;
+
+    pointer-events:none !important;
+
+    background:
+
+        radial-gradient(
+            ellipse at 50% 55%,
+            rgba(255,211,120,.22),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            ellipse at 35% 35%,
+            rgba(255,198,65,.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            ellipse at 70% 70%,
+            rgba(230,188,103,.10),
+            transparent 34%
+        ) !important;
+
+    filter:blur(40px) !important;
+
+    opacity:.85 !important;
+
+}
+
+
+/* ========================================================= */
+/* 08 — UNIFIED CONTENT CONTAINER                            */
+/* ========================================================= */
+
+.future-container,
+.future-core-container{
+
+    position:relative !important;
+
+    width:min(1180px, 92%) !important;
+
+    max-width:1180px !important;
+
+    margin-left:auto !important;
+
+    margin-right:auto !important;
+
+    padding-left:0 !important;
+
+    padding-right:0 !important;
+
+}
+
+
+/* ========================================================= */
+/* 09 — ALL MAIN CONTENT ALIGNMENT                            */
+/* ========================================================= */
+
+.future-lab > section > .future-container,
+.future-lab > section > .future-core-container{
+
+    margin-left:auto !important;
+
+    margin-right:auto !important;
+
+}
+
+
+/* ========================================================= */
+/* 10 — HERO CONTENT                                         */
+/* ========================================================= */
+
+.future-hero .future-container{
+
+    min-height:100vh !important;
+
+    display:flex !important;
+
+    flex-direction:column !important;
+
+    justify-content:center !important;
+
+    align-items:flex-start !important;
+
+    padding-top:120px !important;
+
+    padding-bottom:120px !important;
+
+}
+
+
+/* ========================================================= */
+/* 11 — TEXT STRUCTURE                                       */
+/* ========================================================= */
+
+.future-lab h1,
+.future-lab h2,
+.future-lab h3,
+.future-lab h4,
+.future-lab p,
+.future-lab span,
+.future-lab strong,
+.future-lab a{
+
+    max-width:100%;
+
+}
+
+
+.future-lab h1{
+
+    margin-top:0 !important;
+
+    margin-bottom:28px !important;
+
+    line-height:1.05 !important;
+
+}
+
+
+.future-lab h2{
+
+    margin-top:0 !important;
+
+    margin-bottom:22px !important;
+
+    line-height:1.15 !important;
+
+}
+
+
+.future-lab p{
+
+    margin-top:0 !important;
+
+    margin-bottom:24px !important;
+
+    line-height:1.75 !important;
+
+}
+
+
+/* ========================================================= */
+/* 12 — IMAGE SAFETY                                         */
+/* ========================================================= */
+
+.future-lab img{
+
+    display:block;
+
+    max-width:100%;
+
+    height:auto;
+
+}
+
+
+.future-lab img:not([src]),
+.future-lab img[src=""]{
+
+    display:none !important;
+
+}
+
+
+/* ========================================================= */
+/* 13 — GRID STRUCTURE                                       */
+/* ========================================================= */
+
+.future-core-cards,
+.os-cards,
+.rose-cards,
+.zhr-cards,
+.zhr-future-cards,
+.design-cards,
+.family-cards,
+.transport-cards,
+.research-cards,
+.vision-cards{
+
+    width:100% !important;
+
+    max-width:1180px !important;
+
+    margin-left:auto !important;
+
+    margin-right:auto !important;
+
+    display:grid !important;
+
+    grid-template-columns:
+        repeat(3,minmax(0,1fr));
+
+    gap:28px !important;
+
+    align-items:stretch !important;
+
+}
+
+
+/* ========================================================= */
+/* 14 — CARD STRUCTURE                                       */
+/* ========================================================= */
+
+.future-lab [class*="card"]{
+
+    width:100% !important;
+
+    min-width:0 !important;
+
+    margin:0 !important;
+
+    padding:32px !important;
+
+    border-radius:28px !important;
+
+    overflow:hidden !important;
+
+}
+
+
+/* ========================================================= */
+/* 15 — CARD INTERNAL SPACING                                */
+/* ========================================================= */
+
+.future-lab [class*="card"] h1,
+.future-lab [class*="card"] h2,
+.future-lab [class*="card"] h3,
+.future-lab [class*="card"] h4{
+
+    margin-top:0 !important;
+
+    margin-bottom:18px !important;
+
+}
+
+
+.future-lab [class*="card"] p{
+
+    margin-bottom:0 !important;
+
+}
+
+
+/* ========================================================= */
+/* 16 — PANEL STRUCTURE                                      */
+/* ========================================================= */
+
+.future-lab [class*="panel"]{
+
+    width:100% !important;
+
+    max-width:1180px !important;
+
+    margin-left:auto !important;
+
+    margin-right:auto !important;
+
+    border-radius:32px !important;
+
+    padding:50px !important;
+
+}
+
+
+/* ========================================================= */
+/* 17 — SECTION RHYTHM                                       */
+/* ========================================================= */
+
+.future-lab > section{
+
+    padding-top:120px !important;
+
+    padding-bottom:120px !important;
+
+}
+
+
+/* ========================================================= */
+/* 18 — FIRST SECTION                                        */
+/* ========================================================= */
+
+.future-lab > section:first-of-type{
+
+    padding-top:0 !important;
+
+}
+
+
+/* ========================================================= */
+/* 19 — LAST SECTION                                         */
+/* ========================================================= */
+
+.future-lab > section:last-of-type{
+
+    padding-bottom:160px !important;
+
+}
+
+
+/* ========================================================= */
+/* 20 — REMOVE DOUBLE SECTION BORDERS                        */
+/* ========================================================= */
+
+.future-lab > section{
+
+    border-top:0 !important;
+
+    border-bottom:0 !important;
+
+}
+
+
+/* ========================================================= */
+/* 21 — GLOBAL CONTENT WIDTH                                 */
+/* ========================================================= */
+
+.future-lab .future-message,
+.future-lab .future-manifesto,
+.future-lab .future-closing,
+.future-lab .mobility-message,
+.future-lab .zhr-message,
+.future-lab .zhr-human-message,
+.future-lab .design-message,
+.future-lab .family-vision,
+.future-lab .transport-message{
+
+    width:min(100%,1000px) !important;
+
+    margin-left:auto !important;
+
+    margin-right:auto !important;
+
+}
+
+
+/* ========================================================= */
+/* 22 — NO HORIZONTAL OVERFLOW                               */
+/* ========================================================= */
+
+.future-lab,
+.future-lab *{
+
+    max-width:100%;
+
+}
+
+
+.future-lab{
+
+    overflow-x:hidden !important;
+
+}
+
+
+/* ========================================================= */
+/* 23 — MOBILE STRUCTURE                                     */
+/* ========================================================= */
+
+@media(max-width:900px){
+
+    .future-container,
+    .future-core-container{
+
+        width:90% !important;
+
+        max-width:none !important;
+
+    }
+
+
+    .future-core-cards,
+    .os-cards,
+    .rose-cards,
+    .zhr-cards,
+    .zhr-future-cards,
+    .design-cards,
+    .family-cards,
+    .transport-cards,
+    .research-cards,
+    .vision-cards{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr)) !important;
+
+        gap:22px !important;
+
+    }
+
+
+    .future-lab > section{
+
+        padding-top:90px !important;
+
+        padding-bottom:90px !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 24 — SMALL MOBILE                                        */
+/* ========================================================= */
+
+@media(max-width:600px){
+
+    body{
+
+        width:100% !important;
+
+        overflow-x:hidden !important;
+
+    }
+
+
+    .future-lab{
+
+        width:100% !important;
+
+        min-width:100% !important;
+
+    }
+
+
+    .future-container,
+    .future-core-container{
+
+        width:calc(100% - 36px) !important;
+
+        max-width:none !important;
+
+    }
+
+
+    .future-hero{
+
+        min-height:100svh !important;
+
+    }
+
+
+    .future-hero .future-container{
+
+        min-height:100svh !important;
+
+        padding-top:90px !important;
+
+        padding-bottom:90px !important;
+
+    }
+
+
+    .future-core-cards,
+    .os-cards,
+    .rose-cards,
+    .zhr-cards,
+    .zhr-future-cards,
+    .design-cards,
+    .family-cards,
+    .transport-cards,
+    .research-cards,
+    .vision-cards{
+
+        grid-template-columns:1fr !important;
+
+        gap:20px !important;
+
+    }
+
+
+    .future-lab > section{
+
+        padding-top:75px !important;
+
+        padding-bottom:75px !important;
+
+    }
+
+
+    .future-lab [class*="card"]{
+
+        padding:26px !important;
+
+        border-radius:24px !important;
+
+    }
+
+
+    .future-lab [class*="panel"]{
+
+        padding:30px 24px !important;
+
+        border-radius:26px !important;
+
+    }
+
+
+    .future-lab h1{
+
+        font-size:clamp(
+            2.4rem,
+            10vw,
+            4rem
+        ) !important;
+
+    }
+
+
+    .future-lab h2{
+
+        font-size:clamp(
+            2rem,
+            8vw,
+            3rem
+        ) !important;
+
+    }
+
+
+    .future-lab p{
+
+        font-size:1.05rem !important;
+
+        line-height:1.75 !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 25 — FINAL PAGE INTEGRITY                                */
+/* ========================================================= */
+
+.future-lab > *{
+
+    position:relative;
+
+    z-index:1;
+
+}
+
+
+/* ========================================================= */
+/* 26 — PREVENT VISUAL FRAGMENTATION                         */
+/* ========================================================= */
+
+.future-lab > section + section{
+
+    margin-top:0 !important;
+
+    border-top:0 !important;
+
+}
+
+
+/* ========================================================= */
+/* 27 — FINAL BODY EDGE LOCK                                 */
+/* ========================================================= */
+
+html{
+
+    background:#020b18 !important;
+
+}
+
+
+body{
+
+    border:0 !important;
+
+}
+
+
+.future-lab{
+
+    border:0 !important;
+
+    outline:0 !important;
+
+}
+
+
+/* ========================================================= */
+/*                    END OF STRUCTURE                       */
+/* ========================================================= */
 
 /* ========================================================= */
 /* ========================================================= */

@@ -2676,3 +2676,597 @@ img{
     text-align: center;
 
 }
+
+/* ========================================================= */
+/* ARS 13 PHILOSOPHY — TRUE 2X GLOBAL SCALE OVERRIDE         */
+/* PUT THIS AT THE VERY END OF THE CSS FILE                  */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — HERO : TRUE 2X SIZE                                  */
+/* ========================================================= */
+
+.ars-13-hero{
+
+    width: 200%;
+
+    max-width: none;
+
+    min-width: 200%;
+
+    min-height: 200vh;
+
+    padding:
+        160px
+        60px
+        140px;
+
+}
+
+
+/* ========================================================= */
+/* 02 — HERO INTRO : 2X                                      */
+/* ========================================================= */
+
+.ars-13-intro{
+
+    width: 200%;
+
+    max-width: none;
+
+    margin-bottom: 60px;
+
+}
+
+.ars-13-brand-link{
+
+    font-size: 1.44rem;
+
+}
+
+.ars-13-intro-line{
+
+    margin-top: 32px;
+
+    font-size: 1.32rem;
+
+}
+
+
+/* ========================================================= */
+/* 03 — HERO STAGE : REMOVE ORIGINAL 1280px LIMIT            */
+/* ========================================================= */
+
+.ars-13-stage{
+
+    width: 200%;
+
+    max-width: none;
+
+    min-width: 200%;
+
+    min-height: 1440px;
+
+}
+
+
+/* ========================================================= */
+/* 04 — 3D SYMBOL : REMOVE min() LIMIT                       */
+/* ========================================================= */
+
+.ars-13-symbol{
+
+    width: 2100px;
+
+    max-width: none;
+
+    min-width: 2100px;
+
+}
+
+
+/* ========================================================= */
+/* 05 — BIG A : REMOVE clamp() LIMIT                         */
+/* ========================================================= */
+
+.ars-13-big-a{
+
+    font-size: 2400px;
+
+}
+
+
+/* ========================================================= */
+/* 06 — ROTATING RINGS : 2X                                  */
+/* ========================================================= */
+
+.ars-13-ring-outer{
+
+    width: 88%;
+
+    height: 42%;
+
+}
+
+.ars-13-ring-middle{
+
+    width: 74%;
+
+    height: 35%;
+
+}
+
+.ars-13-ring-inner{
+
+    width: 60%;
+
+    height: 29%;
+
+}
+
+.ars-13-ring span{
+
+    width: 20px;
+
+    height: 20px;
+
+    margin-top: -10px;
+
+}
+
+
+/* ========================================================= */
+/* 07 — MAIN GLASS CARD : REMOVE 1180px LIMIT                */
+/* ========================================================= */
+
+.ars-13-glass-card{
+
+    width: 2360px;
+
+    max-width: none;
+
+    min-width: 2360px;
+
+    min-height: 1360px;
+
+    padding:
+        144px
+        140px
+        124px;
+
+    border-radius: 88px;
+
+}
+
+
+/* ========================================================= */
+/* 08 — GLASS DEPTH : 2X                                     */
+/* ========================================================= */
+
+.ars-13-glass-back{
+
+    inset: 16px;
+
+    border-radius: 76px;
+
+}
+
+.ars-13-glass-depth{
+
+    border-width: 16px;
+
+    border-radius: 88px;
+
+}
+
+.ars-13-glass-edge{
+
+    border-radius: 88px;
+
+}
+
+
+/* ========================================================= */
+/* 09 — CARD CONTENT : 2X                                    */
+/* ========================================================= */
+
+.ars-13-card-content{
+
+    width: 100%;
+
+    max-width: none;
+
+}
+
+
+/* ========================================================= */
+/* 10 — CARD TYPOGRAPHY : 2X                                 */
+/* ========================================================= */
+
+.ars-13-card-eyebrow{
+
+    font-size: 1.44rem;
+
+}
+
+.ars-13-card-title{
+
+    margin:
+        36px
+        0
+        16px;
+
+    gap: 32px;
+
+    font-size: 12rem;
+
+}
+
+.ars-13-card-subtitle{
+
+    margin-top: 24px;
+
+    font-size: 3.4rem;
+
+}
+
+.ars-13-card-vision{
+
+    margin:
+        30px
+        0
+        76px;
+
+    font-size: 1.64rem;
+
+}
+
+
+/* ========================================================= */
+/* 11 — PILLARS : 2X                                        */
+/* ========================================================= */
+
+.ars-13-pillars{
+
+    width: 100%;
+
+    gap:
+        36px
+        68px;
+
+}
+
+.ars-13-pillar{
+
+    min-height: 164px;
+
+    padding:
+        36px
+        40px;
+
+    gap: 36px;
+
+    border-radius: 28px;
+
+}
+
+.ars-13-pillar span{
+
+    font-size: 1.56rem;
+
+}
+
+.ars-13-pillar strong{
+
+    font-size: 2.84rem;
+
+}
+
+.ars-13-signature{
+
+    margin-top: 68px;
+
+    font-size: 2.3rem;
+
+}
+
+
+/* ========================================================= */
+/* 12 — HERO FOOTER : 2X                                    */
+/* ========================================================= */
+
+.ars-13-hero-footer{
+
+    width: 200%;
+
+    max-width: none;
+
+    margin-top: 68px;
+
+    gap:
+        36px
+        80px;
+
+    font-size: 1.24rem;
+
+}
+
+
+/* ========================================================= */
+/* 13 — ALL NORMAL SECTIONS : 2X                             */
+/* ========================================================= */
+
+.ars-13-section{
+
+    padding:
+        240px
+        60px;
+
+}
+
+.ars-13-container{
+
+    width: 200%;
+
+    max-width: none;
+
+}
+
+
+/* ========================================================= */
+/* 14 — SECTION HEADINGS : 2X                               */
+/* ========================================================= */
+
+.ars-13-section-heading{
+
+    max-width: none;
+
+    width: 100%;
+
+    margin-bottom: 110px;
+
+}
+
+.ars-13-section-heading span,
+.ars-13-label{
+
+    font-size: 1.36rem;
+
+}
+
+.ars-13-section-heading h2{
+
+    margin-top: 36px;
+
+    font-size: 9rem;
+
+}
+
+.ars-13-section-heading p{
+
+    margin-top: 44px;
+
+    max-width: none;
+
+    font-size: 2rem;
+
+}
+
+
+/* ========================================================= */
+/* 15 — ALL GLASS PANELS : 2X                               */
+/* ========================================================= */
+
+.ars-13-glass-panel{
+
+    border-radius: 56px;
+
+}
+
+
+/* ========================================================= */
+/* 16 — MANIFESTO : 2X                                      */
+/* ========================================================= */
+
+.ars-13-manifesto{
+
+    max-width: none;
+
+    width: 100%;
+
+    padding: 110px;
+
+}
+
+.ars-13-manifesto p,
+.ars-13-glass-panel p{
+
+    font-size: 2rem;
+
+    line-height: 2;
+
+}
+
+.ars-13-manifesto blockquote,
+.ars-13-brain blockquote{
+
+    margin-top: 70px;
+
+    padding-top: 50px;
+
+    font-size: 3rem;
+
+}
+
+
+/* ========================================================= */
+/* 17 — THREE COLUMN CARDS : 2X                             */
+/* ========================================================= */
+
+.ars-13-three-grid{
+
+    gap: 50px;
+
+}
+
+.ars-13-three-grid .ars-13-glass-panel{
+
+    padding: 84px;
+
+}
+
+.ars-13-glass-panel h3{
+
+    margin-bottom: 44px;
+
+    font-size: 3.4rem;
+
+}
+
+
+/* ========================================================= */
+/* 18 — SPIRITUAL PANEL : 2X                                */
+/* ========================================================= */
+
+.ars-13-spiritual{
+
+    max-width: none;
+
+    width: 100%;
+
+    padding: 120px;
+
+}
+
+.ars-13-spiritual h2{
+
+    margin:
+        40px
+        0
+        60px;
+
+    font-size: 9.6rem;
+
+}
+
+.ars-13-spiritual-emphasis{
+
+    margin-top: 80px;
+
+    padding-top: 56px;
+
+}
+
+.ars-13-spiritual-emphasis strong{
+
+    font-size: 3rem;
+
+}
+
+
+/* ========================================================= */
+/* 19 — ARS BRAIN PANEL : 2X                                */
+/* ========================================================= */
+
+.ars-13-brain{
+
+    max-width: none;
+
+    width: 100%;
+
+    padding: 120px;
+
+}
+
+.ars-13-brain h3{
+
+    font-size: 7rem;
+
+}
+
+
+/* ========================================================= */
+/* 20 — FINAL SECTION : 2X                                  */
+/* ========================================================= */
+
+.ars-13-final{
+
+    min-height: 160vh;
+
+    padding:
+        240px
+        60px;
+
+}
+
+.ars-13-final-content{
+
+    max-width: none;
+
+    width: 100%;
+
+}
+
+.ars-13-final-content > span{
+
+    font-size: 1.36rem;
+
+}
+
+.ars-13-final h2{
+
+    margin:
+        50px
+        0;
+
+    font-size: 12rem;
+
+}
+
+.ars-13-final p{
+
+    font-size: 2rem;
+
+}
+
+.ars-13-final-motto{
+
+    margin-top: 90px;
+
+    gap: 20px;
+
+    font-size: 2.5rem;
+
+}
+
+
+/* ========================================================= */
+/* 21 — FOOTER : 2X                                         */
+/* ========================================================= */
+
+.ars-13-footer{
+
+    padding:
+        140px
+        60px;
+
+}
+
+.ars-13-footer h2{
+
+    font-size: 3rem;
+
+}
+
+.ars-13-footer p{
+
+    font-size: 2rem;
+
+}
+
+.ars-13-footer span{
+
+    font-size: 1.44rem;
+
+}

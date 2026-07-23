@@ -2566,3 +2566,547 @@
     }
 
     }
+
+/* ========================================================= */
+/* ========================================================= */
+/*                                                           */
+/*       ARS FUTURE LAB — LIVING BRAND ENERGY FIELD          */
+/*                                                           */
+/*       ARS HERITAGE GROUP / ARS DESIGN / ARS BRAIN         */
+/*       ROSE AI / ZHR NAJI                                  */
+/*                                                           */
+/*       DEEP NAVY BACKGROUND + MATTE GOLD ENERGY            */
+/*                                                           */
+/* ========================================================= */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — GLOBAL BRAND ENERGY FIELD                            */
+/* ========================================================= */
+
+.future-lab{
+
+    position:relative;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+}
+
+
+/* ========================================================= */
+/* 02 — MOVING BRAND NAMES                                   */
+/* ========================================================= */
+
+.future-lab::after{
+
+    content:
+
+        "ARS HERITAGE GROUP     ARS DESIGN     ARS BRAIN     ROSE AI     ZHR NAJI     "
+        "ARS HERITAGE GROUP     ARS DESIGN     ARS BRAIN     ROSE AI     ZHR NAJI     "
+        "ARS HERITAGE GROUP     ARS DESIGN     ARS BRAIN     ROSE AI     ZHR NAJI";
+
+    position:absolute;
+
+    inset:-20%;
+
+    z-index:-1;
+
+    pointer-events:none;
+
+    display:block;
+
+    width:140%;
+
+    height:140%;
+
+    color:
+
+        rgba(242,201,109,.12);
+
+    font-family:
+
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    font-size:
+
+        clamp(
+            18px,
+            2.2vw,
+            34px
+        );
+
+    font-weight:
+
+        800;
+
+    letter-spacing:
+
+        .28em;
+
+    line-height:
+
+        5;
+
+    text-align:
+
+        center;
+
+    white-space:
+
+        pre-wrap;
+
+    word-spacing:
+
+        1.5em;
+
+    opacity:
+
+        .75;
+
+    filter:
+
+        blur(.35px);
+
+    text-shadow:
+
+        0
+        0
+        8px
+        rgba(214,168,79,.18),
+
+        0
+        0
+        25px
+        rgba(214,168,79,.08);
+
+    transform:
+
+        rotate(-12deg)
+        translate3d(-3%,0,0);
+
+    animation:
+
+        arsBrandEnergyDrift
+        55s
+        ease-in-out
+        infinite
+        alternate;
+
+}
+
+
+/* ========================================================= */
+/* 03 — GOLDEN ENERGY DRIFT                                  */
+/* ========================================================= */
+
+@keyframes arsBrandEnergyDrift{
+
+    0%{
+
+        transform:
+
+            rotate(-12deg)
+            translate3d(-8%,-4%,0)
+            scale(1);
+
+        opacity:
+
+            .38;
+
+    }
+
+    25%{
+
+        transform:
+
+            rotate(-9deg)
+            translate3d(2%,2%,0)
+            scale(1.025);
+
+        opacity:
+
+            .62;
+
+    }
+
+    50%{
+
+        transform:
+
+            rotate(-14deg)
+            translate3d(7%,-1%,0)
+            scale(1.05);
+
+        opacity:
+
+            .48;
+
+    }
+
+    75%{
+
+        transform:
+
+            rotate(-10deg)
+            translate3d(-2%,5%,0)
+            scale(1.02);
+
+        opacity:
+
+            .70;
+
+    }
+
+    100%{
+
+        transform:
+
+            rotate(-13deg)
+            translate3d(-9%,1%,0)
+            scale(1);
+
+        opacity:
+
+            .40;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 04 — SECONDARY GOLD ENERGY LAYER                          */
+/* ========================================================= */
+
+.future-lab::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:-30%;
+
+    z-index:-2;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+            ellipse at 20% 20%,
+            rgba(255,215,120,.10),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            ellipse at 80% 35%,
+            rgba(255,201,80,.08),
+            transparent 28%
+        ),
+
+        radial-gradient(
+            ellipse at 35% 80%,
+            rgba(255,224,150,.07),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            ellipse at 75% 85%,
+            rgba(184,137,63,.10),
+            transparent 32%
+        );
+
+    filter:
+
+        blur(35px);
+
+    opacity:
+
+        .8;
+
+    animation:
+
+        arsGoldenAtmosphere
+        28s
+        ease-in-out
+        infinite
+        alternate;
+
+}
+
+
+@keyframes arsGoldenAtmosphere{
+
+    0%{
+
+        transform:
+
+            translate3d(-4%,-3%,0)
+            scale(1);
+
+    }
+
+    50%{
+
+        transform:
+
+            translate3d(5%,4%,0)
+            scale(1.08);
+
+    }
+
+    100%{
+
+        transform:
+
+            translate3d(-2%,7%,0)
+            scale(1.03);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 05 — FLOATING GOLD PARTICLES                              */
+/* ========================================================= */
+
+.future-lab{
+
+    background-image:
+
+        radial-gradient(
+            circle at 12% 18%,
+            rgba(255,220,135,.16) 0 1px,
+            transparent 2px
+        ),
+
+        radial-gradient(
+            circle at 82% 28%,
+            rgba(255,220,135,.13) 0 1px,
+            transparent 2px
+        ),
+
+        radial-gradient(
+            circle at 35% 72%,
+            rgba(255,220,135,.11) 0 1px,
+            transparent 2px
+        ),
+
+        radial-gradient(
+            circle at 68% 84%,
+            rgba(255,220,135,.14) 0 1px,
+            transparent 2px
+        );
+
+    background-size:
+
+        260px
+        260px,
+
+        340px
+        340px,
+
+        300px
+        300px,
+
+        420px
+        420px;
+
+    animation:
+
+        arsParticleField
+        40s
+        linear
+        infinite;
+
+}
+
+
+@keyframes arsParticleField{
+
+    0%{
+
+        background-position:
+
+            0
+            0,
+
+            0
+            0,
+
+            0
+            0,
+
+            0
+            0;
+
+    }
+
+    50%{
+
+        background-position:
+
+            80px
+            -60px,
+
+            -100px
+            90px,
+
+            70px
+            100px,
+
+            -80px
+            -50px;
+
+    }
+
+    100%{
+
+        background-position:
+
+            160px
+            -120px,
+
+            -200px
+            180px,
+
+            140px
+            200px,
+
+            -160px
+            -100px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 06 — BRAND ENERGY GLOW                                   */
+/* ========================================================= */
+
+.future-lab .brand-energy,
+.future-lab .future-brand-energy,
+.future-lab .ars-brand-energy{
+
+    color:
+
+        rgba(
+            245,
+            211,
+            130,
+            .78
+        );
+
+    text-shadow:
+
+        0
+        0
+        10px
+        rgba(255,215,120,.25),
+
+        0
+        0
+        30px
+        rgba(214,168,79,.15);
+
+    animation:
+
+        arsBrandGlow
+        7s
+        ease-in-out
+        infinite
+        alternate;
+
+}
+
+
+@keyframes arsBrandGlow{
+
+    0%{
+
+        opacity:
+
+            .45;
+
+        filter:
+
+            blur(.3px);
+
+    }
+
+    100%{
+
+        opacity:
+
+            .85;
+
+        filter:
+
+            blur(0);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 07 — MOBILE OPTIMIZATION                                  */
+/* ========================================================= */
+
+@media(max-width:700px){
+
+    .future-lab::after{
+
+        font-size:
+
+            15px;
+
+        line-height:
+
+            6;
+
+        letter-spacing:
+
+            .20em;
+
+        opacity:
+
+            .45;
+
+        filter:
+
+            blur(.6px);
+
+        animation-duration:
+
+            70s;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 08 — REDUCED MOTION                                       */
+/* ========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    .future-lab::before,
+    .future-lab::after,
+    .future-lab{
+
+        animation:
+
+            none !important;
+
+    }
+
+}

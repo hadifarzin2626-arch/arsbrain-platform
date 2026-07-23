@@ -7734,20 +7734,151 @@ img{
 }
 
 /* ========================================================= */
-/* ARS HOME — FINAL CARD SIZE CONTROL                         */
-/* این بخش باید آخرین کد فایل CSS باشد                        */
+/* ARS HOME — 14 CARDS — HALF HEIGHT ONLY                   */
+/* WIDTH: COMPLETELY UNCHANGED                               */
+/* HEIGHT: 50% OF CURRENT HEIGHT                             */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* ALL HOME GLASS CARDS                                      */
 /* ========================================================= */
 
 .ars-glass-card,
 .ars-core-card,
 .ars-specialized-card{
 
-    width:50% !important;
+    width:
+        auto !important;
 
-    max-width:50% !important;
+    max-width:
+        none !important;
 
-    min-width:0 !important;
+    min-width:
+        0 !important;
 
-    box-sizing:border-box !important;
+    box-sizing:
+        border-box !important;
+
+}
+
+
+/* ========================================================= */
+/* CORE CARDS — HALF HEIGHT                                  */
+/* ========================================================= */
+
+@media (min-width:1200px){
+
+    .ars-core-card{
+
+        min-height:
+            310px !important;
+
+        height:
+            310px !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* SPECIALIZED CARDS — HALF HEIGHT                           */
+/* ========================================================= */
+
+@media (min-width:1200px){
+
+    .ars-specialized-card{
+
+        height:
+            310px !important;
+
+        min-height:
+            310px !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* CARD CONTENT — KEEP INSIDE NEW HEIGHT                     */
+/* ========================================================= */
+
+.ars-glass-card .ars-card-content{
+
+    box-sizing:
+        border-box;
+
+    max-height:
+        100%;
+
+}
+
+
+/* ========================================================= */
+/* IMAGE — REDUCE HEIGHT PROPORTIONALLY                      */
+/* ========================================================= */
+
+@media (min-width:1200px){
+
+    .ars-glass-card .ars-card-image{
+
+        height:
+            140px !important;
+
+        max-height:
+            140px !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* TABLET                                                    */
+/* ========================================================= */
+
+@media (max-width:1100px){
+
+    .ars-core-card,
+    .ars-specialized-card{
+
+        height:
+            50% !important;
+
+        min-height:
+            0 !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* MOBILE                                                    */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    .ars-core-card{
+
+        min-height:
+            270px !important;
+
+        height:
+            270px !important;
+
+    }
+
+    .ars-specialized-card{
+
+        min-height:
+            270px !important;
+
+        height:
+            270px !important;
+
+    }
 
 }

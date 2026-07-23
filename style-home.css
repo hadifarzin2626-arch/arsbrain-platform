@@ -7832,9 +7832,9 @@ img{
 /* ========================================================= */
 
 .home-card {
-    min-height: 70%;
+    min-height: 55%;
 }
 
 .home-cards-grid {
-    row-gap: 5em;
+    row-gap: 8em;
 }

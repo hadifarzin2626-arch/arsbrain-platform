@@ -7826,18 +7826,6 @@ img{
 }
 
 
-/* ========================================================= */
-/* TEMPORARY CARD SIZE & SPACING OVERRIDE                    */
-/* DELETE THIS BLOCK TO RESTORE PREVIOUS LAYOUT              */
-/* ========================================================= */
-
-.home-card {
-    min-height: 35%;
-}
-
-.home-cards-grid {
-    row-gap: 15em;
-}
 
 
 /* ========================================================= */

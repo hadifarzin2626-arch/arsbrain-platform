@@ -14,7 +14,18 @@
 /* ========================================================= */
 
 /* ========================================================= */
-/* 01 — FULL PAGE FUTURE SKY                                 */
+/* ========================================================= */
+/*                                                           */
+/*        ARS FUTURE LAB 2050 — LUXURY ENERGY OVERRIDE       */
+/*                                                           */
+/*        DEEP NAVY / LIQUID GOLD / CRYSTAL GLASS           */
+/*                                                           */
+/* ========================================================= */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — DEEP LUXURY FUTURE BACKGROUND                         */
 /* ========================================================= */
 
 .future-lab,
@@ -31,30 +42,52 @@
 .ars-2050-vision,
 .future-ai-gateway{
 
-    position:relative;
+    position:
+        relative;
 
-    overflow:hidden;
+    overflow:
+        hidden;
 
-    isolation:isolate;
+    isolation:
+        isolate;
 
-    color:#071a2f;
+    color:
+        #f7f1e3;
 
     background:
 
+        radial-gradient(
+            ellipse at 50% 15%,
+            rgba(18,65,110,.75),
+            transparent 42%
+        ),
+
+        radial-gradient(
+            ellipse at 10% 55%,
+            rgba(8,45,85,.85),
+            transparent 42%
+        ),
+
+        radial-gradient(
+            ellipse at 90% 70%,
+            rgba(20,52,92,.80),
+            transparent 45%
+        ),
+
         linear-gradient(
             180deg,
-            #dff3ff 0%,
-            #c9eaff 22%,
-            #b9e2fa 48%,
-            #ccecff 72%,
-            #e5f6ff 100%
+            #020b18 0%,
+            #041426 28%,
+            #061b32 52%,
+            #030d1b 78%,
+            #01050c 100%
         );
 
 }
 
 
 /* ========================================================= */
-/* 02 — MAIN FUTURE ENERGY FIELD                             */
+/* 02 — LIQUID GOLD ENERGY FIELD                             */
 /* ========================================================= */
 
 .future-lab::before,
@@ -73,75 +106,97 @@
 
     content:"";
 
-    position:absolute;
+    position:
+        absolute;
 
-    inset:-10%;
+    inset:
+        -35%;
 
-    z-index:-2;
+    z-index:
+        -2;
 
-    pointer-events:none;
+    pointer-events:
+        none;
 
     background:
 
-        /* GOLDEN ENERGY RIBBON 01 */
+        /* GOLD ENERGY STREAM 01 */
 
         linear-gradient(
-            112deg,
+            115deg,
+
             transparent 0%,
-            transparent 28%,
-            rgba(255,206,82,.04) 36%,
-            rgba(255,198,45,.55) 43%,
-            rgba(255,229,135,.95) 46%,
-            rgba(255,190,35,.45) 49%,
-            rgba(255,210,70,.08) 54%,
-            transparent 62%
+
+            transparent 24%,
+
+            rgba(184,137,63,.05) 30%,
+
+            rgba(210,164,82,.55) 38%,
+
+            rgba(255,211,120,.98) 42%,
+
+            rgba(255,238,175,1) 44%,
+
+            rgba(255,194,70,.95) 46%,
+
+            rgba(184,137,63,.55) 50%,
+
+            transparent 58%,
+
+            transparent 100%
         ),
 
-        /* GOLDEN ENERGY RIBBON 02 */
+        /* GOLD ENERGY STREAM 02 */
 
         linear-gradient(
             72deg,
-            transparent 10%,
-            transparent 42%,
-            rgba(255,215,90,.05) 48%,
-            rgba(255,203,55,.55) 52%,
-            rgba(255,235,150,.9) 54%,
-            rgba(255,195,45,.35) 57%,
-            transparent 66%
+
+            transparent 8%,
+
+            transparent 34%,
+
+            rgba(210,164,82,.15) 40%,
+
+            rgba(255,203,80,.75) 47%,
+
+            rgba(255,236,155,1) 50%,
+
+            rgba(255,190,40,.85) 53%,
+
+            rgba(184,137,63,.35) 59%,
+
+            transparent 68%
         ),
 
-        /* SKY ENERGY */
+        /* BLUE ENERGY FIELD */
 
         radial-gradient(
-            ellipse at 50% 45%,
-            rgba(80,190,255,.22),
+            ellipse at 50% 50%,
+            rgba(15,100,180,.42),
             transparent 48%
         ),
 
-        radial-gradient(
-            ellipse at 20% 70%,
-            rgba(40,160,230,.16),
-            transparent 40%
-        ),
+        /* GOLD CORE */
 
         radial-gradient(
-            ellipse at 80% 25%,
-            rgba(255,205,75,.13),
-            transparent 34%
+            ellipse at 50% 80%,
+            rgba(230,188,103,.18),
+            transparent 45%
         );
 
     filter:
-
-        blur(22px);
+        blur(10px);
 
     opacity:
+        1;
 
-        .9;
+    transform:
+        translate3d(-8%,0,0)
+        rotate(-3deg);
 
     animation:
-
-        futureEnergyFlow
-        18s
+        arsLiquidGoldFlow
+        14s
         ease-in-out
         infinite
         alternate;
@@ -149,8 +204,40 @@
 }
 
 
+@keyframes arsLiquidGoldFlow{
+
+    0%{
+
+        transform:
+            translate3d(-12%,3%,0)
+            rotate(-4deg)
+            scale(1);
+
+    }
+
+    50%{
+
+        transform:
+            translate3d(0,-2%,0)
+            rotate(0deg)
+            scale(1.08);
+
+    }
+
+    100%{
+
+        transform:
+            translate3d(12%,3%,0)
+            rotate(4deg)
+            scale(1);
+
+    }
+
+}
+
+
 /* ========================================================= */
-/* 03 — GOLDEN ENERGY PARTICLES / RAYS                       */
+/* 03 — SHARP GOLD ENERGY RAYS                               */
 /* ========================================================= */
 
 .future-lab::after,
@@ -169,96 +256,100 @@
 
     content:"";
 
-    position:absolute;
+    position:
+        absolute;
 
-    inset:0;
+    inset:
+        -20%;
 
-    z-index:-1;
+    z-index:
+        -1;
 
-    pointer-events:none;
+    pointer-events:
+        none;
 
     background:
 
-        /* FINE GOLD ENERGY LINES */
-
         repeating-linear-gradient(
             118deg,
-            transparent 0px,
-            transparent 180px,
-            rgba(255,205,75,.08) 182px,
-            rgba(255,226,125,.28) 184px,
-            rgba(255,205,75,.08) 187px,
-            transparent 190px,
-            transparent 360px
-        ),
 
-        /* SECOND ENERGY DIRECTION */
+            transparent 0px,
+
+            transparent 170px,
+
+            rgba(184,137,63,.04) 175px,
+
+            rgba(255,198,70,.55) 180px,
+
+            rgba(255,230,145,1) 184px,
+
+            rgba(255,193,50,.80) 188px,
+
+            rgba(184,137,63,.12) 194px,
+
+            transparent 200px,
+
+            transparent 370px
+        ),
 
         repeating-linear-gradient(
             68deg,
+
             transparent 0px,
-            transparent 260px,
-            rgba(255,215,90,.06) 262px,
-            rgba(255,230,145,.22) 264px,
-            rgba(255,215,90,.06) 267px,
+
+            transparent 240px,
+
+            rgba(210,164,82,.08) 245px,
+
+            rgba(255,208,85,.60) 250px,
+
+            rgba(255,235,160,1) 255px,
+
+            rgba(255,195,45,.75) 260px,
+
             transparent 270px,
-            transparent 500px
+
+            transparent 510px
         );
 
-    opacity:
+    filter:
+        blur(2px);
 
-        .8;
+    opacity:
+        .95;
 
     mix-blend-mode:
-
-        multiply;
+        screen;
 
     animation:
-
-        goldenEnergyMove
-        22s
+        arsEnergyRays
+        18s
         linear
         infinite;
 
 }
 
 
-/* ========================================================= */
-/* 04 — ENERGY FLOW                                          */
-/* ========================================================= */
-
-@keyframes futureEnergyFlow{
+@keyframes arsEnergyRays{
 
     0%{
 
         transform:
-            translate3d(-8%,0,0)
-            scale(1.05)
-            rotate(-1deg);
-
-        opacity:.55;
+            translate3d(-12%,0,0);
 
     }
 
     50%{
 
         transform:
-            translate3d(0,-2%,0)
-            scale(1.1)
-            rotate(0deg);
-
-        opacity:.9;
+            translate3d(0,-4%,0);
 
     }
 
     100%{
 
         transform:
-            translate3d(8%,2%,0)
-            scale(1.05)
-            rotate(1deg);
-
-        opacity:.65;
+            translate3d(12%,5%,0);
 
     }
 
@@ -266,198 +357,144 @@
 
 
 /* ========================================================= */
-/* 05 — GOLDEN ENERGY STREAM MOVEMENT                        */
-/* ========================================================= */
-
-@keyframes goldenEnergyMove{
-
-    0%{
-
-        transform:
-            translate3d(-5%,0,0);
-
-    }
-
-    50%{
-
-        transform:
-            translate3d(2%,-1%,0);
-
-    }
-
-    100%{
-
-        transform:
-            translate3d(5%,2%,0);
-
-    }
-
-}
-
-
-/* ========================================================= */
-/* 06 — FUTURE SKY LIGHT                                     */
-/* ========================================================= */
-
-.future-lab{
-
-    background-color:
-
-        #cfeeff;
-
-}
-
-
-/* ========================================================= */
-/* 07 — REMOVE DARK ATMOSPHERE COMPLETELY                    */
-/* ========================================================= */
-
-.future-lab,
-.future-space-core,
-.future-mobility,
-.ars-os-core,
-.rose-future,
-.zhr-future,
-.zhr-future-ecosystem,
-.design-future,
-.ars-digital-family,
-.ars-smart-transportation,
-.ars-research-lab,
-.ars-2050-vision,
-.future-ai-gateway{
-
-    background-color:
-
-        #cfeeff;
-
-}
-
-
-/* ========================================================= */
-/* 08 — GOLDEN ENERGY SCROLL FIELD                           */
-/* ========================================================= */
-
-.future-lab{
-
-    --scroll-energy:
-
-        0;
-
-}
-
-
-/* ========================================================= */
-/* 09 — FUTURE HERO LIGHT                                    */
+/* 04 — FUTURE HERO                                          */
 /* ========================================================= */
 
 .future-hero{
 
-    position:relative;
+    position:
+        relative;
+
+    overflow:
+        hidden;
 
     background:
 
         radial-gradient(
             ellipse at 50% 35%,
-            rgba(255,255,255,.32),
+            rgba(18,92,160,.35),
             transparent 48%
+        ),
+
+        radial-gradient(
+            ellipse at 50% 85%,
+            rgba(255,197,65,.20),
+            transparent 40%
         );
 
 }
 
 
 /* ========================================================= */
-/* 10 — GOLDEN ENERGY FLOOR                                  */
+/* 05 — HERO GOLDEN LIGHT                                    */
 /* ========================================================= */
 
 .future-hero::after{
 
     content:"";
 
-    position:absolute;
+    position:
+        absolute;
 
-    left:50%;
+    left:
+        50%;
 
-    bottom:0;
+    bottom:
+        -80px;
 
-    width:120%;
+    width:
+        130%;
 
-    height:260px;
+    height:
+        420px;
 
     transform:
-
         translateX(-50%);
 
-    pointer-events:none;
+    pointer-events:
+        none;
 
     background:
 
         radial-gradient(
             ellipse,
-            rgba(255,205,65,.45),
-            rgba(255,220,110,.18),
-            transparent 70%
+
+            rgba(255,218,125,.65) 0%,
+
+            rgba(230,188,103,.35) 25%,
+
+            rgba(184,137,63,.18) 45%,
+
+            transparent 72%
         );
 
     filter:
+        blur(35px);
 
-        blur(45px);
-
-    opacity:
-
-        .75;
+    mix-blend-mode:
+        screen;
 
 }
 
 
 /* ========================================================= */
-/* 11 — GOLDEN ENERGY RIBBON                                 */
+/* 06 — MOVING GOLDEN HERO WAVE                              */
 /* ========================================================= */
 
 .future-hero::before{
 
     content:"";
 
-    position:absolute;
+    position:
+        absolute;
 
-    top:-20%;
+    top:
+        -30%;
 
-    left:-30%;
+    left:
+        -40%;
 
-    width:160%;
+    width:
+        180%;
 
-    height:80%;
+    height:
+        100%;
 
-    pointer-events:none;
+    pointer-events:
+        none;
 
     background:
 
         linear-gradient(
             115deg,
+
             transparent 38%,
-            rgba(255,207,70,.08) 44%,
-            rgba(255,219,105,.48) 47%,
-            rgba(255,238,165,.75) 49%,
-            rgba(255,200,50,.35) 51%,
-            rgba(255,210,80,.06) 55%,
-            transparent 62%
+
+            rgba(184,137,63,.10) 43%,
+
+            rgba(255,198,65,.65) 47%,
+
+            rgba(255,237,170,1) 49%,
+
+            rgba(255,196,55,.75) 51%,
+
+            rgba(184,137,63,.18) 55%,
+
+            transparent 61%
         );
 
     filter:
-
-        blur(18px);
+        blur(8px);
 
     opacity:
-
-        .7;
+        .95;
 
     transform:
-
         rotate(-5deg);
 
     animation:
-
-        heroGoldenWave
-        12s
+        arsHeroEnergyWave
+        9s
         ease-in-out
         infinite
         alternate;
@@ -465,21 +502,21 @@
 }
 
 
-@keyframes heroGoldenWave{
+@keyframes arsHeroEnergyWave{
 
     0%{
 
         transform:
-            translateX(-8%)
-            rotate(-5deg);
+            translateX(-15%)
+            rotate(-7deg);
 
     }
 
     100%{
 
         transform:
-            translateX(8%)
-            rotate(-3deg);
+            translateX(15%)
+            rotate(-2deg);
 
     }
 
@@ -487,126 +524,558 @@
 
 
 /* ========================================================= */
-/* 12 — GOLDEN ENERGY SCROLL GLOW                            */
+/* 07 — UNIVERSAL CRYSTAL GLASS CARDS                        */
 /* ========================================================= */
 
-.future-space-core,
-.future-mobility,
-.ars-os-core,
-.rose-future,
-.zhr-future,
-.zhr-future-ecosystem,
-.design-future,
-.ars-digital-family,
-.ars-smart-transportation,
-.ars-research-lab,
-.ars-2050-vision,
-.future-ai-gateway{
+.future-lab [class*="card"],
+.future-space-core [class*="card"],
+.future-mobility [class*="card"],
+.ars-os-core [class*="card"],
+.rose-future [class*="card"],
+.zhr-future [class*="card"],
+.zhr-future-ecosystem [class*="card"],
+.design-future [class*="card"],
+.ars-digital-family [class*="card"],
+.ars-smart-transportation [class*="card"],
+.ars-research-lab [class*="card"],
+.ars-2050-vision [class*="card"],
+.future-ai-gateway [class*="card"]{
+
+    position:
+        relative;
+
+    overflow:
+        hidden;
 
     background:
 
         linear-gradient(
-            180deg,
-            #ccecff 0%,
-            #bfe6fa 50%,
-            #d9f2ff 100%
+            145deg,
+
+            rgba(255,255,255,.20),
+
+            rgba(255,255,255,.08) 28%,
+
+            rgba(6,30,55,.48) 60%,
+
+            rgba(184,137,63,.16)
         );
+
+    border:
+        1px solid
+        rgba(255,215,130,.42);
+
+    box-shadow:
+
+        0
+        20px
+        50px
+        rgba(0,0,0,.42),
+
+        0
+        0
+        35px
+        rgba(184,137,63,.16),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.28),
+
+        inset
+        0
+        0
+        35px
+        rgba(255,215,130,.045);
+
+    backdrop-filter:
+        blur(22px)
+        saturate(165%);
+
+    -webkit-backdrop-filter:
+        blur(22px)
+        saturate(165%);
+
+    transition:
+
+        transform
+        .8s
+        cubic-bezier(.16,1,.3,1),
+
+        box-shadow
+        .8s
+        ease,
+
+        border-color
+        .8s
+        ease;
 
 }
 
 
 /* ========================================================= */
-/* 13 — GOLDEN ENERGY ACCENT ON SECTION EDGES                */
+/* 08 — GLASS CARD REFLECTION                                */
 /* ========================================================= */
 
-.future-space-core::after,
-.future-mobility::after,
-.ars-os-core::after,
-.rose-future::after,
-.zhr-future::after,
-.zhr-future-ecosystem::after,
-.design-future::after,
-.ars-digital-family::after,
-.ars-smart-transportation::after,
-.ars-research-lab::after,
-.ars-2050-vision::after,
-.future-ai-gateway::after{
+.future-lab [class*="card"]::before,
+.future-space-core [class*="card"]::before,
+.future-mobility [class*="card"]::before,
+.ars-os-core [class*="card"]::before,
+.rose-future [class*="card"]::before,
+.zhr-future [class*="card"]::before,
+.zhr-future-ecosystem [class*="card"]::before,
+.design-future [class*="card"]::before,
+.ars-digital-family [class*="card"]::before,
+.ars-smart-transportation [class*="card"]::before,
+.ars-research-lab [class*="card"]::before,
+.ars-2050-vision [class*="card"]::before,
+.future-ai-gateway [class*="card"]::before{
 
     content:"";
 
-    position:absolute;
+    position:
+        absolute;
 
-    left:-15%;
+    inset:
+        0;
 
-    bottom:8%;
-
-    width:130%;
-
-    height:180px;
+    pointer-events:
+        none;
 
     background:
 
-        radial-gradient(
-            ellipse at center,
-            rgba(255,204,60,.42),
-            rgba(255,220,100,.16),
-            transparent 70%
+        linear-gradient(
+            125deg,
+
+            rgba(255,255,255,.22),
+
+            transparent 28%,
+
+            transparent 58%,
+
+            rgba(255,210,100,.14)
         );
 
-    filter:
-
-        blur(45px);
-
     opacity:
-
-        .7;
-
-    pointer-events:none;
-
-    animation:
-
-        goldenScrollEnergy
-        10s
-        ease-in-out
-        infinite
-        alternate;
-
-}
-
-
-@keyframes goldenScrollEnergy{
-
-    0%{
-
-        transform:
-
-            translateX(-10%)
-            scaleX(.85);
-
-        opacity:
-
-            .35;
-
-    }
-
-    100%{
-
-        transform:
-
-            translateX(10%)
-            scaleX(1.15);
-
-        opacity:
-
-            .85;
-
-    }
+        .8;
 
 }
 
 
 /* ========================================================= */
-/* 14 — MOBILE — KEEP SKY BLUE, NOT NAVY                     */
+/* 09 — GLASS CARD HOVER                                    */
+/* ========================================================= */
+
+.future-lab [class*="card"]:hover,
+.future-space-core [class*="card"]:hover,
+.future-mobility [class*="card"]:hover,
+.ars-os-core [class*="card"]:hover,
+.rose-future [class*="card"]:hover,
+.zhr-future [class*="card"]:hover,
+.zhr-future-ecosystem [class*="card"]:hover,
+.design-future [class*="card"]:hover,
+.ars-digital-family [class*="card"]:hover,
+.ars-smart-transportation [class*="card"]:hover,
+.ars-research-lab [class*="card"]:hover,
+.ars-2050-vision [class*="card"]:hover,
+.future-ai-gateway [class*="card"]:hover{
+
+    transform:
+        translateY(-14px)
+        scale(1.025);
+
+    border-color:
+        rgba(255,225,150,.90);
+
+    box-shadow:
+
+        0
+        30px
+        70px
+        rgba(0,0,0,.55),
+
+        0
+        0
+        45px
+        rgba(255,198,65,.35),
+
+        0
+        0
+        100px
+        rgba(230,188,103,.18),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.40);
+
+}
+
+
+/* ========================================================= */
+/* 10 — GOLDEN LUXURY BUTTONS                                */
+/* ========================================================= */
+
+.future-lab button,
+.future-lab a[class*="btn"],
+.future-lab a[class*="button"],
+.future-space-core button,
+.future-space-core a[class*="btn"],
+.future-mobility button,
+.future-mobility a[class*="btn"],
+.ars-os-core button,
+.ars-os-core a[class*="btn"],
+.rose-future button,
+.rose-future a[class*="btn"],
+.zhr-future button,
+.zhr-future a[class*="btn"],
+.design-future button,
+.design-future a[class*="btn"],
+.ars-digital-family button,
+.ars-digital-family a[class*="btn"],
+.ars-smart-transportation button,
+.ars-smart-transportation a[class*="btn"],
+.ars-research-lab button,
+.ars-research-lab a[class*="btn"],
+.ars-2050-vision button,
+.ars-2050-vision a[class*="btn"],
+.future-ai-gateway button,
+.future-ai-gateway a[class*="btn"]{
+
+    position:
+        relative;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        54px;
+
+    padding:
+        0
+        30px;
+
+    border:
+        1px
+        solid
+        rgba(255,218,130,.65);
+
+    border-radius:
+        999px;
+
+    color:
+        #fff4d0;
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            rgba(255,255,255,.16),
+
+            rgba(184,137,63,.24),
+
+            rgba(5,25,45,.65)
+        );
+
+    box-shadow:
+
+        0
+        0
+        20px
+        rgba(255,198,65,.18),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.35);
+
+    backdrop-filter:
+        blur(16px);
+
+    transition:
+
+        transform
+        .5s
+        ease,
+
+        box-shadow
+        .5s
+        ease,
+
+        border-color
+        .5s
+        ease;
+
+}
+
+
+/* ========================================================= */
+/* 11 — BUTTON GOLDEN LIGHT                                  */
+/* ========================================================= */
+
+.future-lab button::before,
+.future-lab a[class*="btn"]::before,
+.future-space-core button::before,
+.future-space-core a[class*="btn"]::before,
+.future-mobility button::before,
+.future-mobility a[class*="btn"]::before,
+.ars-os-core button::before,
+.ars-os-core a[class*="btn"]::before{
+
+    content:"";
+
+    position:
+        absolute;
+
+    inset:
+        2px;
+
+    border-radius:
+        inherit;
+
+    background:
+
+        linear-gradient(
+            110deg,
+
+            transparent 20%,
+
+            rgba(255,238,170,.60) 48%,
+
+            transparent 75%
+        );
+
+    opacity:
+        .45;
+
+    transform:
+        translateX(-100%);
+
+    transition:
+        transform
+        .8s
+        ease;
+
+}
+
+
+.future-lab button:hover,
+.future-lab a[class*="btn"]:hover,
+.future-space-core button:hover,
+.future-space-core a[class*="btn"]:hover,
+.future-mobility button:hover,
+.future-mobility a[class*="btn"]:hover{
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(255,235,170,1);
+
+    box-shadow:
+
+        0
+        0
+        30px
+        rgba(255,205,75,.40),
+
+        0
+        0
+        80px
+        rgba(230,188,103,.22);
+
+}
+
+
+/* ========================================================= */
+/* 12 — GOLDEN GLASS PANELS                                  */
+/* ========================================================= */
+
+.future-lab [class*="panel"],
+.future-space-core [class*="panel"],
+.future-mobility [class*="panel"],
+.ars-os-core [class*="panel"],
+.rose-future [class*="panel"],
+.zhr-future [class*="panel"],
+.zhr-future-ecosystem [class*="panel"],
+.design-future [class*="panel"],
+.ars-digital-family [class*="panel"],
+.ars-smart-transportation [class*="panel"],
+.ars-research-lab [class*="panel"],
+.ars-2050-vision [class*="panel"],
+.future-ai-gateway [class*="panel"]{
+
+    background:
+
+        linear-gradient(
+            145deg,
+
+            rgba(255,255,255,.16),
+
+            rgba(255,255,255,.055) 35%,
+
+            rgba(184,137,63,.13) 75%,
+
+            rgba(4,20,38,.48)
+        );
+
+    border:
+        1px
+        solid
+        rgba(255,215,130,.35);
+
+    backdrop-filter:
+        blur(26px)
+        saturate(170%);
+
+    -webkit-backdrop-filter:
+        blur(26px)
+        saturate(170%);
+
+    box-shadow:
+
+        0
+        25px
+        70px
+        rgba(0,0,0,.40),
+
+        0
+        0
+        40px
+        rgba(184,137,63,.12),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.22);
+
+}
+
+
+/* ========================================================= */
+/* 13 — GOLDEN FRAMES                                        */
+/* ========================================================= */
+
+.future-lab [class*="card"],
+.future-lab [class*="panel"]{
+
+    outline:
+        1px
+        solid
+        rgba(255,210,105,.08);
+
+}
+
+
+/* ========================================================= */
+/* 14 — FUTURE LAB HEADINGS                                  */
+/* ========================================================= */
+
+.future-lab h1,
+.future-lab h2,
+.future-lab h3,
+.future-space-core h1,
+.future-space-core h2,
+.future-space-core h3,
+.future-mobility h1,
+.future-mobility h2,
+.future-mobility h3{
+
+    color:
+        #fff5d7;
+
+    text-shadow:
+
+        0
+        0
+        18px
+        rgba(255,210,110,.20);
+
+}
+
+
+/* ========================================================= */
+/* 15 — GOLDEN TEXT ACCENTS                                  */
+/* ========================================================= */
+
+.future-lab strong,
+.future-lab [class*="label"],
+.future-lab [class*="eyebrow"]{
+
+    color:
+        #f2c96d;
+
+    text-shadow:
+        0
+        0
+        15px
+        rgba(255,201,80,.30);
+
+}
+
+
+/* ========================================================= */
+/* 16 — LUXURY GOLDEN DATA LINES                             */
+/* ========================================================= */
+
+.future-lab [class*="card"]::after{
+
+    content:"";
+
+    position:
+        absolute;
+
+    left:
+        0;
+
+    bottom:
+        0;
+
+    width:
+        100%;
+
+    height:
+        2px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+
+            transparent,
+
+            #b8893f,
+
+            #ffe39b,
+
+            #b8893f,
+
+            transparent
+        );
+
+    box-shadow:
+
+        0
+        0
+        18px
+        rgba(255,210,100,.55);
+
+}
+
+
+/* ========================================================= */
+/* 17 — MOBILE                                              */
 /* ========================================================= */
 
 @media(max-width:600px){
@@ -629,16 +1098,17 @@
 
             linear-gradient(
                 180deg,
-                #dff4ff 0%,
-                #c8eaff 45%,
-                #d9f2ff 100%
+
+                #06172b,
+
+                #08243d 50%,
+
+                #020a14
             );
 
     }
 
-}
-
-/* ========================================================= */
+}/* ========================================================= */
 /* 33 — MOBILE                                             */
 /* ========================================================= */
 

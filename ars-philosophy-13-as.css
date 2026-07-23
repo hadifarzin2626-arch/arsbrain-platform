@@ -2527,16 +2527,16 @@ img{
     }
 
 /* ========================================================= */
-/* ARS 13 — FULL WIDTH HERO EXPANSION                        */
+/* ARS 13 — TRUE WIDE HERO VISUAL                            */
 /* ========================================================= */
 
 .ars-13-hero{
 
     width:
-        100vw;
+        100%;
 
-    max-width:
-        none;
+    min-height:
+        125vh;
 
     padding-left:
         0;
@@ -2544,58 +2544,91 @@ img{
     padding-right:
         0;
 
+    overflow:
+        hidden;
+
 }
 
 
 /* ========================================================= */
-/* HERO STAGE — 2X WIDER                                     */
+/* HERO CONTENT AREA — 2X WIDER FROM CENTER                  */
 /* ========================================================= */
 
 .ars-13-stage{
 
+    position:
+        relative;
+
     width:
-        min(2560px, 96vw);
+        200vw;
+
+    max-width:
+        none;
 
     min-height:
         720px;
 
-    margin:
-        0 auto;
+    left:
+        50%;
+
+    transform:
+        translateX(-50%);
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
 
 }
 
 
 /* ========================================================= */
-/* 3D SYMBOL — 2X WIDER                                      */
+/* ROTATING 3D SYMBOL — 2X SCALE                             */
 /* ========================================================= */
 
 .ars-13-symbol{
 
+    position:
+        absolute;
+
+    left:
+        50%;
+
+    top:
+        50%;
+
     width:
         min(2100px, 160vw);
 
-}
+    max-width:
+        none;
 
-
-/* ========================================================= */
-/* HERO INTRO                                                 */
-/* ========================================================= */
-
-.ars-13-intro{
-
-    width:
-        100%;
+    transform:
+        translate(-50%, -50%);
 
 }
 
 
 /* ========================================================= */
-/* HERO FOOTER                                                */
+/* CARD — WIDER                                              */
 /* ========================================================= */
 
-.ars-13-hero-footer{
+.ars-13-glass-card{
+
+    position:
+        relative;
 
     width:
-        100%;
+        min(1500px, 94vw);
+
+    max-width:
+        none;
+
+    min-height:
+        720px;
 
 }

@@ -2511,3 +2511,776 @@ blockquote{
     }
 
     }
+
+
+
+/* ========================================================= */
+/* ========================================================= */
+/*                                                         */
+/* ARS 13 PHILOSOPHY — TRUE 2.5X PAGE SCALE                */
+/*                                                         */
+/* هدف:                                                     */
+/* 1. خود صفحه 2.5 برابر فضای معمول سایت شود                */
+/* 2. Hero واقعاً 2.5 برابر شود                             */
+/* 3. Stage فضای کامل و بزرگ دریافت کند                     */
+/* 4. کارت شیشه‌ای داخل Hero در مرکز قرار بگیرد             */
+/* 5. عناصر داخل کارت نسبت به فضای جدید تنظیم شوند          */
+/*                                                         */
+/* این بخش را آخر CSS قرار بده                              */
+/* ========================================================= */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — ROOT PAGE                                            */
+/* ========================================================= */
+
+.ars-13-philosophy-page{
+
+    width:100%;
+
+    min-width:0;
+
+    overflow:hidden;
+
+}
+
+
+/* ========================================================= */
+/* 02 — TRUE 2.5X HERO HEIGHT                                 */
+/* ========================================================= */
+
+.ars-13-hero{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:250vh;
+
+    height:auto;
+
+    overflow:hidden;
+
+}
+
+
+/* ========================================================= */
+/* 03 — HERO INTRO POSITION                                   */
+/* ========================================================= */
+
+.ars-13-intro{
+
+    position:relative;
+
+    z-index:20;
+
+    padding-top:10vh;
+
+}
+
+
+/* ========================================================= */
+/* 04 — MAIN STAGE                                            */
+/* ========================================================= */
+
+.ars-13-stage{
+
+    position:relative;
+
+    width:100%;
+
+    min-height:170vh;
+
+    height:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:
+
+        12vh
+        5vw
+        15vh;
+
+    box-sizing:border-box;
+
+}
+
+
+/* ========================================================= */
+/* 05 — LARGE GLASS CARD                                     */
+/*                                                         */
+/* کارت تقریباً 70% عرض Hero                                  */
+/* و در مرکز Stage قرار می‌گیرد                               */
+/* ========================================================= */
+
+.ars-13-glass-card{
+
+    position:relative;
+
+    z-index:10;
+
+    width:70%;
+
+    max-width:none;
+
+    min-width:0;
+
+    height:auto;
+
+    min-height:650px;
+
+    margin:0 auto;
+
+    box-sizing:border-box;
+
+}
+
+
+/* ========================================================= */
+/* 06 — FORCE CARD CONTENT TO USE NEW SPACE                  */
+/* ========================================================= */
+
+.ars-13-card-content{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+    min-height:650px;
+
+    box-sizing:border-box;
+
+    padding:
+
+        70px
+        60px
+        65px;
+
+}
+
+
+/* ========================================================= */
+/* 07 — BIG A BACKGROUND                                     */
+/* ========================================================= */
+
+.ars-13-symbol{
+
+    position:absolute;
+
+    z-index:2;
+
+    width:65%;
+
+    aspect-ratio:1/1;
+
+    max-width:none;
+
+    max-height:none;
+
+    left:50%;
+
+    top:50%;
+
+    transform:
+
+        translate(-50%,-50%);
+
+}
+
+
+/* ========================================================= */
+/* 08 — A                                                   */
+/* ========================================================= */
+
+.ars-13-big-a{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    font-size:
+
+        clamp(350px,35vw,850px);
+
+    line-height:1;
+
+    color:
+
+        rgba(245,205,115,.92);
+
+    text-shadow:
+
+        0
+        0
+        20px
+        rgba(255,215,130,.35),
+
+        0
+        0
+        60px
+        rgba(210,160,70,.30),
+
+        0
+        0
+        120px
+        rgba(210,160,70,.18);
+
+    z-index:3;
+
+}
+
+
+/* ========================================================= */
+/* 09 — RINGS                                                */
+/* ========================================================= */
+
+.ars-13-ring{
+
+    position:absolute;
+
+    left:50%;
+
+    top:50%;
+
+    border:
+
+        2px
+        solid
+        rgba(240,202,115,.72);
+
+    border-radius:50%;
+
+    transform-origin:center center;
+
+    pointer-events:none;
+
+}
+
+
+/* OUTER */
+
+.ars-13-ring-outer{
+
+    width:100%;
+
+    height:42%;
+
+    transform:
+
+        translate(-50%,-50%)
+        rotate(-12deg);
+
+    animation:
+
+        ars13OuterOrbit
+        28s
+        linear
+        infinite;
+
+}
+
+
+/* MIDDLE */
+
+.ars-13-ring-middle{
+
+    width:88%;
+
+    height:36%;
+
+    transform:
+
+        translate(-50%,-50%)
+        rotate(28deg);
+
+    animation:
+
+        ars13MiddleOrbit
+        21s
+        linear
+        infinite;
+
+}
+
+
+/* INNER */
+
+.ars-13-ring-inner{
+
+    width:72%;
+
+    height:30%;
+
+    transform:
+
+        translate(-50%,-50%)
+        rotate(-45deg);
+
+    animation:
+
+        ars13InnerOrbit
+        15s
+        linear
+        infinite;
+
+}
+
+
+/* ========================================================= */
+/* 10 — RING ANIMATIONS                                      */
+/*                                                         */
+/* چرخش دائمی و ثابت                                         */
+/* ========================================================= */
+
+@keyframes ars13OuterOrbit{
+
+    from{
+
+        transform:
+
+            translate(-50%,-50%)
+            rotate(-12deg);
+
+    }
+
+    to{
+
+        transform:
+
+            translate(-50%,-50%)
+            rotate(348deg);
+
+    }
+
+}
+
+
+@keyframes ars13MiddleOrbit{
+
+    from{
+
+        transform:
+
+            translate(-50%,-50%)
+            rotate(28deg);
+
+    }
+
+    to{
+
+        transform:
+
+            translate(-50%,-50%)
+            rotate(388deg);
+
+    }
+
+}
+
+
+@keyframes ars13InnerOrbit{
+
+    from{
+
+        transform:
+
+            translate(-50%,-50%)
+            rotate(-45deg);
+
+    }
+
+    to{
+
+        transform:
+
+            translate(-50%,-50%)
+            rotate(315deg);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 11 — CARD GLASS                                           */
+/* ========================================================= */
+
+.ars-13-glass-card{
+
+    background:
+
+        linear-gradient(
+            135deg,
+
+            rgba(255,255,255,.12),
+
+            rgba(255,255,255,.035)
+            35%,
+
+            rgba(184,137,63,.08)
+            70%,
+
+            rgba(255,255,255,.07)
+        );
+
+    backdrop-filter:
+
+        blur(24px)
+        saturate(160%);
+
+    -webkit-backdrop-filter:
+
+        blur(24px)
+        saturate(160%);
+
+    border:
+
+        1px
+        solid
+        rgba(255,225,150,.48);
+
+    border-radius:
+
+        34px;
+
+    box-shadow:
+
+        0
+        30px
+        80px
+        rgba(0,0,0,.60),
+
+        0
+        0
+        70px
+        rgba(218,174,94,.22),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.35),
+
+        inset
+        0
+        0
+        80px
+        rgba(255,215,130,.035);
+
+}
+
+
+/* ========================================================= */
+/* 12 — GLASS CONTENT LAYER                                  */
+/* ========================================================= */
+
+.ars-13-card-content{
+
+    position:relative;
+
+    z-index:20;
+
+}
+
+
+/* ========================================================= */
+/* 13 — PILLARS                                              */
+/* ========================================================= */
+
+.ars-13-pillars{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(13,minmax(0,1fr));
+
+    gap:
+
+        10px;
+
+    width:100%;
+
+}
+
+
+/* ========================================================= */
+/* 14 — PILLAR GLASS                                         */
+/* ========================================================= */
+
+.ars-13-pillar{
+
+    min-width:0;
+
+    padding:
+
+        20px
+        8px;
+
+    background:
+
+        linear-gradient(
+            180deg,
+
+            rgba(8,30,52,.42),
+
+            rgba(184,137,63,.18)
+        );
+
+    border:
+
+        1px
+        solid
+        rgba(245,211,145,.18);
+
+    box-shadow:
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.15),
+
+        0
+        10px
+        30px
+        rgba(0,0,0,.25);
+
+}
+
+
+/* ========================================================= */
+/* 15 — 2.5X PAGE LOWER SECTIONS                              */
+/* ========================================================= */
+
+.ars-13-section{
+
+    min-height:250vh;
+
+    padding:
+
+        18vh
+        0;
+
+}
+
+
+.ars-13-final{
+
+    min-height:250vh;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+/* ========================================================= */
+/* 16 — LOWER CARDS                                           */
+/* ========================================================= */
+
+.ars-13-glass-panel{
+
+    background:
+
+        linear-gradient(
+            145deg,
+
+            rgba(8,30,52,.50)
+            0%,
+
+            rgba(8,30,52,.35)
+            48%,
+
+            rgba(184,137,63,.22)
+            100%
+        );
+
+    backdrop-filter:
+
+        blur(22px)
+        saturate(150%);
+
+    -webkit-backdrop-filter:
+
+        blur(22px)
+        saturate(150%);
+
+    border:
+
+        1px
+        solid
+        rgba(245,211,145,.22);
+
+    box-shadow:
+
+        0
+        25px
+        70px
+        rgba(0,0,0,.45),
+
+        0
+        0
+        50px
+        rgba(184,137,63,.12),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.18);
+
+}
+
+
+/* ========================================================= */
+/* 17 — TABLET                                               */
+/* ========================================================= */
+
+@media (max-width:1100px){
+
+    .ars-13-hero{
+
+        min-height:220vh;
+
+    }
+
+    .ars-13-stage{
+
+        min-height:150vh;
+
+    }
+
+    .ars-13-glass-card{
+
+        width:82%;
+
+    }
+
+    .ars-13-pillars{
+
+        grid-template-columns:
+
+            repeat(4,1fr);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 18 — MOBILE                                               */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    .ars-13-hero{
+
+        min-height:180vh;
+
+    }
+
+    .ars-13-stage{
+
+        min-height:130vh;
+
+        padding:
+
+            8vh
+            5vw
+            12vh;
+
+    }
+
+    .ars-13-glass-card{
+
+        width:92%;
+
+        min-height:900px;
+
+    }
+
+    .ars-13-card-content{
+
+        min-height:900px;
+
+        padding:
+
+            45px
+            25px;
+
+    }
+
+    .ars-13-symbol{
+
+        width:90%;
+
+    }
+
+    .ars-13-big-a{
+
+        font-size:
+
+            clamp(220px,60vw,500px);
+
+    }
+
+    .ars-13-pillars{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+    .ars-13-section{
+
+        min-height:auto;
+
+        padding:
+
+            100px
+            0;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 19 — SMALL MOBILE                                         */
+/* ========================================================= */
+
+@media (max-width:520px){
+
+    .ars-13-glass-card{
+
+        width:94%;
+
+    }
+
+    .ars-13-pillars{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+}

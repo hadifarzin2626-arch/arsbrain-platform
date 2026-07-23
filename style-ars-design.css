@@ -2085,3 +2085,1396 @@ section{
 }
 
     }
+
+/* =========================================================
+   17 — THE FUTURE OF ARS DESIGN
+   ========================================================= */
+
+.future-ars-design{
+    position:relative;
+    overflow:hidden;
+}
+
+.future-ars-design .section-heading{
+    position:relative;
+    z-index:2;
+}
+
+.future-layout{
+    position:relative;
+    display:grid;
+    grid-template-columns:1.05fr .95fr;
+    align-items:center;
+    gap:70px;
+    margin-bottom:90px;
+}
+
+.future-image{
+    position:relative;
+    min-height:620px;
+    overflow:hidden;
+    background:
+        radial-gradient(
+            circle at 55% 45%,
+            rgba(214,168,79,.22),
+            transparent 28%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.92),
+            rgba(3,9,20,.98)
+        );
+}
+
+.future-image::before{
+    content:"";
+    position:absolute;
+    inset:8%;
+    border:1px solid rgba(214,168,79,.16);
+    border-radius:var(--radius-large);
+    pointer-events:none;
+}
+
+.future-image::after{
+    content:"ARS DESIGN";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:rgba(214,168,79,.12);
+    font-size:clamp(2rem,5vw,5rem);
+    font-weight:900;
+    letter-spacing:.18em;
+    white-space:nowrap;
+    pointer-events:none;
+}
+
+.future-content{
+    position:relative;
+    z-index:2;
+}
+
+.future-content .section-label{
+    margin-bottom:25px;
+}
+
+.future-content h3{
+    margin-bottom:28px;
+    font-size:clamp(2.2rem,4vw,4.4rem);
+    line-height:1.04;
+    letter-spacing:-.04em;
+    color:var(--ars-white);
+}
+
+.future-content p{
+    margin-bottom:22px;
+    color:var(--ars-white-soft);
+    font-size:1.06rem;
+    line-height:1.85;
+}
+
+.future-content strong{
+    display:block;
+    margin-top:25px;
+    color:var(--ars-gold-light);
+    font-size:1.18rem;
+}
+
+
+/* =========================================================
+   18 — ARS DESIGN ROADMAP
+   ========================================================= */
+
+.future-roadmap{
+    position:relative;
+    margin-top:100px;
+}
+
+.future-timeline{
+    position:relative;
+    display:grid;
+    gap:28px;
+    max-width:1100px;
+    margin:0 auto;
+}
+
+.future-timeline::before{
+    content:"";
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:50%;
+    width:1px;
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(214,168,79,.45),
+            rgba(214,168,79,.18),
+            transparent
+        );
+    transform:translateX(-50%);
+}
+
+.future-stage{
+    position:relative;
+    display:grid;
+    grid-template-columns:110px 1fr;
+    align-items:center;
+    gap:30px;
+    padding:38px 45px;
+    min-height:190px;
+}
+
+.future-stage:nth-child(even){
+    transform:translateX(45px);
+}
+
+.future-stage:nth-child(odd){
+    transform:translateX(-45px);
+}
+
+.future-stage:hover{
+    transform:
+        translateY(-10px)
+        translateX(0);
+}
+
+.stage-number{
+    position:relative;
+    z-index:2;
+    display:grid;
+    place-items:center;
+    width:82px;
+    height:82px;
+    border-radius:50%;
+    color:var(--ars-gold-light);
+    font-size:1.35rem;
+    font-weight:900;
+    letter-spacing:.08em;
+    background:
+        radial-gradient(
+            circle,
+            rgba(214,168,79,.24),
+            rgba(7,20,38,.95)
+        );
+    border:1px solid var(--border-gold);
+    box-shadow:
+        0 0 0 10px rgba(214,168,79,.025),
+        0 15px 45px rgba(214,168,79,.16);
+}
+
+.stage-content{
+    position:relative;
+    z-index:2;
+}
+
+.stage-label{
+    display:block;
+    margin-bottom:10px;
+    color:var(--ars-gold);
+    font-size:.72rem;
+    font-weight:900;
+    letter-spacing:.22em;
+}
+
+.stage-content h3{
+    margin-bottom:12px;
+    color:var(--ars-white);
+    font-size:clamp(1.4rem,2.5vw,2.2rem);
+}
+
+.stage-content p{
+    max-width:760px;
+    color:var(--ars-white-soft);
+    font-size:.96rem;
+}
+
+
+/* =========================================================
+   19 — FUTURE DESIGN CARDS
+   ========================================================= */
+
+.future-grid{
+    margin-top:80px;
+}
+
+.future-card{
+    position:relative;
+    min-height:310px;
+}
+
+.future-card .future-icon{
+    flex-shrink:0;
+}
+
+.future-card h3{
+    position:relative;
+    z-index:2;
+}
+
+.future-card p{
+    position:relative;
+    z-index:2;
+}
+
+.future-card:hover{
+    border-color:rgba(214,168,79,.5);
+}
+
+.future-card:hover .future-icon{
+    box-shadow:
+        0 0 0 8px rgba(214,168,79,.035),
+        0 15px 45px rgba(214,168,79,.25);
+}
+
+
+/* =========================================================
+   20 — FUTURE HIGHLIGHT & MESSAGE
+   ========================================================= */
+
+.future-highlight{
+    text-align:center;
+}
+
+.future-highlight .section-label{
+    justify-content:center;
+}
+
+.future-highlight h2{
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.future-highlight p{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.future-message{
+    text-align:center;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(214,168,79,.14),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.88),
+            rgba(3,9,20,.96)
+        );
+}
+
+.future-message h2{
+    max-width:1000px;
+    margin-left:auto;
+    margin-right:auto;
+    font-size:clamp(2rem,4vw,4.2rem);
+}
+
+.future-message p{
+    margin-left:auto;
+    margin-right:auto;
+    white-space:pre-line;
+}
+
+
+/* =========================================================
+   21 — ARS DESIGN PROJECT SHOWCASE
+   ========================================================= */
+
+.ars-project-showcase{
+    position:relative;
+}
+
+.project-showcase-grid{
+    display:grid;
+    grid-template-columns:repeat(2,1fr);
+    gap:30px;
+}
+
+.showcase-project{
+    position:relative;
+    overflow:hidden;
+    min-height:650px;
+    display:flex;
+    flex-direction:column;
+}
+
+.project-image{
+    position:relative;
+    min-height:390px;
+    overflow:hidden;
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(214,168,79,.18),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.95),
+            rgba(3,9,20,.98)
+        );
+}
+
+.project-image::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            to bottom,
+            transparent 45%,
+            rgba(3,9,20,.9) 100%
+        );
+}
+
+.project-image::after{
+    content:"ARS PROJECT";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:rgba(214,168,79,.1);
+    font-size:clamp(1.5rem,3vw,3rem);
+    font-weight:900;
+    letter-spacing:.2em;
+    white-space:nowrap;
+}
+
+.project-content{
+    position:relative;
+    z-index:2;
+    flex:1;
+    padding:38px 42px 45px;
+    background:
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.9),
+            rgba(3,9,20,.96)
+        );
+}
+
+.project-category{
+    display:inline-block;
+    margin-bottom:14px;
+    color:var(--ars-gold);
+    font-size:.72rem;
+    font-weight:900;
+    letter-spacing:.2em;
+}
+
+.project-content h3{
+    margin-bottom:15px;
+    color:var(--ars-white);
+    font-size:clamp(1.7rem,3vw,2.8rem);
+    line-height:1.1;
+}
+
+.project-content p{
+    color:var(--ars-white-soft);
+    font-size:.98rem;
+}
+
+.showcase-project:hover .project-image{
+    transform:scale(1.025);
+}
+
+.showcase-project .project-image{
+    transition:transform var(--transition-slow);
+}
+
+
+/* =========================================================
+   22 — PROJECT STORY
+   ========================================================= */
+
+.project-story{
+    text-align:center;
+}
+
+.project-story .section-label{
+    justify-content:center;
+}
+
+.project-story h2{
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.project-story p{
+    max-width:850px;
+    margin-left:auto;
+    margin-right:auto;
+    white-space:pre-line;
+}
+
+
+/* =========================================================
+   23 — PROJECT GALLERY
+   ========================================================= */
+
+.project-gallery{
+    margin-top:120px;
+}
+
+.project-gallery-grid{
+    display:grid;
+    grid-template-columns:
+        repeat(3,1fr);
+    grid-auto-rows:300px;
+    gap:20px;
+}
+
+.project-gallery-item{
+    position:relative;
+    min-height:300px;
+    overflow:hidden;
+    background:
+        radial-gradient(
+            circle at 50% 50%,
+            rgba(214,168,79,.15),
+            transparent 45%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.92),
+            rgba(3,9,20,.98)
+        );
+}
+
+.project-gallery-item:nth-child(1){
+    grid-row:span 2;
+}
+
+.project-gallery-item:nth-child(4){
+    grid-column:span 2;
+}
+
+.project-gallery-item::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    background:
+        linear-gradient(
+            135deg,
+            transparent,
+            rgba(214,168,79,.07)
+        );
+}
+
+.project-gallery-item::after{
+    content:"ARS DESIGN";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:rgba(214,168,79,.1);
+    font-size:1rem;
+    font-weight:900;
+    letter-spacing:.2em;
+}
+
+.project-gallery-item:hover{
+    border-color:var(--border-gold);
+}
+
+
+/* =========================================================
+   24 — SHOWCASE MESSAGE
+   ========================================================= */
+
+.showcase-message{
+    text-align:center;
+}
+
+.showcase-message h2{
+    max-width:900px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.showcase-message p{
+    margin-left:auto;
+    margin-right:auto;
+}
+
+
+/* =========================================================
+   25 — ARS DESIGN PROMISE
+   ========================================================= */
+
+.ars-design-promise{
+    position:relative;
+}
+
+.promise-hero{
+    align-items:stretch;
+    margin-bottom:110px;
+}
+
+.promise-image{
+    min-height:620px;
+    background:
+        radial-gradient(
+            circle at 55% 45%,
+            rgba(214,168,79,.2),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.9),
+            rgba(3,9,20,.98)
+        );
+}
+
+.promise-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:55px 0;
+}
+
+.promise-content h2{
+    font-size:clamp(2.4rem,4vw,4.8rem);
+    letter-spacing:-.045em;
+}
+
+.promise-content p{
+    font-size:1.06rem;
+    line-height:1.9;
+}
+
+.promise-philosophy{
+    margin-top:100px;
+}
+
+.promise-philosophy .section-heading{
+    margin-bottom:65px;
+}
+
+.promise-grid{
+    grid-template-columns:repeat(4,1fr);
+}
+
+.promise-card{
+    min-height:330px;
+}
+
+.promise-icon{
+    font-size:1.6rem;
+}
+
+.promise-card h3{
+    font-size:1.3rem;
+}
+
+
+/* =========================================================
+   26 — ARS FAMILY STATEMENT
+   ========================================================= */
+
+.ars-family-statement{
+    text-align:center;
+    background:
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(214,168,79,.13),
+            transparent 45%
+        );
+}
+
+.ars-family-statement .section-label{
+    justify-content:center;
+}
+
+.ars-family-statement h2{
+    max-width:950px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.ars-family-statement p{
+    max-width:850px;
+    margin-left:auto;
+    margin-right:auto;
+    white-space:pre-line;
+}
+
+.ars-family-statement strong{
+    display:block;
+    margin-top:25px;
+    font-size:1.15rem;
+}
+
+
+/* =========================================================
+   27 — ARS SIGNATURE
+   ========================================================= */
+
+.ars-signature{
+    position:relative;
+    padding:140px 0;
+    text-align:center;
+}
+
+.signature-content{
+    max-width:1000px;
+    margin:0 auto;
+}
+
+.signature-content .section-label{
+    justify-content:center;
+}
+
+.signature-content h2{
+    margin-bottom:30px;
+    font-size:clamp(2.5rem,5vw,5.5rem);
+    line-height:1;
+    letter-spacing:-.055em;
+    background:
+        linear-gradient(
+            110deg,
+            var(--ars-white),
+            var(--ars-gold-light),
+            var(--ars-gold)
+        );
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.signature-content p{
+    max-width:800px;
+    margin:0 auto;
+    color:var(--ars-white-soft);
+    font-size:1.08rem;
+}
+
+
+/* =========================================================
+   28 — START PROJECT
+   ========================================================= */
+
+.start-project{
+    text-align:center;
+    background:
+        radial-gradient(
+            circle at 50% 20%,
+            rgba(214,168,79,.14),
+            transparent 50%
+        );
+}
+
+.start-project .section-heading{
+    margin-bottom:35px;
+}
+
+.start-project-actions{
+    display:flex;
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:16px;
+}
+
+
+/* =========================================================
+   29 — FINAL BRAND STATEMENT
+   ========================================================= */
+
+.final-brand-statement{
+    padding:120px 0 40px;
+    text-align:center;
+}
+
+.final-brand-statement h2{
+    margin-bottom:15px;
+    color:var(--ars-gold-light);
+    font-size:clamp(2.4rem,5vw,5rem);
+    letter-spacing:-.04em;
+}
+
+.final-brand-statement > p{
+    color:var(--ars-white);
+    font-size:1.15rem;
+    letter-spacing:.08em;
+}
+
+.final-brand-line{
+    width:120px;
+    height:2px;
+    margin:35px auto;
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--ars-gold),
+            transparent
+        );
+    box-shadow:0 0 25px rgba(214,168,79,.45);
+}
+
+.final-brand-statement .final-brand-note{
+    max-width:700px;
+    margin:0 auto;
+    color:var(--ars-white-soft);
+    font-size:.95rem;
+    letter-spacing:0;
+}
+
+
+/* =========================================================
+   30 — START YOUR ARS DESIGN JOURNEY
+   ========================================================= */
+
+.ars-start-journey{
+    position:relative;
+}
+
+.journey-cta{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:stretch;
+    min-height:650px;
+    padding:0;
+}
+
+.journey-cta-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:70px;
+}
+
+.journey-cta-content h2{
+    margin-bottom:28px;
+    font-size:clamp(2.3rem,4vw,4.5rem);
+    line-height:1.05;
+    letter-spacing:-.045em;
+    color:var(--ars-white);
+}
+
+.journey-cta-content p{
+    margin-bottom:22px;
+    color:var(--ars-white-soft);
+    font-size:1.04rem;
+    line-height:1.85;
+}
+
+.journey-cta-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:18px;
+}
+
+.journey-cta-image{
+    position:relative;
+    min-height:600px;
+    overflow:hidden;
+    background:
+        radial-gradient(
+            circle at 50% 45%,
+            rgba(214,168,79,.22),
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.95),
+            rgba(3,9,20,.98)
+        );
+}
+
+.journey-cta-image::after{
+    content:"ARS DESIGN";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:rgba(214,168,79,.1);
+    font-size:clamp(1.5rem,3vw,3rem);
+    font-weight:900;
+    letter-spacing:.2em;
+    white-space:nowrap;
+}
+
+.journey-final-message{
+    padding:110px 0 30px;
+    text-align:center;
+}
+
+.journey-final-message .section-label{
+    justify-content:center;
+}
+
+.journey-final-message h2{
+    max-width:1000px;
+    margin:0 auto 25px;
+    font-size:clamp(2.3rem,5vw,5rem);
+    line-height:1.05;
+    letter-spacing:-.045em;
+    background:
+        linear-gradient(
+            110deg,
+            var(--ars-white),
+            var(--ars-gold-light)
+        );
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.journey-final-message p{
+    color:var(--ars-white-soft);
+    font-size:1.05rem;
+}
+
+
+/* =========================================================
+   31 — ARS DESIGN FINAL VISION
+   ========================================================= */
+
+.ars-final-vision{
+    position:relative;
+    overflow:hidden;
+}
+
+.final-vision-panel{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    align-items:stretch;
+    padding:0;
+    min-height:680px;
+}
+
+.final-vision-image{
+    position:relative;
+    min-height:650px;
+    overflow:hidden;
+    background:
+        radial-gradient(
+            circle at 50% 40%,
+            rgba(214,168,79,.2),
+            transparent 32%
+        ),
+        linear-gradient(
+            135deg,
+            rgba(7,20,38,.95),
+            rgba(3,9,20,.99)
+        );
+}
+
+.final-vision-image::after{
+    content:"ARS DESIGN";
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    color:rgba(214,168,79,.1);
+    font-size:clamp(1.5rem,3vw,3rem);
+    font-weight:900;
+    letter-spacing:.2em;
+    white-space:nowrap;
+}
+
+.final-vision-content{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    padding:70px;
+}
+
+.final-vision-content h2{
+    margin-bottom:28px;
+    font-size:clamp(2.3rem,4vw,4.5rem);
+    line-height:1.05;
+    letter-spacing:-.045em;
+    color:var(--ars-white);
+}
+
+.final-vision-content p{
+    margin-bottom:20px;
+    color:var(--ars-white-soft);
+    font-size:1.03rem;
+    line-height:1.85;
+}
+
+.final-vision-statement{
+    max-width:1000px;
+    margin:130px auto 80px;
+    text-align:center;
+}
+
+.final-vision-statement h2{
+    font-size:clamp(2.5rem,5vw,5.5rem);
+    line-height:1;
+    letter-spacing:-.055em;
+    background:
+        linear-gradient(
+            110deg,
+            var(--ars-white),
+            var(--ars-gold-light),
+            var(--ars-gold)
+        );
+    -webkit-background-clip:text;
+    background-clip:text;
+    color:transparent;
+}
+
+.final-vision-divider{
+    width:120px;
+    height:2px;
+    margin:40px auto;
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            var(--ars-gold),
+            transparent
+        );
+    box-shadow:0 0 25px rgba(214,168,79,.45);
+}
+
+.final-vision-statement p{
+    max-width:800px;
+    margin:0 auto;
+    color:var(--ars-white-soft);
+    font-size:1.08rem;
+    line-height:1.9;
+}
+
+.final-vision-family{
+    max-width:900px;
+    margin:0 auto;
+    padding:65px;
+    text-align:center;
+}
+
+.final-vision-family .section-label{
+    justify-content:center;
+}
+
+.final-vision-family h2{
+    margin-bottom:22px;
+    font-size:clamp(2rem,4vw,4rem);
+    line-height:1.08;
+    color:var(--ars-white);
+}
+
+.final-vision-family p{
+    max-width:700px;
+    margin:0 auto 30px;
+    color:var(--ars-white-soft);
+}
+
+.final-vision-family .ars-button{
+    margin-top:10px;
+}
+
+
+/* =========================================================
+   32 — ARS DESIGN IMAGE PLACEHOLDER SYSTEM
+   ========================================================= */
+
+.future-image,
+.project-image,
+.project-gallery-item,
+.promise-image,
+.journey-cta-image,
+.final-vision-image{
+    isolation:isolate;
+}
+
+.future-image img,
+.project-image img,
+.project-gallery-item img,
+.promise-image img,
+.journey-cta-image img,
+.final-vision-image img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    z-index:1;
+    transition:
+        transform var(--transition-slow),
+        filter var(--transition-main);
+}
+
+.future-image:hover img,
+.project-image:hover img,
+.project-gallery-item:hover img,
+.promise-image:hover img,
+.journey-cta-image:hover img,
+.final-vision-image:hover img{
+    transform:scale(1.045);
+}
+
+.future-image img,
+.promise-image img,
+.journey-cta-image img,
+.final-vision-image img{
+    filter:
+        saturate(.9)
+        contrast(1.08)
+        brightness(.82);
+}
+
+
+/* =========================================================
+   33 — RESPONSIVE ARS DESIGN EXPERIENCE
+   ========================================================= */
+
+@media (max-width:1100px){
+
+    .future-layout{
+        grid-template-columns:1fr;
+        gap:45px;
+    }
+
+    .future-image{
+        min-height:520px;
+    }
+
+    .future-content{
+        max-width:850px;
+        margin:0 auto;
+        text-align:center;
+    }
+
+    .future-content .section-label{
+        justify-content:center;
+    }
+
+    .future-stage:nth-child(even),
+    .future-stage:nth-child(odd){
+        transform:none;
+    }
+
+    .future-timeline::before{
+        left:40px;
+    }
+
+    .future-stage{
+        grid-template-columns:80px 1fr;
+        padding:35px;
+    }
+
+    .project-showcase-grid{
+        grid-template-columns:1fr;
+    }
+
+    .promise-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .promise-hero{
+        grid-template-columns:1fr;
+    }
+
+    .promise-content{
+        padding:20px 0;
+        text-align:center;
+    }
+
+    .promise-content .section-label{
+        justify-content:center;
+    }
+
+    .journey-cta{
+        grid-template-columns:1fr;
+    }
+
+    .journey-cta-image{
+        min-height:500px;
+    }
+
+    .final-vision-panel{
+        grid-template-columns:1fr;
+    }
+
+    .final-vision-content{
+        padding:60px;
+        text-align:center;
+    }
+
+    .final-vision-content .section-label{
+        justify-content:center;
+    }
+
+}
+
+
+/* =========================================================
+   34 — TABLET
+   ========================================================= */
+
+@media (max-width:800px){
+
+    .future-image,
+    .promise-image{
+        min-height:430px;
+    }
+
+    .future-timeline{
+        gap:20px;
+    }
+
+    .future-timeline::before{
+        display:none;
+    }
+
+    .future-stage{
+        grid-template-columns:1fr;
+        gap:22px;
+        padding:32px;
+        text-align:center;
+    }
+
+    .stage-number{
+        margin:0 auto;
+    }
+
+    .stage-content p{
+        margin-left:auto;
+        margin-right:auto;
+    }
+
+    .project-gallery-grid{
+        grid-template-columns:repeat(2,1fr);
+        grid-auto-rows:260px;
+    }
+
+    .project-gallery-item:nth-child(1){
+        grid-row:span 1;
+    }
+
+    .project-gallery-item:nth-child(4){
+        grid-column:span 1;
+    }
+
+    .promise-grid{
+        grid-template-columns:1fr;
+    }
+
+    .journey-cta-content{
+        padding:50px 35px;
+        text-align:center;
+    }
+
+    .journey-cta-content .section-label{
+        justify-content:center;
+    }
+
+    .journey-cta-actions{
+        justify-content:center;
+    }
+
+    .final-vision-content{
+        padding:50px 35px;
+    }
+
+    .final-vision-statement{
+        margin-top:90px;
+    }
+
+    .final-vision-family{
+        padding:50px 30px;
+    }
+
+}
+
+
+/* =========================================================
+   35 — MOBILE
+   ========================================================= */
+
+@media (max-width:600px){
+
+    .future-image,
+    .promise-image{
+        min-height:350px;
+        border-radius:var(--radius-large);
+    }
+
+    .future-content h3{
+        font-size:clamp(2rem,10vw,3rem);
+    }
+
+    .future-content p{
+        font-size:.98rem;
+    }
+
+    .future-stage{
+        padding:28px 22px;
+    }
+
+    .stage-number{
+        width:70px;
+        height:70px;
+        font-size:1.1rem;
+    }
+
+    .stage-content h3{
+        font-size:1.5rem;
+    }
+
+    .showcase-project{
+        min-height:auto;
+    }
+
+    .project-image{
+        min-height:280px;
+    }
+
+    .project-content{
+        padding:30px 25px 35px;
+    }
+
+    .project-content h3{
+        font-size:1.8rem;
+    }
+
+    .project-gallery{
+        margin-top:80px;
+    }
+
+    .project-gallery-grid{
+        grid-template-columns:1fr;
+        grid-auto-rows:260px;
+    }
+
+    .project-gallery-item{
+        min-height:260px;
+    }
+
+    .ars-signature{
+        padding:90px 0;
+    }
+
+    .signature-content h2{
+        font-size:clamp(2.2rem,12vw,4rem);
+    }
+
+    .start-project-actions{
+        flex-direction:column;
+    }
+
+    .start-project-actions .ars-button{
+        width:100%;
+    }
+
+    .final-brand-statement{
+        padding-top:90px;
+    }
+
+    .final-brand-statement h2{
+        font-size:clamp(2.3rem,12vw,4rem);
+    }
+
+    .journey-cta-content{
+        padding:40px 24px;
+    }
+
+    .journey-cta-content h2{
+        font-size:clamp(2rem,10vw,3.3rem);
+    }
+
+    .journey-cta-actions{
+        flex-direction:column;
+    }
+
+    .journey-cta-actions .ars-button{
+        width:100%;
+    }
+
+    .journey-cta-image{
+        min-height:350px;
+    }
+
+    .journey-final-message{
+        padding-top:80px;
+    }
+
+    .journey-final-message h2{
+        font-size:clamp(2rem,11vw,3.5rem);
+    }
+
+    .final-vision-image{
+        min-height:350px;
+    }
+
+    .final-vision-content{
+        padding:40px 24px;
+    }
+
+    .final-vision-content h2{
+        font-size:clamp(2rem,10vw,3.3rem);
+    }
+
+    .final-vision-statement{
+        margin-top:80px;
+        margin-bottom:60px;
+    }
+
+    .final-vision-statement h2{
+        font-size:clamp(2.3rem,12vw,4rem);
+    }
+
+    .final-vision-family{
+        padding:40px 24px;
+    }
+
+    .final-vision-family h2{
+        font-size:clamp(2rem,9vw,3rem);
+    }
+
+}
+
+
+/* =========================================================
+   36 — FINAL ACCESSIBILITY & PERFORMANCE
+   ========================================================= */
+
+@media (hover:none){
+
+    .ars-glass:hover{
+        transform:none;
+    }
+
+    .ars-button:hover,
+    .btn-primary:hover,
+    .btn-secondary:hover{
+        transform:none;
+    }
+
+    .showcase-project:hover .project-image,
+    .future-image:hover img,
+    .project-image:hover img,
+    .project-gallery-item:hover img,
+    .promise-image:hover img,
+    .journey-cta-image:hover img,
+    .final-vision-image:hover img{
+        transform:none;
+    }
+
+}
+
+@media (prefers-reduced-motion:reduce){
+
+    .future-image img,
+    .project-image,
+    .project-image img,
+    .project-gallery-item img,
+    .promise-image img,
+    .journey-cta-image img,
+    .final-vision-image img{
+        transition:none;
+    }
+
+    }

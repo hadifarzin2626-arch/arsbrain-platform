@@ -3336,3 +3336,58 @@ img{
     }
 
 }
+
+/* HERO — WIDER VIEWPORT */
+.ars-13-hero{
+    min-height:100vh;
+    padding:40px 20px 70px;
+}
+
+/* WIDE STAGE */
+.ars-13-stage{
+    width:min(2600px, 98vw);
+    min-height:720px;
+}
+
+/* ULTRA WIDE GLASS CARD */
+.ars-13-glass-card{
+    width:min(2360px, 94vw);
+    height:720px;
+    min-height:720px;
+    padding:70px 100px;
+}
+
+/* MUCH LARGER ROTATING SYMBOL */
+.ars-13-symbol{
+    width:min(3150px, 270vw);
+    height:min(2200px, 190vw);
+}
+
+/* MUCH LARGER GOLDEN A */
+.ars-13-big-a{
+    font-size:clamp(
+        1000px,
+        150vw,
+        3000px
+    );
+}
+
+/* ULTRA CLEAR GLASS */
+.ars-13-glass-card{
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.10),
+            rgba(255,255,255,.035) 35%,
+            rgba(5,12,20,.025) 65%,
+            rgba(255,255,255,.045)
+        );
+
+    backdrop-filter:
+        blur(3px)
+        saturate(190%);
+
+    -webkit-backdrop-filter:
+        blur(3px)
+        saturate(190%);
+}

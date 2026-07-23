@@ -7554,15 +7554,15 @@ img{
     transition:
 
         color
-        2s
+        1s
         cubic-bezier(.16,1,.3,1),
 
         text-shadow
-        2s
+        1s
         cubic-bezier(.16,1,.3,1),
 
         transform
-        2s
+        1s
         cubic-bezier(.16,1,.3,1);
 
 }
@@ -7614,11 +7614,11 @@ img{
     transition:
 
         transform
-        2.1s
+        1s
         cubic-bezier(.16,1,.3,1),
 
         opacity
-        2.1s
+        1.1s
         cubic-bezier(.16,1,.3,1);
 
 }
@@ -7732,99 +7732,6 @@ img{
     }
 
 }
-
-/* ========================================================= */
-/* 15 — ARS CARD TITLES — DOUBLE CURRENT SIZE                */
-/* ========================================================= */
-/* 13 CARDS: 2X CURRENT SIZE                                 */
-/* ARS HERITAGE GROUP: 2X CURRENT SIZE                       */
-/* ONLY TITLE SIZE IS CHANGED                                */
-/* ========================================================= */
-
-
-/* ========================================================= */
-/* 01 — ALL 13 CARDS                                         */
-/* ========================================================= */
-
-.ars-glass-card:not(:has(
-    .ars-card-link[href="ars-heritage-group.html"]
-))
-.ars-card-content h3{
-
-    font-size:
-        325%;
-
-}
-
-
-/* ========================================================= */
-/* 02 — ARS HERITAGE GROUP                                   */
-/* ========================================================= */
-
-.ars-glass-card:has(
-    .ars-card-link[href="ars-heritage-group.html"]
-)
-.ars-card-content h3{
-
-    font-size:
-        375%;
-
-}
-
-/* ========================================================= */
-/* ARS CARD GOLDEN TITLES — +25% FONT WEIGHT                 */
-/* ========================================================= */
-/* SIZE: UNCHANGED                                           */
-/* COLOR: UNCHANGED                                          */
-/* POSITION: UNCHANGED                                       */
-/* ONLY FONT THICKNESS INCREASED                             */
-/* ========================================================= */
-
-.ars-card-title-veil span{
-
-    font-weight:
-        1450;
-
-
-
-}
-
-/* ========================================================= */
-/* EXPERIMENTAL — CENTER ORBIT SYSTEM IN HERO                */
-/* ========================================================= */
-/* ONLY POSITION CHANGES                                    */
-/* NO SIZE CHANGE                                            */
-/* NO ORBIT ROTATION CHANGE                                  */
-/* NO ORBIT ANIMATION CHANGE                                 */
-/* ========================================================= */
-
-.ars-orbit{
-
-    position:
-        relative;
-
-    left:
-        -55%;
-
-}
-
-
-
-/* ========================================================= */
-/* 16 — CARD GOLDEN HORIZONTAL BAR — DOUBLE HEIGHT          */
-/* ========================================================= */
-/* ONLY THE SHORT GOLDEN BAR                                */
-/* APPLIES TO ALL ARS GLASS CARDS                            */
-/* HEIGHT ONLY — EVERYTHING ELSE REMAINS UNCHANGED           */
-/* ========================================================= */
-
-.ars-glass-card .ars-card-image::after{
-
-    height:
-       140%;
-
-}
-
 
 
 /* ========================================================= */

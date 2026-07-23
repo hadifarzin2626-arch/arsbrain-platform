@@ -1,329 +1,314 @@
 /* ========================================================= */
-/* ARS — THE 13 A'S                                          */
-/* PREMIUM PHILOSOPHY EXPERIENCE                             */
 /* ========================================================= */
-/* FULL REPLACEMENT CSS                                      */
-/* Designed for the supplied HTML structure                  */
+/*                                                           */
+/* ARS — THE 13 A'S PHILOSOPHY                               */
+/* MASTER CSS — CLEAN FULL PAGE                              */
+/*                                                           */
+/* PAGE STANDARD:                                            */
+/* 100% WIDTH                                                */
+/* 100vh HERO                                                 */
+/* NO 250VH                                                   */
+/* NO 250% WIDTH                                              */
+/* NO HORIZONTAL OVERFLOW                                     */
+/* EVERYTHING SCALED INSIDE THE HERO                          */
+/*                                                           */
 /* ========================================================= */
-
-
 /* ========================================================= */
-/* 01 — ROOT                                                 */
-/* ========================================================= */
-
-:root{
-
-    --ars-black:
-        #010203;
-
-    --ars-black-deep:
-        #000000;
-
-    --ars-navy:
-        #071522;
-
-    --ars-navy-deep:
-        #020a12;
-
-    --ars-gold:
-        #d6ad63;
-
-    --ars-gold-light:
-        #f3d58d;
-
-    --ars-gold-bright:
-        #ffe9ae;
-
-    --ars-bronze:
-        #a87935;
-
-    --ars-white:
-        #f7f3ea;
-
-    --ars-red:
-        #7b1717;
-
-    --ars-blue:
-        #102f59;
-
-    --ars-green:
-        #183c2b;
-
-    --ars-yellow:
-        #d6a62e;
-
-    --ars-brown:
-        #4b301c;
-
-    --ars-ease:
-        cubic-bezier(.16,1,.3,1);
-
-}
 
 
 /* ========================================================= */
-/* 02 — GLOBAL RESET                                         */
+/* 01 — RESET                                                 */
 /* ========================================================= */
 
 *{
 
-    box-sizing:
-        border-box;
+    margin:0;
 
-    margin:
-        0;
+    padding:0;
 
-    padding:
-        0;
+    box-sizing:border-box;
 
 }
 
 
 html{
 
-    width:
-        100%;
+    width:100%;
 
-    min-height:
-        100%;
+    min-height:100%;
 
-    scroll-behavior:
-        smooth;
+    overflow-x:hidden;
 
-    background:
-        #000;
+    scroll-behavior:smooth;
 
 }
 
 
 body{
 
-    width:
-        100%;
+    width:100%;
 
-    min-height:
-        100vh;
+    min-height:100%;
 
-    overflow-x:
-        hidden;
+    overflow-x:hidden;
 
-    background:
+    background:#020305;
 
-        radial-gradient(
-            ellipse at 50% 15%,
-            rgba(184,137,63,.055),
-            transparent 42%
-        ),
-
-        linear-gradient(
-            180deg,
-            #000000,
-            #02070c 45%,
-            #000000
-        );
-
-    color:
-        var(--ars-white);
+    color:#f4f0e7;
 
     font-family:
-        Georgia,
-        "Times New Roman",
-        serif;
+
+        Inter,
+        Arial,
+        sans-serif;
 
 }
 
 
 /* ========================================================= */
-/* 03 — MAIN PAGE                                            */
+/* 02 — ROOT PAGE                                             */
 /* ========================================================= */
 
 .ars-13-philosophy-page{
 
-    position:
-        relative;
+    position:relative;
 
-    width:
-        100%;
+    width:100%;
 
-    min-height:
-        250vh;
+    max-width:100%;
 
-    overflow:
-        hidden;
+    min-width:0;
+
+    overflow:hidden;
 
     background:
 
         linear-gradient(
             180deg,
-            #000000 0%,
-            #02070d 28%,
-            #050d16 55%,
-            #010202 100%
+
+            #010203
+            0%,
+
+            #050b12
+            50%,
+
+            #010203
+            100%
         );
 
 }
 
 
 /* ========================================================= */
-/* 04 — HERO                                                 */
+/* 03 — HERO                                                  */
 /* ========================================================= */
 
 .ars-13-hero{
 
-    position:
-        relative;
+    position:relative;
 
-    width:
-        100%;
+    width:100%;
 
-    min-height:
-        250vh;
+    min-height:100vh;
+
+    height:100vh;
 
     padding:
-        7vh 3vw 8vh;
 
-    display:
-        flex;
+        40px
+        30px
+        35px;
 
-    flex-direction:
-        column;
+    display:flex;
 
-    align-items:
-        center;
+    flex-direction:column;
 
-    justify-content:
-        center;
+    align-items:center;
 
-    overflow:
-        hidden;
+    justify-content:center;
 
-    isolation:
-        isolate;
+    overflow:hidden;
+
+    isolation:isolate;
 
     background:
 
         radial-gradient(
-            ellipse at 50% 38%,
-            rgba(184,137,63,.16),
+            ellipse at 50% 10%,
+
+            rgba(255,225,150,.16),
+
             transparent 32%
         ),
 
         radial-gradient(
             ellipse at 10% 50%,
-            rgba(16,47,89,.12),
+
+            rgba(184,137,63,.10),
+
             transparent 35%
         ),
 
         radial-gradient(
             ellipse at 90% 50%,
-            rgba(123,23,23,.08),
+
+            rgba(184,137,63,.10),
+
             transparent 35%
         ),
 
         linear-gradient(
             180deg,
-            #000000 0%,
-            #02070d 45%,
-            #000000 100%
+
+            #010203
+            0%,
+
+            #07111b
+            50%,
+
+            #010203
+            100%
         );
 
 }
 
 
 /* ========================================================= */
-/* 05 — HERO GOLDEN ATMOSPHERE                               */
+/* 04 — GOLDEN LIGHTS                                         */
 /* ========================================================= */
 
-.ars-13-hero::before{
+.ars-13-light{
 
-    content:
-        "";
+    position:absolute;
 
-    position:
-        absolute;
+    pointer-events:none;
 
-    inset:
-        -20%;
+    z-index:-2;
 
-    z-index:
-        -10;
+    border-radius:50%;
 
-    pointer-events:
-        none;
+    filter:blur(90px);
+
+    mix-blend-mode:screen;
+
+}
+
+
+.ars-13-light-left{
+
+    width:520px;
+
+    height:520px;
+
+    left:-280px;
+
+    top:30%;
 
     background:
 
         radial-gradient(
-            ellipse at 50% 42%,
-            rgba(255,215,135,.12),
-            transparent 28%
-        ),
+            circle,
 
-        radial-gradient(
-            ellipse at 15% 45%,
-            rgba(16,47,89,.08),
-            transparent 30%
-        ),
+            rgba(240,202,122,.35),
 
-        radial-gradient(
-            ellipse at 85% 50%,
-            rgba(123,23,23,.07),
-            transparent 30%
+            transparent 70%
         );
-
-    filter:
-        blur(70px);
-
-    animation:
-        arsHeroAtmosphere
-        14s
-        ease-in-out
-        infinite alternate;
 
 }
 
 
-@keyframes arsHeroAtmosphere{
+.ars-13-light-right{
 
-    0%{
+    width:520px;
 
-        transform:
-            scale(1)
-            translate3d(-2%,0,0);
+    height:520px;
 
-    }
+    right:-280px;
 
-    100%{
+    top:30%;
 
-        transform:
-            scale(1.12)
-            translate3d(2%,-1%,0);
+    background:
 
-    }
+        radial-gradient(
+            circle,
+
+            rgba(240,202,122,.32),
+
+            transparent 70%
+        );
+
+}
+
+
+.ars-13-light-top{
+
+    width:850px;
+
+    height:350px;
+
+    left:50%;
+
+    top:-200px;
+
+    transform:
+
+        translateX(-50%);
+
+    background:
+
+        radial-gradient(
+            ellipse,
+
+            rgba(255,240,189,.30),
+
+            transparent 72%
+        );
+
+}
+
+
+.ars-13-light-bottom{
+
+    width:650px;
+
+    height:250px;
+
+    left:50%;
+
+    bottom:-160px;
+
+    transform:
+
+        translateX(-50%);
+
+    background:
+
+        radial-gradient(
+            ellipse,
+
+            rgba(184,137,63,.24),
+
+            transparent 70%
+        );
 
 }
 
 
 /* ========================================================= */
-/* 06 — INTRO                                                */
+/* 05 — INTRO                                                 */
 /* ========================================================= */
 
 .ars-13-intro{
 
-    position:
-        relative;
+    position:relative;
 
-    z-index:
-        100;
+    z-index:30;
 
-    width:
-        100%;
+    flex-shrink:0;
 
-    margin-bottom:
-        4vh;
+    text-align:center;
 
-    text-align:
-        center;
+    margin-bottom:20px;
 
 }
 
@@ -331,2441 +316,201 @@ body{
 .ars-13-brand-link{
 
     color:
-        var(--ars-gold-light);
+
+        #e8c77f;
+
+    text-decoration:none;
 
     font-size:
-        clamp(
-            14px,
-            1vw,
-            24px
-        );
 
-    font-weight:
-        600;
+        .72rem;
+
+    font-weight:600;
 
     letter-spacing:
-        .45em;
 
-    text-transform:
-        uppercase;
+        .34em;
 
-    text-decoration:
-        none;
-
-    text-shadow:
-        0 0 25px rgba(255,215,135,.25);
+    text-transform:uppercase;
 
 }
 
 
 .ars-13-intro-line{
 
-    margin-top:
-        1.5rem;
+    margin-top:10px;
 
     color:
-        rgba(247,243,234,.45);
+
+        rgba(244,240,231,.45);
 
     font-size:
-        clamp(
-            12px,
-            .8vw,
-            18px
-        );
+
+        .62rem;
 
     letter-spacing:
-        .5em;
+
+        .28em;
 
 }
 
 
 /* ========================================================= */
-/* 07 — STAGE                                                */
+/* 06 — STAGE                                                 */
 /* ========================================================= */
 
 .ars-13-stage{
 
-    position:
-        relative;
+    position:relative;
 
     width:
-        94vw;
 
-    max-width:
-        none;
-
-    min-width:
-        0;
+        min(1280px,94vw);
 
     height:
-        150vh;
+
+        min(720px,72vh);
 
     min-height:
-        1100px;
 
-    display:
-        flex;
+        520px;
 
-    align-items:
-        center;
+    display:flex;
 
-    justify-content:
-        center;
+    align-items:center;
+
+    justify-content:center;
 
     perspective:
-        2500px;
 
-    transform-style:
-        preserve-3d;
+        1800px;
 
-}
-
-
-/* ========================================================= */
-/* 08 — GOLDEN AURA BEHIND GLASS                             */
-/* ========================================================= */
-
-.ars-13-stage::before{
-
-    content:
-        "";
-
-    position:
-        absolute;
-
-    left:
-        50%;
-
-    top:
-        50%;
-
-    width:
-        82%;
-
-    height:
-        70%;
-
-    transform:
-        translate(
-            -50%,
-            -50%
-        );
-
-    z-index:
-        -8;
-
-    pointer-events:
-        none;
-
-    background:
-
-        radial-gradient(
-            ellipse,
-            rgba(255,215,135,.22),
-            rgba(184,137,63,.12) 30%,
-            transparent 70%
-        );
-
-    filter:
-        blur(80px);
-
-    animation:
-        arsGoldenAura
-        8s
-        ease-in-out
-        infinite alternate;
-
-}
-
-
-@keyframes arsGoldenAura{
-
-    from{
-
-        opacity:
-            .55;
-
-        transform:
-            translate(-50%,-50%)
-            scale(.92);
-
-    }
-
-    to{
-
-        opacity:
-            1;
-
-        transform:
-            translate(-50%,-50%)
-            scale(1.08);
-
-    }
+    flex-shrink:1;
 
 }
 
 
 /* ========================================================= */
-/* 09 — ROTATING SYMBOL SYSTEM                               */
+/* 07 — ROTATING SYMBOL                                       */
 /* ========================================================= */
 
 .ars-13-symbol{
 
-    position:
-        absolute;
+    position:absolute;
 
-    left:
-        50%;
+    left:50%;
 
-    top:
-        50%;
+    top:50%;
 
     width:
-        82%;
 
-    height:
-        82%;
+        min(850px,65vw);
+
+    aspect-ratio:1;
 
     transform:
+
         translate(-50%,-50%);
 
-    z-index:
-        1;
+    z-index:1;
 
-    pointer-events:
-        none;
+    pointer-events:none;
 
-    transform-style:
-        preserve-3d;
-
-    perspective:
-        2200px;
+    transform-style:preserve-3d;
 
 }
 
 
 /* ========================================================= */
-/* 10 — BIG A                                                */
+/* 08 — BIG A                                                 */
 /* ========================================================= */
 
 .ars-13-big-a{
 
-    position:
-        absolute;
+    position:absolute;
 
-    left:
-        50%;
+    left:50%;
 
-    top:
-        50%;
-
-    width:
-        62%;
-
-    height:
-        78%;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
+    top:50%;
 
     transform:
+
         translate(-50%,-50%);
 
-    z-index:
-        1;
+    z-index:2;
 
     font-family:
+
         Georgia,
         "Times New Roman",
         serif;
 
     font-size:
+
         clamp(
-            600px,
-            55vw,
-            1100px
+            360px,
+            48vw,
+            760px
         );
 
-    line-height:
-        .7;
+    line-height:.72;
 
-    font-weight:
-        700;
+    font-weight:700;
 
     color:
-        rgba(214,173,99,.38);
+
+        rgba(230,188,103,.32);
 
     text-shadow:
 
         0
         0
-        20px
-        rgba(255,215,135,.55),
+        25px
+        rgba(240,202,122,.22),
 
         0
         0
-        70px
-        rgba(184,137,63,.42),
-
-        0
-        0
-        160px
-        rgba(184,137,63,.25);
-
-    transform-style:
-        preserve-3d;
-
-    animation:
-        arsAFloat
-        8s
-        ease-in-out
-        infinite alternate;
-
-}
-
-
-@keyframes arsAFloat{
-
-    0%{
-
-        transform:
-            translate(-50%,-50%)
-            rotateY(-8deg)
-            rotateX(2deg);
-
-    }
-
-    100%{
-
-        transform:
-            translate(-50%,-50%)
-            rotateY(8deg)
-            rotateX(-2deg);
-
-    }
+        100px
+        rgba(184,137,63,.22);
 
 }
 
 
 /* ========================================================= */
-/* 11 — OUTER RING                                           */
+/* 09 — RINGS                                                 */
 /* ========================================================= */
 
 .ars-13-ring{
 
-    position:
-        absolute;
+    position:absolute;
 
-    left:
-        50%;
+    left:50%;
 
-    top:
-        50%;
+    top:50%;
 
     border:
+
         2px
         solid
-        rgba(243,213,141,.72);
+        rgba(240,202,122,.75);
 
-    border-radius:
-        50%;
+    border-radius:50%;
+
+    transform-style:preserve-3d;
+
+    transform-origin:center;
 
     box-shadow:
 
         0
         0
-        15px
-        rgba(255,215,135,.45),
+        18px
+        rgba(240,202,122,.15),
 
         0
         0
         45px
-        rgba(184,137,63,.25),
-
-        inset
-        0
-        0
-        18px
-        rgba(255,215,135,.12);
-
-    transform-style:
-        preserve-3d;
-
-}
-
-
-/* ========================================================= */
-/* 12 — OUTER ORBIT                                         */
-/* ========================================================= */
-
-.ars-13-ring-outer{
-
-    width:
-        96%;
-
-    height:
-        58%;
-
-    transform:
-        translate(-50%,-50%)
-        rotateX(66deg)
-        rotateZ(18deg);
-
-    animation:
-        arsOuterOrbit
-        18s
-        linear
-        infinite;
-
-}
-
-
-@keyframes arsOuterOrbit{
-
-    from{
-
-        transform:
-            translate(-50%,-50%)
-            rotateX(66deg)
-            rotateZ(18deg)
-            rotateY(0deg);
-
-    }
-
-    to{
-
-        transform:
-            translate(-50%,-50%)
-            rotateX(66deg)
-            rotateZ(18deg)
-            rotateY(360deg);
-
-    }
-
-}
-
-
-/* ========================================================= */
-/* 13 — MIDDLE ORBIT                                        */
-/* ========================================================= */
-
-.ars-13-ring-middle{
-
-    width:
-        82%;
-
-    height:
-        52%;
-
-    transform:
-        translate(-50%,-50%)
-        rotateX(68deg)
-        rotateZ(-24deg);
-
-    border-color:
-        rgba(214,173,99,.62);
-
-    animation:
-        arsMiddleOrbit
-        13s
-        linear
-        infinite
-        reverse;
-
-}
-
-
-@keyframes arsMiddleOrbit{
-
-    from{
-
-        transform:
-            translate(-50%,-50%)
-            rotateX(68deg)
-            rotateZ(-24deg)
-            rotateY(0deg);
-
-    }
-
-    to{
-
-        transform:
-            translate(-50%,-50%)
-            rotateX(68deg)
-            rotateZ(-24deg)
-            rotateY(360deg);
-
-    }
-
-}
-
-
-/* ========================================================= */
-/* 14 — INNER ORBIT                                         */
-/* ========================================================= */
-
-.ars-13-ring-inner{
-
-    width:
-        70%;
-
-    height:
-        42%;
-
-    transform:
-        translate(-50%,-50%)
-        rotateX(72deg)
-        rotateZ(42deg);
-
-    border-color:
-        rgba(255,233,174,.52);
-
-    animation:
-        arsInnerOrbit
-        10s
-        linear
-        infinite;
-
-}
-
-
-@keyframes arsInnerOrbit{
-
-    from{
-
-        transform:
-            translate(-50%,-50%)
-            rotateX(72deg)
-            rotateZ(42deg)
-            rotateY(0deg);
-
-    }
-
-    to{
-
-        transform:
-            translate(-50%,-50%)
-            rotateX(72deg)
-            rotateZ(42deg)
-            rotateY(360deg);
-
-    }
-
-}
-
-
-/* ========================================================= */
-/* 15 — ORBIT LIGHT DOTS                                     */
-/* ========================================================= */
-
-.ars-13-ring span{
-
-    position:
-        absolute;
-
-    width:
-        14px;
-
-    height:
-        14px;
-
-    top:
-        50%;
-
-    left:
-        0;
-
-    border-radius:
-        50%;
-
-    background:
-        var(--ars-gold-bright);
-
-    box-shadow:
-
-        0
-        0
-        15px
-        rgba(255,233,174,.9),
-
-        0
-        0
-        40px
-        rgba(255,215,135,.6);
-
-}
-
-
-/* ========================================================= */
-/* 16 — MAIN GLASS CARD                                     */
-/* ========================================================= */
-
-.ars-13-glass-card{
-
-    position:
-        relative;
-
-    width:
-        70%;
-
-    max-width:
-        none;
-
-    min-width:
-        0;
-
-    height:
-        62%;
-
-    min-height:
-        680px;
-
-    z-index:
-        20;
-
-    display:
-        block;
-
-    overflow:
-        hidden;
-
-    border:
-        2px
-        solid
-        rgba(255,232,180,.55);
-
-    border-radius:
-        34px;
-
-    background:
-
-        linear-gradient(
-            135deg,
-
-            rgba(255,255,255,.12)
-            0%,
-
-            rgba(10,24,47,.20)
-            20%,
-
-            rgba(4,12,22,.16)
-            48%,
-
-            rgba(184,137,63,.12)
-            75%,
-
-            rgba(255,215,135,.08)
-            100%
-        );
-
-    backdrop-filter:
-        blur(18px)
-        saturate(135%);
-
-    -webkit-backdrop-filter:
-        blur(18px)
-        saturate(135%);
-
-    box-shadow:
-
-        0
-        35px
-        80px
-        rgba(0,0,0,.72),
-
-        0
-        0
-        35px
-        rgba(255,215,135,.38),
-
-        0
-        0
-        110px
-        rgba(184,137,63,.26),
-
-        inset
-        0
-        1px
-        0
-        rgba(255,255,255,.55),
-
-        inset
-        0
-        -35px
-        80px
-        rgba(184,137,63,.12);
-
-    transform:
-        translateZ(120px);
-
-    transform-style:
-        preserve-3d;
-
-}
-
-
-/* ========================================================= */
-/* 17 — GLASS BACK                                          */
-/* ========================================================= */
-
-.ars-13-glass-back{
-
-    position:
-        absolute;
-
-    inset:
-        12px;
-
-    z-index:
-        0;
-
-    border:
-        1px
-        solid
-        rgba(255,255,255,.18);
-
-    border-radius:
-        26px;
-
-    background:
-
-        linear-gradient(
-            120deg,
-
-            rgba(255,255,255,.07),
-
-            rgba(4,15,27,.08)
-            45%,
-
-            rgba(230,188,103,.07)
-        );
-
-    box-shadow:
-
-        inset
-        0
-        0
-        35px
-        rgba(255,255,255,.035);
-
-}
-
-
-/* ========================================================= */
-/* 18 — GLASS DEPTH                                         */
-/* ========================================================= */
-
-.ars-13-glass-depth{
-
-    position:
-        absolute;
-
-    inset:
-        -20px;
-
-    z-index:
-        -1;
-
-    border-radius:
-        45px;
-
-    border:
-        8px
-        solid
-        rgba(214,173,99,.10);
-
-    filter:
-        blur(5px);
-
-    transform:
-        translateZ(-45px);
-
-    box-shadow:
-
-        0
-        25px
-        80px
-        rgba(0,0,0,.75),
-
-        0
-        0
-        90px
-        rgba(184,137,63,.25);
-
-}
-
-
-/* ========================================================= */
-/* 19 — GLASS EDGE                                          */
-/* ========================================================= */
-
-.ars-13-glass-edge{
-
-    position:
-        absolute;
-
-    inset:
-        0;
-
-    z-index:
-        10;
-
-    pointer-events:
-        none;
-
-    border-radius:
-        inherit;
-
-    border:
-        1px
-        solid
-        rgba(255,245,210,.65);
-
-    box-shadow:
-
-        inset
-        0
-        0
-        0
-        2px
-        rgba(255,215,135,.12);
-
-}
-
-
-/* ========================================================= */
-/* 20 — GLASS REFLECTION                                    */
-/* ========================================================= */
-
-.ars-13-glass-reflection{
-
-    position:
-        absolute;
-
-    top:
-        -30%;
-
-    left:
-        -20%;
-
-    width:
-        55%;
-
-    height:
-        180%;
-
-    z-index:
-        12;
-
-    pointer-events:
-        none;
-
-    background:
-
-        linear-gradient(
-            110deg,
-
-            transparent 30%,
-
-            rgba(255,255,255,.025) 42%,
-
-            rgba(255,255,255,.22) 48%,
-
-            rgba(255,230,170,.18) 51%,
-
-            rgba(255,255,255,.025) 56%,
-
-            transparent 68%
-        );
-
-    transform:
-        rotate(12deg);
-
-    animation:
-        arsGlassReflection
-        12s
-        ease-in-out
-        infinite;
-
-}
-
-
-@keyframes arsGlassReflection{
-
-    0%{
-
-        transform:
-            translateX(-25%)
-            rotate(12deg);
-
-        opacity:
-            .25;
-
-    }
-
-    50%{
-
-        opacity:
-            .8;
-
-    }
-
-    100%{
-
-        transform:
-            translateX(210%)
-            rotate(12deg);
-
-        opacity:
-            .25;
-
-    }
-
-}
-
-
-/* ========================================================= */
-/* 21 — CARD CONTENT                                        */
-/* ========================================================= */
-
-.ars-13-card-content{
-
-    position:
-        relative;
-
-    z-index:
-        20;
-
-    width:
-        100%;
-
-    height:
-        100%;
-
-    padding:
-        7% 5% 5%;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    transform:
-        translateZ(80px);
-
-}
-
-
-/* ========================================================= */
-/* 22 — EYEBROW                                             */
-/* ========================================================= */
-
-.ars-13-card-eyebrow{
-
-    margin-bottom:
-        2rem;
-
-    color:
-        rgba(243,213,141,.72);
-
-    font-size:
-        clamp(
-            12px,
-            .8vw,
-            20px
-        );
-
-    letter-spacing:
-        .5em;
-
-    text-transform:
-        uppercase;
-
-}
-
-
-/* ========================================================= */
-/* 23 — TITLE                                               */
-/* ========================================================= */
-
-.ars-13-card-title{
-
-    display:
-        flex;
-
-    gap:
-        1.2rem;
-
-    color:
-        rgba(255,239,190,.82);
-
-    font-size:
-        clamp(
-            54px,
-            5vw,
-            110px
-        );
-
-    font-weight:
-        600;
-
-    letter-spacing:
-        .12em;
-
-    text-transform:
-        uppercase;
-
-    text-shadow:
-
-        0
-        0
-        2px
-        rgba(255,255,255,.3),
-
-        0
-        0
-        20px
-        rgba(255,215,135,.32);
-
-}
-
-
-/* ========================================================= */
-/* 24 — SUBTITLE                                            */
-/* ========================================================= */
-
-.ars-13-card-subtitle{
-
-    margin-top:
-        1rem;
-
-    color:
-        rgba(247,243,234,.65);
-
-    font-size:
-        clamp(
-            18px,
-            1.2vw,
-            30px
-        );
-
-    letter-spacing:
-        .22em;
-
-}
-
-
-/* ========================================================= */
-/* 25 — VISION                                              */
-/* ========================================================= */
-
-.ars-13-card-vision{
-
-    margin-top:
-        1rem;
-
-    color:
-        rgba(243,213,141,.70);
-
-    font-size:
-        clamp(
-            13px,
-            .8vw,
-            20px
-        );
-
-    letter-spacing:
-        .25em;
-
-}
-
-
-/* ========================================================= */
-/* 26 — 13 PILLARS                                          */
-/* ========================================================= */
-
-.ars-13-pillars{
-
-    width:
-        100%;
-
-    margin-top:
-        5%;
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(13, minmax(0,1fr));
-
-    align-items:
-        stretch;
-
-    border-top:
-        1px
-        solid
-        rgba(243,213,141,.25);
-
-    border-bottom:
-        1px
-        solid
-        rgba(243,213,141,.18);
-
-}
-
-
-/* ========================================================= */
-/* 27 — PILLAR                                              */
-/* ========================================================= */
-
-.ars-13-pillar{
-
-    position:
-        relative;
-
-    min-width:
-        0;
-
-    min-height:
-        270px;
-
-    padding:
-        24px
-        12px;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    align-items:
-        center;
-
-    justify-content:
-        flex-start;
-
-    text-align:
-        center;
-
-    border-right:
-        1px
-        solid
-        rgba(243,213,141,.18);
-
-}
-
-
-.ars-13-pillar:last-child{
-
-    border-right:
-        none;
-
-}
-
-
-/* ========================================================= */
-/* 28 — PILLAR NUMBER                                       */
-/* ========================================================= */
-
-.ars-13-pillar span{
-
-    color:
-        rgba(255,233,174,.82);
-
-    font-family:
-        Georgia,
-        serif;
-
-    font-size:
-        clamp(
-            16px,
-            1.1vw,
-            28px
-        );
-
-    letter-spacing:
-        .08em;
-
-    text-shadow:
-        0 0 15px rgba(255,215,135,.30);
-
-}
-
-
-/* ========================================================= */
-/* 29 — PILLAR GOLD LINE                                    */
-/* ========================================================= */
-
-.ars-13-pillar span::after{
-
-    content:
-        "";
-
-    display:
-        block;
-
-    width:
-        28px;
-
-    height:
-        1px;
-
-    margin:
-        10px
-        auto;
-
-    background:
-        rgba(255,215,135,.65);
-
-    box-shadow:
-        0 0 10px rgba(255,215,135,.45);
-
-}
-
-
-/* ========================================================= */
-/* 30 — PILLAR WORD                                         */
-/* ========================================================= */
-
-.ars-13-pillar strong{
-
-    color:
-        rgba(255,235,180,.84);
-
-    font-family:
-        Arial,
-        sans-serif;
-
-    font-size:
-        clamp(
-            10px,
-            .65vw,
-            17px
-        );
-
-    font-weight:
-        500;
-
-    letter-spacing:
-        .12em;
-
-    line-height:
-        1.4;
-
-    text-transform:
-        uppercase;
-
-    text-shadow:
-
-        0
-        0
-        8px
-        rgba(255,215,135,.18);
-
-}
-
-
-/* ========================================================= */
-/* 31 — PILLAR LASER ENGRAVING EFFECT                        */
-/* ========================================================= */
-
-.ars-13-pillar strong{
-
-    opacity:
-        .88;
-
-    filter:
-        drop-shadow(
-            0
-            0
-            5px
-            rgba(255,215,135,.12)
-        );
-
-}
-
-
-/* ========================================================= */
-/* 32 — SIGNATURE                                           */
-/* ========================================================= */
-
-.ars-13-signature{
-
-    margin-top:
-        4%;
-
-    color:
-        rgba(214,173,99,.50);
-
-    font-size:
-        clamp(
-            20px,
-            1.8vw,
-            40px
-        );
-
-    letter-spacing:
-        .4em;
-
-}
-
-
-/* ========================================================= */
-/* 33 — HERO FOOTER                                         */
-/* ========================================================= */
-
-.ars-13-hero-footer{
-
-    position:
-        relative;
-
-    z-index:
-        100;
-
-    margin-top:
-        5vh;
-
-    display:
-        flex;
-
-    gap:
-        4rem;
-
-    color:
-        rgba(243,213,141,.55);
-
-    font-size:
-        clamp(
-            11px,
-            .7vw,
-            18px
-        );
-
-    letter-spacing:
-        .3em;
-
-}
-
-
-/* ========================================================= */
-/* 34 — LOWER SECTIONS                                      */
-/* ========================================================= */
-
-.ars-13-section{
-
-    position:
-        relative;
-
-    padding:
-        14vh
-        5vw;
-
-    background:
-
-        linear-gradient(
-            180deg,
-            #02070d,
-            #071522
-        );
-
-}
-
-
-.ars-13-section-dark{
-
-    background:
-
-        linear-gradient(
-            180deg,
-            #000000,
-            #02070d
-        );
-
-}
-
-
-/* ========================================================= */
-/* 35 — CONTAINER                                           */
-/* ========================================================= */
-
-.ars-13-container{
-
-    width:
-        92%;
-
-    max-width:
-        2400px;
-
-    margin:
-        0 auto;
-
-}
-
-
-/* ========================================================= */
-/* 36 — SECTION HEADING                                     */
-/* ========================================================= */
-
-.ars-13-section-heading{
-
-    max-width:
-        1200px;
-
-    margin:
-        0 auto 6rem;
-
-    text-align:
-        center;
-
-}
-
-
-.ars-13-section-heading span{
-
-    color:
-        var(--ars-gold-light);
-
-    font-size:
-        clamp(
-            12px,
-            .8vw,
-            20px
-        );
-
-    letter-spacing:
-        .45em;
-
-}
-
-
-.ars-13-section-heading h2{
-
-    margin-top:
-        1.5rem;
-
-    color:
-        var(--ars-white);
-
-    font-size:
-        clamp(
-            42px,
-            4vw,
-            90px
-        );
-
-    font-weight:
-        500;
-
-}
-
-
-/* ========================================================= */
-/* 37 — PREMIUM GLASS PANELS                                */
-/* ========================================================= */
-
-.ars-13-glass-panel{
-
-    position:
-        relative;
-
-    overflow:
-        hidden;
-
-    border:
-        1px
-        solid
-        rgba(243,213,141,.28);
-
-    border-radius:
-        28px;
-
-    background:
-
-        linear-gradient(
-            135deg,
-
-            rgba(8,27,48,.55)
-            0%,
-
-            rgba(10,30,50,.42)
-            45%,
-
-            rgba(184,137,63,.28)
-            100%
-        );
-
-    backdrop-filter:
-        blur(22px)
-        saturate(135%);
-
-    -webkit-backdrop-filter:
-        blur(22px)
-        saturate(135%);
-
-    box-shadow:
-
-        0
-        25px
-        80px
-        rgba(0,0,0,.45),
-
-        0
-        0
-        55px
-        rgba(184,137,63,.10),
-
-        inset
-        0
-        1px
-        0
-        rgba(255,255,255,.16);
-
-}
-
-
-/* ========================================================= */
-/* 38 — MANIFESTO                                           */
-/* ========================================================= */
-
-.ars-13-manifesto{
-
-    max-width:
-        1500px;
-
-    margin:
-        0 auto;
-
-    padding:
-        6rem;
-
-}
-
-
-.ars-13-manifesto p,
-.ars-13-spiritual p,
-.ars-13-brain p{
-
-    color:
-        rgba(247,243,234,.72);
-
-    font-size:
-        clamp(
-            18px,
-            1.1vw,
-            28px
-        );
-
-    line-height:
-        2;
-
-}
-
-
-/* ========================================================= */
-/* 39 — THREE GRID                                          */
-/* ========================================================= */
-
-.ars-13-three-grid{
-
-    display:
-        grid;
-
-    grid-template-columns:
-        repeat(3,minmax(0,1fr));
-
-    gap:
-        3rem;
-
-}
-
-
-.ars-13-three-grid
-.ars-13-glass-panel{
-
-    padding:
-        4rem;
-
-}
-
-
-.ars-13-three-grid h3{
-
-    color:
-        var(--ars-gold-light);
-
-    font-size:
-        clamp(
-            24px,
-            1.6vw,
-            40px
-        );
-
-    margin-bottom:
-        2rem;
-
-}
-
-
-/* ========================================================= */
-/* 40 — SPIRITUAL                                          */
-/* ========================================================= */
-
-.ars-13-spiritual{
-
-    padding:
-        6rem;
-
-    text-align:
-        center;
-
-}
-
-
-.ars-13-label{
-
-    color:
-        var(--ars-gold-light);
-
-    letter-spacing:
-        .4em;
-
-}
-
-
-.ars-13-spiritual h2{
-
-    margin:
-        2rem 0;
-
-    font-size:
-        clamp(
-            42px,
-            4vw,
-            90px
-        );
-
-}
-
-
-.ars-13-spiritual-emphasis{
-
-    margin-top:
-        4rem;
-
-    padding:
-        3rem;
-
-    border:
-        1px
-        solid
-        rgba(243,213,141,.28);
-
-    background:
-        rgba(184,137,63,.12);
-
-}
-
-
-.ars-13-spiritual-emphasis strong{
-
-    display:
-        block;
-
-    color:
-        var(--ars-gold-bright);
-
-    font-size:
-        clamp(
-            28px,
-            2vw,
-            50px
-        );
-
-}
-
-
-.ars-13-spiritual-emphasis span{
-
-    display:
-        block;
-
-    margin-top:
-        1rem;
-
-    color:
-        rgba(247,243,234,.65);
-
-}
-
-
-/* ========================================================= */
-/* 41 — BRAIN                                               */
-/* ========================================================= */
-
-.ars-13-brain{
-
-    max-width:
-        1600px;
-
-    margin:
-        auto;
-
-    padding:
-        6rem;
-
-    text-align:
-        center;
-
-}
-
-
-.ars-13-brain h3{
-
-    color:
-        var(--ars-gold-light);
-
-    font-size:
-        clamp(
-            34px,
-            3vw,
-            70px
-        );
-
-    margin-bottom:
-        3rem;
-
-}
-
-
-/* ========================================================= */
-/* 42 — BLOCKQUOTES                                         */
-/* ========================================================= */
-
-blockquote{
-
-    margin-top:
-        3rem;
-
-    color:
-        var(--ars-gold-bright);
-
-    font-size:
-        clamp(
-            24px,
-            2vw,
-            50px
-        );
-
-    line-height:
-        1.6;
-
-    text-shadow:
-        0 0 25px rgba(255,215,135,.18);
-
-}
-
-
-/* ========================================================= */
-/* 43 — FINAL                                                */
-/* ========================================================= */
-
-.ars-13-final{
-
-    position:
-        relative;
-
-    min-height:
-        100vh;
-
-    display:
-        flex;
-
-    align-items:
-        center;
-
-    justify-content:
-        center;
-
-    padding:
-        10vh
-        5vw;
-
-    text-align:
-        center;
-
-    background:
-
-        radial-gradient(
-            ellipse at 50% 50%,
-            rgba(184,137,63,.14),
-            transparent 50%
-        ),
-
-        #000;
-
-}
-
-
-.ars-13-final-content{
-
-    max-width:
-        1400px;
-
-}
-
-
-.ars-13-final-content > span{
-
-    color:
-        var(--ars-gold-light);
-
-    letter-spacing:
-        .4em;
-
-}
-
-
-.ars-13-final h2{
-
-    margin:
-        2rem 0;
-
-    font-size:
-        clamp(
-            54px,
-            6vw,
-            130px
-        );
-
-    font-weight:
-        500;
-
-}
-
-
-.ars-13-final p{
-
-    color:
-        rgba(247,243,234,.65);
-
-    font-size:
-        clamp(
-            18px,
-            1.2vw,
-            30px
-        );
-
-    line-height:
-        2;
-
-}
-
-
-.ars-13-final-motto{
-
-    margin-top:
-        4rem;
-
-    display:
-        flex;
-
-    flex-direction:
-        column;
-
-    gap:
-        1rem;
-
-    color:
-        var(--ars-gold-light);
-
-    font-size:
-        clamp(
-            16px,
-            1vw,
-            25px
-        );
-
-    letter-spacing:
-        .2em;
-
-}
-
-
-/* ========================================================= */
-/* 44 — FOOTER                                              */
-/* ========================================================= */
-
-.ars-13-footer{
-
-    padding:
-        8rem 5vw;
-
-    text-align:
-        center;
-
-    background:
-        #000;
-
-    border-top:
-        1px
-        solid
-        rgba(184,137,63,.18);
-
-}
-
-
-.ars-13-footer h2{
-
-    color:
-        var(--ars-gold-light);
-
-    font-size:
-        clamp(
-            30px,
-            2.5vw,
-            60px
-        );
-
-}
-
-
-.ars-13-footer p{
-
-    margin:
-        1.5rem 0;
-
-    color:
-        rgba(247,243,234,.55);
-
-}
-
-
-.ars-13-footer span{
-
-    color:
-        rgba(247,243,234,.32);
-
-}
-
-
-/* ========================================================= */
-/* 45 — TABLET                                              */
-/* ========================================================= */
-
-@media (max-width:1200px){
-
-    .ars-13-hero{
-
-        min-height:
-            200vh;
-
-    }
-
-
-    .ars-13-stage{
-
-        height:
-            125vh;
-
-    }
-
-
-    .ars-13-glass-card{
-
-        width:
-            84%;
-
-        height:
-            65%;
-
-    }
-
-
-    .ars-13-pillars{
-
-        grid-template-columns:
-            repeat(7,minmax(0,1fr));
-
-    }
-
-
-    .ars-13-pillar:nth-child(7){
-
-        border-right:
-            none;
-
-    }
-
-
-    .ars-13-pillar{
-
-        border-bottom:
-            1px
-            solid
-            rgba(243,213,141,.16);
-
-    }
-
-
-    .ars-13-three-grid{
-
-        grid-template-columns:
-            1fr;
-
-    }
-
-}
-
-
-/* ========================================================= */
-/* 46 — MOBILE                                              */
-/* ========================================================= */
-
-@media (max-width:768px){
-
-    .ars-13-philosophy-page{
-
-        min-height:
-            100vh;
-
-    }
-
-
-    .ars-13-hero{
-
-        min-height:
-            100vh;
-
-        padding:
-            80px
-            15px;
-
-    }
-
-
-    .ars-13-stage{
-
-        width:
-            100%;
-
-        height:
-            auto;
-
-        min-height:
-            850px;
-
-    }
-
-
-    .ars-13-symbol{
-
-        width:
-            110%;
-
-        height:
-            80%;
-
-    }
-
-
-    .ars-13-big-a{
-
-        font-size:
-            480px;
-
-    }
-
-
-    .ars-13-glass-card{
-
-        width:
-            94%;
-
-        height:
-            auto;
-
-        min-height:
-            700px;
-
-        border-radius:
-            24px;
-
-    }
-
-
-    .ars-13-card-content{
-
-        padding:
-            50px
-            20px;
-
-    }
-
-
-    .ars-13-card-title{
-
-        flex-direction:
-            column;
-
-        gap:
-            .2rem;
-
-        text-align:
-            center;
-
-    }
-
-
-    .ars-13-pillars{
-
-        grid-template-columns:
-            repeat(2,minmax(0,1fr));
-
-        max-height:
-            430px;
-
-        overflow-y:
-            auto;
-
-    }
-
-
-    .ars-13-pillar{
-
-        min-height:
-            140px;
-
-        border-right:
-            1px
-            solid
-            rgba(243,213,141,.18);
-
-    }
-
-
-    .ars-13-hero-footer{
-
-        flex-direction:
-            column;
-
-        gap:
-            1rem;
-
-        text-align:
-            center;
-
-    }
-
-
-    .ars-13-section{
-
-        padding:
-            90px
-            20px;
-
-    }
-
-
-    .ars-13-manifesto,
-    .ars-13-spiritual,
-    .ars-13-brain{
-
-        padding:
-            35px
-            25px;
-
-    }
-
-}
-
-
-/* ========================================================= */
-/* 47 — REDUCED MOTION                                      */
-/* ========================================================= */
-
-@media (prefers-reduced-motion:reduce){
-
-    .ars-13-ring,
-    .ars-13-big-a,
-    .ars-13-glass-reflection,
-    .ars-13-hero::before,
-    .ars-13-stage::before{
-
-        animation:
-            none !important;
-
-    }
-
-    }
-
-
-
-/* ========================================================= */
-/* ========================================================= */
-/*                                                         */
-/* ARS 13 PHILOSOPHY — TRUE 2.5X PAGE SCALE                */
-/*                                                         */
-/* هدف:                                                     */
-/* 1. خود صفحه 2.5 برابر فضای معمول سایت شود                */
-/* 2. Hero واقعاً 2.5 برابر شود                             */
-/* 3. Stage فضای کامل و بزرگ دریافت کند                     */
-/* 4. کارت شیشه‌ای داخل Hero در مرکز قرار بگیرد             */
-/* 5. عناصر داخل کارت نسبت به فضای جدید تنظیم شوند          */
-/*                                                         */
-/* این بخش را آخر CSS قرار بده                              */
-/* ========================================================= */
-/* ========================================================= */
-
-
-/* ========================================================= */
-/* 01 — ROOT PAGE                                            */
-/* ========================================================= */
-
-.ars-13-philosophy-page{
-
-    width:100%;
-
-    min-width:0;
-
-    overflow:hidden;
-
-}
-
-
-/* ========================================================= */
-/* 02 — TRUE 2.5X HERO HEIGHT                                 */
-/* ========================================================= */
-
-.ars-13-hero{
-
-    position:relative;
-
-    width:100%;
-
-    min-height:250vh;
-
-    height:auto;
-
-    overflow:hidden;
-
-}
-
-
-/* ========================================================= */
-/* 03 — HERO INTRO POSITION                                   */
-/* ========================================================= */
-
-.ars-13-intro{
-
-    position:relative;
-
-    z-index:20;
-
-    padding-top:10vh;
-
-}
-
-
-/* ========================================================= */
-/* 04 — MAIN STAGE                                            */
-/* ========================================================= */
-
-.ars-13-stage{
-
-    position:relative;
-
-    width:100%;
-
-    min-height:170vh;
-
-    height:auto;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    padding:
-
-        12vh
-        5vw
-        15vh;
-
-    box-sizing:border-box;
-
-}
-
-
-/* ========================================================= */
-/* 05 — LARGE GLASS CARD                                     */
-/*                                                         */
-/* کارت تقریباً 70% عرض Hero                                  */
-/* و در مرکز Stage قرار می‌گیرد                               */
-/* ========================================================= */
-
-.ars-13-glass-card{
-
-    position:relative;
-
-    z-index:10;
-
-    width:70%;
-
-    max-width:none;
-
-    min-width:0;
-
-    height:auto;
-
-    min-height:650px;
-
-    margin:0 auto;
-
-    box-sizing:border-box;
-
-}
-
-
-/* ========================================================= */
-/* 06 — FORCE CARD CONTENT TO USE NEW SPACE                  */
-/* ========================================================= */
-
-.ars-13-card-content{
-
-    position:relative;
-
-    width:100%;
-
-    height:100%;
-
-    min-height:650px;
-
-    box-sizing:border-box;
-
-    padding:
-
-        70px
-        60px
-        65px;
-
-}
-
-
-/* ========================================================= */
-/* 07 — BIG A BACKGROUND                                     */
-/* ========================================================= */
-
-.ars-13-symbol{
-
-    position:absolute;
-
-    z-index:2;
-
-    width:65%;
-
-    aspect-ratio:1/1;
-
-    max-width:none;
-
-    max-height:none;
-
-    left:50%;
-
-    top:50%;
-
-    transform:
-
-        translate(-50%,-50%);
-
-}
-
-
-/* ========================================================= */
-/* 08 — A                                                   */
-/* ========================================================= */
-
-.ars-13-big-a{
-
-    position:absolute;
-
-    inset:0;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    font-size:
-
-        clamp(350px,35vw,850px);
-
-    line-height:1;
-
-    color:
-
-        rgba(245,205,115,.92);
-
-    text-shadow:
-
-        0
-        0
-        20px
-        rgba(255,215,130,.35),
-
-        0
-        0
-        60px
-        rgba(210,160,70,.30),
-
-        0
-        0
-        120px
-        rgba(210,160,70,.18);
-
-    z-index:3;
-
-}
-
-
-/* ========================================================= */
-/* 09 — RINGS                                                */
-/* ========================================================= */
-
-.ars-13-ring{
-
-    position:absolute;
-
-    left:50%;
-
-    top:50%;
-
-    border:
-
-        2px
-        solid
-        rgba(240,202,115,.72);
-
-    border-radius:50%;
-
-    transform-origin:center center;
-
-    pointer-events:none;
+        rgba(184,137,63,.08);
 
 }
 
@@ -2778,15 +523,10 @@ blockquote{
 
     height:42%;
 
-    transform:
-
-        translate(-50%,-50%)
-        rotate(-12deg);
-
     animation:
 
-        ars13OuterOrbit
-        28s
+        ars13OuterRing
+        24s
         linear
         infinite;
 
@@ -2797,19 +537,14 @@ blockquote{
 
 .ars-13-ring-middle{
 
-    width:88%;
+    width:82%;
 
-    height:36%;
-
-    transform:
-
-        translate(-50%,-50%)
-        rotate(28deg);
+    height:34%;
 
     animation:
 
-        ars13MiddleOrbit
-        21s
+        ars13MiddleRing
+        18s
         linear
         infinite;
 
@@ -2820,19 +555,14 @@ blockquote{
 
 .ars-13-ring-inner{
 
-    width:72%;
+    width:64%;
 
-    height:30%;
-
-    transform:
-
-        translate(-50%,-50%)
-        rotate(-45deg);
+    height:27%;
 
     animation:
 
-        ars13InnerOrbit
-        15s
+        ars13InnerRing
+        13s
         linear
         infinite;
 
@@ -2840,19 +570,17 @@ blockquote{
 
 
 /* ========================================================= */
-/* 10 — RING ANIMATIONS                                      */
-/*                                                         */
-/* چرخش دائمی و ثابت                                         */
+/* 10 — RING ROTATION                                        */
 /* ========================================================= */
 
-@keyframes ars13OuterOrbit{
+@keyframes ars13OuterRing{
 
     from{
 
         transform:
 
             translate(-50%,-50%)
-            rotate(-12deg);
+            rotate(0deg);
 
     }
 
@@ -2861,21 +589,21 @@ blockquote{
         transform:
 
             translate(-50%,-50%)
-            rotate(348deg);
+            rotate(360deg);
 
     }
 
 }
 
 
-@keyframes ars13MiddleOrbit{
+@keyframes ars13MiddleRing{
 
     from{
 
         transform:
 
             translate(-50%,-50%)
-            rotate(28deg);
+            rotate(360deg);
 
     }
 
@@ -2884,21 +612,21 @@ blockquote{
         transform:
 
             translate(-50%,-50%)
-            rotate(388deg);
+            rotate(0deg);
 
     }
 
 }
 
 
-@keyframes ars13InnerOrbit{
+@keyframes ars13InnerRing{
 
     from{
 
         transform:
 
             translate(-50%,-50%)
-            rotate(-45deg);
+            rotate(0deg);
 
     }
 
@@ -2907,7 +635,7 @@ blockquote{
         transform:
 
             translate(-50%,-50%)
-            rotate(315deg);
+            rotate(360deg);
 
     }
 
@@ -2915,36 +643,36 @@ blockquote{
 
 
 /* ========================================================= */
-/* 11 — CARD GLASS                                           */
+/* 11 — MAIN GLASS CARD                                      */
 /* ========================================================= */
 
 .ars-13-glass-card{
 
-    background:
+    position:relative;
 
-        linear-gradient(
-            135deg,
+    z-index:10;
 
-            rgba(255,255,255,.12),
+    width:
 
-            rgba(255,255,255,.035)
-            35%,
+        min(900px,70%);
 
-            rgba(184,137,63,.08)
-            70%,
+    height:
 
-            rgba(255,255,255,.07)
-        );
+        min(620px,82%);
 
-    backdrop-filter:
+    min-height:
 
-        blur(24px)
-        saturate(160%);
+        0;
 
-    -webkit-backdrop-filter:
+    max-width:
 
-        blur(24px)
-        saturate(160%);
+        none;
+
+    margin:0;
+
+    overflow:hidden;
+
+    isolation:isolate;
 
     border:
 
@@ -2956,51 +684,332 @@ blockquote{
 
         34px;
 
+    background:
+
+        linear-gradient(
+            135deg,
+
+            rgba(255,255,255,.14),
+
+            rgba(255,255,255,.035)
+            35%,
+
+            rgba(8,24,42,.20)
+            65%,
+
+            rgba(184,137,63,.08)
+        );
+
+    backdrop-filter:
+
+        blur(22px)
+        saturate(160%);
+
+    -webkit-backdrop-filter:
+
+        blur(22px)
+        saturate(160%);
+
     box-shadow:
 
         0
         30px
         80px
-        rgba(0,0,0,.60),
+        rgba(0,0,0,.65),
 
         0
         0
-        70px
-        rgba(218,174,94,.22),
+        80px
+        rgba(218,174,94,.20),
 
         inset
         0
         1px
         0
-        rgba(255,255,255,.35),
+        rgba(255,255,255,.38),
 
         inset
         0
         0
-        80px
+        70px
         rgba(255,215,130,.035);
+
+    transform-style:
+
+        preserve-3d;
 
 }
 
 
 /* ========================================================= */
-/* 12 — GLASS CONTENT LAYER                                  */
+/* 12 — GLASS DEPTH                                          */
+/* ========================================================= */
+
+.ars-13-glass-back,
+.ars-13-glass-depth,
+.ars-13-glass-edge,
+.ars-13-glass-reflection{
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+}
+
+
+.ars-13-glass-back{
+
+    z-index:1;
+
+    background:
+
+        linear-gradient(
+            180deg,
+
+            rgba(8,29,50,.18),
+
+            rgba(184,137,63,.10)
+        );
+
+}
+
+
+.ars-13-glass-depth{
+
+    z-index:2;
+
+    box-shadow:
+
+        inset
+        0
+        -80px
+        120px
+        rgba(184,137,63,.12);
+
+}
+
+
+.ars-13-glass-edge{
+
+    z-index:3;
+
+    border:
+
+        1px
+        solid
+        rgba(255,225,150,.22);
+
+}
+
+
+.ars-13-glass-reflection{
+
+    z-index:4;
+
+    background:
+
+        linear-gradient(
+            120deg,
+
+            transparent 25%,
+
+            rgba(255,255,255,.04) 40%,
+
+            rgba(255,255,255,.18) 48%,
+
+            rgba(255,220,150,.12) 51%,
+
+            rgba(255,255,255,.03) 56%,
+
+            transparent 72%
+        );
+
+    opacity:.65;
+
+    animation:
+
+        ars13GlassReflection
+        8s
+        ease-in-out
+        infinite alternate;
+
+}
+
+
+@keyframes ars13GlassReflection{
+
+    from{
+
+        transform:
+
+            translateX(-12%);
+
+    }
+
+    to{
+
+        transform:
+
+            translateX(12%);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 13 — CARD CONTENT                                         */
 /* ========================================================= */
 
 .ars-13-card-content{
 
     position:relative;
 
-    z-index:20;
+    z-index:10;
+
+    width:100%;
+
+    height:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:
+
+        45px
+        50px;
+
+    text-align:center;
 
 }
 
 
 /* ========================================================= */
-/* 13 — PILLARS                                              */
+/* 14 — CARD TEXT                                             */
+/* ========================================================= */
+
+.ars-13-card-eyebrow{
+
+    color:
+
+        rgba(245,211,145,.85);
+
+    font-size:
+
+        .68rem;
+
+    letter-spacing:
+
+        .28em;
+
+}
+
+
+.ars-13-card-title{
+
+    display:flex;
+
+    gap:
+
+        18px;
+
+    margin:
+
+        16px
+        0
+        8px;
+
+    color:
+
+        rgba(255,225,155,.92);
+
+    font-family:
+
+        Georgia,
+        serif;
+
+    font-size:
+
+        clamp(
+            60px,
+            7vw,
+            110px
+        );
+
+    line-height:
+
+        .9;
+
+    letter-spacing:
+
+        .08em;
+
+    text-shadow:
+
+        0
+        0
+        15px
+        rgba(255,215,130,.25);
+
+}
+
+
+.ars-13-card-subtitle{
+
+    color:
+
+        rgba(255,255,255,.72);
+
+    font-size:
+
+        1rem;
+
+    letter-spacing:
+
+        .20em;
+
+}
+
+
+.ars-13-card-vision{
+
+    margin-top:
+
+        10px;
+
+    color:
+
+        rgba(240,202,122,.72);
+
+    font-size:
+
+        .75rem;
+
+    letter-spacing:
+
+        .15em;
+
+}
+
+
+/* ========================================================= */
+/* 15 — 13 PILLARS                                           */
 /* ========================================================= */
 
 .ars-13-pillars{
+
+    width:100%;
+
+    margin-top:
+
+        35px;
 
     display:grid;
 
@@ -3010,16 +1019,10 @@ blockquote{
 
     gap:
 
-        10px;
-
-    width:100%;
+        8px;
 
 }
 
-
-/* ========================================================= */
-/* 14 — PILLAR GLASS                                         */
-/* ========================================================= */
 
 .ars-13-pillar{
 
@@ -3027,24 +1030,24 @@ blockquote{
 
     padding:
 
-        20px
-        8px;
-
-    background:
-
-        linear-gradient(
-            180deg,
-
-            rgba(8,30,52,.42),
-
-            rgba(184,137,63,.18)
-        );
+        14px
+        5px;
 
     border:
 
         1px
         solid
         rgba(245,211,145,.18);
+
+    background:
+
+        linear-gradient(
+            180deg,
+
+            rgba(8,29,50,.40),
+
+            rgba(184,137,63,.18)
+        );
 
     box-shadow:
 
@@ -3056,31 +1059,325 @@ blockquote{
 
         0
         10px
-        30px
+        25px
         rgba(0,0,0,.25);
 
 }
 
 
-/* ========================================================= */
-/* 15 — 2.5X PAGE LOWER SECTIONS                              */
-/* ========================================================= */
+.ars-13-pillar span{
 
-.ars-13-section{
+    display:block;
 
-    min-height:250vh;
+    color:
 
-    padding:
+        rgba(240,202,122,.55);
 
-        18vh
-        0;
+    font-size:
+
+        .58rem;
 
 }
 
 
+.ars-13-pillar strong{
+
+    display:block;
+
+    margin-top:
+
+        7px;
+
+    color:
+
+        rgba(255,225,155,.78);
+
+    font-size:
+
+        .52rem;
+
+    line-height:
+
+        1.25;
+
+    letter-spacing:
+
+        .05em;
+
+}
+
+
+/* ========================================================= */
+/* 16 — SIGNATURE                                             */
+/* ========================================================= */
+
+.ars-13-signature{
+
+    margin-top:
+
+        25px;
+
+    color:
+
+        rgba(240,202,122,.72);
+
+    font-family:
+
+        Georgia,
+        serif;
+
+    font-size:
+
+        1.5rem;
+
+    letter-spacing:
+
+        .35em;
+
+}
+
+
+/* ========================================================= */
+/* 17 — HERO FOOTER                                          */
+/* ========================================================= */
+
+.ars-13-hero-footer{
+
+    position:relative;
+
+    z-index:20;
+
+    display:flex;
+
+    gap:
+
+        30px;
+
+    margin-top:
+
+        20px;
+
+    color:
+
+        rgba(245,211,145,.50);
+
+    font-size:
+
+        .58rem;
+
+    letter-spacing:
+
+        .18em;
+
+}
+
+
+/* ========================================================= */
+/* 18 — NORMAL PAGE SECTIONS                                  */
+/* ========================================================= */
+
+.ars-13-section{
+
+    position:relative;
+
+    width:100%;
+
+    padding:
+
+        120px
+        0;
+
+    background:
+
+        linear-gradient(
+            180deg,
+
+            #020305,
+
+            #071019
+        );
+
+}
+
+
+.ars-13-section-dark{
+
+    background:
+
+        linear-gradient(
+            180deg,
+
+            #050a10,
+
+            #010203
+        );
+
+}
+
+
+.ars-13-container{
+
+    width:
+
+        min(1200px,90%);
+
+    margin:
+
+        0
+        auto;
+
+}
+
+
+/* ========================================================= */
+/* 19 — SECTION HEADING                                      */
+/* ========================================================= */
+
+.ars-13-section-heading{
+
+    margin-bottom:
+
+        60px;
+
+}
+
+
+.ars-13-section-heading span{
+
+    color:
+
+        #d9b66f;
+
+    font-size:
+
+        .65rem;
+
+    letter-spacing:
+
+        .30em;
+
+}
+
+
+.ars-13-section-heading h2{
+
+    max-width:
+
+        850px;
+
+    margin-top:
+
+        18px;
+
+    font-family:
+
+        Georgia,
+        serif;
+
+    font-size:
+
+        clamp(
+            42px,
+            5vw,
+            78px
+        );
+
+    line-height:
+
+        1.05;
+
+}
+
+
+/* ========================================================= */
+/* 20 — GLASS PANELS                                         */
+/* ========================================================= */
+
+.ars-13-glass-panel{
+
+    position:relative;
+
+    padding:
+
+        60px;
+
+    border:
+
+        1px
+        solid
+        rgba(245,211,145,.18);
+
+    border-radius:
+
+        28px;
+
+    background:
+
+        linear-gradient(
+            145deg,
+
+            rgba(8,29,50,.55),
+
+            rgba(8,29,50,.30)
+            50%,
+
+            rgba(184,137,63,.18)
+        );
+
+    backdrop-filter:
+
+        blur(20px)
+        saturate(145%);
+
+    -webkit-backdrop-filter:
+
+        blur(20px)
+        saturate(145%);
+
+    box-shadow:
+
+        0
+        25px
+        70px
+        rgba(0,0,0,.40),
+
+        inset
+        0
+        1px
+        0
+        rgba(255,255,255,.16);
+
+}
+
+
+/* ========================================================= */
+/* 21 — THREE GRID                                           */
+/* ========================================================= */
+
+.ars-13-three-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,minmax(0,1fr));
+
+    gap:
+
+        30px;
+
+}
+
+
+/* ========================================================= */
+/* 22 — FINAL                                                 */
+/* ========================================================= */
+
 .ars-13-final{
 
-    min-height:250vh;
+    min-height:
+
+        80vh;
 
     display:flex;
 
@@ -3088,88 +1385,101 @@ blockquote{
 
     justify-content:center;
 
-}
+    text-align:center;
 
+    padding:
 
-/* ========================================================= */
-/* 16 — LOWER CARDS                                           */
-/* ========================================================= */
-
-.ars-13-glass-panel{
+        120px
+        30px;
 
     background:
 
-        linear-gradient(
-            145deg,
+        radial-gradient(
+            ellipse at center,
 
-            rgba(8,30,52,.50)
-            0%,
+            rgba(184,137,63,.16),
 
-            rgba(8,30,52,.35)
-            48%,
+            transparent 55%
+        ),
 
-            rgba(184,137,63,.22)
-            100%
-        );
+        #010203;
 
-    backdrop-filter:
+}
 
-        blur(22px)
-        saturate(150%);
 
-    -webkit-backdrop-filter:
+.ars-13-final-content{
 
-        blur(22px)
-        saturate(150%);
+    width:
 
-    border:
+        min(900px,90%);
 
-        1px
-        solid
-        rgba(245,211,145,.22);
+}
 
-    box-shadow:
 
-        0
+.ars-13-final h2{
+
+    margin:
+
         25px
-        70px
-        rgba(0,0,0,.45),
+        0;
 
-        0
-        0
-        50px
-        rgba(184,137,63,.12),
+    font-family:
 
-        inset
-        0
-        1px
-        0
-        rgba(255,255,255,.18);
+        Georgia,
+        serif;
+
+    font-size:
+
+        clamp(
+            50px,
+            7vw,
+            100px
+        );
 
 }
 
 
 /* ========================================================= */
-/* 17 — TABLET                                               */
+/* 23 — FOOTER                                               */
+/* ========================================================= */
+
+.ars-13-footer{
+
+    padding:
+
+        70px
+        30px;
+
+    text-align:center;
+
+    background:#010203;
+
+    border-top:
+
+        1px
+        solid
+        rgba(245,211,145,.10);
+
+}
+
+
+/* ========================================================= */
+/* 24 — TABLET                                               */
 /* ========================================================= */
 
 @media (max-width:1100px){
 
-    .ars-13-hero{
-
-        min-height:220vh;
-
-    }
-
     .ars-13-stage{
 
-        min-height:150vh;
+        width:94vw;
+
+        height:70vh;
 
     }
 
     .ars-13-glass-card{
 
-        width:82%;
+        width:78%;
 
     }
 
@@ -3181,63 +1491,81 @@ blockquote{
 
     }
 
+    .ars-13-three-grid{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
 }
 
 
 /* ========================================================= */
-/* 18 — MOBILE                                               */
+/* 25 — MOBILE                                               */
 /* ========================================================= */
 
 @media (max-width:768px){
 
     .ars-13-hero{
 
-        min-height:180vh;
+        height:auto;
+
+        min-height:100vh;
+
+        padding:
+
+            35px
+            15px
+            30px;
 
     }
 
     .ars-13-stage{
 
-        min-height:130vh;
+        width:100%;
 
-        padding:
+        height:auto;
 
-            8vh
-            5vw
-            12vh;
-
-    }
-
-    .ars-13-glass-card{
-
-        width:92%;
-
-        min-height:900px;
-
-    }
-
-    .ars-13-card-content{
-
-        min-height:900px;
-
-        padding:
-
-            45px
-            25px;
+        min-height:720px;
 
     }
 
     .ars-13-symbol{
 
-        width:90%;
+        width:90vw;
 
     }
 
-    .ars-13-big-a{
+    .ars-13-glass-card{
+
+        width:94%;
+
+        height:auto;
+
+        min-height:650px;
+
+    }
+
+    .ars-13-card-content{
+
+        padding:
+
+            35px
+            20px;
+
+    }
+
+    .ars-13-card-title{
 
         font-size:
 
-            clamp(220px,60vw,500px);
+            clamp(
+                48px,
+                14vw,
+                80px
+            );
 
     }
 
@@ -3249,14 +1577,13 @@ blockquote{
 
     }
 
-    .ars-13-section{
+    .ars-13-hero-footer{
 
-        min-height:auto;
+        flex-direction:column;
 
-        padding:
+        text-align:center;
 
-            100px
-            0;
+        gap:8px;
 
     }
 
@@ -3264,14 +1591,20 @@ blockquote{
 
 
 /* ========================================================= */
-/* 19 — SMALL MOBILE                                         */
+/* 26 — SMALL MOBILE                                         */
 /* ========================================================= */
 
 @media (max-width:520px){
 
+    .ars-13-stage{
+
+        min-height:680px;
+
+    }
+
     .ars-13-glass-card{
 
-        width:94%;
+        width:96%;
 
     }
 
@@ -3283,4 +1616,35 @@ blockquote{
 
     }
 
+    .ars-13-glass-panel{
+
+        padding:
+
+            35px
+            25px;
+
+    }
+
 }
+
+
+/* ========================================================= */
+/* 27 — REDUCED MOTION                                       */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    html{
+
+        scroll-behavior:auto;
+
+    }
+
+    .ars-13-ring,
+    .ars-13-glass-reflection{
+
+        animation:none;
+
+    }
+
+        }

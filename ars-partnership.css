@@ -1361,7 +1361,4122 @@ button:focus-visible{
     }
 
 }
+/* =========================================================
+   ARS PARTNERSHIP
+   PREMIUM EXECUTIVE DESIGN SYSTEM
+   SECTION 01 — GLOBAL FOUNDATION + HERO
+   ========================================================= */
 
+
+/* =========================================================
+   PARTNERSHIP PAGE FOUNDATION
+   ========================================================= */
+
+.partnership-hero,
+.partnership-center,
+.why-partner,
+.global-partners,
+.executive-program,
+.partnership-opportunities,
+.investment-reasons,
+.executive-center,
+.global-trust,
+.partnership-footer-cta{
+
+    position:relative;
+    isolation:isolate;
+    overflow:hidden;
+
+}
+
+
+/* =========================================================
+   PARTNERSHIP HERO
+   ========================================================= */
+
+.partnership-hero{
+
+    min-height:100vh;
+
+    display:flex;
+    align-items:center;
+
+    padding:
+        140px
+        0
+        120px;
+
+    background:
+
+        radial-gradient(
+            circle at 72% 45%,
+            rgba(184,137,63,.20),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 15% 25%,
+            rgba(20,38,70,.28),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            180deg,
+            #000 0%,
+            #020408 55%,
+            #000 100%
+        );
+
+}
+
+
+/* =========================================================
+   HERO BACKGROUND IMAGE
+   ========================================================= */
+
+.partnership-background{
+
+    position:absolute;
+    inset:0;
+
+    z-index:-3;
+
+    background-image:
+        url("images/partnership/hero-partnership.png");
+
+    background-size:cover;
+    background-position:center;
+
+    opacity:.18;
+
+    filter:
+        saturate(.75)
+        contrast(1.15);
+
+    transform:scale(1.04);
+
+}
+
+
+/* =========================================================
+   HERO DARK CINEMATIC OVERLAY
+   ========================================================= */
+
+.partnership-overlay{
+
+    position:absolute;
+    inset:0;
+
+    z-index:-2;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.98) 0%,
+            rgba(0,0,0,.88) 42%,
+            rgba(0,0,0,.52) 72%,
+            rgba(0,0,0,.82) 100%
+        ),
+
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.25),
+            rgba(0,0,0,.88)
+        );
+
+}
+
+
+/* =========================================================
+   HERO CONTAINER
+   ========================================================= */
+
+.partnership-hero .container{
+
+    width:min(
+        1440px,
+        calc(100% - 80px)
+    );
+
+    margin:auto;
+
+}
+
+
+/* =========================================================
+   HERO WRAPPER
+   ========================================================= */
+
+.partnership-wrapper{
+
+    min-height:720px;
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(0,1.05fr)
+        minmax(420px,.95fr);
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+
+/* =========================================================
+   HERO CONTENT
+   ========================================================= */
+
+.partnership-content{
+
+    max-width:760px;
+
+    position:relative;
+
+    z-index:2;
+
+}
+
+
+/* =========================================================
+   SECTION LABEL
+   ========================================================= */
+
+.partnership-hero .section-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:14px;
+
+    margin-bottom:26px;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    color:#c89a52;
+
+}
+
+
+.partnership-hero .section-label::before{
+
+    content:"";
+
+    width:42px;
+    height:1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c89a52
+        );
+
+}
+
+
+/* =========================================================
+   HERO TITLE
+   ========================================================= */
+
+.partnership-content h1{
+
+    margin:0 0 30px;
+
+    max-width:780px;
+
+    font-size:
+        clamp(
+            52px,
+            6vw,
+            92px
+        );
+
+    line-height:1.02;
+
+    font-weight:700;
+
+    letter-spacing:-2.5px;
+
+    color:#fff;
+
+    text-wrap:balance;
+
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+   ========================================================= */
+
+.partnership-content p{
+
+    max-width:700px;
+
+    margin:0 0 38px;
+
+    font-size:17px;
+
+    line-height:1.9;
+
+    letter-spacing:.2px;
+
+    color:
+        rgba(
+            255,
+            255,
+            255,
+            .70
+        );
+
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+   ========================================================= */
+
+.hero-buttons{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+
+.hero-buttons a{
+
+    min-height:54px;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:
+        0
+        30px;
+
+    border-radius:2px;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        background .35s ease,
+        border-color .35s ease;
+
+}
+
+
+/* =========================================================
+   PRIMARY BUTTON
+   ========================================================= */
+
+.hero-buttons .btn-primary{
+
+    color:#080808;
+
+    background:
+        linear-gradient(
+            135deg,
+            #e3bf7c,
+            #a97735
+        );
+
+    box-shadow:
+        0 12px 35px
+        rgba(184,137,63,.18);
+
+}
+
+
+.hero-buttons .btn-primary:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 18px 45px
+        rgba(184,137,63,.32);
+
+}
+
+
+/* =========================================================
+   SECONDARY BUTTON
+   ========================================================= */
+
+.hero-buttons .btn-secondary{
+
+    color:#fff;
+
+    border:
+        1px solid
+        rgba(255,255,255,.20);
+
+    background:
+        rgba(255,255,255,.035);
+
+    backdrop-filter:
+        blur(12px);
+
+}
+
+
+.hero-buttons .btn-secondary:hover{
+
+    transform:translateY(-3px);
+
+    border-color:
+        rgba(200,154,82,.65);
+
+    background:
+        rgba(200,154,82,.08);
+
+}
+
+
+/* =========================================================
+   HERO VISUAL
+   ========================================================= */
+
+.hero-visual{
+
+    position:relative;
+
+    min-height:560px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.10);
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.07),
+            rgba(255,255,255,.015)
+        );
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.08),
+
+        0 35px 100px
+        rgba(0,0,0,.55);
+
+    backdrop-filter:
+       
+/* =========================================================
+   ARS INVESTMENT OPPORTUNITY
+   PREMIUM EXECUTIVE INVESTMENT EXPERIENCE
+   ========================================================= */
+
+.ars-investment-opportunity{
+
+    position:relative;
+
+    padding:150px 0 170px;
+
+    overflow:hidden;
+
+    background:
+
+    radial-gradient(
+        circle at 15% 15%,
+        rgba(196,150,70,.10),
+        transparent 28%
+    ),
+
+    radial-gradient(
+        circle at 85% 20%,
+        rgba(255,255,255,.035),
+        transparent 30%
+    ),
+
+    linear-gradient(
+        180deg,
+        #080808 0%,
+        #0c0c0c 48%,
+        #080808 100%
+    );
+
+    isolation:isolate;
+}
+
+
+/* =========================================================
+   GLOBAL AMBIENT LIGHT
+   ========================================================= */
+
+.ars-investment-opportunity::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:700px;
+    height:700px;
+
+    top:-300px;
+    left:-300px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(210,165,78,.09),
+        transparent 68%
+    );
+
+    filter:blur(30px);
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+
+
+.ars-investment-opportunity::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:600px;
+    height:600px;
+
+    right:-250px;
+    bottom:-250px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(255,255,255,.035),
+        transparent 70%
+    );
+
+    filter:blur(40px);
+
+    pointer-events:none;
+
+    z-index:-1;
+}
+
+
+/* =========================================================
+   INVESTMENT HERO
+   ========================================================= */
+
+.investment-hero{
+
+    max-width:1100px;
+
+    margin:0 auto 110px;
+
+    padding:95px 70px;
+
+    text-align:center;
+
+    position:relative;
+
+    border-radius:32px;
+
+    border:1px solid rgba(255,255,255,.08);
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.055),
+        rgba(255,255,255,.018)
+    );
+
+    box-shadow:
+
+    0 40px 100px rgba(0,0,0,.45),
+
+    inset 0 1px 0 rgba(255,255,255,.06);
+
+    backdrop-filter:blur(18px);
+
+    -webkit-backdrop-filter:blur(18px);
+
+    overflow:hidden;
+}
+
+
+.investment-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    width:260px;
+    height:2px;
+
+    transform:translateX(-50%);
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(215,169,81,.9),
+        transparent
+    );
+
+    box-shadow:
+
+    0 0 25px rgba(215,169,81,.45);
+}
+
+
+.investment-hero::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+    radial-gradient(
+        circle at 50% 0%,
+        rgba(210,165,78,.10),
+        transparent 45%
+    );
+
+    pointer-events:none;
+}
+
+
+.investment-hero .section-label{
+
+    display:inline-block;
+
+    margin-bottom:25px;
+
+    font-size:12px;
+
+    letter-spacing:4px;
+
+    color:#d8ad5c;
+
+    font-weight:700;
+}
+
+
+.investment-hero h2{
+
+    max-width:900px;
+
+    margin:0 auto 28px;
+
+    font-size:clamp(38px,5vw,70px);
+
+    line-height:1.08;
+
+    letter-spacing:-1.8px;
+
+    font-weight:700;
+
+    color:#f5f1e8;
+}
+
+
+.investment-hero h2::after{
+
+    content:"";
+
+    display:block;
+
+    width:80px;
+
+    height:1px;
+
+    margin:30px auto 0;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        #cda65d,
+        transparent
+    );
+}
+
+
+.investment-hero > p{
+
+    max-width:760px;
+
+    margin:30px auto 40px;
+
+    color:rgba(255,255,255,.68);
+
+    font-size:17px;
+
+    line-height:1.9;
+}
+
+
+/* =========================================================
+   INVESTMENT ACTIONS
+   ========================================================= */
+
+.investment-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:16px;
+
+    flex-wrap:wrap;
+}
+
+
+.investment-actions a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:54px;
+
+    padding:0 30px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:.6px;
+
+    transition:
+
+    transform .35s ease,
+
+    box-shadow .35s ease,
+
+    background .35s ease,
+
+    border-color .35s ease;
+}
+
+
+.investment-actions .btn-primary{
+
+    color:#111;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #f0d28d,
+        #b88638
+    );
+
+    box-shadow:
+
+    0 12px 35px rgba(184,134,56,.20);
+}
+
+
+.investment-actions .btn-primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:
+
+    0 18px 45px rgba(184,134,56,.35);
+}
+
+
+.investment-actions .btn-secondary{
+
+    color:#eee;
+
+    border:1px solid rgba(255,255,255,.16);
+
+    background:rgba(255,255,255,.035);
+}
+
+
+.investment-actions .btn-secondary:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(216,173,92,.55);
+
+    background:rgba(216,173,92,.08);
+}
+
+
+/* =========================================================
+   INVESTMENT THESIS
+   ========================================================= */
+
+.investment-thesis{
+
+    max-width:1200px;
+
+    margin:0 auto 120px;
+
+    padding:70px;
+
+    display:grid;
+
+    grid-template-columns:
+
+    minmax(0,1.15fr)
+
+    minmax(0,1fr);
+
+    gap:70px;
+
+    align-items:center;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.055),
+        rgba(255,255,255,.018)
+    );
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,.35),
+
+    inset 0 1px 0 rgba(255,255,255,.04);
+
+    backdrop-filter:blur(20px);
+
+    -webkit-backdrop-filter:blur(20px);
+
+    position:relative;
+
+    overflow:hidden;
+}
+
+
+.investment-thesis::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:4px;
+    height:100%;
+
+    background:
+
+    linear-gradient(
+        180deg,
+        transparent,
+        #c99b4d,
+        transparent
+    );
+}
+
+
+.thesis-content > span{
+
+    color:#d5aa59;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+}
+
+
+.thesis-content h2{
+
+    margin:20px 0 25px;
+
+    font-size:clamp(32px,4vw,52px);
+
+    line-height:1.12;
+
+    color:#f3efe6;
+
+    letter-spacing:-1px;
+}
+
+
+.thesis-content p{
+
+    margin:0 0 20px;
+
+    color:rgba(255,255,255,.63);
+
+    line-height:1.85;
+
+    font-size:16px;
+}
+
+
+/* =========================================================
+   THESIS POINTS
+   ========================================================= */
+
+.thesis-points{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:18px;
+}
+
+
+.thesis-points > div{
+
+    padding:28px 24px;
+
+    border-radius:18px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    background:rgba(255,255,255,.025);
+
+    transition:
+
+    transform .35s ease,
+
+    border-color .35s ease,
+
+    background .35s ease;
+}
+
+
+.thesis-points > div:hover{
+
+    transform:translateY(-6px);
+
+    border-color:rgba(210,165,78,.38);
+
+    background:rgba(210,165,78,.055);
+}
+
+
+.thesis-points span{
+
+    display:block;
+
+    margin-bottom:15px;
+
+    color:#cda45a;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+}
+
+
+.thesis-points h3{
+
+    margin:0 0 10px;
+
+    color:#f2eee6;
+
+    font-size:17px;
+}
+
+
+.thesis-points p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.53);
+
+    font-size:13px;
+
+    line-height:1.7;
+}
+
+
+/* =========================================================
+   CAPITAL OPPORTUNITY
+   ========================================================= */
+
+.capital-opportunity{
+
+    max-width:1200px;
+
+    margin:0 auto 130px;
+}
+
+
+.capital-opportunity .section-heading{
+
+    max-width:780px;
+
+    margin:0 auto 55px;
+
+    text-align:center;
+}
+
+
+.capital-opportunity .section-label{
+
+    color:#d3a85a;
+
+    letter-spacing:3px;
+
+    font-size:11px;
+
+    font-weight:700;
+}
+
+
+.capital-opportunity h2{
+
+    margin:18px 0;
+
+    color:#f4f0e8;
+
+    font-size:clamp(32px,4vw,50px);
+
+    line-height:1.15;
+}
+
+
+.capital-opportunity .section-heading p{
+
+    color:rgba(255,255,255,.60);
+
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   CAPITAL GRID
+   ========================================================= */
+
+.capital-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(3,1fr);
+
+    gap:20px;
+}
+
+
+.capital-card{
+
+    position:relative;
+
+    min-height:245px;
+
+    padding:36px 30px;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.018)
+    );
+
+    overflow:hidden;
+
+    transition:
+
+    transform .4s ease,
+
+    border-color .4s ease,
+
+    box-shadow .4s ease;
+}
+
+
+.capital-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:180px;
+    height:180px;
+
+    right:-90px;
+    bottom:-90px;
+
+    border-radius:50%;
+
+    background:
+
+    radial-gradient(
+        circle,
+        rgba(207,163,80,.13),
+        transparent 70%
+    );
+
+    transition:transform .5s ease;
+}
+
+
+.capital-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(211,167,84,.35);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.35);
+}
+
+
+.capital-card:hover::after{
+
+    transform:scale(1.5);
+}
+
+
+.capital-card > span{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:38px;
+    height:38px;
+
+    border-radius:50%;
+
+    margin-bottom:25px;
+
+    color:#d4aa5c;
+
+    border:1px solid rgba(212,170,92,.35);
+
+    font-size:11px;
+
+    font-weight:700;
+}
+
+
+.capital-card h3{
+
+    margin:0 0 14px;
+
+    color:#f2eee6;
+
+    font-size:20px;
+}
+
+
+.capital-card p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.55);
+
+    line-height:1.75;
+
+    font-size:14px;
+}
+
+
+/* =========================================================
+   INVESTMENT PATH
+   ========================================================= */
+
+.investment-path{
+
+    max-width:1200px;
+
+    margin:0 auto 120px;
+}
+
+
+.investment-path .section-heading{
+
+    max-width:800px;
+
+    margin:0 auto 55px;
+
+    text-align:center;
+}
+
+
+.investment-path .section-label{
+
+    color:#d5aa5a;
+
+    letter-spacing:3px;
+
+    font-size:11px;
+
+    font-weight:700;
+}
+
+
+.investment-path h2{
+
+    margin:18px 0;
+
+    color:#f4f0e8;
+
+    font-size:clamp(32px,4vw,50px);
+}
+
+
+.investment-path .section-heading p{
+
+    color:rgba(255,255,255,.60);
+
+    line-height:1.8;
+}
+
+
+.investor-types{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(4,1fr);
+
+    gap:18px;
+}
+
+
+.investor-type{
+
+    padding:35px 28px;
+
+    min-height:290px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    border-radius:22px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    background:
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.045),
+        rgba(255,255,255,.015)
+    );
+
+    transition:
+
+    transform .4s ease,
+
+    border-color .4s ease,
+
+    box-shadow .4s ease;
+}
+
+
+.investor-type:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(212,169,85,.4);
+
+    box-shadow:
+
+    0 25px 60px rgba(0,0,0,.35);
+}
+
+
+.investor-type h3{
+
+    margin:0 0 18px;
+
+    color:#f4efe5;
+
+    font-size:19px;
+}
+
+
+.investor-type p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.55);
+
+    line-height:1.75;
+
+    font-size:14px;
+}
+
+
+.investor-type a{
+
+    margin-top:auto;
+
+    padding-top:25px;
+
+    color:#d6ad60;
+
+    text-decoration:none;
+
+    font-size:13px;
+
+    font-weight:700;
+
+    transition:color .3s ease;
+}
+
+
+.investor-type a:hover{
+
+    color:#f2d28d;
+}
+
+
+/* =========================================================
+   INVESTMENT PROCESS
+   ========================================================= */
+
+.investment-process{
+
+    max-width:1200px;
+
+    margin:0 auto 110px;
+
+    padding:65px;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(255,255,255,.045),
+        rgba(255,255,255,.015)
+    );
+
+    box-shadow:
+
+    0 30px 80px rgba(0,0,0,.3);
+}
+
+
+.investment-process > .section-label{
+
+    color:#d4aa5b;
+
+    letter-spacing:3px;
+
+    font-size:11px;
+
+    font-weight:700;
+}
+
+
+.investment-process > h2{
+
+    margin:18px 0 55px;
+
+    color:#f4f0e8;
+
+    font-size:clamp(30px,4vw,46px);
+
+    max-width:650px;
+}
+
+
+.investment-steps{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(6,1fr);
+
+    gap:15px;
+
+    position:relative;
+}
+
+
+.investment-steps::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:22px;
+
+    left:5%;
+
+    right:5%;
+
+    height:1px;
+
+    background:
+
+    linear-gradient(
+        90deg,
+        transparent,
+        rgba(205,164,86,.45),
+        transparent
+    );
+
+    z-index:0;
+}
+
+
+.investment-steps > div{
+
+    position:relative;
+
+    z-index:1;
+
+    text-align:center;
+}
+
+
+.investment-steps span{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:45px;
+
+    height:45px;
+
+    margin:0 auto 20px;
+
+    border-radius:50%;
+
+    background:#111;
+
+    border:1px solid rgba(211,166,83,.5);
+
+    color:#d6ad60;
+
+    font-size:11px;
+
+    font-weight:700;
+}
+
+
+.investment-steps h3{
+
+    margin:0 0 10px;
+
+    color:#eee9df;
+
+    font-size:15px;
+}
+
+
+.investment-steps p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.48);
+
+    font-size:12px;
+
+    line-height:1.65;
+}
+
+
+/* =========================================================
+   TRANSPARENCY
+   ========================================================= */
+
+.investment-transparency{
+
+    max-width:1200px;
+
+    margin:0 auto 110px;
+
+    padding:65px;
+
+    display:grid;
+
+    grid-template-columns:
+
+    1.1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+    border-radius:28px;
+
+    border:1px solid rgba(255,255,255,.07);
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(210,165,78,.045),
+        rgba(255,255,255,.018)
+    );
+}
+
+
+.investment-transparency .section-label{
+
+    color:#d5aa5a;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    font-weight:700;
+}
+
+
+.investment-transparency h2{
+
+    margin:20px 0;
+
+    color:#f4f0e8;
+
+    font-size:clamp(30px,4vw,46px);
+
+    line-height:1.15;
+}
+
+
+.investment-transparency p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.58);
+
+    line-height:1.85;
+}
+
+
+.transparency-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+}
+
+
+.transparency-list > div{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:20px;
+
+    padding:20px 24px;
+
+    border-radius:14px;
+
+    border:1px solid rgba(255,255,255,.06);
+
+    background:rgba(255,255,255,.025);
+}
+
+
+.transparency-list strong{
+
+    color:#eee9df;
+
+    font-size:14px;
+}
+
+
+.transparency-list span{
+
+    color:#cda45a;
+
+    font-size:12px;
+
+    text-align:right;
+}
+
+
+/* =========================================================
+   FINAL INVESTMENT CTA
+   ========================================================= */
+
+.investment-final{
+
+    max-width:1000px;
+
+    margin:0 auto;
+
+    padding:90px 60px;
+
+    text-align:center;
+
+    position:relative;
+
+    border-radius:32px;
+
+    border:1px solid rgba(211,167,84,.22);
+
+    background:
+
+    radial-gradient(
+        circle at 50% 0%,
+        rgba(210,165,78,.12),
+        transparent 55%
+    ),
+
+    linear-gradient(
+        145deg,
+        rgba(255,255,255,.05),
+        rgba(255,255,255,.015)
+    );
+
+    box-shadow:
+
+    0 40px 100px rgba(0,0,0,.45),
+
+    inset 0 1px 0 rgba(255,255,255,.05);
+
+    overflow:hidden;
+}
+
+
+.investment-final::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    width:180px;
+    height:1px;
+
+    transform:translateX(-50%);
+
+    background:#d2a654;
+
+    box-shadow:
+
+    0 0 25px rgba(210,166,84,.6);
+}
+
+
+.investment-final .section-label{
+
+    color:#d7ae60;
+
+    font-size:11px;
+
+    letter-spacing:4px;
+
+    font-weight:700;
+}
+
+
+.investment-final h2{
+
+    max-width:800px;
+
+    margin:25px auto;
+
+    color:#f5f0e7;
+
+    font-size:clamp(32px,4.5vw,58px);
+
+    line-height:1.12;
+
+    letter-spacing:-1px;
+}
+
+
+.investment-final > p{
+
+    max-width:700px;
+
+    margin:0 auto 38px;
+
+    color:rgba(255,255,255,.60);
+
+    line-height:1.85;
+
+    font-size:16px;
+}
+
+
+.investment-contact-actions{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+}
+
+
+.investment-contact-actions a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:52px;
+
+    padding:0 26px;
+
+    border-radius:999px;
+
+    border:1px solid rgba(212,168,84,.35);
+
+    color:#e8d5a9;
+
+    background:rgba(210,165,78,.045);
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    font-weight:700;
+
+    transition:
+
+    transform .35s ease,
+
+    background .35s ease,
+
+    border-color .35s ease,
+
+    box-shadow .35s ease;
+}
+
+
+.investment-contact-actions a:first-child{
+
+    color:#111;
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #efd18a,
+        #b78537
+    );
+
+    border-color:transparent;
+}
+
+
+.investment-contact-actions a:hover{
+
+    transform:translateY(-4px);
+
+    border-color:rgba(232,193,112,.75);
+
+    background:rgba(210,165,78,.12);
+
+    box-shadow:
+
+    0 15px 40px rgba(0,0,0,.3);
+}
+
+
+.investment-contact-actions a:first-child:hover{
+
+    background:
+
+    linear-gradient(
+        135deg,
+        #f5d995,
+        #c99743
+    );
+}
+
+
+/* =========================================================
+   RESPONSIVE — TABLET
+   ========================================================= */
+
+@media (max-width:1000px){
+
+    .investment-thesis{
+
+        grid-template-columns:1fr;
+
+        padding:55px 45px;
+
+        gap:45px;
+    }
+
+
+    .capital-grid{
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+    }
+
+
+    .investor-types{
+
+        grid-template-columns:
+
+        repeat(2,1fr);
+    }
+
+
+    .investment-steps{
+
+        grid-template-columns:
+
+        repeat(3,1fr);
+
+        row-gap:45px;
+    }
+
+
+    .investment-steps::before{
+
+        display:none;
+    }
+
+
+    .investment-transparency{
+
+        grid-template-columns:1fr;
+
+        padding:55px 45px;
+
+        gap:45px;
+    }
+
+}
+
+
+/* =========================================================
+   RESPONSIVE — MOBILE
+   ========================================================= */
+
+@media (max-width:700px){
+
+    .ars-investment-opportunity{
+
+        padding:90px 16px 110px;
+    }
+
+
+    .investment-hero{
+
+        margin-bottom:80px;
+
+        padding:65px 25px;
+
+        border-radius:24px;
+    }
+
+
+    .investment-hero h2{
+
+        font-size:36px;
+
+        letter-spacing:-1px;
+    }
+
+
+    .investment-hero > p{
+
+        font-size:15px;
+
+        line-height:1.8;
+    }
+
+
+    .investment-actions{
+
+        flex-direction:column;
+    }
+
+
+    .investment-actions a{
+
+        width:100%;
+    }
+
+
+    .investment-thesis{
+
+        padding:45px 25px;
+
+        border-radius:22px;
+    }
+
+
+    .thesis-points{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .capital-opportunity,
+    .investment-path{
+
+        margin-bottom:90px;
+    }
+
+
+    .capital-grid{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .capital-card{
+
+        min-height:auto;
+
+        padding:30px 25px;
+    }
+
+
+    .investor-types{
+
+        grid-template-columns:1fr;
+    }
+
+
+    .investor-type{
+
+        min-height:auto;
+
+        padding:30px 25px;
+    }
+
+
+    .investment-process{
+
+        padding:45px 25px;
+
+        border-radius:22px;
+    }
+
+
+    .investment-steps{
+
+        grid-template-columns:1fr;
+
+        gap:35px;
+    }
+
+
+    .investment-steps > div{
+
+        text-align:left;
+
+        display:grid;
+
+        grid-template-columns:45px 1fr;
+
+        column-gap:18px;
+
+        align-items:center;
+    }
+
+
+    .investment-steps span{
+
+        grid-row:span 2;
+
+        margin:0;
+    }
+
+
+    .investment-steps p{
+
+        padding-top:5px;
+    }
+
+
+    .investment-transparency{
+
+        padding:45px 25px;
+
+        border-radius:22px;
+    }
+
+
+    .transparency-list > div{
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:7px;
+    }
+
+
+    .transparency-list span{
+
+        text-align:left;
+    }
+
+
+    .investment-final{
+
+        padding:65px 25px;
+
+        border-radius:24px;
+    }
+
+
+    .investment-final h2{
+
+        font-size:34px;
+    }
+
+
+    .investment-contact-actions{
+
+        flex-direction:column;
+    }
+
+
+    .investment-contact-actions a{
+
+        width:100%;
+    }
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY
+   ========================================================= */
+
+.investment-actions a:focus-visible,
+.investor-type a:focus-visible,
+.investment-contact-actions a:focus-visible{
+
+    outline:2px solid #e0b96d;
+
+    outline-offset:4px;
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    .investment-actions a,
+    .capital-card,
+    .thesis-points > div,
+    .investor-type,
+    .investment-contact-actions a{
+
+        transition:none;
+    }
+
+                  }
+
+/* =========================================================
+   ARS PARTNERSHIP
+   SECTION 03 — WHY PARTNER WITH ARS
+   PREMIUM TRUST & VALUE SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   WHY PARTNER SECTION
+   ========================================================= */
+
+.why-partner{
+
+    position:relative;
+
+    padding:
+        140px
+        0
+        130px;
+
+    background:
+
+        radial-gradient(
+            circle at 15% 35%,
+            rgba(22,42,75,.18),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(184,137,63,.08),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            180deg,
+            #000 0%,
+            #020305 50%,
+            #000 100%
+        );
+
+}
+
+
+/* =========================================================
+   ATMOSPHERIC LIGHT
+   ========================================================= */
+
+.why-partner::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:50%;
+
+    width:1px;
+    height:100%;
+
+    background:
+        linear-gradient(
+            180deg,
+            transparent,
+            rgba(200,154,82,.10),
+            transparent
+        );
+
+    opacity:.5;
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================================
+   SECTION HEADING
+   ========================================================= */
+
+.why-partner .section-heading{
+
+    position:relative;
+
+    max-width:850px;
+
+    margin:
+        0
+        auto
+        75px;
+
+    text-align:center;
+
+}
+
+
+/* =========================================================
+   BENEFITS GRID
+   ========================================================= */
+
+.benefits-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap:20px;
+
+    position:relative;
+
+}
+
+
+/* =========================================================
+   BENEFIT CARD
+   ========================================================= */
+
+.benefit-card{
+
+    position:relative;
+
+    min-height:260px;
+
+    padding:
+        38px
+        36px
+        36px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-start;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,.075);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.012)
+        );
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.045),
+
+        0 18px 55px
+        rgba(0,0,0,.20);
+
+    transition:
+
+        transform .45s
+        cubic-bezier(.2,.8,.2,1),
+
+        border-color .45s ease,
+
+        box-shadow .45s ease,
+
+        background .45s ease;
+
+}
+
+
+/* =========================================================
+   BENEFIT CARD GOLD EDGE
+   ========================================================= */
+
+.benefit-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:2px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent 0%,
+            rgba(200,154,82,.75) 50%,
+            transparent 100%
+        );
+
+    transform:
+        scaleX(0);
+
+    transform-origin:center;
+
+    transition:
+        transform .55s
+        cubic-bezier(.2,.8,.2,1);
+
+}
+
+
+/* =========================================================
+   BENEFIT CARD GLOW
+   ========================================================= */
+
+.benefit-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:-100px;
+    right:-100px;
+
+    width:220px;
+    height:220px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(200,154,82,.10),
+            transparent 68%
+        );
+
+    opacity:0;
+
+    transition:
+        opacity .45s ease;
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================================
+   BENEFIT HOVER
+   ========================================================= */
+
+.benefit-card:hover{
+
+    transform:
+        translateY(-8px);
+
+    border-color:
+        rgba(200,154,82,.28);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(200,154,82,.075),
+            rgba(255,255,255,.018)
+        );
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.07),
+
+        0 30px 75px
+        rgba(0,0,0,.42),
+
+        0 0 35px
+        rgba(200,154,82,.035);
+
+}
+
+
+.benefit-card:hover::before{
+
+    transform:
+        scaleX(1);
+
+}
+
+
+.benefit-card:hover::after{
+
+    opacity:1;
+
+}
+
+
+/* =========================================================
+   BENEFIT NUMBER
+   ========================================================= */
+
+.benefit-number{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:48px;
+    height:48px;
+
+    margin-bottom:30px;
+
+    border:
+        1px solid
+        rgba(200,154,82,.28);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(200,154,82,.11),
+            rgba(200,154,82,.025)
+        );
+
+    color:
+        rgba(220,184,116,.95);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    box-shadow:
+
+        inset 0 0 18px
+        rgba(200,154,82,.035);
+
+}
+
+
+/* =========================================================
+   BENEFIT TITLE
+   ========================================================= */
+
+.benefit-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    margin:
+        0
+        0
+        12px;
+
+    color:#fff;
+
+    font-size:20px;
+
+    line-height:1.35;
+
+    font-weight:600;
+
+    letter-spacing:-.2px;
+
+}
+
+
+/* =========================================================
+   BENEFIT DESCRIPTION
+   ========================================================= */
+
+.benefit-card p{
+
+    position:relative;
+
+    z-index:2;
+
+    margin:0;
+
+    max-width:440px;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .54
+        );
+
+    font-size:14px;
+
+    line-height:1.85;
+
+}
+
+
+/* =========================================================
+   PARTNERSHIP VALUES
+   ========================================================= */
+
+.partnership-values{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0,1fr)
+        );
+
+    gap:16px;
+
+    margin-top:22px;
+
+}
+
+
+/* =========================================================
+   VALUE CARD
+   ========================================================= */
+
+.value-card{
+
+    position:relative;
+
+    min-height:190px;
+
+    padding:
+        30px
+        28px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    justify-content:center;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,.065);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.04),
+            rgba(255,255,255,.012)
+        );
+
+    transition:
+
+        transform .4s ease,
+
+        border-color .4s ease,
+
+        background .4s ease;
+
+}
+
+
+/* =========================================================
+   VALUE CARD HOVER
+   ========================================================= */
+
+.value-card:hover{
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(200,154,82,.24);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(200,154,82,.065),
+            rgba(255,255,255,.015)
+        );
+
+}
+
+
+/* =========================================================
+   VALUE ICON
+   ========================================================= */
+
+.value-icon{
+
+    width:48px;
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    margin-bottom:20px;
+
+    border:
+        1px solid
+        rgba(200,154,82,.20);
+
+    background:
+        rgba(200,154,82,.045);
+
+    font-size:20px;
+
+    transition:
+        transform .4s ease,
+
+        border-color .4s ease;
+
+}
+
+
+.value-card:hover .value-icon{
+
+    transform:
+        translateY(-3px)
+        scale(1.04);
+
+    border-color:
+        rgba(200,154,82,.45);
+
+}
+
+
+/* =========================================================
+   VALUE TITLE
+   ========================================================= */
+
+.value-card h3{
+
+    margin:
+        0
+        8px;
+
+    color:#fff;
+
+    font-size:17px;
+
+    font-weight:600;
+
+}
+
+
+/* =========================================================
+   VALUE DESCRIPTION
+   ========================================================= */
+
+.value-card p{
+
+    margin:0;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .48
+        );
+
+    font-size:13px;
+
+    line-height:1.7;
+
+}
+
+
+/* =========================================================
+   PARTNER QUOTE
+   ========================================================= */
+
+.partner-quote{
+
+    position:relative;
+
+    margin-top:24px;
+
+    padding:
+        55px
+        60px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:210px;
+
+    overflow:hidden;
+
+    text-align:center;
+
+    border:
+        1px solid
+        rgba(200,154,82,.14);
+
+    background:
+
+        radial-gradient(
+            ellipse at center,
+            rgba(200,154,82,.075),
+            transparent 65%
+        ),
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.012)
+        );
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.05),
+
+        0 25px 70px
+        rgba(0,0,0,.28);
+
+}
+
+
+/* =========================================================
+   QUOTE DECORATIVE LINE
+   ========================================================= */
+
+.partner-quote::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:0;
+
+    width:140px;
+    height:1px;
+
+    transform:
+        translateX(-50%);
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            #c89a52,
+            transparent
+        );
+
+}
+
+
+/* =========================================================
+   QUOTE DECORATIVE ORB
+   ========================================================= */
+
+.partner-quote::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:260px;
+    height:260px;
+
+    border-radius:50%;
+
+    top:-190px;
+    left:50%;
+
+    transform:
+        translateX(-50%);
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(200,154,82,.10),
+            transparent 70%
+        );
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================================
+   QUOTE TEXT
+   ========================================================= */
+
+.partner-quote h2{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:900px;
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:
+        clamp(
+            25px,
+            3vw,
+            42px
+        );
+
+    line-height:1.35;
+
+    font-weight:500;
+
+    letter-spacing:-.8px;
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media
+(max-width:1100px){
+
+    .why-partner{
+
+        padding:
+            110px
+            0
+            100px;
+
+    }
+
+
+    .benefits-grid{
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+
+    .partnership-values{
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media
+(max-width:700px){
+
+    .why-partner{
+
+        padding:
+            90px
+            0
+            80px;
+
+    }
+
+
+    .why-partner .section-heading{
+
+        margin-bottom:50px;
+
+    }
+
+
+    .benefits-grid{
+
+        grid-template-columns:1fr;
+
+        gap:16px;
+
+    }
+
+
+    .benefit-card{
+
+        min-height:auto;
+
+        padding:
+            30px
+            28px;
+
+    }
+
+
+    .partnership-values{
+
+        grid-template-columns:1fr;
+
+        gap:14px;
+
+    }
+
+
+    .value-card{
+
+        min-height:auto;
+
+        padding:
+            28px;
+
+    }
+
+
+    .partner-quote{
+
+        min-height:180px;
+
+        padding:
+            40px
+            25px;
+
+    }
+
+
+    .partner-quote h2{
+
+        font-size:25px;
+
+    }
+
+    }
+
+    /* =========================================================
+   ARS PARTNERSHIP
+   SECTION 04 — GLOBAL PARTNERS
+   PARTNERSHIP ECOSYSTEM
+   PREMIUM GLOBAL NETWORK SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   GLOBAL PARTNERS SECTION
+   ========================================================= */
+
+.global-{partners
+
+    position:relative;
+
+    padding:
+        140px
+        0
+        130px;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(184,137,63,.11),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 65%,
+            rgba(18,42,76,.16),
+            transparent 32%
+        ),
+
+        linear-gradient(
+            180deg,
+            #000 0%,
+            #020406 50%,
+            #000 100%
+        );
+
+}
+
+
+/* =========================================================
+   GLOBAL NETWORK ATMOSPHERE
+   ========================================================= */
+
+.global-partners::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    pointer-events:none;
+
+    background-image:
+
+        linear-gradient(
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        ),
+
+        linear-gradient(
+            90deg,
+            rgba(255,255,255,.018) 1px,
+            transparent 1px
+        );
+
+    background-size:
+        90px 90px;
+
+    mask-image:
+        linear-gradient(
+            to bottom,
+            transparent,
+            black 20%,
+            black 80%,
+            transparent
+        );
+
+    opacity:.25;
+
+}
+
+
+/* =========================================================
+   GLOBAL PARTNERS HEADING
+   ========================================================= */
+
+.global-partners .section-heading{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:
+        0
+        auto
+        75px;
+
+    text-align:center;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM GRID
+   ========================================================= */
+
+.ecosystem-grid{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap:20px;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM CARD
+   ========================================================= */
+
+.ecosystem-card{
+
+    position:relative;
+
+    min-height:410px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:
+        38px;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(255,255,255,.075);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.055),
+            rgba(255,255,255,.012)
+        );
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.045),
+
+        0 20px 60px
+        rgba(0,0,0,.22);
+
+    transition:
+
+        transform .45s
+        cubic-bezier(.2,.8,.2,1),
+
+        border-color .45s ease,
+
+        box-shadow .45s ease,
+
+        background .45s ease;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM CARD TOP LINE
+   ========================================================= */
+
+.ecosystem-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:0;
+
+    width:100%;
+    height:2px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(200,154,82,.8),
+            transparent
+        );
+
+    transform:
+        scaleX(0);
+
+    transition:
+        transform .55s ease;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM CARD GLOW
+   ========================================================= */
+
+.ecosystem-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:250px;
+    height:250px;
+
+    right:-120px;
+    top:-120px;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(200,154,82,.10),
+            transparent 70%
+        );
+
+    opacity:0;
+
+    transition:
+        opacity .45s ease;
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM HOVER
+   ========================================================= */
+
+.ecosystem-card:hover{
+
+    transform:
+        translateY(-9px);
+
+    border-color:
+        rgba(200,154,82,.30);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(200,154,82,.075),
+            rgba(255,255,255,.015)
+        );
+
+    box-shadow:
+
+        0 35px 80px
+        rgba(0,0,0,.42),
+
+        0 0 40px
+        rgba(200,154,82,.035);
+
+}
+
+
+.ecosystem-card:hover::before{
+
+    transform:
+        scaleX(1);
+
+}
+
+
+.ecosystem-card:hover::after{
+
+    opacity:1;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM HEADER
+   ========================================================= */
+
+.ecosystem-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:20px;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM ICON
+   ========================================================= */
+
+.ecosystem-icon{
+
+    width:58px;
+    height:58px;
+
+    flex-shrink:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:
+        1px solid
+        rgba(200,154,82,.25);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(200,154,82,.10),
+            rgba(200,154,82,.025)
+        );
+
+    font-size:24px;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM TITLE
+   ========================================================= */
+
+.ecosystem-header h3{
+
+    margin:0;
+
+    color:#fff;
+
+    font-size:20px;
+
+    line-height:1.35;
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM DESCRIPTION
+   ========================================================= */
+
+.ecosystem-card > p{
+
+    margin:
+        0
+        0
+        28px;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .55
+        );
+
+    font-size:14px;
+
+    line-height:1.8;
+
+}
+
+
+/* =========================================================
+   LOGO WALL
+   ========================================================= */
+
+.logo-wall{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+
+    gap:10px;
+
+    margin-top:auto;
+
+    margin-bottom:26px;
+
+}
+
+
+/* =========================================================
+   LOGO PLACEHOLDER
+   ========================================================= */
+
+.logo-placeholder{
+
+    min-height:62px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border:
+        1px solid
+        rgba(255,255,255,.065);
+
+    background:
+
+        rgba(
+            255,
+            255,
+            255,
+            .025
+        );
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .22
+        );
+
+    font-size:9px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+    transition:
+
+        border-color .3s ease,
+
+        color .3s ease,
+
+        background .3s ease;
+
+}
+
+
+.ecosystem-card:hover
+.logo-placeholder{
+
+    border-color:
+        rgba(200,154,82,.14);
+
+    color:
+        rgba(200,154,82,.55);
+
+    background:
+        rgba(200,154,82,.025);
+
+}
+
+
+/* =========================================================
+   ECOSYSTEM LINK
+   ========================================================= */
+
+.ecosystem-card > a{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:5px;
+
+    width:max-content;
+
+    color:#c89a52;
+
+    text-decoration:none;
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1.4px;
+
+    text-transform:uppercase;
+
+    transition:
+
+        letter-spacing .3s ease,
+
+        color .3s ease;
+
+}
+
+
+.ecosystem-card > a:hover{
+
+    color:#e1bd79;
+
+    letter-spacing:2px;
+
+}
+
+
+/* =========================================================
+   WORLD MAP PANEL
+   ========================================================= */
+
+.world-map{
+
+    position:relative;
+
+    min-height:520px;
+
+    margin-top:24px;
+
+    display:grid;
+
+    grid-template-columns:
+        minmax(300px,.75fr)
+        minmax(0,1.25fr);
+
+    align-items:center;
+
+    gap:30px;
+
+    padding:
+        55px;
+
+    overflow:hidden;
+
+    border:
+        1px solid
+        rgba(200,154,82,.14);
+
+    background:
+
+        radial-gradient(
+            circle at 70% 50%,
+            rgba(200,154,82,.075),
+            transparent 38%
+        ),
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.045),
+            rgba(255,255,255,.012)
+        );
+
+    box-shadow:
+
+        inset 0 1px 0
+        rgba(255,255,255,.05),
+
+        0 30px 80px
+        rgba(0,0,0,.30);
+
+}
+
+
+/* =========================================================
+   MAP PANEL LIGHT
+   ========================================================= */
+
+.world-map::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    right:-120px;
+    top:50%;
+
+    transform:
+        translateY(-50%);
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(200,154,82,.10),
+            transparent 70%
+        );
+
+    filter:
+        blur(10px);
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================================
+   MAP LEFT CONTENT
+   ========================================================= */
+
+.map-left{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:480px;
+
+}
+
+
+.map-left h3{
+
+    margin:
+        0
+        0
+        18px;
+
+    color:#fff;
+
+    font-size:
+        clamp(
+            28px,
+            3vw,
+            42px
+        );
+
+    line-height:1.15;
+
+    letter-spacing:-1px;
+
+}
+
+
+.map-left p{
+
+    margin:
+        0
+        0
+        30px;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .55
+        );
+
+    font-size:14px;
+
+    line-height:1.85;
+
+}
+
+
+/* =========================================================
+   MAP LIST
+   ========================================================= */
+
+.map-left ul{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+
+    gap:12px;
+
+    margin:0;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+
+.map-left li{
+
+    position:relative;
+
+    padding-left:18px;
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .68
+        );
+
+    font-size:12px;
+
+    letter-spacing:.5px;
+
+}
+
+
+.map-left li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+    top:50%;
+
+    width:5px;
+    height:5px;
+
+    transform:
+        translateY(-50%);
+
+    border-radius:50%;
+
+    background:#c89a52;
+
+    box-shadow:
+        0 0 10px
+        rgba(200,154,82,.45);
+
+}
+
+
+/* =========================================================
+   MAP RIGHT
+   ========================================================= */
+
+.map-right{
+
+    position:relative;
+
+    min-height:400px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+/* =========================================================
+   WORLD MAP IMAGE
+   ========================================================= */
+
+.map-right img{
+
+    position:relative;
+
+    z-index:2;
+
+    display:block;
+
+    width:100%;
+
+    max-width:850px;
+
+    height:auto;
+
+    object-fit:contain;
+
+    opacity:.78;
+
+    filter:
+
+        brightness(.75)
+
+        contrast(1.15)
+
+        drop-shadow(
+            0 0 25px
+            rgba(200,154,82,.10)
+        );
+
+    transition:
+
+        transform .8s ease,
+
+        opacity .5s ease,
+
+        filter .5s ease;
+
+}
+
+
+.world-map:hover
+.map-right img{
+
+    transform:
+        scale(1.025);
+
+    opacity:.95;
+
+    filter:
+
+        brightness(.85)
+
+        contrast(1.2)
+
+        drop-shadow(
+            0 0 40px
+            rgba(200,154,82,.18)
+        );
+
+}
+
+
+/* =========================================================
+   GLOBAL STATISTICS
+   ========================================================= */
+
+.statistics-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0,1fr)
+        );
+
+    gap:16px;
+
+    margin-top:24px;
+
+}
+
+
+/* =========================================================
+   STAT CARD
+   ========================================================= */
+
+.stat-card{
+
+    min-height:180px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    border:
+        1px solid
+        rgba(255,255,255,.065);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,.04),
+            rgba(255,255,255,.012)
+        );
+
+    transition:
+
+        transform .4s ease,
+
+        border-color .4s ease,
+
+        background .4s ease;
+
+}
+
+
+.stat-card:hover{
+
+    transform:
+        translateY(-6px);
+
+    border-color:
+        rgba(200,154,82,.25);
+
+    background:
+
+        linear-gradient(
+            145deg,
+            rgba(200,154,82,.06),
+            rgba(255,255,255,.015)
+        );
+
+}
+
+
+/* =========================================================
+   STAT NUMBER
+   ========================================================= */
+
+.stat-card h2{
+
+    margin:
+        0
+        12px;
+
+    color:
+
+        #d5ac68;
+
+    font-size:
+        clamp(
+            34px,
+            4vw,
+            54px
+        );
+
+    line-height:1;
+
+    font-weight:600;
+
+    letter-spacing:-1px;
+
+}
+
+
+/* =========================================================
+   STAT LABEL
+   ========================================================= */
+
+.stat-card span{
+
+    color:
+
+        rgba(
+            255,
+            255,
+            255,
+            .48
+        );
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   TABLET
+   ========================================================= */
+
+@media
+(max-width:1100px){
+
+    .global-partners{
+
+        padding:
+            110px
+            0
+            100px;
+
+    }
+
+
+    .ecosystem-grid{
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+
+    .ecosystem-card:last-child{
+
+        grid-column:
+            1 / -1;
+
+        max-width:
+            calc(
+                50% - 10px
+            );
+
+        margin:auto;
+
+        width:100%;
+
+    }
+
+
+    .world-map{
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            45px;
+
+    }
+
+
+    .map-left{
+
+        max-width:700px;
+
+    }
+
+
+    .map-right{
+
+        min-height:350px;
+
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media
+(max-width:700px){
+
+    .global-partners{
+
+        padding:
+            90px
+            0
+            80px;
+
+    }
+
+
+    .ecosystem-grid{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .ecosystem-card:last-child{
+
+        grid-column:auto;
+
+        max-width:none;
+
+    }
+
+
+    .ecosystem-card{
+
+        min-height:380px;
+
+        padding:
+            30px;
+
+    }
+
+
+    .world-map{
+
+        min-height:auto;
+
+        padding:
+            32px
+            24px;
+
+    }
+
+
+    .map-left h3{
+
+        font-size:31px;
+
+    }
+
+
+    .map-left ul{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .map-right{
+
+        min-height:230px;
+
+    }
+
+
+    .map-right img{
+
+        width:115%;
+
+        max-width:none;
+
+    }
+
+
+    .statistics-grid{
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+
+    .stat-card{
+
+        min-height:150px;
+
+    }
+
+
+    .stat-card h2{
+
+        font-size:34px;
+
+    }
+
+        }
+    
 
 /* ========================================================= */
 /*                                                         */

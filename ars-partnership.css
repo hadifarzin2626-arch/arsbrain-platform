@@ -5476,7 +5476,3562 @@ button:focus-visible{
     }
 
         }
-    
+
+/* =========================================================
+   ARS PARTNERSHIP
+   SECTION 05 — EXECUTIVE PARTNERSHIP PROGRAM
+   PREMIUM PARTNERSHIP PROGRAM SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   EXECUTIVE PARTNERSHIP PROGRAM
+   ========================================================= */
+
+.executive-program{
+
+    position:relative;
+
+    padding:140px 0;
+
+    overflow:hidden;
+
+}
+
+
+/* =========================================================
+   PROGRAM GRID
+   ========================================================= */
+
+.program-grid{
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+    gap:30px;
+
+    margin-top:65px;
+
+}
+
+
+/* =========================================================
+   PROGRAM CARD
+   ========================================================= */
+
+.program-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    padding:42px 36px;
+
+    min-height:500px;
+
+    border:1px solid
+    rgba(255,255,255,.08);
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    transition:
+    transform .45s ease,
+    border-color .45s ease,
+    box-shadow .45s ease;
+
+}
+
+
+/* =========================================================
+   PROGRAM CARD LIGHT
+   ========================================================= */
+
+.program-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+    radial-gradient(
+    circle at 50% 0%,
+    rgba(184,137,63,.16),
+    transparent 48%
+    );
+
+    opacity:0;
+
+    transition:
+    opacity .45s ease;
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================================
+   PROGRAM CARD HOVER
+   ========================================================= */
+
+.program-card:hover{
+
+    transform:
+    translateY(-10px);
+
+    border-color:
+    rgba(184,137,63,.38);
+
+    box-shadow:
+    0 25px 70px
+    rgba(0,0,0,.32);
+
+}
+
+
+.program-card:hover::before{
+
+    opacity:1;
+
+}
+
+
+/* =========================================================
+   PROGRAM TAG
+   ========================================================= */
+
+.program-tag{
+
+    position:relative;
+
+    z-index:2;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    width:max-content;
+
+    margin-bottom:24px;
+
+    padding:8px 14px;
+
+    border:
+    1px solid
+    rgba(184,137,63,.35);
+
+    border-radius:999px;
+
+    color:
+    rgba(184,137,63,.95);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2px;
+
+}
+
+
+/* =========================================================
+   PROGRAM TITLE
+   ========================================================= */
+
+.program-card h3{
+
+    position:relative;
+
+    z-index:2;
+
+    margin:0 0 18px;
+
+    font-size:
+    clamp(24px,2vw,32px);
+
+    line-height:1.2;
+
+}
+
+
+/* =========================================================
+   PROGRAM DESCRIPTION
+   ========================================================= */
+
+.program-card > p{
+
+    position:relative;
+
+    z-index:2;
+
+    margin:0;
+
+    color:
+    rgba(255,255,255,.68);
+
+    line-height:1.8;
+
+}
+
+
+/* =========================================================
+   PROGRAM FEATURES
+   ========================================================= */
+
+.program-card ul{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:13px;
+
+    margin:
+    30px 0 35px;
+
+    padding:0;
+
+    list-style:none;
+
+}
+
+
+.program-card li{
+
+    position:relative;
+
+    padding-left:24px;
+
+    color:
+    rgba(255,255,255,.78);
+
+    line-height:1.5;
+
+}
+
+
+.program-card li::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    top:.65em;
+
+    width:7px;
+
+    height:7px;
+
+    border-radius:50%;
+
+    background:
+    rgba(184,137,63,.9);
+
+    box-shadow:
+    0 0 12px
+    rgba(184,137,63,.4);
+
+}
+
+
+/* =========================================================
+   PROGRAM LINK
+   ========================================================= */
+
+.program-card > a{
+
+    position:relative;
+
+    z-index:2;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    width:max-content;
+
+    margin-top:auto;
+
+    color:
+    rgba(184,137,63,1);
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:
+    transform .35s ease,
+    color .35s ease;
+
+}
+
+
+.program-card > a:hover{
+
+    transform:
+    translateX(6px);
+
+    color:
+    #ffffff;
+
+}
+
+
+/* =========================================================
+   FEATURED PROGRAM
+   ========================================================= */
+
+.program-card.featured{
+
+    border-color:
+    rgba(184,137,63,.45);
+
+    box-shadow:
+    0 20px 65px
+    rgba(0,0,0,.25);
+
+    transform:
+    translateY(-8px);
+
+}
+
+
+.program-card.featured::after{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:12%;
+
+    right:12%;
+
+    height:2px;
+
+    background:
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(184,137,63,.95),
+    transparent
+    );
+
+    box-shadow:
+    0 0 20px
+    rgba(184,137,63,.35);
+
+}
+
+
+/* =========================================================
+   FEATURED HOVER
+   ========================================================= */
+
+.program-card.featured:hover{
+
+    transform:
+    translateY(-16px);
+
+}
+
+
+/* =========================================================
+   APPLICATION PROCESS
+   ========================================================= */
+
+.application-process{
+
+    position:relative;
+
+    margin-top:70px;
+
+    padding:55px 50px;
+
+    border:
+    1px solid
+    rgba(255,255,255,.08);
+
+    border-radius:26px;
+
+    overflow:hidden;
+
+}
+
+
+/* =========================================================
+   APPLICATION PROCESS GLOW
+   ========================================================= */
+
+.application-process::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:420px;
+
+    height:420px;
+
+    top:-280px;
+
+    left:50%;
+
+    transform:
+    translateX(-50%);
+
+    background:
+    radial-gradient(
+    circle,
+    rgba(184,137,63,.12),
+    transparent 70%
+    );
+
+    pointer-events:none;
+
+}
+
+
+/* =========================================================
+   APPLICATION PROCESS TITLE
+   ========================================================= */
+
+.application-process h2{
+
+    position:relative;
+
+    z-index:2;
+
+    margin:
+    0 0 50px;
+
+    text-align:center;
+
+    font-size:
+    clamp(28px,3vw,42px);
+
+}
+
+
+/* =========================================================
+   PROCESS LINE
+   ========================================================= */
+
+.process-line{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+    repeat(5, minmax(0,1fr));
+
+    gap:20px;
+
+}
+
+
+/* =========================================================
+   PROCESS CONNECTOR
+   ========================================================= */
+
+.process-line::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:27px;
+
+    left:10%;
+
+    right:10%;
+
+    height:1px;
+
+    background:
+    linear-gradient(
+    90deg,
+    transparent,
+    rgba(184,137,63,.5),
+    rgba(184,137,63,.5),
+    transparent
+    );
+
+}
+
+
+/* =========================================================
+   PROCESS STEP
+   ========================================================= */
+
+.process-step{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    text-align:center;
+
+}
+
+
+/* =========================================================
+   STEP CIRCLE
+   ========================================================= */
+
+.step-circle{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:56px;
+
+    height:56px;
+
+    margin-bottom:20px;
+
+    border:
+    1px solid
+    rgba(184,137,63,.55);
+
+    border-radius:50%;
+
+    background:
+    rgba(10,10,10,.75);
+
+    color:
+    rgba(184,137,63,1);
+
+    font-size:13px;
+
+    font-weight:700;
+
+    letter-spacing:1px;
+
+    box-shadow:
+    0 0 0 7px
+    rgba(184,137,63,.04);
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    background .35s ease;
+
+}
+
+
+.process-step:hover
+.step-circle{
+
+    transform:
+    scale(1.1);
+
+    background:
+    rgba(184,137,63,.12);
+
+    box-shadow:
+    0 0 0 9px
+    rgba(184,137,63,.06),
+    0 0 25px
+    rgba(184,137,63,.2);
+
+}
+
+
+/* =========================================================
+   PROCESS STEP TITLE
+   ========================================================= */
+
+.process-step h4{
+
+    margin:0;
+
+    color:
+    rgba(255,255,255,.82);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:.4px;
+
+}
+
+
+/* =========================================================
+   EXECUTIVE CONTACT
+   ========================================================= */
+
+.executive-contact{
+
+    display:grid;
+
+    grid-template-columns:
+    minmax(0,1.35fr)
+    minmax(320px,.65fr);
+
+    gap:50px;
+
+    align-items:center;
+
+    margin-top:70px;
+
+    padding:60px;
+
+    border:
+    1px solid
+    rgba(184,137,63,.18);
+
+    border-radius:28px;
+
+    overflow:hidden;
+
+}
+
+
+/* =========================================================
+   EXECUTIVE CONTACT LEFT
+   ========================================================= */
+
+.executive-left span{
+
+    display:block;
+
+    margin-bottom:16px;
+
+    color:
+    rgba(184,137,63,.95);
+
+    font-size:11px;
+
+    font-weight:700;
+
+    letter-spacing:2.5px;
+
+}
+
+
+.executive-left h2{
+
+    margin:
+    0 0 20px;
+
+    max-width:700px;
+
+    font-size:
+    clamp(30px,3.5vw,52px);
+
+    line-height:1.12;
+
+}
+
+
+.executive-left p{
+
+    max-width:680px;
+
+    margin:0;
+
+    color:
+    rgba(255,255,255,.65);
+
+    line-height:1.85;
+
+}
+
+
+/* =========================================================
+   EXECUTIVE CONTACT RIGHT
+   ========================================================= */
+
+.executive-right{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:14px;
+
+}
+
+
+.executive-right a{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+    min-height:58px;
+
+    padding:
+    0 22px;
+
+    border:
+    1px solid
+    rgba(255,255,255,.1);
+
+    border-radius:12px;
+
+    color:
+    rgba(255,255,255,.86);
+
+    text-decoration:none;
+
+    background:
+    rgba(255,255,255,.025);
+
+    transition:
+    transform .35s ease,
+    border-color .35s ease,
+    background .35s ease,
+    color .35s ease;
+
+}
+
+
+.executive-right a::after{
+
+    content:"→";
+
+    color:
+    rgba(184,137,63,.95);
+
+    transition:
+    transform .35s ease;
+
+}
+
+
+.executive-right a:hover{
+
+    transform:
+    translateX(5px);
+
+    border-color:
+    rgba(184,137,63,.4);
+
+    background:
+    rgba(184,137,63,.06);
+
+    color:
+    #ffffff;
+
+}
+
+
+.executive-right a:hover::after{
+
+    transform:
+    translateX(4px);
+
+}
+
+
+/* =========================================================
+   EXECUTIVE PROGRAM RESPONSIVE
+   ========================================================= */
+
+@media
+(max-width:1100px){
+
+    .program-grid{
+
+        grid-template-columns:
+        repeat(2,minmax(0,1fr));
+
+    }
+
+
+    .program-card.featured{
+
+        transform:none;
+
+    }
+
+
+    .program-card.featured:hover{
+
+        transform:
+        translateY(-10px);
+
+    }
+
+
+    .executive-contact{
+
+        grid-template-columns:
+        1fr;
+
+    }
+
+}
+
+
+@media
+(max-width:768px){
+
+    .executive-program{
+
+        padding:
+        100px 0;
+
+    }
+
+
+    .program-grid{
+
+        grid-template-columns:
+        1fr;
+
+        gap:22px;
+
+        margin-top:45px;
+
+    }
+
+
+    .program-card{
+
+        min-height:auto;
+
+        padding:
+        32px 26px;
+
+    }
+
+
+    .application-process{
+
+        margin-top:45px;
+
+        padding:
+        38px 22px;
+
+    }
+
+
+    .process-line{
+
+        grid-template-columns:
+        1fr;
+
+        gap:28px;
+
+    }
+
+
+    .process-line::before{
+
+        top:28px;
+
+        bottom:28px;
+
+        left:27px;
+
+        right:auto;
+
+        width:1px;
+
+        height:auto;
+
+        background:
+        linear-gradient(
+        180deg,
+        transparent,
+        rgba(184,137,63,.5),
+        transparent
+        );
+
+    }
+
+
+    .process-step{
+
+        display:grid;
+
+        grid-template-columns:
+        56px 1fr;
+
+        gap:18px;
+
+        align-items:center;
+
+        text-align:left;
+
+    }
+
+
+    .step-circle{
+
+        margin:0;
+
+    }
+
+
+    .executive-contact{
+
+        margin-top:45px;
+
+        padding:
+        38px 26px;
+
+        gap:35px;
+
+    }
+
+}
+
+
+@media
+(max-width:480px){
+
+    .program-card{
+
+        padding:
+        28px 22px;
+
+        border-radius:20px;
+
+    }
+
+
+    .application-process{
+
+        border-radius:20px;
+
+    }
+
+
+    .executive-contact{
+
+        border-radius:20px;
+
+    }
+
+
+    .executive-left h2{
+
+        font-size:30px;
+
+    }
+
+
+    .executive-right a{
+
+        min-height:54px;
+
+        padding:
+        0 18px;
+
+        font-size:14px;
+
+    }
+
+        }
+
+/* =========================================================
+   ARS PARTNERSHIP
+   SECTION 06 — ARS INVESTMENT OPPORTUNITY
+   GLOBAL STRATEGIC CAPITAL & PARTNERSHIP
+   PREMIUM INVESTMENT SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   06.01 — INVESTMENT OPPORTUNITY
+   MAIN SECTION
+   ========================================================= */
+
+.ars-investment-opportunity{
+    position:relative;
+    padding:140px 0;
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   06.02 — INVESTMENT HERO
+   ========================================================= */
+
+.ars-investment-opportunity .investment-hero{
+    position:relative;
+    display:grid;
+    grid-template-columns:minmax(0,1.35fr) minmax(320px,.65fr);
+    align-items:center;
+    gap:80px;
+    min-height:620px;
+    padding:80px;
+    margin-bottom:100px;
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   06.03 — INVESTMENT HERO CONTENT
+   ========================================================= */
+
+.ars-investment-opportunity .investment-hero-content{
+    position:relative;
+    z-index:2;
+    max-width:850px;
+}
+
+.ars-investment-opportunity .investment-hero-content .section-label{
+    display:inline-block;
+    margin-bottom:25px;
+}
+
+.ars-investment-opportunity .investment-hero-content h2{
+    max-width:800px;
+    margin:0 0 30px;
+    font-size:clamp(42px,5vw,76px);
+    line-height:1.05;
+    letter-spacing:-2px;
+}
+
+.ars-investment-opportunity .investment-lead{
+    max-width:760px;
+    margin-bottom:25px;
+    font-size:20px;
+    line-height:1.9;
+}
+
+.ars-investment-opportunity .investment-hero-content p:not(.investment-lead){
+    max-width:720px;
+    line-height:1.9;
+}
+
+
+/* =========================================================
+   06.04 — INVESTMENT ACTIONS
+   ========================================================= */
+
+.ars-investment-opportunity .investment-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:18px;
+    margin-top:40px;
+}
+
+.ars-investment-opportunity .investment-actions a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:54px;
+    padding:0 30px;
+}
+
+
+/* =========================================================
+   06.05 — INVESTMENT HERO VISUAL
+   ========================================================= */
+
+.ars-investment-opportunity .investment-hero-visual{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:460px;
+}
+
+.ars-investment-opportunity .investment-core{
+    position:relative;
+    z-index:3;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:230px;
+    height:230px;
+    border-radius:50%;
+    border:1px solid rgba(212,169,92,.45);
+    background:
+        radial-gradient(
+            circle at center,
+            rgba(212,169,92,.22),
+            rgba(20,20,20,.55) 55%,
+            rgba(0,0,0,.8)
+        );
+    box-shadow:
+        0 0 60px rgba(212,169,92,.16),
+        inset 0 0 50px rgba(255,255,255,.03);
+    backdrop-filter:blur(10px);
+}
+
+.ars-investment-opportunity .investment-core span{
+    font-size:64px;
+    font-weight:700;
+    letter-spacing:8px;
+}
+
+.ars-investment-opportunity .investment-core small{
+    margin-top:8px;
+    font-size:10px;
+    letter-spacing:4px;
+    text-align:center;
+    line-height:1.6;
+}
+
+
+/* =========================================================
+   06.06 — INVESTMENT ORBIT
+   ========================================================= */
+
+.ars-investment-opportunity .investment-orbit{
+    position:absolute;
+    width:390px;
+    height:390px;
+    border:1px solid rgba(212,169,92,.18);
+    border-radius:50%;
+    transform:rotate(-25deg);
+}
+
+.ars-investment-opportunity .investment-orbit::before,
+.ars-investment-opportunity .investment-orbit::after{
+    content:"";
+    position:absolute;
+    border-radius:50%;
+}
+
+.ars-investment-opportunity .investment-orbit::before{
+    inset:45px;
+    border:1px solid rgba(212,169,92,.14);
+}
+
+.ars-investment-opportunity .investment-orbit::after{
+    top:50%;
+    left:-5px;
+    width:10px;
+    height:10px;
+    background:rgba(212,169,92,.8);
+    box-shadow:0 0 25px rgba(212,169,92,.7);
+}
+
+
+/* =========================================================
+   06.07 — INVESTMENT THESIS
+   ========================================================= */
+
+.ars-investment-opportunity .investment-thesis{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(0,1fr);
+    gap:80px;
+    padding:80px;
+    margin-bottom:120px;
+}
+
+.ars-investment-opportunity .thesis-content{
+    max-width:760px;
+}
+
+.ars-investment-opportunity .thesis-content h2{
+    margin:20px 0 30px;
+    font-size:clamp(38px,4vw,62px);
+    line-height:1.1;
+}
+
+.ars-investment-opportunity .thesis-content p{
+    margin-bottom:25px;
+    line-height:1.9;
+}
+
+.ars-investment-opportunity .thesis-points{
+    display:grid;
+    gap:20px;
+}
+
+.ars-investment-opportunity .thesis-point{
+    display:grid;
+    grid-template-columns:65px 1fr;
+    gap:20px;
+    padding:25px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.ars-investment-opportunity .thesis-point > span{
+    font-size:14px;
+    letter-spacing:3px;
+    opacity:.65;
+}
+
+.ars-investment-opportunity .thesis-point h3{
+    margin:0 0 8px;
+}
+
+.ars-investment-opportunity .thesis-point p{
+    margin:0;
+    line-height:1.7;
+}
+
+
+/* =========================================================
+   06.08 — WHY NOW
+   ========================================================= */
+
+.ars-investment-opportunity .investment-why-now{
+    margin-bottom:120px;
+}
+
+.ars-investment-opportunity .investment-why-now .section-heading{
+    max-width:850px;
+    margin:0 auto 60px;
+    text-align:center;
+}
+
+.ars-investment-opportunity .why-now-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.ars-investment-opportunity .why-now-card{
+    position:relative;
+    padding:45px 35px;
+    min-height:300px;
+    overflow:hidden;
+}
+
+.ars-investment-opportunity .why-now-card > span{
+    display:block;
+    margin-bottom:45px;
+    font-size:14px;
+    letter-spacing:4px;
+    opacity:.6;
+}
+
+.ars-investment-opportunity .why-now-card h3{
+    margin-bottom:18px;
+}
+
+.ars-investment-opportunity .why-now-card p{
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   06.09 — WHERE CAPITAL CREATES VALUE
+   ========================================================= */
+
+.ars-investment-opportunity .capital-opportunity{
+    margin-bottom:120px;
+}
+
+.ars-investment-opportunity .capital-opportunity .section-heading{
+    max-width:800px;
+    margin-bottom:60px;
+}
+
+.ars-investment-opportunity .capital-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:25px;
+}
+
+.ars-investment-opportunity .capital-card{
+    position:relative;
+    min-height:280px;
+    padding:40px 35px;
+    overflow:hidden;
+    transition:
+        transform .4s ease,
+        border-color .4s ease,
+        box-shadow .4s ease;
+}
+
+.ars-investment-opportunity .capital-card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+.ars-investment-opportunity .capital-card > span{
+    display:block;
+    margin-bottom:40px;
+    font-size:13px;
+    letter-spacing:4px;
+    opacity:.6;
+}
+
+.ars-investment-opportunity .capital-card h3{
+    margin-bottom:18px;
+}
+
+.ars-investment-opportunity .capital-card p{
+    line-height:1.8;
+}
+
+
+/* =========================================================
+   06.10 — STRATEGIC PARTICIPATION
+   ========================================================= */
+
+.ars-investment-opportunity .strategic-participation{
+    margin-bottom:120px;
+}
+
+.ars-investment-opportunity .strategic-participation .section-heading{
+    max-width:850px;
+    margin-bottom:60px;
+}
+
+.ars-investment-opportunity .investor-types{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:22px;
+}
+
+.ars-investment-opportunity .investor-type{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-height:390px;
+    padding:40px 30px;
+    overflow:hidden;
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.ars-investment-opportunity .investor-type:hover{
+    transform:translateY(-8px);
+    box-shadow:0 25px 60px rgba(0,0,0,.25);
+}
+
+.ars-investment-opportunity .investor-number{
+    margin-bottom:45px;
+    font-size:14px;
+    letter-spacing:4px;
+    opacity:.6;
+}
+
+.ars-investment-opportunity .investor-type h3{
+    margin-bottom:18px;
+}
+
+.ars-investment-opportunity .investor-type p{
+    flex:1;
+    line-height:1.8;
+}
+
+.ars-investment-opportunity .investor-type a{
+    display:inline-block;
+    margin-top:30px;
+    font-size:13px;
+    letter-spacing:1px;
+}
+
+
+/* =========================================================
+   06.11 — STRATEGIC CONTRIBUTION MATRIX
+   ========================================================= */
+
+.ars-investment-opportunity .contribution-matrix{
+    padding:80px;
+    margin-bottom:120px;
+}
+
+.ars-investment-opportunity .contribution-matrix .section-heading{
+    max-width:800px;
+    margin-bottom:60px;
+}
+
+.ars-investment-opportunity .contribution-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:1px;
+    overflow:hidden;
+    border:1px solid rgba(255,255,255,.08);
+}
+
+.ars-investment-opportunity .contribution-item{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    min-height:160px;
+    padding:35px;
+    border:1px solid rgba(255,255,255,.06);
+    transition:background .35s ease;
+}
+
+.ars-investment-opportunity .contribution-item:hover{
+    background:rgba(255,255,255,.025);
+}
+
+.ars-investment-opportunity .contribution-item strong{
+    font-size:20px;
+}
+
+.ars-investment-opportunity .contribution-item span{
+    line-height:1.7;
+    opacity:.75;
+}
+
+
+/* =========================================================
+   06.12 — INVESTMENT JOURNEY
+   ========================================================= */
+
+.ars-investment-opportunity .investment-process{
+    padding:80px;
+    margin-bottom:120px;
+}
+
+.ars-investment-opportunity .process-heading{
+    max-width:800px;
+    margin-bottom:70px;
+}
+
+.ars-investment-opportunity .process-heading h2{
+    margin:20px 0 25px;
+    font-size:clamp(36px,4vw,58px);
+}
+
+.ars-investment-opportunity .process-heading p{
+    line-height:1.8;
+}
+
+.ars-investment-opportunity .investment-steps{
+    display:grid;
+    grid-template-columns:repeat(6,1fr);
+    gap:20px;
+    position:relative;
+}
+
+.ars-investment-opportunity .investment-step{
+    position:relative;
+    padding-top:30px;
+}
+
+.ars-investment-opportunity .investment-step::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:1px;
+    background:rgba(255,255,255,.12);
+}
+
+.ars-investment-opportunity .investment-step > span{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:50px;
+    height:50px;
+    margin-bottom:25px;
+    border:1px solid rgba(212,169,92,.4);
+    border-radius:50%;
+    font-size:12px;
+    letter-spacing:2px;
+}
+
+.ars-investment-opportunity .investment-step h3{
+    margin-bottom:15px;
+    font-size:18px;
+}
+
+.ars-investment-opportunity .investment-step p{
+    font-size:14px;
+    line-height:1.75;
+    opacity:.75;
+}
+
+
+/* =========================================================
+   06.13 — INVESTMENT PRINCIPLES
+   ========================================================= */
+
+.ars-investment-opportunity .investment-transparency{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:80px;
+    padding:80px;
+    margin-bottom:120px;
+}
+
+.ars-investment-opportunity .transparency-content h2{
+    margin:20px 0 25px;
+    font-size:clamp(36px,4vw,58px);
+    line-height:1.1;
+}
+
+.ars-investment-opportunity .transparency-content p{
+    max-width:700px;
+    line-height:1.9;
+}
+
+.ars-investment-opportunity .transparency-list{
+    display:grid;
+    gap:15px;
+}
+
+.ars-investment-opportunity .transparency-item{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    padding:25px 0;
+    border-bottom:1px solid rgba(255,255,255,.08);
+}
+
+.ars-investment-opportunity .transparency-item strong{
+    font-size:18px;
+}
+
+.ars-investment-opportunity .transparency-item span{
+    opacity:.7;
+}
+
+
+/* =========================================================
+   06.14 — INVESTMENT OFFICE
+   ========================================================= */
+
+.ars-investment-opportunity .investment-final{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) 280px;
+    align-items:center;
+    gap:80px;
+    padding:90px;
+    overflow:hidden;
+}
+
+.ars-investment-opportunity .investment-final-content{
+    max-width:900px;
+}
+
+.ars-investment-opportunity .investment-final-content h2{
+    margin:20px 0 30px;
+    font-size:clamp(38px,4.5vw,68px);
+    line-height:1.08;
+}
+
+.ars-investment-opportunity .investment-final-content p{
+    max-width:800px;
+    line-height:1.9;
+    margin-bottom:20px;
+}
+
+.ars-investment-opportunity .investment-contact-actions{
+    display:flex;
+    flex-wrap:wrap;
+    gap:15px;
+    margin-top:40px;
+}
+
+.ars-investment-opportunity .investment-contact-actions a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:54px;
+    padding:0 28px;
+}
+
+
+/* =========================================================
+   06.15 — INVESTMENT FINAL SYMBOL
+   ========================================================= */
+
+.ars-investment-opportunity .investment-final-symbol{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    width:240px;
+    height:240px;
+    margin:auto;
+    border:1px solid rgba(212,169,92,.3);
+    border-radius:50%;
+    background:
+        radial-gradient(
+            circle,
+            rgba(212,169,92,.12),
+            transparent 70%
+        );
+    box-shadow:
+        0 0 70px rgba(212,169,92,.08),
+        inset 0 0 50px rgba(255,255,255,.025);
+}
+
+.ars-investment-opportunity .investment-final-symbol span{
+    font-size:52px;
+    font-weight:700;
+    letter-spacing:7px;
+}
+
+.ars-investment-opportunity .investment-final-symbol small{
+    margin-top:10px;
+    font-size:9px;
+    letter-spacing:3px;
+}
+
+
+/* =========================================================
+   06.16 — INVESTMENT HOVER SYSTEM
+   ========================================================= */
+
+.ars-investment-opportunity .investment-hero,
+.ars-investment-opportunity .investment-thesis,
+.ars-investment-opportunity .contribution-matrix,
+.ars-investment-opportunity .investment-process,
+.ars-investment-opportunity .investment-transparency,
+.ars-investment-opportunity .investment-final{
+    transition:
+        border-color .4s ease,
+        box-shadow .4s ease;
+}
+
+
+/* =========================================================
+   06.17 — TABLET RESPONSIVE
+   ========================================================= */
+
+@media (max-width:1100px){
+
+    .ars-investment-opportunity{
+        padding:110px 0;
+    }
+
+    .ars-investment-opportunity .investment-hero{
+        grid-template-columns:1fr;
+        gap:50px;
+        padding:60px;
+    }
+
+    .ars-investment-opportunity .investment-hero-content{
+        max-width:100%;
+    }
+
+    .ars-investment-opportunity .investment-hero-visual{
+        min-height:380px;
+    }
+
+    .ars-investment-opportunity .investment-thesis{
+        grid-template-columns:1fr;
+        gap:60px;
+        padding:60px;
+    }
+
+    .ars-investment-opportunity .why-now-grid,
+    .ars-investment-opportunity .capital-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .ars-investment-opportunity .investor-types{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .ars-investment-opportunity .contribution-matrix,
+    .ars-investment-opportunity .investment-process,
+    .ars-investment-opportunity .investment-transparency,
+    .ars-investment-opportunity .investment-final{
+        padding:60px;
+    }
+
+    .ars-investment-opportunity .contribution-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .ars-investment-opportunity .investment-steps{
+        grid-template-columns:repeat(3,1fr);
+        row-gap:50px;
+    }
+
+    .ars-investment-opportunity .investment-transparency{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .ars-investment-opportunity .investment-final{
+        grid-template-columns:1fr;
+        gap:50px;
+    }
+
+    .ars-investment-opportunity .investment-final-symbol{
+        margin:0 auto;
+    }
+
+}
+
+
+/* =========================================================
+   06.18 — MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width:700px){
+
+    .ars-investment-opportunity{
+        padding:80px 0;
+    }
+
+    .ars-investment-opportunity .investment-hero{
+        min-height:auto;
+        padding:40px 25px;
+        margin-bottom:70px;
+    }
+
+    .ars-investment-opportunity .investment-hero-content h2{
+        font-size:40px;
+        letter-spacing:-1px;
+    }
+
+    .ars-investment-opportunity .investment-lead{
+        font-size:17px;
+    }
+
+    .ars-investment-opportunity .investment-actions{
+        flex-direction:column;
+    }
+
+    .ars-investment-opportunity .investment-actions a{
+        width:100%;
+    }
+
+    .ars-investment-opportunity .investment-hero-visual{
+        min-height:300px;
+    }
+
+    .ars-investment-opportunity .investment-core{
+        width:180px;
+        height:180px;
+    }
+
+    .ars-investment-opportunity .investment-core span{
+        font-size:48px;
+    }
+
+    .ars-investment-opportunity .investment-orbit{
+        width:280px;
+        height:280px;
+    }
+
+    .ars-investment-opportunity .investment-thesis{
+        padding:40px 25px;
+        margin-bottom:80px;
+    }
+
+    .ars-investment-opportunity .thesis-content h2,
+    .ars-investment-opportunity .process-heading h2,
+    .ars-investment-opportunity .transparency-content h2{
+        font-size:38px;
+    }
+
+    .ars-investment-opportunity .why-now-grid,
+    .ars-investment-opportunity .capital-grid,
+    .ars-investment-opportunity .investor-types,
+    .ars-investment-opportunity .contribution-grid{
+        grid-template-columns:1fr;
+    }
+
+    .ars-investment-opportunity .investment-why-now,
+    .ars-investment-opportunity .capital-opportunity,
+    .ars-investment-opportunity .strategic-participation{
+        margin-bottom:80px;
+    }
+
+    .ars-investment-opportunity .investment-process,
+    .ars-investment-opportunity .investment-transparency,
+    .ars-investment-opportunity .investment-final,
+    .ars-investment-opportunity .contribution-matrix{
+        padding:40px 25px;
+        margin-bottom:80px;
+    }
+
+    .ars-investment-opportunity .investment-steps{
+        grid-template-columns:1fr;
+        gap:35px;
+    }
+
+    .ars-investment-opportunity .investment-step::before{
+        display:none;
+    }
+
+    .ars-investment-opportunity .investment-step{
+        padding-top:0;
+    }
+
+    .ars-investment-opportunity .investment-final-content h2{
+        font-size:38px;
+    }
+
+    .ars-investment-opportunity .investment-contact-actions{
+        flex-direction:column;
+    }
+
+    .ars-investment-opportunity .investment-contact-actions a{
+        width:100%;
+    }
+
+    .ars-investment-opportunity .investment-final-symbol{
+        width:190px;
+        height:190px;
+    }
+
+    .ars-investment-opportunity .investment-final-symbol span{
+        font-size:42px;
+    }
+
+    }
+
+
+/* =========================================================
+   ARS PARTNERSHIP
+   SECTION 07 — PARTNERSHIP OPPORTUNITIES
+   PREMIUM OPPORTUNITY NETWORK SYSTEM
+   ========================================================= */
+
+
+/* =========================================================
+   07.01 — PARTNERSHIP OPPORTUNITIES
+   MAIN SECTION
+   ========================================================= */
+
+.partnership-opportunities{
+    position:relative;
+    padding:140px 0;
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   07.02 — OPPORTUNITIES SECTION HEADING
+   ========================================================= */
+
+.partnership-opportunities .section-heading{
+    max-width:850px;
+    margin:0 auto 70px;
+    text-align:center;
+}
+
+.partnership-opportunities .section-heading .section-label{
+    display:inline-block;
+    margin-bottom:22px;
+}
+
+.partnership-opportunities .section-heading h2{
+    margin:0 0 25px;
+    font-size:clamp(42px,5vw,70px);
+    line-height:1.08;
+    letter-spacing:-1.5px;
+}
+
+.partnership-opportunities .section-heading p{
+    max-width:720px;
+    margin:0 auto;
+    line-height:1.9;
+    opacity:.8;
+}
+
+
+/* =========================================================
+   07.03 — OPPORTUNITY GRID
+   ========================================================= */
+
+.partnership-opportunities .opportunity-grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:24px;
+    margin-bottom:100px;
+}
+
+
+/* =========================================================
+   07.04 — OPPORTUNITY CARD
+   ========================================================= */
+
+.partnership-opportunities .opportunity-card{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    min-height:330px;
+    padding:42px 35px;
+    overflow:hidden;
+    transition:
+        transform .45s ease,
+        box-shadow .45s ease,
+        border-color .45s ease;
+}
+
+.partnership-opportunities .opportunity-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:2px;
+    background:currentColor;
+    transition:width .45s ease;
+}
+
+.partnership-opportunities .opportunity-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 25px 65px rgba(0,0,0,.25);
+}
+
+.partnership-opportunities .opportunity-card:hover::before{
+    width:100%;
+}
+
+
+/* =========================================================
+   07.05 — OPPORTUNITY ICON
+   ========================================================= */
+
+.partnership-opportunities .opportunity-icon{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:64px;
+    height:64px;
+    margin-bottom:35px;
+    border:1px solid rgba(255,255,255,.1);
+    border-radius:18px;
+    background:rgba(255,255,255,.025);
+    font-size:28px;
+    transition:
+        transform .4s ease,
+        background .4s ease;
+}
+
+.partnership-opportunities .opportunity-card:hover .opportunity-icon{
+    transform:translateY(-4px) scale(1.05);
+    background:rgba(255,255,255,.06);
+}
+
+
+/* =========================================================
+   07.06 — OPPORTUNITY CARD CONTENT
+   ========================================================= */
+
+.partnership-opportunities .opportunity-card h3{
+    margin:0 0 15px;
+    font-size:22px;
+    line-height:1.3;
+}
+
+.partnership-opportunities .opportunity-card p{
+    flex:1;
+    margin:0;
+    line-height:1.8;
+    opacity:.75;
+}
+
+.partnership-opportunities .opportunity-card a{
+    display:inline-flex;
+    align-items:center;
+    align-self:flex-start;
+    margin-top:30px;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+    text-decoration:none;
+    transition:
+        transform .3s ease,
+        opacity .3s ease;
+}
+
+.partnership-opportunities .opportunity-card a:hover{
+    transform:translateX(6px);
+    opacity:.75;
+}
+
+
+/* =========================================================
+   07.07 — PREMIUM MESSAGE
+   ========================================================= */
+
+.partnership-opportunities .premium-message{
+    position:relative;
+    display:grid;
+    grid-template-columns:minmax(0,1fr) auto;
+    align-items:center;
+    gap:60px;
+    padding:70px 75px;
+    overflow:hidden;
+}
+
+.partnership-opportunities .premium-message::after{
+    content:"";
+    position:absolute;
+    top:-180px;
+    right:-120px;
+    width:420px;
+    height:420px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.06);
+    box-shadow:
+        0 0 0 45px rgba(255,255,255,.015),
+        0 0 0 90px rgba(255,255,255,.01);
+    pointer-events:none;
+}
+
+
+/* =========================================================
+   07.08 — PREMIUM CONTENT
+   ========================================================= */
+
+.partnership-opportunities .premium-content{
+    position:relative;
+    z-index:2;
+    max-width:800px;
+}
+
+.partnership-opportunities .premium-content h2{
+    margin:0 0 20px;
+    font-size:clamp(32px,4vw,52px);
+    line-height:1.12;
+}
+
+.partnership-opportunities .premium-content p{
+    max-width:720px;
+    margin:0;
+    line-height:1.9;
+    opacity:.78;
+}
+
+
+/* =========================================================
+   07.09 — PREMIUM BUTTONS
+   ========================================================= */
+
+.partnership-opportunities .premium-buttons{
+    position:relative;
+    z-index:2;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    min-width:210px;
+}
+
+.partnership-opportunities .premium-buttons a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    min-height:52px;
+    padding:0 25px;
+    border:1px solid rgba(255,255,255,.12);
+    text-decoration:none;
+    font-size:13px;
+    font-weight:600;
+    letter-spacing:1px;
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        border-color .35s ease;
+}
+
+.partnership-opportunities .premium-buttons a:hover{
+    transform:translateX(-5px);
+    background:rgba(255,255,255,.05);
+    border-color:rgba(255,255,255,.25);
+}
+
+
+/* =========================================================
+   07.10 — OPPORTUNITY CARD VISUAL DEPTH
+   ========================================================= */
+
+.partnership-opportunities .opportunity-card:nth-child(1),
+.partnership-opportunities .opportunity-card:nth-child(4),
+.partnership-opportunities .opportunity-card:nth-child(7){
+    background-image:
+        radial-gradient(
+            circle at 100% 0%,
+            rgba(255,255,255,.035),
+            transparent 45%
+        );
+}
+
+.partnership-opportunities .opportunity-card:nth-child(2),
+.partnership-opportunities .opportunity-card:nth-child(5),
+.partnership-opportunities .opportunity-card:nth-child(8){
+    background-image:
+        radial-gradient(
+            circle at 0% 100%,
+            rgba(255,255,255,.025),
+            transparent 45%
+        );
+}
+
+.partnership-opportunities .opportunity-card:nth-child(3),
+.partnership-opportunities .opportunity-card:nth-child(6),
+.partnership-opportunities .opportunity-card:nth-child(9){
+    background-image:
+        radial-gradient(
+            circle at 100% 100%,
+            rgba(255,255,255,.03),
+            transparent 45%
+        );
+}
+
+
+/* =========================================================
+   07.11 — TABLET RESPONSIVE
+   ========================================================= */
+
+@media (max-width:1100px){
+
+    .partnership-opportunities{
+        padding:110px 0;
+    }
+
+    .partnership-opportunities .opportunity-grid{
+        grid-template-columns:repeat(2,1fr);
+        gap:22px;
+    }
+
+    .partnership-opportunities .premium-message{
+        grid-template-columns:1fr;
+        gap:40px;
+        padding:60px;
+    }
+
+    .partnership-opportunities .premium-buttons{
+        display:grid;
+        grid-template-columns:repeat(3,1fr);
+        width:100%;
+    }
+
+    .partnership-opportunities .premium-buttons a:hover{
+        transform:translateY(-4px);
+    }
+
+}
+
+
+/* =========================================================
+   07.12 — MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width:700px){
+
+    .partnership-opportunities{
+        padding:80px 0;
+    }
+
+    .partnership-opportunities .section-heading{
+        margin-bottom:50px;
+    }
+
+    .partnership-opportunities .section-heading h2{
+        font-size:40px;
+        letter-spacing:-1px;
+    }
+
+    .partnership-opportunities .section-heading p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .partnership-opportunities .opportunity-grid{
+        grid-template-columns:1fr;
+        gap:18px;
+        margin-bottom:70px;
+    }
+
+    .partnership-opportunities .opportunity-card{
+        min-height:300px;
+        padding:35px 28px;
+    }
+
+    .partnership-opportunities .opportunity-icon{
+        width:58px;
+        height:58px;
+        margin-bottom:28px;
+        font-size:25px;
+    }
+
+    .partnership-opportunities .opportunity-card h3{
+        font-size:21px;
+    }
+
+    .partnership-opportunities .premium-message{
+        padding:40px 28px;
+        gap:35px;
+    }
+
+    .partnership-opportunities .premium-content h2{
+        font-size:34px;
+    }
+
+    .partnership-opportunities .premium-content p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .partnership-opportunities .premium-buttons{
+        grid-template-columns:1fr;
+    }
+
+    .partnership-opportunities .premium-buttons a{
+        width:100%;
+    }
+
+    }
+
+/* =========================================================
+   ARS PARTNERSHIP
+   SECTION 08 — WHY INVEST IN ARS
+   PREMIUM INVESTMENT REASONS SYSTEM
+   GLOBAL TECHNOLOGY & AUTOMOTIVE INVESTMENT EXPERIENCE
+   ========================================================= */
+
+
+/* =========================================================
+   08.01 — INVESTMENT REASONS
+   MAIN SECTION
+   ========================================================= */
+
+.investment-reasons{
+    position:relative;
+    padding:150px 0;
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   08.02 — SECTION HEADING
+   ========================================================= */
+
+.investment-reasons .section-heading{
+    position:relative;
+    max-width:900px;
+    margin:0 auto 85px;
+    text-align:center;
+}
+
+.investment-reasons .section-heading .section-label{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:24px;
+}
+
+.investment-reasons .section-heading h2{
+    margin:0 0 25px;
+    font-size:clamp(44px,5.2vw,76px);
+    line-height:1.05;
+    letter-spacing:-2px;
+}
+
+.investment-reasons .section-heading p{
+    max-width:720px;
+    margin:0 auto;
+    line-height:1.9;
+    opacity:.76;
+}
+
+
+/* =========================================================
+   08.03 — INVESTMENT LAYOUT
+   ========================================================= */
+
+.investment-reasons .investment-layout{
+    display:grid;
+    grid-template-columns:minmax(0,1fr) minmax(420px, .95fr);
+    gap:35px;
+    align-items:stretch;
+    margin-bottom:45px;
+}
+
+
+/* =========================================================
+   08.04 — INVESTMENT LEFT
+   ========================================================= */
+
+.investment-reasons .investment-left{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:20px;
+}
+
+
+/* =========================================================
+   08.05 — REASON CARD
+   ========================================================= */
+
+.investment-reasons .reason-card{
+    position:relative;
+    display:flex;
+    align-items:flex-start;
+    gap:22px;
+    min-height:210px;
+    padding:35px 30px;
+    overflow:hidden;
+    transition:
+        transform .45s cubic-bezier(.2,.8,.2,1),
+        border-color .45s ease,
+        box-shadow .45s ease;
+}
+
+.investment-reasons .reason-card::before{
+    content:"";
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:1px;
+    background:linear-gradient(
+        90deg,
+        transparent,
+        rgba(255,255,255,.18),
+        transparent
+    );
+    opacity:.5;
+}
+
+.investment-reasons .reason-card::after{
+    content:"";
+    position:absolute;
+    width:180px;
+    height:180px;
+    top:-90px;
+    right:-90px;
+    border-radius:50%;
+    background:radial-gradient(
+        circle,
+        rgba(255,255,255,.045),
+        transparent 70%
+    );
+    pointer-events:none;
+}
+
+.investment-reasons .reason-card:hover{
+    transform:translateY(-8px);
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.22);
+}
+
+
+/* =========================================================
+   08.06 — REASON ICON
+   ========================================================= */
+
+.investment-reasons .reason-icon{
+    position:relative;
+    flex:0 0 58px;
+    width:58px;
+    height:58px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:16px;
+    background:rgba(255,255,255,.025);
+    font-size:25px;
+    transition:
+        transform .4s ease,
+        background .4s ease,
+        border-color .4s ease;
+}
+
+.investment-reasons .reason-card:hover .reason-icon{
+    transform:translateY(-4px) scale(1.05);
+    background:rgba(255,255,255,.06);
+    border-color:rgba(255,255,255,.22);
+}
+
+
+/* =========================================================
+   08.07 — REASON CARD TYPOGRAPHY
+   ========================================================= */
+
+.investment-reasons .reason-card h3{
+    margin:3px 0 13px;
+    font-size:20px;
+    line-height:1.35;
+    letter-spacing:-.2px;
+}
+
+.investment-reasons .reason-card p{
+    margin:0;
+    font-size:14px;
+    line-height:1.85;
+    opacity:.7;
+}
+
+
+/* =========================================================
+   08.08 — INVESTMENT IMAGE PANEL
+   ========================================================= */
+
+.investment-reasons .investment-right{
+    position:relative;
+    min-height:500px;
+    overflow:hidden;
+    isolation:isolate;
+}
+
+.investment-reasons .investment-right::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0,0,0,.04) 0%,
+            rgba(0,0,0,.12) 40%,
+            rgba(0,0,0,.82) 100%
+        );
+    pointer-events:none;
+}
+
+.investment-reasons .investment-right::after{
+    content:"";
+    position:absolute;
+    inset:15px;
+    z-index:2;
+    border:1px solid rgba(255,255,255,.08);
+    pointer-events:none;
+}
+
+.investment-reasons .investment-right img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:
+        transform 1s cubic-bezier(.2,.8,.2,1);
+}
+
+.investment-reasons .investment-right:hover img{
+    transform:scale(1.045);
+}
+
+
+/* =========================================================
+   08.09 — INVESTMENT OVERLAY
+   ========================================================= */
+
+.investment-reasons .investment-overlay{
+    position:absolute;
+    left:45px;
+    right:45px;
+    bottom:45px;
+    z-index:3;
+}
+
+.investment-reasons .investment-overlay h3{
+    margin:0 0 12px;
+    font-size:clamp(30px,3vw,48px);
+    line-height:1.1;
+    letter-spacing:-1px;
+}
+
+.investment-reasons .investment-overlay p{
+    max-width:430px;
+    margin:0;
+    font-size:15px;
+    line-height:1.8;
+    opacity:.82;
+}
+
+
+/* =========================================================
+   08.10 — INVESTMENT HIGHLIGHT
+   ========================================================= */
+
+.investment-reasons .investment-highlight{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:20px;
+    margin-bottom:45px;
+}
+
+
+/* =========================================================
+   08.11 — HIGHLIGHT CARD
+   ========================================================= */
+
+.investment-reasons .highlight-card{
+    position:relative;
+    min-height:175px;
+    padding:35px 30px;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    overflow:hidden;
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.investment-reasons .highlight-card::before{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0;
+    width:100%;
+    height:2px;
+    transform:scaleX(0);
+    transform-origin:left;
+    background:currentColor;
+    transition:transform .5s ease;
+}
+
+.investment-reasons .highlight-card:hover{
+    transform:translateY(-7px);
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.2);
+}
+
+.investment-reasons .highlight-card:hover::before{
+    transform:scaleX(1);
+}
+
+.investment-reasons .highlight-card h2{
+    margin:0 0 8px;
+    font-size:clamp(25px,2.4vw,38px);
+    line-height:1.1;
+    letter-spacing:-1px;
+}
+
+.investment-reasons .highlight-card span{
+    font-size:12px;
+    letter-spacing:2px;
+    text-transform:uppercase;
+    opacity:.58;
+}
+
+
+/* =========================================================
+   08.12 — EXECUTIVE NOTE
+   ========================================================= */
+
+.investment-reasons .executive-note{
+    position:relative;
+    display:grid;
+    grid-template-columns:auto minmax(0,1fr) auto;
+    align-items:center;
+    gap:40px;
+    padding:55px 65px;
+    overflow:hidden;
+}
+
+.investment-reasons .executive-note::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:3px;
+    height:100%;
+    background:currentColor;
+    opacity:.6;
+}
+
+.investment-reasons .executive-note::after{
+    content:"";
+    position:absolute;
+    width:420px;
+    height:420px;
+    right:-220px;
+    top:-180px;
+    border-radius:50%;
+    border:1px solid rgba(255,255,255,.05);
+    box-shadow:
+        0 0 0 45px rgba(255,255,255,.012),
+        0 0 0 90px rgba(255,255,255,.008);
+    pointer-events:none;
+}
+
+
+/* =========================================================
+   08.13 — QUOTE MARK
+   ========================================================= */
+
+.investment-reasons .quote-mark{
+    position:relative;
+    z-index:1;
+    font-family:Georgia,serif;
+    font-size:82px;
+    line-height:.7;
+    opacity:.28;
+}
+
+
+/* =========================================================
+   08.14 — EXECUTIVE QUOTE
+   ========================================================= */
+
+.investment-reasons .executive-note p{
+    position:relative;
+    z-index:1;
+    max-width:850px;
+    margin:0;
+    font-size:clamp(20px,2.2vw,30px);
+    line-height:1.65;
+    letter-spacing:-.3px;
+}
+
+
+/* =========================================================
+   08.15 — QUOTE AUTHOR
+   ========================================================= */
+
+.investment-reasons .quote-author{
+    position:relative;
+    z-index:1;
+    white-space:nowrap;
+    font-size:12px;
+    letter-spacing:1.5px;
+    text-transform:uppercase;
+    opacity:.55;
+}
+
+
+/* =========================================================
+   08.16 — LARGE SCREEN REFINEMENT
+   ========================================================= */
+
+@media (min-width:1400px){
+
+    .investment-reasons .investment-layout{
+        gap:45px;
+    }
+
+    .investment-reasons .reason-card{
+        min-height:230px;
+        padding:40px 35px;
+    }
+
+    .investment-reasons .investment-right{
+        min-height:520px;
+    }
+
+}
+
+
+/* =========================================================
+   08.17 — TABLET RESPONSIVE
+   ========================================================= */
+
+@media (max-width:1100px){
+
+    .investment-reasons{
+        padding:115px 0;
+    }
+
+    .investment-reasons .investment-layout{
+        grid-template-columns:1fr;
+    }
+
+    .investment-reasons .investment-right{
+        min-height:550px;
+    }
+
+    .investment-reasons .investment-highlight{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .investment-reasons .executive-note{
+        grid-template-columns:auto minmax(0,1fr);
+        gap:30px;
+        padding:50px;
+    }
+
+    .investment-reasons .quote-author{
+        grid-column:2;
+    }
+
+}
+
+
+/* =========================================================
+   08.18 — MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width:700px){
+
+    .investment-reasons{
+        padding:85px 0;
+    }
+
+    .investment-reasons .section-heading{
+        margin-bottom:55px;
+    }
+
+    .investment-reasons .section-heading h2{
+        font-size:40px;
+        letter-spacing:-1px;
+    }
+
+    .investment-reasons .section-heading p{
+        font-size:15px;
+        line-height:1.8;
+    }
+
+    .investment-reasons .investment-left{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .investment-reasons .reason-card{
+        min-height:auto;
+        padding:30px 25px;
+    }
+
+    .investment-reasons .reason-icon{
+        flex-basis:52px;
+        width:52px;
+        height:52px;
+        font-size:23px;
+    }
+
+    .investment-reasons .reason-card h3{
+        font-size:19px;
+    }
+
+    .investment-reasons .reason-card p{
+        font-size:14px;
+    }
+
+    .investment-reasons .investment-right{
+        min-height:430px;
+    }
+
+    .investment-reasons .investment-right::after{
+        inset:10px;
+    }
+
+    .investment-reasons .investment-overlay{
+        left:30px;
+        right:30px;
+        bottom:30px;
+    }
+
+    .investment-reasons .investment-overlay h3{
+        font-size:34px;
+    }
+
+    .investment-reasons .investment-highlight{
+        grid-template-columns:1fr 1fr;
+        gap:15px;
+        margin-bottom:30px;
+    }
+
+    .investment-reasons .highlight-card{
+        min-height:145px;
+        padding:25px 20px;
+    }
+
+    .investment-reasons .highlight-card h2{
+        font-size:26px;
+    }
+
+    .investment-reasons .executive-note{
+        grid-template-columns:1fr;
+        gap:20px;
+        padding:40px 30px;
+    }
+
+    .investment-reasons .quote-mark{
+        font-size:65px;
+    }
+
+    .investment-reasons .executive-note p{
+        font-size:20px;
+        line-height:1.65;
+    }
+
+    .investment-reasons .quote-author{
+        grid-column:auto;
+        white-space:normal;
+        line-height:1.6;
+    }
+
+}
+
+
+/* =========================================================
+   08.19 — SMALL MOBILE REFINEMENT
+   ========================================================= */
+
+@media (max-width:430px){
+
+    .investment-reasons .investment-highlight{
+        grid-template-columns:1fr;
+    }
+
+    .investment-reasons .investment-right{
+        min-height:390px;
+    }
+
+    .investment-reasons .investment-overlay h3{
+        font-size:30px;
+    }
+
+        }
+
+/* =========================================================
+   ARS PARTNERSHIP
+   SECTION 09 — EXECUTIVE CONTACT CENTER
+   PREMIUM EXECUTIVE RELATIONS & CONTACT SYSTEM
+   GLOBAL BUSINESS COMMUNICATION EXPERIENCE
+   ========================================================= */
+
+
+/* =========================================================
+   09.01 — EXECUTIVE CONTACT CENTER
+   MAIN SECTION
+   ========================================================= */
+
+.executive-center{
+    position:relative;
+    padding:150px 0;
+    overflow:hidden;
+}
+
+
+/* =========================================================
+   09.02 — SECTION HEADING
+   ========================================================= */
+
+.executive-center .section-heading{
+    position:relative;
+    max-width:850px;
+    margin:0 auto 80px;
+    text-align:center;
+}
+
+.executive-center .section-heading .section-label{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    margin-bottom:24px;
+}
+
+.executive-center .section-heading h2{
+    margin:0 0 24px;
+    font-size:clamp(44px,5vw,74px);
+    line-height:1.05;
+    letter-spacing:-2px;
+}
+
+.executive-center .section-heading p{
+    max-width:680px;
+    margin:0 auto;
+    font-size:15px;
+    line-height:1.9;
+    opacity:.72;
+}
+
+
+/* =========================================================
+   09.03 — EXECUTIVE GRID
+   ========================================================= */
+
+.executive-center .executive-grid{
+    display:grid;
+    grid-template-columns:
+        minmax(0,1.5fr)
+        repeat(2,minmax(0,1fr));
+    gap:22px;
+    align-items:stretch;
+}
+
+
+/* =========================================================
+   09.04 — EXECUTIVE MAIN CARD
+   ========================================================= */
+
+.executive-center .executive-main{
+    grid-column:span 2;
+    position:relative;
+    min-height:500px;
+    padding:0;
+    overflow:hidden;
+    isolation:isolate;
+    transition:
+        transform .45s cubic-bezier(.2,.8,.2,1),
+        box-shadow .45s ease;
+}
+
+.executive-center .executive-main::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    z-index:1;
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.92) 0%,
+            rgba(0,0,0,.72) 42%,
+            rgba(0,0,0,.25) 100%
+        );
+    pointer-events:none;
+}
+
+.executive-center .executive-main:hover{
+    transform:translateY(-7px);
+    box-shadow:
+        0 30px 80px rgba(0,0,0,.25);
+}
+
+
+/* =========================================================
+   09.05 — EXECUTIVE HEADER IMAGE
+   ========================================================= */
+
+.executive-center .executive-header{
+    position:absolute;
+    inset:0;
+    z-index:0;
+}
+
+.executive-center .executive-header img{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:
+        transform 1s cubic-bezier(.2,.8,.2,1);
+}
+
+.executive-center .executive-main:hover
+.executive-header img{
+    transform:scale(1.045);
+}
+
+
+/* =========================================================
+   09.06 — EXECUTIVE HEADER CONTENT
+   ========================================================= */
+
+.executive-center .executive-header > div{
+    position:absolute;
+    left:55px;
+    bottom:45px;
+    z-index:3;
+    max-width:600px;
+}
+
+.executive-center .executive-header span{
+    display:block;
+    margin-bottom:14px;
+    font-size:11px;
+    letter-spacing:2.5px;
+    text-transform:uppercase;
+    opacity:.62;
+}
+
+.executive-center .executive-header h3{
+    margin:0;
+    font-size:clamp(28px,3vw,45px);
+    line-height:1.15;
+    letter-spacing:-1px;
+}
+
+
+/* =========================================================
+   09.07 — EXECUTIVE MAIN DESCRIPTION
+   ========================================================= */
+
+.executive-center .executive-main > p{
+    position:absolute;
+    left:55px;
+    top:55px;
+    z-index:3;
+    max-width:520px;
+    margin:0;
+    font-size:16px;
+    line-height:1.9;
+    opacity:.78;
+}
+
+
+/* =========================================================
+   09.08 — EXECUTIVE BUTTONS
+   ========================================================= */
+
+.executive-center .executive-buttons{
+    position:absolute;
+    left:55px;
+    bottom:45px;
+    z-index:4;
+    display:flex;
+    flex-wrap:wrap;
+    gap:12px;
+    transform:translateY(95px);
+    opacity:0;
+    transition:
+        transform .5s cubic-bezier(.2,.8,.2,1),
+        opacity .5s ease;
+}
+
+.executive-center .executive-main:hover
+.executive-buttons{
+    transform:translateY(0);
+    opacity:1;
+}
+
+.executive-center .executive-buttons a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:48px;
+    padding:0 24px;
+    border:1px solid rgba(255,255,255,.16);
+    border-radius:999px;
+    background:rgba(0,0,0,.28);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    font-size:12px;
+    letter-spacing:.5px;
+    text-decoration:none;
+    transition:
+        background .35s ease,
+        border-color .35s ease,
+        transform .35s ease;
+}
+
+.executive-center .executive-buttons a:hover{
+    transform:translateY(-3px);
+    background:rgba(255,255,255,.08);
+    border-color:rgba(255,255,255,.3);
+}
+
+
+/* =========================================================
+   09.09 — CONTACT PANELS
+   ========================================================= */
+
+.executive-center .contact-panel{
+    position:relative;
+    min-height:285px;
+    padding:35px 32px;
+    display:flex;
+    flex-direction:column;
+    overflow:hidden;
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+}
+
+.executive-center .contact-panel::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:2px;
+    transform:scaleX(0);
+    transform-origin:left;
+    background:currentColor;
+    transition:transform .45s ease;
+}
+
+.executive-center .contact-panel:hover{
+    transform:translateY(-7px);
+    box-shadow:
+        0 25px 65px rgba(0,0,0,.2);
+}
+
+.executive-center .contact-panel:hover::before{
+    transform:scaleX(1);
+}
+
+
+/* =========================================================
+   09.10 — CONTACT PANEL TITLE
+   ========================================================= */
+
+.executive-center .contact-panel h3{
+    margin:0 0 25px;
+    font-size:22px;
+    line-height:1.3;
+    letter-spacing:-.3px;
+}
+
+
+/* =========================================================
+   09.11 — CONTACT PANEL LIST
+   ========================================================= */
+
+.executive-center .contact-panel ul{
+    display:flex;
+    flex-direction:column;
+    gap:13px;
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+.executive-center .contact-panel li{
+    position:relative;
+    padding-left:18px;
+    font-size:13px;
+    line-height:1.6;
+    opacity:.65;
+}
+
+.executive-center .contact-panel li::before{
+    content:"";
+    position:absolute;
+    left:0;
+    top:.65em;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background:currentColor;
+    opacity:.55;
+}
+
+
+/* =========================================================
+   09.12 — CONTACT PANEL LINK
+   ========================================================= */
+
+.executive-center .contact-panel a{
+    display:inline-flex;
+    align-items:center;
+    margin-top:auto;
+    padding-top:25px;
+    font-size:12px;
+    letter-spacing:.4px;
+    text-decoration:none;
+    opacity:.7;
+    transition:
+        opacity .3s ease,
+        transform .3s ease;
+}
+
+.executive-center .contact-panel a:hover{
+    opacity:1;
+    transform:translateX(5px);
+}
+
+
+/* =========================================================
+   09.13 — COMMUNICATION WALL
+   ========================================================= */
+
+.executive-center .communication-wall{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:18px;
+    margin-top:22px;
+}
+
+
+/* =========================================================
+   09.14 — WALL CARD
+   ========================================================= */
+
+.executive-center .wall-card{
+    position:relative;
+    min-height:180px;
+    padding:30px 25px;
+    text-align:center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+    overflow:hidden;
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+}
+
+.executive-center .wall-card:hover{
+    transform:translateY(-6px);
+    box-shadow:
+        0 20px 55px rgba(0,0,0,.18);
+}
+
+
+/* =========================================================
+   09.15 — WALL ICON
+   ========================================================= */
+
+.executive-center .wall-icon{
+    width:52px;
+    height:52px;
+    margin-bottom:18px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    border:1px solid rgba(255,255,255,.12);
+    border-radius:50%;
+    background:rgba(255,255,255,.025);
+    font-size:21px;
+    transition:
+        transform .4s ease,
+        background .4s ease;
+}
+
+.executive-center .wall-card:hover .wall-icon{
+    transform:scale(1.08);
+    background:rgba(255,255,255,.07);
+}
+
+
+/* =========================================================
+   09.16 — WALL TYPOGRAPHY
+   ========================================================= */
+
+.executive-center .wall-card h3{
+    margin:0 0 8px;
+    font-size:17px;
+}
+
+.executive-center .wall-card p{
+    margin:0;
+    font-size:12px;
+    line-height:1.7;
+    opacity:.58;
+}
+
+
+/* =========================================================
+   09.17 — EXECUTIVE FINAL
+   ========================================================= */
+
+.executive-center .executive-final{
+    position:relative;
+    margin-top:45px;
+    padding:80px 70px;
+    text-align:center;
+    overflow:hidden;
+    isolation:isolate;
+}
+
+.executive-center .executive-final::before{
+    content:"";
+    position:absolute;
+    width:500px;
+    height:500px;
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+    border-radius:50%;
+    background:radial-gradient(
+        circle,
+        rgba(255,255,255,.055),
+        transparent 68%
+    );
+    pointer-events:none;
+    z-index:-1;
+}
+
+.executive-center .executive-final::after{
+    content:"";
+    position:absolute;
+    inset:18px;
+    border:1px solid rgba(255,255,255,.055);
+    pointer-events:none;
+}
+
+
+/* =========================================================
+   09.18 — EXECUTIVE FINAL TYPOGRAPHY
+   ========================================================= */
+
+.executive-center .executive-final h2{
+    position:relative;
+    z-index:1;
+    max-width:800px;
+    margin:0 auto 20px;
+    font-size:clamp(35px,4vw,60px);
+    line-height:1.1;
+    letter-spacing:-1.5px;
+}
+
+.executive-center .executive-final p{
+    position:relative;
+    z-index:1;
+    max-width:620px;
+    margin:0 auto;
+    font-size:15px;
+    line-height:1.9;
+    opacity:.7;
+}
+
+
+/* =========================================================
+   09.19 — EXECUTIVE FINAL BUTTONS
+   ========================================================= */
+
+.executive-center .executive-final-buttons{
+    position:relative;
+    z-index:1;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:14px;
+    margin-top:35px;
+}
+
+.executive-center .executive-final-buttons a{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    min-height:52px;
+    padding:0 28px;
+    border:1px solid rgba(255,255,255,.14);
+    border-radius:999px;
+    background:rgba(255,255,255,.025);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter:blur(12px);
+    font-size:12px;
+    text-decoration:none;
+    transition:
+        transform .35s ease,
+        background .35s ease,
+        border-color .35s ease,
+        box-shadow .35s ease;
+}
+
+.executive-center .executive-final-buttons a:first-child{
+    background:rgba(255,255,255,.09);
+    border-color:rgba(255,255,255,.22);
+}
+
+.executive-center .executive-final-buttons a:hover{
+    transform:translateY(-4px);
+    background:rgba(255,255,255,.09);
+    border-color:rgba(255,255,255,.3);
+    box-shadow:
+        0 12px 35px rgba(0,0,0,.16);
+}
+
+
+/* =========================================================
+   09.20 — LARGE SCREEN REFINEMENT
+   ========================================================= */
+
+@media (min-width:1400px){
+
+    .executive-center{
+        padding:175px 0;
+    }
+
+    .executive-center .executive-main{
+        min-height:550px;
+    }
+
+    .executive-center .executive-header > div{
+        left:65px;
+        bottom:55px;
+    }
+
+    .executive-center .executive-main > p{
+        left:65px;
+        top:65px;
+    }
+
+    .executive-center .executive-buttons{
+        left:65px;
+        bottom:55px;
+    }
+
+}
+
+
+/* =========================================================
+   09.21 — TABLET RESPONSIVE
+   ========================================================= */
+
+@media (max-width:1100px){
+
+    .executive-center{
+        padding:115px 0;
+    }
+
+    .executive-center .executive-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .executive-center .executive-main{
+        grid-column:1 / -1;
+        min-height:520px;
+    }
+
+    .executive-center .communication-wall{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    .executive-center .executive-final{
+        padding:65px 50px;
+    }
+
+}
+
+
+/* =========================================================
+   09.22 — MOBILE RESPONSIVE
+   ========================================================= */
+
+@media (max-width:700px){
+
+    .executive-center{
+        padding:85px 0;
+    }
+
+    .executive-center .section-heading{
+        margin-bottom:55px;
+    }
+
+    .executive-center .section-heading h2{
+        font-size:40px;
+        letter-spacing:-1px;
+    }
+
+    .executive-center .section-heading p{
+        font-size:14px;
+        line-height:1.8;
+    }
+
+    .executive-center .executive-grid{
+        grid-template-columns:1fr;
+        gap:16px;
+    }
+
+    .executive-center .executive-main{
+        grid-column:auto;
+        min-height:620px;
+    }
+
+    .executive-center .executive-main::before{
+        background:
+            linear-gradient(
+                180deg,
+                rgba(0,0,0,.18) 0%,
+                rgba(0,0,0,.48) 42%,
+                rgba(0,0,0,.92) 100%
+            );
+    }
+
+    .executive-center .executive-main > p{
+        left:30px;
+        right:30px;
+        top:35px;
+        max-width:none;
+        font-size:14px;
+        line-height:1.8;
+    }
+
+    .executive-center .executive-header > div{
+        left:30px;
+        right:30px;
+        bottom:135px;
+    }
+
+    .executive-center .executive-header h3{
+        font-size:30px;
+    }
+
+    .executive-center .executive-buttons{
+        left:30px;
+        right:30px;
+        bottom:35px;
+        transform:none;
+        opacity:1;
+        flex-direction:column;
+    }
+
+    .executive-center .executive-buttons a{
+        width:100%;
+    }
+
+    .executive-center .contact-panel{
+        min-height:250px;
+        padding:30px 25px;
+    }
+
+    .executive-center .communication-wall{
+        grid-template-columns:1fr 1fr;
+        gap:14px;
+    }
+
+    .executive-center .wall-card{
+        min-height:155px;
+        padding:25px 18px;
+    }
+
+    .executive-center .executive-final{
+        margin-top:30px;
+        padding:55px 25px;
+    }
+
+    .executive-center .executive-final::after{
+        inset:10px;
+    }
+
+    .executive-center .executive-final h2{
+        font-size:34px;
+    }
+
+    .executive-center .executive-final-buttons{
+        flex-direction:column;
+    }
+
+    .executive-center .executive-final-buttons a{
+        width:100%;
+    }
+
+}
+
+
+/* =========================================================
+   09.23 — SMALL MOBILE REFINEMENT
+   ========================================================= */
+
+@media (max-width:430px){
+
+    .executive-center .executive-main{
+        min-height:660px;
+    }
+
+    .executive-center .executive-header h3{
+        font-size:27px;
+    }
+
+    .executive-center .communication-wall{
+        grid-template-columns:1fr;
+    }
+
+    .executive-center .wall-card{
+        min-height:135px;
+    }
+
+}
+
+
+
+
+
+
+
+
 
 /* ========================================================= */
 /*                                                         */

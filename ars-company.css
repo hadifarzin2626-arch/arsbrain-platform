@@ -1369,3 +1369,2096 @@ button:focus-visible{
 /*       START OF ARS COMPANY UNIQUE DESIGN                */
 /*                                                         */
 /* ========================================================= */
+
+
+/* ========================================================= */
+/* ARS COMPANY — PREMIUM EXECUTIVE EXPERIENCE                */
+/* SPECIALIZED PAGE LAYER                                    */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — COMPANY PAGE FOUNDATION                              */
+/* ========================================================= */
+
+.arscompany-hero,
+.arscompany-role,
+.arscompany-strategy,
+.arscompany-investment,
+.arscompany-social-impact,
+.arscompany-operations,
+.arscompany-future,
+.arscompany-leadership,
+.arscompany-ecosystem-engine,
+.arscompany-opportunities,
+.arscompany-closing-vision,
+.arscompany-final-cta{
+
+    position:
+        relative;
+
+    width:
+        100%;
+
+    max-width:
+        100%;
+
+    overflow:
+        hidden;
+
+    isolation:
+        isolate;
+
+}
+
+
+/* ========================================================= */
+/* 02 — EXECUTIVE SECTION SPACING                             */
+/* ========================================================= */
+
+.arscompany-hero{
+
+    min-height:
+        100vh;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    padding:
+        150px 0 110px;
+
+}
+
+
+.arscompany-role,
+.arscompany-strategy,
+.arscompany-investment,
+.arscompany-social-impact,
+.arscompany-operations,
+.arscompany-future,
+.arscompany-leadership,
+.arscompany-ecosystem-engine,
+.arscompany-opportunities,
+.arscompany-closing-vision{
+
+    padding:
+        130px 0;
+
+}
+
+
+.arscompany-final-cta{
+
+    padding:
+        120px 0 80px;
+
+}
+
+
+/* ========================================================= */
+/* 03 — EXECUTIVE HERO                                        */
+/* ========================================================= */
+
+.arscompany-hero::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        700px;
+
+    height:
+        700px;
+
+    top:
+        -300px;
+
+    right:
+        -220px;
+
+    border-radius:
+        50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(184,137,63,.14),
+            rgba(184,137,63,.04) 35%,
+            transparent 70%
+        );
+
+    filter:
+        blur(20px);
+
+    pointer-events:
+        none;
+
+}
+
+
+.arscompany-hero::after{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        1px;
+
+    height:
+        65%;
+
+    top:
+        17.5%;
+
+    left:
+        50%;
+
+    background:
+        linear-gradient(
+            to bottom,
+            transparent,
+            rgba(184,137,63,.18),
+            transparent
+        );
+
+    opacity:
+        .45;
+
+    pointer-events:
+        none;
+
+}
+
+
+.arscompany-hero-layout{
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1.1fr)
+        minmax(360px,.9fr);
+
+    gap:
+        90px;
+
+    align-items:
+        center;
+
+}
+
+
+.arscompany-hero-content{
+
+    max-width:
+        760px;
+
+}
+
+
+.arscompany-hero-content h1{
+
+    margin:
+        22px 0 25px;
+
+    max-width:
+        720px;
+
+    font-size:
+        clamp(
+            3.5rem,
+            6vw,
+            6.8rem
+        );
+
+    line-height:
+        .96;
+
+    letter-spacing:
+        -.045em;
+
+    font-weight:
+        600;
+
+}
+
+
+.arscompany-hero-lead{
+
+    max-width:
+        650px;
+
+    font-size:
+        clamp(
+            1.2rem,
+            2vw,
+            1.65rem
+        );
+
+    line-height:
+        1.6;
+
+    color:
+        rgba(244,241,232,.82);
+
+}
+
+
+.arscompany-hero-content > p:not(.arscompany-hero-lead){
+
+    max-width:
+        650px;
+
+    line-height:
+        1.95;
+
+    color:
+        rgba(244,241,232,.58);
+
+}
+
+
+.arscompany-hero-visual{
+
+    min-height:
+        560px;
+
+    position:
+        relative;
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    border-radius:
+        30px;
+
+}
+
+
+.arscompany-hero-visual::before{
+
+    content:
+        "ARS";
+
+    position:
+        absolute;
+
+    font-size:
+        clamp(
+            7rem,
+            16vw,
+            15rem
+        );
+
+    font-weight:
+        700;
+
+    letter-spacing:
+        -.08em;
+
+    color:
+        rgba(184,137,63,.06);
+
+}
+
+
+.arscompany-hero-statement{
+
+    position:
+        relative;
+
+    z-index:
+        3;
+
+    margin-top:
+        90px;
+
+    padding:
+        25px 0;
+
+    border-top:
+        1px solid rgba(184,137,63,.22);
+
+    border-bottom:
+        1px solid rgba(184,137,63,.12);
+
+}
+
+
+.arscompany-hero-statement p{
+
+    margin:
+        0;
+
+    text-align:
+        center;
+
+    font-size:
+        clamp(
+            1rem,
+            2vw,
+            1.3rem
+        );
+
+    letter-spacing:
+        .2em;
+
+    text-transform:
+        uppercase;
+
+    color:
+        rgba(184,137,63,.82);
+
+}
+
+
+/* ========================================================= */
+/* 04 — SECTION HEADINGS                                     */
+/* ========================================================= */
+
+.arscompany-role .section-heading,
+.arscompany-investment .section-heading,
+.arscompany-operations .section-heading{
+
+    max-width:
+        900px;
+
+    margin:
+        0 auto 75px;
+
+    text-align:
+        center;
+
+}
+
+
+.arscompany-strategy .strategy-content,
+.arscompany-social-impact-content,
+.future-content,
+.leadership-content{
+
+    max-width:
+        850px;
+
+}
+
+
+.arscompany-strategy h2,
+.arscompany-investment h2,
+.arscompany-role h2,
+.arscompany-operations h2,
+.arscompany-future h2,
+.arscompany-leadership h2{
+
+    letter-spacing:
+        -.035em;
+
+}
+
+
+/* ========================================================= */
+/* 05 — PREMIUM GLASS SYSTEM                                 */
+/* ========================================================= */
+
+.arscompany-page .ars-glass,
+.arscompany-role .ars-glass,
+.arscompany-strategy .ars-glass,
+.arscompany-investment .ars-glass,
+.arscompany-social-impact .ars-glass,
+.arscompany-operations .ars-glass,
+.arscompany-future .ars-glass,
+.arscompany-leadership .ars-glass,
+.arscompany-ecosystem-engine .ars-glass,
+.arscompany-opportunities .ars-glass,
+.arscompany-closing-vision .ars-glass,
+.arscompany-final-cta .ars-glass{
+
+    position:
+        relative;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.065),
+            rgba(255,255,255,.018) 48%,
+            rgba(184,137,63,.025)
+        );
+
+    border:
+        1px solid rgba(255,255,255,.10);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,.42),
+        inset 0 1px 0 rgba(255,255,255,.08);
+
+    backdrop-filter:
+        blur(22px);
+
+    -webkit-backdrop-filter:
+        blur(22px);
+
+    overflow:
+        hidden;
+
+}
+
+
+.ars-glass::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    inset:
+        0;
+
+    background:
+        linear-gradient(
+            125deg,
+            rgba(255,255,255,.08),
+            transparent 28%,
+            transparent 70%,
+            rgba(184,137,63,.045)
+        );
+
+    opacity:
+        .55;
+
+    pointer-events:
+        none;
+
+}
+
+
+.ars-glass::after{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    width:
+        180px;
+
+    height:
+        180px;
+
+    top:
+        -100px;
+
+    right:
+        -90px;
+
+    border-radius:
+        50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(184,137,63,.10),
+            transparent 70%
+        );
+
+    pointer-events:
+        none;
+
+}
+
+
+/* ========================================================= */
+/* 06 — COMPANY BUTTONS                                      */
+/* ========================================================= */
+
+.arscompany-hero .ars-button,
+.arscompany-opportunities .ars-button,
+.arscompany-final-cta .ars-button{
+
+    position:
+        relative;
+
+    display:
+        inline-flex;
+
+    align-items:
+        center;
+
+    justify-content:
+        center;
+
+    min-height:
+        54px;
+
+    padding:
+        0 30px;
+
+    border-radius:
+        999px;
+
+    text-decoration:
+        none;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease,
+        background .4s ease;
+
+}
+
+
+.arscompany-hero .ars-button-primary,
+.arscompany-opportunities .ars-button-primary,
+.arscompany-final-cta .ars-button-primary{
+
+    background:
+        linear-gradient(
+            135deg,
+            #d5aa61,
+            #9c6c2d
+        );
+
+    color:
+        #080808;
+
+    box-shadow:
+        0 12px 35px rgba(184,137,63,.20);
+
+}
+
+
+.arscompany-hero .ars-button-primary:hover,
+.arscompany-opportunities .ars-button-primary:hover,
+.arscompany-final-cta .ars-button-primary:hover{
+
+    transform:
+        translateY(-4px);
+
+    box-shadow:
+        0 20px 55px rgba(184,137,63,.32);
+
+}
+
+
+/* ========================================================= */
+/* 07 — STRUCTURE                                            */
+/* ========================================================= */
+
+.arscompany-structure{
+
+    display:
+        grid;
+
+    grid-template-columns:
+        1fr auto 1fr;
+
+    align-items:
+        center;
+
+    gap:
+        35px;
+
+    margin-bottom:
+        70px;
+
+}
+
+
+.structure-card{
+
+    padding:
+        42px;
+
+    min-height:
+        280px;
+
+    border-radius:
+        24px;
+
+}
+
+
+.structure-card-accent{
+
+    font-size:
+        2.5rem;
+
+    color:
+        rgba(184,137,63,.55);
+
+    font-weight:
+        700;
+
+}
+
+
+.structure-symbol{
+
+    width:
+        70px;
+
+    height:
+        70px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px solid rgba(184,137,63,.35);
+
+    border-radius:
+        50%;
+
+    color:
+        #c99a50;
+
+    box-shadow:
+        0 0 35px rgba(184,137,63,.12);
+
+}
+
+
+/* ========================================================= */
+/* 08 — PILLAR / FOCUS / INVESTMENT / OPERATIONS CARDS       */
+/* ========================================================= */
+
+.arscompany-pillars,
+.strategy-focus,
+.investment-grid,
+.social-impact-grid,
+.operations-grid,
+.future-vision-grid,
+.leadership-principles,
+.ecosystem-engine-grid{
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+    gap:
+        22px;
+
+}
+
+
+.strategy-focus,
+.social-impact-grid,
+.leadership-principles,
+.ecosystem-engine-grid{
+
+    grid-template-columns:
+        repeat(
+            3,
+            minmax(
+                0,
+                1fr
+            )
+        );
+
+}
+
+
+.arscompany-pillar,
+.strategy-focus-card,
+.investment-card,
+.social-impact-card,
+.operations-card,
+.future-vision-card,
+.leadership-card,
+.engine-card{
+
+    position:
+        relative;
+
+    min-height:
+        300px;
+
+    padding:
+        38px 32px;
+
+    border-radius:
+        24px;
+
+    transition:
+        transform .5s cubic-bezier(.2,.8,.2,1),
+        border-color .5s ease,
+        box-shadow .5s ease;
+
+}
+
+
+.arscompany-pillar:hover,
+.strategy-focus-card:hover,
+.investment-card:hover,
+.social-impact-card:hover,
+.operations-card:hover,
+.future-vision-card:hover,
+.leadership-card:hover,
+.engine-card:hover{
+
+    transform:
+        translateY(-10px);
+
+    border-color:
+        rgba(184,137,63,.34);
+
+    box-shadow:
+        0 35px 80px rgba(0,0,0,.5),
+        0 0 45px rgba(184,137,63,.06);
+
+}
+
+
+.pillar-number,
+.focus-number,
+.investment-number,
+.impact-number,
+.operations-number,
+.leadership-number,
+.engine-number{
+
+    display:
+        block;
+
+    margin-bottom:
+        35px;
+
+    color:
+        rgba(184,137,63,.55);
+
+    font-size:
+        .8rem;
+
+    letter-spacing:
+        .15em;
+
+}
+
+
+.pillar-mark,
+.focus-mark,
+.investment-mark,
+.impact-mark,
+.operations-mark{
+
+    margin-bottom:
+        22px;
+
+    color:
+        #c99a50;
+
+    font-size:
+        1.4rem;
+
+}
+
+
+.arscompany-pillar h3,
+.strategy-focus-card h3,
+.investment-card h3,
+.social-impact-card h3,
+.operations-card h3,
+.future-vision-card h3,
+.leadership-card h3,
+.engine-card h3{
+
+    margin:
+        0 0 15px;
+
+}
+
+
+.arscompany-pillar p,
+.strategy-focus-card p,
+.investment-card p,
+.social-impact-card p,
+.operations-card p,
+.future-vision-card p,
+.leadership-card p,
+.engine-card p{
+
+    color:
+        rgba(244,241,232,.58);
+
+    line-height:
+        1.85;
+
+}
+
+
+/* ========================================================= */
+/* 09 — HIGHLIGHT PANELS                                     */
+/* ========================================================= */
+
+.arscompany-highlight,
+.strategy-statement,
+.partnership-principle,
+.social-impact-statement,
+.operations-highlight,
+.operations-statement,
+.future-horizon,
+.future-statement,
+.leadership-statement,
+.ecosystem-engine-statement,
+.closing-statement{
+
+    margin-top:
+        70px;
+
+    padding:
+        65px;
+
+    border-radius:
+        30px;
+
+}
+
+
+.arscompany-highlight{
+
+    display:
+        grid;
+
+    grid-template-columns:
+        100px 1fr;
+
+    gap:
+        40px;
+
+    align-items:
+        center;
+
+}
+
+
+.highlight-symbol{
+
+    width:
+        80px;
+
+    height:
+        80px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        50%;
+
+    color:
+        #d5aa61;
+
+    border:
+        1px solid rgba(184,137,63,.3);
+
+    box-shadow:
+        0 0 50px rgba(184,137,63,.12);
+
+}
+
+
+/* ========================================================= */
+/* 10 — STRATEGY / INVESTMENT / SOCIAL LAYOUTS               */
+/* ========================================================= */
+
+.strategy-layout,
+.investment-layout,
+.social-impact-layout,
+.operations-layout,
+.future-layout,
+.leadership-layout{
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        minmax(350px,.8fr);
+
+    gap:
+        80px;
+
+    align-items:
+        center;
+
+}
+
+
+.strategy-visual,
+.investment-visual,
+.social-impact-visual,
+.operations-visual,
+.future-visual,
+.leadership-visual{
+
+    min-height:
+        480px;
+
+    border-radius:
+        30px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+}
+
+
+.visual-accent,
+.visual-symbol,
+.social-impact-symbol,
+.operations-symbol,
+.leadership-symbol{
+
+    width:
+        120px;
+
+    height:
+        120px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px solid rgba(184,137,63,.32);
+
+    border-radius:
+        50%;
+
+    color:
+        #d5aa61;
+
+    font-size:
+        1.6rem;
+
+    box-shadow:
+        0 0 80px rgba(184,137,63,.10);
+
+}
+
+
+/* ========================================================= */
+/* 11 — STRATEGY STATEMENT                                   */
+/* ========================================================= */
+
+.strategy-statement{
+
+    text-align:
+        center;
+
+}
+
+
+.strategy-statement h2,
+.partnership-principle h2,
+.social-impact-statement h2,
+.operations-statement h2,
+.future-statement h2,
+.leadership-statement h2,
+.ecosystem-engine-statement h2,
+.closing-statement h2{
+
+    max-width:
+        900px;
+
+    margin:
+        18px auto 25px;
+
+    letter-spacing:
+        -.035em;
+
+}
+
+
+.strategy-statement p,
+.partnership-principle p,
+.social-impact-statement p,
+.operations-statement p,
+.future-statement p,
+.leadership-statement p,
+.ecosystem-engine-statement p,
+.closing-statement p{
+
+    max-width:
+        760px;
+
+    margin:
+        0 auto;
+
+    color:
+        rgba(244,241,232,.58);
+
+    line-height:
+        1.9;
+
+}
+
+
+/* ========================================================= */
+/* 12 — FUTURE HORIZON                                       */
+/* ========================================================= */
+
+.horizon-line{
+
+    display:
+        grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            1fr
+        );
+
+    gap:
+        30px;
+
+    margin-top:
+        65px;
+
+    position:
+        relative;
+
+}
+
+
+.horizon-line::before{
+
+    content:
+        "";
+
+    position:
+        absolute;
+
+    top:
+        25px;
+
+    left:
+        8%;
+
+    right:
+        8%;
+
+    height:
+        1px;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(184,137,63,.5),
+            transparent
+        );
+
+}
+
+
+.horizon-stage{
+
+    position:
+        relative;
+
+    z-index:
+        2;
+
+    text-align:
+        center;
+
+}
+
+
+.stage-number{
+
+    width:
+        52px;
+
+    height:
+        52px;
+
+    margin:
+        0 auto 25px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px solid rgba(184,137,63,.35);
+
+    border-radius:
+        50%;
+
+    background:
+        #010203;
+
+    color:
+        #d5aa61;
+
+}
+
+
+/* ========================================================= */
+/* 13 — ECOSYSTEM ENGINE                                     */
+/* ========================================================= */
+
+.ecosystem-engine-intro{
+
+    max-width:
+        900px;
+
+    margin:
+        0 auto 70px;
+
+    text-align:
+        center;
+
+}
+
+
+.ecosystem-engine-visual{
+
+    min-height:
+        620px;
+
+    position:
+        relative;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        35px;
+
+}
+
+
+.engine-core{
+
+    width:
+        150px;
+
+    height:
+        150px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        50%;
+
+    background:
+        radial-gradient(
+            circle,
+            rgba(184,137,63,.22),
+            rgba(184,137,63,.04) 50%,
+            transparent 72%
+        );
+
+    border:
+        1px solid rgba(184,137,63,.45);
+
+    color:
+        #d5aa61;
+
+    font-size:
+        1.8rem;
+
+    box-shadow:
+        0 0 100px rgba(184,137,63,.16);
+
+}
+
+
+.engine-orbit{
+
+    position:
+        absolute;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border:
+        1px solid rgba(184,137,63,.16);
+
+    border-radius:
+        50%;
+
+    color:
+        rgba(244,241,232,.55);
+
+    font-size:
+        .7rem;
+
+    letter-spacing:
+        .18em;
+
+}
+
+
+.engine-orbit-one{
+
+    width:
+        280px;
+
+    height:
+        280px;
+
+    animation:
+        companyOrbit 22s linear infinite;
+
+}
+
+
+.engine-orbit-two{
+
+    width:
+        400px;
+
+    height:
+        400px;
+
+    animation:
+        companyOrbit 30s linear infinite reverse;
+
+}
+
+
+.engine-orbit-three{
+
+    width:
+        520px;
+
+    height:
+        520px;
+
+    animation:
+        companyOrbit 38s linear infinite;
+
+}
+
+
+.engine-orbit-four{
+
+    width:
+        620px;
+
+    height:
+        620px;
+
+    animation:
+        companyOrbit 48s linear infinite reverse;
+
+}
+
+
+@keyframes companyOrbit{
+
+    from{
+
+        transform:
+            rotate(0deg);
+
+    }
+
+    to{
+
+        transform:
+            rotate(360deg);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 14 — OPPORTUNITIES PANEL                                  */
+/* ========================================================= */
+
+.opportunities-panel{
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1.1fr)
+        minmax(320px,.7fr);
+
+    gap:
+        80px;
+
+    padding:
+        75px;
+
+    border-radius:
+        35px;
+
+}
+
+
+.opportunities-list{
+
+    display:
+        grid;
+
+    gap:
+        14px;
+
+    margin:
+        35px 0;
+
+}
+
+
+.opportunity-item{
+
+    display:
+        flex;
+
+    align-items:
+        center;
+
+    gap:
+        18px;
+
+    padding:
+        17px 20px;
+
+    border:
+        1px solid rgba(255,255,255,.07);
+
+    border-radius:
+        14px;
+
+    background:
+        rgba(255,255,255,.025);
+
+    color:
+        rgba(244,241,232,.72);
+
+}
+
+
+.opportunity-mark{
+
+    color:
+        #c99a50;
+
+}
+
+
+.opportunities-visual{
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+}
+
+
+.opportunities-orb,
+.closing-orb,
+.final-cta-orb{
+
+    width:
+        230px;
+
+    height:
+        230px;
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+    border-radius:
+        50%;
+
+    border:
+        1px solid rgba(184,137,63,.32);
+
+    background:
+        radial-gradient(
+            circle at 35% 30%,
+            rgba(255,255,255,.12),
+            rgba(184,137,63,.08) 25%,
+            rgba(1,2,3,.5) 70%
+        );
+
+    box-shadow:
+        0 0 90px rgba(184,137,63,.10),
+        inset 0 0 50px rgba(184,137,63,.05);
+
+    color:
+        #d5aa61;
+
+    font-size:
+        2rem;
+
+}
+
+
+/* ========================================================= */
+/* 15 — CLOSING VISION                                       */
+/* ========================================================= */
+
+.closing-vision-panel,
+.final-cta-panel{
+
+    display:
+        grid;
+
+    grid-template-columns:
+        minmax(0,1fr)
+        minmax(280px,.55fr);
+
+    gap:
+        80px;
+
+    align-items:
+        center;
+
+    padding:
+        80px;
+
+    border-radius:
+        35px;
+
+}
+
+
+.closing-vision-content{
+
+    max-width:
+        850px;
+
+}
+
+
+.closing-vision-content h2,
+.final-cta-content h2{
+
+    font-size:
+        clamp(
+            2.4rem,
+            5vw,
+            5rem
+        );
+
+    line-height:
+        1.05;
+
+    letter-spacing:
+        -.045em;
+
+}
+
+
+.closing-vision-content p,
+.final-cta-content p{
+
+    color:
+        rgba(244,241,232,.58);
+
+    line-height:
+        1.9;
+
+}
+
+
+.closing-vision-visual,
+.final-cta-visual{
+
+    display:
+        grid;
+
+    place-items:
+        center;
+
+}
+
+
+/* ========================================================= */
+/* 16 — FINAL CTA                                            */
+/* ========================================================= */
+
+.final-cta-actions{
+
+    display:
+        flex;
+
+    flex-wrap:
+        wrap;
+
+    gap:
+        15px;
+
+    margin-top:
+        35px;
+
+}
+
+
+.arscompany-final-cta .ars-button-secondary{
+
+    border:
+        1px solid rgba(184,137,63,.3);
+
+    color:
+        rgba(244,241,232,.8);
+
+}
+
+
+.final-company-signature{
+
+    padding:
+        100px 0 30px;
+
+    text-align:
+        center;
+
+}
+
+
+.final-company-signature h2{
+
+    margin:
+        15px 0;
+
+    font-size:
+        clamp(
+            2rem,
+            4vw,
+            4rem
+        );
+
+    letter-spacing:
+        -.04em;
+
+}
+
+
+.final-company-signature p{
+
+    color:
+        rgba(244,241,232,.5);
+
+}
+
+
+.final-company-line{
+
+    width:
+        120px;
+
+    height:
+        1px;
+
+    margin:
+        35px auto;
+
+    background:
+        linear-gradient(
+            90deg,
+            transparent,
+            #c99a50,
+            transparent
+        );
+
+}
+
+
+.final-company-note{
+
+    font-size:
+        .75rem;
+
+    letter-spacing:
+        .18em;
+
+    text-transform:
+        uppercase;
+
+}
+
+
+/* ========================================================= */
+/* 17 — EXECUTIVE RESPONSIVE — TABLET                        */
+/* ========================================================= */
+
+@media (max-width: 1100px){
+
+    .arscompany-hero-layout,
+    .strategy-layout,
+    .investment-layout,
+    .social-impact-layout,
+    .operations-layout,
+    .future-layout,
+    .leadership-layout,
+    .opportunities-panel,
+    .closing-vision-panel,
+    .final-cta-panel{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .arscompany-hero-visual,
+    .strategy-visual,
+    .investment-visual,
+    .social-impact-visual,
+    .operations-visual,
+    .future-visual,
+    .leadership-visual{
+
+        min-height:
+            400px;
+
+    }
+
+
+    .arscompany-pillars,
+    .investment-grid,
+    .operations-grid,
+    .future-vision-grid{
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+    }
+
+
+    .strategy-focus,
+    .social-impact-grid,
+    .leadership-principles,
+    .ecosystem-engine-grid{
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(
+                    0,
+                    1fr
+                )
+            );
+
+    }
+
+
+    .opportunities-panel,
+    .closing-vision-panel,
+    .final-cta-panel{
+
+        padding:
+            55px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 18 — MOBILE                                               */
+/* ========================================================= */
+
+@media (max-width: 700px){
+
+    .arscompany-hero{
+
+        min-height:
+            auto;
+
+        padding:
+            110px 0 75px;
+
+    }
+
+
+    .arscompany-role,
+    .arscompany-strategy,
+    .arscompany-investment,
+    .arscompany-social-impact,
+    .arscompany-operations,
+    .arscompany-future,
+    .arscompany-leadership,
+    .arscompany-ecosystem-engine,
+    .arscompany-opportunities,
+    .arscompany-closing-vision{
+
+        padding:
+            90px 0;
+
+    }
+
+
+    .arscompany-final-cta{
+
+        padding:
+            90px 0 50px;
+
+    }
+
+
+    .arscompany-hero-content h1{
+
+        font-size:
+            clamp(
+                2.8rem,
+                13vw,
+                4.5rem
+            );
+
+    }
+
+
+    .arscompany-hero-visual{
+
+        min-height:
+            300px;
+
+    }
+
+
+    .arscompany-hero-statement{
+
+        margin-top:
+            55px;
+
+    }
+
+
+    .arscompany-hero-statement p{
+
+        line-height:
+            1.8;
+
+        letter-spacing:
+            .1em;
+
+    }
+
+
+    .arscompany-structure{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .structure-symbol{
+
+        margin:
+            auto;
+
+    }
+
+
+    .arscompany-pillars,
+    .strategy-focus,
+    .investment-grid,
+    .social-impact-grid,
+    .operations-grid,
+    .future-vision-grid,
+    .leadership-principles,
+    .ecosystem-engine-grid{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .arscompany-highlight{
+
+        grid-template-columns:
+            1fr;
+
+        padding:
+            40px 28px;
+
+    }
+
+
+    .strategy-statement,
+    .partnership-principle,
+    .social-impact-statement,
+    .operations-highlight,
+    .operations-statement,
+    .future-horizon,
+    .future-statement,
+    .leadership-statement,
+    .ecosystem-engine-statement,
+    .closing-statement{
+
+        padding:
+            42px 25px;
+
+    }
+
+
+    .horizon-line{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .horizon-line::before{
+
+        top:
+            0;
+
+        bottom:
+            0;
+
+        left:
+            50%;
+
+        right:
+            auto;
+
+        width:
+            1px;
+
+        height:
+            auto;
+
+    }
+
+
+    .ecosystem-engine-visual{
+
+        min-height:
+            430px;
+
+    }
+
+
+    .engine-orbit-one{
+
+        width:
+            210px;
+
+        height:
+            210px;
+
+    }
+
+
+    .engine-orbit-two{
+
+        width:
+            300px;
+
+        height:
+            300px;
+
+    }
+
+
+    .engine-orbit-three{
+
+        width:
+            390px;
+
+        height:
+            390px;
+
+    }
+
+
+    .engine-orbit-four{
+
+        width:
+            460px;
+
+        height:
+            460px;
+
+    }
+
+
+    .opportunities-panel,
+    .closing-vision-panel,
+    .final-cta-panel{
+
+        padding:
+            40px 25px;
+
+    }
+
+
+    .final-cta-actions{
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .final-cta-actions .ars-button{
+
+        width:
+            100%;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 19 — SMALL MOBILE                                        */
+/* ========================================================= */
+
+@media (max-width: 420px){
+
+    .arscompany-hero-content h1{
+
+        font-size:
+            2.7rem;
+
+    }
+
+
+    .arscompany-hero-lead{
+
+        font-size:
+            1.05rem;
+
+    }
+
+
+    .arscompany-pillar,
+    .strategy-focus-card,
+    .investment-card,
+    .social-impact-card,
+    .operations-card,
+    .future-vision-card,
+    .leadership-card,
+    .engine-card{
+
+        padding:
+            30px 24px;
+
+        min-height:
+            auto;
+
+    }
+
+
+    .arscompany-hero-visual,
+    .strategy-visual,
+    .investment-visual,
+    .social-impact-visual,
+    .operations-visual,
+    .future-visual,
+    .leadership-visual{
+
+        min-height:
+            280px;
+
+    }
+
+
+    .engine-orbit-four{
+
+        width:
+            390px;
+
+        height:
+            390px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 20 — REDUCED MOTION                                       */
+/* ========================================================= */
+
+@media (prefers-reduced-motion: reduce){
+
+    *,
+    *::before,
+    *::after{
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        scroll-behavior:
+            auto !important;
+
+        transition-duration:
+            .01ms !important;
+
+    }
+
+    }

@@ -7662,7 +7662,7 @@ img{
 
         inset
         0 1px 0
-        rgba(255,235,175,.18);
+        rgba(215,199,175,.18);
 
 }
 
@@ -7780,7 +7780,7 @@ img{
 
     width: 100%;
 
-    height: 85%;
+    height: 25%;
 
     z-index: 20;
 
@@ -7925,3 +7925,336 @@ img{
 
 }
 
+/* ========================================================= */
+/* ========================================================= */
+/*                                                         */
+/* ARS HOME — FINAL SAFE OVERRIDE CLEANUP                  */
+/* VERSION: 01                                              */
+/* PURPOSE:                                                 */
+/* 01. STOP HORIZONTAL PAGE MOVEMENT                        */
+/* 02. FIX MOBILE / ZOOM OVERFLOW                           */
+/* 03. RESTORE HERO IMAGE BEHAVIOR                          */
+/* 04. REMOVE ORBIT LEFT OFFSET                             */
+/* 05. PRESERVE EXISTING ORBIT SIZE & ANIMATION             */
+/* 06. PROTECT CARD ::BEFORE / ::AFTER LAYERS               */
+/* 07. FIX INVALID POINTER-EVENTS                           */
+/* 08. PREVENT TRANSFORM-BASED PAGE EXPANSION               */
+/*                                                         */
+/* ========================================================= */
+/* ========================================================= */
+
+
+/* ========================================================= */
+/* 01 — GLOBAL HOME VIEWPORT SAFETY                          */
+/* ========================================================= */
+
+html{
+
+    width:100%;
+
+    max-width:100%;
+
+    overflow-x:hidden;
+
+}
+
+
+body.home-page{
+
+    width:100%;
+
+    max-width:100%;
+
+    min-width:0;
+
+    overflow-x:hidden;
+
+}
+
+
+/* ========================================================= */
+/* 02 — HOME MAIN CONTAINMENT                                */
+/* ========================================================= */
+
+body.home-page main,
+body.home-page section,
+body.home-page .hero,
+body.home-page .ecosystem{
+
+    max-width:100%;
+
+    min-width:0;
+
+}
+
+
+/* ========================================================= */
+/* 03 — HERO SAFE CONTAINMENT                                */
+/* ========================================================= */
+
+body.home-page .hero{
+
+    position:relative;
+
+    width:100%;
+
+    max-width:100vw;
+
+    min-width:0;
+
+    overflow:hidden;
+
+}
+
+
+/* ========================================================= */
+/* 04 — HERO IMAGE — RESTORE ORIGINAL FLOW                   */
+/*                                                             */
+/* فقط جلوی Overflow افقی را می‌گیرد.                       */
+/* انیمیشن‌های اصلی تصویر دست‌نخورده می‌مانند.              */
+/* ========================================================= */
+
+body.home-page .hero img{
+
+    max-width:100%;
+
+    min-width:0;
+
+}
+
+
+/* ========================================================= */
+/* 05 — ORBIT POSITION CLEANUP                               */
+/*                                                             */
+/* حذف left:-55% که باعث خروج Orbit از viewport می‌شد.       */
+/* ========================================================= */
+
+body.home-page .ars-orbit{
+
+    left:auto;
+
+}
+
+
+/* ========================================================= */
+/* 06 — ORBIT SAFE BOUNDARY                                  */
+/*                                                             */
+/* انیمیشن و Transform اصلی Orbit حفظ می‌شود.                */
+/* فقط از ایجاد Overflow افقی جلوگیری می‌کنیم.              */
+/* ========================================================= */
+
+body.home-page .ars-orbit{
+
+    max-width:100%;
+
+    box-sizing:border-box;
+
+}
+
+
+/* ========================================================= */
+/* 07 — PREVENT HORIZONTAL TRANSFORM BLEED                   */
+/*                                                             */
+/* این قانون فقط روی Viewport اعمال می‌شود و                  */
+/* Transformهای داخلی کارت‌ها را دستکاری نمی‌کند.            */
+/* ========================================================= */
+
+body.home-page .hero,
+body.home-page .ecosystem{
+
+    contain:paint;
+
+}
+
+
+/* ========================================================= */
+/* 08 — CARD BOX MODEL                                       */
+/* ========================================================= */
+
+body.home-page .ars-glass-card,
+body.home-page .ars-core-card,
+body.home-page .ars-specialized-card{
+
+    box-sizing:border-box;
+
+    max-width:100%;
+
+}
+
+
+/* ========================================================= */
+/* 09 — CARD PSEUDO-LAYER PROTECTION                         */
+/*                                                             */
+/* هیچ ::before یا ::after حذف نمی‌شود.                      */
+/* فقط تضمین می‌کنیم از کارت بیرون نزند.                     */
+/* ========================================================= */
+
+body.home-page .ars-glass-card::before,
+body.home-page .ars-glass-card::after,
+body.home-page .ars-core-card::before,
+body.home-page .ars-core-card::after,
+body.home-page .ars-specialized-card::before,
+body.home-page .ars-specialized-card::after{
+
+    max-width:100%;
+
+    pointer-events:none;
+
+}
+
+
+/* ========================================================= */
+/* 10 — FIX INVALID POINTER EVENTS                           */
+/*                                                             */
+/* اصلاح خطای قبلی: pointer-events:nojus                   */
+/* ========================================================= */
+
+body.home-page::after{
+
+    pointer-events:none;
+
+}
+
+
+/* ========================================================= */
+/* 11 — HOME OVERLAY SAFETY                                  */
+/*                                                             */
+/* Overlay طلایی اجازه ایجاد Scroll افقی نمی‌دهد.            */
+/* ========================================================= */
+
+body.home-page::after{
+
+    left:0;
+
+    right:0;
+
+    width:100%;
+
+    max-width:100vw;
+
+}
+
+
+/* ========================================================= */
+/* 12 — IMAGE / MEDIA SAFETY                                 */
+/* ========================================================= */
+
+body.home-page img,
+body.home-page video,
+body.home-page canvas{
+
+    max-width:100%;
+
+}
+
+
+/* ========================================================= */
+/* 13 — MOBILE VIEWPORT PROTECTION                           */
+/* ========================================================= */
+
+@media (max-width:768px){
+
+    html,
+    body{
+
+        width:100%;
+
+        max-width:100%;
+
+        overflow-x:hidden;
+
+    }
+
+
+    body.home-page .hero{
+
+        width:100%;
+
+        max-width:100vw;
+
+        overflow:hidden;
+
+    }
+
+
+    body.home-page .ars-orbit{
+
+        left:auto;
+
+        max-width:100%;
+
+    }
+
+
+    body.home-page .ars-glass-card,
+    body.home-page .ars-core-card,
+    body.home-page .ars-specialized-card{
+
+        max-width:100%;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 14 — TOUCH / ZOOM STABILITY                               */
+/* ========================================================= */
+
+@media (hover:none){
+
+    body.home-page{
+
+        overflow-x:hidden;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 15 — PREVENT UNINTENDED BODY WIDTH EXPANSION              */
+/* ========================================================= */
+
+body.home-page > *{
+
+    max-width:100vw;
+
+}
+
+
+/* ========================================================= */
+/* 16 — FINAL SAFETY                                         */
+/* ========================================================= */
+
+body.home-page *{
+
+    box-sizing:border-box;
+
+}
+
+
+/* ========================================================= */
+/* 17 — REDUCED MOTION SAFETY                                */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    body.home-page .ars-orbit{
+
+        animation-duration:0.001ms;
+
+        animation-iteration-count:1;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* ========================================================= */
+/* ARS HOME — END OF SAFE OVERRIDE CLEANUP                   */
+/* ========================================================= */
+/* IMPORTANT: KEEP THIS BLOCK AT THE VERY END OF CSS FILE    */
+/* ========================================================= */
+/* ========================================================= */

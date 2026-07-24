@@ -2174,3 +2174,1864 @@
     }
 
     }
+
+/* ========================================================= */
+/* ARS HERITAGE GROUP — CINEMATIC GLASS EXPERIENCE           */
+/* PAGE-SCOPED PREMIUM VISUAL LAYER                          */
+/* ========================================================= */
+
+/* ========================================================= */
+/* 01 — PAGE FOUNDATION                                      */
+/* ========================================================= */
+
+.ars-group-page{
+
+    position:relative;
+
+    isolation:isolate;
+
+    width:100%;
+
+    max-width:100%;
+
+    overflow:hidden;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(193,153,72,.12),
+            transparent 32%
+        ),
+
+        radial-gradient(
+            circle at 15% 35%,
+            rgba(8,24,55,.38),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 70%,
+            rgba(202,162,74,.08),
+            transparent 30%
+        ),
+
+        linear-gradient(
+            180deg,
+            #02050b 0%,
+            #030914 35%,
+            #02050c 65%,
+            #010205 100%
+        );
+
+    color:#f4f0e5;
+
+}
+
+
+/* ========================================================= */
+/* 02 — CINEMATIC LIGHT FIELD                                */
+/* ========================================================= */
+
+.ars-group-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:-20%;
+
+    z-index:-2;
+
+    pointer-events:none;
+
+    background:
+
+        radial-gradient(
+            ellipse at 20% 20%,
+            rgba(207,169,82,.08),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            ellipse at 80% 45%,
+            rgba(17,42,79,.22),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            ellipse at 50% 90%,
+            rgba(194,151,64,.07),
+            transparent 28%
+        );
+
+    animation:
+
+        arsAmbientLight
+        18s
+        ease-in-out
+        infinite
+        alternate;
+
+}
+
+
+@keyframes arsAmbientLight{
+
+    0%{
+
+        transform:
+            translate3d(-2%,0,0)
+            scale(1);
+
+    }
+
+    50%{
+
+        transform:
+            translate3d(2%,-1%,0)
+            scale(1.04);
+
+    }
+
+    100%{
+
+        transform:
+            translate3d(-1%,2%,0)
+            scale(1.08);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 03 — ALL MAJOR SECTIONS                                   */
+/* ========================================================= */
+
+.ars-group-page
+section{
+
+    position:relative;
+
+    padding:
+
+        clamp(80px,9vw,150px)
+
+        clamp(20px,5vw,80px);
+
+    overflow:hidden;
+
+}
+
+
+/* ========================================================= */
+/* 04 — SECTION CINEMATIC DIVIDER                            */
+/* ========================================================= */
+
+.ars-group-page
+section:not(.group-hero)::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    width:min(900px,80%);
+
+    height:1px;
+
+    transform:translateX(-50%);
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            rgba(201,162,78,.55),
+            rgba(255,236,167,.9),
+            rgba(201,162,78,.55),
+            transparent
+        );
+
+    box-shadow:
+
+        0 0 18px
+        rgba(210,170,85,.45);
+
+}
+
+
+/* ========================================================= */
+/* 05 — PREMIUM SECTION HEADERS                              */
+/* ========================================================= */
+
+.ars-group-page
+.section-header{
+
+    position:relative;
+
+    max-width:1000px;
+
+    margin:
+
+        0
+        auto
+        clamp(50px,7vw,90px);
+
+    text-align:center;
+
+}
+
+
+.ars-group-page
+.section-label{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:
+
+        9px
+        20px;
+
+    border:
+
+        1px solid
+        rgba(210,171,87,.55);
+
+    border-radius:999px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(214,174,87,.13),
+            rgba(8,22,47,.5)
+        );
+
+    color:
+
+        #e3c27b;
+
+    font-size:
+
+        .72rem;
+
+    letter-spacing:
+
+        .24em;
+
+    text-transform:
+
+        uppercase;
+
+    box-shadow:
+
+        0 0 25px
+        rgba(210,170,80,.08),
+
+        inset 0 0 20px
+        rgba(255,255,255,.025);
+
+}
+
+
+.ars-group-page
+.section-header
+h2{
+
+    margin:
+
+        22px
+        0;
+
+    font-size:
+
+        clamp(
+            2rem,
+            5vw,
+            4.8rem
+        );
+
+    line-height:
+
+        1.05;
+
+    letter-spacing:
+
+        -.035em;
+
+    background:
+
+        linear-gradient(
+            110deg,
+            #f4ead0,
+            #d6ae5c,
+            #fff1bd,
+            #b88632
+        );
+
+    -webkit-background-clip:
+        text;
+
+    background-clip:
+        text;
+
+    color:
+        transparent;
+
+    text-shadow:
+
+        0 0 35px
+        rgba(212,170,78,.12);
+
+}
+
+
+/* ========================================================= */
+/* 06 — UNIVERSAL GLASS SYSTEM                              */
+/* ========================================================= */
+
+.ars-group-page
+.ars-glass{
+
+    position:relative;
+
+    isolation:isolate;
+
+    border:
+
+        1px solid
+        rgba(224,190,112,.25);
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.095),
+            rgba(255,255,255,.025)
+        ),
+
+        linear-gradient(
+            135deg,
+            rgba(8,27,57,.72),
+            rgba(5,11,24,.58)
+        );
+
+    backdrop-filter:
+
+        blur(18px)
+        saturate(130%);
+
+    -webkit-backdrop-filter:
+
+        blur(18px)
+        saturate(130%);
+
+    box-shadow:
+
+        0 20px 60px
+        rgba(0,0,0,.35),
+
+        inset 0 1px 0
+        rgba(255,255,255,.13),
+
+        inset 0 0 30px
+        rgba(211,170,81,.025);
+
+    transition:
+
+        transform .55s cubic-bezier(.2,.8,.2,1),
+
+        box-shadow .55s ease,
+
+        border-color .55s ease,
+
+        background .55s ease;
+
+}
+
+
+.ars-group-page
+.ars-glass::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    z-index:-1;
+
+    border-radius:inherit;
+
+    pointer-events:none;
+
+    background:
+
+        linear-gradient(
+            115deg,
+            transparent 0%,
+            rgba(255,255,255,.12) 45%,
+            transparent 60%
+        );
+
+    transform:
+
+        translateX(-120%);
+
+    transition:
+
+        transform 1s ease;
+
+}
+
+
+.ars-group-page
+.ars-glass:hover{
+
+    transform:
+
+        translateY(-10px)
+        scale(1.015);
+
+    border-color:
+
+        rgba(230,194,111,.65);
+
+    box-shadow:
+
+        0 30px 80px
+        rgba(0,0,0,.5),
+
+        0 0 35px
+        rgba(207,166,76,.15),
+
+        inset 0 1px 0
+        rgba(255,255,255,.22);
+
+}
+
+
+.ars-group-page
+.ars-glass:hover::before{
+
+    transform:
+
+        translateX(120%);
+
+}
+
+
+/* ========================================================= */
+/* 07 — WHO WE ARE — LARGE PREMIUM CARDS                    */
+/* ========================================================= */
+
+.ars-group-page
+.who-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        minmax(0,1.1fr)
+        minmax(0,.9fr);
+
+    gap:
+
+        clamp(25px,4vw,60px);
+
+}
+
+
+.ars-group-page
+.who-left{
+
+    padding:
+
+        clamp(30px,5vw,70px);
+
+    border-radius:
+
+        38px
+        12px
+        38px
+        12px;
+
+}
+
+
+.ars-group-page
+.who-right{
+
+    min-height:
+
+        450px;
+
+    border-radius:
+
+        12px
+        38px
+        12px
+        38px;
+
+    overflow:hidden;
+
+}
+
+
+.ars-group-page
+.who-right img{
+
+    width:100%;
+
+    height:100%;
+
+    min-height:450px;
+
+    object-fit:cover;
+
+    display:block;
+
+    filter:
+
+        saturate(.75)
+        contrast(1.08);
+
+    transition:
+
+        transform 1.2s ease,
+        filter 1.2s ease;
+
+}
+
+
+.ars-group-page
+.who-right:hover img{
+
+    transform:
+        scale(1.07);
+
+    filter:
+
+        saturate(1)
+        contrast(1.12);
+
+}
+
+
+/* ========================================================= */
+/* 08 — MISSION / VALUES — MULTI CARD SYSTEM                 */
+/* ========================================================= */
+
+.ars-group-page
+.mission-grid,
+.ars-group-page
+.values-grid,
+.ars-group-page
+.vision-grid,
+.ars-group-page
+.dna-grid,
+.ars-group-page
+.future-grid,
+.ars-group-page
+.partnership-grid,
+.ars-group-page
+.standards-grid,
+.ars-group-page
+.timeline-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap:
+
+        24px;
+
+}
+
+
+.ars-group-page
+.mission-card,
+.ars-group-page
+.value-card,
+.ars-group-page
+.vision-card,
+.ars-group-page
+.dna-card,
+.ars-group-page
+.future-card,
+.ars-group-page
+.partner-card,
+.ars-group-page
+.standard-card,
+.ars-group-page
+.timeline-card{
+
+    padding:
+
+        clamp(25px,3vw,45px);
+
+    border-radius:
+
+        24px;
+
+    min-height:
+
+        220px;
+
+}
+
+
+/* ========================================================= */
+/* 09 — ALTERNATING GOLD / NAVY GLASS THEMES                */
+/* ========================================================= */
+
+.ars-group-page
+.mission-card:nth-child(2n),
+.ars-group-page
+.value-card:nth-child(3n),
+.ars-group-page
+.future-card:nth-child(2n){
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(211,170,77,.20),
+            rgba(8,22,47,.72)
+        );
+
+}
+
+
+.ars-group-page
+.mission-card:nth-child(3n),
+.ars-group-page
+.value-card:nth-child(4n),
+.ars-group-page
+.future-card:nth-child(3n){
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(255,255,255,.12),
+            rgba(16,39,72,.72)
+        );
+
+}
+
+
+.ars-group-page
+.mission-card:nth-child(3n+1),
+.ars-group-page
+.value-card:nth-child(3n+1){
+
+    border-radius:
+
+        38px
+        12px
+        38px
+        12px;
+
+}
+
+
+.ars-group-page
+.mission-card:nth-child(3n+2),
+.ars-group-page
+.value-card:nth-child(3n+2){
+
+    transform:
+
+        translateY(18px);
+
+}
+
+
+.ars-group-page
+.mission-card:nth-child(3n+2):hover,
+.ars-group-page
+.value-card:nth-child(3n+2):hover{
+
+    transform:
+
+        translateY(8px)
+        scale(1.015);
+
+}
+
+
+/* ========================================================= */
+/* 10 — VISION CENTER — GOLD GLASS CORE                     */
+/* ========================================================= */
+
+.ars-group-page
+.vision-center{
+
+    max-width:
+
+        1000px;
+
+    margin:
+
+        0
+        auto
+        60px;
+
+    padding:
+
+        clamp(35px,6vw,80px);
+
+    border-radius:
+
+        50%
+        20px
+        50%
+        20px;
+
+    text-align:center;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(212,173,83,.18),
+            rgba(7,22,47,.7)
+        );
+
+    box-shadow:
+
+        0 0 70px
+        rgba(211,171,81,.12),
+
+        inset 0 0 50px
+        rgba(255,255,255,.035);
+
+}
+
+
+.ars-group-page
+.vision-center blockquote{
+
+    margin:0;
+
+    font-size:
+
+        clamp(
+            1.3rem,
+            3vw,
+            2.5rem
+        );
+
+    line-height:
+
+        1.4;
+
+    color:
+
+        #ead39b;
+
+}
+
+
+/* ========================================================= */
+/* 11 — ENGINEERING DNA — SIX PREMIUM PILLARS               */
+/* ========================================================= */
+
+.ars-group-page
+.dna-card{
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    text-align:center;
+
+    min-height:250px;
+
+    border-radius:
+
+        50%;
+
+}
+
+
+.ars-group-page
+.dna-card:nth-child(even){
+
+    border-radius:
+
+        24px;
+
+}
+
+
+.ars-group-page
+.dna-card:hover{
+
+    box-shadow:
+
+        0 0 50px
+        rgba(211,170,80,.18),
+
+        0 25px 70px
+        rgba(0,0,0,.45);
+
+}
+
+
+/* ========================================================= */
+/* 12 — ECOSYSTEM ORBITAL GLASS SYSTEM                      */
+/* ========================================================= */
+
+.ars-group-page
+.ecosystem-wrapper{
+
+    position:relative;
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap:30px;
+
+    max-width:1200px;
+
+    margin:auto;
+
+}
+
+
+.ars-group-page
+.ecosystem-center{
+
+    grid-column:
+
+        1 / -1;
+
+    width:
+
+        min(330px,100%);
+
+    aspect-ratio:1;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:
+
+        50%;
+
+    text-align:center;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(217,177,87,.25),
+            rgba(7,22,48,.78)
+        );
+
+    box-shadow:
+
+        0 0 80px
+        rgba(215,174,79,.18);
+
+}
+
+
+.ars-group-page
+.eco{
+
+    min-height:
+
+        150px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:25px;
+
+    text-align:center;
+
+    border-radius:
+
+        28px;
+
+    cursor:pointer;
+
+}
+
+
+.ars-group-page
+.eco:nth-child(odd){
+
+    border-radius:
+
+        50%;
+
+}
+
+
+.ars-group-page
+.eco:hover{
+
+    transform:
+
+        translateY(-12px)
+        rotateX(4deg);
+
+}
+
+
+/* ========================================================= */
+/* 13 — GLOBAL STRATEGY COUNTRY CARDS                        */
+/* ========================================================= */
+
+.ars-group-page
+.country-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            6,
+            minmax(0,1fr)
+        );
+
+    gap:20px;
+
+}
+
+
+.ars-group-page
+.country-card{
+
+    min-height:
+
+        170px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:18px;
+
+    border-radius:
+
+        30px;
+
+    text-decoration:none;
+
+    color:#eee8d8;
+
+}
+
+
+.ars-group-page
+.country-card img{
+
+    width:
+
+        65px;
+
+    height:
+
+        42px;
+
+    object-fit:cover;
+
+    border-radius:
+
+        8px;
+
+    box-shadow:
+
+        0 10px 25px
+        rgba(0,0,0,.35);
+
+}
+
+
+/* ========================================================= */
+/* 14 — ORGANIZATION TREE                                    */
+/* ========================================================= */
+
+.ars-group-page
+.org-tree{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:30px;
+
+}
+
+
+.ars-group-page
+.org-level{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:20px;
+
+}
+
+
+.ars-group-page
+.org-card{
+
+    min-width:
+
+        180px;
+
+    padding:
+
+        25px
+        35px;
+
+    text-align:center;
+
+    border-radius:
+
+        18px
+        36px
+        18px
+        36px;
+
+}
+
+
+.ars-group-page
+.org-main{
+
+    min-width:
+
+        300px;
+
+    background:
+
+        linear-gradient(
+            135deg,
+            rgba(211,171,81,.25),
+            rgba(7,21,45,.8)
+        );
+
+}
+
+
+/* ========================================================= */
+/* 15 — LEADERSHIP CARDS                                     */
+/* ========================================================= */
+
+.ars-group-page
+.leadership-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            2,
+            minmax(0,1fr)
+        );
+
+    gap:30px;
+
+}
+
+
+.ars-group-page
+.leader-card{
+
+    padding:
+
+        35px;
+
+    border-radius:
+
+        35px
+        10px
+        35px
+        10px;
+
+}
+
+
+.ars-group-page
+.leader-photo{
+
+    width:
+
+        120px;
+
+    height:
+
+        120px;
+
+    margin:
+
+        0
+        auto
+        25px;
+
+    border-radius:
+
+        50%;
+
+    background:
+
+        radial-gradient(
+            circle,
+            rgba(214,174,83,.35),
+            rgba(7,21,45,.8)
+        );
+
+    border:
+
+        1px solid
+        rgba(215,176,87,.4);
+
+    box-shadow:
+
+        0 0 35px
+        rgba(214,174,81,.12);
+
+}
+
+
+/* ========================================================= */
+/* 16 — PARTNER LOGO CARDS                                   */
+/* ========================================================= */
+
+.ars-group-page
+.partners-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            6,
+            minmax(0,1fr)
+        );
+
+    gap:20px;
+
+}
+
+
+.ars-group-page
+.technology-ecosystem
+.partner-card{
+
+    min-height:
+
+        150px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+.ars-group-page
+.partner-card img{
+
+    width:
+
+        min(150px,80%);
+
+    max-height:
+
+        65px;
+
+    object-fit:contain;
+
+    filter:
+
+        brightness(1.2)
+        grayscale(.25);
+
+    transition:
+
+        transform .5s ease,
+        filter .5s ease;
+
+}
+
+
+.ars-group-page
+.partner-card:hover img{
+
+    transform:
+
+        scale(1.1);
+
+    filter:
+
+        brightness(1.5)
+        grayscale(0);
+
+}
+
+
+/* ========================================================= */
+/* 17 — TIMELINE CARDS                                       */
+/* ========================================================= */
+
+.ars-group-page
+.timeline-card{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+
+.ars-group-page
+.timeline-card span{
+
+    display:inline-block;
+
+    margin-bottom:20px;
+
+    color:
+
+        #d8b468;
+
+    font-size:
+
+        1.4rem;
+
+    font-weight:
+
+        700;
+
+}
+
+
+.ars-group-page
+.timeline-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    left:0;
+
+    bottom:0;
+
+    width:100%;
+
+    height:3px;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            transparent,
+            #d7ae55,
+            transparent
+        );
+
+    box-shadow:
+
+        0 0 18px
+        rgba(214,173,82,.6);
+
+}
+
+
+/* ========================================================= */
+/* 18 — GALLERY — FLOATING GLASS WINDOWS                    */
+/* ========================================================= */
+
+.ars-group-page
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            3,
+            minmax(0,1fr)
+        );
+
+    gap:25px;
+
+}
+
+
+.ars-group-page
+.gallery-card{
+
+    min-height:
+
+        280px;
+
+    border-radius:
+
+        30px;
+
+    overflow:hidden;
+
+}
+
+
+.ars-group-page
+.gallery-card:nth-child(2){
+
+    transform:
+
+        translateY(30px);
+
+}
+
+
+.ars-group-page
+.gallery-card:nth-child(3){
+
+    border-radius:
+
+        50%
+        20px
+        50%
+        20px;
+
+}
+
+
+.ars-group-page
+.gallery-card:hover{
+
+    transform:
+
+        translateY(-12px)
+        scale(1.025);
+
+}
+
+
+/* ========================================================= */
+/* 19 — STATS — LUXURY FLOATING GLASS                       */
+/* ========================================================= */
+
+.ars-group-page
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(
+            4,
+            minmax(0,1fr)
+        );
+
+    gap:22px;
+
+}
+
+
+.ars-group-page
+.stat-card{
+
+    padding:
+
+        45px
+        25px;
+
+    text-align:center;
+
+    border-radius:
+
+        50%
+        20px
+        50%
+        20px;
+
+}
+
+
+.ars-group-page
+.stat-card h3{
+
+    margin:0 0 12px;
+
+    font-size:
+
+        clamp(
+            2.5rem,
+            5vw,
+            4.5rem
+        );
+
+    color:
+
+        #d9b66d;
+
+    text-shadow:
+
+        0 0 25px
+        rgba(216,176,82,.3);
+
+}
+
+
+/* ========================================================= */
+/* 20 — CTA BUTTON SYSTEM                                    */
+/* ========================================================= */
+
+.ars-group-page
+.btn-primary,
+.ars-group-page
+.btn-secondary{
+
+    position:relative;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:
+
+        52px;
+
+    padding:
+
+        0
+        28px;
+
+    border-radius:
+
+        999px;
+
+    text-decoration:none;
+
+    font-weight:
+
+        600;
+
+    letter-spacing:
+
+        .04em;
+
+    overflow:hidden;
+
+    transition:
+
+        transform .4s ease,
+        box-shadow .4s ease,
+        border-color .4s ease;
+
+}
+
+
+.ars-group-page
+.btn-primary{
+
+    color:
+
+        #111;
+
+    background:
+
+        linear-gradient(
+            110deg,
+            #a87829,
+            #e6c16c,
+            #fff0b2,
+            #bd8d39
+        );
+
+    box-shadow:
+
+        0 0 30px
+        rgba(214,172,79,.18);
+
+}
+
+
+.ars-group-page
+.btn-secondary{
+
+    color:
+
+        #e6c77c;
+
+    border:
+
+        1px solid
+        rgba(219,180,91,.55);
+
+    background:
+
+        rgba(8,23,47,.65);
+
+    backdrop-filter:
+
+        blur(12px);
+
+}
+
+
+.ars-group-page
+.btn-primary:hover,
+.ars-group-page
+.btn-secondary:hover{
+
+    transform:
+
+        translateY(-5px);
+
+    box-shadow:
+
+        0 12px 35px
+        rgba(215,174,82,.25);
+
+}
+
+
+/* ========================================================= */
+/* 21 — CTA SECTION                                          */
+/* ========================================================= */
+
+.ars-group-page
+.contact-cta{
+
+    text-align:center;
+
+    background:
+
+        radial-gradient(
+            ellipse at center,
+            rgba(210,170,80,.12),
+            transparent 60%
+        );
+
+}
+
+
+.ars-group-page
+.contact-cta
+.section-header{
+
+    margin-bottom:0;
+
+}
+
+
+/* ========================================================= */
+/* 22 — PREMIUM MOBILE / TABLET / DESKTOP                   */
+/* ========================================================= */
+
+@media (max-width:1100px){
+
+    .ars-group-page
+    .country-grid,
+    .ars-group-page
+    .partners-grid{
+
+        grid-template-columns:
+
+            repeat(
+                3,
+                minmax(0,1fr)
+            );
+
+    }
+
+
+    .ars-group-page
+    .mission-grid,
+    .ars-group-page
+    .values-grid,
+    .ars-group-page
+    .vision-grid,
+    .ars-group-page
+    .dna-grid,
+    .ars-group-page
+    .future-grid,
+    .ars-group-page
+    .partnership-grid,
+    .ars-group-page
+    .standards-grid,
+    .ars-group-page
+    .timeline-grid{
+
+        grid-template-columns:
+
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+}
+
+
+@media (max-width:800px){
+
+    .ars-group-page
+    .who-grid{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+
+    .ars-group-page
+    .leadership-grid{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+
+    .ars-group-page
+    .ecosystem-wrapper{
+
+        grid-template-columns:
+
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+
+    .ars-group-page
+    .ecosystem-center{
+
+        grid-column:
+
+            1 / -1;
+
+    }
+
+}
+
+
+@media (max-width:600px){
+
+    .ars-group-page
+    section{
+
+        padding:
+
+            70px
+            18px;
+
+    }
+
+
+    .ars-group-page
+    .mission-grid,
+    .ars-group-page
+    .values-grid,
+    .ars-group-page
+    .vision-grid,
+    .ars-group-page
+    .dna-grid,
+    .ars-group-page
+    .future-grid,
+    .ars-group-page
+    .partnership-grid,
+    .ars-group-page
+    .standards-grid,
+    .ars-group-page
+    .timeline-grid,
+    .ars-group-page
+    .ecosystem-wrapper,
+    .ars-group-page
+    .country-grid,
+    .ars-group-page
+    .partners-grid,
+    .ars-group-page
+    .gallery-grid{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+
+    .ars-group-page
+    .ars-glass:hover{
+
+        transform:
+
+            translateY(-6px)
+            scale(1.01);
+
+    }
+
+
+    .ars-group-page
+    .mission-card:nth-child(3n+2),
+    .ars-group-page
+    .value-card:nth-child(3n+2),
+    .ars-group-page
+    .gallery-card:nth-child(2){
+
+        transform:none;
+
+    }
+
+
+    .ars-group-page
+    .mission-card:nth-child(3n+2):hover,
+    .ars-group-page
+    .value-card:nth-child(3n+2):hover{
+
+        transform:
+
+            translateY(-6px)
+            scale(1.01);
+
+    }
+
+
+    .ars-group-page
+    .who-right,
+    .ars-group-page
+    .who-right img{
+
+        min-height:
+
+            300px;
+
+    }
+
+
+    .ars-group-page
+    .stats-grid{
+
+        grid-template-columns:
+
+            repeat(
+                2,
+                minmax(0,1fr)
+            );
+
+    }
+
+}
+
+
+@media (max-width:420px){
+
+    .ars-group-page
+    .stats-grid{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+
+    .ars-group-page
+    .group-buttons{
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:14px;
+
+    }
+
+
+    .ars-group-page
+    .btn-primary,
+    .ars-group-page
+    .btn-secondary{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 23 — REDUCED MOTION ACCESSIBILITY                         */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    .ars-group-page *,
+    .ars-group-page *::before,
+    .ars-group-page *::after{
+
+        animation-duration:
+            .01ms !important;
+
+        animation-iteration-count:
+            1 !important;
+
+        transition-duration:
+            .01ms !important;
+
+        scroll-behavior:
+            auto !important;
+
+    }
+
+    }

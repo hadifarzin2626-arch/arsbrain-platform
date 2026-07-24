@@ -1361,7 +1361,2025 @@ button:focus-visible{
     }
 
 }
+/* ========================================================= */
+/* ARS MEDIA CENTER — CINEMATIC PREMIUM CSS */
+/* ========================================================= */
+/* اختصاصی صفحه ARS MEDIA CENTER */
+/* Designed to work with ARS Global Design DNA */
+/* ========================================================= */
 
+
+/* ========================================================= */
+/* 01 — PAGE ROOT */
+/* ========================================================= */
+
+.ars-media-page{
+
+    position:relative;
+
+    min-height:100vh;
+
+    overflow:hidden;
+
+    isolation:isolate;
+
+    background:
+
+        radial-gradient(
+            circle at 50% 0%,
+            rgba(184,137,63,.12),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 10% 35%,
+            rgba(20,65,110,.10),
+            transparent 28%
+        ),
+
+        #000;
+
+    color:#f5f1e8;
+
+}
+
+
+/* cinematic ambient light */
+
+.ars-media-page::before{
+
+    content:"";
+
+    position:fixed;
+
+    inset:0;
+
+    pointer-events:none;
+
+    z-index:-2;
+
+    background:
+
+        radial-gradient(
+            circle at 80% 20%,
+            rgba(212,167,78,.08),
+            transparent 25%
+        ),
+
+        radial-gradient(
+            circle at 20% 80%,
+            rgba(18,61,105,.08),
+            transparent 30%
+        );
+
+    animation:
+        mediaAmbient 14s ease-in-out infinite alternate;
+
+}
+
+
+/* ========================================================= */
+/* 02 — HERO */
+/* ========================================================= */
+
+.media-hero{
+
+    position:relative;
+
+    min-height:100vh;
+
+    min-height:100svh;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    padding:
+
+        clamp(120px,12vw,180px)
+
+        clamp(20px,6vw,80px)
+
+        clamp(100px,10vw,160px);
+
+    overflow:hidden;
+
+}
+
+
+/* cinematic horizon */
+
+.media-hero::before{
+
+    content:"";
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:8%;
+
+    width:min(1000px,90vw);
+
+    height:2px;
+
+    transform:translateX(-50%);
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(184,137,63,.15),
+
+            rgba(255,214,120,.8),
+
+            rgba(184,137,63,.15),
+
+            transparent
+
+        );
+
+    box-shadow:
+
+        0 0 30px rgba(184,137,63,.35),
+
+        0 0 80px rgba(184,137,63,.15);
+
+    animation:
+
+        horizonReveal 2.5s ease forwards;
+
+}
+
+
+/* ========================================================= */
+/* HERO BACKGROUND GLOW */
+/* ========================================================= */
+
+.media-background-glow{
+
+    position:absolute;
+
+    width:min(850px,90vw);
+
+    height:min(850px,90vw);
+
+    top:50%;
+
+    left:50%;
+
+    transform:translate(-50%,-50%);
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(184,137,63,.18),
+
+            rgba(184,137,63,.06) 25%,
+
+            transparent 65%
+
+        );
+
+    filter:blur(20px);
+
+    pointer-events:none;
+
+    animation:
+
+        cinematicGlow 8s ease-in-out infinite alternate;
+
+}
+
+
+/* blue secondary light */
+
+.media-background-glow::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:45%;
+
+    height:45%;
+
+    right:-5%;
+
+    bottom:5%;
+
+    border-radius:50%;
+
+    background:
+
+        radial-gradient(
+
+            circle,
+
+            rgba(30,85,145,.20),
+
+            transparent 70%
+
+        );
+
+    filter:blur(30px);
+
+}
+
+
+/* ========================================================= */
+/* HERO LOGO */
+/* ========================================================= */
+
+.media-logo-wrapper{
+
+    position:relative;
+
+    z-index:2;
+
+    margin-bottom:32px;
+
+    animation:
+
+        cinematicLogoReveal 1.8s cubic-bezier(.2,.8,.2,1) both;
+
+}
+
+
+.media-logo{
+
+    width:
+
+        clamp(110px,14vw,180px);
+
+    max-width:100%;
+
+    display:block;
+
+    filter:
+
+        drop-shadow(0 0 12px rgba(184,137,63,.25))
+
+        drop-shadow(0 0 40px rgba(184,137,63,.10));
+
+    transition:
+
+        transform .7s ease,
+
+        filter .7s ease;
+
+}
+
+
+.media-logo-wrapper:hover .media-logo{
+
+    transform:
+
+        scale(1.05)
+
+        rotateY(8deg);
+
+    filter:
+
+        drop-shadow(0 0 18px rgba(255,214,120,.45))
+
+        drop-shadow(0 0 55px rgba(184,137,63,.25));
+
+}
+
+
+/* ========================================================= */
+/* HERO OVERLINE */
+/* ========================================================= */
+
+.media-overline{
+
+    position:relative;
+
+    z-index:2;
+
+    display:inline-block;
+
+    margin-bottom:24px;
+
+    padding:9px 20px;
+
+    border:
+
+        1px solid
+
+        rgba(184,137,63,.30);
+
+    border-radius:999px;
+
+    background:
+
+        rgba(255,255,255,.025);
+
+    backdrop-filter:
+
+        blur(14px);
+
+    -webkit-backdrop-filter:
+
+        blur(14px);
+
+    color:
+
+        rgba(255,214,120,.85);
+
+    font-size:
+
+        clamp(9px,1vw,12px);
+
+    font-weight:600;
+
+    letter-spacing:
+
+        .28em;
+
+    text-transform:uppercase;
+
+    animation:
+
+        cinematicReveal 1.5s .3s both;
+
+}
+
+
+/* ========================================================= */
+/* HERO TITLE */
+/* ========================================================= */
+
+.media-hero h1{
+
+    position:relative;
+
+    z-index:2;
+
+    margin:
+
+        0 0 24px;
+
+    font-size:
+
+        clamp(42px,8vw,110px);
+
+    line-height:
+
+        .92;
+
+    font-weight:
+
+        500;
+
+    letter-spacing:
+
+        -.045em;
+
+    color:#f5f1e8;
+
+    text-shadow:
+
+        0 0 40px rgba(184,137,63,.08);
+
+    animation:
+
+        cinematicTitle 1.8s .45s cubic-bezier(.2,.8,.2,1) both;
+
+}
+
+
+.media-hero h1::after{
+
+    content:"";
+
+    display:block;
+
+    width:
+
+        clamp(70px,10vw,150px);
+
+    height:1px;
+
+    margin:
+
+        28px auto 0;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            #d4a74e,
+
+            transparent
+
+        );
+
+    box-shadow:
+
+        0 0 20px rgba(212,167,78,.45);
+
+}
+
+
+/* ========================================================= */
+/* HERO SECONDARY TITLE */
+/* ========================================================= */
+
+.media-hero h2{
+
+    position:relative;
+
+    z-index:2;
+
+    margin:
+
+        0 0 32px;
+
+    font-size:
+
+        clamp(30px,5vw,72px);
+
+    line-height:
+
+        1.04;
+
+    font-weight:
+
+        300;
+
+    letter-spacing:
+
+        -.03em;
+
+    background:
+
+        linear-gradient(
+
+            120deg,
+
+            #ffffff 0%,
+
+            #d4a74e 45%,
+
+            #ffffff 70%,
+
+            #8ea7c0 100%
+
+        );
+
+    background-size:
+
+        220% auto;
+
+    -webkit-background-clip:text;
+
+    background-clip:text;
+
+    -webkit-text-fill-color:transparent;
+
+    animation:
+
+        goldFlow 8s linear infinite;
+
+}
+
+
+/* ========================================================= */
+/* HERO DESCRIPTION */
+/* ========================================================= */
+
+.media-hero > p{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:760px;
+
+    margin:
+
+        0 auto 42px;
+
+    color:
+
+        rgba(245,241,232,.65);
+
+    font-size:
+
+        clamp(15px,1.4vw,19px);
+
+    line-height:
+
+        1.9;
+
+    animation:
+
+        cinematicReveal 1.6s .7s both;
+
+}
+
+
+/* ========================================================= */
+/* HERO BUTTONS */
+/* ========================================================= */
+
+.media-buttons{
+
+    position:relative;
+
+    z-index:2;
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+    animation:
+
+        cinematicReveal 1.6s .9s both;
+
+}
+
+
+/* ========================================================= */
+/* BUTTON SYSTEM */
+/* ========================================================= */
+
+.media-buttons a,
+.contact-buttons a{
+
+    position:relative;
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:54px;
+
+    padding:
+
+        0 30px;
+
+    border-radius:999px;
+
+    text-decoration:none;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    letter-spacing:.16em;
+
+    text-transform:uppercase;
+
+    overflow:hidden;
+
+    transition:
+
+        transform .5s cubic-bezier(.2,.8,.2,1),
+
+        box-shadow .5s ease,
+
+        border-color .5s ease;
+
+}
+
+
+.media-buttons a::before,
+.contact-buttons a::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    transform:
+
+        translateX(-120%);
+
+    background:
+
+        linear-gradient(
+
+            110deg,
+
+            transparent,
+
+            rgba(255,255,255,.25),
+
+            transparent
+
+        );
+
+    transition:
+
+        transform .8s ease;
+
+}
+
+
+.media-buttons a:hover::before,
+.contact-buttons a:hover::before{
+
+    transform:
+
+        translateX(120%);
+
+}
+
+
+.media-buttons a:hover,
+.contact-buttons a:hover{
+
+    transform:
+
+        translateY(-4px);
+
+}
+
+
+/* primary */
+
+.btn-primary{
+
+    color:#080808;
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            #b88632,
+
+            #f1cf7a,
+
+            #a77425
+
+        );
+
+    box-shadow:
+
+        0 10px 35px rgba(184,137,63,.20);
+
+}
+
+
+.btn-primary:hover{
+
+    box-shadow:
+
+        0 15px 55px rgba(184,137,63,.40),
+
+        0 0 35px rgba(184,137,63,.20);
+
+}
+
+
+/* secondary */
+
+.btn-secondary{
+
+    color:#f5f1e8;
+
+    border:
+
+        1px solid
+
+        rgba(255,255,255,.20);
+
+    background:
+
+        rgba(255,255,255,.035);
+
+    backdrop-filter:
+
+        blur(14px);
+
+}
+
+
+.btn-secondary:hover{
+
+    border-color:
+
+        rgba(184,137,63,.65);
+
+    box-shadow:
+
+        0 0 30px rgba(184,137,63,.12);
+
+}
+
+
+/* ========================================================= */
+/* 03 — SECTION SYSTEM */
+/* ========================================================= */
+
+.media-campaigns,
+.production-studio,
+.media-broadcast,
+.media-gallery,
+.media-community,
+.media-newsroom,
+.media-contact{
+
+    position:relative;
+
+    padding:
+
+        clamp(100px,10vw,170px)
+
+        clamp(20px,6vw,80px);
+
+}
+
+
+.section-header{
+
+    position:relative;
+
+    max-width:900px;
+
+    margin:
+
+        0 auto 70px;
+
+    text-align:center;
+
+}
+
+
+.section-label{
+
+    display:inline-block;
+
+    margin-bottom:18px;
+
+    color:
+
+        rgba(212,167,78,.85);
+
+    font-size:10px;
+
+    font-weight:600;
+
+    letter-spacing:.28em;
+
+    text-transform:uppercase;
+
+}
+
+
+.section-header h2{
+
+    margin:
+
+        0 0 22px;
+
+    font-size:
+
+        clamp(30px,4vw,60px);
+
+    line-height:
+
+        1.05;
+
+    font-weight:400;
+
+    letter-spacing:-.035em;
+
+}
+
+
+.section-header p{
+
+    max-width:700px;
+
+    margin:0 auto;
+
+    color:
+
+        rgba(245,241,232,.58);
+
+    line-height:1.85;
+
+}
+
+
+/* ========================================================= */
+/* 04 — SECTION LIGHT DIVIDER */
+/* ========================================================= */
+
+.media-campaigns::before,
+.production-studio::before,
+.media-broadcast::before,
+.media-gallery::before,
+.media-community::before,
+.media-newsroom::before,
+.media-contact::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:50%;
+
+    width:min(800px,70vw);
+
+    height:1px;
+
+    transform:translateX(-50%);
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(184,137,63,.35),
+
+            transparent
+
+        );
+
+}
+
+
+/* ========================================================= */
+/* 05 — GLASS CARD DNA */
+/* ========================================================= */
+
+/* MODEL 1 — CRYSTAL GLASS */
+
+.ars-media-page .ars-glass{
+
+    position:relative;
+
+    border:
+
+        1px solid
+
+        rgba(255,255,255,.10);
+
+    background:
+
+        linear-gradient(
+
+            135deg,
+
+            rgba(255,255,255,.075),
+
+            rgba(255,255,255,.018)
+
+        );
+
+    backdrop-filter:
+
+        blur(22px)
+
+        saturate(120%);
+
+    -webkit-backdrop-filter:
+
+        blur(22px)
+
+        saturate(120%);
+
+    box-shadow:
+
+        inset 0 1px 0 rgba(255,255,255,.08),
+
+        0 20px 60px rgba(0,0,0,.30);
+
+    overflow:hidden;
+
+}
+
+
+/* MODEL 2 — LUXURY GLASS */
+
+.campaign-card,
+.production-card,
+.broadcast-card,
+.community-card,
+.news-card,
+.contact-card{
+
+    border-radius:32px;
+
+    padding:
+
+        clamp(28px,3vw,46px);
+
+    transition:
+
+        transform .65s cubic-bezier(.2,.8,.2,1),
+
+        border-color .5s ease,
+
+        box-shadow .65s ease;
+
+}
+
+
+.campaign-card::before,
+.production-card::before,
+.broadcast-card::before,
+.community-card::before,
+.news-card::before,
+.contact-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:1px;
+
+    background:
+
+        linear-gradient(
+
+            90deg,
+
+            transparent,
+
+            rgba(212,167,78,.65),
+
+            transparent
+
+        );
+
+    opacity:.6;
+
+}
+
+
+/* MODEL 3 — CINEMATIC DARK GLASS */
+
+.gallery-card{
+
+    border-radius:30px;
+
+    overflow:hidden;
+
+    transition:
+
+        transform .7s cubic-bezier(.2,.8,.2,1),
+
+        box-shadow .7s ease;
+
+}
+
+
+.gallery-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            transparent 40%,
+
+            rgba(0,0,0,.85)
+
+        );
+
+    pointer-events:none;
+
+}
+
+
+.gallery-card img{
+
+    width:100%;
+
+    height:100%;
+
+    min-height:320px;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:
+
+        transform 1.2s cubic-bezier(.2,.8,.2,1),
+
+        filter 1s ease;
+
+    filter:
+
+        saturate(.8)
+
+        brightness(.72);
+
+}
+
+
+.gallery-card:hover img{
+
+    transform:
+
+        scale(1.08);
+
+    filter:
+
+        saturate(1)
+
+        brightness(.9);
+
+}
+
+
+.gallery-card h3{
+
+    position:absolute;
+
+    left:28px;
+
+    bottom:24px;
+
+    z-index:2;
+
+    margin:0;
+
+    font-size:18px;
+
+    font-weight:500;
+
+}
+
+
+/* ========================================================= */
+/* CARD HOVER — GOLD + BLUE DUAL LIGHT */
+/* ========================================================= */
+
+.campaign-card:hover,
+.production-card:hover,
+.broadcast-card:hover,
+.community-card:hover,
+.news-card:hover,
+.contact-card:hover{
+
+    transform:
+
+        translateY(-10px);
+
+    border-color:
+
+        rgba(212,167,78,.38);
+
+    box-shadow:
+
+        0 25px 80px rgba(0,0,0,.50),
+
+        0 0 35px rgba(184,137,63,.10),
+
+        inset 0 1px 0 rgba(255,255,255,.12);
+
+}
+
+
+/* blue secondary glow */
+
+.campaign-card::after,
+.production-card::after,
+.broadcast-card::after,
+.community-card::after,
+.news-card::after,
+.contact-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    width:100px;
+
+    height:100px;
+
+    right:-40px;
+
+    bottom:-50px;
+
+    border-radius:50%;
+
+    background:
+
+        rgba(30,85,145,.12);
+
+    filter:blur(35px);
+
+    transition:
+
+        opacity .5s ease;
+
+}
+
+
+.campaign-card:hover::after,
+.production-card:hover::after,
+.broadcast-card:hover::after,
+.community-card:hover::after,
+.news-card:hover::after,
+.contact-card:hover::after{
+
+    opacity:1.5;
+
+}
+
+
+/* ========================================================= */
+/* 06 — CAMPAIGN GRID */
+/* ========================================================= */
+
+.campaign-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+.campaign-card h3,
+.production-card h3,
+.broadcast-card h3,
+.community-card h3,
+.news-card h3,
+.contact-card h3{
+
+    margin:
+
+        0 0 16px;
+
+    font-size:
+
+        clamp(18px,1.5vw,24px);
+
+    font-weight:500;
+
+}
+
+
+.campaign-card p,
+.production-card p,
+.broadcast-card p,
+.community-card p,
+.news-card p,
+.contact-card p{
+
+    margin:0;
+
+    color:
+
+        rgba(245,241,232,.56);
+
+    line-height:1.8;
+
+    font-size:14px;
+
+}
+
+
+/* ========================================================= */
+/* 07 — PRODUCTION GRID */
+/* ========================================================= */
+
+.production-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.production-card{
+
+    min-height:260px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+}
+
+
+/* ========================================================= */
+/* 08 — BROADCAST GRID */
+/* ========================================================= */
+
+.broadcast-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.broadcast-card{
+
+    min-height:240px;
+
+}
+
+
+/* ========================================================= */
+/* 09 — GALLERY */
+/* ========================================================= */
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(4,1fr);
+
+    gap:18px;
+
+}
+
+
+.gallery-card:nth-child(1),
+.gallery-card:nth-child(6){
+
+    grid-row:span 2;
+
+}
+
+
+.gallery-card:nth-child(1) img,
+.gallery-card:nth-child(6) img{
+
+    min-height:658px;
+
+}
+
+
+/* ========================================================= */
+/* 10 — COMMUNITY */
+/* ========================================================= */
+
+.community-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.community-card{
+
+    min-height:240px;
+
+}
+
+
+/* ========================================================= */
+/* 11 — NEWSROOM */
+/* ========================================================= */
+
+.news-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(3,1fr);
+
+    gap:20px;
+
+}
+
+
+.news-card{
+
+    min-height:220px;
+
+}
+
+
+/* ========================================================= */
+/* 12 — CONTACT */
+/* ========================================================= */
+
+.contact-grid{
+
+    max-width:1100px;
+
+    margin:
+
+        0 auto 50px;
+
+    display:grid;
+
+    grid-template-columns:
+
+        repeat(4,1fr);
+
+    gap:20px;
+
+}
+
+
+.contact-card{
+
+    min-height:240px;
+
+}
+
+
+.contact-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    flex-wrap:wrap;
+
+    gap:14px;
+
+}
+
+
+/* ========================================================= */
+/* 13 — FOOTER */
+/* ========================================================= */
+
+.ars-footer{
+
+    position:relative;
+
+    padding:
+
+        100px
+
+        clamp(20px,6vw,80px)
+
+        30px;
+
+    border-top:
+
+        1px solid
+
+        rgba(255,255,255,.08);
+
+    background:
+
+        linear-gradient(
+
+            180deg,
+
+            #020202,
+
+            #000
+
+        );
+
+}
+
+
+.footer-top{
+
+    display:grid;
+
+    grid-template-columns:
+
+        2fr
+
+        1fr
+
+        1fr
+
+        1fr;
+
+    gap:60px;
+
+    max-width:1400px;
+
+    margin:auto;
+
+}
+
+
+.footer-brand img{
+
+    width:120px;
+
+    margin-bottom:25px;
+
+}
+
+
+.footer-brand h3{
+
+    margin:
+
+        0 0 14px;
+
+    font-size:22px;
+
+    font-weight:400;
+
+}
+
+
+.footer-brand p{
+
+    max-width:360px;
+
+    color:
+
+        rgba(245,241,232,.50);
+
+    line-height:1.8;
+
+}
+
+
+.footer-links{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:13px;
+
+}
+
+
+.footer-links h4{
+
+    margin:
+
+        0 0 12px;
+
+    color:
+
+        #d4a74e;
+
+    font-size:11px;
+
+    letter-spacing:.18em;
+
+    text-transform:uppercase;
+
+}
+
+
+.footer-links a{
+
+    color:
+
+        rgba(245,241,232,.55);
+
+    text-decoration:none;
+
+    transition:
+
+        color .3s ease,
+
+        transform .3s ease;
+
+}
+
+
+.footer-links a:hover{
+
+    color:
+
+        #f1cf7a;
+
+    transform:
+
+        translateX(4px);
+
+}
+
+
+.footer-bottom{
+
+    max-width:1400px;
+
+    margin:
+
+        70px auto 0;
+
+    padding-top:25px;
+
+    border-top:
+
+        1px solid
+
+        rgba(255,255,255,.07);
+
+}
+
+
+.footer-bottom p{
+
+    margin:0;
+
+    color:
+
+        rgba(245,241,232,.35);
+
+    font-size:12px;
+
+}
+
+
+/* ========================================================= */
+/* 14 — ANIMATIONS */
+/* ========================================================= */
+
+
+/* ANIMATION 01 — CINEMATIC REVEAL */
+
+@keyframes cinematicReveal{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            translateY(30px);
+
+        filter:
+
+            blur(8px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            translateY(0);
+
+        filter:
+
+            blur(0);
+
+    }
+
+}
+
+
+/* ANIMATION 02 — GOLDEN AMBIENT PULSE */
+
+@keyframes cinematicGlow{
+
+    0%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            scale(.85);
+
+        opacity:.55;
+
+    }
+
+    100%{
+
+        transform:
+
+            translate(-50%,-50%)
+
+            scale(1.15);
+
+        opacity:1;
+
+    }
+
+}
+
+
+/* ANIMATION 03 — GOLD FLOW */
+
+@keyframes goldFlow{
+
+    0%{
+
+        background-position:
+
+            0% center;
+
+    }
+
+    100%{
+
+        background-position:
+
+            220% center;
+
+    }
+
+}
+
+
+/* ANIMATION 04 — LOGO REVEAL */
+
+@keyframes cinematicLogoReveal{
+
+    0%{
+
+        opacity:0;
+
+        transform:
+
+            scale(.75)
+
+            rotateX(25deg);
+
+        filter:
+
+            blur(15px);
+
+    }
+
+    100%{
+
+        opacity:1;
+
+        transform:
+
+            scale(1)
+
+            rotateX(0);
+
+        filter:
+
+            blur(0);
+
+    }
+
+}
+
+
+/* TITLE REVEAL */
+
+@keyframes cinematicTitle{
+
+    from{
+
+        opacity:0;
+
+        transform:
+
+            translateY(50px)
+
+            scale(.96);
+
+        letter-spacing:
+
+            .08em;
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:
+
+            translateY(0)
+
+            scale(1);
+
+        letter-spacing:
+
+            -.045em;
+
+    }
+
+}
+
+
+/* GOLDEN HORIZON */
+
+@keyframes horizonReveal{
+
+    0%{
+
+        width:0;
+
+        opacity:0;
+
+    }
+
+    50%{
+
+        opacity:1;
+
+    }
+
+    100%{
+
+        width:min(1000px,90vw);
+
+        opacity:.8;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 15 — ACCESSIBILITY */
+/* ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+    *,
+
+    *::before,
+
+    *::after{
+
+        animation-duration:.01ms !important;
+
+        animation-iteration-count:1 !important;
+
+        scroll-behavior:auto !important;
+
+        transition-duration:.01ms !important;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 16 — TABLET */
+/* ========================================================= */
+
+@media (max-width:1100px){
+
+    .campaign-grid{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+    .production-grid,
+    .broadcast-grid,
+    .community-grid,
+    .news-grid{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+    .gallery-grid{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+    .gallery-card:nth-child(1),
+    .gallery-card:nth-child(6){
+
+        grid-row:auto;
+
+    }
+
+    .gallery-card:nth-child(1) img,
+    .gallery-card:nth-child(6) img{
+
+        min-height:320px;
+
+    }
+
+    .contact-grid{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+    .footer-top{
+
+        grid-template-columns:
+
+            repeat(2,1fr);
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* 17 — MOBILE */
+/* ========================================================= */
+
+@media (max-width:700px){
+
+    .media-hero{
+
+        padding:
+
+            110px
+
+            18px
+
+            90px;
+
+    }
+
+    .media-overline{
+
+        max-width:90%;
+
+        line-height:1.7;
+
+        letter-spacing:.16em;
+
+    }
+
+    .media-hero h1{
+
+        font-size:
+
+            clamp(42px,13vw,70px);
+
+    }
+
+    .media-hero h2{
+
+        font-size:
+
+            clamp(30px,10vw,54px);
+
+    }
+
+    .media-hero > p{
+
+        font-size:14px;
+
+        line-height:1.8;
+
+    }
+
+    .media-buttons{
+
+        width:100%;
+
+        flex-direction:column;
+
+        align-items:stretch;
+
+        max-width:340px;
+
+    }
+
+    .media-buttons a,
+    .contact-buttons a{
+
+        width:100%;
+
+    }
+
+    .campaign-grid,
+    .production-grid,
+    .broadcast-grid,
+    .gallery-grid,
+    .community-grid,
+    .news-grid,
+    .contact-grid{
+
+        grid-template-columns:
+
+            1fr;
+
+    }
+
+    .campaign-card,
+    .production-card,
+    .broadcast-card,
+    .gallery-card,
+    .community-card,
+    .news-card,
+    .contact-card{
+
+        border-radius:26px;
+
+    }
+
+    .gallery-card img,
+    .gallery-card:nth-child(1) img,
+    .gallery-card:nth-child(6) img{
+
+        min-height:280px;
+
+    }
+
+    .section-header{
+
+        margin-bottom:45px;
+
+    }
+
+    .footer-top{
+
+        grid-template-columns:
+
+            1fr;
+
+        gap:45px;
+
+    }
+
+    .ars-footer{
+
+        padding-top:80px;
+
+    }
+
+}
+
+
+/* ========================================================= */
+/* END — ARS MEDIA CENTER CINEMATIC CSS */
+/* ========================================================= */
 
 /* ========================================================= */
 /*                                                         */

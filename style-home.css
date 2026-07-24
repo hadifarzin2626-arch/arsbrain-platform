@@ -8530,3 +8530,19 @@ body{
         transparent;
 
 }
+@media (max-width: 900px){
+
+    .ars-orbit{
+
+        width:
+            100vw;
+
+        max-width:
+            100vw;
+
+        overflow:
+            hidden;
+
+    }
+
+}

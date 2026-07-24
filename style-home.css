@@ -7979,7 +7979,7 @@ body.home-page{
         radial-gradient(
             circle at 50% 0%,
             rgba(255,255,255,0.008),
-            transparent 42%
+            transparent 65%
         );
 
     color:#ffffff;
@@ -8046,7 +8046,7 @@ body.home-page::after{
         radial-gradient(
             circle at 50% 100%,
             rgba(212,165,78,0.10),
-            transparent 22%
+            transparent 45%
         );
 
     opacity:0;
@@ -8075,7 +8075,7 @@ body.home-page::after{
 
     }
 
-    50%{
+    60%{
 
         opacity:0.55;
 
